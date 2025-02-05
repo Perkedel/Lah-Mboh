@@ -3,8 +3,9 @@
 
 Unbullshitments included! Please immediately create Issue for any still-bullshat stuffs found!
 
-> [WARN] SFW ONLY! This repo can contain everything (including swearings, insults, Germany chancelor, Number of beast, goriest of gores guro, furry), but not pornography, & derogatory N-words.  
-> If you wish to pornography, contribute & use to our NSFW PWAD LINK_PLS there instead!
+> [WARN] SFW ONLY! This repo can contain everything (including swearings, insults, Germany chancelor, Number of beast, goriest of gores guro, furry, sex part jokes), but not actual pornography, & derogatory N-words.  
+> If you wish to add actual pornography, contribute & use to our NSFW PWAD LINK_PLS there instead!  
+> It has been found that younglings (which are not our audience target at all) somehow able to access Doom in first place, when the game is intended for grownups (mature) audiences.
 
 ## A Random Doom Stuffs
 
