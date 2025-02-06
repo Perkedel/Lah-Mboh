@@ -1,0 +1,93 @@
+// Uncaught Werror!
+// (JOELwindows7)
+// oh hi Mima-sama!
+
+class DNB_werrorUncaught : StaticEventHandler {
+	// I swear to God, it's not that easy to clean room this time around
+	// that's completely new & uncharted.
+	// so umm, ehehe..
+	override void UiTick () {
+		if(0 < level.time && NULL == players [consoleplayer].mo) {
+			if(0 == abort_timer) {
+				OnAbort();
+				//console.printf("You've gone goofed up boy/gal!");
+			}
+			
+			AbortTick(abort_timer);
+			abort_timer++;
+		}
+		else {
+			abort_timer = 0;
+		}
+	}
+	// ee-yoink!
+	// https://forum.zdoom.org/viewtopic.php?t=29915
+	// moonspeak/enhanced_vm_abort.txt
+	
+	protected virtual ui void OnAbort (){}
+	protected virtual ui void AbortTick (int timer) {}
+	private ui int abort_timer;
+	
+	// in all seriousness though I will not tolerate any form of proprietarism,
+	// and not to mention, that personal censorship, DNB is fighting against about.
+	// So you better tell me all of the permissions clearly & never mess with me at all
+	// or else: me, us, you, will be in giant trouble. Like.., lowest level of Hell!
+}
+
+class DNB_werrorHandler : DNB_werrorUncaught {
+	// Guys, I'm so sorry. This is too cool to miss!
+	// How the fuck did you guys do it?!
+	
+	override void OnAbort(){
+		werror_say = "You've gone goofed up boy/gal!";
+		console.printf("\c[red]%s", werror_say);
+		//console.printf("\c[fire]You've gone goofed up boy/gal!");
+		
+		Object.S_StartSound("werror/vmabort", 0, 0); // star of the show as well!
+	}
+	
+	override void AbortTick (int timer) {
+		// This is Update(float delta)!!!
+	}
+	
+	ui string werror_say;
+	
+	// I'll try my best clean room on other stuff though.
+	// maybe... a patent about.. transparent doberman anthro with huge heart organ.
+	// what should I do to plagiarize it, so it's FreeDoom, not Daam (rip off DOOM)
+	// Ugh, Jesus Christ on Innova! that patent creator betrayed me as well!! He'll fucking pay for this!
+	// (wait, the new owner whose the patent traded to, or the creator? I forgor, won't take a look again, PTSD)
+	// Just wait till they see.. the galaxy water.
+	// Korp you gotta help me.. wait, what the hell am I thinking?! We're not relying anyone again!
+	// We've been betrayed countless times! No more social! Touch grass, but be indifferent! for now..
+}
+
+// Just Command `error "manual crash"` something won't trigger above catcher.
+// let's also yoink the VmAbort actor as well.
+class ManualCrash : Actor {
+	override void BeginPlay(){
+		//super();
+		// Start() or idk whatever!
+		console.printf("\c[fire]Okay. Now please get out of the console to commence the crash,\nor delete this actor immediately to cancel.");
+	}
+	override void PostBeginPlay(){
+		//super();
+		console.printf("\c[brick]Crash Confirmed. Now crashing GZDoom softly...");
+	}
+	override void Tick(){
+		// Right, so.. I'm gonna.. make this guy immediately die as it spawns
+		// then on the DEATH(), I tell it throw. right. Here we go!
+		if(0 <= vel.x) {
+			vel.x--;
+			return;
+		}
+		
+		// yadi yada..
+		for(let i = 0; i < 10; i++) {
+			Destroy();
+			Die(self, self);
+		}
+		vel.z = 0; // bla bla stay in the air..
+		ThrowAbortException("Manually Soft-Crashing");
+	}
+}

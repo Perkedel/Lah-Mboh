@@ -1,0 +1,22 @@
+// (JOELwindows7) Oh yeah!
+gameinfo
+{
+	// Core of the core. Pro of the core of the core!
+	// who's that guy again?
+	addeventhandlers =
+		"DNB_werrorHandler"
+	
+	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
+}
+
+Episode MBOHTEST 
+{
+	name = "Lah Mboh?"
+}
+
+Map MBOHTEST "DNB Testoid"
+{
+	next = "MBOHTEST"
+	secretnext = "MAP31"
+	sky1 = "SKY0"
+}
