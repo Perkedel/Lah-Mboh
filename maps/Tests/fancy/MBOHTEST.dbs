@@ -10,12 +10,22 @@ maps
 		
 		resources
 		{
+			
+			resource0
+			{
+				type = 2;
+				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh\\yoinks\\GZDoom-Target-Dummy-main.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
-		defaultfloortexture = "FLOOR0_1";
+		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "STARTAN1";
-		defaultwalltexture = "STARTAN1";
-		defaultbottomtexture = "STARTAN1";
+		defaulttoptexture = "AQMETL12";
+		defaultwalltexture = "AQMETL12";
+		defaultbottomtexture = "AQMETL12";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -28,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -1196.561f;
-		viewpositiony = 613.6124f;
-		viewscale = 1.856458f;
+		viewpositionx = 2970.789f;
+		viewpositiony = 1319.873f;
+		viewscale = 0.1346633f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -41,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 512;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
