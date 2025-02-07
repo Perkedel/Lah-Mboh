@@ -30,6 +30,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource2
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -48,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 457.6711f;
-		viewpositiony = -528.092f;
-		viewscale = 1.758293f;
+		viewpositionx = -30.92345f;
+		viewpositiony = -1554.471f;
+		viewscale = 1.758292f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

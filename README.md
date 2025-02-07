@@ -34,6 +34,23 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
+## Second Ever *mega(will-it-be?)*WAD designed excslusively for FreeDoom
+
+> The second ever? What's the first?
+
+[THIS!](https://www.moddb.com/mods/freedoom-badss-editionmappack) from Backyard Badasses. 
+Yeah, the Jokewad talking about FreeDoom itself ft. crazy overcharged weapons replacing the main ones. 
+It also has special episode(s) too as well!
+
+Wait. I swear to God, I was initially intended this whole endeavour to **softly designed** for FreeDoom (which means you can use just `doom2.wad` if you prefer). 
+but I accidentally made it **exclusively designed** for FreeDoom instead (which means no more `doom2.wad` compatibility).  
+Blimey lmao, I used textures that turns out it's FreeDoom own thing haha! Too lazy to change back, too cool to avoid, such as tempered glass (`GLASS` textures).
+
+Uh.. I hope you okay with this right? At least FreeDoom is Gratis, Open Source (BSD Licensed), & Full Version..  
+And you just saw, it OutDoomed the Hell into Fraggelicious (OutPizza'd the Hut into Ristorante), surprisingly hehe.
+
+## iYEAHi
+
 Enough yapping! let's go ahead & see here around.
 
 ## How to Install?!?!?!?
@@ -50,19 +67,19 @@ See [**`INSTALL.md`**](INSTALL.md) to get started.
 ## What's with the name?
 
 This entire project was supposedly named `I don't know man` something: `idkman`. But of course, you just saw it touches id software 
-trademark which can cause whole confusion, which is big no no, we are not affiliated with id in anyway.  
+trademark which can cause whole confusion, which is a big no no, we are not affiliated with id, nor Bethesda, nor Zenimax in anyway.  
 So, let's translate this keyword into something else. 
 My mom comes from a region in Central Java, hence she speaks Javanese beside default (Indonesian) on her daily basis. 
-There you have it. `mboh` means `idk`. When someone ask about context and you have no idea how to properly answer the question, we shout `lah mboh?`.
+There you have it. `mboh` means `idk`. When someone ask about the context and you have no idea how to properly answer the question, we shout `lah mboh?`.
 
 ## You could just put whole level editing idea right in your `CVR_Stuffing`
 [`CVR_Stuffing`](https://github.com/Perkedel/CVR_Stuffing)
 
-That repository is already too big for this Doom stuffs, and considering the way people make GZDoom mods like that to be compiled as `.pk3` file & 
-basically Doom WAD making in general, it'd be more efficient to just place everything we do as its own repostory. 
-After this, we can make other repository as a patch complementing this main patch. PWAD after PWAD iyey!
+That repository is already too big for this Doom stuffs, and considering the way people make GZDoom mods like that, a WAD as a folder, to be compiled as `.pk3` file & 
+basically Modern Doom WAD making in general, it'd be more efficient to just place everything we do as its own repostory. 
+After this, we can make other repositories as a patch complementing this main patch (if necessary of course, No, everything non-replacing shall be here this PK3). PWAD after PWAD iyey!
 
-Now, for the CVR stuffs, that's for Unity levels now (& possibly other XYZ Engine Games that requires bloatware project files not just Unity). And let's put that aside.
+Now, for the CVR stuffs, that's for Unity levels now (& possibly other XYZ Engine Games that requires bloatware project files not just Unity, such as Unreal etc.). And let's put that aside.
 
 ## Ahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
@@ -76,3 +93,5 @@ Assets (which we drew ourselves): CC4.0-BY-SA
 > [!WARN]
 > Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
+
+Website: https://perkedel.netlify.app (the Doom special page maybe made if there is demand, idk).
