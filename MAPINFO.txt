@@ -18,5 +18,5 @@ Map MBOHTEST "DNB Testoid"
 {
 	next = "MBOHTEST"
 	secretnext = "MAP31"
-	sky1 = "SKY0"
+	sky1 = "SKY1"
 }

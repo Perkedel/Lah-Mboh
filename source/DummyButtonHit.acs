@@ -1,0 +1,18 @@
+// Here's dummy for the button projectile impact & so on.
+// (JOELwindows7)
+#library "DummyButtonHit"
+#include "zcommon.acs"
+
+script "DummyButtonHit" (void) {
+	// See Tekish CrosshairHP from SimpleHUDAddon
+	// https://github.com/Tekkish/CrosshairHP/blob/c0acef8e676c64fcb57f8202c6749e3c3715b767/source/crosshairhp.acs#L210
+	// https://forum.zdoom.org/viewtopic.php?t=60356
+	// https://github.com/Tekkish/SimpleHUDAddons/releases/latest
+	//Log(s:"HIT!: ", n:getUserCvarString(PlayerNumber(),"class"), s:"(DETERMINATION: ", n:PlayerNumber(),s:")");
+	//Log(s:"HIT!: ", n:PlayerClass(PlayerNumber), s:"(DETERMINATION: ", n:PlayerNumber(),s:")");
+	Log(s:"HIT!: ", 
+		s:GetActorProperty(PlayerNumber(),APROP_NameTag), 
+		s:" (DET: ", n:PlayerNumber(),s:") -> ",
+		s:GetActorProperty(PlayerNumber(),APROP_Damage),s:"");
+	// DET = Determination. Undertale & Deltarune. This is you controling the body.
+}

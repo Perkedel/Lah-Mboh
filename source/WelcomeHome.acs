@@ -1,0 +1,56 @@
+// Okay, so to greet everyone that arrives home..
+// (JOELwindows7)
+#library "WelcomeHome"
+#include "zcommon.acs"
+
+script "WelcomeHome" (void)
+{
+	// Greet player based on class!!!
+	str label = "";
+	str extra_talk = "";
+	int set_second = 5.0;
+	
+	// DOOM (Default
+	if(CheckActorClass(PlayerNumber(),"DoomPlayer")) {label = "Doomguy";extra_talk="";}
+	
+	// Digital Cafe's Chex Quest
+	else if(CheckActorClass(PlayerNumber(),"ChexPlayer")) {label = "Chex Hero";extra_talk="We've contained all the slimes.\nEnjoy your breakfast & so on, coz your mission may continues.. tomorrow, idk.";}
+	
+	// Hexen
+	else if(CheckActorClass(PlayerNumber(),"FighterPlayer")) {label = "Mighty Fighter";extra_talk="";} // Fighter
+	else if(CheckActorClass(PlayerNumber(),"ClericPlayer")) {label = "Agile Cleric";extra_talk="";} // Cleric
+	else if(CheckActorClass(PlayerNumber(),"MagePlayer")) {label = "Feisty Mage";extra_talk="";}  // Mage
+	// shit idk what word even. Anyone speak medieval EN & related?
+	
+	// Heretic
+	else if(CheckActorClass(PlayerNumber(),"HereticPlayer")) {label = "Superb Heretic";extra_talk="";} // Heretic
+	
+	// Strife
+	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label = "Heroic.. hero!!";extra_talk="";}
+	// he got a name right?
+	
+	// Hacx
+	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label = "Heroic.. HACX!!";extra_talk="uhh sorry. There's alot of name I need to know.";}
+	
+	// Korp's FurDoom! https://korp-kat.itch.io/furdoom
+	else if(CheckActorClass(PlayerNumber(),"FurDaisy")) {label = "Daisy";extra_talk="Iyeay Furry iyey.";} // Yes, idk, that Daisy the rabbit, Doomguy's pet. Named after or not idk.
+	// fun fact, Joel's fursona is a Protogen! pls port TriwaveBZ's Protogen to Doom! I got the backup file, it's in X0p1r4t3 on Odysee.. I'll tell you the newsauce later.
+	// If you got it, pls ensure to allow colorspace parts as usual.
+	
+	// PillowBlaster's Russian Overkill https://forum.zdoom.org/viewtopic.php?t=29915
+	else if(CheckActorClass(PlayerNumber(),"Yuri")) {label = "Comrade Yuri";extra_talk="";}// Cyborg 
+	else if(CheckActorClass(PlayerNumber(),"Alosha")) {label = "Comrade Alosha";extra_talk="";}// Commando
+	else if(CheckActorClass(PlayerNumber(),"Marty")) {label = "Comrade Marty";extra_talk="";}// Tresagent
+	
+	// pa1nki113r's Project Brutality https://github.com/pa1nki113r/Project_Brutality
+	else if(CheckActorClass(PlayerNumber(),"PB_PlayerPawn")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
+	
+	//Sergeant Mk. IV's Brutal Doom https://www.moddb.com/mods/brutal-doom
+	else if(CheckActorClass(PlayerNumber(),"BDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Rip and Tear? Iyeah!";set_second = 8.0;}
+	
+	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
+	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
+	
+	else {label = "Gamer";}
+	HudMessage(s:"Welcome home, ", s:label,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
