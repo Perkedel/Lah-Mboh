@@ -1,4 +1,4 @@
 // Sond Effecks
 
 // I crashed
-werror/vmabort = "sounds/leszek_gameover.wav" //when GZDoom duar crash, play Leszek Szary's gameover!
+werror/vmabort "sounds/leszek_gameover.wav" //when GZDoom duar crash, play Leszek Szary's gameover!

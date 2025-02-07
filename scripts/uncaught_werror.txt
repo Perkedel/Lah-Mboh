@@ -39,7 +39,7 @@ class DNB_werrorHandler : DNB_werrorUncaught {
 	// How the fuck did you guys do it?!
 	
 	override void OnAbort(){
-		werror_say = "You've gone goofed up boy/gal!";
+		werror_say = "You've gone goofed up boy/gal/buddy!";
 		console.printf("\c[red]%s", werror_say);
 		//console.printf("\c[fire]You've gone goofed up boy/gal!");
 		
@@ -88,6 +88,13 @@ class ManualCrash : Actor {
 			Die(self, self);
 		}
 		vel.z = 0; // bla bla stay in the air..
-		ThrowAbortException("Manually Soft-Crashing");
+		crashNow();
+	}
+	void crashNow(){
+		//if ( player != players[consoleplayer] ) return;
+		//ThrowAbortException("Manually Soft-Crashing: blame = %s", player.GetUserName());
+		ThrowAbortException("Manually Soft-Crashing: ");
+		//ThrowAbortException("Manually Soft-Crashing: blame = %s", PlayerNumber());
+		// see Marisa Kirisame w_butan.asc (https://archive.org/details/abort_m)
 	}
 }
