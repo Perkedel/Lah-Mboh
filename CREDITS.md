@@ -2,10 +2,12 @@
 
 For the thing we've yoinked
 
-> [!NOTE] **FFS, VSCODE, CAN YOU PLS FCKING STOP ERRORING UNTIL I CAN ZED**  
+> [!NOTE] 
+> **FFS, VSCODE, CAN YOU PLS FCKING STOP ERRORING UNTIL I CAN ZED**  
 > **ON FUCKING WINDOWS?!?!??!?!?!??!?!?!??!**
 
-> [!NOTE] Pls make sure credit is tidy. Don't turn this into Dump link, thancc!
+> [!NOTE] 
+> Pls make sure credit is tidy. Don't turn this into Dump link, thancc!
 
 ## Addons
 
@@ -13,7 +15,8 @@ For the thing we've yoinked
 
 ## Reuses
 
-> [!NOTE] This had to be the worst idea ever. Look, I was looking to clean room 
+> [!NOTE] 
+> This had to be the worst idea ever. Look, I was looking to clean room 
 > to avoid bullshits. But you know that's hard. Say, they're talented, and 
 > the invention is CORE. That's lowest hell if they turns out to be.. asshole.
 > Only way is to fork it those. If.. they *`made a mistake licensing it with caveats against them in event of their assholeness`* lol.
