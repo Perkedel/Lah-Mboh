@@ -3,7 +3,7 @@
 
 Unbullshitments included! Please immediately create Issue for any still-bullshat stuffs found!
 
-> [!WARN] 
+> [!WARNING] 
 > SFW ONLY! This repo can contain everything including: 
 > - swearings
 > - insults

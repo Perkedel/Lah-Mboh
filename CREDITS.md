@@ -6,7 +6,7 @@ For the thing we've yoinked
 > **FFS, VSCODE, CAN YOU PLS FCKING STOP ERRORING UNTIL I CAN ZED**  
 > **ON FUCKING WINDOWS?!?!??!?!?!??!?!?!??!**
 
-> [!NOTE] 
+> [!IMPORTANT] 
 > Pls make sure credit is tidy. Don't turn this into Dump link, thancc!
 
 ## Addons
