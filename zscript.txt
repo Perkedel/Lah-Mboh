@@ -1,6 +1,7 @@
 // DEFINE THEM ALL!!!
 // (JOELwindows7)
-version "4.0"
+version "4.10"
 
 // crashes
 #include "scripts/uncaught_werror.txt"
+#include "scripts/JekyllPayneDummy.txt"

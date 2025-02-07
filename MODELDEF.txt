@@ -1,0 +1,16 @@
+// THREE DEE MODELS YEAYYAYAYYAYAYAYYAYAYYA
+// JOELwindows7
+
+// Jekyll Grim Payne stuffs
+Model JekyllPShootingRangeDummy
+{
+    path "models/dummyJekyllP"
+    model 0 "dummy.obj"
+    skin 0 "dummy.png"
+    USEACTORPITCH
+    USEACTORROLL
+    angleoffset 90
+    scale 10 10 12
+
+    Frame AMRK A 0 0
+}

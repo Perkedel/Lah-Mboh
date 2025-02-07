@@ -1,0 +1,5 @@
+// Load the animdefs people!!!
+// JOELwindows7
+
+// Jekyll Grim Payne stuffs
+CanvasTexture TargetDummyDamage 192 32

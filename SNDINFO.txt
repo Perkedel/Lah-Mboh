@@ -2,3 +2,6 @@
 
 // I crashed
 werror/vmabort "sounds/leszek_gameover.wav" //when GZDoom duar crash, play Leszek Szary's gameover!
+
+// Jekyll Grim Payne
+targetdummy/pain "sounds/camelmoan.ogg"

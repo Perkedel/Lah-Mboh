@@ -16,9 +16,9 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 
 
 ## Dependencies:
-- IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD); or [~~`doom2.wad`~~ (**PAID**, Werror! Incomplete Texture!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
-- Source Port: [GZDoom latest](https://zdoom.org/downloads)
-- Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner)
+- IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [~~`doom2.wad`~~ (**PAID**, Werror! Incomplete Texture!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
+- Source Port: [GZDoom latest](https://zdoom.org/downloads).
+- Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl).
 
 ## Steps
 

@@ -1,0 +1,5 @@
+// huh? what is this file for?
+// JOELwindows7
+
+// JekyllPayneStuffs
+WoodenTranslation = "0:255=%[0.43,0.29,0.00]:[1.43,0.98,0.06]"

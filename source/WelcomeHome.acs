@@ -51,6 +51,10 @@ script "WelcomeHome" (void)
 	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
 	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
 	
+	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
+	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again. Jesus Christ! Just stay on the ZZZverse already, Mr. Giant Hollow ball..";set_second = 12.0;}
+	
+	// If nothing else matches..
 	else {label = "Gamer";}
 	HudMessage(s:"Welcome home, ", s:label,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }

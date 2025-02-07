@@ -66,7 +66,13 @@ Now, for the CVR stuffs, that's for Unity levels now (& possibly other XYZ Engin
 
 ## Ahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
+See [**`CREDITS.md`**](CREDITS.md) for attributions of stuffs we've used, referenced, & even yoinked.
+
 by JOELwindows7  
 Perkedel Technologies  
-Code (which we wrote from scratch): GNU GPL v3
+Code (which we wrote from scratch ourselves): GNU GPL v3
 Assets (which we drew ourselves): CC4.0-BY-SA
+
+> [!WARN]
+> Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited
+> DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.

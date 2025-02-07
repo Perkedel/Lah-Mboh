@@ -7,6 +7,7 @@ class DNB_werrorUncaught : StaticEventHandler {
 	// that's completely new & uncharted.
 	// so umm, ehehe..
 	override void UiTick () {
+		super.UiTick();
 		if(0 < level.time && NULL == players [consoleplayer].mo) {
 			if(0 == abort_timer) {
 				OnAbort();
@@ -39,6 +40,7 @@ class DNB_werrorHandler : DNB_werrorUncaught {
 	// How the fuck did you guys do it?!
 	
 	override void OnAbort(){
+		super.OnAbort();
 		werror_say = "You've gone goofed up boy/gal/buddy!";
 		console.printf("\c[red]%s", werror_say);
 		//console.printf("\c[fire]You've gone goofed up boy/gal!");
@@ -47,6 +49,7 @@ class DNB_werrorHandler : DNB_werrorUncaught {
 	}
 	
 	override void AbortTick (int timer) {
+		super.AbortTick(timer);
 		// This is Update(float delta)!!!
 	}
 	
@@ -66,15 +69,16 @@ class DNB_werrorHandler : DNB_werrorUncaught {
 // let's also yoink the VmAbort actor as well.
 class ManualCrash : Actor {
 	override void BeginPlay(){
-		//super();
+		super.BeginPlay();
 		// Start() or idk whatever!
 		console.printf("\c[fire]Okay. Now please get out of the console to commence the crash,\nor delete this actor immediately to cancel.");
 	}
 	override void PostBeginPlay(){
-		//super();
+		super.PostBeginPlay();
 		console.printf("\c[brick]Crash Confirmed. Now crashing GZDoom softly...");
 	}
 	override void Tick(){
+		super.Tick();
 		// Right, so.. I'm gonna.. make this guy immediately die as it spawns
 		// then on the DEATH(), I tell it throw. right. Here we go!
 		if(0 <= vel.x) {

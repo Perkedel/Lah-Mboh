@@ -4,9 +4,15 @@ gameinfo
 	// Core of the core. Pro of the core of the core!
 	// who's that guy again?
 	addeventhandlers =
+		"JekyllPShootingRangeHandler",
 		"DNB_werrorHandler"
-	
+		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
+}
+
+DoomEdNums
+{
+	15209 = JekyllPShootingRangeDummy
 }
 
 Episode MBOHTEST 

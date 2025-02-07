@@ -11,7 +11,7 @@ For the thing we've yoinked
 
 ## Addons
 
-- [Shooting Range Dummy](https://forum.zdoom.org/viewtopic.php?t=77948). Jekyll Grim Payne. MIT License. [SOURCE CODE](https://github.com/jekyllgrim/GZDoom-Target-Dummy)
+- [Shooting Range Dummy](https://forum.zdoom.org/viewtopic.php?t=77948). Jekyll Grim Payne. **MIT License**. [SOURCE CODE](https://github.com/jekyllgrim/GZDoom-Target-Dummy)
 
 ## Reuses
 
