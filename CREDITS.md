@@ -31,6 +31,7 @@ For the thing we've yoinked
 > And remember, not all case of the yoinking is about revenge though. Some are generally too cool to miss, and I gotta learn how did you guys did it.
 
 - [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. *Pls lemme know if there happen a bullshit regarding this. If that happen, right now my order is not to purge history about this, idk, just delete idk.*
+	- VMAbort Handler. Never seen a PWAD ever think to have VMAbort detector. It plays music, and spits the lyric & ASCII image text onto the console everytime the GZDoom soft crashed.
 
 ## Sounds
 

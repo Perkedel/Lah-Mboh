@@ -35,20 +35,20 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
-## Second Ever *mega(will-it-be?)*WAD designed excslusively for FreeDoom
+## Second Ever *mega(will-it-be?)* WAD designed excslusively for FreeDoom
 
-> The second ever? What's the first?
+> The second ever? What was the first?
 
-[THIS!](https://www.moddb.com/mods/freedoom-badss-editionmappack) from Backyard Badasses. 
+[**THIS!**](https://www.moddb.com/mods/freedoom-badss-editionmappack) from Backyard Badasses. 
 Yeah, the Jokewad talking about FreeDoom itself ft. crazy overcharged weapons replacing the main ones. 
-It also has special episode(s) too as well!
+It also has special episodes too as well!
 
 Wait. I swear to God, I was initially intended this whole endeavour to **softly designed** for FreeDoom (which means you can use just `doom2.wad` if you prefer). 
 but I accidentally made it **exclusively designed** for FreeDoom instead (which means no more `doom2.wad` compatibility).  
 Blimey lmao, I used textures that turns out it's FreeDoom own thing haha! Too lazy to change back, too cool to avoid, such as tempered glass (`GLASS` textures).
 
 Uh.. I hope you okay with this right? At least FreeDoom is Gratis, Open Source (BSD Licensed), & Full Version..  
-And you just saw, it OutDoomed the Hell into Fraggelicious (OutPizza'd the Hut into Ristorante), surprisingly hehe.
+And you just saw, it OutDoomed the Hell into Fraggelicious (**OutPizza'd the Hut into Ristorante**), surprisingly hehe.
 
 ## iYEAHi
 
@@ -88,10 +88,10 @@ See [**`CREDITS.md`**](CREDITS.md) for attributions of stuffs we've used, refere
 
 by JOELwindows7  
 Perkedel Technologies  
-Code (which we wrote from scratch ourselves): GNU GPL v3
+Code (which we wrote from scratch ourselves): GNU GPL v3  
 Assets (which we drew ourselves): CC4.0-BY-SA
 
-> [!WARN]
+> [!WARN] 
 > Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
 
