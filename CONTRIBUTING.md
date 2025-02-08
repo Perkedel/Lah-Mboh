@@ -17,10 +17,15 @@ we have stood the rule that ensure that the base right here is free from far fet
 ### Special only for this endeavour, you are allowed to submit anything into this PK3:
 
 - Insults & Rants. Complete with uncensored swearing.
+	- Disstrack.
+	- Broken mods. [The sun is leaking](https://youtu.be/SkHo4wCmrEQ). a rant about oh so broken HL2 mod. Tragically, due to this callout, the mod dev added malicious measures to make the entire HL2 EXE (with that Overcharged mod installed) crash if it was played using those Steam accounts, which are noclick, Radiation Hazard, & friends. see [video](https://youtu.be/YcvsbZ18izA) from noclick for context.
+	- Copyright Takedowns. such as Viacom Bersalah (Viacom the Blamed), a rant about Spongebob Massacre WAD takedown by Paramount Pictures which is a subsidiary of Viacom.
 - German Chancelors & its symbols. **Be careful however, despite this all being about Wolfenstein, the region DE (Germany) still dislike this idea**. Therefore we recommend you to refrain from ever involving those symbols & depiction. If you have to, it is best to omit those elements.
-- Reproductive Jokes. Example:
+- Reproductive Jokes (used sparingly). Example:
 	- Cryptic Genitalia depiction & discussions & used as a joke or rant.
-	- Jiggly concealed. Such as ones found in Hoyoverse Zenless Zone Zero very prominently.
+		- [NUTS.wad](https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/nuts). A Map replacement PWAD, where this map contains over thousands of monsters. Waking them up puts your skill & even the Source Ports to the Benchmarks. Therefore `NUTS` here means `Insane` / `gila` rather than the scrotum.
+	- Jiggly Sexiness concealed & semi-concealed. Such as ones found in Hoyoverse Zenless Zone Zero very prominently. Not even hiding the fact at all.
+	- sussy baka! Reproductive inuendos as long it is 10 step before the *showtime*.
 - etc.
 
 ### But you are not allowed to submit into this PK3:
@@ -29,6 +34,8 @@ we have stood the rule that ensure that the base right here is free from far fet
 	- H
 	- Encounter
 - Derogatory N-words. This neither covered even in NSFW extension. use our Derogatory extension PWAD `wok-wak-wek-wok` (pls link) (small note: no color derogatory allowed at all there even! only G-word I think!)
+- Death Threats. No Extension PWAD.
+- Doxxing. No Extension PWAD. Even to public companies (with known HQ locations & contacts) where context & intent is to cause raid & also compromise anyone safety whose completely nothing to do with the drama incident, in-all eitherways.
 
 ## Always fork from the development branch
 
@@ -41,3 +48,5 @@ When you're done, issue Pull Request your fork back to us. We will review & when
 ## Use Issue much less
 
 Issue is designed for bug reporting & too small too fork for submissions.
+
+## Iyeah

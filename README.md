@@ -35,7 +35,9 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
-## Second Ever *mega(will-it-be?)* WAD designed excslusively for FreeDoom
+## Second Ever Patch WAD designed excslusively for FreeDoom
+
+*hmm, mega? will it be?*
 
 > The second ever? What was the first?
 
@@ -56,7 +58,9 @@ Enough yapping! let's go ahead & see here around.
 
 ## How to Install?!?!?!?
 
-This Mod is a PWAD and you need to have a copy of the IWAD.
+This Mod is a PWAD and you need to have a copy of a Doom IWAD.
+
+Use [FreeDoom](https://freedoom.github.io/)!
 
 See [**`INSTALL.md`**](INSTALL.md) to get started.
 
