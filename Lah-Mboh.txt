@@ -1,0 +1,76 @@
+===========================================================================
+Archive Maintainer      : Rolling Release! May create release occassionally called Snapshot Release
+Update to               : Lah-Mboh.pk3
+Advanced engine needed  : GZDoom since v4.10.0, targeting whatever the latest
+Primary purpose         : Single or Coop play, Deathmatch, Test & Random Episodes idk.
+===========================================================================
+Title                   : Lah Mboh?
+Filename                : Lah-Mboh.pk3
+Release date            : 2025-02-07
+Author                  : JOELwindows7
+Email Address           : [redacted]
+Other Files By Author   : 
+Misc. Author Info       : 
+
+Description             : See README.md inside this PWAD PK3 for full descriptions
+
+Additional Credits to   : See CREDITS.md inside this PWAD PK3
+===========================================================================
+* What is included *
+
+New levels              : 1, & counting
+Sounds                  : Yes
+Music                   : Yes / No
+Graphics                : Yes / No
+Dehacked/BEX Patch      : Yes, I think... there is serveral ZScript StaticHandlers & stuffs..
+Demos                   : No (Pls somebody make Demo to Scripted Map! All motions recorded instead of input!)
+Other                   : Yes (ZScript, ACS)
+Other files required    : See INSTALL.md for full list of dependencies
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MBOHTEST, etc.
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : No
+Difficulty Settings     : Yes / Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Serveral Hours, Counting because this is Rolling Release
+Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code
+Known Bugs              : Only works with the Freedoom IWAD (which is freedoom2.wad) due to exclusive textures & assets used in many of these maps.
+May Not Run With        : Idk, too old version of GZDoom
+Tested With             : GZDoom since v4.10.0
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+Licensed
+Code that I wrote myself except yoink: GNU GPL v3 (https://www.gnu.org/licenses/gpl-3.0.html)
+Assets that I drew myself except yoink: CC4.0-BY-SA (https://creativecommons.org/licenses/by-sa/4.0/)
+View each yoinked files' license in CREDITS.md
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://perkedel.netlify.app
+FTP sites: -
+GitHub: https://github.com/Perkedel/Lah-Mboh

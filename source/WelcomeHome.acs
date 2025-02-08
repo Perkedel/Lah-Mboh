@@ -37,6 +37,12 @@ script "WelcomeHome" (void)
 	// fun fact, Joel's fursona is a Protogen! pls port TriwaveBZ's Protogen to Doom! I got the backup file, it's in X0p1r4t3 on Odysee.. I'll tell you the newsauce later.
 	// If you got it, pls ensure to allow colorspace parts as usual.
 	
+	//HyperUltra64's Treasure Tech https://forum.zdoom.org/viewtopic.php?t=66995
+	else if(CheckActorClass(PlayerNumber(),"TreasureGuy")) {label = "Treasure guy";extra_talk="Good news, buddy! we had all the treasures combined right here on the Weapon Test room left there, & everywhere else around here iyeay!";set_second = 5.0;}
+	
+	// Backyard Badasses Freedoom Badass Edition https://www.moddb.com/mods/freedoom-badss-editionmappack
+	else if(CheckActorClass(PlayerNumber(),"BadassPlayer")) {label = "Badass guy";extra_talk="Ooo! Desired testing the bad*ssness I see. Go ahead, we got some badass stuffs around here iyeah!";set_second = 5.0;}
+	
 	// PillowBlaster's Russian Overkill https://forum.zdoom.org/viewtopic.php?t=29915
 	else if(CheckActorClass(PlayerNumber(),"Yuri")) {label = "Comrade Yuri";extra_talk="";}// Cyborg 
 	else if(CheckActorClass(PlayerNumber(),"Alosha")) {label = "Comrade Alosha";extra_talk="";}// Commando
@@ -45,16 +51,32 @@ script "WelcomeHome" (void)
 	// pa1nki113r's Project Brutality https://github.com/pa1nki113r/Project_Brutality
 	else if(CheckActorClass(PlayerNumber(),"PB_PlayerPawn")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
 	
-	//Sergeant Mk. IV's Brutal Doom https://www.moddb.com/mods/brutal-doom
+	//Sergeant Mk. IV's Brutal Doom https://www.moddb.com/mods/brutal-doom . Maybe also other Brutals if there is?
 	else if(CheckActorClass(PlayerNumber(),"BDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Rip and Tear? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BStrifer")) {label = "Strifeguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Sigil Hunt? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BChexer")) {label = "Chex Hero";extra_talk="You can relax now, buddy. There's no need pouring energy drink into your breakfast now in this house.\nUnless of course you wanna train for the next Rescue Mission? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;}
+	/*
+	Pls verify!
+	https://forum.zdoom.org/viewtopic.php?t=35071 Brutal Strife
+	(Not Yet Exist) Brutal Chex. This is for your idea, Sergeant! I think..
+	(Not Yet Exist) Srutal Bex. Fucking stop, pls!!
+	(Not Yet Exist) Brutal Monster Girl Quest 3D. STAAAAAAAAAAAHP!!!!!!!!!!!!
+	(Any) Brutal XYZ. Jesus Christ!, what if Sergeant see all these?! Don't you know toxicity is not just on Doom forums but also everywhere else hence it's basically realm agnostic? No no, you're cool Sergeant, yeah so, keep being cool.
+	*/
 	
 	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
 	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
+	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
 	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again. Jesus Christ! Just stay on the ZZZverse already, Mr. Giant Hollow ball..";set_second = 12.0;}
 	
+	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
+	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, so it's male heartbeat tho..\nWell if you curious, I can call him now?..";set_second = 12.0;}
+	
 	// If nothing else matches..
-	else {label = "Gamer";}
+	else {label = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
 	HudMessage(s:"Welcome home, ", s:label,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }

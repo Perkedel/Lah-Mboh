@@ -35,7 +35,7 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
-## Second Ever Patch WAD designed excslusively for FreeDoom
+## Second Ever Patch WAD designed exclusively for FreeDoom
 
 *hmm, mega? will it be?*
 
