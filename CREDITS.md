@@ -15,7 +15,7 @@ For the thing we've yoinked
 
 ## Dependencies
 
-- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse.
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload.
 
 ## Reuses
 

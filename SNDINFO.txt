@@ -5,3 +5,18 @@ werror/vmabort "sounds/leszek_gameover.wav" //when GZDoom duar crash, play Lesze
 
 // Jekyll Grim Payne
 targetdummy/pain "sounds/camelmoan.ogg"
+
+// Quit Sounds
+/*
+	mmm, there's a problem here.
+	https://www.doomworld.com/forum/topic/60433-what-sounds-play-upon-exit/
+	You sure redefining one of these overwrites the base IWAD's & hardcodes?
+	We are not interested doing that. We were supposed to append those!
+	...
+	https://forum.zdoom.org/viewtopic.php?p=203219 argh fuck. pls add that feature!
+	append quit sound!!!!!!!!!!!!!!!!!!
+*/
+/*
+$random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee }
+$random menu/quit2 { vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee }
+*/
