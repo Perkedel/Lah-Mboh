@@ -4,7 +4,7 @@ gameinfo
 	// Core of the core. Pro of the core of the core!
 	// who's that guy again?
 	addeventhandlers =
-		//"JekyllPShootingRangeHandler",
+		"JekyllPShootingRangeHandler",
 		"DNB_werrorHandler"
 	
 	addquitmessages =
@@ -12,15 +12,35 @@ gameinfo
 		"$HEADSUPTOXICITY",
 		"$GIVESTARMBOH",
 		"$CENARUSAT",
+		"$DTBEEF",
+		"$NOMOREHOLLOWPLS",
+		"$HYPRLOCK",
+		"$PCRAKITNABUNG",
+		"$MIRRORWALL0",
+		"$MIRRORWALL1",
+		"$JUSTBUILDPC",
+		"$WEARMASKER",
+		"$GOTBANNED",
+		"$QUITTOPOOP",
+		"$AINOCHEATPLS",
+		"$SCARIEROUTTHERE",
+		"$ALREADYBALATRO",
+		"$DRPDJUDIONLINE",
+		"$DIDNTBUYDOOMPACK",
+		"$HUAWEIBANNED",
+		"$STARBUCKCOSTEQ",
 		"$WHERDGOING"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 }
 
+// NOT COMPATIBLE WITH ZANDRONUM HAHAHAHAHAHA, fug.
+// https://www.doomworld.com/forum/topic/123676-custom-monster-in-mapinfo-for-zandronum-fails-with-doomednums-unknown-top-level-keyword/
 DoomEdNums
 {
 	15209 = JekyllPShootingRangeDummy
 }
+// I'm tired of this bullshit. Just lemme build level already!
 
 Episode MBOHTEST 
 {

@@ -13,16 +13,6 @@ maps
 			
 			resource0
 			{
-				type = 2;
-				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh\\yoinks\\GZDoom-Target-Dummy-main.pk3";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-			
-			resource1
-			{
 				type = 1;
 				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
 				option1 = 0;
@@ -31,7 +21,7 @@ maps
 				requiredarchives = "";
 			}
 			
-			resource2
+			resource1
 			{
 				type = 2;
 				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
@@ -58,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 5668.925f;
-		viewpositiony = -3482.91f;
-		viewscale = 0.8003134f;
+		viewpositionx = 13484.71f;
+		viewpositiony = -2239.961f;
+		viewscale = 0.137858f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -71,7 +61,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 512;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;

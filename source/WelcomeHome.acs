@@ -66,6 +66,22 @@ script "WelcomeHome" (void)
 	(Any) Brutal XYZ. Jesus Christ!, what if Sergeant see all these?! Don't you know toxicity is not just on Doom forums but also everywhere else hence it's basically realm agnostic? No no, you're cool Sergeant, yeah so, keep being cool.
 	*/
 	
+	// Skelegant!!!!!!!!!!!!!!!!!!!!!!!!!!!!! https://skelegant.itch.io/
+	/*
+	Pvt. Stone
+	Gorenuggets
+	One Hell of a Marine
+	Aphrodite
+	Eraser Weapons
+	Black Magwell
+	Extinction Warrior: Typhon
+	Genocide Device Echidna
+	https://forum.zdoom.org/viewtopic.php?t=59072 Nun with a gun!!!
+	*/
+	else if(CheckActorClass(PlayerNumber(),"StonePlayer")) {label = "Pvt. Stone";extra_talk="";} // Private Stone
+	else if(CheckActorClass(PlayerNumber(),"RobitPlayer")) {label = "Echidna";extra_talk="";} // GD Echidna
+	// Aphrodite does not replace class!
+	
 	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
 	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
 	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
@@ -74,7 +90,7 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again. Jesus Christ! Just stay on the ZZZverse already, Mr. Giant Hollow ball..";set_second = 12.0;}
 	
 	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
-	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, so it's male heartbeat tho..\nWell if you curious, I can call him now?..";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
 	
 	// If nothing else matches..
 	else {label = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
