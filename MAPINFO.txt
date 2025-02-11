@@ -29,6 +29,7 @@ gameinfo
 		"$DIDNTBUYDOOMPACK",
 		"$HUAWEIBANNED",
 		"$STARBUCKCOSTEQ",
+		"$SURROUNDLACK",
 		"$WHERDGOING"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
@@ -50,6 +51,6 @@ Episode MBOHTEST
 Map MBOHTEST "DNB Testoid"
 {
 	next = "MBOHTEST"
-	secretnext = "MAP31"
+	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 }
