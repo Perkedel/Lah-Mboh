@@ -86,6 +86,13 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"RobitPlayer")) {label = "Echidna";extra_talk="";} // GD Echidna
 	// Aphrodite does not replace class!
 	
+	//Pyspy!!!!!!!
+	// Delta Doom https://www.moddb.com/mods/doom-delta/
+	else if(CheckActorClass(PlayerNumber(),"Delta_LoreleiPlayer")) {label = "Sgt. Chen";extra_talk="";} // Lorelei Chen
+	else if(CheckActorClass(PlayerNumber(),"Delta_JohnPlayer")) {label = "Comrade John";extra_talk="";} // John Pietrovich
+	else if(CheckActorClass(PlayerNumber(),"Delta_DimitriPlayer")) {label = "Comrade Dimitri";extra_talk="";} // Dimitri Paramo
+	else if(CheckActorClass(PlayerNumber(),"Delta_ThiPlayer")) {label = "Corp. Thi";extra_talk="";} // Thi Barret
+	
 	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
 	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
 	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}

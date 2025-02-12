@@ -30,6 +30,9 @@ gameinfo
 		"$HUAWEIBANNED",
 		"$STARBUCKCOSTEQ",
 		"$SURROUNDLACK",
+		"$COPYTHESGAME",
+		"$CALLSUSFACIST",
+		"$IFORGOR",
 		"$WHERDGOING"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
@@ -52,5 +55,17 @@ Map MBOHTEST "DNB Testoid"
 {
 	next = "MBOHTEST"
 	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+}
+
+Episode FEATHERDM
+{
+	name = "Legacy of Feathers"
+}
+
+map CAPTURTN "Capturation"
+{
+	next = "CAPTURTN"
+	secretnext = "CAPTURTN"
 	sky1 = "SKY1"
 }
