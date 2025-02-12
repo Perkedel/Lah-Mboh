@@ -4,7 +4,7 @@ gameinfo
 	// Core of the core. Pro of the core of the core!
 	// who's that guy again?
 	addeventhandlers =
-		"JekyllPShootingRangeHandler",
+		//"JekyllPShootingRangeHandler", //This netevent quite buggy on such as La Tailor Girl it triggers every tick or something
 		"DNB_werrorHandler"
 	
 	addquitmessages =
@@ -30,9 +30,10 @@ gameinfo
 		"$HUAWEIBANNED",
 		"$STARBUCKCOSTEQ",
 		"$SURROUNDLACK",
-		"$COPYTHESGAME",
+		"$COPYTHEGAME",
 		"$CALLSUSFACIST",
 		"$IFORGOR",
+		"$SOCIALDANGEROUS",
 		"$WHERDGOING"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.

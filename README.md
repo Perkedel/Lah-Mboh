@@ -14,6 +14,7 @@ Unbullshitments included! Please immediately create Issue for any still-bullshat
 > - furry
 > - reproductive part jokes 
 > - etc.
+> 
 > but **NOT**:
 > - actual pornography
 > - derogatory N-words.  

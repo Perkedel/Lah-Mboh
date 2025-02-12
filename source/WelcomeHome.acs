@@ -97,6 +97,11 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
 	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
 	
+	// I mean, yeah. Hege Cactus' La Tailor Girl https://forum.zdoom.org/viewtopic.php?f=43&t=58343
+	else if(CheckActorClass(PlayerNumber(),"TailorPlayer")) {label = "Daina";extra_talk="You need some stitches? Well sorry, we ran out of all Ademin Refill packs yesterday. But Hymatt's Latex still on stock & just scaled up production yeah!\nDon't ask, it was power related companies & battery workshops.\nHymatt's rubbers & silicons are the best isolators apparently, and the only material with fire resistance & hypoalergent properties";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"SewiePlayer")) {label = "Sewie";extra_talk="Watch where you going, sweetie! There's alot of brittle stuffs around here!\nNah, just kidding. Break all of them, We have the blueprint to respawn them again.";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"NariPlayer")) {label = "Nari";extra_talk="Sup, we got more arsenals you can install to, not just outfits.\nWe also even have.. human emulation module kits, so if curious, ask away!";set_second = 10.0;}
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again. Jesus Christ! Just stay on the ZZZverse already, Mr. Giant Hollow ball..";set_second = 12.0;}
 	

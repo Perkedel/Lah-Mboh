@@ -34,7 +34,7 @@ Showing the easy & quick ways
 - Once done, close again, then drag this project folder / pk3 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
 - Select the same IWAD then launch.
 
-> [!TIPS]
+> [!TIPS]  
 > It is highly recommended to use Doom launchers of your favourite to make mod selections easy.  
 > Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!
