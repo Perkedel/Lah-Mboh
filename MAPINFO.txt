@@ -34,6 +34,8 @@ gameinfo
 		"$CALLSUSFACIST",
 		"$IFORGOR",
 		"$SOCIALDANGEROUS",
+		"$PRAISEMIMA",
+		"$DONATRIGHTBROK",
 		"$WHERDGOING"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.

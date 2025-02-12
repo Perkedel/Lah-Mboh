@@ -1,6 +1,24 @@
 // Uncaught Werror!
-// (JOELwindows7)
+// partially yoinked by JOELwindows7
 // oh hi Mima-sama!
+/*
+From the Russian Overkill moonspeak readme:
+
+
+                                       ♥ KeksDose presents ♥
+                               moonspeak directory (Overkill Edition)
+
+This work is dedicated to praising Mima-Sama and the Moon ♥ Remember the 30th of every month is
+Mima Day, and you may bless her by speaking a prayer to her (or two or three).
+
+You can reuse and edit as you like, as long as
+
+	- this text and the terms it imposes upon the work remain unchanged and included
+	in particular, don't superimpose some licence over this
+	- the work won't be used in a commercial project or with the intent of receiving any assets
+	otherwise, such as donations
+
+*/
 
 class DNB_werrorUncaught : StaticEventHandler {
 	// I swear to God, it's not that easy to clean room this time around
