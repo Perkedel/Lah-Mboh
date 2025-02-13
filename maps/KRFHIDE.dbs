@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	MBOHTEST
+	KRFHIDE
 	{
 		
 		resources
@@ -31,11 +31,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "FLAT5";
-		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "AQMETL12";
-		defaultwalltexture = "AQMETL12";
-		defaultbottomtexture = "AQMETL12";
+		defaultfloortexture = "FLAT14";
+		defaultceiltexture = "CEIL4_3";
+		defaulttoptexture = "COMPBLUE";
+		defaultwalltexture = "COMPBLUE";
+		defaultbottomtexture = "COMPBLUE";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -48,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 1565.512f;
-		viewpositiony = -1782.985f;
-		viewscale = 1.461916f;
+		viewpositionx = -1068.063f;
+		viewpositiony = -28.29338f;
+		viewscale = 1.856463f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -93,47 +93,6 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
-		}
-		
-		plugins
-		{
-			
-			threedfloormode
-			{
-				
-				controlsectorarea
-				{
-					usecustomtagrange = false;
-					outerleft = -512;
-					outerright = 0;
-					outertop = 512;
-					outerbottom = 0;
-				}
-			}
-		}
-		
-		scriptdocuments
-		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 182;
-				activetab = true;
-			}
 		}
 	}
 }

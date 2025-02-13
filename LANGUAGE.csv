@@ -3,6 +3,105 @@ Hello World!,HELLO_WORLD,Test the hello world,Halo Dunia,,,,
 Goodbye Cruel World,GDBYCRLWRLD,Opposite of Hello World & used to delete save in AhiT,Selamat Tinggal Dunia yang Kejam,,,,
 ,,META NEA,,,,,
 https://github.com/Perkedel/Lah-Mboh,GITHBMBOH,Source Code URL,,,,,
+,,LEVEL NAMES,,,,,
+DNB Testoid,MBOHTEST,Test level & the Hub when you load episode Lah Mboh?,,,,,
+Kaorfa’s Hideout,KRFHIDE,Secret level test,Persembunyian Kaorfa,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,ENTER TEXT,,,,,
+"As you’ve pressed End Secret, 
+you suddenly got teleported to another level.
+You just saw the title: Kaorfa’s Hideout.
+
+You can’t believe what you just went into. 
+And perhaps, this might only be just one of them.",ENTERKRFHIDE,When you enter Kaorfa’s hideout,"Saat Anda menekan End Secret, 
+seketika itu juga Anda diteleportasi ke suatu level yang lain.
+Anda barusan melihat judulnya: Persembunyian Kaorfa.
+
+Anda tidak dapat mempercayai tempat yang barusan Anda injakan. 
+Dan mungkin, ini hanyalah salah satu dari sekian banyak.",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,EXIT TEXT,,,,,
+"You’ve collected alot of stuff Kaorfa had placed.
+You are satisfied, exited the place, & come back to Hub.
+
+You are very confused, whether this action justified or not,
+Considering that all these was Kaorfa’s longsince artifacts.
+
+Is this right, to take someone’s item who already passed away 
+Hundreds of years ago?
+But it’s Joel’s! He is very kind! And these are just
+Instances out of already defined by Perkedel, id, Fraggle, & many!
+The rest of employee could just 3D print them again right?",EXITKRFHIDE,"After you end level on Kaorfa’s hideout
+
+Don’t sad, okay you can. Idk if I could live that long anyway, if I did, will change that.
+Yeah, if I still live by 2100s, I gotta change that.","Anda telah mengoleksi banyak sekali barang yang Kaorfa tinggalkan.
+Anda telah puas, meninggalkan tempat itu, & kembali ke Markas.
+
+Anda menjadi sangat bingung, apakah tindakan ini dibenarkan atau tidak.
+Mengingat barang2 ini adalah penginggalan artefak almarhum sejak lama.
+
+Apakah boleh saya mengambil item seseorang yang telah almarhum
+Ratusan tahun yg lalu?
+Tapi kan, ini milik Joel! Dia kan orangnya baik! Dan barang2 ini hanyalah
+Instance2 yang telah didefinisikan oleh Perkedel, id, Fraggle, & kawan2!
+Paling, karyawan yg masih hidup bisa aja 3D print ini ulang, ya kan?",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,DIALOG,,,,,
 Welcome home,WELCOMEHOME,Greeting sensor,Selamat datang kembali,,,,
 ,,QUIT MESSAGES,,,,,
@@ -179,3 +278,8 @@ Ini bukan lagi soal Diblokir loh..",,,,
 "Don’t forget to praise Mima-sama every 30th of every month!
 NO, not religiously! I don’t even know who the hell is she.",PRAISEMIMA,From Russian Overkill’s moonspeak folder readme.,"Jangan lupa puji Mima-sama setiap hari 30 setiap bulannya!
 BUKAN, bukan secara agama! Gua gk tahu siapa tuh dia.",,,,
+"PECK NECK! My rights to ask even a donation broke!
+Might’ve placed anything with NC (No Commercial) here somewhere, FUUUUUUUUUUUUUUUUUUUU",DONATRIGHTBROK,"We might make mistake of doing that. Idk if this is okay. Perhaps likely considering it’s just a mod designed to be stored as time capsule, 
+and by maybe hundreds of years Joel may no longer exist here,
+Who knows?","ARGH SIAL! Hak gue minta donasi ambyar!
+Kyknya ketaruh sesuatu yg NC (No Commercial / Dilarang Komersil) dimana dah tuh, ANNNNNNJJJJJJJJJJJJJ",,,,
