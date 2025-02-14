@@ -70,6 +70,9 @@ script "WelcomeHome" (void)
 	(Any) Brutal XYZ. Jesus Christ!, what if Sergeant see all these?! Don't you know toxicity is not just on Doom forums but also everywhere else hence it's basically realm agnostic? No no, you're cool Sergeant, yeah so, keep being cool.
 	*/
 	
+	// Doom Dogey Vapour Doom https://www.moddb.com/mods/vapour-doom/downloads/vapour-doom-demo-v1
+	else if(CheckActorClass(PlayerNumber(),"VapourDoomguy")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
+	
 	// Skelegant!!!!!!!!!!!!!!!!!!!!!!!!!!!!! https://skelegant.itch.io/
 	/*
 	Pvt. Stone
