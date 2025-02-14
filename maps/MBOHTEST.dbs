@@ -48,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 1565.512f;
-		viewpositiony = -1782.985f;
-		viewscale = 1.461916f;
+		viewpositionx = -4871.727f;
+		viewpositiony = 4443.167f;
+		viewscale = 0.8650378f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +61,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 64;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -131,7 +131,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 182;
+				caretposition = 3840;
 				activetab = true;
 			}
 		}
