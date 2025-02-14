@@ -87,6 +87,13 @@ Map KRFHIDE lookup "KRFHIDE"
 	cluster = 2	
 }
 
+Map RIGHTFRN lookup "RIGHTFRN"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SKY1"
+}
+
 Episode FEATHERDM
 {
 	name = "Legacy of Feathers"
