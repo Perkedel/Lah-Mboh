@@ -1,0 +1,51 @@
+// idk how to level select! so let's just yoink Golden Soul 3 already!
+// https://batandy.itch.io/goldensouls3 
+// levelmenu.acs
+// or should I say... learn it. This gotta be simplified honestly.
+// (JOELwindows7)
+#library "LevelSelecton"
+#include "zcommon.acs"
+#define SELECTION_LENGTH 5
+
+script "LevelSelecton" (void)
+{
+	int selectTheLevel = 1;
+	int buttons, oldbuttons; // PRESS MOVEMENT BUTTONS to navigate & USE to select!
+	str unknown_say = "???";
+	str selections[SELECTION_LENGTH] = {
+		"-",
+		"-",
+		"-",
+		"-",
+		"-"
+	};
+	
+	SetHudSize(640, 480, 0); // HUD size okay.
+	
+	// skip the bg & free now
+	int basey = 220.0; //base Y of these HUD messages
+	
+	//Now write them!
+	for(int i = 0; i < SELECTION_LENGTH; i++){
+		//write!!!!!
+		hudmessage(s:selections[i];HUDMSG_Plain, i+1, CR_WHITE, 320.0, basey,0);
+		
+		basey += 30.0; // now increment base Y for the next one.
+	}
+	
+	delay(35); 
+	// showtime!
+	while(true){
+		buttons = GetPlayerInput(0, INPUT_BUTTONS);
+	  	oldbuttons = GetPlayerInput(-1, INPUT_OLDBUTTONS);
+	  	
+	  	// mechanism buttons
+	  	// choose
+	  	if (buttons & BT_USE && !(oldbuttons & BT_USE))
+	  		{
+	  			terminate;
+	  		}
+	  	// navigate
+	  	
+	}
+}

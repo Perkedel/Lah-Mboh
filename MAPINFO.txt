@@ -94,6 +94,15 @@ Map RIGHTFRN lookup "RIGHTFRN"
 	sky1 = "SKY1"
 }
 
+Map JUSTFITE lookup "JUSTFITE"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SKY1"
+	BaronSpecial
+	SpecialAction_OpenDoor
+}
+
 Episode FEATHERDM
 {
 	name = "Legacy of Feathers"

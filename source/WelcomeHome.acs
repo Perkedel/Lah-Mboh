@@ -84,10 +84,24 @@ script "WelcomeHome" (void)
 	Extinction Warrior: Typhon
 	Genocide Device Echidna
 	https://forum.zdoom.org/viewtopic.php?t=59072 Nun with a gun!!!
+	https://forum.zdoom.org/viewtopic.php?t=61681 DOOM Mower
 	*/
 	else if(CheckActorClass(PlayerNumber(),"StonePlayer")) {label = "Pvt. Stone";extra_talk="";} // Private Stone
 	else if(CheckActorClass(PlayerNumber(),"RobitPlayer")) {label = "Echidna";extra_talk="";} // GD Echidna
+	else if(CheckActorClass(PlayerNumber(),"Doomdad")) {label = "Doomguy";extra_talk="Whoah, buddy! what's going on? Retired??\n Uh.. au ah gelap (idk anymore)!";set_second = 5.0;} // Retired Doomguy mower
 	// Aphrodite does not replace class!
+	
+	//Darsycho
+	/*
+	https://darsycho.itch.io/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"ImproviseGuy")) {label = "Doomguy";extra_talk="Uh.. where's your weapon?\nWhat? confiscated? who did??";} // Improvisation
+	
+	//Kinsie!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	/*
+	Meta Doom https://github.com/TheKins/MetaDoom https://thekinsie.com/play/metadoom/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"MetaDoomPlayer")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";} // Meta Doom
 	
 	//Pyspy!!!!!!!
 	// Delta Doom https://www.moddb.com/mods/doom-delta/

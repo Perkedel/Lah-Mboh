@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	MBOHTEST
+	JUSTFITE
 	{
 		
 		resources
@@ -31,11 +31,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "FLAT5";
-		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "AQMETL12";
-		defaultwalltexture = "AQMETL12";
-		defaultbottomtexture = "AQMETL12";
+		defaultfloortexture = "FLOOR3_3";
+		defaultceiltexture = "CEIL5_1";
+		defaulttoptexture = "DOORTRAK";
+		defaultwalltexture = "DOORTRAK";
+		defaultbottomtexture = "DOORTRAK";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -48,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -6399.919f;
-		viewpositiony = 894.3251f;
-		viewscale = 0.1378574f;
+		viewpositionx = 34.18283f;
+		viewpositiony = 123.665f;
+		viewscale = 1.856465f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +61,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 512;
+			gridsize = 32;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -95,23 +95,6 @@ maps
 			stderriserror = true;
 		}
 		
-		plugins
-		{
-			
-			threedfloormode
-			{
-				
-				controlsectorarea
-				{
-					usecustomtagrange = false;
-					outerleft = -512;
-					outerright = 0;
-					outertop = 512;
-					outerbottom = 0;
-				}
-			}
-		}
-		
 		scriptdocuments
 		{
 			
@@ -131,7 +114,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 3840;
+				caretposition = 263;
 				activetab = true;
 			}
 		}
