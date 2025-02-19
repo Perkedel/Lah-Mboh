@@ -11,7 +11,11 @@ For the thing we've yoinked
 
 ## Addons
 
+> [!NOTE]
+> These are preincluded PWADs for your convenience
+
 - [Shooting Range Dummy](https://forum.zdoom.org/viewtopic.php?t=77948). Jekyll Grim Payne. **MIT License**. [SOURCE CODE](https://github.com/jekyllgrim/GZDoom-Target-Dummy)
+- [SpaceTrash Dev Textures](https://www.doomworld.com/forum/topic/118767-devtex-v001-texture-pack-release-thread/). SpaceTrash. Yes Edit, Yes Yoink, Yes Whatever, Must Credit.
 
 ## Dependencies
 
@@ -32,6 +36,8 @@ For the thing we've yoinked
 
 - [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. *Pls lemme know if there happen a bullshit regarding this. If that happen, right now my order is not to purge history about this, idk, just delete idk.*
 	- VMAbort Handler. Never seen a PWAD ever think to have VMAbort detector. It plays music, and spits the lyric & ASCII image text onto the console everytime the GZDoom soft crashed.
+- [Kenney.nl Public Domain Assets](https://www.kenney.nl/). Kenney. CC0.
+	- every something such as textures & sprites & models
 
 ## Sounds
 
