@@ -30,9 +30,10 @@ we have stood the rule that ensure that the base right here is free from far fet
 
 ### But you are not allowed to submit into this PK3:
 
-- Actual Pornography. Please use & submit to our NSFW extension PWAD PK3 instead `ngocrot-deh` `LINK_HERE`. Example:
+- Actual Fictional Pornography. Please use & submit to our NSFW extension PWAD PK3 instead `ngocrot-deh` `LINK_HERE`. Example:
 	- H
 	- Encounter
+- IRL Pornography. No extension PWAD indefinitely. not to be confused for `ngocrot-deh`.
 - Derogatory N-words. This neither covered even in NSFW extension. use our Derogatory extension PWAD `wok-wak-wek-wok` (pls link) (small note: no color derogatory allowed at all there even! only G-word I think!)
 - Death Threats. No Extension PWAD.
 - Doxxing. No Extension PWAD. Even to public companies (with known HQ locations & contacts) where context & intent is to cause raid & also compromise anyone safety whose completely nothing to do with the drama incident, in-all eitherways.
