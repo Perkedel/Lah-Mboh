@@ -19,13 +19,14 @@ we have stood the rule that ensure that the base right here is free from far fet
 - Insults & Rants. Complete with uncensored swearing.
 	- Disstrack.
 	- Broken mods. [The sun is leaking](https://youtu.be/SkHo4wCmrEQ). a rant about oh so broken HL2 mod. Tragically, due to this callout, the mod dev added malicious measures to make the entire HL2 EXE (with that Overcharged mod installed) crash if it was played using those Steam accounts, which are noclick, Radiation Hazard, & friends. see [video](https://youtu.be/YcvsbZ18izA) from noclick for context.
-	- Copyright Takedowns. such as Viacom Bersalah (Viacom the Blamed), a rant about Spongebob Massacre WAD takedown by Paramount Pictures which is a subsidiary of Viacom.
+	- Copyright Takedowns. such as Viacom Bersalah (Viacom the Blamed), a rant about Spongebob Massacre WAD takedown by Paramount Pictures which is a subsidiary of Viacom. Similar tone & vibe to `The sun is leaking` meme but for Indonesian.
 - German Chancelors & its symbols. **Be careful however, despite this all being about Wolfenstein, the region DE (Germany) still dislike this idea**. Therefore we recommend you to refrain from ever involving those symbols & depiction. If you have to, it is best to omit those elements.
 - Reproductive Jokes (used sparingly). Example:
 	- Cryptic Genitalia depiction & discussions & used as a joke or rant.
 		- [NUTS.wad](https://www.doomworld.com/idgames/levels/doom2/Ports/m-o/nuts). A Map replacement PWAD, where this map contains over thousands of monsters. Waking them up puts your skill & even the Source Ports to the Benchmarks. Therefore `NUTS` here means `Insane` / `gila` rather than the scrotum.
 	- Jiggly Sexiness concealed & semi-concealed. Such as ones found in Hoyoverse Zenless Zone Zero very prominently. Not even hiding the fact at all.
-	- sussy baka! Reproductive inuendos as long it is 10 step before the *showtime*.
+	- sussy baka! Reproductive inuendos as long it is 10 step before the *showtime*. 
+	- Duke Nukem 3D sussy baka stuffs (retaining the censor on those)
 - etc.
 
 ### But you are not allowed to submit into this PK3:

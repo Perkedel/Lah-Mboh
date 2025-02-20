@@ -32,13 +32,13 @@ Showing the easy & quick ways
 
 - Download GZDoom & Extract
 - Download FreeDoom ~~or purchase Doom WADs on Steam or GOG~~, & extract / locate the IWAD.
-- GZDoom should automatically find your commercial Doom WADs installed automatically when you launch. But for others, you can simply place the desired IWAD inside the GZDoom executable folder (put the IWAD next to `GZDoom.exe` / `.bin`).
+- GZDoom should automatically find your commercial Doom WADs installed when you launch. But for others, you can simply place the desired IWAD inside the GZDoom executable folder (put the IWAD next to `GZDoom.exe` / `.bin`).
 - Launch GZDoom
 - Test everything correctly.
-- Once done, close again, then drag this project folder / pk3 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
+- Once done, close GZDoom again, then drag this project folder / pk3 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
 - Select the same IWAD then launch.
 
-> [!TIPS]
+> [!TIP]
 > It is highly recommended to use Doom launchers of your favourite to make mod selections easy.  
 > Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!

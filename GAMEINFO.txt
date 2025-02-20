@@ -2,4 +2,4 @@
 // https://github.com/nashmuhandes/ZDoomProjectTemplate thancc Nash
 // (JOELwindows7)
 
-IWAD = "freedoom2.wad"
+//IWAD = "freedoom2.wad"
