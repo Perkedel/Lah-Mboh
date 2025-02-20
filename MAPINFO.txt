@@ -75,7 +75,7 @@ Map MBOHTEST lookup "MBOHTEST"
 	next = "MBOHTEST"
 	secretnext = "KRFHIDE"
 	sky1 = "SKY1"
-	cluser = 1
+	//cluster = 1
 }
 
 Map KRFHIDE lookup "KRFHIDE"

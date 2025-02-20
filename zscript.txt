@@ -5,3 +5,7 @@ version "4.10"
 // crashes
 #include "scripts/uncaught_werror.txt"
 #include "scripts/JekyllPayneDummy.txt"
+
+// Gutawer ZForms
+#include "LMBH_Zforms/include.zsc"
+#include "scripts/HmMenu.txt"

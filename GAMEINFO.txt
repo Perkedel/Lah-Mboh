@@ -1,0 +1,5 @@
+// Uh yeah
+// https://github.com/nashmuhandes/ZDoomProjectTemplate thancc Nash
+// (JOELwindows7)
+
+IWAD = "freedoom2.wad"

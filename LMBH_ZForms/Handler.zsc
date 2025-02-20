@@ -1,0 +1,10 @@
+class LMBH_ZF_Handler ui {
+	virtual void buttonClickCommand(LMBH_ZF_Button caller, string command) {
+	}
+	
+	virtual void buttonHeldCommand(LMBH_ZF_Button caller, string command) {
+	}
+
+	virtual void elementHoverChanged(LMBH_ZF_Element caller, string command, bool unhovered) {
+	}
+}

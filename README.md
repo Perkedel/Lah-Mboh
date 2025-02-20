@@ -70,6 +70,8 @@ See [**`INSTALL.md`**](INSTALL.md) to get started.
 - Wholely different map name & `MAPINFO` references. Does not replace current IWAD namespaces
 - Open Source. I mean that's obvious who we are, and also.. we **expect you do the same**. .. yeah.
 
+see [`CONTRIBUTING.md `](/CONTRIBUTING.md) for more informations.
+
 ## What's with the name?
 
 This entire project was supposedly named `I don't know man` something: `idkman`. But of course, you just saw it touches id software 
@@ -96,7 +98,7 @@ Perkedel Technologies
 Code (which we wrote from scratch ourselves): GNU GPL v3  
 Assets (which we drew ourselves): CC4.0-BY-SA
 
-> [!WARN] 
+> [!WARN]
 > Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
 

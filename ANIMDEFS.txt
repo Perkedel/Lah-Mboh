@@ -3,3 +3,37 @@
 
 // Jekyll Grim Payne stuffs
 CanvasTexture TargetDummyDamage 192 32
+
+// Matakrow HAMTEX
+Switch	Doom 3		DEVMEGA1	On Pic	DEVMEGA2	Tics 0
+
+//Texture Warps
+
+//Water
+WARP2 texture DEVH1
+
+//Lava
+WARP texture DEVH2
+
+//Slime
+WARP texture DEVH3
+
+//Blood
+WARP2 texture DEVH4
+
+
+
+//Flat Warps
+
+//Water
+WARP2 flat DEVLIQA
+
+//Lava
+WARP flat DEVLIQB
+
+//Slime
+WARP flat DEVLIQC
+
+//Blood
+WARP2 flat DEVLIQD
+//Finish Matakrow
