@@ -148,6 +148,9 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"Xenia")) {label = ".... ARGH F8CKING HELL! Wahtever..";extra_talk="";} // Xenia Onatopp. Enemy in certain film of it. Eliminated.
 	else if(CheckActorClass(PlayerNumber(),"SolidSnake")) {label = "Snake";extra_talk="I got more unused cardboard boxes if you want..\nOr a pack of Invisibility Spheres that's available too.\nAnd also other stealthily silenced arsenals? We got them too.\nAlso, this bunch of pairs of shoes we inspired from a scientist named Shuri, idk.";set_second = 12.0;} // MGS Solid Snake. lmao! Black Panther Marvel.
 	
+	// Mala Petaka. Yeah that's the name of the IWAD https://store.steampowered.com/app/2104460/Mala_Petaka/ I know.
+	else if(CheckActorClass(PlayerNumber(),"PetakaPlayer")) {label = "Mr. Petaka";extra_talk="yeey mantab jiwa!";} // Petaka. Pls verify!!!!!!!!!!!!!!!!!!!!!
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
