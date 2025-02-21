@@ -28,6 +28,8 @@ script "WelcomeHome" (void)
 	// Strife
 	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label = "Heroic.. hero!!";extra_talk="";}
 	// he got a name right?
+	// nope he doesn't either
+	// https://doomwiki.org/wiki/Strifeguy
 	
 	// Hacx
 	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label = "Heroic.. HACX!!";extra_talk="uhh sorry. There's alot of name I need to know.";}
@@ -35,7 +37,9 @@ script "WelcomeHome" (void)
 	// Korp's FurDoom! https://korp-kat.itch.io/furdoom
 	else if(CheckActorClass(PlayerNumber(),"FurDaisy")) {label = "Daisy";extra_talk="Iyeay Furry iyey.";} // Yes, idk, that Daisy the rabbit, Doomguy's pet. Named after or not idk.
 	// fun fact, Joel's fursona is a Protogen! pls port TriwaveBZ's Protogen to Doom! I got the backup file, it's in X0p1r4t3 on Odysee.. I'll tell you the newsauce later.
-	// If you got it, pls ensure to allow colorspace parts as usual.
+	// https://odysee.com/@X0P1R4T3-33NSVREENMNT-0FFICIAL:f/BZ-Protogen-RAW:5 here's the file!
+	// once you got it, pls ensure to allow colorspace parts as usual.
+	// Then give it to me, I want it. Fork, add, pull request back here, idk., standalone is fine too, I can yoink that.
 	
 	//HyperUltra64's Treasure Tech https://forum.zdoom.org/viewtopic.php?t=66995
 	else if(CheckActorClass(PlayerNumber(),"TreasureGuy")) {label = "Treasure guy";extra_talk="Good news, buddy! we had all the treasures combined right here on the Weapon Test room left there, & everywhere else around here iyeay!";set_second = 5.0;}
@@ -55,7 +59,7 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"BDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Rip and Tear? Iyeah!";set_second = 8.0;}
 	else if(CheckActorClass(PlayerNumber(),"BStrifer")) {label = "Strifeguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Sigil Hunt? Iyeah!";set_second = 8.0;}
 	else if(CheckActorClass(PlayerNumber(),"BChexer")) {label = "Chex Hero";extra_talk="You can relax now, buddy. There's no need pouring energy drink into your breakfast now in this house.\nUnless of course you wanna train for the next Rescue Mission? Iyeah!";set_second = 8.0;}
-	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!\nEven tho we Vacuum Clean Mop!\nPls no I beg you. It's hard to clean.. yeah.";set_second = 10.0;}
 	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;}
 	/*
 	Pls verify!
@@ -115,12 +119,37 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
 	
 	// I mean, yeah. Hege Cactus' La Tailor Girl https://forum.zdoom.org/viewtopic.php?f=43&t=58343
-	else if(CheckActorClass(PlayerNumber(),"TailorPlayer")) {label = "Daina";extra_talk="You need some stitches? Well sorry, we ran out of all Ademin Refill packs yesterday. But Hymatt's Latex still on stock & just scaled up production yeah!\nDon't ask, it was power related companies & battery workshops.\nHymatt's rubbers & silicons are the best isolators apparently, and the only material with fire resistance & hypoalergent properties";set_second = 10.0;}
-	else if(CheckActorClass(PlayerNumber(),"SewiePlayer")) {label = "Sewie";extra_talk="Watch where you going, sweetie! There's alot of brittle stuffs around here!\nNah, just kidding. Break all of them, We have the blueprint to respawn them again.";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"TailorPlayer")) {label = "Daina";extra_talk="You need some stitches? Well sorry, we ran out of all Ademin Refill packs yesterday. But Hymatt's Latex still on stock & just scaled up production yeah!\nDon't ask, it was power related companies & battery workshops.\nHymatt's rubbers & silicons are the best isolators apparently, and the only material with fire resistance & hypoalergent properties";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"SewiePlayer")) {label = "Sewie";extra_talk="Watch where you going, sweetie! There's alot of brittle stuffs around here!\nNah, just kidding! Break all of them, We have the blueprints to respawn all of em them again.";set_second = 10.0;}
 	else if(CheckActorClass(PlayerNumber(),"NariPlayer")) {label = "Nari";extra_talk="Sup, we got more arsenals you can install to, not just outfits.\nWe also even have.. human emulation module kits, so if curious, ask away!";set_second = 10.0;}
 	
+	// Doom2fan a.k.a. phantombeta!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	/*
+	Se7evidas https://forum.zdoom.org/viewtopic.php?f=43&t=62668 https://github.com/Doom2fan/Se7evidas
+	
+	*/
+	else if(CheckActorClass(PlayerNumber(),"S7_ScoutPlayer")) {label = "Runner guy";extra_talk="";} // Runner
+	else if(CheckActorClass(PlayerNumber(),"S7_EMTPlayer")) {label = "EMT guy";extra_talk="";} // EMT
+	else if(CheckActorClass(PlayerNumber(),"S7_MedicPlayer")) {label = "Medic guy";extra_talk="Hey, your friend requested you!\nNvm. They're now on bed safe. Take your rest here, medic!";set_second = 5.0;} // Medic
+	else if(CheckActorClass(PlayerNumber(),"S7_InfiltratorPlayer")) {label = "Infiltrator guy";extra_talk="";} // Infiltrator
+	else if(CheckActorClass(PlayerNumber(),"S7_InfantryPlayer")) {label = "Infantry guy";extra_talk="";} // Infantry
+	else if(CheckActorClass(PlayerNumber(),"S7_RiflemanPlayer")) {label = "Rifle guy";extra_talk="";} // Rifleman
+	else if(CheckActorClass(PlayerNumber(),"S7_EnforcerPlayer")) {label = "Enforcer guy";extra_talk="";} // Enforcer
+	
+	// Ouromov
+	/*
+	GoldenEye (with kalensar upgrades too)
+	https://www.moddb.com/mods/goldeneye-doom2
+	https://www.moddb.com/mods/goldeneye-doom2/downloads/goldeneye-tc-complete
+	https://en.wikipedia.org/wiki/Xenia_Onatopp
+	*/
+	else if(CheckActorClass(PlayerNumber(),"JamesBond007")) {label = "007 (Double O Seven)";extra_talk="";} // James Bond. Bond, James Bond.
+	else if(CheckActorClass(PlayerNumber(),"AlecTrevelyan006")) {label = "006 (Double O Six)";extra_talk=".... looks sussy baka..";} // Alec Trevelyan. Traitor?
+	else if(CheckActorClass(PlayerNumber(),"Xenia")) {label = ".... ARGH F8CKING HELL! Wahtever..";extra_talk="";} // Xenia Onatopp. Enemy in certain film of it. Eliminated.
+	else if(CheckActorClass(PlayerNumber(),"SolidSnake")) {label = "Snake";extra_talk="I got more unused cardboard boxes if you want..\nOr a pack of Invisibility Spheres that's available too.\nAnd also other stealthily silenced arsenals? We got them too.\nAlso, this bunch of pairs of shoes we inspired from a scientist named Shuri, idk.";set_second = 12.0;} // MGS Solid Snake. lmao! Black Panther Marvel.
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
-	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again. Jesus Christ! Just stay on the ZZZverse already, Mr. Giant Hollow ball..";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
 	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
 	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
