@@ -17,13 +17,15 @@ For the thing we've yoinked
 - [Shooting Range Dummy](https://forum.zdoom.org/viewtopic.php?t=77948). Jekyll Grim Payne. **MIT License**. [SOURCE CODE](https://github.com/jekyllgrim/GZDoom-Target-Dummy)
 - [SpaceTrash Dev Textures](https://www.doomworld.com/forum/topic/118767-devtex-v001-texture-pack-release-thread/). SpaceTrash. Yes Edit, Yes Yoink, Yes Whatever, Must Credit.
 - [Gutawer-phantombeta ZForms](https://forum.zdoom.org/viewtopic.php?t=70527). Gutawer & phantombeta. **MIT License**. [SOURCE CODE](https://gitlab.com/Gutawer/gzdoom-zforms)
-- [Doom2fan ZForm Examples](https://github.com/Doom2fan/ZFormsExamples). Doom2fan (phantombeta?). **CC0**. [SOURCE CODE](https://github.com/Doom2fan/ZFormsExamples). Example for above Gutawer-phantombeta Zforms library
+- [Doom2fan ZForm Examples](https://github.com/Doom2fan/ZFormsExamples). Doom2fan (phantombeta). **CC0**. [SOURCE CODE](https://github.com/Doom2fan/ZFormsExamples). Example for above Gutawer-phantombeta Zforms library
 - [HAMTEX Hammer Editor Dev Texture](https://www.doomworld.com/forum/topic/135209). Matakrow. **CC4.0-BY**.
-- [Nash's ZDoom Project Template](https://forum.zdoom.org/viewtopic.php?f=3&t=25083). Nash. Yes Anything, Recommend Credit. [SOURCE CODE](https://github.com/nashmuhandes/ZDoomProjectTemplate)
+- [Nash's ZDoom Project Template](https://forum.zdoom.org/viewtopic.php?f=3&t=25083). Nash Muhandes. Yes Anything, Recommend Credit. [SOURCE CODE](https://github.com/nashmuhandes/ZDoomProjectTemplate)
 
 ## Dependencies
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload.
+- [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
+- [ObAddon Textures](https://github.com/obsidian-level-maker/Obsidian). ObAddon Community. **GNU GPL v2**. ~~Or use the one included from Big City~~ Use this latest one. Find & use 3 `ObAddon_Textures_#.wad` files in this extract, `games/doom/data`.
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
 
 ## Reuses

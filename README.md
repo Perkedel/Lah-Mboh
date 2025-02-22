@@ -72,6 +72,13 @@ See [**`INSTALL.md`**](INSTALL.md) to get started.
 
 see [`CONTRIBUTING.md `](/CONTRIBUTING.md) for more informations.
 
+## Features
+
+- Does not replace assets (Nor Episodes, Nor Maps, nor anything). Compatible with other Doom mods! Infact, designed to test Mods
+- Benefits GZDoom features
+- Wide variety of tests
+- Other levels you can try
+
 ## What's with the name?
 
 This entire project was supposedly named `I don't know man` something: `idkman`. But of course, you just saw it touches id software 

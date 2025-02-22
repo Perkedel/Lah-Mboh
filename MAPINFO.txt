@@ -85,6 +85,8 @@ Map KRFHIDE lookup "KRFHIDE"
 	sky1 = "SKY1"
 	music = "D_AMPIE"
 	cluster = 2	
+	par = 120
+	sucktime = 0
 }
 
 Map RIGHTFRN lookup "RIGHTFRN"

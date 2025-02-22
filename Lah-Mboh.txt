@@ -12,20 +12,20 @@ Email Address           : [redacted]
 Other Files By Author   : 
 Misc. Author Info       : 
 
-Description             : See README.md inside this PWAD PK3 for full descriptions
+Description             : See README.md inside this PWAD PK3 for full descriptions.
 
-Additional Credits to   : See CREDITS.md inside this PWAD PK3
+Additional Credits to   : See CREDITS.md inside this PWAD PK3.
 ===========================================================================
 * What is included *
 
-New levels              : 1, & counting
+New levels              : 3, & counting
 Sounds                  : Yes
-Music                   : Yes / No
-Graphics                : Yes / No
+Music                   : Yes
+Graphics                : Yes
 Dehacked/BEX Patch      : Yes, I think... there is serveral ZScript StaticHandlers & stuffs..
 Demos                   : No (Pls somebody make Demo to Scripted Map! All motions recorded instead of input!)
-Other                   : Yes (ZScript, ACS)
-Other files required    : See INSTALL.md for full list of dependencies
+Other                   : Yes (ZScript, ACS, Blend, etc. source project files)
+Other files required    : See INSTALL.md for full list of dependencies.
 
 
 * Play Information *
@@ -43,10 +43,10 @@ Difficulty Settings     : Yes / Not implemented
 
 Base                    : New from scratch
 Build Time              : Serveral Hours, Counting because this is Rolling Release
-Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code
+Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code, Lapce (f888 you VSCode why werroring?!), Blender
 Known Bugs              : Only works with the Freedoom IWAD (which is freedoom2.wad) due to exclusive textures & assets used in many of these maps.
-May Not Run With        : Idk, too old version of GZDoom
-Tested With             : GZDoom since v4.10.0
+May Not Run With        : Idk, too old version of GZDoom, GZDoom & derivatives that's older than v4.10.0
+Tested With             : GZDoom since v4.10.0, VKDoom nightly as of February 2025 & henceforth
 
 
 
