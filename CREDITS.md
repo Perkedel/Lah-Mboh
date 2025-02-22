@@ -23,7 +23,7 @@ For the thing we've yoinked
 
 ## Dependencies
 
-- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload.
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **Pls remove its map, we'll upload the unconflict later!**
 - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
 - [ObAddon Textures](https://github.com/obsidian-level-maker/Obsidian). ObAddon Community. **GNU GPL v2**. ~~Or use the one included from Big City~~ Use this latest one. Find & use 3 `ObAddon_Textures_#.wad` files in this extract, `games/doom/data`.
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**

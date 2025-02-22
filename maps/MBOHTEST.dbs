@@ -30,6 +30,26 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource2
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\ObAddon_Textures.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource3
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Maps\\inkoalawetrust\\gz_bigcity.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -48,9 +68,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 7583.704f;
-		viewpositiony = 1353.875f;
-		viewscale = 1.900489f;
+		viewpositionx = -832.2916f;
+		viewpositiony = -1482.062f;
+		viewscale = 1.900488f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
