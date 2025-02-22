@@ -1,0 +1,9 @@
+// from ScriptCall sample
+// https://zdoom.org/wiki/ScriptCall
+#library "GetGift"
+#include "zcommon.acs"
+
+script "GetGift" (void)
+{
+    ScriptCall("Gifter", "GivePresent", "Megasphere");
+}

@@ -1,0 +1,28 @@
+// from ScriptCall Sample
+// https://zdoom.org/wiki/ScriptCall
+
+class GifterHandler
+{
+	
+}
+
+class Gifter
+{
+	static void GivePresent (Actor activator, string present)
+    {
+        // Only players get the item.
+        if(activator && activator.player)
+        {
+            //activator.A_GiveInventory(present);
+            //activator.A_Log("You received a wonderful present!", true);
+            //activator.AddInventory(present)
+            //activator.GiveInventory(present,1);
+           //activator.Log("You received a wonderful present!", true);
+           //ScriptUtil.GiveInventory(activator,present,1);
+           //GiveInventory(present,1);
+           // https://www.doomworld.com/forum/topic/149685-cant-call-play-function-from-data-context/ abandoned! no solution!
+           //activator.A_GiveInventory(present,1);
+           console.printf("idk why: %s", present);
+        }
+    }
+}

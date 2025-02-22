@@ -2,6 +2,9 @@
 // (JOELwindows7)
 version "4.10"
 
+// stuffs
+#include "scripts/Gifter.txt"
+
 // crashes
 #include "scripts/uncaught_werror.txt"
 #include "scripts/JekyllPayneDummy.txt"

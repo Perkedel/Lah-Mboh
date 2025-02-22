@@ -20,7 +20,7 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 - Source Port: [GZDoom latest](https://zdoom.org/downloads).
 - Mod PWADs:
     - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa.
-    - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/) from inkoalawetrust.
+    - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/) from inkoalawetrust. We recommend to pick the full Map (1st dl) rather than just the prop.
     - see more on [`CREDITS.md`](CREDITS.md) section `Dependencies`
 - Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl).
 
