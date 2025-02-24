@@ -1,0 +1,19 @@
+#library "GoToLevel"
+#include "zcommon.acs"
+
+/*
+function void "GoToLevel" (str levelName)
+{
+	
+}
+*/
+
+script "LevelJustfite" (void)
+{
+	ChangeLevel("JUSTFITE",0,CHANGELEVEL_NOINTERMISSION,-1);
+}
+
+script "LevelRightFrn" (void)
+{
+	ChangeLevel("RIGHTFRN",0,CHANGELEVEL_NOINTERMISSION,-1);
+}

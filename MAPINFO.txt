@@ -42,6 +42,10 @@ gameinfo
 		"$RISCVREIGNS",
 		"$LEMONLEVEL",
 		"$WHERDGOING"
+	
+	addcreditpage = 
+		"LMBHCRE1",
+		"LMBHCRED"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 }
@@ -81,6 +85,8 @@ Map MBOHTEST lookup "MBOHTEST"
 	secretnext = "KRFHIDE"
 	sky1 = "SKY1"
 	//cluster = 1
+	exitPic = "LMBHTILE"
+	enterPic = "LMBHTENT"
 }
 
 Map KRFHIDE lookup "KRFHIDE"
@@ -92,6 +98,7 @@ Map KRFHIDE lookup "KRFHIDE"
 	cluster = 2	
 	par = 120
 	sucktime = 0
+	exitPic = "LMBHTILE"
 }
 
 Map RIGHTFRN lookup "RIGHTFRN"
@@ -99,6 +106,7 @@ Map RIGHTFRN lookup "RIGHTFRN"
 	author = "JOELwindows7"
 	next = "MBOHTEST"
 	sky1 = "SKY1"
+	exitPic = "LMBHTILE"
 }
 
 Map JUSTFITE lookup "JUSTFITE"
@@ -108,6 +116,7 @@ Map JUSTFITE lookup "JUSTFITE"
 	sky1 = "SKY1"
 	BaronSpecial
 	SpecialAction_OpenDoor
+	exitPic = "LMBHTILE"
 }
 
 Episode FEATHERDM
@@ -120,4 +129,14 @@ map CAPTURTN "Capturation"
 	next = "CAPTURTN"
 	secretnext = "CAPTURTN"
 	sky1 = "SKY1"
+	exitPic = "LMBHTILE"
+}
+
+DamageType LatexGoo
+{
+	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
+	NoArmor
+	Factor = 1.5
+	Obituary = "%s has Changed"
+	// shut up! I know!
 }

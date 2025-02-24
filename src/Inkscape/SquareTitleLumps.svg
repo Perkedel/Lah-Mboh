@@ -9,11 +9,12 @@
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="SquareTitleLumps.svg"
-   inkscape:export-filename="..\..\graphics\ST_MBOHCREDIT.png"
+   inkscape:export-filename="..\..\graphics\LMBHTENT.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -29,15 +30,15 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="4.3295454"
-     inkscape:cx="158.21523"
-     inkscape:cy="108.67192"
+     inkscape:zoom="3.2703689"
+     inkscape:cx="128.42588"
+     inkscape:cy="107.78601"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2">
+     inkscape:current-layer="layer7">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -97,7 +98,9 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="LahMbohCredit">
+     inkscape:label="LahMbohCredit"
+     style="display:none"
+     sodipodi:insensitive="true">
     <rect
        style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
        id="rect3"
@@ -115,40 +118,6 @@
          id="tspan3"
          x="160"
          y="32">Lah Mboh?</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:900;font-size:8px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-       x="160"
-       y="96"
-       id="text4"><tspan
-         sodipodi:role="line"
-         id="tspan4"
-         x="160"
-         y="96">You are using our greatest mod ever</tspan><tspan
-         sodipodi:role="line"
-         x="160"
-         y="104"
-         id="tspan9">capable of various purpose</tspan><tspan
-         sodipodi:role="line"
-         x="160"
-         y="112"
-         id="tspan10">Tests, Plays, Fun</tspan><tspan
-         sodipodi:role="line"
-         x="160"
-         y="120"
-         id="tspan8" /><tspan
-         sodipodi:role="line"
-         x="160"
-         y="128"
-         id="tspan7">visit</tspan><tspan
-         sodipodi:role="line"
-         x="160"
-         y="136"
-         id="tspan5">https://github.com/Perkedel/Lah-Mboh</tspan><tspan
-         sodipodi:role="line"
-         x="160"
-         y="144"
-         id="tspan6">for more information</tspan></text>
     <g
        id="g62"
        transform="matrix(0.14285717,0,0,0.14285717,110.2857,219.42858)">
@@ -171,6 +140,322 @@
            style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
            d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
       </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:10.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+       x="160"
+       y="44"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         x="160"
+         y="44">Test suite &amp; Megawads</tspan></text>
+    <g
+       inkscape:groupmode="layer"
+       id="layer3"
+       inkscape:label="Cred0"
+       sodipodi:insensitive="true"
+       style="display:none">
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:8px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="160"
+         y="96"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           x="160"
+           y="96">You are using our greatest mod ever</tspan><tspan
+           sodipodi:role="line"
+           x="160"
+           y="104"
+           id="tspan9">capable of various purpose</tspan><tspan
+           sodipodi:role="line"
+           x="160"
+           y="112"
+           id="tspan10">Tests, Plays, Fun</tspan><tspan
+           sodipodi:role="line"
+           x="160"
+           y="120"
+           id="tspan8" /><tspan
+           sodipodi:role="line"
+           x="160"
+           y="128"
+           id="tspan7">visit</tspan><tspan
+           sodipodi:role="line"
+           x="160"
+           y="140.30659"
+           id="tspan5"
+           style="font-size:13.3333px">https://github.com/Perkedel/Lah-Mboh</tspan><tspan
+           sodipodi:role="line"
+           x="160"
+           y="149.3333"
+           id="tspan6">for more information</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer4"
+       inkscape:label="Cred1">
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:13.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:none;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="160"
+         y="84"
+         id="text11"
+         sodipodi:insensitive="true"><tspan
+           sodipodi:role="line"
+           id="tspan11"
+           x="0"
+           y="0">Big shoutout, read - Credits.md</tspan><tspan
+           sodipodi:role="line"
+           x="0"
+           y="0"
+           id="tspan12" /><tspan
+           sodipodi:role="line"
+           x="0"
+           y="0"
+           id="tspan13">To contribute, read - Contributing.md</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="LahMbohMore"
+     style="display:inline">
+    <rect
+       style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+       id="rect13"
+       width="320"
+       height="200"
+       x="0"
+       y="0"
+       ry="0" />
+    <g
+       id="g62-8"
+       transform="matrix(0.14285717,0,0,0.14285717,103.99999,20.000006)"
+       style="display:inline">
+      <path
+         id="path58-8"
+         style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
+      <g
+         id="g61-2">
+        <path
+           id="path59-4"
+           style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+           d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
+        <path
+           id="path60-5"
+           style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+           d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
+        <path
+           id="path61-5"
+           style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+           d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer6"
+       inkscape:label="TileYay"
+       sodipodi:insensitive="true"
+       style="display:none">
+      <g
+         id="g17"
+         transform="matrix(0.12371794,-0.07142858,0.07142858,0.12371794,-69.96556,89.386083)"
+         style="display:inline;fill:#666666"
+         inkscape:tile-cx="-45.197433"
+         inkscape:tile-cy="32.884272"
+         inkscape:tile-w="84.182533"
+         inkscape:tile-h="57.77444"
+         inkscape:tile-x0="-87.2887"
+         inkscape:tile-y0="3.997052">
+        <path
+           id="path13"
+           style="opacity:0.998844;fill:#666666;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+           d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
+        <g
+           id="g16"
+           style="fill:#666666">
+          <path
+             id="path14"
+             style="opacity:0.998844;fill:#666666;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
+          <path
+             id="path15"
+             style="opacity:0.998844;fill:#666666;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
+          <path
+             id="path16"
+             style="opacity:0.998844;fill:#666666;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
+        </g>
+      </g>
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         id="use233" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(42.091267,57.77444)"
+         id="use234" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(84.182533,115.54888)"
+         id="use235" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(126.2738,173.32332)"
+         id="use236" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(126.2738)"
+         id="use237" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(168.36507,57.77444)"
+         id="use238" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(210.45633,115.54888)"
+         id="use239" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(252.5476,173.32332)"
+         id="use240" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(252.5476)"
+         id="use241" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(294.63887,57.77444)"
+         id="use242" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(336.73013,115.54888)"
+         id="use243" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(378.8214,173.32332)"
+         id="use244" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(378.8214)"
+         id="use245" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(420.91267,57.77444)"
+         id="use246" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(463.00393,115.54888)"
+         id="use247" />
+      <use
+         x="0"
+         y="0"
+         inkscape:tiled-clone-of="#g17"
+         xlink:href="#g17"
+         transform="translate(505.0952,173.32332)"
+         id="use248" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="TestEnter"
+       sodipodi:insensitive="true"
+       style="display:none">
+      <g
+         id="g62-8-1"
+         transform="matrix(0.14285717,0,0,0.14285717,106.85713,215.42858)"
+         style="display:inline">
+        <path
+           id="path58-8-5"
+           style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+           d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
+        <g
+           id="g61-2-2">
+          <path
+             id="path59-4-7"
+             style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
+          <path
+             id="path60-5-6"
+             style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
+          <path
+             id="path61-5-1"
+             style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
+        </g>
+      </g>
+      <rect
+         style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         id="rect248"
+         width="64"
+         height="64"
+         x="32"
+         y="64"
+         ry="0" />
+      <path
+         style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         d="M 32,96 64,64 96,96 64,128 Z"
+         id="path248" />
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="104"
+         y="128"
+         id="text248"><tspan
+           sodipodi:role="line"
+           id="tspan248"
+           x="104"
+           y="128">Testing Testing!</tspan></text>
     </g>
   </g>
   <metadata

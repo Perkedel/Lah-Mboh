@@ -25,8 +25,16 @@ For the thing we've yoinked
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **Pls remove its map, we'll upload the unconflict later!**
 - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
-- [ObAddon Textures](https://github.com/obsidian-level-maker/Obsidian). ObAddon Community. **GNU GPL v2**. ~~Or use the one included from Big City~~ Use this latest one. Find & use 3 `ObAddon_Textures_#.wad` files in this extract, `games/doom/data`.
+- [ObAddon Textures](https://github.com/obsidian-level-maker/Obsidian). ObAddon Community. **GNU GPL v2**. ~~Or use the one included from Big City~~ Use this latest one. Find & use 3 `ObAddon_Textures_#.wad` files in this extract, `games/doom/data`. Just load these following wads
+	- ObAddon Texture 1, 2, & 3
+	- ObAddon Texture Brightmaps
+	- Rats
+	- Demiosis Blood Pack
+	- Doomedarchviledemon Fly
+	- MogWaltz Burning Debris & Burning Top
+- [Ukiro OTEX](https://doom.ukiro.com/). Ola Björling (ukiro). Yes Reupload, No Rename, Yes Edit, Yes Patching, No Commercial. **Unfortunately, due to license restrictions, we are unable to pre-include this pwad atm**.
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
+- [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**
 
 ## Reuses
 

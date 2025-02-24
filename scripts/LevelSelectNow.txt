@@ -1,0 +1,148 @@
+// Oke here we go
+// (JOELwindows7)
+
+class LevelSelectNow
+{
+	static void doLevelSelectNow(){
+		// https://zdoom.org/wiki/ActivateMenu
+		// https://zdoom.org/wiki/SetMenu
+		//let levelMenu = new("LevelSelectNowMenu");
+		//levelMenu.init(Menu.currentMenu());
+		//levelMenu.activateMenu();
+		
+		Menu.setMenu("LevelSelectNowMenu");
+	}
+}
+
+class LevelSelectNowHandler : LMBH_ZF_Handler
+{
+	LevelSelectNowMenu link;
+	
+	override void buttonClickCommand(LMBH_ZF_Button caller, Name command)
+	{
+		// pls why switch case only numbers not string?! Don't make me look like that guy.
+		if(command == "L-JUSTFITE"){
+			console.printf("GO to JUSTFITE");
+			//CallACS("ChangeLevel","JUSTFITE",0, CHANGELEVEL_NOINTERMISSION);
+			//ACS_NamedExecute("LevelJustfite",0);
+			CallACS("LevelJustfite");
+			//Destroy();
+			//Close();
+			link.Close();
+		}
+		else if(command == "L-RIGHTFRN"){
+			console.printf("GO to RIGHTFRN");
+			CallACS("LevelRightFrn");
+			link.Close();
+		}
+		else
+		{
+			
+		}
+	}
+}
+
+class LevelSelectNowMenu : LMBH_ZF_GenericMenu 
+{
+	//LMBH_ZF_ListFrame liste;
+	LMBH_ZF_Image background;
+	Font smallFont;
+	
+	override void init (Menu parent)
+	{
+		LevelSelectNowHandler handler;
+		
+		Vector2 baseRes = (320, 200);
+		Super.init(parent);
+		SetBaseResolution (baseRes);
+		
+		 // Get GZDoom's new options menu smallfont.
+        smallFont = OptionFont ();
+		
+		handler = new ('LevelSelectNowHandler');
+		handler.link = self;
+		
+		LMBH_ZF_Element elem;
+		
+		double daHeight = 104;
+		// Add a background.
+        background = LMBH_ZF_Image.Create
+        (
+            // Position
+            (0, 0),
+            // Size
+            (320, 200),
+            // Image path/name
+            "graphics/ZFormsExamples/Panel.png",
+            // Alignment options
+            LMBH_ZF_Image.AlignType_TopLeft
+        );
+        // Add the image element into the main frame.
+        background.Pack (mainFrame);
+        
+         // Create the box image's textures.
+        let boxTexture = LMBH_ZF_BoxTextures.CreateTexturePixels
+        (
+            // The texture itself.
+            "graphics/ZFormsExamples/BoxTexture.png",
+            // The top-left corner of the middle of the box.
+            (32, 32),
+            // The bottom-right corner of the middle of the box.
+            (64, 64),
+            // Whether to scale (true) or tile (false) the sides.
+            false,
+            // Whether to scale (true) or tile (false) the middle.
+            false
+        );
+        
+        //Scrollact Jmodded
+        let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
+        	(0,0),
+        	(320,200),
+        	8,	
+        	daHeight,
+        	32,
+        	boxTexture
+        );
+        scrollactContainer.Pack(mainFrame);
+        let scrollactFrame = LMBH_ZF_Frame(scrollactContainer.GetScrollArea());
+        
+        /*
+        // list
+        liste = LMBH_ZF_ListFrame.create(
+        	(0,0),
+        	(320,200),
+        	100	
+        );
+        liste.Pack(mainFrame);
+        */
+        
+        // Textoid
+        elem = LMBH_ZF_Label.create(
+        	(8,8),
+        	(96,16),
+        	"HAALOOO",
+        	smallFont
+        );
+        elem.Pack(scrollactFrame);
+        
+        //Level now
+        elem = LMBH_ZF_Button.create(
+        	(8,16),
+        	(96,16),
+        	text: "Just Fight!",
+        	cmdHandler: handler,
+        	command: "L-JUSTFITE"
+        );
+        elem.Pack(scrollactFrame);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,24),
+        	(100,16),
+        	text: "Front of you",
+        	cmdHandler: handler,
+        	command: "L-RIGHTFRN"
+        );
+        elem.Pack(scrollactFrame);
+	}
+}

@@ -1,17 +1,25 @@
-class LMBH_ZF_UiEvent ui {
-	// 
+/// A direct mirror of GZDoom's own `UiEvent`.
+///
+/// This exists to facilitate [`ZF_EventHandlerMenu`], where we create fake `UiEvent`s.
+struct LMBH_ZF_UiEvent ui {
+	///
 	int Type;
-	//
+	///
 	String KeyString;
+	///
 	int KeyChar;
-	//
+	///
 	int MouseX;
+	///
 	int MouseY;
-	//
+	///
 	bool IsShift;
+	///
 	bool IsCtrl;
+	///
 	bool IsAlt;
 
+	/// Converts from a GZDoom `UiEvent` into this, placing the result into `ev`.
 	static void fromGZDUiEvent(UiEvent gzdEv, LMBH_ZF_UiEvent ev) {
 		ev.Type = gzdEv.Type;
 		ev.KeyString = gzdEv.KeyString;

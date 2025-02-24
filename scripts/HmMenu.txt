@@ -9,14 +9,14 @@ class HmMenuHandler : LMBH_ZF_Handler
     // We need this to be able to do anything with our menu.
 	HmMenu link;
 	
-	override void buttonClickCommand (LMBH_ZF_Button caller, string command)
+	override void buttonClickCommand(LMBH_ZF_Button caller, Name command)
     {
         // If the command is "aButton"...
         if (command == "aButton")
         {
             // Change the text's colour to a random colour.
-            //link.aLabel.SetTextColor (random [textColor] (Font.CR_BRICK, Font.CR_TEAL));
-            link.aLabel.textColor = random [textColor] (Font.CR_BRICK, Font.CR_TEAL);
+            link.aLabel.SetTextColor (random [textColor] (Font.CR_BRICK, Font.CR_TEAL));
+            //link.aLabel.textColor = random [textColor] (Font.CR_BRICK, Font.CR_TEAL);
         }
     }
 }
@@ -126,8 +126,8 @@ class HmMenu: LMBH_ZF_GenericMenu
         aLabel = LMBH_ZF_Label.Create
         (
             // Position
-            //(0, aButton.GetPosY () + aButton.GetHeight () + 4),
-            (0, aButton.box.pos.Y + aButton.box.size.Y + 4),
+            (0, aButton.GetPosY () + aButton.GetHeight () + 4),
+            //(0, aButton.box.pos.Y + aButton.box.size.Y + 4),
             // Size.
             (0, smallFont.GetHeight ()),
             // The label's text
@@ -142,8 +142,8 @@ class HmMenu: LMBH_ZF_GenericMenu
             textColor: Font.CR_WHITE
         );
         // Calculate the horizontal position for the label so that it's centered on the screen.
-        //aLabel.SetPosX ((baseRes.x - smallFont.stringWidth (aLabel.GetText ())) / 2.);
-        aLabel.setBox(((baseRes.x - smallFont.stringWidth (aLabel.text)) / 2.,aLabel.box.pos.y),alabel.box.size);
+        aLabel.SetPosX ((baseRes.x - smallFont.stringWidth (aLabel.GetText ())) / 2.);
+        //aLabel.setBox(((baseRes.x - smallFont.stringWidth (aLabel.text)) / 2.,aLabel.box.pos.y),alabel.box.size);
         // Add the label element to the main frame.
         aLabel.Pack (mainFrame);
     }

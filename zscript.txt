@@ -12,3 +12,4 @@ version "4.10"
 // Gutawer ZForms
 #include "LMBH_Zforms/include.zsc"
 #include "scripts/HmMenu.txt"
+#include "scripts/LevelSelectNow.txt"

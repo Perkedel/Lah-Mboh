@@ -50,6 +50,96 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource4
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\Rats.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource5
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\Fly.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource6
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\events.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource7
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\ObAddon_Textures_2.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource8
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\ObAddon_Textures_3.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource9
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\blood_pack.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource10
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\burning_debris.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource11
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Tools\\ObAddons\\obsidian-v20-win64\\games\\doom\\data\\burning_top.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource12
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\ukiro\\OTEX_1.1_PK3\\OTEX_1.1.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -68,9 +158,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 1745.696f;
-		viewpositiony = 1453.633f;
-		viewscale = 1.900486f;
+		viewpositionx = -111.0303f;
+		viewpositiony = -98.96571f;
+		viewscale = 0.1792146f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -81,7 +171,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 256;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -151,7 +241,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 1747;
+				caretposition = 1918;
 				activetab = true;
 			}
 		}
