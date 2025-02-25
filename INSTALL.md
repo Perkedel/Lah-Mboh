@@ -12,7 +12,7 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 > And eh, we are targeting FreeDoom Phase 2 anyways.
 > Don't believe us? Try it. `doom2.wad` or whatever id IWAD it, & compare.  
 > Only the [Kinsie-test](https://forum.zdoom.org/viewtopic.php?f=42&t=57221) inspired room on the right tunnel were supposed to have blue checkerboards (GZDoom `-NOFLAT-`). Nowhere else.
-> The console should not spit Texture Missing errors at all.
+> The console should not spit Texture Missing errors at all (Beside the ObAddon Texture 2 & 3 about `-GOTH-` & `-DOOM-` empty marker lumps, we'll fix that later).
 
 
 ## Dependencies:
@@ -22,7 +22,7 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
     - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa.
     - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/) from inkoalawetrust. We recommend to pick the full Map (1st dl) rather than just the prop.
     - see more on [`CREDITS.md`](CREDITS.md) section `Dependencies`
-- Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl).
+- Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl), etc etc.
 
 > [!IMPORTANT]
 > There are also PWADs we've preincluded for your convenience & other stuffs. See [`CREDITS.md`](CREDITS.md) for more info.
