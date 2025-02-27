@@ -123,7 +123,16 @@ Map JUSTFITE lookup "JUSTFITE"
 
 map PLMSKY1 lookup "PLMSKY1"
 {
-	author = "plums, JOELwindows7"
+	author = "plums & JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SKY1"	
+	exitPic = "LMBHTILE"
+	music = "D_SSLZN"
+}
+
+map MECHSKY1 lookup "MECHSKY1"
+{
+	author = "Mechadon & JOELwindows7"
 	next = "MBOHTEST"
 	sky1 = "SKY1"	
 	exitPic = "LMBHTILE"

@@ -22,3 +22,8 @@ script "LevelPlmSky1" (void)
 {
 	ChangeLevel("PLMSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
 }
+
+script "LevelMechSky1" (void)
+{
+	ChangeLevel("MECHSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
+}

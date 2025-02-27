@@ -40,6 +40,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			CallACS("LevelPlmSky1");
 			link.Close();
 		}
+		else if(command == "L-MECHSKY1"){
+			console.printf("GO to MECHSKY1");
+			CallACS("LevelMechSky1");
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -50,7 +55,7 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 
 class LevelSelectNowMenu : LMBH_ZF_GenericMenu 
 {
-	//LMBH_ZF_ListFrame liste;
+	LMBH_ZF_ListFrame liste;
 	LMBH_ZF_Image background;
 	Font smallFont;
 	
@@ -103,8 +108,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
-        	(0,0),
-        	(320,200),
+        	(0,32),
+        	(320,200-32),
         	8,	
         	daHeight,
         	32,
@@ -113,24 +118,23 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         scrollactContainer.Pack(mainFrame);
         let scrollactFrame = LMBH_ZF_Frame(scrollactContainer.GetScrollArea());
         
-        /*
+        
+        // Textoid
+        elem = LMBH_ZF_Label.create(
+        	(8,16),
+        	(96,16),
+        	"Go to Level",
+        	smallFont
+        );
+        elem.Pack(mainFrame);
+        
         // list
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
         	(320,200),
-        	100	
+        	4	
         );
-        liste.Pack(mainFrame);
-        */
-        
-        // Textoid
-        elem = LMBH_ZF_Label.create(
-        	(8,8),
-        	(96,16),
-        	"HAALOOO",
-        	smallFont
-        );
-        elem.Pack(scrollactFrame);
+        liste.Pack(scrollactFrame);
         
         //Level now
         elem = LMBH_ZF_Button.create(
@@ -140,7 +144,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	cmdHandler: handler,
         	command: "L-JUSTFITE"
         );
-        elem.Pack(scrollactFrame);
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
         	(8,24),
@@ -149,7 +154,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	cmdHandler: handler,
         	command: "L-RIGHTFRN"
         );
-        elem.Pack(scrollactFrame);
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
         	(8,32),
@@ -158,6 +164,17 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	cmdHandler: handler,
         	command: "L-PLMSKY1"
         );
-        elem.Pack(scrollactFrame);
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,40),
+        	(100,16),
+        	text: "Mech's Skies",
+        	cmdHandler: handler,
+        	command: "L-MECHSKY1"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
 	}
 }
