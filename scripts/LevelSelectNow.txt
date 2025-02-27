@@ -35,9 +35,15 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			CallACS("LevelRightFrn");
 			link.Close();
 		}
+		else if(command == "L-PLMSKY1"){
+			console.printf("GO to PLMSKY1");
+			CallACS("LevelPlmSky1");
+			link.Close();
+		}
 		else
 		{
-			
+			console.printf("GO to %s", command);
+			// if command preceded by `L-` then call acs of that thing there!
 		}
 	}
 }
@@ -142,6 +148,15 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: "Front of you",
         	cmdHandler: handler,
         	command: "L-RIGHTFRN"
+        );
+        elem.Pack(scrollactFrame);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,32),
+        	(100,16),
+        	text: "Plums' Skies",
+        	cmdHandler: handler,
+        	command: "L-PLMSKY1"
         );
         elem.Pack(scrollactFrame);
 	}

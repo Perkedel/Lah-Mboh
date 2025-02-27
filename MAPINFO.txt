@@ -45,6 +45,8 @@ gameinfo
 	
 	addcreditpage = 
 		"LMBHCRE1",
+		"LMBHCRE2",
+		"LMBHCRE3",
 		"LMBHCRED"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
@@ -119,6 +121,29 @@ Map JUSTFITE lookup "JUSTFITE"
 	exitPic = "LMBHTILE"
 }
 
+map PLMSKY1 lookup "PLMSKY1"
+{
+	author = "plums, JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SKY1"	
+	exitPic = "LMBHTILE"
+	music = "D_SSLZN"
+}
+
+map CURAG "Curag"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"	
+	exitPic = "LMBHTILE"
+}
+
+map GARUG2 "Garug 2"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"	
+	exitPic = "LMBHTILE"
+}
+
 Episode FEATHERDM
 {
 	name = "Legacy of Feathers"
@@ -126,6 +151,7 @@ Episode FEATHERDM
 
 map CAPTURTN "Capturation"
 {
+	author = "JOELwindows7"
 	next = "CAPTURTN"
 	secretnext = "CAPTURTN"
 	sky1 = "SKY1"

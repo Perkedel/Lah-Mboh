@@ -1,0 +1,167 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomDoom.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	MAP01
+	{
+		defaultceiltexture = "FLAT18";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = 1633.467f;
+		defaulttoptexture = "BROWN96";
+		overrideceilheight = false;
+		viewpositiony = -1186.94f;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 512;
+			background = "";
+			backoffsety = 0;
+		}
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridebottomtexture = false;
+		defaultbottomtexture = "BROWN96";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaultfloortexture = "CEIL5_1";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaultwalltexture = "BROWN96";
+		overridetoptexture = false;
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 0.1500906f;
+	}
+	
+	PLMSKY1
+	{
+		defaultwalltexture = "BROWN96";
+		overridemiddletexture = false;
+		defaultceiltexture = "FLAT18";
+		overrideceiltexture = false;
+		custombrightness = 196;
+		
+		resources
+		{
+			
+			resource0
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource1
+			{
+				type = 1;
+				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+		}
+		viewpositiony = -4019.543f;
+		viewpositionx = -1762.584f;
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		customceilheight = 128;
+		customfloorheight = 0;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 16;
+			background = "";
+			backoffsety = 0;
+		}
+		viewscale = 3.496816f;
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaulttoptexture = "BROWN96";
+		overridebottomtexture = false;
+		defaultbottomtexture = "BROWN96";
+		defaultfloortexture = "CEIL5_1";
+		overrideceilheight = false;
+		overridebrightness = false;
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridefloorheight = false;
+		overridetoptexture = false;
+		uselongtexturenames = false;
+		overridefloortexture = false;
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+	}
+}

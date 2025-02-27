@@ -172,6 +172,9 @@ script "WelcomeHome" (void)
 	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
 	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
 	
+	// Main Player (Unnamed either intentionally or unintentional)
+	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label = "Untitled???";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
+	
 	// If nothing else matches..
 	else {label = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
 	HudMessage(s:"Welcome home, ", s:label,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);

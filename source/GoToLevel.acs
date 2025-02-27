@@ -17,3 +17,8 @@ script "LevelRightFrn" (void)
 {
 	ChangeLevel("RIGHTFRN",0,CHANGELEVEL_NOINTERMISSION,-1);
 }
+
+script "LevelPlmSky1" (void)
+{
+	ChangeLevel("PLMSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
+}
