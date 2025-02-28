@@ -42,6 +42,7 @@ gameinfo
 		"$RISCVREIGNS",
 		"$LEMONLEVEL",
 		"NONEEDKNUCKLE",
+		"SATEKELINCI",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -51,6 +52,16 @@ gameinfo
 		"LMBHRES",
 		"LMBHRES1",
 		"LMBHCRED"
+	
+	drawReadThis = true
+	addinfopage = 
+		//"LMBHRES1",
+		"LMBHPROV",
+		"LMBHCRHD",
+		"LMBHCRED"
+	
+	// Test only! do not uncomment in production!
+	//TitlePage = "LMBHRES1"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 }

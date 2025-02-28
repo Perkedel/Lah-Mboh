@@ -1,0 +1,87 @@
+// Wahu yeah! take a look at inkoalawetrust how did (s)he sticker
+// https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/
+// Now apply here! tutorial
+// https://zdoom.org/wiki/DECALDEF
+// (JOELwindows7)
+
+decal NeedKeyAny 35300
+{
+	pic NK_ANY
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal NeedKeyAll 35301
+{
+	pic NK_ALL
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal NeedKeyRed 35302
+{
+	pic NK_RANY
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal NeedKeyBlue 35303
+{
+	pic NK_BANY
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal NeedKeyYellow 35304
+{
+	pic NK_YANY
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal StipulateKeyCard 35400
+{
+	pic NK_CARD
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal StipulateKeySkull 35401
+{
+	pic NK_SKUL
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal ModKeyAnd 35500
+{
+	pic NK_AND
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+decal ModKeyOr 35501
+{
+	pic NK_OR
+	X-Scale 0.4
+	Y-Scale 0.4
+	solid
+}
+
+// Meme review!
+decal SateKelinci 42000
+{
+	pic SateKelinci
+	// pic in 2048 x 2048
+	X-Scale 0.05
+	Y-Scale 0.05
+	solid
+}

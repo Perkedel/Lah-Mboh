@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="HiRes1080p.svg"
-   inkscape:export-filename="..\..\graphics\LMBHRES1.png"
+   inkscape:export-filename="..\..\graphics\LMBHPROV.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -37,7 +37,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer14">
+     inkscape:current-layer="layer13">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -68,7 +68,50 @@
        visible="true" />
   </sodipodi:namedview>
   <defs
-     id="defs1" />
+     id="defs1">
+    <rect
+       x="120"
+       y="800"
+       width="1660"
+       height="120"
+       id="rect16" />
+    <rect
+       x="120"
+       y="320"
+       width="400"
+       height="480"
+       id="rect12" />
+    <rect
+       x="100"
+       y="200"
+       width="860"
+       height="100"
+       id="rect8" />
+    <rect
+       x="100"
+       y="200"
+       width="860"
+       height="100"
+       id="rect9" />
+    <rect
+       x="120"
+       y="320"
+       width="400"
+       height="480"
+       id="rect13" />
+    <rect
+       x="120"
+       y="320"
+       width="400"
+       height="480"
+       id="rect14" />
+    <rect
+       x="120"
+       y="320"
+       width="400"
+       height="480"
+       id="rect15" />
+  </defs>
   <g
      inkscape:label="aaa"
      inkscape:groupmode="layer"
@@ -76,7 +119,7 @@
      sodipodi:insensitive="true"
      style="display:none">
     <rect
-       style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+       style="opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
        id="rect2"
        width="1920"
        height="1080"
@@ -112,7 +155,7 @@
       </g>
     </g>
     <rect
-       style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+       style="opacity:1;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
        id="rect3"
        width="1920"
        height="1080"
@@ -150,7 +193,7 @@
        style="display:inline">
       <text
          xml:space="preserve"
-         style="font-weight:900;font-size:29.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         style="font-weight:900;font-size:29.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;opacity:1;fill:#ffffff;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
          x="160"
          y="32"
          id="text3"><tspan
@@ -160,7 +203,7 @@
            y="32">Lah Mboh?</tspan></text>
       <text
          xml:space="preserve"
-         style="font-weight:900;font-size:10.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         style="font-weight:900;font-size:10.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
          x="160"
          y="44"
          id="text1"><tspan
@@ -177,7 +220,7 @@
        style="display:none">
       <text
          xml:space="preserve"
-         style="font-weight:900;font-size:473.786px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke-width:98.7054;stroke-linecap:round;stroke-linejoin:round"
+         style="font-weight:900;font-size:473.786px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:1;fill:#ffffff;stroke-width:98.7054;stroke-linecap:round;stroke-linejoin:round"
          x="987.10669"
          y="674.78833"
          id="text7"><tspan
@@ -186,6 +229,478 @@
            x="987.10669"
            y="674.78833"
            style="stroke-width:98.7054">aaaa</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer15"
+       inkscape:label="HugeCredit"
+       sodipodi:insensitive="true"
+       style="display:none">
+      <text
+         xml:space="preserve"
+         id="text8"
+         style="font-weight:900;font-size:64px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect8);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-10.872"
+         y="0"><tspan
+           x="100.46381"
+           y="251.6795"
+           id="tspan2">Big Shoutouts - CREDITS.md</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text9"
+         style="font-weight:900;font-size:64px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-10.872"
+         y="0"
+         transform="translate(894.41619)"><tspan
+           x="187.37592"
+           y="251.6795"
+           id="tspan4">Full Info - README.md</tspan></text>
+      <rect
+         style="opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         id="rect10"
+         width="1700"
+         height="20"
+         x="100"
+         y="280" />
+      <rect
+         style="opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         id="rect11"
+         width="20"
+         height="80"
+         x="980"
+         y="200" />
+      <text
+         xml:space="preserve"
+         id="text11"
+         style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect12);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-75.040077"
+         y="0"><tspan
+           x="120"
+           y="337.22647"
+           id="tspan5">NerdKoopa:
+</tspan><tspan
+           x="120"
+           y="358.55979"
+           id="tspan6">- Vehicles
+</tspan><tspan
+           x="120"
+           y="379.8931"
+           id="tspan8">
+</tspan><tspan
+           x="120"
+           y="401.22641"
+           id="tspan9">Jekyll Grim Payne:
+</tspan><tspan
+           x="120"
+           y="422.55972"
+           id="tspan10">- Shooting Range Dummy
+</tspan><tspan
+           x="120"
+           y="443.89304"
+           id="tspan11">
+</tspan><tspan
+           x="120"
+           y="465.22635"
+           id="tspan19">Plums:
+</tspan><tspan
+           x="120"
+           y="486.55966"
+           id="tspan22">- Sky Texture Collections &amp; Demo Map
+</tspan><tspan
+           x="120"
+           y="507.89298"
+           id="tspan23">
+</tspan><tspan
+           x="120"
+           y="529.22629"
+           id="tspan25">PillowBlaster &amp; Mima-sama:
+</tspan><tspan
+           x="120"
+           y="550.5596"
+           id="tspan28">- Werror Handler RO.pk3
+</tspan><tspan
+           x="120"
+           y="571.89292"
+           id="tspan29">
+</tspan><tspan
+           x="120"
+           y="593.22623"
+           id="tspan30">inkoalawetrust:
+</tspan><tspan
+           x="120"
+           y="614.55954"
+           id="tspan31">- Big City map &amp; Urban Props
+</tspan><tspan
+           x="120"
+           y="635.89285"
+           id="tspan32">
+</tspan><tspan
+           x="120"
+           y="657.22617"
+           id="tspan33">ObAddon Community:
+</tspan><tspan
+           x="120"
+           y="678.55948"
+           id="tspan34">- Level Generator
+</tspan><tspan
+           x="120"
+           y="699.89279"
+           id="tspan35">- Textures
+</tspan><tspan
+           x="120"
+           y="721.22611"
+           id="tspan36">- Extra things </tspan></text>
+      <text
+         xml:space="preserve"
+         id="text13"
+         style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-75.040077"
+         y="0"
+         transform="translate(399.78667)"><tspan
+           x="120"
+           y="337.22647"
+           id="tspan37">Ukiro:
+</tspan><tspan
+           x="120"
+           y="358.55979"
+           id="tspan38">- Textures
+</tspan><tspan
+           x="120"
+           y="379.8931"
+           id="tspan39">
+</tspan><tspan
+           x="120"
+           y="401.22641"
+           id="tspan40">Jarewill:
+</tspan><tspan
+           x="120"
+           y="422.55972"
+           id="tspan41">- Jmod the Gmod-like spawn menu
+</tspan><tspan
+           x="120"
+           y="443.89304"
+           id="tspan42">
+</tspan><tspan
+           x="120"
+           y="465.22635"
+           id="tspan43">Matakrow:
+</tspan><tspan
+           x="120"
+           y="486.55966"
+           id="tspan44">- HAMTEX Dev Textures
+</tspan><tspan
+           x="120"
+           y="507.89298"
+           id="tspan45">
+</tspan><tspan
+           x="120"
+           y="529.22629"
+           id="tspan46">SpaceTrash:
+</tspan><tspan
+           x="120"
+           y="550.5596"
+           id="tspan47">- Dev Textures
+</tspan><tspan
+           x="120"
+           y="571.89292"
+           id="tspan48">
+</tspan><tspan
+           x="120"
+           y="593.22623"
+           id="tspan49">Nash:
+</tspan><tspan
+           x="120"
+           y="614.55954"
+           id="tspan50">- Oh God, there are too many to list </tspan><tspan
+           x="120"
+           y="635.89285"
+           id="tspan51">here!!
+</tspan><tspan
+           x="120"
+           y="657.22617"
+           id="tspan52">- Template &amp; Example Textures
+</tspan><tspan
+           x="120"
+           y="678.55948"
+           id="tspan53">
+</tspan><tspan
+           x="120"
+           y="699.89279"
+           id="tspan54">Gutawer &amp; phantombeta:
+</tspan><tspan
+           x="120"
+           y="721.22611"
+           id="tspan55">- ZForm the ZDoom Menu framework
+</tspan><tspan
+           x="120"
+           y="742.55942"
+           id="tspan56">
+</tspan><tspan
+           x="120"
+           y="763.89273"
+           id="tspan57">madame-rachelle:
+</tspan><tspan
+           x="120"
+           y="785.22605"
+           id="tspan58">- Slaughtermap Performance Booster</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text14"
+         style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect14);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-75.040077"
+         y="0"
+         transform="translate(899.78667)"><tspan
+           x="120"
+           y="337.22647"
+           id="tspan59">Korp-kat:
+</tspan><tspan
+           x="120"
+           y="358.55979"
+           id="tspan60">- Furdoom
+</tspan><tspan
+           x="120"
+           y="379.8931"
+           id="tspan61">- MIDIs everywhere
+</tspan><tspan
+           x="120"
+           y="401.22641"
+           id="tspan62">
+</tspan><tspan
+           x="120"
+           y="422.55972"
+           id="tspan63">PillowBlaster &amp; Mima-sama:
+</tspan><tspan
+           x="120"
+           y="443.89304"
+           id="tspan64">- Russian Overkill
+</tspan><tspan
+           x="120"
+           y="465.22635"
+           id="tspan65">
+</tspan><tspan
+           x="120"
+           y="486.55966"
+           id="tspan66">Kenney.nl:
+</tspan><tspan
+           x="120"
+           y="507.89298"
+           id="tspan67">- PUBLIC DOMAIN ASSETS!!! IYEAY!!!
+</tspan><tspan
+           x="120"
+           y="529.22629"
+           id="tspan68">
+</tspan><tspan
+           x="120"
+           y="550.5596"
+           id="tspan69">Demiosis:
+</tspan><tspan
+           x="120"
+           y="571.89292"
+           id="tspan70">- Blood Pack
+</tspan><tspan
+           x="120"
+           y="593.22623"
+           id="tspan71">
+</tspan><tspan
+           x="120"
+           y="614.55954"
+           id="tspan72">Doomarchvilledemon:
+</tspan><tspan
+           x="120"
+           y="635.89285"
+           id="tspan73">- Fly
+</tspan><tspan
+           x="120"
+           y="657.22617"
+           id="tspan74">
+</tspan><tspan
+           x="120"
+           y="678.55948"
+           id="tspan75">MogWaltz:
+</tspan><tspan
+           x="120"
+           y="699.89279"
+           id="tspan76">- Burning things
+</tspan><tspan
+           x="120"
+           y="721.22611"
+           id="tspan77">
+</tspan><tspan
+           x="120"
+           y="742.55942"
+           id="tspan78">Leszek Szary:
+</tspan><tspan
+           x="120"
+           y="763.89273"
+           id="tspan79">- SFX</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text15"
+         style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect15);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+         x="-75.040077"
+         y="0"
+         transform="translate(1299.4667)"><tspan
+           x="120"
+           y="337.22647"
+           id="tspan80">Skelegant:
+</tspan><tspan
+           x="120"
+           y="358.55979"
+           id="tspan81">- Girl PWADs wow
+</tspan><tspan
+           x="120"
+           y="379.8931"
+           id="tspan82">
+</tspan><tspan
+           x="120"
+           y="401.22641"
+           id="tspan83">Kinsie:
+</tspan><tspan
+           x="120"
+           y="422.55972"
+           id="tspan84">- Test Levels
+</tspan><tspan
+           x="120"
+           y="443.89304"
+           id="tspan85">- Other Levels &amp; Other PWADs
+</tspan><tspan
+           x="120"
+           y="465.22635"
+           id="tspan86">
+</tspan><tspan
+           x="120"
+           y="486.55966"
+           id="tspan87">Sgt. Mk. IV:
+</tspan><tspan
+           x="120"
+           y="507.89298"
+           id="tspan88">- Brutal Doom
+</tspan><tspan
+           x="120"
+           y="529.22629"
+           id="tspan89">
+</tspan><tspan
+           x="120"
+           y="550.5596"
+           id="tspan90">pa1nki113r:
+</tspan><tspan
+           x="120"
+           y="571.89292"
+           id="tspan91">- Project Brutality
+</tspan><tspan
+           x="120"
+           y="593.22623"
+           id="tspan92">
+</tspan><tspan
+           x="120"
+           y="614.55954"
+           id="tspan93">Backyard Badasses:
+</tspan><tspan
+           x="120"
+           y="635.89285"
+           id="tspan94">- Freedoom Bad*ss Map pack
+</tspan><tspan
+           x="120"
+           y="657.22617"
+           id="tspan95">
+</tspan><tspan
+           x="120"
+           y="678.55948"
+           id="tspan96">HyperUltra64:
+</tspan><tspan
+           x="120"
+           y="699.89279"
+           id="tspan97">- Treasure Tech
+</tspan><tspan
+           x="120"
+           y="721.22611"
+           id="tspan98">
+</tspan><tspan
+           x="120"
+           y="742.55942"
+           id="tspan99">aaaa</tspan></text>
+      <text
+         xml:space="preserve"
+         id="text16"
+         style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect16);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
+           x="642.6404"
+           y="817.22647"
+           id="tspan100">Visit https://github.com/Perkedel/Lah-Mboh for source code
+</tspan><tspan
+           x="950"
+           y="838.55979"
+           id="tspan101">
+</tspan><tspan
+           x="838.45879"
+           y="859.8931"
+           id="tspan102">Cool and good thancc.
+</tspan><tspan
+           x="950"
+           y="881.22641"
+           id="tspan103">
+</tspan><tspan
+           x="808.09082"
+           y="902.55972"
+           id="tspan104">https://perkedel.netlify.app</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer16"
+       inkscape:label="SuppliesMaps"
+       sodipodi:insensitive="true">
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:58.4105px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke-width:54.7599;stroke-linecap:round;stroke-linejoin:round"
+         x="980.55615"
+         y="305.32654"
+         id="text17"><tspan
+           sodipodi:role="line"
+           id="tspan17"
+           x="980.55609"
+           y="305.32654"
+           style="stroke-width:54.7599">This mod provides a new universal Episode!</tspan><tspan
+           sodipodi:role="line"
+           x="980.55615"
+           y="363.73703"
+           id="tspan18"
+           style="stroke-width:54.7599" /><tspan
+           sodipodi:role="line"
+           x="980.55615"
+           y="422.14752"
+           id="tspan20"
+           style="stroke-width:54.7599">You'll see:</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:177.593px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke-width:166.494;stroke-linecap:round;stroke-linejoin:round"
+         x="978.82812"
+         y="597.81238"
+         id="text21"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           x="978.82812"
+           y="597.81238"
+           style="stroke-width:166.494">Lah mboh?</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-weight:900;font-size:58.4105px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:#ffffff;stroke-width:54.7599;stroke-linecap:round;stroke-linejoin:round"
+         x="980.55615"
+         y="683.84387"
+         id="text24"><tspan
+           sodipodi:role="line"
+           x="980.55615"
+           y="683.84387"
+           id="tspan24"
+           style="stroke-width:54.7599">on your episode selection screen.</tspan><tspan
+           sodipodi:role="line"
+           x="980.55615"
+           y="742.25439"
+           style="stroke-width:54.7599"
+           id="tspan26" /><tspan
+           sodipodi:role="line"
+           x="980.55615"
+           y="800.66486"
+           style="stroke-width:54.7599"
+           id="tspan27">Contains Testmap, Levels, Props Assets, &amp; Megawads</tspan></text>
     </g>
   </g>
   <metadata
