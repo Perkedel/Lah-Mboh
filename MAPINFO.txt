@@ -41,12 +41,15 @@ gameinfo
 		"$ARCHBTW",
 		"$RISCVREIGNS",
 		"$LEMONLEVEL",
+		"NONEEDKNUCKLE",
 		"$WHERDGOING"
 	
 	addcreditpage = 
 		"LMBHCRE1",
 		"LMBHCRE2",
 		"LMBHCRE3",
+		"LMBHRES",
+		"LMBHRES1",
 		"LMBHCRED"
 		
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
@@ -101,6 +104,7 @@ Map KRFHIDE lookup "KRFHIDE"
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTILE"
+	enterPic = "LMBHPENT"
 }
 
 Map RIGHTFRN lookup "RIGHTFRN"
