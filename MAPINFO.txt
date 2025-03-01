@@ -105,6 +105,23 @@ Map MBOHTEST lookup "MBOHTEST"
 	enterPic = "LMBHTENT"
 }
 
+// Megawad
+
+Map MBH01 lookup "MBH01"
+{
+	author = "JOELwindows7"
+	//next = "MBH02"
+	next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = ""
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTILE"
+	//enterPic = "LMBHPENT"
+}
+
+// Extra
+
 Map KRFHIDE lookup "KRFHIDE"
 {
 	author = "JOELwindows7"

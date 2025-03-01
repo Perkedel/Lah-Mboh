@@ -59,6 +59,10 @@ For the thing we've yoinked
 	- Some stuffs
 	- Scripts & bats I guess
 	- Textures & Flats there is to it
+- [Anti-AI Curse Sigil](https://www.tumblr.com/arson-jellyfish69/750271765614313472/ai-disturbance-overlays-for-those-who-dont-have). bigtortalove27, collected by arson-jellyfish69. ???.
+	- this overlay should disturb the AI from learning the image
+	- [sauce more](https://www.reddit.com/r/CuratedTumblr/comments/1dkioq6/ai_blocking_image_overlays/)
+	- [sauce again](https://www.tumblr.com/arson-jellyfish69/750555399114080256/put-these-on-the-top-layer-above-everything-set found somewhere)
 
 ## Sounds
 

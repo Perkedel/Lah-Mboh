@@ -76,20 +76,45 @@ decal ModKeyOr 35501
 	solid
 }
 
+// Sign Messages
+decal TheyBlockedMe 31000
+{
+	pic TheyBlockedMe
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
+decal BanEvasion 31001
+{
+	pic BanEvasion
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
+decal PatentPlagiarized 31002
+{
+	pic PatentPlagiarized
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
 // Meme review! lmao pewdiepie haha
 decal SateKelinci 42000
 {
 	pic SateKelinci
-	// pic in 2048 x 2048
-	X-Scale 0.05
-	Y-Scale 0.05
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
 	solid
 }
 
 decal SolidSolidSolid 42001
 {
 	pic FURSOLID
-	// pic in 2048 x 2048
-	X-Scale 0.05
-	Y-Scale 0.05
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
 }
