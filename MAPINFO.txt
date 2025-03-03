@@ -87,6 +87,8 @@ clusterdef 2
 	ExitText = lookup, "EXITKRFHIDE"	
 	//pic = "COMPBLU"
 	flat = "FLAT5_4"
+	music = "TheFatRat - Untitled Classical" // TheFatRat's untitled piano classic 
+	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
 
 Episode MBOHTEST 
