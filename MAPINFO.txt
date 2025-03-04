@@ -103,7 +103,7 @@ Map MBOHTEST lookup "MBOHTEST"
 	secretnext = "KRFHIDE"
 	sky1 = "SKY1"
 	//cluster = 1
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 	enterPic = "LMBHTENT"
 }
 
@@ -115,10 +115,10 @@ Map MBH01 lookup "MBH01"
 	//next = "MBH02"
 	next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = ""
+	music = "D_STANKY"
 	par = 30
 	sucktime = 0
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 	//enterPic = "LMBHPENT"
 }
 
@@ -133,7 +133,7 @@ Map KRFHIDE lookup "KRFHIDE"
 	cluster = 2	
 	par = 120
 	sucktime = 0
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 	enterPic = "LMBHPENT"
 }
 
@@ -142,7 +142,7 @@ Map RIGHTFRN lookup "RIGHTFRN"
 	author = "JOELwindows7"
 	next = "MBOHTEST"
 	sky1 = "SKY1"
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 }
 
 Map JUSTFITE lookup "JUSTFITE"
@@ -152,7 +152,7 @@ Map JUSTFITE lookup "JUSTFITE"
 	sky1 = "SKY1"
 	BaronSpecial
 	SpecialAction_OpenDoor
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 }
 
 map PLMSKY1 lookup "PLMSKY1"
@@ -160,7 +160,7 @@ map PLMSKY1 lookup "PLMSKY1"
 	author = "plums & JOELwindows7"
 	next = "MBOHTEST"
 	sky1 = "SKY1"	
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 	music = "D_SSLZN"
 }
 
@@ -169,7 +169,7 @@ map MECHSKY1 lookup "MECHSKY1"
 	author = "Mechadon & JOELwindows7"
 	next = "MBOHTEST"
 	sky1 = "SKY1"	
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 	music = "D_SSLZN"
 }
 
@@ -177,14 +177,14 @@ map CURAG "Curag"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"	
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 }
 
 map GARUG2 "Garug 2"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"	
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 }
 
 Episode FEATHERDM
@@ -198,7 +198,7 @@ map CAPTURTN "Capturation"
 	next = "CAPTURTN"
 	secretnext = "CAPTURTN"
 	sky1 = "SKY1"
-	exitPic = "LMBHTILE"
+	exitPic = "LMBHTIHD"
 }
 
 DamageType LatexGoo

@@ -32,13 +32,13 @@
      showgrid="true"
      inkscape:zoom="4.6250001"
      inkscape:cx="165.51351"
-     inkscape:cy="82.054053"
+     inkscape:cy="82.270268"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g18">
+     inkscape:current-layer="layer7">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -124,7 +124,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="LahMbohCredit"
-     style="display:inline">
+     style="display:none">
     <rect
        style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
        id="rect3"
@@ -255,166 +255,166 @@
          style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
            x="12"
            y="52.306622"
-           id="tspan25">NerdKoopa:
+           id="tspan14">NerdKoopa:
 </tspan><tspan
            x="12"
            y="57.639951"
-           id="tspan26">- Vehicles
+           id="tspan15">- Vehicles
 </tspan><tspan
            x="12"
            y="62.973279"
-           id="tspan27">
+           id="tspan106">
 </tspan><tspan
            x="12"
            y="68.306607"
-           id="tspan28">Jekyll Grim Payne:
+           id="tspan107">Jekyll Grim Payne:
 </tspan><tspan
            x="12"
            y="73.639935"
-           id="tspan29">- Shooting Range Dummy
+           id="tspan108">- Shooting Range Dummy
 </tspan><tspan
            x="12"
            y="78.973264"
-           id="tspan30">
+           id="tspan109">
 </tspan><tspan
            x="12"
            y="84.306592"
-           id="tspan31">Plums:
+           id="tspan110">Plums:
 </tspan><tspan
            x="12"
            y="89.63992"
-           id="tspan32">- Sky Texture Collections &amp; Demo Map
+           id="tspan111">- Sky Texture Collections &amp; Demo Map
 </tspan><tspan
            x="12"
            y="94.973248"
-           id="tspan33">
+           id="tspan112">
 </tspan><tspan
            x="12"
            y="100.30658"
-           id="tspan34">PillowBlaster &amp; Mima-sama:
+           id="tspan113">PillowBlaster &amp; Mima-sama:
 </tspan><tspan
            x="12"
            y="105.6399"
-           id="tspan35">- Werror Handler RO.pk3
+           id="tspan114">- Werror Handler RO.pk3
 </tspan><tspan
            x="12"
            y="110.97323"
-           id="tspan36">
+           id="tspan115">
 </tspan><tspan
            x="12"
            y="116.30656"
-           id="tspan37">inkoalawetrust:
+           id="tspan116">inkoalawetrust:
 </tspan><tspan
            x="12"
            y="121.63989"
-           id="tspan38">- Big City map &amp; Urban Props
+           id="tspan117">- Big City map &amp; Urban Props
 </tspan><tspan
            x="12"
            y="126.97322"
-           id="tspan39">
+           id="tspan118">
 </tspan><tspan
            x="12"
            y="132.30655"
-           id="tspan40">ObAddon Community:
+           id="tspan119">ObAddon Community:
 </tspan><tspan
            x="12"
            y="137.63987"
-           id="tspan41">- Level Generator
+           id="tspan120">- Level Generator
 </tspan><tspan
            x="12"
            y="142.9732"
-           id="tspan42">- Textures
+           id="tspan121">- Textures
 </tspan><tspan
            x="12"
            y="148.30653"
-           id="tspan43">- Extra things </tspan></text>
+           id="tspan122">- Extra things </tspan></text>
       <text
          xml:space="preserve"
          id="text14"
          style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect14);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
            x="164"
            y="52.306622"
-           id="tspan44">Ukiro:
+           id="tspan123">Ukiro:
 </tspan><tspan
            x="164"
            y="57.639951"
-           id="tspan45">- Textures
+           id="tspan124">- Textures
 </tspan><tspan
            x="164"
            y="62.973279"
-           id="tspan46">
+           id="tspan125">
 </tspan><tspan
            x="164"
            y="68.306607"
-           id="tspan47">Jarewill:
+           id="tspan126">Jarewill:
 </tspan><tspan
            x="164"
            y="73.639935"
-           id="tspan48">- Jmod the Gmod-like spawn menu
+           id="tspan127">- Jmod the Gmod-like spawn menu
 </tspan><tspan
            x="164"
            y="78.973264"
-           id="tspan49">
+           id="tspan128">
 </tspan><tspan
            x="164"
            y="84.306592"
-           id="tspan50">Matakrow:
+           id="tspan129">Matakrow:
 </tspan><tspan
            x="164"
            y="89.63992"
-           id="tspan51">- HAMTEX Dev Textures
+           id="tspan130">- HAMTEX Dev Textures
 </tspan><tspan
            x="164"
            y="94.973248"
-           id="tspan52">
+           id="tspan131">
 </tspan><tspan
            x="164"
            y="100.30658"
-           id="tspan53">SpaceTrash:
+           id="tspan132">SpaceTrash:
 </tspan><tspan
            x="164"
            y="105.6399"
-           id="tspan54">- Dev Textures
+           id="tspan133">- Dev Textures
 </tspan><tspan
            x="164"
            y="110.97323"
-           id="tspan55">
+           id="tspan134">
 </tspan><tspan
            x="164"
            y="116.30656"
-           id="tspan56">Nash:
+           id="tspan135">Nash:
 </tspan><tspan
            x="164"
            y="121.63989"
-           id="tspan57">- Oh God, there are too many to list here!!
+           id="tspan136">- Oh God, there are too many to list here!!
 </tspan><tspan
            x="164"
            y="126.97322"
-           id="tspan58">- Template &amp; Example Textures
+           id="tspan137">- Template &amp; Example Textures
 </tspan><tspan
            x="164"
            y="132.30655"
-           id="tspan59">
+           id="tspan138">
 </tspan><tspan
            x="164"
            y="137.63987"
-           id="tspan60">Gutawer &amp; phantombeta:
+           id="tspan139">Gutawer &amp; phantombeta:
 </tspan><tspan
            x="164"
            y="142.9732"
-           id="tspan61">- ZForm the ZDoom Menu framework
+           id="tspan140">- ZForm the ZDoom Menu framework
 </tspan><tspan
            x="164"
            y="148.30653"
-           id="tspan62">
+           id="tspan141">
 </tspan><tspan
            x="164"
            y="153.63986"
-           id="tspan63">madame-rachelle:
+           id="tspan142">madame-rachelle:
 </tspan><tspan
            x="164"
            y="158.97319"
-           id="tspan64">- Slaughtermap Performance Booster</tspan></text>
+           id="tspan143">- Slaughtermap Performance Booster</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -428,170 +428,170 @@
          style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect18);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
            x="12"
            y="52.306622"
-           id="tspan65">Korp-kat:
+           id="tspan144">Korp-kat:
 </tspan><tspan
            x="12"
            y="57.639951"
-           id="tspan66">- Furdoom
+           id="tspan145">- Furdoom
 </tspan><tspan
            x="12"
            y="62.973279"
-           id="tspan67">- MIDIs everywhere
+           id="tspan146">- MIDIs everywhere
 </tspan><tspan
            x="12"
            y="68.306607"
-           id="tspan68">
+           id="tspan147">
 </tspan><tspan
            x="12"
            y="73.639935"
-           id="tspan69">PillowBlaster &amp; Mima-sama:
+           id="tspan148">PillowBlaster &amp; Mima-sama:
 </tspan><tspan
            x="12"
            y="78.973264"
-           id="tspan70">- Russian Overkill
+           id="tspan149">- Russian Overkill
 </tspan><tspan
            x="12"
            y="84.306592"
-           id="tspan71">
+           id="tspan150">
 </tspan><tspan
            x="12"
            y="89.63992"
-           id="tspan72">Kenney.nl:
+           id="tspan151">Kenney.nl:
 </tspan><tspan
            x="12"
            y="94.973248"
-           id="tspan73">- PUBLIC DOMAIN ASSETS!!! IYEAY!!!
+           id="tspan152">- PUBLIC DOMAIN ASSETS!!! IYEAY!!!
 </tspan><tspan
            x="12"
            y="100.30658"
-           id="tspan74">
+           id="tspan153">
 </tspan><tspan
            x="12"
            y="105.6399"
-           id="tspan75">Demiosis:
+           id="tspan154">Demiosis:
 </tspan><tspan
            x="12"
            y="110.97323"
-           id="tspan76">- Blood Pack
+           id="tspan155">- Blood Pack
 </tspan><tspan
            x="12"
            y="116.30656"
-           id="tspan77">
+           id="tspan156">
 </tspan><tspan
            x="12"
            y="121.63989"
-           id="tspan78">Doomarchvilledemon:
+           id="tspan157">Doomarchvilledemon:
 </tspan><tspan
            x="12"
            y="126.97322"
-           id="tspan79">- Fly
+           id="tspan158">- Fly
 </tspan><tspan
            x="12"
            y="132.30655"
-           id="tspan80">
+           id="tspan159">
 </tspan><tspan
            x="12"
            y="137.63987"
-           id="tspan81">MogWaltz:
+           id="tspan160">MogWaltz:
 </tspan><tspan
            x="12"
            y="142.9732"
-           id="tspan82">- Burning things
+           id="tspan161">- Burning things
 </tspan><tspan
            x="12"
            y="148.30653"
-           id="tspan83">
+           id="tspan162">
 </tspan><tspan
            x="12"
            y="153.63986"
-           id="tspan84">Leszek Szary:
+           id="tspan163">Leszek Szary:
 </tspan><tspan
            x="12"
            y="158.97319"
-           id="tspan85">- SFX</tspan></text>
+           id="tspan164">- SFX</tspan></text>
       <text
          xml:space="preserve"
          id="text16"
          style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect19);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
            x="164"
            y="52.306622"
-           id="tspan86">Skelegant:
+           id="tspan165">Skelegant:
 </tspan><tspan
            x="164"
            y="57.639951"
-           id="tspan87">- Girl PWADs wow
+           id="tspan166">- Girl PWADs wow
 </tspan><tspan
            x="164"
            y="62.973279"
-           id="tspan88">
+           id="tspan167">
 </tspan><tspan
            x="164"
            y="68.306607"
-           id="tspan89">Kinsie:
+           id="tspan168">Kinsie:
 </tspan><tspan
            x="164"
            y="73.639935"
-           id="tspan90">- Test Levels
+           id="tspan169">- Test Levels
 </tspan><tspan
            x="164"
            y="78.973264"
-           id="tspan91">- Other Levels &amp; Other PWADs
+           id="tspan170">- Other Levels &amp; Other PWADs
 </tspan><tspan
            x="164"
            y="84.306592"
-           id="tspan92">
+           id="tspan171">
 </tspan><tspan
            x="164"
            y="89.63992"
-           id="tspan93">Sgt. Mk. IV:
+           id="tspan172">Sgt. Mk. IV:
 </tspan><tspan
            x="164"
            y="94.973248"
-           id="tspan94">- Brutal Doom
+           id="tspan173">- Brutal Doom
 </tspan><tspan
            x="164"
            y="100.30658"
-           id="tspan95">
+           id="tspan174">
 </tspan><tspan
            x="164"
            y="105.6399"
-           id="tspan96">pa1nki113r:
+           id="tspan175">pa1nki113r:
 </tspan><tspan
            x="164"
            y="110.97323"
-           id="tspan97">- Project Brutality
+           id="tspan176">- Project Brutality
 </tspan><tspan
            x="164"
            y="116.30656"
-           id="tspan98">
+           id="tspan177">
 </tspan><tspan
            x="164"
            y="121.63989"
-           id="tspan99">Backyard Badasses:
+           id="tspan178">Backyard Badasses:
 </tspan><tspan
            x="164"
            y="126.97322"
-           id="tspan100">- Freedoom Bad*ss Map pack
+           id="tspan179">- Freedoom Bad*ss Map pack
 </tspan><tspan
            x="164"
            y="132.30655"
-           id="tspan101">
+           id="tspan180">
 </tspan><tspan
            x="164"
            y="137.63987"
-           id="tspan102">HyperUltra64:
+           id="tspan181">HyperUltra64:
 </tspan><tspan
            x="164"
            y="142.9732"
-           id="tspan103">- Treasure Tech
+           id="tspan182">- Treasure Tech
 </tspan><tspan
            x="164"
            y="148.30653"
-           id="tspan104">
+           id="tspan183">
 </tspan><tspan
            x="164"
            y="153.63986"
-           id="tspan105">aaaa</tspan></text>
+           id="tspan184">aaaa</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -616,7 +616,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="LahMbohMore"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <rect
        style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
@@ -805,171 +805,181 @@
        inkscape:label="TestEnter"
        style="display:none"
        sodipodi:insensitive="true">
-      <rect
-         style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-         id="rect248"
-         width="64"
-         height="64"
-         x="32"
-         y="64"
-         ry="0" />
-      <path
-         style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-         d="M 32,96 64,64 96,96 64,128 Z"
-         id="path248" />
-      <text
-         xml:space="preserve"
-         style="font-weight:900;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-         x="104"
-         y="128"
-         id="text248"><tspan
-           sodipodi:role="line"
-           id="tspan248"
+      <g
+         id="g3">
+        <g
+           id="g2">
+          <rect
+             style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             id="rect248"
+             width="64"
+             height="64"
+             x="32"
+             y="64"
+             ry="0" />
+          <path
+             style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="M 32,96 64,64 96,96 64,128 Z"
+             id="path248" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-weight:900;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
            x="104"
-           y="128">Testing Testing!</tspan></text>
+           y="128"
+           id="text248"><tspan
+             sodipodi:role="line"
+             id="tspan248"
+             x="104"
+             y="128">Testing Testing!</tspan></text>
+      </g>
     </g>
     <g
        inkscape:groupmode="layer"
        id="layer9"
        inkscape:label="HideoutEnter"
-       sodipodi:insensitive="true">
+       sodipodi:insensitive="true"
+       style="display:none">
       <g
-         id="g15"
-         transform="translate(-8,16)">
+         id="g1">
         <g
-           id="g14">
+           id="g15"
+           transform="translate(-8,16)">
           <g
-             id="g10">
-            <path
-               style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="M 32,64 64,32 h 96 l 32,32 z"
-               id="path1" />
-            <path
-               style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="M 128,32 104,64 H 32 L 64,32 Z"
-               id="path3" />
-            <path
-               style="opacity:0.998844;fill:#cccccc;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="m 128,32 32,32 H 96 Z"
-               id="path4" />
+             id="g14">
+            <g
+               id="g10">
+              <path
+                 style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="M 32,64 64,32 h 96 l 32,32 z"
+                 id="path1" />
+              <path
+                 style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="M 128,32 104,64 H 32 L 64,32 Z"
+                 id="path3" />
+              <path
+                 style="opacity:0.998844;fill:#cccccc;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="m 128,32 32,32 H 96 Z"
+                 id="path4" />
+            </g>
+            <g
+               id="g11">
+              <path
+                 style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="m 32,68 h 160 v 60 H 32 Z"
+                 id="path2" />
+              <rect
+                 style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 id="rect4"
+                 width="64"
+                 height="60"
+                 x="32"
+                 y="68"
+                 ry="0" />
+              <rect
+                 style="opacity:0.998844;fill:#b3b3b3;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 id="rect6"
+                 width="64"
+                 height="60"
+                 x="96"
+                 y="68" />
+            </g>
           </g>
           <g
-             id="g11">
-            <path
-               style="opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="m 32,68 h 160 v 60 H 32 Z"
-               id="path2" />
-            <rect
-               style="opacity:0.998844;fill:#999999;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               id="rect4"
-               width="64"
-               height="60"
-               x="32"
-               y="68"
-               ry="0" />
-            <rect
-               style="opacity:0.998844;fill:#b3b3b3;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               id="rect6"
-               width="64"
-               height="60"
-               x="96"
-               y="68" />
+             id="g13">
+            <g
+               id="g12">
+              <rect
+                 style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 id="rect7"
+                 width="32"
+                 height="28"
+                 x="112"
+                 y="96" />
+              <path
+                 style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="m 116,92 c 0,0 0,-12 12,-12 12,0 12,12 12,12 h -4 c 0,0 0,-8 -8,-8 -8,0 -8,8 -8,8 z"
+                 id="path7" />
+            </g>
+            <g
+               id="g9"
+               transform="translate(0,2)">
+              <circle
+                 style="opacity:0.998844;fill:#f9f9f9;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 id="path8"
+                 cx="128"
+                 cy="104"
+                 r="4" />
+              <path
+                 style="opacity:0.998844;fill:#f9f9f9;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+                 d="m 126,107 -2,9 h 8 l -2,-9 z"
+                 id="path9"
+                 sodipodi:nodetypes="ccccc" />
+            </g>
           </g>
         </g>
-        <g
-           id="g13">
-          <g
-             id="g12">
-            <rect
-               style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               id="rect7"
-               width="32"
-               height="28"
-               x="112"
-               y="96" />
-            <path
-               style="opacity:0.998844;fill:#000000;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="m 116,92 c 0,0 0,-12 12,-12 12,0 12,12 12,12 h -4 c 0,0 0,-8 -8,-8 -8,0 -8,8 -8,8 z"
-               id="path7" />
-          </g>
-          <g
-             id="g9"
-             transform="translate(0,2)">
-            <circle
-               style="opacity:0.998844;fill:#f9f9f9;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               id="path8"
-               cx="128"
-               cy="104"
-               r="4" />
-            <path
-               style="opacity:0.998844;fill:#f9f9f9;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-               d="m 126,107 -2,9 h 8 l -2,-9 z"
-               id="path9"
-               sodipodi:nodetypes="ccccc" />
-          </g>
-        </g>
-      </g>
-      <text
-         xml:space="preserve"
-         style="font-weight:900;font-size:18.3976px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:68.9912;stroke-linecap:round;stroke-linejoin:round"
-         x="191.86935"
-         y="135.00949"
-         id="text17"><tspan
-           sodipodi:role="line"
-           id="tspan16"
+        <text
+           xml:space="preserve"
+           style="font-weight:900;font-size:18.3976px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:68.9912;stroke-linecap:round;stroke-linejoin:round"
            x="191.86935"
            y="135.00949"
-           style="fill:#ffffff;stroke-width:68.9912">Archive Box</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-         x="192"
-         y="144"
-         id="text18"><tspan
-           sodipodi:role="line"
-           id="tspan17"
+           id="text17"><tspan
+             sodipodi:role="line"
+             id="tspan16"
+             x="191.86935"
+             y="135.00949"
+             style="fill:#ffffff;stroke-width:68.9912">Archive Box</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
            x="192"
-           y="144">a.k.a. Sarcophagus / Pyramid / Mahkom</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:900;font-size:4.16213px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:15.608;stroke-linecap:round;stroke-linejoin:round"
-         x="199.70865"
-         y="151.77106"
-         id="text19"><tspan
-           sodipodi:role="line"
-           id="tspan18"
+           y="144"
+           id="text18"><tspan
+             sodipodi:role="line"
+             id="tspan17"
+             x="192"
+             y="144">a.k.a. Sarcophagus / Pyramid / Mahkom</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:900;font-size:4.16213px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:15.608;stroke-linecap:round;stroke-linejoin:round"
            x="199.70865"
            y="151.77106"
-           style="stroke-width:15.608">pls help what's the best definition!</tspan><tspan
-           sodipodi:role="line"
-           x="199.70865"
-           y="155.93318"
-           id="tspan19"
-           style="stroke-width:15.608">It's basically like with that Firaun from Egypt</tspan><tspan
-           sodipodi:role="line"
-           x="199.70865"
-           y="160.09532"
-           id="tspan20"
-           style="stroke-width:15.608">but it's a Tech CEO from Indonesia, but his</tspan><tspan
-           sodipodi:role="line"
-           x="199.70865"
-           y="164.25745"
-           id="tspan21"
-           style="stroke-width:15.608">body is not buried there.</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-         x="228"
-         y="176"
-         id="text22"><tspan
-           sodipodi:role="line"
-           id="tspan22"
+           id="text19"><tspan
+             sodipodi:role="line"
+             id="tspan18"
+             x="199.70865"
+             y="151.77106"
+             style="stroke-width:15.608">pls help what's the best definition!</tspan><tspan
+             sodipodi:role="line"
+             x="199.70865"
+             y="155.93318"
+             id="tspan19"
+             style="stroke-width:15.608">It's basically like with that Firaun from Egypt</tspan><tspan
+             sodipodi:role="line"
+             x="199.70865"
+             y="160.09532"
+             id="tspan20"
+             style="stroke-width:15.608">but it's a Tech CEO from Indonesia, but his</tspan><tspan
+             sodipodi:role="line"
+             x="199.70865"
+             y="164.25745"
+             id="tspan21"
+             style="stroke-width:15.608">body is not buried there.</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-weight:900;font-size:5.33333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
            x="228"
-           y="176">that body is me. idk if I can live</tspan><tspan
-           sodipodi:role="line"
-           x="228"
-           y="181.33333"
-           id="tspan23">that long idk who knows</tspan></text>
+           y="176"
+           id="text22"><tspan
+             sodipodi:role="line"
+             id="tspan22"
+             x="228"
+             y="176">that body is me. idk if I can live</tspan><tspan
+             sodipodi:role="line"
+             x="228"
+             y="181.33333"
+             id="tspan23">that long idk who knows</tspan></text>
+      </g>
     </g>
     <g
        inkscape:groupmode="layer"

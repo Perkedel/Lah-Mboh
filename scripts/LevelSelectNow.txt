@@ -35,6 +35,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			CallACS("LevelRightFrn");
 			link.Close();
 		}
+		else if(command == "L-MBHADV"){
+			console.printf("GO to Megawad Mboh Adventure");
+			CallACS("MegawadMBHADV");
+			link.Close();
+		}
 		else if(command == "L-PLMSKY1"){
 			console.printf("GO to PLMSKY1");
 			CallACS("LevelPlmSky1");
@@ -139,6 +144,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         //Level now
         elem = LMBH_ZF_Button.create(
         	(8,16),
+        	(96,32),
+        	text: "(MEGAWAD) Mboh Adventure",
+        	cmdHandler: handler,
+        	command: "L-MBHADV"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,24),
         	(96,16),
         	text: "Just Fight!",
         	cmdHandler: handler,
@@ -148,7 +163,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
-        	(8,24),
+        	(8,32),
         	(100,16),
         	text: "Front of you",
         	cmdHandler: handler,
@@ -158,7 +173,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
-        	(8,32),
+        	(8,40),
         	(100,16),
         	text: "Plums' Skies",
         	cmdHandler: handler,
@@ -168,7 +183,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
-        	(8,40),
+        	(8,48),
         	(100,16),
         	text: "Mech's Skies",
         	cmdHandler: handler,
