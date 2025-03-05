@@ -1,0 +1,440 @@
+// Hey folks, I'm too lazy to DoomEdNum in MAPINFO, so yoinks' DECORATEs be here.
+// (JOELwindows7)
+
+// TDRR's STUFFS!
+//==============================================================================
+//
+// CAPTURE THE FLAG STUFF
+// the contents of this file are almost the same as SkulltagEmulation.pk3
+//==============================================================================
+//Token items to know the state of the flag, score, etc.
+
+ACTOR LoopsLeftToReturn : Inventory {Inventory.MaxAmount 40 }
+
+ACTOR HasRedFlag : Inventory {Inventory.MaxAmount 1 +INTERHUBSTRIP}
+ACTOR SpawnRedFlag : Inventory {Inventory.MaxAmount 1 }
+ACTOR SpawnFakeRedFlag : Inventory {Inventory.MaxAmount 1 }
+
+ACTOR HasBlueFlag : Inventory {Inventory.MaxAmount 1 +INTERHUBSTRIP}
+ACTOR SpawnBlueFlag : Inventory {Inventory.MaxAmount 1 }
+ACTOR SpawnFakeBlueFlag : Inventory {Inventory.MaxAmount 1 }
+
+ACTOR GetRedFlag : Inventory {Inventory.MaxAmount 1 +INTERHUBSTRIP}
+ACTOR GetBlueFlag : Inventory {Inventory.MaxAmount 1 +INTERHUBSTRIP}
+ACTOR STZD_ImmaBot : Inventory {Inventory.MaxAmount 1 +UNDROPPABLE}
+
+ACTOR CTF_PlayerStart : TeleportDest 9132
+{
+//$Category ZCTF Stuff
+//$Title CTF Player Start (Deaf start for blue) 
+//$Angled
+//$Sprite PLAYA1
+states
+{
+Spawn:
+TNT1 A 0
+TNT1 A 0 A_CheckFlag("AMBUSH", "SpawnBlue", AAPTR_DEFAULT)
+TNT1 A 0 Thing_ChangeTID(0, 123457)
+TNT1 A -1
+Stop
+SpawnBlue:
+TNT1 A 0
+TNT1 A 0 Thing_ChangeTID(0, 123456)
+TNT1 A -1
+Stop
+}
+}
+
+//No one will reach the score limit unless that person is REALLY REALLY bored
+ACTOR RedScore : Inventory {Inventory.MaxAmount 32767} 
+ACTOR BlueScore : Inventory {Inventory.MaxAmount 32767} 
+ACTOR IsPlayingCTF : Inventory {Inventory.MaxAmount 1}
+
+ACTOR CTFRFlagIcon
+{
+Health 100
+Radius 1
+Height 1
++NOCLIP
+-SOLID
+-SHOOTABLE
++NOBLOCKMAP
++THRUACTORS
++NOGRAVITY
++INVULNERABLE
+States
+{
+Spawn:
+RFLA A 2
+Stop
+}
+}
+
+ACTOR CTFBFlagIcon
+{
+Health 100
+Radius 1
+Height 1
++NOCLIP
+-SOLID
+-SHOOTABLE
++NOBLOCKMAP
++THRUACTORS
++NOGRAVITY
++INVULNERABLE
+States
+{
+Spawn:
+BFLA A 2
+Stop
+}
+}
+
+ACTOR CTFRedFlagIconSpawner : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	+INVENTORY.AUTOACTIVATE
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Loop
+	Pickup:
+    Use:
+	    TNT1 A 0 A_SpawnItem("CTFRFlagIcon", -20)
+		Stop
+	}
+}
+
+ACTOR CTFBlueFlagIconSpawner : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	+INVENTORY.AUTOACTIVATE
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Loop
+	Pickup:
+    Use:
+	    TNT1 A 0 A_SpawnItem("CTFBFlagIcon", -20)
+		Stop
+	}
+}
+
+//This actor is a container for CTF score items, when you score 1 point
+//either RedScore or BlueScore is given depending on your team, and
+//is recieved by this actor, then to know how much score there is
+//an ACS script checks every 4 tics how much of each actor is in this 
+//actor's inventory and updates the score on screen depending on the amount
+ACTOR CTFScoreSystem
+{
+Health 100
+Radius 1
+Height 1
++NOCLIP
+-SOLID
+-SHOOTABLE
++NOBLOCKMAP
++THRUACTORS
++INVULNERABLE
+States
+{
+Spawn:
+TNT1 A 1
+TNT1 A 0 A_GiveInventory("IsPlayingCTF", 1)
+TNT1 A 0 Thing_ChangeTID(0, 1898668)
+TNT1 A -1
+Wait
+}
+}
+
+//Other stuff like flags and their capture spots
+ACTOR RedFlagCapSpot : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Loop
+	Pickup:
+	    TNT1 A 1 A_JumpIfInventory("HasBlueFlag", 1, "Capture")
+		Fail
+	Capture:
+		TNT1 A 1 ACS_NamedExecuteAlways("ST4ZD_CaptureBlueFlag", 0)
+		Fail
+	}
+}
+
+ACTOR RedFlagSpot : CustomInventory 9131
+{
+	//$Category ZCTF Stuff
+	//$Title Red Flag
+	//$Sprite RFLAA0
+	//$NotAngled
+	Game Doom
+	Radius 1
+	Height 1
+	Inventory.PickupMessage "Lol"
+	-PICKUP
+	+THRUACTORS
+	+NOBLOCKMAP
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnRedFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9131)
+		TNT1 A 0 A_SpawnItem("RedFlag")
+		TNT1 A 0 A_SpawnItem("RedFlagCapSpot")
+		TNT1 A 0 A_SpawnItem("CTFScoreSystem")
+		Goto Waiting
+	Spawn2:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnRedFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9131)
+		TNT1 A 0 A_SpawnItem("RedFlag")
+		Goto Waiting
+	SpawnFake:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnFakeRedFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9131)
+		TNT1 A 0 A_SpawnItem("FakeRedFlag")
+		Goto Waiting
+	Waiting:
+	    TNT1 A 1 A_JumpIfInventory("SpawnRedFlag", 1, "Spawn2")
+		TNT1 A 0 A_JumpIfInventory("SpawnFakeRedFlag", 1, "SpawnFake")
+		Loop
+	Pickup:
+		TNT1 A 0 A_Print("Crap!")
+		Goto Waiting
+	}
+}
+
+ACTOR BlueFlagCapSpot : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		Loop
+	Pickup:
+	    TNT1 A 1 A_JumpIfInventory("HasRedFlag", 1, "Capture")
+		Fail
+	Capture:
+		TNT1 A 1 ACS_NamedExecuteAlways("ST4ZD_CaptureRedFlag", 0)
+		Fail
+	}
+}
+
+ACTOR BlueFlagSpot : CustomInventory 9130
+{
+	//$Category ZCTF Stuff
+	//$Title Blue Flag
+	//$Sprite BFLAA0
+	//$NotAngled
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage "Lol"
+	-PICKUP
+	+NOBLOCKMAP
+	+THRUACTORS
+	States
+	{
+	Spawn:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnBlueFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9130)
+		TNT1 A 0 A_SpawnItem("BlueFlag")
+		TNT1 A 0 A_SpawnItem("BlueFlagCapSpot")
+		Goto Waiting
+	Spawn2:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnBlueFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9130)
+		TNT1 A 0 A_SpawnItem("BlueFlag")
+		Goto Waiting
+	SpawnFake:
+		TNT1 A 1
+		TNT1 A 0 A_TakeInventory("SpawnFakeBlueFlag", 10)
+		TNT1 A 0 Thing_ChangeTID(0, 9130)
+		TNT1 A 0 A_SpawnItem("FakeBlueFlag")
+		Goto Waiting
+	Waiting:
+	    TNT1 A 1 A_JumpIfInventory("SpawnBlueFlag", 1, "Spawn2")
+		TNT1 A 0 A_JumpIfInventory("SpawnFakeBlueFlag", 1, "SpawnFake")
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_CaptureRedFlag", 0)
+		Goto Waiting
+	}
+}
+
+ACTOR RedFlag : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	+NEVERRESPAWN
+	States
+	{
+	Spawn:
+	    RFLA ABC 3
+		RFLA DEF 3 Bright
+		loop
+	Pickup:
+	    TNT1 A 0 A_TakeInventory("RedFlag", 100)
+	    TNT1 A 0 A_JumpIfInventory("GetRedFlag", 1, "DoGiveFlag")
+		//TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnFakeRedFlag", 0)
+		Fail
+		//TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnRedFlag", 0)
+		//Stop
+	DoGiveFlag:
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_StealRedFlag", 0)
+		TNT1 A 0 A_GiveInventory("HasRedFlag", 1)
+		Stop
+	}
+}
+
+ACTOR RedFlagDrop : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	+NEVERRESPAWN
+	States
+	{
+	Spawn:
+	    RFLA ABC 3
+		RFLA DEF 3 Bright
+		TNT1 A 0 A_JumpIfInventory("LoopsLeftToReturn", 40, "ReturnFlag")
+		TNT1 A 0 A_GiveInventory("LoopsLeftToReturn", 1)
+		loop
+	Pickup:
+	    TNT1 A 0 A_TakeInventory("RedFlagDrop", 100)
+	    RFLA A 1 A_JumpIfInventory("GetRedFlag", 1, "DoGiveFlag")
+		TNT1 A 0 A_JumpIfInventory("GetBlueFlag", 1, "ReturnFlag")
+		Fail
+	ReturnFlag:
+	    TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnRedFlag", 0)
+		Stop
+	DoGiveFlag:
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_StealRedFlag", 0)
+		TNT1 A 0 A_GiveInventory("HasRedFlag", 1)
+		Stop
+	}
+}
+
+ACTOR FakeRedFlag
+{
+	Game Doom
+	Radius 1
+	Height 1
+	-PICKUP
+	+NOBLOCKMAP
+	+THRUACTORS
+	+NEVERRESPAWN
+	-SOLID
+	States
+	{
+	Spawn: //cooldown to pick up the flag again
+		RFLA ABC 3
+		RFLA DEF 3 Bright
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnRedFlag", 0)
+		Stop
+	}
+}
+
+ACTOR BlueFlag : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	-PICKUP
+	//+ALWAYSPICKUP this flag caused a bug and for 2 weeks i didn't know what
+	+NEVERRESPAWN //was actually causing it, i finally found out!
+	States
+	{
+	Spawn:
+	    BFLA ABC 3
+		BFLA DEF 3 Bright
+		loop
+	Pickup:
+	    TNT1 A 0 A_TakeInventory("BlueFlag", 100)
+	    TNT1 A 0 A_JumpIfInventory("GetBlueFlag", 1, "DoGiveFlag")
+		//TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnFakeBlueFlag", 0)
+		Fail
+	DoGiveFlag:
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_StealBlueFlag", 0)
+		TNT1 A 0 A_GiveInventory("HasBlueFlag", 1)
+		Stop
+	}
+}
+
+ACTOR FakeBlueFlag
+{
+	Game Doom
+	Radius 1
+	Height 1
+	-PICKUP
+	+NOBLOCKMAP
+	+THRUACTORS
+	+NEVERRESPAWN
+	-SOLID
+	States
+	{
+	Spawn: //cooldown to pick up the flag again
+		BFLA ABC 3
+		BFLA DEF 3 Bright
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnBlueFlag", 0)
+		Stop
+	}
+}
+
+ACTOR BlueFlagDrop : CustomInventory
+{
+	Game Doom
+	Radius 20
+	Height 26
+	Inventory.PickupMessage ""
+	+NEVERRESPAWN
+	States
+	{
+	Spawn:
+	    BFLA ABC 3
+		BFLA DEF 3 Bright
+		TNT1 A 0 A_JumpIfInventory("LoopsLeftToReturn", 40, "ReturnFlag")
+		TNT1 A 0 A_GiveInventory("LoopsLeftToReturn", 1)
+		loop
+	Pickup:
+	    TNT1 A 0 A_TakeInventory("BlueFlagDrop", 100)
+	    BFLA A 1 A_JumpIfInventory("GetBlueFlag", 1, "DoGiveFlag")
+		TNT1 A 0 A_JumpIfInventory("GetRedFlag", 1, "ReturnFlag")
+		Fail
+	ReturnFlag:
+	    TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_ReturnBlueFlag", 0)
+		Stop
+	DoGiveFlag:
+		TNT1 A 0 ACS_NamedExecuteAlways("ST4ZD_StealBlueFlag", 0)
+		TNT1 A 0 A_GiveInventory("HasBlueFlag", 1)
+		Stop
+	}
+}

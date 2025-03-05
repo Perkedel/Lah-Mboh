@@ -42,7 +42,9 @@ gameinfo
 		"$RISCVREIGNS",
 		"$LEMONLEVEL",
 		"$NONEEDKNUCKLE",
-		"SATEKELINCI",
+		"$SATEKELINCI",
+		"$AVOIDNOPOC",
+		"$THATWASME",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -75,18 +77,19 @@ DoomEdNums
 // I'm tired of this bullshit. Just lemme build level already!
 
 
-clusterdef 1
+clusterdef 100
 {
 	hub	
 }
 
-clusterdef 2
+clusterdef 200
 {
 	// Kaorfa's Hideout found
 	EnterText= lookup, "ENTERKRFHIDE"
 	ExitText = lookup, "EXITKRFHIDE"	
 	//pic = "COMPBLU"
-	flat = "FLAT5_4"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
 	music = "TheFatRat - Untitled Classical" // TheFatRat's untitled piano classic 
 	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
@@ -102,7 +105,7 @@ Map MBOHTEST lookup "MBOHTEST"
 	next = "MBOHTEST"
 	secretnext = "KRFHIDE"
 	sky1 = "SKY1"
-	//cluster = 1
+	//cluster = 100
 	exitPic = "LMBHTIHD"
 	enterPic = "LMBHTENT"
 }
@@ -130,7 +133,7 @@ Map KRFHIDE lookup "KRFHIDE"
 	next = "MBOHTEST"
 	sky1 = "SKY1"
 	music = "D_AMPIE"
-	cluster = 2	
+	cluster = 200
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"

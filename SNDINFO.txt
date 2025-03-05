@@ -1,4 +1,5 @@
 // Sond Effecks
+// (JOELwindows7)
 
 // I crashed
 werror/vmabort "sounds/leszek_gameover.wav" //when GZDoom duar crash, play Leszek Szary's gameover!
@@ -20,3 +21,13 @@ targetdummy/pain "sounds/camelmoan.ogg"
 $random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/teleport grunt/sight1 grunt/sight3 demon/melee }
 $random menu/quit2 { vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee }
 */
+
+// TDRR
+BlueFlagDropped bludrop
+BlueFlagReturn bluretu
+BlueFlagTaken blutake
+BlueScores bluscor
+RedFlagDropped reddrop
+RedFlagReturn redretu
+RedFlagTaken redtake
+RedScores redscor

@@ -1,0 +1,77 @@
+type = "Doom Builder Map Settings Configuration";
+gameconfig = "GZDoom_DoomDoom.cfg";
+strictpatches = 0;
+
+maps
+{
+	
+	CTFLEVEL
+	{
+		defaultceiltexture = "SLIME15";
+		overridefloorheight = false;
+		customfloorheight = 0;
+		uselongtexturenames = false;
+		
+		resources
+		{
+		}
+		overrideceiltexture = false;
+		viewpositionx = 424f;
+		defaulttoptexture = "BRICK8";
+		overrideceilheight = false;
+		viewpositiony = -1348f;
+		overridebrightness = false;
+		overridefloortexture = false;
+		
+		grid
+		{
+			backoffsetx = 0;
+			backsource = 0;
+			gridoriginy = 0;
+			backscaley = 100;
+			gridrotate = 0;
+			backscalex = 100;
+			gridoriginx = 0;
+			gridsize = 256;
+			background = "";
+			backoffsety = 0;
+		}
+		
+		reloadresourceprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		
+		testpostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		overridebottomtexture = false;
+		defaultbottomtexture = "BRICK8";
+		
+		reloadresourcepostcommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaultfloortexture = "SLIME14";
+		
+		testprecommand
+		{
+			autocloseonsuccess = true;
+			exitcodeiserror = true;
+			stderriserror = true;
+		}
+		defaultwalltexture = "BRICK8";
+		overridetoptexture = false;
+		customceilheight = 128;
+		overridemiddletexture = false;
+		custombrightness = 196;
+		viewscale = 0.2586019f;
+	}
+}

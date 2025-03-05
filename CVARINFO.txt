@@ -1,0 +1,7 @@
+// Place all your Command variables definition here!
+// (JOELwindows7)
+
+
+// TDRR's CVARs
+//server bool ctfannouncer = true;
+//server int ctflimit = 0;

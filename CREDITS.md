@@ -22,6 +22,7 @@ For the thing we've yoinked
 - [Nash's ZDoom Project Template](https://forum.zdoom.org/viewtopic.php?f=3&t=25083). Nash Muhandes. Yes Anything, Recommend Credit. [SOURCE CODE](https://github.com/nashmuhandes/ZDoomProjectTemplate)
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 - [Mechadon's Box o skies](https://www.doomworld.com/forum/topic/92795-meks-box-o-skies-v3-look-up-in-the-sky-more-skies/). Mechadon. ???.
+- [TDRR's Skulltag CTF Base](https://forum.zdoom.org/viewtopic.php?t=61373). TDRR, original CTF stuffs from Skulltag team. ??? Yes Include, Must Credit.
 
 ## Dependencies
 

@@ -1,0 +1,331 @@
+// Thancc, TDRR
+// https://forum.zdoom.org/viewtopic.php?t=61373
+
+#library "CTF"
+#include "zcommon.acs"
+//The following scripts were made by TDRR, if you use them, give me credit
+//but other than that, do what you want.
+
+//0 is blue and 1 is red
+
+Script "ST4ZD_CTFHud" Open
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+if (GetCVAR("screenblocks") < 12)
+{
+SetHudSize(320,200,TRUE);
+SetFont("DBIGFONT");
+HudMessageBold(i: CheckActorInventory(1898668, "RedScore"); HUDMSG_PLAIN, 500, CR_RED, 200.0, 0.5, 0.0);
+HudMessageBold(i: CheckActorInventory(1898668, "BlueScore"); HUDMSG_PLAIN, 501, CR_BLUE, 100.0, 0.5, 0.0);
+delay(1);
+restart;
+}
+else
+{
+SetHudSize(320,200,TRUE);
+SetFont("INDEXFONT");
+HudMessageBold(i: "0"; HUDMSG_PLAIN, 500, CR_RED, 640.0, 480.0, 1.0);
+HudMessageBold(i: "0"; HUDMSG_PLAIN, 501, CR_BLUE, 640.0, 480.0, 1.0);
+delay(1);
+restart;
+}
+}
+}
+
+Script "ST4ZD_BeASpectator" Enter
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+delay(16);
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) > 1)
+{
+DamageThing(99999);
+Print(s:"Change to team Blue or Red (that is, 0 or 1)");
+}
+}
+}
+
+Script "ST4ZD_BeASpectator2" Respawn
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+delay(16);
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) > 1)
+{
+DamageThing(99999);
+Print(s:"Change to team Blue or Red (that is, 0 or 1)");
+}
+}
+}
+
+Script "ST4ZD_GetRedFlag" (Void)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 1)
+SetActorState(6131,"Idle", 1);
+else
+SetActorState(6131,"PickupGive", 1);
+}
+
+Script "ST4ZD_PlayingCTF" (Void) //Unused
+{
+Print (s:"Welcome to Capture the Flag!");
+}
+
+Script "ST4ZD_GetBlueFlag" (Void)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 0)
+SetActorState(6131,"Idle", 1);
+else
+SetActorState(6131,"PickupGive", 1);
+}
+
+//These scripts give the thing that makes CTF make sense, a token
+//inventory item that keeps track of which team you are on, this way,
+//you can't break the CTF system by changing team in the middle of a
+//match because you need to die for the changes to take effect.
+Script "ST4ZD_CTFLoad1" Enter
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 0)
+{
+GiveInventory("GetRedFlag",1);
+Print(s:"You are on the blue team.");
+Delay(1); //So that the starts have time to set up
+Teleport(123456, 0, 1);
+}
+else
+terminate;
+}
+}
+
+Script "ST4ZD_CTFLoad2" Enter
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 1)
+{
+GiveInventory("GetBlueFlag",1);
+Print(s:"You are on the red team.");
+Delay(1); //So that the starts have time to set up
+Teleport(123457, 0, 1);
+}
+else
+terminate;
+}
+}
+
+//This check is only done once to make sure the player is never considered a bot
+//It is also done always because a bot can't see messages printed on screen
+//so i don't give a single crap about it executing always
+Script "ST4ZD_CTFLoadBot" Enter
+{
+if(PlayerIsBot(PlayerNumber()) == 1)
+{
+TakeInventory("GetRedFlag",10);
+TakeInventory("GetBlueFlag",10);
+delay(8);
+TakeInventory("GetRedFlag",10);
+TakeInventory("GetBlueFlag",10);
+GiveInventory("STZD_ImmaBot", 1);
+Print(s:"You are a bot.(haha faggot)");
+}
+}
+
+Script "ST4ZD_CTFRespawn1" Respawn
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 0)
+{
+GiveInventory("GetRedFlag",1);
+Print(s:"You are on the blue team.");
+Teleport(123456, 0, 1);
+}
+else
+terminate;
+}
+}
+
+Script "ST4ZD_CTFRespawn2" Respawn
+{
+if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+{
+if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 1)
+{
+GiveInventory("GetBlueFlag",1);
+Print(s:"You are on the red team.");
+Teleport(123457, 0, 1);
+}
+else
+terminate;
+}
+}
+
+Script "ST4ZD_CTFRespawnBot" Respawn
+{
+if(CheckInventory("STZD_ImmaBot") == 1)
+{
+TakeInventory("GetRedFlag",10);
+TakeInventory("GetBlueFlag",10);
+delay(8);
+TakeInventory("GetRedFlag",10);
+TakeInventory("GetBlueFlag",10);
+Print(s:"You are a bot.(haha faggot)");
+}
+}
+
+Script "ST4ZD_CaptureBlueFlag" (Void)
+{
+int ctfcaplimit = GetCVar("ctflimit");
+if(CheckInventory("HasBlueFlag"))
+{
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("RedScores", 127);}
+GiveActorInventory(9130, "SpawnBlueFlag", 1);
+PrintBold(n:0,s:" from Red scores!");
+GiveActorInventory(1898668, "RedScore", 1);
+TakeInventory("HasBlueFlag", 1);
+TakeInventory("HasRedFlag", 1);
+if(GetCVAR("ctflimit") > 0)
+{
+if(CheckActorInventory(1898668, "RedScore") == ctfcaplimit)
+{
+PrintBold(s:"Red wins!");
+SetPlayerProperty(1,1,4);
+delay(70);
+SetPlayerProperty(1,0,4);
+Exit_Normal(0);
+}
+}
+}
+else
+terminate;
+}
+
+Script "ST4ZD_StealRedFlag" (Void)
+{
+PrintBold(n:0,s:" has the Red flag!");
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("RedFlagTaken", 127);}
+}
+
+Script "ST4ZD_StealBlueFlag" (Void)
+{
+PrintBold(n:0,s:" has the Blue flag!");
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("BlueFlagTaken", 127);}
+}
+
+Script "ST4ZD_CaptureRedFlag" (Void)
+{
+int ctfcaplimit = GetCVar("ctflimit");
+if(CheckInventory("HasRedFlag"))
+{
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("BlueScores", 127);}
+GiveActorInventory(9131, "SpawnRedFlag", 1);
+PrintBold(n:0,s:" from Blue scores!");
+GiveActorInventory(1898668, "BlueScore", 1);
+TakeInventory("HasBlueFlag", 1);
+TakeInventory("HasRedFlag", 1);
+if(GetCVAR("ctflimit") > 0)
+{
+if(CheckActorInventory(1898668, "BlueScore") == ctfcaplimit)
+{
+PrintBold(s:"Blue wins!");
+SetPlayerProperty(1,1,4);
+delay(70);
+SetPlayerProperty(1,0,4);
+Exit_Normal(0);
+}
+}
+}
+else
+terminate;
+}
+
+Script "ST4ZD_DropRedFlag" Death
+{
+int x = GetActorX (0);
+int y = GetActorY (0);
+int z = GetActorZ (0);
+if(CheckInventory("HasRedFlag"))
+{
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("RedFlagDropped", 127);}
+PrintBold(n:0,s:" dropped the Red flag!");
+SpawnForced("RedFlagDrop", x, y, z);
+TakeInventory("HasRedFlag", 1);
+}
+}
+
+Script "ST4ZD_RedIcon" Enter
+{
+int xc = GetActorX (0);
+int yc = GetActorY (0);
+int zc = GetActorZ (0);
+if(CheckInventory("HasRedFlag"))
+//Spawn("CTFRFlagIcon", xc, yc, zc);
+GiveInventory("CTFRedFlagIconSpawner", 1);
+delay(1);
+restart;
+}
+
+Script "ST4ZD_BlueIcon" Enter
+{
+int xcs = GetActorX (0);
+int ycs = GetActorY (0);
+int zcs = GetActorZ (0);
+if(CheckInventory("HasBlueFlag"))
+//Spawn("CTFBFlagIcon", xcs, ycs, zcs);
+GiveInventory("CTFBlueFlagIconSpawner", 1);
+delay(1);
+restart;
+}
+
+Script "ST4ZD_DropBlueFlag" Death
+{
+int x = GetActorX (0);
+int y = GetActorY (0);
+int z = GetActorZ (0);
+if(CheckInventory("HasBlueFlag"))
+{
+if(GetCVAR("ctfannouncer") == 0) {}
+else
+{AmbientSound("BlueFlagDropped", 127);}
+PrintBold(n:0,s:" dropped the Blue flag!");
+SpawnForced("BlueFlagDrop", x, y, z);
+TakeInventory("HasBlueFlag", 1);
+}
+}
+
+Script "ST4ZD_ReturnRedFlag" (Void)
+{
+GiveActorInventory(9131, "SpawnRedFlag", 1);
+PrintBold(s:"The red flag has been returned!");
+}
+
+Script "ST4ZD_ReturnBlueFlag" (Void)
+{
+GiveActorInventory(9130, "SpawnBlueFlag", 1);
+PrintBold(s:"The blue flag has been returned!");
+}
+
+Script "ST4ZD_ReturnFakeRedFlag" (Void)
+{
+GiveActorInventory(9131, "SpawnFakeRedFlag", 1);
+PrintBold(s:"The red flag has been returned!");
+}
+
+Script "ST4ZD_ReturnFakeBlueFlag" (Void)
+{
+GiveActorInventory(9130, "SpawnFakeBlueFlag", 1);
+PrintBold(s:"The blue flag has been returned!");
+}
