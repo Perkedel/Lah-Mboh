@@ -122,6 +122,7 @@ Map MBH01 lookup "MBH01"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
 	//enterPic = "LMBHPENT"
 }
 

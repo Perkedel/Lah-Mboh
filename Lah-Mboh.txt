@@ -12,7 +12,7 @@ Email Address           : [redacted]
 Other Files By Author   : 
 Misc. Author Info       : 
 
-Description             : See README.md inside this PWAD PK3 for full descriptions.
+Description             : See README.md inside this PWAD PK3 for full descriptions. A PWAD PK3 containing a comprehensive Test map & a Megawad (& counting).
 
 Additional Credits to   : See CREDITS.md inside this PWAD PK3.
 ===========================================================================
@@ -36,12 +36,12 @@ Single Player           : Designed for
 Cooperative 2-4 Player  : Designed for
 Deathmatch 2-4 Player   : Designed for
 Other game styles       : No
-Difficulty Settings     : Yes / Not implemented
+Difficulty Settings     : Yes
 
 
 * Construction *
 
-Base                    : New from scratch
+Base                    : New from scratch (with some levels outright yoinked, edited of course)
 Build Time              : Serveral Hours, Counting because this is Rolling Release
 Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code, Lapce (f888 you VSCode why werroring?!), Blender
 Known Bugs              : Only works with the Freedoom IWAD (which is freedoom2.wad) due to exclusive textures & assets used in many of these maps.

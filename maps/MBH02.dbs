@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	MBH01
+	MBH02
 	{
 		
 		resources
@@ -24,7 +24,7 @@ maps
 			resource1
 			{
 				type = 2;
-				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Maps\\inkoalawetrust\\gz_bigcity.pk3";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
@@ -34,18 +34,18 @@ maps
 			resource2
 			{
 				type = 2;
-				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Maps\\inkoalawetrust\\gz_bigcity.pk3";
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "AQF049";
-		defaultceiltexture = "CEIL5_1";
-		defaulttoptexture = "AQCONC16";
-		defaultwalltexture = "AQCONC16";
-		defaultbottomtexture = "AQCONC16";
+		defaultfloortexture = "RROCK09";
+		defaultceiltexture = "FLAT10";
+		defaulttoptexture = "A-BROWN3";
+		defaultwalltexture = "A-BROWN3";
+		defaultbottomtexture = "A-BROWN3";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -58,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 3832.37f;
-		viewpositiony = -3887.019f;
-		viewscale = 1.098493f;
+		viewpositionx = 10.18123f;
+		viewpositiony = -1.441286f;
+		viewscale = 3.137425f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -71,7 +71,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 16;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
