@@ -115,8 +115,8 @@ Map MBOHTEST lookup "MBOHTEST"
 Map MBH01 lookup "MBH01"
 {
 	author = "JOELwindows7"
-	//next = "MBH02"
-	next = "MBOHTEST" // Temp! comment when level done!
+	next = "MBH02"
+	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_STANKY"
 	par = 30
@@ -124,6 +124,20 @@ Map MBH01 lookup "MBH01"
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
 	//enterPic = "LMBHPENT"
+}
+
+Map MBH02 lookup "MBH02"
+{
+	author = "JOELwindows7"
+	//next = "MBH03"
+	next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_UNDERTO"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHCAVE"
 }
 
 // Extra

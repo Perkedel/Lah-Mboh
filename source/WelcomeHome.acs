@@ -160,6 +160,32 @@ script "WelcomeHome" (void)
 	else if(CheckActorClass(PlayerNumber(),"Xenia")) {label = ".... ARGH F8CKING HELL! Wahtever..";extra_talk="";} // Xenia Onatopp. Enemy in certain film of it. Eliminated.
 	else if(CheckActorClass(PlayerNumber(),"SolidSnake")) {label = "Snake";extra_talk="I got more unused cardboard boxes if you want..\nOr a pack of Invisibility Spheres that's available too.\nAnd also other stealthily silenced arsenals? We got them too.\nAlso, this bunch of pairs of shoes we inspired from a scientist named Shuri, idk.";set_second = 12.0;} // MGS Solid Snake. lmao! Black Panther Marvel.
 	
+	// Lumenoth
+	/*
+	https://lumenoth.itch.io/
+	
+	- Virtua Crisis
+	- Shotgun O Rama
+	- Obliterator
+	- BreadSword Jim
+	- Buds
+	- Vehement
+	- Class Act
+	- Bee Holder
+	- Flying Bad guys
+	- Bimmy's Companions
+	- Terraweps Overhaul
+	- Heretweak
+	*/
+	else if(CheckActorClass(PlayerNumber(),"TheShotgunPlayer")) {label = "Doomguy";extra_talk="Hey! Nice shotgun! where did you get that from?";} // Doomguy with Shotgun O Rama
+	else if(CheckActorClass(PlayerNumber(),"ViolentPlayer")) {label = "Doomguy";extra_talk="Hey! Nice purple sets! where did you get that from?";} // Doomguy with Vehement
+	else if(CheckActorClass(PlayerNumber(),"EWJPlayer")) {label = "Beeholderguy";extra_talk="";} // Bee holder
+	else if(CheckActorClass(PlayerNumber(),"BulletPlayer")) {label = "Bulletguy";extra_talk="";} // Class Act Bullet Guy
+	else if(CheckActorClass(PlayerNumber(),"ShottytPlayer")) {label = "Shottyguy";extra_talk="";} // Class Act Shotty Guy
+	else if(CheckActorClass(PlayerNumber(),"RockettPlayer")) {label = "Rocketguy";extra_talk="";} // Class Act Rocket Guy
+	else if(CheckActorClass(PlayerNumber(),"MG_Player")) {label = "Mr. Obliterator";extra_talk="";} // Obliterator
+	else if(CheckActorClass(PlayerNumber(),"VG_LightGunPlayer")) {label = "Officer";extra_talk="";} // Virtual Crisis. Virtual Cop inspired
+	
 	// Mala Petaka. Yeah that's the name of the IWAD https://store.steampowered.com/app/2104460/Mala_Petaka/ I know.
 	else if(CheckActorClass(PlayerNumber(),"PetakaPlayer")) {label = "Mr. Petaka";extra_talk="yeey mantab jiwa!";} // Petaka. Pls verify!!!!!!!!!!!!!!!!!!!!!
 	
