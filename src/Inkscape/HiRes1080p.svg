@@ -1145,19 +1145,21 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="LahMbohTransparentText"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
        id="layer12"
        inkscape:label="Title"
-       style="display:inline">
+       style="display:none"
+       sodipodi:insensitive="true">
       <g
          id="g126"
-         style="display:inline;fill:url(#linearGradient131);stroke:none;fill-opacity:1"
+         style="display:inline;fill:url(#linearGradient131);stroke:none"
          transform="matrix(0.88610316,0,0,0.88610316,13.200378,142.32477)">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1561.41px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:url(#linearGradient131);stroke:none;stroke-width:60.8127;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1561.41px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:url(#linearGradient131);fill-opacity:1;stroke:none;stroke-width:60.8127;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
            x="287.71768"
            y="1401.6649"
            id="text125"
@@ -1166,10 +1168,10 @@
              id="tspan125"
              x="287.71768"
              y="1401.6649"
-             style="fill:url(#linearGradient131);stroke:none;stroke-width:60.8127;stroke-dasharray:none;fill-opacity:1">?</tspan></text>
+             style="fill:url(#linearGradient131);fill-opacity:1;stroke:none;stroke-width:60.8127;stroke-dasharray:none">?</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1561.41px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:url(#linearGradient131);stroke:none;stroke-width:60.8127;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:1561.41px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;opacity:0.998844;fill:url(#linearGradient131);fill-opacity:1;stroke:none;stroke-width:60.8127;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
            x="1085.6211"
            y="1629.7809"
            id="text126"
@@ -1178,7 +1180,7 @@
              id="tspan126"
              x="1085.6211"
              y="1629.7809"
-             style="fill:url(#linearGradient131);stroke:none;stroke-width:60.8127;stroke-dasharray:none;fill-opacity:1">?</tspan></text>
+             style="fill:url(#linearGradient131);fill-opacity:1;stroke:none;stroke-width:60.8127;stroke-dasharray:none">?</tspan></text>
       </g>
       <g
          id="g118-8"

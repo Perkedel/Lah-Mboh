@@ -2,6 +2,10 @@
 
 Here are random scratchnotes idk what to do but it had to be stored before I forgot it.
 
+## Remind idk
+
+- Don't touch my button! An overprotective Cyberdemon dormant, gets triggered when you press this button & then tries to revenge up in your ass.
+
 ## Idea
 
 Cool ideas that scope is way too huge for me to realize now, but maybe you will?

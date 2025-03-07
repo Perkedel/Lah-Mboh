@@ -132,7 +132,21 @@ Map MBH01 lookup "MBH01"
 Map MBH02 lookup "MBH02"
 {
 	author = "JOELwindows7"
-	//next = "MBH03"
+	next = "MBH03"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_UNDERTO"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHCAVE"
+}
+
+Map MBH03 lookup "MBH03"
+{
+	author = "JOELwindows7"
+	//next = "MBH04"
 	next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_UNDERTO"

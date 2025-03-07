@@ -72,3 +72,20 @@ For the thing we've yoinked
 ## Sounds
 
 - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
+
+## Musics
+
+- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
+	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
+	- `D_E1M2` = `D_UNDERTO`. TheMisterCat - Look At Me I'm Underhalls Too
+	- `D_E1M6` = `D_OXIDNE`. Korp & jute - Oxidine
+	- `D_E4M1` = `D_LIBSTAR`. continuum.mid - Liberate the Stars
+	- `D_E4M5` = `D_MCODE`. Korp - Main Code
+	- `D_E4M7` = `D_AMBIGU`. Korp - Ambiguity
+	- `D_E4M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
+	- `D_BUNNY` = `D_IMPACTE`. Goji - Impactean Welcome Party
+	- `D_INTER` = `D_ULIVE`. Stratos - YOU LIVE!!!
+- [Freedoom Attic](https://github.com/freedoom/attic)
+	- `?` = `?`. ??? - ???
+- [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
+	- D_RUNNIN = D_SSLZN. SEGA - Starlight Zone (Sonic 1)
