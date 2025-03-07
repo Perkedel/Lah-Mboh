@@ -63,10 +63,10 @@ For the thing we've yoinked
 - [Anti-AI Curse Sigil](https://www.tumblr.com/arson-jellyfish69/750271765614313472/ai-disturbance-overlays-for-those-who-dont-have). bigtortalove27, collected by arson-jellyfish69. ???.
 	- this overlay should disturb the AI from learning the image
 	- [sauce more](https://www.reddit.com/r/CuratedTumblr/comments/1dkioq6/ai_blocking_image_overlays/)
-	- [sauce again](https://www.tumblr.com/arson-jellyfish69/750555399114080256/put-these-on-the-top-layer-above-everything-set found somewhere)
+	- [sauce again](https://www.tumblr.com/arson-jellyfish69/750555399114080256/put-these-on-the-top-layer-above-everything-set)  found somewhere
 - [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/)
 	- MIDIs!!!!!!!!!
-	- Therefore, The credits for [Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), & [Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), as well as [Double Impact]https://doomwiki.org/wiki/Double_Impact_MIDI_Pack) & [FreeDM](https://doomwiki.org/wiki/FreeDM_music)
+	- Therefore, The credits for [Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), & [Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), as well as [Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack) & [FreeDM](https://doomwiki.org/wiki/FreeDM_music)
 	- every assets possible!
 
 ## Sounds

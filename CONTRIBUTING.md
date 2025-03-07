@@ -39,6 +39,15 @@ we have stood the rule that ensure that the base right here is free from far fet
 - Death Threats. No Extension PWAD.
 - Doxxing. No Extension PWAD. Even to public companies (with known HQ locations & contacts) where context & intent is to cause raid & also compromise anyone safety whose completely nothing to do with the drama incident, in-all eitherways.
 
+### (CLA) Contribution Results
+
+Once your submission have been accepted, your contributions must be licensed as follows:
+
+> Assets: CC4.0-BY-SA
+> Codes: GNU GPL v3
+
+License that comes from yoinks will remain unchanged
+
 ## Always fork from the development branch
 
 Dev Branch: `main`
@@ -50,5 +59,9 @@ When you're done, issue Pull Request your fork back to us. We will review & when
 ## Use Issue much less
 
 Issue is designed for bug reporting & too small too fork for submissions.
+
+## Testing your Map
+
+Simply Clone this entire source code, then load this entire project folder as your PWAD.
 
 ## Iyeah

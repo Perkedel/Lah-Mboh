@@ -1,5 +1,7 @@
 # Lah-Mboh
  DNB (Perkedel) Random Doom stuff. Designed for GZDoom & forth
+ 
+![Cover](/graphics/ForumCover.png)
 
 Unbullshitments included! Please immediately create Issue for any still-bullshat stuffs found!
 

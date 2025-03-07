@@ -45,6 +45,9 @@ gameinfo
 		"$SATEKELINCI",
 		"$AVOIDNOPOC",
 		"$THATWASME",
+		"$JOELISHUMAN",
+		"$NOTAGUNCLIP",
+		"$KEEPMODDING",
 		"$WHERDGOING"
 	
 	addcreditpage = 
