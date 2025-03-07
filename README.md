@@ -38,7 +38,7 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
-![item variety](/src/screenshot/itemvarietytester.png)  
+![item variety](/src/screenshot/itemvarietytest.png)  
 ![enemy tester](/src/screenshot/enemytester.png)  
 ![boss brain](/src/screenshot/ohnobossbrain.png)  
 ![knockoff](/src/screenshot/pove1m1knockoff.png)  
