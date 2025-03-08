@@ -39,6 +39,8 @@ jobs:
           zip -r Lah-Mboh.zip ./Lah-Mboh
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
+      - name: Move it so Uploader can see
+        run: |
           mkdir -p Lah-Mboh/build/
           mv Lah-Mboh.pk3 Lah-Mboh/build/
       
@@ -46,5 +48,5 @@ jobs:
         uses: actions/upload-artifact@v4.6.1
         with:
           name: Lah-Mboh.pk3
-          path: Lah-Mboh.pk3
+          path: build/Lah-Mboh.pk3
           if-no-files-found: error
