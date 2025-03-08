@@ -149,12 +149,12 @@ Map MBH03 lookup "MBH03"
 	//next = "MBH04"
 	next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = "D_UNDERTO"
+	music = "D_SHAWN2"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
-	enterPic = "LMBHCAVE"
+	enterPic = "LMBHDARK"
 }
 
 // Extra
@@ -196,7 +196,7 @@ map PLMSKY1 lookup "PLMSKY1"
 	next = "MBOHTEST"
 	sky1 = "SKY1"	
 	exitPic = "LMBHTIHD"
-	music = "D_SSLZN"
+	music = "D_READ_M"
 }
 
 map MECHSKY1 lookup "MECHSKY1"
@@ -205,7 +205,7 @@ map MECHSKY1 lookup "MECHSKY1"
 	next = "MBOHTEST"
 	sky1 = "SKY1"	
 	exitPic = "LMBHTIHD"
-	music = "D_SSLZN"
+	music = "D_READ_M"
 }
 
 map CURAG "Curag"
