@@ -41,6 +41,36 @@ jobs:
       - name: Upload These all
         uses: actions/upload-artifact@v4.6.1
         with:
-          name: Lah-Mboh.pk3
-          path: Lah-Mboh.pk3
+          name: Lah-Mboh
+          path: |
+            Lah-Mboh.pk3
+            Lah-Mboh.txt
           if-no-files-found: error
+  
+  deploy:
+      
+    runs-on: ubuntu-latest
+      
+    steps:
+      
+      - name: Okay, let's redownload the artifact.
+        uses: actions/download-artifact@v4.1.9
+        with:
+          name: Lah-Mboh.pk3
+    
+      - name: Check first
+        run: |
+          echo "AAAA"
+          ls
+          pwd
+      
+      # https://pytooling.github.io/Actions/Action/Releaser.html#action-releaser
+      # https://github.com/pyTooling/Actions/tree/dev/releaser
+      # https://github.com/dpjudas/VkDoom/blob/master/.github/workflows/continuous_integration.yml
+      - name: Try manipulate that release like dpjudas Vkdoom!
+        uses: pyTooling/Actions/releaser@r0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: |
+            Lah-Mboh.zip
+        
