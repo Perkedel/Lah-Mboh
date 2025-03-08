@@ -36,7 +36,7 @@ jobs:
           cd ..
           ls
           pwd
-          zip -r Lah-Mboh.zip ./Lah-Mboh
+          zip -r Lah-Mboh.zip ./Lah-Mboh -x src/
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
           pwd
@@ -48,17 +48,6 @@ jobs:
           pwd
           mkdir -p ./build/
           mv ../Lah-Mboh.pk3 ./build/
-    
-      - name: wai wait! You gotta clean yourself up first.
-        run: |
-          echo "There are bloats on you! strip some files firstly!"
-          cd build
-          zip -d ./Lah-Mboh.pk3 src
-          zip -d ./Lah-Mboh.pk3 source
-          zip -d ./Lah-Mboh.pk3 yoinks
-          zip -d ./Lah-Mboh.pk3 .git
-          zip -d ./Lah-Mboh.pk3 .github
-          echo "Okay, I hope this good, what else?"
       
       - name: Upload These all
         uses: actions/upload-artifact@v4.6.1
