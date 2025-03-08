@@ -40,4 +40,9 @@ jobs:
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
       
-      #- name: Upload These all
+      - name: Upload These all
+        uses: actions/upload-artifact@v4.6.1
+        with:
+          name: Lah-Mboh.pk3
+          path: Lah-Mboh.pk3
+          if-no-files-found: error
