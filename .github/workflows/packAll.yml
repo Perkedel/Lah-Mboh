@@ -33,6 +33,11 @@ jobs:
         run: |
           ls
           pwd
-          
+          cd ..
+          ls
+          pwd
+          zip -r Lah-Mboh.zip ./Lah-Mboh
+          mv Lah-Mboh.zip Lah-Mboh.pk3
+          ls
       
       #- name: Upload These all
