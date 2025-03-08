@@ -39,6 +39,7 @@ jobs:
           zip -r Lah-Mboh.zip ./Lah-Mboh
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
+          pwd
       
       
       - name: Move it so Uploader can see
@@ -46,7 +47,7 @@ jobs:
           ls
           pwd
           mkdir -p ./build/
-          mv ../Lah-Mboh.pk3 Lah-Mboh/build/
+          mv ../Lah-Mboh.pk3 ./build/
       
       - name: Upload These all
         uses: actions/upload-artifact@v4.6.1
