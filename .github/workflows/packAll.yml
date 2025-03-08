@@ -52,11 +52,12 @@ jobs:
       - name: wai wait! You gotta clean yourself up first.
         run: |
           echo "There are bloats on you! strip some files firstly!"
-          zip -d ./build/Lah-Mboh.pk3 src
-          zip -d ./build/Lah-Mboh.pk3 source
-          zip -d ./build/Lah-Mboh.pk3 yoinks
-          zip -d ./build/Lah-Mboh.pk3 .git
-          zip -d ./build/Lah-Mboh.pk3 .github
+          cd build
+          zip -d ./Lah-Mboh.pk3 src
+          zip -d ./Lah-Mboh.pk3 source
+          zip -d ./Lah-Mboh.pk3 yoinks
+          zip -d ./Lah-Mboh.pk3 .git
+          zip -d ./Lah-Mboh.pk3 .github
           echo "Okay, I hope this good, what else?"
       
       - name: Upload These all
