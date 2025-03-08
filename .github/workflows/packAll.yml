@@ -56,7 +56,7 @@ jobs:
       - name: Okay, let's redownload the artifact.
         uses: actions/download-artifact@v4.1.9
         with:
-          name: Lah-Mboh.pk3
+          name: Lah-Mboh
     
       - name: Check first
         run: |
