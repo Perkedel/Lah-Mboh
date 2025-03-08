@@ -68,7 +68,10 @@ jobs:
       - name: Try manipulate that release like dpjudas Vkdoom!
         uses: pyTooling/Actions/releaser@r0
         with:
+          name: Lah-Mboh
           token: ${{ secrets.GITHUB_TOKEN }}
+          rm: true
+          snapshots: true
           files: |
             Lah-Mboh.zip
         
