@@ -47,6 +47,15 @@ jobs:
             Lah-Mboh.txt
           if-no-files-found: error
       
+      - name: Since we tired of this calamity, why not just repack it in the same step as the artifact?
+        run: |
+          ls
+          pwd
+          echo "Shut zip"
+          zip Lah-Mboh.pk3 Lah-Mboh-zip
+          zip -u Lah-Mboh.zip Lah-Mboh.txt
+          ls
+          pwd
       
       - name: Check first
         run: |
