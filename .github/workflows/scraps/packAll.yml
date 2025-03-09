@@ -46,8 +46,16 @@ jobs:
             Lah-Mboh.pk3
             Lah-Mboh.txt
           if-no-files-found: error
+  
+  deploy:
       
+    runs-on: ubuntu-latest
       
+    steps:
+      
+      - name: Okay, let's redownload the artifact.
+        uses: actions/download-artifact@v4.1.9
+    
       - name: Check first
         run: |
           echo "AAAA"
