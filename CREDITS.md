@@ -52,6 +52,8 @@ For the thing we've yoinked
 > I want to get this unbulshitting done! clean room would take a while! Until the skill is done, I'll take bits & bobs over as is.  
 > And remember, not all case of the yoinking is about revenge though. Some are generally too cool to miss, and I gotta learn how did you guys did it.
 
+- [Kinsie's gameplay test map](https://www.doomworld.com/forum/topic/146467-gzdoom-kinsies-gameplay-mod-test-map/). Kinsie. ???.
+	- This looks foundational & inspirational, let's remake it! also by hand yeah! **& even bigger!!!!** so I continue, him.. idk..
 - [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. *Pls lemme know if there happen a bullshit regarding this. If that happen, right now my order is not to purge history about this, idk, just delete idk.*
 	- VMAbort Handler. Never seen a PWAD ever think to have VMAbort detector. It plays music, and spits the lyric & ASCII image text onto the console everytime the GZDoom soft crashed.
 - [Kenney.nl Public Domain Assets](https://www.kenney.nl/). Kenney. **CC0**.

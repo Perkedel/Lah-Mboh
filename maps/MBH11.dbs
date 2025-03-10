@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	MBH03
+	MBH11
 	{
 		
 		resources
@@ -13,8 +13,8 @@ maps
 			
 			resource0
 			{
-				type = 1;
-				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
@@ -24,18 +24,28 @@ maps
 			resource1
 			{
 				type = 2;
-				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\ukiro\\OTEX_1.1_PK3\\OTEX_1.1.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource2
+			{
+				type = 1;
+				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "RROCK13";
-		defaultceiltexture = "MFLR8_3";
-		defaulttoptexture = "A-CONCTE";
-		defaultwalltexture = "A-CONCTE";
-		defaultbottomtexture = "A-CONCTE";
+		defaultfloortexture = "08DMDA10";
+		defaultceiltexture = "CEIL1_1";
+		defaulttoptexture = "OBASEA30";
+		defaultwalltexture = "OBASEA30";
+		defaultbottomtexture = "OBASEA30";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -48,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 494.4091f;
-		viewpositiony = -284.61f;
-		viewscale = 0.8449983f;
+		viewpositionx = -781.1129f;
+		viewpositiony = 3722.162f;
+		viewscale = 0.3846141f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +71,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 128;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -114,7 +124,7 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 312;
+				caretposition = 265;
 				activetab = true;
 			}
 		}

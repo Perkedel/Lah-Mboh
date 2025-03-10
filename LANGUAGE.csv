@@ -13,34 +13,36 @@ Mechadon’s Box O’ Skies,MECHSKY1,Mechadon’s box full of skies demo map,Kot
 Garug Immigration Center,MBH01,Level 1 of Megawad,Pusat Imigrasi Garug,,,,
 Water Processings,MBH02,Level 2,Pemroses Air,,,,
 Elephant Slaugtherion,MBH03,it’s dark here,Slaughterion Gajah,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+,MBH04,,,,,,
+,MBH05,,,,,,
+,MBH06,,,,,,
+,MBH07,,,,,,
+,MBH08,,,,,,
+Painful Facts,MBH09,Beat this Pain Lord / Baron of Hell. Then immediately get out from here. The just opened new enemies won’t count,Fakta menyakitkan,,,,
+Everyone’s Chaingunner,MBH10,"This level is exclusively chaingunners, or here: Minigun Zombies. You are also given minigun supplies throughout the level.",Semuanya Chaingunner,,,,
+Invisible Enemies,MBH11,"Almost all enemies are the Stealth variant alongside Spectres (Phantom Flesh Worm). 
+This shortheight city is full of those ChilloutVR user that blocked us",Musuh Tak Terlihat,,,,
+,MBH12,,,,,,
+,MBH13,,,,,,
+,MBH14,,,,,,
+,MBH15,,,,,,
+,MBH16,,,,,,
+,MBH17,,,,,,
+Everyone’s Flying,MBH18,"This level contains lots of flying enemies: Cacodemon, Lost Soul, & Pain Elemental",Semuanya Terbang,,,,
+Giant Assault guy,MBH19,"Beat this Assault Tripod / Cyberdemon. After he died, survive for atleast 15 second, then the exit door opens.",Si tukang Assault Gedi,,,,
+Welcome to Technoland,MBH20,"Level inspired from Atomic Heart’s outside park, complete with Soviet Porno song from Freedoom 2.
+This episode, mix Computer & Hell textures!",Selamat Datang di Pulau Tekno,,,,
+Just Follow the Red Carpet,MBH21,You are entering confusing computer themed maze. Except the right way has already been red carpeted.,Ikuti saja karpet merah,,,,
+,MBH22,,,,,,
+,MBH23,,,,,,
+,MBH24,,,,,,
+,MBH25,,,,,,
+,MBH26,,,,,,
+,MBH27,,,,,,
+,MBH28,,,,,,
+,MBH29,,,,,,
+CEO of Entitlement,MBH30,Bossbrain / Icon of Sin level.,CEO dari Keberkuasaan,,,,
+HORRAY YOU DID IT,MBH31,"Game end, but there is plot twist, that the MBH30 boss brain is not the target actually. The real target hides somewhere.",HORE ANDA BERHASIL,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -95,9 +97,33 @@ ratusan tahun yg lalu?
 Tapi kan, ini milik Joel! Dia kan orangnya baik! Dan barang2 ini hanyalah
 Instance2 yang telah didefinisikan oleh Perkedel, id, Fraggle, & kawan2!
 Paling, karyawan yg masih hidup bisa aja 3D print ini ulang, ya kan?",,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+"Despite you’ve faced the Painful Facts, the journey is far from over.
+As the wanted intel was found during the autopsy, you are excited.
+Eager, to keep on going until it’s done.
+
+Up next, Daustaung City.",EXITMBHE1,You finished MBH09 & going to enter MBH10,"Walaupun Anda telah menghadapi Fakta Menyakitkan,
+Perjalananmu jauh dari kata selesai.
+Sesaat  setelah sebuah intel yg dicari2 akhirnya ditemukan saat otopsi
+Anda pun kegirangan.
+Bergegas, untuk melanjutkan sampai ini tuntas
+
+Selanjutnya, Kota Daustaung.",,,,
+"After facing the scariest system fault, you were lucky.
+As well as not losing the Key intel that leads you to the core of it.
+
+Up next, Technoland",EXITMBHE2,You finished MBH19 & going to enter MBH20,"Setelah menghadapi galat sistem yg mendebarkan, Anda pun beruntung.
+Tak luput juga bahwa intel Kunci yang membawa 
+Anda ke inti tersebut tidak hilang.
+
+Selanjutnya, Technoland",,,,
+"At last, after centuries long,
+The Entitlement
+
+Wait a second..",EXITMBHBOSS,"You’ve just defeated the boss at MBH30. But then there is a plot twist.
+The boss brain is of course not them (singular).","Akhirnya, setelah sekian abad lamanya,
+Sang Keberkuasaan
+
+Loh bentar..",,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

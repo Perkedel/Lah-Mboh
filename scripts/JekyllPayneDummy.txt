@@ -59,6 +59,9 @@ class JekyllPShootingRangeHandler : EventHandler
 
 class JekyllPShootingRangeDummy : Actor
 {
+	//$Category "Monsters"
+	//$Title "Shooting Range Dummy"
+	
 	const DAMPING = 0.032;
 	const PI = 3.14159;
     int receivedDmg;

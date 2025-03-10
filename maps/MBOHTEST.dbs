@@ -140,6 +140,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource13
+			{
+				type = 0;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\Obsidian Plague\\id24dec.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 1;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -158,9 +168,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 8108.141f;
-		viewpositiony = -2808.604f;
-		viewscale = 0.6654153f;
+		viewpositionx = -7947.29f;
+		viewpositiony = 1550.826f;
+		viewscale = 0.3937363f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -171,7 +181,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 128;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -241,7 +251,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 1918;
+				caretposition = 6140;
+				firstvisibleline = 18;
 				activetab = true;
 			}
 		}

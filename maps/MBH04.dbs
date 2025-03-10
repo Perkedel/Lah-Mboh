@@ -5,23 +5,13 @@ strictpatches = 0;
 maps
 {
 	
-	MBH03
+	MBH04
 	{
 		
 		resources
 		{
 			
 			resource0
-			{
-				type = 1;
-				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
-				option1 = 0;
-				option2 = 0;
-				notfortesting = 0;
-				requiredarchives = "";
-			}
-			
-			resource1
 			{
 				type = 2;
 				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
@@ -31,11 +21,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "RROCK13";
-		defaultceiltexture = "MFLR8_3";
-		defaulttoptexture = "A-CONCTE";
-		defaultwalltexture = "A-CONCTE";
-		defaultbottomtexture = "A-CONCTE";
+		defaultfloortexture = "FLOOR0_1";
+		defaultceiltexture = "CEIL1_1";
+		defaulttoptexture = "STARTAN1";
+		defaultwalltexture = "STARTAN1";
+		defaultbottomtexture = "STARTAN1";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -48,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 494.4091f;
-		viewpositiony = -284.61f;
-		viewscale = 0.8449983f;
+		viewpositionx = -27.6923f;
+		viewpositiony = 3.230768f;
+		viewscale = 0.5f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 128;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -93,30 +83,6 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
-		}
-		
-		scriptdocuments
-		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 312;
-				activetab = true;
-			}
 		}
 	}
 }

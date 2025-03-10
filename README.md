@@ -44,7 +44,7 @@ but eh.. both disadvantages & advantages on each own idk.
 ![knockoff](/src/screenshot/pove1m1knockoff.png)  
 ![shooting range](/src/screenshot/shootingrangefrombehind.png)  
 
-## Second Ever Patch WAD designed exclusively for FreeDoom
+## ~~Second~~ ~~Third~~ ~~4th~~ ~~3472983749th~~ Whateverth Ever Patch WAD designed exclusively for FreeDoom
 
 *hmm, mega? will it be?*
 
