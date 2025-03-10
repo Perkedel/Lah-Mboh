@@ -38,7 +38,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer19"><inkscape:grid
+     inkscape:current-layer="layer12"><inkscape:grid
        id="grid1"
        units="mm"
        originx="0"
@@ -678,7 +678,7 @@
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="Level Title"
-       style="display:inline"><g
+       style="display:none"><g
          inkscape:groupmode="layer"
          id="layer5"
          inkscape:label="Hideout Enter"
