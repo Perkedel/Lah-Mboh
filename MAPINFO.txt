@@ -106,6 +106,7 @@ clusterdef 200
 Episode MBOHTEST 
 {
 	name = "Lah Mboh?"
+	PicName = "LMBHEMNU"
 }
 
 Map MBOHTEST lookup "MBOHTEST"
