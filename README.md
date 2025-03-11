@@ -54,6 +54,8 @@ but eh.. both disadvantages & advantages on each own idk.
 Yeah, the Jokewad talking about FreeDoom itself ft. crazy overcharged weapons replacing the main ones. 
 It also has special episodes too as well!
 
+No, it's [this](https://www.moddb.com/addons/freedoom-phase-2-freedom-on-earth1). There's more.
+
 Wait. I swear to God, I was initially intended this whole endeavour to **softly designed** for FreeDoom (which means you can use just `doom2.wad` if you prefer). 
 but I accidentally made it **exclusively designed** for FreeDoom instead (which means no more `doom2.wad` compatibility).  
 Blimey lmao, I used textures that turns out it's FreeDoom own thing haha! Too lazy to change back, too cool to avoid, such as tempered glass (`GLASS` textures).
@@ -114,7 +116,7 @@ Code (which we wrote from scratch ourselves): GNU GPL v3
 Assets (which we drew ourselves): CC4.0-BY-SA
 
 > [!WARNING]
-> Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited
+> Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited  
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
 
 Website: https://perkedel.netlify.app (the Doom special page maybe made if there is demand, idk).
