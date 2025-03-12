@@ -1,0 +1,132 @@
+===========================================================================
+Archive Maintainer      :
+Update to               :
+Advanced engine needed  : ZDoom
+Primary purpose         : Model pack
+===========================================================================
+Title                   : Voxel Vehicles Pack 1.0
+Filename                : vvpck1.0.PK3
+Release date            : June 7th 2013
+Author                  : NerdKoopa
+Email Address           : jknerd@luukku.com
+Other Files By Author   : Herbtech
+Misc. Author Info       : 
+
+Description             : This is a pack of static decorative voxel vehicles for ZDoom and   				 	  GZDoom. Guaranteed to to give some life to your maps! 
+
+				  Instructions: Since voxel model collisions are handled like sprite 					  collisions, only the very center parts of the vehicles are solid 					  initially. You have to provide additional collision areas with bridge 				  things. To see how they are laid out on each vehicle, see the 						  demonstration level. If you want to remove the demonstration level, just 				  remove the maps directory from the PK3 file. The vehicles occupy DoomEd 				  numbers 10600 through 10803.
+
+Complete list of contents:
+
+Cars category
+
+* A 1960's two door sedan in 10 colors
+* A 1960's station wagon in 10 colors
+* A modern sedan in 9 colors
+* A modern hatchback in 9 colors
+* A sports car in 10 colors
+* An SUV in 9 colors
+* A van in 11 colors
+* A pickup truck in 10 colors
+* A semi truck in 9 colors
+
+Special cars category
+
+* A 1980's taxi
+* A 1980's cop car - with and without animated lights
+* A modern taxi
+* A modern cop car - with and without animated lights
+* An ambulance - with and without animated lights
+* A fire truck - with and without animated lights
+* A limousine in 3 colors
+* An armored UAC truck in 2 colors
+
+Aircraft category
+
+* A plane in 8 colors
+* A helicopter in 7 colors
+* A futuristuc VTOL in 4 varieties - green and brown, with and without UAC logo
+
+Watercraft category
+
+* A hovercraft in 5 colors
+* A motor boat in 6 colors
+
+Heavy equipment category
+
+* A bulldozer in 6 colors
+* An excavator in 8 colors
+* A tractor in 10 colors
+
+Snow category
+
+* A snowmobile in 9 colors
+* A snowcat in 4 colors
+* A snowcoach in 5 colors
+
+Misc. category
+
+* A chopper bike in 6 colors
+* A tank in 3 colors
+* A forklift in 8 colors
+* A flying car in 9 colors
+* A flying cop car - with and without animated lights
+
+
+				  
+
+Additional Credits to   : 
+===========================================================================
+* What is included *
+
+New levels              : 1
+Sounds                  : No
+Music                   : No
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Yes, 209 voxel models in KVX format
+Other files required    :
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map 01
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : Model showcase
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              :  
+Editor(s) used          : SLAB6, SLADE3, Doom Builder 2
+Known Bugs              : 
+May Not Run With        : Any source port that doesn't support voxels.
+Tested With             : ZDoom
+
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+

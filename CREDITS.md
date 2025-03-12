@@ -26,7 +26,7 @@ For the thing we've yoinked
 
 ## Dependencies
 
-- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **Pls remove its map, we'll upload the unconflict later!**
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **[Available Unconflict Pre-edit](/yoinks/vvpck1.0-mapUnconflict.pk3), Please load this instead! We have edited its testmap namespace so it no longer replaces IWAD's MAP01!**
 - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
 - [ObAddon Textures](https://github.com/obsidian-level-maker/Obsidian). ObAddon Community. **GNU GPL v2**. ~~Or use the one included from Big City~~ Use this latest one. Find & use 3 `ObAddon_Textures_#.wad` files in this extract, `games/doom/data`. Just load these following wads
 	- ObAddon Texture 1, 2, & 3
@@ -91,3 +91,11 @@ For the thing we've yoinked
 	- `?` = `?`. ??? - ???
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 	- D_RUNNIN = D_SSLZN. SEGA - Starlight Zone (Sonic 1)
+
+## Reupload
+
+> [!TIP]
+> These are PWADS & other files we have to edit for your convenience, which you have to manually load.  
+> You can see those files in the `yoinks` folder.
+
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload.
