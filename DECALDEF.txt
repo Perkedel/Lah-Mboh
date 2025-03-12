@@ -127,6 +127,22 @@ decal GZFILTH 4002
 	Y-Scale 0.1
 }
 
+decal CobekanGedhi 4003
+{
+	pic CobekGedhi
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
+decal BrokenLag 4004
+{
+	pic OutOfOrderLag
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
 decal WANIHUG 4009
 {
 	pic WANIHUG
