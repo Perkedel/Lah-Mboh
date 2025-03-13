@@ -192,6 +192,12 @@ script "WelcomeHome" (void)
 	// Doom 4 Vanilla https://www.doomworld.com/forum/topic/108725-doom-4-vanilla-v32/
 	else if(CheckActorClass(PlayerNumber(),"DoomSlayer")) {label = "Doomguy";extra_talk="You look... different today..\nI like your style!";} // Doomguy
 	
+	//Can't Sleep LocalInsomniac
+	/*
+	Nobody Told me About id. Doom Nukem 3D
+	*/
+	else if(CheckActorClass(PlayerNumber(),"NTM_Player")) {label = "Doomguy";extra_talk="Looks like you've just graduated from Duke's class eh?\nCool and good.\nI hope those 3D Realm Lawyer B8888s stays in the grave lol!";} // Doomguy Nukem Style. 3D Realm is notorious like Nintendo, suing an open IGRP (IWAD in Nukem) replacement project.
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
