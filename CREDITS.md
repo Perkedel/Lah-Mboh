@@ -35,9 +35,9 @@ For the thing we've yoinked
 	- Demiosis Blood Pack
 	- Doomedarchviledemon Fly
 	- MogWaltz Burning Debris & Burning Top
-- [Ukiro OTEX](https://doom.ukiro.com/). Ola Björling (ukiro). Yes Reupload, No Rename, Yes Edit, Yes Patching, No Commercial. **Unfortunately, due to license restrictions, we are unable to pre-include this pwad atm**.
+- [Ukiro OTEX](https://doom.ukiro.com/about-otex/). Ola Björling (ukiro). Yes Reupload, No Rename, Yes Edit, Yes Patching, No Commercial. **Unfortunately, due to license restrictions, we are unable to pre-include this pwad atm**.
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
-- [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**
+- [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
 
 ## Reuses
 
@@ -90,12 +90,13 @@ For the thing we've yoinked
 - [Freedoom Attic](https://github.com/freedoom/attic)
 	- `?` = `?`. ??? - ???
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
-	- D_RUNNIN = D_SSLZN. SEGA - Starlight Zone (Sonic 1)
+	- `D_RUNNIN` = `D_SSLZN`. SEGA - Starlight Zone (Sonic 1)
 
 ## Reupload
 
 > [!TIP]
 > These are PWADS & other files we have to edit for your convenience, which you have to manually load.  
+> We cannot simply pre-include this due to some reasons.  
 > You can see those files in the `yoinks` folder.
 
-- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload.
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3), [Readme](/yoinks/vvpck1.0.txt)

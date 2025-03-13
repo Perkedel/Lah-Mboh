@@ -20,12 +20,22 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource1
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Maps\\inkoalawetrust\\gz_bigcity.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
-		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "STARTAN1";
-		defaultwalltexture = "STARTAN1";
-		defaultbottomtexture = "STARTAN1";
+		defaultfloortexture = "FLAT19";
+		defaultceiltexture = "FLAT19";
+		defaulttoptexture = "A-CONCTE";
+		defaultwalltexture = "A-CONCTE";
+		defaultbottomtexture = "A-CONCTE";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -27.6923f;
-		viewpositiony = 3.230768f;
-		viewscale = 0.5f;
+		viewpositionx = -10.05427f;
+		viewpositiony = 336.5664f;
+		viewscale = 6.89292f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -51,7 +61,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 128;
+			gridsize = 8;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
