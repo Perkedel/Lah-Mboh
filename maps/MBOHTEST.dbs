@@ -147,7 +147,17 @@ maps
 				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\Obsidian Plague\\id24dec.wad";
 				option1 = 0;
 				option2 = 0;
-				notfortesting = 1;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource14
+			{
+				type = 0;
+				location = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Ultimate Doom\\rerelease\\id24res.wad";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
 				requiredarchives = "";
 			}
 		}
@@ -168,9 +178,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 6050.986f;
-		viewpositiony = 2568.648f;
-		viewscale = 1.90047f;
+		viewpositionx = -8333.896f;
+		viewpositiony = 2219.263f;
+		viewscale = 2.47061f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -181,7 +191,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 16;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -251,8 +261,8 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 1;
-				caretposition = 6140;
-				firstvisibleline = 18;
+				caretposition = 5796;
+				firstvisibleline = 23;
 				activetab = true;
 			}
 		}
