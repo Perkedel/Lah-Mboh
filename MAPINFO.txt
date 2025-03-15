@@ -48,6 +48,7 @@ gameinfo
 		"$JOELISHUMAN",
 		"$NOTAGUNCLIP",
 		"$KEEPMODDING",
+		"$PARENTLESS",
 		"$WHERDGOING"
 	
 	addcreditpage = 

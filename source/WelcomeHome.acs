@@ -195,12 +195,21 @@ script "WelcomeHome" (void)
 	//Can't Sleep LocalInsomniac
 	/*
 	Nobody Told me About id. Doom Nukem 3D
+	https://www.doomworld.com/forum/topic/144196-nobody-told-me-about-id-build-engine-style-gameplay-mod-for-gzdoom-10-alpha-rc9/
+	https://cantsleep.cc/ntmai
+	https://github.com/LocalInsomniac/NTMAi
 	*/
 	else if(CheckActorClass(PlayerNumber(),"NTM_Player")) {label = "Doomguy";extra_talk="Looks like you've just graduated from Duke's class eh?\nCool and good.\nI wonder since when Duke became teacher here.\nWhat a next honorable act I see.";set_second = 5.0;} // Doomguy Nukem Style. 3D Realm is notorious like Nintendo, suing an open IGRP (IWAD in Nukem) replacement project.
 	/*
 	Scrap:
 	- I hope those 3D Realm Lawyer B8888s stays in the grave lol!
 	*/
+	
+	// Hell Walker
+	/*
+	- Abyssal Marine https://www.doomworld.com/forum/topic/151373-abyssal-marine/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"BigGuyPlayer")) {label = "Big Guy";extra_talk="Whoa, you're a big guy now! Cool and good";} // Abyssal Doomguy
 	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
