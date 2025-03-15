@@ -3,64 +3,64 @@
 #library "WelcomeHome"
 #include "zcommon.acs"
 
-script "WelcomeHome" (void)
+// Greet player based on class!!!
+str label_player = "";
+str extra_talk = "";
+int set_second = 5.0;
+
+function void scan_character (void)
 {
-	// Greet player based on class!!!
-	str label = "";
-	str extra_talk = "";
-	int set_second = 5.0;
-	
 	// DOOM (Default
-	if(CheckActorClass(PlayerNumber(),"DoomPlayer")) {label = "Doomguy";extra_talk="";}
+	if(CheckActorClass(PlayerNumber(),"DoomPlayer")) {label_player= "Doomguy";extra_talk="";}
 	
 	// Digital Cafe's Chex Quest
 	else if(CheckActorClass(PlayerNumber(),"ChexPlayer")) {label = "Chex Hero";extra_talk="We've contained all the slimes.\nEnjoy your breakfast & so on, coz your mission may continues.. tomorrow, idk.";}
 	
 	// Hexen
-	else if(CheckActorClass(PlayerNumber(),"FighterPlayer")) {label = "Mighty Fighter";extra_talk="";} // Fighter
-	else if(CheckActorClass(PlayerNumber(),"ClericPlayer")) {label = "Agile Cleric";extra_talk="";} // Cleric
-	else if(CheckActorClass(PlayerNumber(),"MagePlayer")) {label = "Feisty Mage";extra_talk="";}  // Mage
+	else if(CheckActorClass(PlayerNumber(),"FighterPlayer")) {label_player = "Mighty Fighter";extra_talk="";} // Fighter
+	else if(CheckActorClass(PlayerNumber(),"ClericPlayer")) {label_player = "Agile Cleric";extra_talk="";} // Cleric
+	else if(CheckActorClass(PlayerNumber(),"MagePlayer")) {label_player = "Feisty Mage";extra_talk="";}  // Mage
 	// shit idk what word even. Anyone speak medieval EN & related?
 	
 	// Heretic
-	else if(CheckActorClass(PlayerNumber(),"HereticPlayer")) {label = "Superb Heretic";extra_talk="";} // Heretic
+	else if(CheckActorClass(PlayerNumber(),"HereticPlayer")) {label_player = "Superb Heretic";extra_talk="";} // Heretic
 	
 	// Strife
-	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label = "Heroic.. hero!!";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label_player = "Heroic.. hero!!";extra_talk="";}
 	// he got a name right?
 	// nope he doesn't either
 	// https://doomwiki.org/wiki/Strifeguy
 	
 	// Hacx
-	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label = "Heroic.. HACX!!";extra_talk="uhh sorry. There's alot of name I need to know.";}
+	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label_player = "Heroic.. HACX!!";extra_talk="uhh sorry. There's alot of name I need to know.";}
 	
 	// Korp's FurDoom! https://korp-kat.itch.io/furdoom
-	else if(CheckActorClass(PlayerNumber(),"FurDaisy")) {label = "Daisy";extra_talk="Iyeay Furry iyey.";} // Yes, idk, that Daisy the rabbit, Doomguy's pet. Named after or not idk.
+	else if(CheckActorClass(PlayerNumber(),"FurDaisy")) {label_player = "Daisy";extra_talk="Iyeay Furry iyey.";} // Yes, idk, that Daisy the rabbit, Doomguy's pet. Named after or not idk.
 	// fun fact, Joel's fursona is a Protogen! pls port TriwaveBZ's Protogen to Doom! I got the backup file, it's in X0p1r4t3 on Odysee.. I'll tell you the newsauce later.
 	// https://odysee.com/@X0P1R4T3-33NSVREENMNT-0FFICIAL:f/BZ-Protogen-RAW:5 here's the file!
 	// once you got it, pls ensure to allow colorspace parts as usual.
 	// Then give it to me, I want it. Fork, add, pull request back here, idk., standalone is fine too, I can yoink that.
 	
 	//HyperUltra64's Treasure Tech https://forum.zdoom.org/viewtopic.php?t=66995
-	else if(CheckActorClass(PlayerNumber(),"TreasureGuy")) {label = "Treasure guy";extra_talk="Good news, buddy! we had all the treasures combined right here on the Weapon Test room left there, & everywhere else around here iyeay!";set_second = 5.0;}
+	else if(CheckActorClass(PlayerNumber(),"TreasureGuy")) {label_player = "Treasure guy";extra_talk="Good news, buddy! we had all the treasures combined right here on the Weapon Test room left there, & everywhere else around here iyeay!";set_second = 5.0;}
 	
 	// Backyard Badasses Freedoom Badass Edition https://www.moddb.com/mods/freedoom-badss-editionmappack
-	else if(CheckActorClass(PlayerNumber(),"BadassPlayer")) {label = "Badass guy";extra_talk="Ooo! Desired testing the bad*ssness I see. Go ahead, we got some badass stuffs around here iyeah!";set_second = 5.0;}
+	else if(CheckActorClass(PlayerNumber(),"BadassPlayer")) {label_player = "Badass guy";extra_talk="Ooo! Desired testing the bad*ssness I see. Go ahead, we got some badass stuffs around here iyeah!";set_second = 5.0;}
 	
 	// PillowBlaster's Russian Overkill https://forum.zdoom.org/viewtopic.php?t=29915
-	else if(CheckActorClass(PlayerNumber(),"Yuri")) {label = "Comrade Yuri";extra_talk="";}// Cyborg 
-	else if(CheckActorClass(PlayerNumber(),"Alosha")) {label = "Comrade Alosha";extra_talk="";}// Commando
-	else if(CheckActorClass(PlayerNumber(),"Marty")) {label = "Comrade Marty";extra_talk="";}// Tresagent
+	else if(CheckActorClass(PlayerNumber(),"Yuri")) {label_player = "Comrade Yuri";extra_talk="";}// Cyborg 
+	else if(CheckActorClass(PlayerNumber(),"Alosha")) {label_player = "Comrade Alosha";extra_talk="";}// Commando
+	else if(CheckActorClass(PlayerNumber(),"Marty")) {label_player = "Comrade Marty";extra_talk="";}// Tresagent
 	
 	// pa1nki113r's Project Brutality https://github.com/pa1nki113r/Project_Brutality
-	else if(CheckActorClass(PlayerNumber(),"PB_PlayerPawn")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
+	else if(CheckActorClass(PlayerNumber(),"PB_PlayerPawn")) {label_player = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
 	
 	//Sergeant Mk. IV's Brutal Doom https://www.moddb.com/mods/brutal-doom . Maybe also other Brutals if there is?
-	else if(CheckActorClass(PlayerNumber(),"BDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Rip and Tear? Iyeah!";set_second = 8.0;}
-	else if(CheckActorClass(PlayerNumber(),"BStrifer")) {label = "Strifeguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Sigil Hunt? Iyeah!";set_second = 8.0;}
-	else if(CheckActorClass(PlayerNumber(),"BChexer")) {label = "Chex Hero";extra_talk="You can relax now, buddy. There's no need pouring energy drink into your breakfast now in this house.\nUnless of course you wanna train for the next Rescue Mission? Iyeah!";set_second = 8.0;}
-	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!\nEven tho we Vacuum Clean Mop!\nPls no I beg you. It's hard to clean.. yeah.";set_second = 10.0;}
-	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BDoomer")) {label_player = "Doomguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Rip and Tear? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BStrifer")) {label_player = "Strifeguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Sigil Hunt? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BChexer")) {label_player = "Chex Hero";extra_talk="You can relax now, buddy. There's no need pouring energy drink into your breakfast now in this house.\nUnless of course you wanna train for the next Rescue Mission? Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label_player = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!\nEven tho we Vacuum Clean Mop!\nPls no I beg you. It's hard to clean.. yeah.";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label_player = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;}
 	/*
 	Pls verify!
 	https://forum.zdoom.org/viewtopic.php?t=35071 Brutal Strife
@@ -75,7 +75,7 @@ script "WelcomeHome" (void)
 	*/
 	
 	// Doom Dogey Vapour Doom https://www.moddb.com/mods/vapour-doom/downloads/vapour-doom-demo-v1
-	else if(CheckActorClass(PlayerNumber(),"VapourDoomguy")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
+	else if(CheckActorClass(PlayerNumber(),"VapourDoomguy")) {label_player = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";}
 	
 	// Skelegant!!!!!!!!!!!!!!!!!!!!!!!!!!!!! https://skelegant.itch.io/
 	/*
@@ -97,56 +97,56 @@ script "WelcomeHome" (void)
 		Pls fix your download link wtf! I had to archive.org!
 	
 	*/
-	else if(CheckActorClass(PlayerNumber(),"StonePlayer")) {label = "Pvt. Stone";extra_talk="";} // Private Stone
-	else if(CheckActorClass(PlayerNumber(),"RobitPlayer")) {label = "Echidna";extra_talk="";} // GD Echidna
-	else if(CheckActorClass(PlayerNumber(),"Doomdad")) {label = "Doomguy";extra_talk="Whoah, buddy! what's going on? Retired??\n Uh.. au ah gelap (idk anymore)!";set_second = 5.0;} // Retired Doomguy mower
-	else if(CheckActorClass(PlayerNumber(),"Olive")) {label = "Olive";extra_talk="";} // Gloom Buster Olive
-	else if(CheckActorClass(PlayerNumber(),"Liz")) {label = "Liz";extra_talk="";} // Gloom Buster Liz
-	else if(CheckActorClass(PlayerNumber(),"Kiranila")) {label = "Kiranila";extra_talk="";} // Gloom Buster Kiranila
-	else if(CheckActorClass(PlayerNumber(),"Bea")) {label = "Bea";extra_talk="";} // Pacman Bea
-	else if(CheckActorClass(PlayerNumber(),"Nun")) {label = "Sister";extra_talk="uh.. Amen!";} // Nun with a gun
+	else if(CheckActorClass(PlayerNumber(),"StonePlayer")) {label_player = "Pvt. Stone";extra_talk="";} // Private Stone
+	else if(CheckActorClass(PlayerNumber(),"RobitPlayer")) {label_player = "Echidna";extra_talk="";} // GD Echidna
+	else if(CheckActorClass(PlayerNumber(),"Doomdad")) {label_player = "Doomguy";extra_talk="Whoah, buddy! what's going on? Retired??\n Uh.. au ah gelap (idk anymore)!";set_second = 5.0;} // Retired Doomguy mower
+	else if(CheckActorClass(PlayerNumber(),"Olive")) {label_player = "Olive";extra_talk="";} // Gloom Buster Olive
+	else if(CheckActorClass(PlayerNumber(),"Liz")) {label_player = "Liz";extra_talk="";} // Gloom Buster Liz
+	else if(CheckActorClass(PlayerNumber(),"Kiranila")) {label_player = "Kiranila";extra_talk="";} // Gloom Buster Kiranila
+	else if(CheckActorClass(PlayerNumber(),"Bea")) {label_player = "Bea";extra_talk="";} // Pacman Bea
+	else if(CheckActorClass(PlayerNumber(),"Nun")) {label_player = "Sister";extra_talk="uh.. Amen!";} // Nun with a gun
 	// Aphrodite does not replace class!
 	
 	//Darsycho
 	/*
 	https://darsycho.itch.io/
 	*/
-	else if(CheckActorClass(PlayerNumber(),"ImproviseGuy")) {label = "Doomguy";extra_talk="Uh.. where's your weapon?\nWhat? confiscated? who did??";} // Improvisation
+	else if(CheckActorClass(PlayerNumber(),"ImproviseGuy")) {label_player = "Doomguy";extra_talk="Uh.. where's your weapon?\nWhat? confiscated? who did??";} // Improvisation
 	
 	//Kinsie!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	/*
 	Meta Doom https://github.com/TheKins/MetaDoom https://thekinsie.com/play/metadoom/
 	*/
-	else if(CheckActorClass(PlayerNumber(),"MetaDoomPlayer")) {label = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";} // Meta Doom
+	else if(CheckActorClass(PlayerNumber(),"MetaDoomPlayer")) {label_player = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";} // Meta Doom
 	
 	//Pyspy!!!!!!!
 	// Delta Doom https://www.moddb.com/mods/doom-delta/
-	else if(CheckActorClass(PlayerNumber(),"Delta_LoreleiPlayer")) {label = "Sgt. Chen";extra_talk="";} // Lorelei Chen
-	else if(CheckActorClass(PlayerNumber(),"Delta_JohnPlayer")) {label = "Comrade John";extra_talk="";} // John Pietrovich
-	else if(CheckActorClass(PlayerNumber(),"Delta_DimitriPlayer")) {label = "Comrade Dimitri";extra_talk="";} // Dimitri Paramo
-	else if(CheckActorClass(PlayerNumber(),"Delta_ThiPlayer")) {label = "Corp. Thi";extra_talk="";} // Thi Barret
+	else if(CheckActorClass(PlayerNumber(),"Delta_LoreleiPlayer")) {label_player = "Sgt. Chen";extra_talk="";} // Lorelei Chen
+	else if(CheckActorClass(PlayerNumber(),"Delta_JohnPlayer")) {label_player = "Comrade John";extra_talk="";} // John Pietrovich
+	else if(CheckActorClass(PlayerNumber(),"Delta_DimitriPlayer")) {label_player = "Comrade Dimitri";extra_talk="";} // Dimitri Paramo
+	else if(CheckActorClass(PlayerNumber(),"Delta_ThiPlayer")) {label_player = "Corp. Thi";extra_talk="";} // Thi Barret
 	
 	// ... Yeah, let's not talk about it here. The explanation is on our NSFW extension PWAD PK3 there. Same Organization. Just a moment.
-	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
-	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
+	else if(CheckActorClass(PlayerNumber(),"HDoomPlayer")) {label_player = "Doomguy";extra_talk="Uh.. what's with that face?\nAnd also.. what is that w.. Uhh... Are you Impostor Among Us!?\nI don't think you're the guy we knew.. \n\noh noh.. something when wrong!\nuhh help..";set_second = 30.0;}
+	else if(CheckActorClass(PlayerNumber(),"LukaPlayer")) {label_player = "Luka";extra_talk=".... Don't tell me.. Uh.. Anyway welcome! & Please be careful with your staff.";set_second = 5.0;}
 	
 	// I mean, yeah. Hege Cactus' La Tailor Girl https://forum.zdoom.org/viewtopic.php?f=43&t=58343
-	else if(CheckActorClass(PlayerNumber(),"TailorPlayer")) {label = "Daina";extra_talk="You need some stitches? Well sorry, we ran out of all Ademin Refill packs yesterday. But Hymatt's Latex still on stock & just scaled up production yeah!\nDon't ask, it was power related companies & battery workshops.\nHymatt's rubbers & silicons are the best isolators apparently, and the only material with fire resistance & hypoalergent properties";set_second = 12.0;}
-	else if(CheckActorClass(PlayerNumber(),"SewiePlayer")) {label = "Sewie";extra_talk="Watch where you going, sweetie! There's alot of brittle stuffs around here!\nNah, just kidding! Break all of them, We have the blueprints to respawn all of em them again.";set_second = 10.0;}
-	else if(CheckActorClass(PlayerNumber(),"NariPlayer")) {label = "Nari";extra_talk="Sup, we got more arsenals you can install to, not just outfits.\nWe also even have.. human emulation module kits, so if curious, ask away!";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"TailorPlayer")) {label_player = "Daina";extra_talk="You need some stitches? Well sorry, we ran out of all Ademin Refill packs yesterday. But Hymatt's Latex still on stock & just scaled up production yeah!\nDon't ask, it was power related companies & battery workshops.\nHymatt's rubbers & silicons are the best isolators apparently, and the only material with fire resistance & hypoalergent properties";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"SewiePlayer")) {label_player = "Sewie";extra_talk="Watch where you going, sweetie! There's alot of brittle stuffs around here!\nNah, just kidding! Break all of them, We have the blueprints to respawn all of em them again.";set_second = 10.0;}
+	else if(CheckActorClass(PlayerNumber(),"NariPlayer")) {label_player = "Nari";extra_talk="Sup, we got more arsenals you can install to, not just outfits.\nWe also even have.. human emulation module kits, so if curious, ask away!";set_second = 10.0;}
 	
 	// Doom2fan a.k.a. phantombeta!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	/*
 	Se7evidas https://forum.zdoom.org/viewtopic.php?f=43&t=62668 https://github.com/Doom2fan/Se7evidas
 	
 	*/
-	else if(CheckActorClass(PlayerNumber(),"S7_ScoutPlayer")) {label = "Runner guy";extra_talk="";} // Runner
-	else if(CheckActorClass(PlayerNumber(),"S7_EMTPlayer")) {label = "EMT guy";extra_talk="";} // EMT
-	else if(CheckActorClass(PlayerNumber(),"S7_MedicPlayer")) {label = "Medic guy";extra_talk="Hey, your friend requested you!\nNvm. They're now on bed safe. Take your rest here, medic!";set_second = 5.0;} // Medic
-	else if(CheckActorClass(PlayerNumber(),"S7_InfiltratorPlayer")) {label = "Infiltrator guy";extra_talk="";} // Infiltrator
-	else if(CheckActorClass(PlayerNumber(),"S7_InfantryPlayer")) {label = "Infantry guy";extra_talk="";} // Infantry
-	else if(CheckActorClass(PlayerNumber(),"S7_RiflemanPlayer")) {label = "Rifle guy";extra_talk="";} // Rifleman
-	else if(CheckActorClass(PlayerNumber(),"S7_EnforcerPlayer")) {label = "Enforcer guy";extra_talk="";} // Enforcer
+	else if(CheckActorClass(PlayerNumber(),"S7_ScoutPlayer")) {label_player = "Runner guy";extra_talk="";} // Runner
+	else if(CheckActorClass(PlayerNumber(),"S7_EMTPlayer")) {label_player = "EMT guy";extra_talk="";} // EMT
+	else if(CheckActorClass(PlayerNumber(),"S7_MedicPlayer")) {label_player = "Medic guy";extra_talk="Hey, your friend requested you!\nNvm. They're now on bed safe. Take your rest here, medic!";set_second = 5.0;} // Medic
+	else if(CheckActorClass(PlayerNumber(),"S7_InfiltratorPlayer")) {label_player = "Infiltrator guy";extra_talk="";} // Infiltrator
+	else if(CheckActorClass(PlayerNumber(),"S7_InfantryPlayer")) {label_player = "Infantry guy";extra_talk="";} // Infantry
+	else if(CheckActorClass(PlayerNumber(),"S7_RiflemanPlayer")) {label_player = "Rifle guy";extra_talk="";} // Rifleman
+	else if(CheckActorClass(PlayerNumber(),"S7_EnforcerPlayer")) {label_player = "Enforcer guy";extra_talk="";} // Enforcer
 	
 	// Ouromov
 	/*
@@ -155,10 +155,10 @@ script "WelcomeHome" (void)
 	https://www.moddb.com/mods/goldeneye-doom2/downloads/goldeneye-tc-complete
 	https://en.wikipedia.org/wiki/Xenia_Onatopp
 	*/
-	else if(CheckActorClass(PlayerNumber(),"JamesBond007")) {label = "007 (Double O Seven)";extra_talk="";} // James Bond. Bond, James Bond.
-	else if(CheckActorClass(PlayerNumber(),"AlecTrevelyan006")) {label = "006 (Double O Six)";extra_talk=".... looks sussy baka..";} // Alec Trevelyan. Traitor?
-	else if(CheckActorClass(PlayerNumber(),"Xenia")) {label = ".... ARGH F8CKING HELL! Wahtever..";extra_talk="";} // Xenia Onatopp. Enemy in certain film of it. Eliminated.
-	else if(CheckActorClass(PlayerNumber(),"SolidSnake")) {label = "Snake";extra_talk="I got more unused cardboard boxes if you want..\nOr a pack of Invisibility Spheres that's available too.\nAnd also other stealthily silenced arsenals? We got them too.\nAlso, this bunch of pairs of shoes we inspired from a scientist named Shuri, idk.";set_second = 12.0;} // MGS Solid Snake. lmao! Black Panther Marvel.
+	else if(CheckActorClass(PlayerNumber(),"JamesBond007")) {label_player = "007 (Double O Seven)";extra_talk="";} // James Bond. Bond, James Bond.
+	else if(CheckActorClass(PlayerNumber(),"AlecTrevelyan006")) {label_player = "006 (Double O Six)";extra_talk=".... looks sussy baka..";} // Alec Trevelyan. Traitor?
+	else if(CheckActorClass(PlayerNumber(),"Xenia")) {label_player = ".... ARGH F8CKING HELL! Wahtever..";extra_talk="";} // Xenia Onatopp. Enemy in certain film of it. Eliminated.
+	else if(CheckActorClass(PlayerNumber(),"SolidSnake")) {label_player = "Snake";extra_talk="I got more unused cardboard boxes if you want..\nOr a pack of Invisibility Spheres that's available too.\nAnd also other stealthily silenced arsenals? We got them too.\nAlso, this bunch of pairs of shoes we inspired from a scientist named Shuri, idk.";set_second = 12.0;} // MGS Solid Snake. lmao! Black Panther Marvel.
 	
 	// Lumenoth
 	/*
@@ -177,20 +177,20 @@ script "WelcomeHome" (void)
 	- Terraweps Overhaul
 	- Heretweak
 	*/
-	else if(CheckActorClass(PlayerNumber(),"TheShotgunPlayer")) {label = "Doomguy";extra_talk="Hey! Nice shotgun! where did you get that from?";} // Doomguy with Shotgun O Rama
-	else if(CheckActorClass(PlayerNumber(),"ViolentPlayer")) {label = "Doomguy";extra_talk="Hey! Nice purple sets! where did you get that from?";} // Doomguy with Vehement
-	else if(CheckActorClass(PlayerNumber(),"EWJPlayer")) {label = "Beeholderguy";extra_talk="";} // Bee holder
-	else if(CheckActorClass(PlayerNumber(),"BulletPlayer")) {label = "Bulletguy";extra_talk="";} // Class Act Bullet Guy
-	else if(CheckActorClass(PlayerNumber(),"ShottytPlayer")) {label = "Shottyguy";extra_talk="";} // Class Act Shotty Guy
-	else if(CheckActorClass(PlayerNumber(),"RockettPlayer")) {label = "Rocketguy";extra_talk="";} // Class Act Rocket Guy
-	else if(CheckActorClass(PlayerNumber(),"MG_Player")) {label = "Mr. Obliterator";extra_talk="";} // Obliterator
-	else if(CheckActorClass(PlayerNumber(),"VG_LightGunPlayer")) {label = "Officer";extra_talk="";} // Virtual Crisis. Virtual Cop inspired
+	else if(CheckActorClass(PlayerNumber(),"TheShotgunPlayer")) {label_player = "Doomguy";extra_talk="Hey! Nice shotgun! where did you get that from?";} // Doomguy with Shotgun O Rama
+	else if(CheckActorClass(PlayerNumber(),"ViolentPlayer")) {label_player = "Doomguy";extra_talk="Hey! Nice purple sets! where did you get that from?";} // Doomguy with Vehement
+	else if(CheckActorClass(PlayerNumber(),"EWJPlayer")) {label_player = "Beeholderguy";extra_talk="";} // Bee holder
+	else if(CheckActorClass(PlayerNumber(),"BulletPlayer")) {label_player = "Bulletguy";extra_talk="";} // Class Act Bullet Guy
+	else if(CheckActorClass(PlayerNumber(),"ShottytPlayer")) {label_player = "Shottyguy";extra_talk="";} // Class Act Shotty Guy
+	else if(CheckActorClass(PlayerNumber(),"RockettPlayer")) {label_player = "Rocketguy";extra_talk="";} // Class Act Rocket Guy
+	else if(CheckActorClass(PlayerNumber(),"MG_Player")) {label_player = "Mr. Obliterator";extra_talk="";} // Obliterator
+	else if(CheckActorClass(PlayerNumber(),"VG_LightGunPlayer")) {label_player = "Officer";extra_talk="";} // Virtual Crisis. Virtual Cop inspired
 	
 	// Mala Petaka. Yeah that's the name of the IWAD https://store.steampowered.com/app/2104460/Mala_Petaka/ I know.
-	else if(CheckActorClass(PlayerNumber(),"PetakaPlayer")) {label = "Mr. Petaka";extra_talk="yeey mantab jiwa!";} // Petaka. Pls verify!!!!!!!!!!!!!!!!!!!!!
+	else if(CheckActorClass(PlayerNumber(),"PetakaPlayer")) {label_player = "Mr. Petaka";extra_talk="yeey mantab jiwa!";} // Petaka. Pls verify!!!!!!!!!!!!!!!!!!!!!
 	
 	// Doom 4 Vanilla https://www.doomworld.com/forum/topic/108725-doom-4-vanilla-v32/
-	else if(CheckActorClass(PlayerNumber(),"DoomSlayer")) {label = "Doomguy";extra_talk="You look... different today..\nI like your style!";} // Doomguy
+	else if(CheckActorClass(PlayerNumber(),"DoomSlayer")) {label_player = "Doomguy";extra_talk="You look... different today..\nI like your style!";} // Doomguy
 	
 	//Can't Sleep LocalInsomniac
 	/*
@@ -199,7 +199,7 @@ script "WelcomeHome" (void)
 	https://cantsleep.cc/ntmai
 	https://github.com/LocalInsomniac/NTMAi
 	*/
-	else if(CheckActorClass(PlayerNumber(),"NTM_Player")) {label = "Doomguy";extra_talk="Looks like you've just graduated from Duke's class eh?\nCool and good.\nI wonder since when Duke became teacher here.\nWhat a next honorable act I see.";set_second = 5.0;} // Doomguy Nukem Style. 3D Realm is notorious like Nintendo, suing an open IGRP (IWAD in Nukem) replacement project.
+	else if(CheckActorClass(PlayerNumber(),"NTM_Player")) {label_player = "Doomguy";extra_talk="Looks like you've just graduated from Duke's class eh?\nCool and good.\nI wonder since when Duke became teacher here.\nWhat a next honorable act I see.";set_second = 5.0;} // Doomguy Nukem Style. 3D Realm is notorious like Nintendo, suing an open IGRP (IWAD in Nukem) replacement project.
 	/*
 	Scrap:
 	- I hope those 3D Realm Lawyer B8888s stays in the grave lol!
@@ -209,18 +209,67 @@ script "WelcomeHome" (void)
 	/*
 	- Abyssal Marine https://www.doomworld.com/forum/topic/151373-abyssal-marine/
 	*/
-	else if(CheckActorClass(PlayerNumber(),"BigGuyPlayer")) {label = "Big Guy";extra_talk="Whoa, you're a big guy now! Cool and good";} // Abyssal Doomguy
+	else if(CheckActorClass(PlayerNumber(),"BigGuyPlayer")) {label_player = "Big Guy";extra_talk="Whoa, you're a big guy now! Cool and good";} // Abyssal Doomguy
 	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
-	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
 	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
-	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
+	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label_player = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
 	
 	// Main Player (Unnamed either intentionally or unintentional)
-	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label = "Untitled???";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
+	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "Untitled???";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
 	
 	// If nothing else matches..
-	else {label = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
-	HudMessage(s:"Welcome home, ", s:label,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	else {label_player = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
+}
+
+script "WelcomeHome" (void)
+{
+	// Now, Scan the character
+	scan_character();
+	
+	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "FollowRedCarpet" (void)
+{
+	scan_character();
+	set_second = 8.0;
+	extra_talk = "Just follow the red carpet. Yeah, the owner himself kept getting lost.\nIdk why, but.. yeah\nAlso huh? I didn't see EXIT legend here.., mmf, must be old module,\nmaybe need upgrade I guess...";
+	HudMessage(s:"This is very easy,", s:label_player,s:".\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "RedCarpetKeyFound" (void)
+{
+	//scan_character();
+	set_second = 5.0;
+	extra_talk = "There's the button. Yeah.. the EXIT button & the legend is supposed to be there!\n& it's not that far.. huh.. Let's just go.";
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "RedCarpetTerryTrapped" (void)
+{
+	// Music Stop!
+	//scan_character();
+	set_second = 4.0;
+	extra_talk = "WHAT THE?!\nUgh, I got a bad feeling about this.. I hope this is just owner's surprise haha?.. \nDid ExodusCat informed about this? I hope so, But.. before invasion,\nno message?";
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "RedCarpetTerryCrusherStarted" (void)
+{
+	//scan_character();
+	set_second = 2.0;
+	extra_talk = "OOH SH8888888!!!!!!!!!\nI KNEW IT!!";
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "TerryWaddedMySubs" (void)
+{
+	// Reference to Duke Nukem 3D. I should've known they've booby trapped my sub!
+	scan_character();
+	set_second = 7.0;
+	extra_talk = "Argh, dang it! I should've known & hence tell you that:\nThe Invaders Terry-fies places too!\nWe must act fast, before they Terry-fy the rest!\nNow, go pick up your gears..., it's somewhere, I hope..\nNo wonder there's no EXIT. We gotta take this place back for him & others!";
+	HudMessage(s:"Whoao! You okay,", s:label_player,s:"?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }

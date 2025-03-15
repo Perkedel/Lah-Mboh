@@ -1,0 +1,9 @@
+// Mboh Adventure DaNuBeau sayings
+// (JOELwindows7)
+#library "MbohAdventureDialog"
+#include "zcommon.acs"
+
+script "TerryWaddedMySubs" (void)
+{
+	
+}
