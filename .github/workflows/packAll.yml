@@ -34,6 +34,7 @@ jobs:
         run: |
           ls
           pwd
+          echo "Zip now"
           zip -r Lah-Mboh.zip . -x src/ yoinks/ source/
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
@@ -45,7 +46,9 @@ jobs:
         run: |
           ls
           pwd
-          7z a -t7z -mx9 -axzip -- Lah-Mboh.7z *.* *
+          echo "7z now"
+          7z a -t7z -mx9 -- Lah-Mboh.7z *.* *
+          7z d Lah-Mboh.7z Lah-Mboh.pk3
           mv Lah-Mboh.7z Lah-Mboh.pk7
           ls
           pwd
