@@ -45,7 +45,7 @@ jobs:
         run: |
           ls
           pwd
-          7z a -t7z -mx9 -axzip -x*.zip -- Lah-Mboh.7z *.* *
+          7z a -t7z -mx9 -axzip -- Lah-Mboh.7z *.* *
           mv Lah-Mboh.7z Lah-Mboh.pk7
           ls
           pwd
