@@ -39,12 +39,24 @@ jobs:
           ls
           pwd
       
+      # Do it like kyli873 in this Kinsie's FauxDM
+      # https://github.com/TheKins/FauxDM/blob/master/_zip.bat
+      - name: 7z it
+        run: |
+          ls
+          pwd
+          7z a -t7z -mx9 -axzip -x*.zip -- Lah-Mboh.7z *.* *
+          mv Lah-Mboh.7z Lah-Mboh.pk7
+          ls
+          pwd
+      
       - name: Upload These all
         uses: actions/upload-artifact@v4.6.1
         with:
           name: Lah-Mboh
           path: |
             Lah-Mboh.pk3
+            Lah-Mboh.pk7
             Lah-Mboh.txt
           if-no-files-found: error
       
@@ -55,8 +67,12 @@ jobs:
           echo "Shut zip"
           zip Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
+          7z a -t7z -mx9 Lah-Mboh.7z Lah-Mboh.pk7
+          7z u Lah-Mboh.7z Lah-Mboh.txt
           ls
           pwd
+      
+      
       
       - name: Check first
         run: |
@@ -76,4 +92,5 @@ jobs:
           snapshots: true
           files: |
             Lah-Mboh.zip
+            Lah-Mboh.7z
         
