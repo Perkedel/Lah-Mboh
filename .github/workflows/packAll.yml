@@ -49,6 +49,8 @@ jobs:
           echo "7z now"
           7z a -t7z -mx9 -- Lah-Mboh.7z *
           7z d Lah-Mboh.7z Lah-Mboh.pk3
+          echo "What Does it contains now?"
+          7z l Lah-Mboh.7z
           mv Lah-Mboh.7z Lah-Mboh.pk7
           ls
           pwd
@@ -72,6 +74,7 @@ jobs:
           zip -u Lah-Mboh.zip Lah-Mboh.txt
           7z a -t7z -mx9 Lah-Mboh.7z Lah-Mboh.pk7
           7z u Lah-Mboh.7z Lah-Mboh.txt
+          7z l Lah-Mboh.7z
           ls
           pwd
       

@@ -36,6 +36,8 @@ For the thing we've yoinked
 	- Doomedarchviledemon Fly
 	- MogWaltz Burning Debris & Burning Top
 - [Ukiro OTEX](https://doom.ukiro.com/about-otex/). Ola Björling (ukiro). Yes Reupload, No Rename, Yes Edit, Yes Patching, No Commercial. **Unfortunately, due to license restrictions, we are unable to pre-include this pwad atm**.
+- [ID24 to Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Obsidian Plague. ???. This is Legacy of Rust's Actors ported to ZDoom DECORATE.
+- [id24res.wad](https://store.steampowered.com/app/2280/DOOM__DOOM_II/). **PROPRIETARY** & **PAID**. In order for the above ID24 to Decorate to work, you must also buy & load this pwad file. Once you purchased & downloaded it, it's in: `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\rerelease\id24res.wad`. [an effort to cover this in Freedoom](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/) is coming soon.
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
 - [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
 
