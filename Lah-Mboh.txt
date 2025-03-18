@@ -1,7 +1,7 @@
 ===========================================================================
 Archive Maintainer      : Rolling Release! May create release occassionally called Snapshot Release
 Update to               : Lah-Mboh.pk3
-Advanced engine needed  : GZDoom since v4.10.0, targeting whatever the latest
+Advanced engine needed  : GZDoom since v4.14.0, targeting whatever the latest
 Primary purpose         : Single or Coop play, Deathmatch, Test & Random Episodes idk.
 ===========================================================================
 Title                   : Lah Mboh?
@@ -46,7 +46,7 @@ Build Time              : Serveral Hours, Counting because this is Rolling Relea
 Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code, Lapce (f888 you VSCode why werroring?!), Blender
 Known Bugs              : Only works with the Freedoom IWAD (which is freedoom2.wad) due to exclusive textures & assets used in many of these maps.
 May Not Run With        : Idk, too old version of GZDoom, GZDoom & derivatives that's older than v4.14.0
-Tested With             : GZDoom since v4.14.0, VKDoom nightly as of February 2025 & henceforth
+Tested With             : GZDoom since v4.14.0, VKDoom nightly as of February 2025 & henceforth; GZDoom v4.11.3 due to Project Brutality bug
 
 
 

@@ -18,6 +18,17 @@ Yes. Infact, this Mod PK3 is designed to test those TCs you are about to try. To
 
 If your mod crashes the game, check if you loaded other mods correctly. Try loading just the target mod & this mod PK3. carefully watch the logs. If all fails, feel free to create issue complete with detailed reproduction steps.
 
+## Is this compatible with ID24?
+
+Yes. We have added & prepared ID24 capabilities. There are now enemies to test & decoration things you can view & ponder. However right now as of March 2025, the Freedom's coverage for ID24 (called FD24) is currently under heavy WIP & has no alpha release yet.
+
+- [Topic about FD24 on Doomworld](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/)
+- [Google Spreadsheet listing the asset coverage progress](https://docs.google.com/spreadsheets/d/1VjQF4WgOOVSQ5Wy1SPwLTJg_ZVsn2QIqYTki4lrqFjk/edit?usp=sharing)
+
+For now therefore, you can use [id24dec](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/) & [id24res (**PAID**)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/) itself to start testing.
+
+Until this all done, **ID24 will not appear in Mboh Adventure Megawad**.
+
 ## Why exclusively designed for Freedoom?
 
 We accidentally chose textures that turns out Freedom exclusive. Since there are alot of the linedefs & sectors with those texture, we are unable to turn back anymore. 
@@ -34,7 +45,7 @@ Yes. Choose the latest GZDoom version on the left cogwheel by the GZDoom selecti
 [choose latest](/src/screenshot/delta-touch-how2.png)
 
 Unfortunately, if your sparsdated DeltaTouch does not have `v4.14`, then you must beg & pre-gift your parents so they insert credit card online (risk stolen by Google) to download Delta Touch again, legit.  
-Also, it is highly likely ask for voucher no longer works since people have been abusing it. 
+Also, it is highly likely that ask for voucher no longer works since people have been abusing it. 
 
 Note, that since certain version DeltaTouch has DRM. You must first connect to internet one last time to download license from the Google Play you bought this from.
 

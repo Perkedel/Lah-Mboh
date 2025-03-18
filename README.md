@@ -123,4 +123,4 @@ Assets (which we drew ourselves): CC4.0-BY-SA
 > Disclaimer: We have yoinked some mod pk3's in order for us to complete the level building. All yoinks have been credited  
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
 
-Website: https://perkedel.netlify.app (the Doom special page maybe made if there is demand, idk).
+Website: https://perkedel.netlify.app/doom (Actually, nvm, for now. We're too lazy rn).
