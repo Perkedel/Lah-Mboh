@@ -212,6 +212,12 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"BigGuyPlayer")) {label_player = "Big Guy";extra_talk="Whoa, you're a big guy now! Cool and good";} // Abyssal Doomguy
 	
+	//Ultra.boi
+	/*
+	- Dogelore Bonk https://www.moddb.com/mods/dogelore-doom
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Cheemz")) {label_player = "Cheemzburger";extra_talk="Uh oh, pls don't bonk us!\nYes we are always horni but.. as aware as Duke here.";set_second = 6.0;} // Cheemzburger doge
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
