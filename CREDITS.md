@@ -9,6 +9,18 @@ For the thing we've yoinked
 > [!IMPORTANT] 
 > Pls make sure credit is tidy. Don't turn this into Dump link, thancc!
 
+## Tools
+
+> [!NOTE]
+> Tools used during the development
+
+- [Slade 3](https://slade.mancubus.net/). sirjuddington. **GNU GPL v2**. [SOURCE CODE](https://slade.mancubus.net/). Edit WADs: Maps & various Lumps
+- [Ultimate Doom Builder](https://ultimatedoombuilder.github.io/). various. **GNU GPL v3**. [SOURCE CODE](https://github.com/UltimateDoomBuilder/UltimateDoomBuilder). Edit Maps with ultimate features, based on GZDoom Builder which is based on [Doom Builder](http://doombuilder.com/) whatever.
+- [Blender](https://blender.org). Blender Foundation. **GNU GPL v3**. [SOURCE CODE](https://projects.blender.org/blender/blender). Build 3D Models even H, or in this case: Texture Photo Capture, that also supports **H**.
+- [Inkscape](https://inkscape.org/). Inkscape. **GNU GPL v2**. [SOURCE CODE](https://gitlab.com/inkscape/inkscape). Draw vector graphic that scales in any resolution.
+- [Pixelorama](https://orama-interactive.itch.io/pixelorama). Orama Interactive. **MIT LICENSE**. Draw pixel perfect texture & flats, ensuring results are clear & zero blur, unless if you intended it (but it's still controllable pixel by pixel). Not to be confused with *FreeAseprite* effort nor [LibreSprite](https://libresprite.github.io/#!/)! But I saw Text tool here (via 3D layer but it's jank). I still refuse to understand that compensatory behaviour, forgive me. I'm tired of this, [fine](https://store.steampowered.com/app/2779170/Pixelorama/) (BOUGHT), I'm doing it myself. You, second, .. eventually.
+
+
 ## Addons
 
 > [!NOTE]
@@ -53,10 +65,12 @@ For the thing we've yoinked
 > coz I have been hated by alot, breaking points. What's the point of the vent room if only your reaction to terminally hate me and mark me as creep?  
 > I want to get this unbulshitting done! clean room would take a while! Until the skill is done, I'll take bits & bobs over as is.  
 > And remember, not all case of the yoinking is about revenge though. Some are generally too cool to miss, and I gotta learn how did you guys did it.
+> 
+> *Pls lemme know if there happen a bullshit regarding this. If that happen, right now my order is not to purge history about this, idk, just delete idk.*
 
 - [Kinsie's gameplay test map](https://www.doomworld.com/forum/topic/146467-gzdoom-kinsies-gameplay-mod-test-map/). Kinsie. ???.
 	- This looks foundational & inspirational, let's remake it! also by hand yeah! **& even bigger!!!!** so I continue, him.. idk..
-- [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. *Pls lemme know if there happen a bullshit regarding this. If that happen, right now my order is not to purge history about this, idk, just delete idk.*
+- [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. 
 	- VMAbort Handler. Never seen a PWAD ever think to have VMAbort detector. It plays music, and spits the lyric & ASCII image text onto the console everytime the GZDoom soft crashed.
 - [Kenney.nl Public Domain Assets](https://www.kenney.nl/). Kenney. **CC0**.
 	- every something such as textures & sprites & models
