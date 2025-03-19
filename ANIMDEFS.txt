@@ -4,6 +4,9 @@
 // Freedoom version of Matakrow's HAMTEX
 Switch	Doom 3		DEVMGFD1	On Pic	DEVMGFD2	Tics 0
 
+// Combined actual Megaswitch from above and between dev
+Switch	Doom 3		SWMEGFD0	On Pic	SWMEGFD1	Tics 0
+
 // Jekyll Grim Payne stuffs
 CanvasTexture TargetDummyDamage 192 32
 
