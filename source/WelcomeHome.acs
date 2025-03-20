@@ -218,6 +218,12 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"Cheemz")) {label_player = "Cheemzburger";extra_talk="Uh oh, pls don't bonk us!\nYes we are always horni but.. as aware as Duke here.";set_second = 6.0;} // Cheemzburger doge
 	
+	// Jek 'N' Rac
+	/*
+	- Vicky: Fist of Ira https://youtu.be/RiDQZChOTtE ; 
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Vicky")) {label_player = "Vicky";extra_talk="";set_second = 2.0;} // Vicky
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	

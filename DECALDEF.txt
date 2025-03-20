@@ -195,3 +195,17 @@ decal NoMoreCash 4010
 	X-Scale 0.1
 	Y-Scale 0.1
 }
+
+decal DoomSharewareBanned 4011
+{
+	// Found only in MBH01. Any demo or subscription required is considered deceiving consumer despite already paid full. 
+	// Full payment must deserves obvious full permanent experience down to nooks & crannies, 1st & 3rd party stuffs.
+	// It is controversial, not only destroying greed of companies, but also unecessary misunderstandings such as accidental demo version shipments,
+	// as well as license expiry hence when the new firmware had to remove the full Doom (customer can sue for feature loss too!).
+	// This is why this particular bill can't be fully obeyed & hidden somewhere in the level. Although it doesn't mean this bill is disabled hence it's up to customers
+	// to call it out now or ignore.
+	pic DoomSharewareBanned
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}

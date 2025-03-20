@@ -58,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 2625.065f;
-		viewpositiony = 2337.735f;
-		viewscale = 0.8449932f;
+		viewpositionx = -314.5898f;
+		viewpositiony = 1846.495f;
+		viewscale = 0.8449929f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
