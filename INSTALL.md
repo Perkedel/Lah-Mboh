@@ -18,8 +18,10 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 ## Dependencies:
 - IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [~~`doom2.wad`~~ (**PAID**, Werror! Incomplete Texture!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
 - Source Port: [GZDoom latest](https://zdoom.org/downloads).
+    - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.10.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.14.
+    - Otherwise you must **use the latest version**!
 - Mod PWADs:
-    - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa.
+    - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa. **WAIT!!**, [**use this instead!**](/yoinks/vvpck1.0-mapUnconflict.pk3), because the original overrides MAP01!
     - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/) from inkoalawetrust. We recommend to pick the full Map (1st dl) rather than just the prop.
     - see more on [`CREDITS.md`](CREDITS.md) section `Dependencies`
 - Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl), etc etc.
