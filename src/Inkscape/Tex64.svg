@@ -2216,7 +2216,9 @@
                d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" /></g></g></g><g
          inkscape:groupmode="layer"
          id="layer35"
-         inkscape:label="DoomSharewareBanned"><rect
+         inkscape:label="DoomSharewareBanned"
+         sodipodi:insensitive="true"
+         style="display:none"><rect
            style="opacity:0.998844;fill:#ffffff;stroke:none;stroke-width:0.0529167;stroke-linecap:round;stroke-linejoin:round"
            id="rect19"
            width="16.933332"

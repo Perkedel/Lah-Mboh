@@ -119,6 +119,22 @@ decal SolidSolidSolid 42001
 	Y-Scale 0.1
 }
 
+decal LiftUp 3001
+{
+	pic LiftUp
+	// pic in 64 x 64
+	X-Scale 0.5
+	Y-Scale 0.5
+}
+
+decal LiftDown 3002
+{
+	pic LiftDown
+	// pic in 64 x 64
+	X-Scale 0.5
+	Y-Scale 0.5
+}
+
 decal GZFILTH 4002
 {
 	pic GZFILTH

@@ -30,6 +30,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource2
+			{
+				type = 1;
+				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT19";
 		defaultceiltexture = "FLAT19";
@@ -48,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 1895.883f;
-		viewpositiony = 1185.579f;
-		viewscale = 1.428047f;
+		viewpositionx = -177.5574f;
+		viewpositiony = 1197.888f;
+		viewscale = 2.413397f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +71,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 16;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
