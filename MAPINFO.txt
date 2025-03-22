@@ -58,6 +58,8 @@ gameinfo
 		"LMBHCRE3",
 		"LMBHRES",
 		"LMBHRES1",
+		//"LMBHCTEX",
+		//"LMBHCARR",
 		"LMBHCRED"
 	
 	drawReadThis = true
@@ -65,6 +67,8 @@ gameinfo
 		//"LMBHRES1",
 		"LMBHPROV",
 		"LMBHCRHD",
+		"LMBHCTEX",
+		"LMBHCARR",
 		"LMBHCRED"
 	
 	// Test only! do not uncomment in production!
@@ -155,8 +159,8 @@ Map MBH02 lookup "MBH02"
 Map MBH03 lookup "MBH03"
 {
 	author = "JOELwindows7"
-	//next = "MBH04"
-	next = "MBOHTEST" // Temp! comment when level done!
+	next = "MBH04"
+	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_SHAWN2"
 	par = 30
@@ -164,6 +168,20 @@ Map MBH03 lookup "MBH03"
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
 	enterPic = "LMBHDARK"
+}
+
+Map MBH04 lookup "MBH04"
+{
+	author = "JOELwindows7"
+	//next = "MBH05"
+	next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
 }
 
 Map MBH11 lookup "MBH11"
@@ -264,6 +282,6 @@ DamageType LatexGoo
 	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
 	NoArmor
 	Factor = 1.5
-	Obituary = "%s has Changed"
+	Obituary = "%s has been Changed"
 	// shut up! I know!
 }
