@@ -117,8 +117,11 @@ function void scan_character (void)
 	//Kinsie!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	/*
 	Meta Doom https://github.com/TheKins/MetaDoom https://thekinsie.com/play/metadoom/
+	Juvenile Power Fantasy https://www.thekinsie.com/play/jpf/
+	https://www.doomworld.com/forum/topic/135155-gzdoom-juvenile-power-fantasy-v11-crashing/
 	*/
 	else if(CheckActorClass(PlayerNumber(),"MetaDoomPlayer")) {label_player = "Doomguy";extra_talk="Wow dude, new upgrades? where'd you get that from?";} // Meta Doom
+	else if(CheckActorClass(PlayerNumber(),"JPF_Player")) {label_player = "CSTerrorist";extra_talk="Wait, what? eh whatever, just don't break anything\nexcept demons, Ethereals, & many bad guys.";} // Meta Doom
 	
 	//Pyspy!!!!!!!
 	// Delta Doom https://www.moddb.com/mods/doom-delta/
@@ -223,6 +226,13 @@ function void scan_character (void)
 	- Vicky: Fist of Ira https://youtu.be/RiDQZChOTtE ; 
 	*/
 	else if(CheckActorClass(PlayerNumber(),"Vicky")) {label_player = "Vicky";extra_talk="";set_second = 2.0;} // Vicky
+	
+	// NameDDTT
+	/*
+	- Boykisser: Slay or Pet versions https://www.moddb.com/mods/boy-kissers/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"BoykisserPlayer")) {label_player = "Doomguy";extra_talk="Into cats now? huh, seems you moved on?";set_second = 2.0;} // Doomguy pets & kiss boykissers
+	else if(CheckActorClass(PlayerNumber(),"BoykisserHater")) {label_player = "Doomguy";extra_talk="...\nJust.. don't slay any actual cats, pls.";set_second = 2.0;} // (Unused) Doomguy slays boykisser
 	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}

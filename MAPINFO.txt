@@ -177,7 +177,7 @@ Map MBH04 lookup "MBH04"
 	next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_BETWEE"
-	par = 30
+	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
