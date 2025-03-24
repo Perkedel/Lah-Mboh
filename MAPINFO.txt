@@ -285,3 +285,11 @@ DamageType LatexGoo
 	Obituary = "%s has been Changed"
 	// shut up! I know!
 }
+
+DamageType Etheric
+{
+	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
+	Factor = 5
+	Obituary = "%s has turned into an Ethereal"
+	// haha lol ZZZ
+}

@@ -27,6 +27,7 @@ we have stood the rule that ensure that the base right here is free from far fet
 	- Jiggly Sexiness concealed & semi-concealed. Such as ones found in Hoyoverse Zenless Zone Zero very prominently. Not even hiding the fact at all.
 	- sussy baka! Reproductive inuendos as long it is 10 step before the *showtime*. 
 	- Duke Nukem 3D sussy baka stuffs (retaining the censor on those)
+- Vent
 - etc.
 
 ### But you are not allowed to submit into this PK3:
@@ -37,6 +38,7 @@ we have stood the rule that ensure that the base right here is free from far fet
 - IRL Pornography. No extension PWAD indefinitely. not to be confused for `ngocrot-deh`.
 - Derogatory N-words. This neither covered even in NSFW extension. use our Derogatory extension PWAD `wok-wak-wek-wok` (pls link) (small note: no color derogatory allowed at all there even! only G-word I think!)
 - Death Threats. No Extension PWAD.
+- Suicide Encouragement. Zero tolerance, no PWAD.
 - Doxxing. No Extension PWAD. Even to public companies (with known HQ locations & contacts) where context & intent is to cause raid & also compromise anyone safety whose completely nothing to do with the drama incident, in-all eitherways.
 - Non Free-Culture stipulated files. Those file violate our distribution goal (that includes but not limited to such as Arcade machines, Embedded Device Toy, Linux Distros). use our NoCommercialable extension PWAD `Bring-Your-Own-USB-SFW` pls link.
 

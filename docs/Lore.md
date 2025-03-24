@@ -2,9 +2,9 @@
 
 The year, 2100s.
 
-100 years after defeating so many Harrassers locked in one place thancc to a hero from RadioComms faction named Lancaster (in Surreal Blender Meme x Zenless Zone Zero fangame), the DNB & the citizens thrives while Harrassers got pressed way further until ultimately becomes too weak to Harrass, and hence *Bankrupt* universe-wide.  
+Serveral years after defeating so many Harrassers locked in one place thancc to a hero from RadioComms faction named Lancaster (in Surreal Blender Meme x Zenless Zone Zero fangame), the DNB & the citizens thrives while Harrassers got pressed way further until ultimately becomes too weak to Harrass, and hence *Bankrupt* universe-wide.  
 The remnants, now codenamed Invaders began Rising Up to bring back their glorious days of Entitlements. An invasion has occurred in serveral DNB mentored realms by these Invaders as a revenge against late first Kaorfa (JOELwindows7), the man whose his former friends betrayed, the man that built the world to rescue people from Invaders' parents, & the man that helped people defeat those Harrassers till his last breath.  
-You are once again hired but by non other that DNB Organization itself to tackle those Invaders from overtaking people's home & causing them to suffer again like in Century 21st. You will be sent to those invasion target & must eliminate those members.  
+You are once again hired but by non other that DNB Organization itself to tackle those Invaders from overtaking people's home & causing them to suffer again like in Century 21st. You will be sent to those invasion targets & must eliminate those members.  
 Unfortunately, since their parents lost their social media accounts & DNB has protected the digital world for good with POC License, these Invasion descendants returned using physical weapons, as they are very desperate.  
 It is not mess around, they are already trained as much their parents do with Social Medias.
 Luckily, DNB has countless copy of weapons, as well as your skill you brought from your carreer in your original universe (i.e. Bring your own TC!).
@@ -48,13 +48,17 @@ Her favourite color is **Blue** & **Yellow**.
 
 ## Reality Check
 
+> A: Joel made Vent Mod PK3? No way! I thought he done himself something after that incident..  
+> 
+> B: No, impossible. He know that goes to hell. And even refuse to trust psychiatrist to help him cope alive, only his mom. I do not understand his intention nor how his work idea, but it's best to leave him alone & help him build this Will Letter (Surat Wasiat), for his descendants.
+
 While as usual this is a fictional story in Perkedel Cinematic Universe, as always, part of IRL elements are ported to here, especially from Joel himself. Yes, it's real. He was betrayed by his former friends irl, after went into breaking point in his beloved community, where other members kept hating him for no reason. The vent room only brings backlash instead of pity & support by those entitled people who claimed to know everything about *social protection*, when in reality, they don't know enough. Infact noone knows at all.
 
 Based on True Story. Other IRL parts ported may includes real social condition during first & second part of Century 21st & perhaps until late before going into 22nd.
 
 ## Extra
 
-Don't worry, the Harrassers are fine, we've ressurrected them directly in Judgement realm.
+Don't worry, the OG Harrassers are fine, we've ressurrected them directly in Judgement realm.
 
 Just be careful, `sudo rm -rf /` No preserve root (The skill Lancaster used) is the worst idea ever. Under any circumstances should you never ever touch nor think about it. Lucky Surreal Blender Meme always backs up, & Lancaster did unmounted everything & disabled every network adapters before he do this.
 
