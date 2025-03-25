@@ -50,6 +50,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			CallACS("LevelMechSky1");
 			link.Close();
 		}
+		else if(command == "L-CHORALBE"){
+			console.printf("GO to Choral Bae");
+			CallACS("LevelChoralBe");
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -188,6 +193,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: "Mech's Skies",
         	cmdHandler: handler,
         	command: "L-MECHSKY1"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,56),
+        	(100,16),
+        	text: "Choral Bae",
+        	cmdHandler: handler,
+        	command: "L-CHORALBE"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

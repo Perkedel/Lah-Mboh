@@ -1,6 +1,28 @@
 // Hey folks, I'm too lazy to DoomEdNum in MAPINFO, so yoinks' DECORATEs be here.
 // (JOELwindows7)
 
+// Doom Tree using Jval's tree Generator
+// https://www.doomworld.com/forum/topic/119954-doomtree-procedural-generated-tree-sprites-voxels/
+// https://github.com/jval1972/DOOMTREE
+// Here are my trees
+ACTOR ACHU1 19521
+{
+	//$Category Decoration
+  //$Title Achuchu Tree
+  Health 10000
+  Radius 32
+  Height 128
+  Mass 100000
+  +SOLID
+  States
+  {
+  Spawn:
+    ACHU A -1
+  }
+}
+// End DoomTree	
+
+
 // TDRR's STUFFS!
 //==============================================================================
 //

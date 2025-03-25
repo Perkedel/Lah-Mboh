@@ -103,6 +103,17 @@ clusterdef 200
 	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
 
+clusterdef 25200
+{
+	// Choral Bae test
+	EnterText= lookup, "ENTERCHOR"
+	ExitText = lookup, "EXITCHOR"	
+	//pic = "COMPBLU"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+	music = "D_OXIDNE" // 
+}
+
 /*
 
  DEFINE LEVELS!!!!!!!!!!!!
@@ -274,6 +285,16 @@ map CAPTURTN "Capturation"
 	next = "CAPTURTN"
 	secretnext = "CAPTURTN"
 	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map CHORALBE lookup "CHORALBE"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	cluster = 25200
+	sky1 = "PSROCKG"
 	exitPic = "LMBHTIHD"
 }
 

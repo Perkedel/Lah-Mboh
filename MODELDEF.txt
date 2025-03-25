@@ -14,3 +14,17 @@ Model JekyllPShootingRangeDummy
 
     Frame AMRK A 0 0
 }
+
+// I want these trees 3D!
+// from the same Jval DoomTree
+// we export the obj & follow this instruction
+// https://github.com/biwa/doomtree-gzdoom-tutorial
+Model ACHU1
+{
+    Model 0 "models/Achuchur.obj"   
+    Path "models/Achuchur.obj"
+    Scale 50 50 50
+    
+    FrameIndex ACHU A 0 0
+    Frame ACHU A 0 0
+}

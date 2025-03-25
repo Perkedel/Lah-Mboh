@@ -19,6 +19,7 @@ For the thing we've yoinked
 - [Blender](https://blender.org). Blender Foundation. **GNU GPL v3**. [SOURCE CODE](https://projects.blender.org/blender/blender). Build 3D Models even H, or in this case: Texture Photo Capture, that also supports **H**.
 - [Inkscape](https://inkscape.org/). Inkscape. **GNU GPL v2**. [SOURCE CODE](https://gitlab.com/inkscape/inkscape). Draw vector graphic that scales in any resolution.
 - [Pixelorama](https://orama-interactive.itch.io/pixelorama). Orama Interactive. **MIT LICENSE**. Draw pixel perfect texture & flats, ensuring results are clear & zero blur, unless if you intended it (but it's still controllable pixel by pixel). Not to be confused with *FreeAseprite* effort nor [LibreSprite](https://libresprite.github.io/#!/)! But I saw Text tool here (via 3D layer but it's jank). I still refuse to understand that compensatory behaviour, forgive me. I'm tired of this, [fine](https://store.steampowered.com/app/2779170/Pixelorama/) (BOUGHT), I'm doing it myself. You, second, .. eventually.
+- [DOOMTREE](https://sourceforge.net/projects/doom-tree/). Jval. ???. [SOURCE CODE](https://github.com/jval1972/DOOMTREE), [Topic](https://github.com/jval1972/DOOMTREE)
 
 
 ## Addons
@@ -50,7 +51,8 @@ For the thing we've yoinked
 - [Ukiro OTEX](https://doom.ukiro.com/about-otex/). Ola Björling (ukiro). Yes Reupload, No Rename, Yes Edit, Yes Patching, No Commercial. **Unfortunately, due to license restrictions, we are unable to pre-include this pwad atm**.
 - ~~[Community Chest 4 Expanded Textures](https://doomwiki.org/wiki/Cc4-tex). Various, hosted in esselfortium's website. ???.~~ Expanded texture sets from Community Chest 4, use this instead of included in [original CC4](https://www.doomworld.com/idgames/?id=16911). [click here to download `32in24-15_tex_v2.zip`](https://esselfortium.net/wasd/32in24-15_tex_v2.zip). shout out to [this](https://www.doomworld.com/forum/topic/151564-link-to-the-all-in-one-switch-screen-texture/) for discovery. **PLS PREINCLUDE! Pallete & skies replaced!**
 - [ID24 to Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Obsidian Plague. ???. This is Legacy of Rust's Actors ported to ZDoom DECORATE.
-- [id24res.wad](https://store.steampowered.com/app/2280/DOOM__DOOM_II/). **PROPRIETARY** & **PAID**. In order for the above ID24 to Decorate to work, you must also buy & load this pwad file. Once you purchased & downloaded it, it's in: `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\rerelease\id24res.wad`. [an effort to cover this in Freedoom](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/) is coming soon. Until that's done, **ID24 will not be featured in Mboh Adventure Megawad**.
+- [id24res.wad](https://store.steampowered.com/app/2280/DOOM__DOOM_II/). id Software. **PROPRIETARY** & **PAID**. In order for the above ID24 to Decorate to work, you must also buy & load this pwad file. Once you purchased & downloaded it, it's in: `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\rerelease\id24res.wad`. [an effort to cover this in Freedoom](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/) is coming soon. Until that's done, **ID24 will not be featured in Mboh Adventure Megawad**.
+- [Ignitable Cauldron](https://www.doomworld.com/forum/topic/149424-interactive-ignitable-fire-cauldron/). Kan3. ???. [YOINKED HERETIC FIRE CAULDRON REALM667](https://www.realm667.com/repository/prop-stop/light-sources/1054-fire-cauldron#preview); [Tutorial Explanation](https://youtu.be/luwc4DCNi0A)
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
 - [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
 
@@ -117,3 +119,9 @@ For the thing we've yoinked
 > You can see those files in the `yoinks` folder.
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3), [Readme](/yoinks/vvpck1.0.txt)
+- [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ,/build.py` myself lol! thankfully it's easy haha!)
+
+## Random
+
+- [Some sort of Mimi Sentry character](https://www.doomworld.com/forum/post/2909949). Craneo. ???. additional: Midway, Sgt_Mark_IV, Inkoalawetrust, Craneo, Anister Starlight
+- [guy guy guy guy guy guy](https://www.doomworld.com/forum/post/2909844). Craneo. ???. additional: id Software, Scalliano, Mars3D, DeeDeeOz, Mark Quinn

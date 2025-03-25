@@ -1,0 +1,12 @@
+// Huh Hah?
+// ref: https://doomwiki.org/wiki/UMAPINFO
+// Sorry, you can't have both. GZDoom picks MAPINFO first & ignores rest.
+// (JOELwindows7)
+
+Map CHORALBE
+{
+    //LevelName = "Choral Bae"
+    intertext = "Hello",
+        "I'm Choral Bae"
+    next = "MBOHTEST"
+}

@@ -209,6 +209,13 @@ function void scan_character (void)
 	- I hope those 3D Realm Lawyer B8888s stays in the grave lol!
 	*/
 	
+	//Kipo
+	/*
+	Duke Nukem 3Doom https://www.moddb.com/mods/dn3doom
+	https://www.moddb.com/mods/dn3doom
+	*/
+	else if(CheckActorClass(PlayerNumber(),"DukePlayer")) {label_player = "Duke";extra_talk="";set_second = 5.0;} // Duke Nukem himself
+	
 	// Hell Walker
 	/*
 	- Abyssal Marine https://www.doomworld.com/forum/topic/151373-abyssal-marine/

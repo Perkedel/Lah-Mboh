@@ -160,6 +160,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource15
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\Kan3\\IgnitableCauldron.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -178,9 +188,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -3436.842f;
-		viewpositiony = 2291.066f;
-		viewscale = 1.461888f;
+		viewpositionx = 7446.219f;
+		viewpositiony = 1939.85f;
+		viewscale = 1.461887f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
