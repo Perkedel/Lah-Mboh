@@ -21,6 +21,8 @@ For the thing we've yoinked
 - [Pixelorama](https://orama-interactive.itch.io/pixelorama). Orama Interactive. **MIT LICENSE**. Draw pixel perfect texture & flats, ensuring results are clear & zero blur, unless if you intended it (but it's still controllable pixel by pixel). Not to be confused with *FreeAseprite* effort nor [LibreSprite](https://libresprite.github.io/#!/)! But I saw Text tool here (via 3D layer but it's jank). I still refuse to understand that compensatory behaviour, forgive me. I'm tired of this, [fine](https://store.steampowered.com/app/2779170/Pixelorama/) (BOUGHT), I'm doing it myself. You, second, .. eventually.
 - [DOOMTREE](https://sourceforge.net/projects/doom-tree/). Jval. ???. [SOURCE CODE](https://github.com/jval1972/DOOMTREE), [Topic](https://github.com/jval1972/DOOMTREE)
 - [![Doom Text Generator](/graphics/Generated/Eevee-DoomTextGen/text-gen-title.png)](https://www.doomworld.com/forum/topic/147196-doom-text-generator-%E2%80%94-last-updated-2024-11-25/). Eevee. ???. [![SOURCE CODE](/graphics/Generated/Eevee-DoomTextGen/source-code-say.png)](https://github.com/eevee/doom-text-generator); [![GO AHEAD, try it.](/graphics/Generated/Eevee-DoomTextGen/try-it-say.png)](https://c.eev.ee/doom-text-generator/)
+- [UDB ID24 Config](https://www.doomworld.com/forum/topic/147678-id24-0992-currently-in-draft-status/). Gooberman. ???. Config for Ultimate Doom Builder
+- [UDB ID24 Config](https://www.doomworld.com/forum/topic/152053-if-anyone-needs-a-udb-config-for-id24/). SyntaxError999. ???. Config for Ultimate Doom Builder
 
 ## Addons
 
@@ -106,7 +108,7 @@ For the thing we've yoinked
 	- `D_E4M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
 	- `D_BUNNY` = `D_IMPACTE`. Goji - Impactean Welcome Party
 	- `D_INTER` = `D_ULIVE`. Stratos - YOU LIVE!!!
-- [Freedoom Attic](https://github.com/freedoom/attic)
+- [Freedoom Attic](https://github.com/freedoom/attic). fraggle et al. **BSD License Clause-3**. Unused Freedoom contents
 	- `?` = `?`. ??? - ???
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 	- `D_RUNNIN` = `D_SSLZN`. SEGA - Starlight Zone (Sonic 1)
@@ -118,8 +120,8 @@ For the thing we've yoinked
 > We cannot simply pre-include this due to some reasons.  
 > You can see those files in the `yoinks` folder.
 
-- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3), [Readme](/yoinks/vvpck1.0.txt)
-- [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ,/build.py` myself lol! thankfully it's easy haha!)
+- [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3); Unconflicted demo map `MAP01` into `VVPCKTEST` or I forgor what name; [WADINFO](/yoinks/vvpck1.0.txt)
+- [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ,/build.py` myself lol! thankfully it's easy haha!); [WADINFO](/yoinks/damnums.txt)
 
 ## Random
 

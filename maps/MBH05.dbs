@@ -20,12 +20,22 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource1
+			{
+				type = 2;
+				location = "C:\\Users\\Joel Robert Justiawa\\Documents\\Kolmorotzzet (kolmorotshitt)\\Artistic Setups\\Doom WADs\\Mods\\NerdKoopa\\vvpck1.0\\vvpck1.0-mapUnconflict.pk3";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
-		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "STARTAN1";
-		defaultwalltexture = "STARTAN1";
-		defaultbottomtexture = "STARTAN1";
+		defaultfloortexture = "AQF067";
+		defaultceiltexture = "AQF067";
+		defaulttoptexture = "ESPIBR1";
+		defaultwalltexture = "ESPIBR1";
+		defaultbottomtexture = "ESPIBR1";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +48,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -299.3095f;
-		viewpositiony = -346.9666f;
-		viewscale = 0.6499999f;
+		viewpositionx = -677.956f;
+		viewpositiony = -10.37837f;
+		viewscale = 0.8449997f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

@@ -124,7 +124,10 @@ function void scan_character (void)
 	else if(CheckActorClass(PlayerNumber(),"JPF_Player")) {label_player = "CSTerrorist";extra_talk="Wait, what? eh whatever, just don't break anything\nexcept demons, Ethereals, & many bad guys.";} // Meta Doom
 	
 	//Pyspy!!!!!!!
-	// Delta Doom https://www.moddb.com/mods/doom-delta/
+	/*
+	Delta Doom https://www.moddb.com/mods/doom-delta/
+	https://doomwiki.org/wiki/Doom_Bible#Characters
+	*/
 	else if(CheckActorClass(PlayerNumber(),"Delta_LoreleiPlayer")) {label_player = "Sgt. Chen";extra_talk="";} // Lorelei Chen
 	else if(CheckActorClass(PlayerNumber(),"Delta_JohnPlayer")) {label_player = "Comrade John";extra_talk="";} // John Pietrovich
 	else if(CheckActorClass(PlayerNumber(),"Delta_DimitriPlayer")) {label_player = "Comrade Dimitri";extra_talk="";} // Dimitri Paramo
