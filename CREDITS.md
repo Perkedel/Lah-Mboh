@@ -20,7 +20,7 @@ For the thing we've yoinked
 - [Inkscape](https://inkscape.org/). Inkscape. **GNU GPL v2**. [SOURCE CODE](https://gitlab.com/inkscape/inkscape). Draw vector graphic that scales in any resolution.
 - [Pixelorama](https://orama-interactive.itch.io/pixelorama). Orama Interactive. **MIT LICENSE**. Draw pixel perfect texture & flats, ensuring results are clear & zero blur, unless if you intended it (but it's still controllable pixel by pixel). Not to be confused with *FreeAseprite* effort nor [LibreSprite](https://libresprite.github.io/#!/)! But I saw Text tool here (via 3D layer but it's jank). I still refuse to understand that compensatory behaviour, forgive me. I'm tired of this, [fine](https://store.steampowered.com/app/2779170/Pixelorama/) (BOUGHT), I'm doing it myself. You, second, .. eventually.
 - [DOOMTREE](https://sourceforge.net/projects/doom-tree/). Jval. ???. [SOURCE CODE](https://github.com/jval1972/DOOMTREE), [Topic](https://github.com/jval1972/DOOMTREE)
-
+- [![Doom Text Generator](/graphics/Generated/Eevee-DoomTextGen/text-gen-title.png)](https://www.doomworld.com/forum/topic/147196-doom-text-generator-%E2%80%94-last-updated-2024-11-25/). Eevee. ???. [![SOURCE CODE](/graphics/Generated/Eevee-DoomTextGen/source-code-say.png)](https://github.com/eevee/doom-text-generator); [![GO AHEAD, try it.](/graphics/Generated/Eevee-DoomTextGen/try-it-say.png)](https://c.eev.ee/doom-text-generator/)
 
 ## Addons
 
