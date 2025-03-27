@@ -33,15 +33,29 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 
 Showing the easy & quick ways
 
-- Download GZDoom & Extract
-- Download FreeDoom ~~or purchase Doom WADs on Steam or GOG~~, & extract / locate the IWAD.
-- GZDoom should automatically find your commercial Doom WADs installed when you launch. But for others, you can simply place the desired IWAD inside the GZDoom executable folder (put the IWAD next to `GZDoom.exe` / `.bin`).
-- Launch GZDoom
-- Test everything correctly.
-- Once done, close GZDoom again, then drag this project folder / pk3 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
-- Select the same IWAD then launch.
+1. Download GZDoom & Extract
+2. Download FreeDoom ~~or purchase Doom WADs on Steam or GOG~~, & extract / locate the IWAD.
+3. GZDoom should automatically find your commercial Doom WADs installed when you launch. But for others, you can simply place the desired IWAD inside the GZDoom executable folder (put the IWAD next to `GZDoom.exe` / `.bin`).
+4. Launch GZDoom
+5. Test everything correctly.
+6. Once done, close GZDoom again, then drag this project folder / pk3 / pk7 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
+7. Select the same IWAD then launch.
 
 > [!TIP]
 > It is highly recommended to use Doom launchers of your favourite to make mod selections easy.  
 > Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!
+
+## (TEMP) ID24 WIP Supports
+
+GZDoom since v.4.13 added partial ID24 supports. Notably, the weapon for it. For the demon, is from a DECORATE mod, that replicates Legacy of Rust PWAD's demon, but without loading itself as a whole, just the demons.
+
+Currently, Freedoom's coverage for ID24 (under [FD24](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/)) is still WIP, therefore you must buy [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/), & then add `id24res.wad` into your load order.
+
+Until that's done, you may follow these objectives to install ID24 capability experience into your DOOM experience on any mod you'd like to experience.
+
+- Ensure GZDoom is v4.13 & up. Unfortunately, mods that are not compatible by this version are no longer be able to properly experience ID24 fully.
+- Purchase [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/). Add just `id24res.wad` into the load order. This contains the resources (texture, sprites, & sound) needed. **DO NOT SHARE THIS PWAD & ANY OF THE WAD CONTAINED WITH THIS PRODUCT!!**
+- Download Obsidian Plague's [ID24 to DECORATE mod](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). add this mod into your load order. This contains the definition & behaviour for such demons & various Things found in Legacy of Rust, without anything else as a whole. **PLS CREDIT THE FULL SAUCE TOPIC URL WHEN YOU REUPLOAD THIS!!**
+
+When the Freedoom has completed the ID24 coverage, you will no longer need to download any of the ID24 coverage patch anymore. You will once again simply just leave the Freedoom Phase 2 IWAD alone. For original DOOM II however, again, you still need above procedures.
