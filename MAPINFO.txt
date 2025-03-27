@@ -184,8 +184,79 @@ Map MBH03 lookup "MBH03"
 Map MBH04 lookup "MBH04"
 {
 	author = "JOELwindows7"
-	//next = "MBH05"
+	next = "MBH05"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH05 lookup "MBH05"
+{
+	author = "JOELwindows7"
+	//next = "MBH06"
 	next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH06 lookup "MBH06"
+{
+	author = "JOELwindows7"
+	next = "MBH07"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH07 lookup "MBH07"
+{
+	author = "JOELwindows7"
+	next = "MBH08"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH09 lookup "MBH09"
+{
+	// BOSS 1 OF 3
+	author = "JOELwindows7"
+	next = "MBH10"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_BETWEE"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH10 lookup "MBH10"
+{
+	author = "JOELwindows7"
+	next = "MBH11"
+	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_BETWEE"
 	par = 120

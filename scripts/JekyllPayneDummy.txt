@@ -91,7 +91,7 @@ class JekyllPShootingRangeDummy : Actor
 		+NODAMAGE
 		+NOBLOOD
 		Radius 20;
-		Height 56;
+		Height 72;
 		Mass 100;
 		painsound "targetdummy/pain";
 		painchance 96;
