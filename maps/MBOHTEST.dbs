@@ -18,7 +18,6 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
-				requiredarchives = "";
 			}
 			
 			resource1
@@ -188,9 +187,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 7446.219f;
-		viewpositiony = 1939.85f;
-		viewscale = 1.461887f;
+		viewpositionx = -8319.094f;
+		viewpositiony = -2575.161f;
+		viewscale = 7.056237f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -201,7 +200,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 8;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;

@@ -14,7 +14,7 @@ function void scan_character (void)
 	if(CheckActorClass(PlayerNumber(),"DoomPlayer")) {label_player= "Doomguy";extra_talk="";}
 	
 	// Digital Cafe's Chex Quest
-	else if(CheckActorClass(PlayerNumber(),"ChexPlayer")) {label = "Chex Hero";extra_talk="We've contained all the slimes.\nEnjoy your breakfast & so on, coz your mission may continues.. tomorrow, idk.";}
+	else if(CheckActorClass(PlayerNumber(),"ChexPlayer")) {label_player = "Chex Hero";extra_talk="We've contained all the slimes.\nEnjoy your breakfast & so on, coz your mission may continues.. tomorrow, idk.";}
 	
 	// Hexen
 	else if(CheckActorClass(PlayerNumber(),"FighterPlayer")) {label_player = "Mighty Fighter";extra_talk="";} // Fighter
@@ -23,16 +23,16 @@ function void scan_character (void)
 	// shit idk what word even. Anyone speak medieval EN & related?
 	
 	// Heretic
-	else if(CheckActorClass(PlayerNumber(),"HereticPlayer")) {label_player = "Superb Heretic";extra_talk="";} // Heretic
+	else if(CheckActorClass(PlayerNumber(),"HereticPlayer")) {label_player = "Hereticguy";extra_talk="";} // Heretic
 	
 	// Strife
-	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label_player = "Heroic.. hero!!";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"StrifePlayer")) {label_player = "Strifeguy";extra_talk="";}
 	// he got a name right?
 	// nope he doesn't either
 	// https://doomwiki.org/wiki/Strifeguy
 	
 	// Hacx
-	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label_player = "Heroic.. HACX!!";extra_talk="uhh sorry. There's alot of name I need to know.";}
+	else if(CheckActorClass(PlayerNumber(),"HacxPlayer")) {label_player = "Hacxguy";extra_talk="uhh sorry. There's alot of name I need to know.";}
 	
 	// Korp's FurDoom! https://korp-kat.itch.io/furdoom
 	else if(CheckActorClass(PlayerNumber(),"FurDaisy")) {label_player = "Daisy";extra_talk="Iyeay Furry iyey.";} // Yes, idk, that Daisy the rabbit, Doomguy's pet. Named after or not idk.
@@ -251,7 +251,7 @@ function void scan_character (void)
 	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label_player = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
 	
 	// Main Player (Unnamed either intentionally or unintentional)
-	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "Untitled???";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
+	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "UNTITLED";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
 	
 	// If nothing else matches..
 	else {label_player = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
@@ -262,7 +262,7 @@ script "WelcomeHome" (void)
 	// Now, Scan the character
 	scan_character();
 	
-	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "FollowRedCarpet" (void)

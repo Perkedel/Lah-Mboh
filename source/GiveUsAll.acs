@@ -1,0 +1,36 @@
+// Give everything! Yoink from
+// https://www.doomworld.com/forum/topic/135975-20bring-your-own-class/
+// https://revenatn.itch.io/byoc
+// There is Script 6 in its test map BYOCTEST
+// aahahaha
+// (JOELwindows7)
+#library "GiveUsAll"
+#include "zcommon.acs"
+
+script "GiveUsAll" (void)
+{
+	int X = GetActorX(0);
+	int Y = GetActorY(0);
+	
+	// Just freaking give everything!!!
+	Spawn("Backpack",X,Y,0);
+	Spawn("Chainsaw",X,Y,0);
+	Spawn("SuperShotgun",X,Y,0);
+	Spawn("Shotgun",X,Y,0);
+	Spawn("SuperShotgun",X,Y,0);
+	Spawn("Chaingun",X,Y,0);
+	Spawn("RocketLauncher",X,Y,0);
+	Spawn("Pistol",X,Y,0);
+	Spawn("PlasmaRifle",X,Y,0);
+	Spawn("BFG9000",X,Y,0);
+	Spawn("Id24Incinerator",X,Y,0);
+	Spawn("Id24CalamityBlade",X,Y,0);
+	for(int i=1;i < 100; i++){
+		Spawn("Megasphere",X,Y,0);
+		Spawn("ClipBox",X,Y,0);
+		Spawn("RocketBox",X,Y,0);
+		Spawn("ShellBox",X,Y,0);
+		Spawn("CellPack",X,Y,0);
+		Spawn("Id24FuelTank",X,Y,0);
+	}
+}

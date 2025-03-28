@@ -4,6 +4,7 @@ WelcomeHome
 DummyButtonHit
 GetGift
 GoToLevel
+GiveUsAll
 
 // TDRR
 CTF
