@@ -338,3 +338,12 @@ script "TerryWaddedMySubs" (void)
 	extra_talk = "Argh, dang it! I should've known & hence tell you that:\nThe Invaders Terry-fies places too!\nWe must act fast, before they Terry-fy the rest!\nNow, go pick up your gears..., it's somewhere, I hope..\nNo wonder there's no EXIT. We gotta take this place back for him & others!";
 	HudMessage(s:"Whoao! You okay,", s:label_player,s:"?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }
+
+script "ExitSike" (void)
+{
+	// As you are excited to go to the exit, unrealizing you've stepped into a perma-close linedef before it & permanently shut the door forever.
+	scan_character();
+	delay(5);
+	set_second = 5.0;
+	HudMessage(s:"Hahahaha.\nI know you would. Congratulations.\nBut no. When I say you're BLOCKED, respect it.\n& kill yourself.\nGo back to the field,\n & let my friends end your suffering, that's you want right?";HUDMSG_PLAIN | HUDMSG_LOG,0,CR_RED,0.5,0.25,set_second);
+}
