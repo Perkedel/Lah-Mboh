@@ -50,6 +50,11 @@ gameinfo
 		"$KEEPMODDING",
 		"$PARENTLESS",
 		"$IWASHATED",
+		"$TERRYPOLITIC",
+		"$GOTTERRYDRAMA",
+		"$DOWNTOOKED",
+		"$HAVETHEHATE",
+		"$CORRUPTTHENNOW",
 		"$WHERDGOING"
 	
 	addcreditpage = 

@@ -91,6 +91,9 @@ For the thing we've yoinked
 	- MIDIs!!!!!!!!!
 	- Therefore, The credits for [Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), & [Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), as well as [Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack) & [FreeDM](https://doomwiki.org/wiki/FreeDM_music)
 	- every assets possible!
+- Wikipedia.
+	- [CFExpress Logo](https://en.wikipedia.org/wiki/File:CFexpress_logo.svg). Locke Cole. **PUBLIC DOMAIN**.
+- [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**. 
 
 ## Sounds
 
@@ -127,3 +130,8 @@ For the thing we've yoinked
 
 - [Some sort of Mimi Sentry character](https://www.doomworld.com/forum/post/2909949). Craneo. ???. additional: Midway, Sgt_Mark_IV, Inkoalawetrust, Craneo, Anister Starlight
 - [guy guy guy guy guy guy](https://www.doomworld.com/forum/post/2909844). Craneo. ???. additional: id Software, Scalliano, Mars3D, DeeDeeOz, Mark Quinn
+- [Hell Sky](https://www.doomworld.com/forum/post/2910234). Craneo. ???.
+- [Shelf](https://www.doomworld.com/forum/post/2908497). Tomáš, edited by inkoalawetrust. ???.
+- [Container & Duke Vending machine](https://www.doomworld.com/forum/post/2908620). ViolentBeetle. ???.
+- [Apagender flag & Midgate texture](https://www.doomworld.com/forum/post/2908686). JustAthel. ???.
+- [Persona Creep Sky](https://www.doomworld.com/forum/post/2909407). TheSuperdave938. ???.

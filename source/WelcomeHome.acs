@@ -244,6 +244,15 @@ function void scan_character (void)
 	else if(CheckActorClass(PlayerNumber(),"BoykisserPlayer")) {label_player = "Doomguy";extra_talk="Into cats now? huh, seems you moved on?";set_second = 2.0;} // Doomguy pets & kiss boykissers
 	else if(CheckActorClass(PlayerNumber(),"BoykisserHater")) {label_player = "Doomguy";extra_talk="...\nJust.. don't slay any actual cats, pls.";set_second = 2.0;} // (Unused) Doomguy slays boykisser
 	
+	// Kalensar
+	/*
+	Brutal Freedoom https://www.moddb.com/mods/brutal-freedoom-gzd
+	*/
+	// First one uses `Doomguy`. AGM Security
+	// `DoomguyAncestor`. AGM Soldier
+	// `UACGuy`. UAC Mercenary
+	// `Doomgirl1`. Doom Girl (V3 Only)
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
@@ -253,8 +262,17 @@ function void scan_character (void)
 	// Main Player (Unnamed either intentionally or unintentional)
 	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "UNTITLED";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
 	
+	// Alt name & misc too generic names
+	else if(CheckActorClass(PlayerNumber(),"Doomguy")) {label_player = "Doomguy";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"DoomguyAncestor")) {label_player = "Dadguy";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"UACGuy")) {label_player = "UACGuy";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"DoomGirl1")) {label_player = "Doomgal";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"DoomGirl")) {label_player = "Doomgal";extra_talk="";}
+	
 	// If nothing else matches..
 	else {label_player = "Gamer";extra_talk="Do I know you? We apologize, must've been forgot.\nMay I know once again?, Thank you.";set_second = 5.0;}
+	
+	// haha skelectric
 }
 
 script "WelcomeHome" (void)
@@ -263,6 +281,20 @@ script "WelcomeHome" (void)
 	scan_character();
 	
 	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "PainfulFactsEntered" (void)
+{
+	extra_talk = "The target `Painful Facts` up ahead.\nWow, what've they done this place?Also it's lagging!\nWell, we gotta hurry.";
+	set_second = 8.0;
+	HudMessage(s:"Okay, this is it.\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
+script "PainfulFactsKilled" (void)
+{
+	extra_talk = "Whoa oh no! Big Slaughterion!!\nGTFO HERE!!!, THIS WON'T COUNT!!";
+	set_second = 8.0;
+	HudMessage(s:"YESS! You did it!",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "FollowRedCarpet" (void)
