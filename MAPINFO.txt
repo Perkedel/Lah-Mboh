@@ -108,6 +108,36 @@ clusterdef 200
 	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
 
+clusterdef 300
+{
+	// Painful fact defeated
+	//EnterText= lookup, "ENTERMBHBOSS"
+	ExitText = lookup, "EXITMBHE1"	
+	//pic = "COMPBLU"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+}
+
+clusterdef 301
+{
+	// Painful fact defeated
+	//EnterText= lookup, "ENTERMBHBOSS"
+	ExitText = lookup, "EXITMBHE2"	
+	//pic = "COMPBLU"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+}
+
+clusterdef 330
+{
+	// Boss
+	//EnterText= lookup, "ENTERMBHBOSS"
+	ExitText = lookup, "EXITMBHBOSS"	
+	//pic = "COMPBLU"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+}
+
 clusterdef 25200
 {
 	// Choral Bae test
@@ -248,6 +278,7 @@ Map MBH09 lookup "MBH09"
 	author = "JOELwindows7"
 	next = "MBH10"
 	//next = "MBOHTEST" // Temp! comment when level done!
+	cluster = 300
 	sky1 = "SKY1"
 	music = "D_BETWEE"
 	par = 120
@@ -274,15 +305,296 @@ Map MBH10 lookup "MBH10"
 Map MBH11 lookup "MBH11"
 {
 	author = "JOELwindows7"
-	//next = "MBH12"
-	next = "MBOHTEST" // Temp! comment when level done!
+	next = "MBH12"
+	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "PSROCKG"
 	music = "D_SHAWN2"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
-	InterMusic = "D_ULIVE"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHHATE"
+}
+
+Map MBH12 lookup "MBH12"
+{
+	author = "JOELwindows7"
+	next = "MBH13"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
 	enterPic = "LMBHDARK"
+}
+
+Map MBH13 lookup "MBH13"
+{
+	author = "JOELwindows7"
+	next = "MBH14"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH14 lookup "MBH14"
+{
+	author = "JOELwindows7"
+	next = "MBH15"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH15 lookup "MBH15"
+{
+	author = "JOELwindows7"
+	next = "MBH16"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH16 lookup "MBH16"
+{
+	author = "JOELwindows7"
+	next = "MBH17"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH17 lookup "MBH17"
+{
+	author = "JOELwindows7"
+	next = "MBH18"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH18 lookup "MBH18"
+{
+	author = "JOELwindows7"
+	next = "MBH19"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH19 lookup "MBH19"
+{
+	author = "JOELwindows7"
+	next = "MBH20"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	cluster = 301
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_BURNBO"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH20 lookup "MBH20"
+{
+	author = "JOELwindows7"
+	next = "MBH21"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH21 lookup "MBH21"
+{
+	author = "JOELwindows7"
+	next = "MBH22"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHDARK"
+}
+
+Map MBH22 lookup "MBH21"
+{
+	author = "JOELwindows7"
+	next = "MBH23"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRRY"
+}
+
+Map MBH23 lookup "MBH23"
+{
+	author = "JOELwindows7"
+	next = "MBH24"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH24 lookup "MBH24"
+{
+	author = "JOELwindows7"
+	next = "MBH25"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH25 lookup "MBH25"
+{
+	author = "JOELwindows7"
+	next = "MBH26"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH26 lookup "MBH26"
+{
+	author = "JOELwindows7"
+	next = "MBH27"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH27 lookup "MBH27"
+{
+	author = "JOELwindows7"
+	next = "MBH28"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH28 lookup "MBH28"
+{
+	author = "JOELwindows7"
+	next = "MBH29"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH29 lookup "MBH29"
+{
+	author = "JOELwindows7"
+	next = "MBH30"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_DM2INT"
+	enterPic = "LMBHTRR2"
+}
+
+Map MBH30 lookup "MBH30"
+{
+	author = "JOELwindows7"
+	next = "MBH31"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 320
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_OPENIN"
+	enterPic = "LMBHBOSS"
+}
+
+Map MBH31 lookup "MBH31"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	//next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "PSROCKG"
+	music = "D_SHAWN2"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_OPENIN"
+	enterPic = "LMBHTIHD"
 }
 
 // Extra

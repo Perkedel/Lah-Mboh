@@ -72,8 +72,10 @@ jobs:
           echo "Shut zip"
           zip Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
+          zip -u Lah-Mboh.zip yoinks
           7z a -t7z -mx9 Lah-Mboh.7z Lah-Mboh.pk7
           7z u Lah-Mboh.7z Lah-Mboh.txt
+          7z u Lah-Mboh.7z yoinks
           7z l Lah-Mboh.7z
           ls
           pwd

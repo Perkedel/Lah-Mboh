@@ -15,14 +15,16 @@ Water Processings,MBH02,"Level 2, Knock off E1M2 Ultimate Doom",Pemroses Air,,,,
 Elephant Slaugtherion,MBH03,it’s dark here,Slaughterion Gajah,,,,
 Travelexer,MBH04,Simple Find 3 keys central hub level,,,,,
 Pathway Blocked,MBH05,There are too many enemies ahead of you in your way! Go farther to just about the center of crowd then install the bomb to finish.,Jalan Terblokir,,,,
-,MBH06,,,,,,
-,MBH07,,,,,,
-,MBH08,,,,,,
+Rest Area,MBH06,You have arrived at a rest area. Relax & healing!,Tempat Istirahat,,,,
+Tribulation Stack Overflew,MBH07,Slaughterion again?,Tumpukan Cobaan Luber,,,,
+Progressively Worse,MBH08,Progressively Worse.,Semakin Parah,,,,
 Painful Facts,MBH09,Beat this Pain Lord / Baron of Hell. Then immediately get out from here. The just opened new enemies won’t count,Fakta menyakitkan,,,,
 Everyone’s Chaingunner,MBH10,"This level is exclusively chaingunners, or here: Minigun Zombies. You are also given minigun supplies throughout the level.",Semuanya Chaingunner,,,,
 Invisible Enemies,MBH11,"Almost all enemies are the Stealth variant alongside Spectres (Phantom Flesh Worm). 
-This shortheight city is full of those ChilloutVR user that blocked us",Musuh Tak Terlihat,,,,
-,MBH12,,,,,,
+This shortheight city is full of those Social Media user that blocked us. 
+In many VR Games, you can no longer see other player (hence neither interact) that blocked you.",Musuh Tak Terlihat,,,,
+Glance of Perceptions,MBH12,"Dark map strikes back! At Brightness 0
+Grab those Night vision goggles intermittently!",Kilasan Persepsi,,,,
 ,MBH13,,,,,,
 ,MBH14,,,,,,
 ,MBH15,,,,,,
@@ -39,13 +41,21 @@ We should’ve known the invaders Terry-fies places too!
 (Duke Nukem: I should’ve known they’ve booby trapped my subs!)
 We must act fast and beat the invader final boss before they Terry-fy the rest of DNB realms!
 Don’t worry about the car, the DaNuBeau managed to portal the SUV back home the moment you’ve got Terry WADed.",Jebakan Terryman,,,,
-,MBH23,,,,,,
-,MBH24,,,,,,
-,MBH25,,,,,,
-,MBH26,,,,,,
-,MBH27,,,,,,
-,MBH28,,,,,,
-,MBH29,,,,,,
+I must get out from here,MBH23,"Second part of getting stuck in hell!
+Slaughterion time!",Saya harus keluar dari sini,,,,
+This is just hell themed city right?,MBH24,"You just realized now, that this is just another DNB realm which themed Hell.
+But then again, this also being invaded by Invaders.",Ini cuman kota bertema neraka biasa kan?,,,,
+I wish Fireblades were here,MBH25,"Another Slaughterion map which is Stacked like in Legacy of Rust.
+Since at the time of making this level FD24 is not done yet, you are forced to use SKAG 1337 / BFG 9000.",Seandainya Fireblade disini,,,,
+I wish mom knows technology,MBH26,So she can maybe intervene against perpetrators?,Seandainya mama melek teknologi,,,,
+I’m done for,MBH27,My reputation has been forever destroyed. Everyone now hates me.,Tamat sudah riwayatku,,,,
+"Yes, I am suffering",MBH28,Puzzle level only?,"Ya, saya menderita",,,,
+I’m turning into Ethereal soon,MBH29,"When things are hopeless, the rescue has come as your family finally found the boss location.
+When you are about to reach exit you’ve just opened, unrealizingly there’s a tripwire linedef that shuts the door permanently.
+No retrigger open anymore.
+Luckily DaNeBeau SUV arrived and opened secret wall next by the door. Turns out, the SUV had just been
+Upgraded with an experimental DOOM like teleporter system.
+Instead of portaling, you can teleport like Latsufir & families (from FNF Last Funkin Moment)",Saya segera berubah jadi Ethereal,,,,
 CEO of Entitlement,MBH30,Bossbrain / Icon of Sin level.,CEO dari Keberkuasaan,,,,
 HORRAY YOU DID IT,MBH31,"Game end, but there is plot twist, that the MBH30 boss brain is not the target actually. The real target hides somewhere.",HORE ANDA BERHASIL,,,,
 Test Name,CHORALBE,Test UMAPINFO capability,Nama Tes,,,,

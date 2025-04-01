@@ -8,9 +8,9 @@ Title                   : Lah Mboh?
 Filename                : Lah-Mboh.pk3
 Release date            : 2025-02-07
 Author                  : JOELwindows7
-Email Address           : [redacted] (EDIT THIS FILE, FILL REAL EMAIL, & PUT AS PASSWORD before uploading to idgames, Do not publish personal not business email!)
+Email Address           : [redacted] (EDIT THIS FILE, FILL REAL EMAIL, & PUT AS PASSWORD before uploading to idgames, Do not publish personal email! Only reveal business email!)
 Other Files By Author   : 
-Misc. Author Info       : 
+Misc. Author Info       : Founder of Perkedel Technologies
 
 Description             : See README.md inside this PWAD PK3 for full descriptions. A PWAD PK3 containing a comprehensive Test map & a Megawad (& counting).
 
@@ -43,7 +43,7 @@ Difficulty Settings     : Yes
 
 Base                    : New from scratch (with some levels outright yoinked, edited of course)
 Build Time              : Serveral Hours, Counting because this is Rolling Release. Start: February 2025, Expected MVP wave in: 12 Months, Critical Dormancy assume by: 2070 
-Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code, Lapce (f888 you VSCode why werroring?!), Blender, Pixelorama
+Editor(s) used          : SLADE 3, Ultimate Doom Builder, Visual Studio Code, Lapce (f888 you VSCode why werroring?!), Blender, Pixelorama, Sekaiju, MuseScore
 Known Bugs              : Only works with the Freedoom IWAD (which is freedoom2.wad) due to exclusive textures & assets used in many of these maps.
 May Not Run With        : Idk, too old version of GZDoom, GZDoom & derivatives that's older than v4.14.0
 Tested With             : GZDoom since v4.14.0, VKDoom nightly as of February 2025 & henceforth; GZDoom v4.11.3 due to Project Brutality bug
@@ -71,6 +71,6 @@ View each yoinked files' license in CREDITS.md
 * Where to get the file that this text file describes *
 
 The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
-Web sites: https://perkedel.netlify.app
+Web sites: https://perkedel.netlify.app/doom
 FTP sites: -
 GitHub: https://github.com/Perkedel/Lah-Mboh

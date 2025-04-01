@@ -111,6 +111,10 @@ For the thing we've yoinked
 	- `D_E4M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
 	- `D_BUNNY` = `D_IMPACTE`. Goji - Impactean Welcome Party
 	- `D_INTER` = `D_ULIVE`. Stratos - YOU LIVE!!!
+	- `D_DM2INT` FreeDM = `D_BURNBO`. Tyler P. (Picklehammer) - Burn the Bodies
+	- `D_DM2TTL` FreeDM = `D_COLLO`. Goji - My Home, The Colosseum
+	- `D_READ_M` FreeDM = `D_VINYL`. MoonDeLaAxel & Joshua Masek (wastedjamacan) - Geoff's Vinyl Collection
+	- `D_EVIL` FreeDM = `D_SYTIME`. Kevin Martins (Velvetic) - The Syntax of Time
 - [Freedoom Attic](https://github.com/freedoom/attic). fraggle et al. **BSD License Clause-3**. Unused Freedoom contents
 	- `?` = `?`. ??? - ???
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.

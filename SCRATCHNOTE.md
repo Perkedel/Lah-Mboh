@@ -6,6 +6,7 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 
 - Don't touch my button! An overprotective Cyberdemon dormant, gets triggered when you press this button & then tries to revenge up in your ass.
 - US style residential house where the actual boss is. You've teleported right onto him the Spider Mastermind on accident when stepping on mysterious sector as you see it in Automap. Don't worry, we can resurrect him, lemme get you back. Followed by stanley parable open giant happy ending No. 1
+- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid
 
 ## Idea
 
