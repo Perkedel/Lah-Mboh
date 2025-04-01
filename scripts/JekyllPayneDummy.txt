@@ -217,7 +217,7 @@ class JekyllPShootingRangeDummy : Actor
 		//if(self == 0) return;
 		//if(inflictor == null) return;
 		
-		hitangle = DeltaAngle(self.angle, AngleTo(inflictor)); // JOELwindows7: This is the crash tendency! try catch it!!
+		hitangle = inflictor ? DeltaAngle(self.angle, AngleTo(inflictor)) : 0.0; // JOELwindows7: This is the crash tendency! try catch it!!
 		dmgStaggerTime = 1;
 
 		dmgpos = pos + (0,0,height * 0.5);
