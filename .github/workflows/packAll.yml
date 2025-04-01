@@ -54,7 +54,7 @@ jobs:
           mv Lah-Mboh.7z Lah-Mboh.pk7
           ls
           pwd
-      
+          
       - name: Upload These all
         uses: actions/upload-artifact@v4.6.1
         with:
@@ -65,6 +65,10 @@ jobs:
             Lah-Mboh.txt
           if-no-files-found: error
       
+      # There was SilverMiner recommending me XZ
+      # https://www.doomworld.com/forum/post/2912992
+      # remember, GZDoom likely does not support tar nor xz. Only ZIP & 7z.
+      # Well speaking of, care to ask Graf Zahl or add your own? Mod source code itself tho!
       - name: Since we tired of this calamity, why not just repack it in the same step as the artifact?
         run: |
           ls
@@ -77,6 +81,10 @@ jobs:
           7z u Lah-Mboh.7z Lah-Mboh.txt
           7z u Lah-Mboh.7z yoinks
           7z l Lah-Mboh.7z
+          echo "also tar.xz"
+          tar -cvf Lah-Mboh.tar Lah-Mboh.pk7
+          tar -uvf Lah-Mboh.tar Lah-Mboh.txt
+          xz -v9e Lah-Mboh.xz Lah-Mboh.tar
           ls
           pwd
       
@@ -101,4 +109,5 @@ jobs:
           files: |
             Lah-Mboh.zip
             Lah-Mboh.7z
+            Lah-Mboh.tar.xz
         
