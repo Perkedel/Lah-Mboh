@@ -84,7 +84,9 @@ jobs:
           echo "also tar.xz"
           tar -cvf Lah-Mboh.tar Lah-Mboh.pk7
           tar -uvf Lah-Mboh.tar Lah-Mboh.txt
-          xz -v9e Lah-Mboh.xz Lah-Mboh.tar
+          xz -v9e Lah-Mboh.tar
+          xz -t Lah-Mboh.tar.xz
+          xz -l Lah-Mboh.tar.xz
           ls
           pwd
       
