@@ -253,6 +253,22 @@ function void scan_character (void)
 	// `UACGuy`. UAC Mercenary
 	// `Doomgirl1`. Doom Girl (V3 Only)
 	
+	// Somerandomguy
+	/*
+	Doom Eternal 1994 https://www.doomworld.com/forum/topic/151800-doom-eternal-made-in-1994-doom-eternal-1994-edition-de94e/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"DE94E_Doomguy")) {label_player = "Doomguy";extra_talk="Hey, got new look? Wow!";set_second = 2.0;} // Doomguy Eternal
+	
+	// Tango
+	/*
+	Not to be confused with that snack! Although these mods also have hundreds of layers XD
+	SuperCharge https://www.doomworld.com/forum/topic/109107-supercharge-gameplay-mod-v30b-071623-multiplayer-fix/
+	MiniCharge Plus https://www.doomworld.com/forum/topic/151061-minichargeplus-mbf21-resourcemod-v11-22525/
+	MiniCharge (OLD) https://www.doomworld.com/forum/topic/109195-minicharge-mbf-resourcemod-v13-new-bfg-sprites-52520/
+	Paradise https://www.doomworld.com/forum/topic/106058-paradise-v21-multiplayer-release-10112020/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"TangoPlayer")) {label_player = "Tango guy";extra_talk="";set_second = 2.0;} // Tango guy
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	

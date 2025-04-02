@@ -170,6 +170,7 @@ Map MBOHTEST lookup "MBOHTEST"
 	//cluster = 100
 	exitPic = "LMBHTIHD"
 	enterPic = "LMBHTENT"
+	music = "D_BERKAT" // Test map should not have music! use manual switch to turn it on instead!
 }
 
 // Megawad
