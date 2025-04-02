@@ -27,8 +27,6 @@ WARP texture DEVH3
 //Blood
 WARP2 texture DEVH4
 
-
-
 //Flat Warps
 
 //Water
@@ -43,3 +41,138 @@ WARP flat DEVLIQC
 //Blood
 WARP2 flat DEVLIQD
 //Finish Matakrow
+
+// BEGIN DIABOLUS EX ARVELL
+/*
+Horray! Diabolus EX!!!
+https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/
+*/
+switch SWTCHA on sound Switch1 pic SWTCHB tics 0
+switch SWTCHC on sound Switch1 pic SWTCHD tics 0
+switch SWTCHE on sound Switch1 pic SWTCHF tics 0
+switch SWTCHF on pic SWTCHE tics 0
+switch SWTCHG on pic SWTCHH tics 0
+switch SWTCHI on sound Switch1 pic SWTCHJ tics 0
+
+texture BILLA
+    pic BILLA00 tics 3
+	pic BILLA01 tics 3
+	pic BILLA02 tics 3
+	pic BILLA03 tics 3
+	pic BILLA04 tics 3
+	pic BILLA05 tics 3
+	pic BILLA06 tics 3
+	pic BILLA07 tics 3
+
+texture DESKC
+    pic DESKC00 tics 4
+    pic DESKC01 tics 4
+    pic DESKC02 tics 4
+    pic DESKC03 tics 4
+    pic DESKC04 tics 4
+    pic DESKC05 tics 4
+    pic DESKC06 tics 4
+    pic DESKC07 tics 4 
+	
+texture ARCDD
+    pic ARCDD00 tics 10
+	pic ARCDD01 tics 10
+	pic ARCDD02 tics 10
+	pic ARCDD03 tics 10
+	
+texture TVA
+    pic TVA00 tics 60
+	pic TVA01 tics 60
+	pic TVA02 tics 60
+	
+texture LASA
+    pic LASA00 tics 3
+	pic LASA01 tics 3
+	pic LASA02 tics 3
+	pic LASA03 tics 3
+	
+texture CEILC
+    pic CEILC tics 3
+	pic CEILC01 tics 3
+	
+texture SRVRA00
+    pic SRVRA00 tics 6
+	pic SRVRA01 tics 6
+	pic SRVRA02 tics 6
+	pic SRVRA03 tics 6
+	pic SRVRA04 tics 6
+	pic SRVRA05 tics 6
+	
+texture HOLOB
+    pic HOLOB00 tics 3
+	pic HOLOB01 tics 3
+	pic HOLOB02 tics 3
+	pic HOLOB03 tics 3
+	pic HOLOB04 tics 3
+	pic HOLOB05 tics 3
+	pic HOLOB06 tics 3
+	pic HOLOB07 tics 3
+	pic HOLOB08 tics 3
+	pic HOLOB09 tics 3
+	pic HOLOB10 tics 3
+	
+texture HOLOH
+    pic HOLOH00 tics 3
+	pic HOLOH01 tics 3
+	pic HOLOH02 tics 3
+	pic HOLOH03 tics 3
+	pic HOLOH04 tics 3
+	pic HOLOH05 tics 3
+	pic HOLOH06 tics 3
+	pic HOLOH07 tics 3
+	pic HOLOH08 tics 3
+	pic HOLOH09 tics 3
+	pic HOLOH10 tics 3
+	pic HOLOH11 tics 3
+	pic HOLOH12 tics 3
+	pic HOLOH13 tics 3
+	pic HOLOH14 tics 3
+	pic HOLOH15 tics 3
+	pic HOLOH16 tics 3
+	pic HOLOH17 tics 3
+	
+	
+texture BILLB
+    pic BILLB00 tics 7
+	pic BILLB01 tics 4
+	pic BILLB02 tics 4
+	pic BILLB03 tics 4
+	pic BILLB04 tics 4
+	pic BILLB05 tics 4
+	pic BILLB06 tics 4
+	pic BILLB07 tics 4
+	pic BILLB08 tics 7
+	pic BILLB09 tics 4
+	pic BILLB10 tics 4
+	pic BILLB11 tics 4
+	pic BILLB12 tics 4
+	
+texture VENDNA
+    pic VENDNA00 tics 6
+	pic VENDNA01 tics 6
+	pic VENDNA02 tics 6
+	pic VENDNA03 tics 6
+	
+texture LIGHTF00
+    pic LIGHTF00 tics 6
+	pic LIGHTF01 tics 6
+	pic LIGHTF02 tics 6
+	pic LIGHTF03 tics 6
+	
+texture CYBF00
+    pic CYBF00 tics 3
+	pic CYBF01 tics 3
+	pic CYBF02 tics 3
+	pic CYBF03 tics 3
+	pic CYBF04 tics 3
+	pic CYBF05 tics 3
+	pic CYBF06 tics 3
+	pic CYBF07 tics 3
+	
+
+// END DIABOLUS EX ARVELL

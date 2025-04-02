@@ -269,6 +269,13 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"TangoPlayer")) {label_player = "Tango guy";extra_talk="";set_second = 2.0;} // Tango guy
 	
+	// BassSlapper89
+	/*
+	Ultimate Jazz Jackrabbit Doom https://www.doomworld.com/forum/topic/114197-ultimate-jazz-jackrabbit-doom-fixed-version-out/
+	https://www.doomworld.com/forum/topic/114197-ultimate-jazz-jackrabbit-doom-fixed-version-out/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"JackPlayer")) {label_player = "Jackrabbit";extra_talk="";set_second = 2.0;} // Jackrabbit
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	

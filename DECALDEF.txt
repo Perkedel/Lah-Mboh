@@ -225,3 +225,23 @@ decal DoomSharewareBanned 4011
 	X-Scale 0.1
 	Y-Scale 0.1
 }
+
+decal TamuWajibLapor 4012
+{
+	// Found in DNB Talent Center & branches. Typical Warn to ensure every guest have valid entrance permit
+	// guests are those who do not yet have DNB ID card or have but no required license valid 
+	// (which in this case are POC, All Vehicle types, Atleast 2 Fighting Proficiencies, & Loyalty Oath signing)
+	pic TamuWajibLapor
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
+
+decal TalentHouseParkingFee 4013
+{
+	// Found in DNB Talent Center & branches. Parking Fee
+	pic TalentHouseParkingFee
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}
