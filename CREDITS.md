@@ -38,7 +38,7 @@ For the thing we've yoinked
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 - [Mechadon's Box o skies](https://www.doomworld.com/forum/topic/92795-meks-box-o-skies-v3-look-up-in-the-sky-more-skies/). Mechadon. ???.
 - [TDRR's Skulltag CTF Base](https://forum.zdoom.org/viewtopic.php?t=61373). TDRR, original CTF stuffs from Skulltag team. ??? Yes Include, Must Credit.
-- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/). Arvell. Free to Use Textures. The Texture WAD (`DEX_Textures.wad`) itself replaces the Title & Credit screen, as well as the Title Card itself!
+- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/). Arvell. Free to Use Textures. The Texture WAD (`DEX_Textures.wad`) itself replaces the Title & Credit screen, as well as the Title Card itself! **NEON GRID TEXTURE**
 
 ## Dependencies
 
