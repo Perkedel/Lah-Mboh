@@ -300,11 +300,25 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"GardevoidDoom")) {label_player = "Gardevoir";extra_talk="Looks like you had anger issue just like Doomguy..\nCare for us to take a look at? no?";set_second = 2.0;} // Gardevoir
 	
+	// MundyC
+	/*
+	I.M. Meen https://www.doomworld.com/forum/topic/130063-v095-cutscenes-meentc-im-meen-in-gzdoom/
+	Austrian Avian Association https://www.doomworld.com/forum/topic/135951-idgames-kex-austrian-avian-association-aaa-twelve-six-levels-of-1800s-fun/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Scott")) {label_player = "Scott";extra_talk="";set_second = 2.0;} // Scott (Meen)
+	else if(CheckActorClass(PlayerNumber(),"Katie")) {label_player = "Katie";extra_talk="";set_second = 2.0;} // Katie (Meen)
+	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
 	
 	// Cardiophile DOOM?!?!?!?!??! PLS FFS BE EXIST!!! I LOST MY FUCKING HOUSE!! No, the.. community. Everything.
 	else if(CheckActorClass(PlayerNumber(),"CardiophilePlayer")) {label_player = "Dr. XYZ";extra_talk="Umm.. Unfortunately, there's nobody you can steth here rn, doc. Maybe you want Joel? He's a Protogen, Male Heartbeat..\nWell if you curious, I can call him now?..";set_second = 12.0;}
+	
+	// EXTRA UNOCCUPIED
+	/*
+	Other crazy ideas we could've had, not to mention due to Godot's hostile marketing takeover back then in about Feb-March 2025
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Suu")) {label_player = "Suu";extra_talk="";set_second = 2.0;} // Suu Spooky Jumpscare mansion
 	
 	// Main Player (Unnamed either intentionally or unintentional)
 	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "UNTITLED";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}

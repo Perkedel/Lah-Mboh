@@ -34,6 +34,17 @@ jobs:
       #   run: |
       #     echo "Shall we?"
       #     echo "no nvm"
+      
+      - name: Copy the yoinked files readme to txt version because that's the most compatible, ironically
+        run: |
+          echo "We must firstly copy the yoink folder readme to txt version so you can just 2x click it."
+          cp yoinks/README.md yoinks/README.txt
+          echo "that should do it"
+          echo "btw, Let's keep other idgames description in the file even we copied it outside."
+          echo "People are nasty. copying just the PWAD file itself ignoring its complementary txt file."
+          echo "WE FUCKING NEED SHOUTOUT!!! THATS ALL I WANT! UPLOAD YESS, BUT PLS THE TXT FILE TOO!!"
+          echo "Infact goes everywhere! Reupload all my videos YESS, but keep the watermark! I will never provide unwatermarked version"
+          echo "even I got paid inf money. Just know, its from me!"
         
       - name: Zip it
         run: |

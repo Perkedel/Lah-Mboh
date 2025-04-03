@@ -28,7 +28,8 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - 3D Modelled map. Instead of typical BSP, the map is empty but a special 1 Thing which is the map itself. You can now model maps in Blender then load it here. Now you can floor above floor above floor and so one iyey!
 - Libdoom. Like with the case of [Libsm64](https://github.com/libsm64/libsm64) (Super Mario 64 Decompilation as Library), This library makes Doom portable & can be embedded to various video games & game engines.
 - Fdroidoom instead of DeltaTouch. Plagiarize efforts of Beloko of compiling Doom source ports for Android, but it's Open Source, at least BSD or Apache Licensed or better. And yess, DRM Free!
-- Insert Coin. GZDoom addon that makes the experience Arcade, where you must insert coin to play.
+- Insert Coin. GZDoom addon that makes the experience Arcade, where you must insert coin to play. There was score doom, but uhh idk the fate.
+- Spooky Jumpscare Mansion. It was not GZDoom. Somekind of weird Engine I've yet to recognize, and then in the HD Renovation is Unity before the Great Next Betrayal of Installation Fee back in late 2024.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
