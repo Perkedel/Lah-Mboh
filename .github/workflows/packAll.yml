@@ -47,7 +47,7 @@ jobs:
           ls
           pwd
           echo "7z now"
-          7z a -t7z -mx9 -- Lah-Mboh.7z *
+          7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z *
           7z d Lah-Mboh.7z Lah-Mboh.pk3
           echo "What Does it contains now?"
           7z l Lah-Mboh.7z
@@ -77,13 +77,16 @@ jobs:
           zip Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
           zip -u Lah-Mboh.zip yoinks
-          7z a -t7z -mx9 Lah-Mboh.7z Lah-Mboh.pk7
+          echo "Scroll Thru 7zeas"
+          7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z Lah-Mboh.pk7
           7z u Lah-Mboh.7z Lah-Mboh.txt
           7z u Lah-Mboh.7z yoinks
+          echo "Here total content of this 7z"
           7z l Lah-Mboh.7z
           echo "also tar.xz"
           tar -cvf Lah-Mboh.tar Lah-Mboh.pk7
           tar -uvf Lah-Mboh.tar Lah-Mboh.txt
+          tar -uvf Lah-Mboh.tar yoinks
           xz -v9e Lah-Mboh.tar
           echo "Now lets check content"
           xz -t Lah-Mboh.tar.xz
