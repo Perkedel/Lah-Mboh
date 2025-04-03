@@ -140,3 +140,4 @@ For the thing we've yoinked
 - [Container & Duke Vending machine](https://www.doomworld.com/forum/post/2908620). ViolentBeetle. ???.
 - [Apagender flag & Midgate texture](https://www.doomworld.com/forum/post/2908686). JustAthel. ???.
 - [Persona Creep Sky](https://www.doomworld.com/forum/post/2909407). TheSuperdave938. ???.
+- [Post Your Doom Textures Curated Collection](https://www.doomworld.com/forum/topic/145782-pyddtex-pydt-compilation-and-restoration-retrieval/). Collected by JustAthel. ???. The [Post Your Doom Texture Thread](https://www.doomworld.com/forum/topic/90900-post-your-doom-textures/) Attempted recollections. **PLS YOINK SOME!!**

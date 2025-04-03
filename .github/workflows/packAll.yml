@@ -90,7 +90,19 @@ jobs:
           ls
           pwd
       
-      
+      # Well, It had to be everywhere right?
+      # https://github.com/marketplace/actions/butler-to-itch
+      - name: Push to Itch
+        uses: Ayowel/butler-to-itch@v1.2.0
+        with:
+          butler_key: ${{ secrets.BUTLER_CREDENTIALS }}
+          itch_user: joelwindows7
+          itch_game: lah-mboh
+          version: ${{ github.ref_name }}
+          files: |
+            Lah-Mboh.7z
+            Lah-Mboh.tar.xz
+            Lah-Mboh.zip
       
       - name: Check first
         run: |
