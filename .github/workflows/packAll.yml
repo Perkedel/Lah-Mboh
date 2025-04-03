@@ -106,11 +106,11 @@ jobs:
           itch_user: joelwindows7
           itch_game: lah-mboh
           version: ${{ github.ref_name }}
-          auto_channel: true
+          auto_channel: false
           files: |
-            Lah-Mboh.7z
-            Lah-Mboh.tar.xz
-            Lah-Mboh.zip
+            seven-zee Lah-Mboh.7z
+            tar-exczee  Lah-Mboh.tar.xz
+            pk-three  Lah-Mboh.zip
       
       # https://pytooling.github.io/Actions/Action/Releaser.html#action-releaser
       # https://github.com/pyTooling/Actions/tree/dev/releaser
