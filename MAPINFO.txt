@@ -251,8 +251,8 @@ Map MBH06 lookup "MBH06"
 	next = "MBH07"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = "D_BETWEE"
-	par = 120
+	music = "D_BERKAT"
+	par = 0
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"

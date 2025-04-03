@@ -113,6 +113,7 @@ function void scan_character (void)
 	https://darsycho.itch.io/
 	*/
 	else if(CheckActorClass(PlayerNumber(),"ImproviseGuy")) {label_player = "Doomguy";extra_talk="Uh.. where's your weapon?\nWhat? confiscated? who did??";} // Improvisation
+	else if(CheckActorClass(PlayerNumber(),"DoomPlayer2")) {label_player = "Doomguy";extra_talk="Are you bored? We have some brand new fun activities you can try!";} // ModOhFun
 	
 	//Kinsie!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	/*
@@ -290,6 +291,14 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"PXMarcieClass")) {label_player = "Marcie";extra_talk="";set_second = 2.0;} // Marcie
 	else if(CheckActorClass(PlayerNumber(),"PXLexClass")) {label_player = "Lex";extra_talk="";set_second = 2.0;} // Lex
+	
+	//kevansevans
+	/*
+	Gardevoir has guns https://kevansevans.itch.io/ghag
+	GZChaos kevansevans.itch.io/gzchaos
+	Happy Happy DOOM 2 Parody April Fools Megawad https://www.doomworld.com/forum/topic/152208-01apr2125-happy-happy/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"GardevoidDoom")) {label_player = "Gardevoir";extra_talk="Looks like you had anger issue just like Doomguy..\nCare for us to take a look at? no?";set_second = 2.0;} // Gardevoir
 	
 	// Zenless Zone Zero?! Does not exist yet. Pls make it exist! Imagine, what if.. Hoyo did collab, and there is a new Godfinger arcade game of this, where you play a special IWAD about Rip & Tear those Etherals haha!
 	else if(CheckActorClass(PlayerNumber(),"ProxyPlayer")) {label_player = "Proxy";extra_talk="There's no Hollow potential here, right now.\nBut if there is again, I'll let you know.\nYeah let's hope it does not happen again.\nJesus Christ! Just stay on the friking ZZZverse already,\nMr. Giant Hollow ball..";set_second = 12.0;}
