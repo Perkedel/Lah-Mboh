@@ -120,7 +120,7 @@ clusterdef 300
 
 clusterdef 301
 {
-	// Painful fact defeated
+	// Giant Assault guy defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
 	ExitText = lookup, "EXITMBHE2"	
 	//pic = "COMPBLU"
@@ -130,7 +130,7 @@ clusterdef 301
 
 clusterdef 330
 {
-	// Boss
+	// Final Boss
 	//EnterText= lookup, "ENTERMBHBOSS"
 	ExitText = lookup, "EXITMBHBOSS"	
 	//pic = "COMPBLU"
@@ -159,6 +159,12 @@ Episode MBOHTEST
 {
 	name = "Lah Mboh?"
 	PicName = "LMBHEMNU"
+}
+
+Episode MBH01
+{
+	name = "Mboh Adventure"
+	//PicName = "LMBHEMNU"
 }
 
 Map MBOHTEST lookup "MBOHTEST"
@@ -234,10 +240,10 @@ Map MBH04 lookup "MBH04"
 Map MBH05 lookup "MBH05"
 {
 	author = "JOELwindows7"
-	//next = "MBH06"
-	next = "MBOHTEST" // Temp! comment when level done!
+	next = "MBH06"
+	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = "D_BETWEE"
+	music = "D_COUNTD"
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -262,10 +268,24 @@ Map MBH06 lookup "MBH06"
 Map MBH07 lookup "MBH07"
 {
 	author = "JOELwindows7"
-	next = "MBH08"
+	//next = "MBH08"
+	next = "MBOHTEST" // Temp! comment when level done!
+	sky1 = "SKY1"
+	music = "D_DDTBLU"
+	par = 120
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	InterMusic = "D_ULIVE"
+	enterPic = "LMBHTRAV"
+}
+
+Map MBH08 lookup "MBH08"
+{
+	author = "JOELwindows7"
+	next = "MBH09"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = "D_BETWEE"
+	music = "D_DDTBLU"
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -281,7 +301,7 @@ Map MBH09 lookup "MBH09"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	cluster = 300
 	sky1 = "SKY1"
-	music = "D_BETWEE"
+	music = "D_TREDIS"
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -417,12 +437,13 @@ Map MBH18 lookup "MBH18"
 
 Map MBH19 lookup "MBH19"
 {
+	// BOSS 2 of 3
 	author = "JOELwindows7"
 	next = "MBH20"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	cluster = 301
 	sky1 = "PSROCKG"
-	music = "D_SHAWN2"
+	music = "D_ZENITH"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -436,7 +457,7 @@ Map MBH20 lookup "MBH20"
 	next = "MBH21"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "PSROCKG"
-	music = "D_SHAWN2"
+	music = "D_DEAD"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -562,7 +583,7 @@ Map MBH29 lookup "MBH29"
 	next = "MBH30"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "PSROCKG"
-	music = "D_SHAWN2"
+	music = "D_NOCLIPG"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
@@ -576,11 +597,11 @@ Map MBH30 lookup "MBH30"
 	next = "MBH31"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "PSROCKG"
-	music = "D_SHAWN2"
+	music = "D_OPENIN"
 	par = 320
 	sucktime = 0
 	exitPic = "LMBHTIHD"
-	InterMusic = "D_OPENIN"
+	InterMusic = "D_DM2INT"
 	enterPic = "LMBHBOSS"
 }
 

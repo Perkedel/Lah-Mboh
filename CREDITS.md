@@ -106,6 +106,8 @@ For the thing we've yoinked
 	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
 	- `D_E1M2` = `D_UNDERTO`. TheMisterCat - Look At Me I'm Underhalls Too
 	- `D_E1M6` = `D_OXIDNE`. Korp & jute - Oxidine
+	- `D_E2M8` = `D_TREDIS`. Korp - Treble Dissension
+	- `D_E3M8` = `D_ZENITH`. Lola "BlueWorrior" Harvey - The Zenith
 	- `D_E4M1` = `D_LIBSTAR`. continuum.mid - Liberate the Stars
 	- `D_E4M5` = `D_MCODE`. Korp - Main Code
 	- `D_E4M7` = `D_AMBIGU`. Korp - Ambiguity
