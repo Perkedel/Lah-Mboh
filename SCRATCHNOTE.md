@@ -8,9 +8,9 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 - US style residential house where the actual boss is. You've teleported right onto him the Spider Mastermind on accident when stepping on mysterious sector as you see it in Automap. Don't worry, we can resurrect him, lemme get you back. Followed by stanley parable open giant happy ending No. 1
 - [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid
 
-## Idea
+## Idea & Random
 
-Cool ideas that scope is way too huge for me to realize now, but maybe you will?
+Cool ideas that scope is way too huge for me to realize now, but maybe you will? Also by other reasons too.
 
 - Zenless Zone Zero TC. Entire Unity Game, remade as a Gameplay mod PWAD or better, drastic Total Conversion with maps complete with the 1 to 1 gameplay
 - Dangdut in GM1 MIDI. Soundtrack for Doom WADs using Dangdut styled song. The one that goes e.g. dung tak dung
@@ -30,6 +30,9 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Fdroidoom instead of DeltaTouch. Plagiarize efforts of Beloko of compiling Doom source ports for Android, but it's Open Source, at least BSD or Apache Licensed or better. And yess, DRM Free!
 - Insert Coin. GZDoom addon that makes the experience Arcade, where you must insert coin to play. There was score doom, but uhh idk the fate.
 - Spooky Jumpscare Mansion. It was not GZDoom. Somekind of weird Engine I've yet to recognize, and then in the HD Renovation is Unity before the Great Next Betrayal of Installation Fee back in late 2024.
+- Dissociate Commons off the Authors. Somekind of special Episode miniwad with key philosophy of unassociate art and various works off from artists due to various reasons. Again, without refering just particular artist explicitly. Rather, in general, by rabbit hole / topic context.
+- *You guys hated me for no reason and then expect me to respect that? Hah, bullshit. You wish for me to no longer admire your magnificent masterpiece?! Well then. Then I shall cease my protection for you against review bombs who knows.*. Text Intermission. This is very rude & controversial, where do we place this?
+- Has opposing philosophy against the dictators, threatened to eventually be one with. The Orwellian something but DNB, but too many agents got punished.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
