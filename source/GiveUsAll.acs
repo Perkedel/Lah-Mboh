@@ -27,10 +27,32 @@ script "GiveUsAll" (void)
 	Spawn("Id24CalamityBlade",X,Y,0);
 	for(int i=1;i < 100; i++){
 		Spawn("Megasphere",X,Y,0);
+		Spawn("Soulsphere",X,Y,0);
 		Spawn("ClipBox",X,Y,0);
 		Spawn("RocketBox",X,Y,0);
 		Spawn("ShellBox",X,Y,0);
 		Spawn("CellPack",X,Y,0);
 		Spawn("Id24FuelTank",X,Y,0);
 	}
+}
+
+script "GiveUsSpecials" (void)
+{
+	// https://zdoom.org/wiki/Classes:PowerupGiver
+	int X = GetActorX(0);
+	int Y = GetActorY(0);
+	
+	Spawn("Berserk",X,Y,0);
+	Spawn("InvulnerabilitySphere",X,Y,0);
+	Spawn("BlurSphere",X,Y,0);
+	Spawn("Infrared",X,Y,0);
+	Spawn("RadSuit",X,Y,0);
+}
+
+script "JustBerserk" (void)
+{
+	int X = GetActorX(0);
+	int Y = GetActorY(0);
+	
+	Spawn("Berserk",X,Y,0);
 }
