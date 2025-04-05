@@ -46,6 +46,17 @@ Showing the easy & quick ways
 > Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!
 
+## Compatibility
+
+### Mboh Adventure & Mboh Test
+- Level Format = UDMF.  
+- Complevel = 0 (Any Default). Levels while benefits various GZDoom technologies, are still designed with vanilla strict limitation (No Jump No Freelook accessiblity) imposed due to early age of FPS back then before its maturity of the whole FPS genre we have here today. e.g., you should be able to test Mod PK3 TC Gameplay that imposes such limited challenges.
+
+
+### Others
+
+Other level we have yoinked, contains different format parameters. We have of course edited those to optimize the experience according to the theme of this whole Mod PK3.
+
 ## (TEMP) ID24 WIP Supports
 
 GZDoom since v.4.13 added partial ID24 supports. Notably, the weapon for it. For the demon, is from a DECORATE mod, that replicates Legacy of Rust PWAD's demon, but without loading itself as a whole, just the demons.

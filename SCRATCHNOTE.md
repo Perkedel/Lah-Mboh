@@ -22,6 +22,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Godot instead of Coherent Lab. IWAD selector made with Godot instead of proprietary HTML engine. It also has built-in Source port, more like
 - GODOT. Doom but Godot instead of that Doom. not an [importer](https://www.doomworld.com/forum/topic/125581-what-does-doomworld-think-of-godot-engine/), [really](https://github.com/DataPlusProgram/GodotWadImporter). It plays WAD & GRP directly, replicating every mechanics of DOOM, Heretic, Hexen, Strife, Quake, Build Nukem, etc., like the effort was with the [rescratched into Rust](https://github.com/Henrique194/iron-doom).
 - Freedoom Phase 3. to cover Dhewm replacement pk4.
+- Freedoom Phase 4. to cover Doom 2016
 - Ironic Outcomes. An H Mod PK3 TC that also replaces guns with water guns & hydro themed lobbers. This is to rant against certain regulations & bureaucracies that despises violent gun games like Doom, sprinkled with Duke-sussy-baka style of Gal-gun. Llike Korp's Furdoom, Gib is replaced by Thrown. Something you would find on N game store. Shake it baby!
 - Smoking cause cancer. A Jokewad that adds a new Thing set of cigarette. These adds buffs & also punishment token for whole gameplay. Max 5 consumption before the next becomes cancer. Cancer works like ZZZ's Hollow Zero corruption, up to 5 you can have with unpredictable bad effects. So if you died, the Reload save also includes last cancers you have when you last saved. You can find rare medicine around that can remove 1 cancer.
 - Time Crisis.
@@ -31,8 +32,13 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Insert Coin. GZDoom addon that makes the experience Arcade, where you must insert coin to play. There was score doom, but uhh idk the fate.
 - Spooky Jumpscare Mansion. It was not GZDoom. Somekind of weird Engine I've yet to recognize, and then in the HD Renovation is Unity before the Great Next Betrayal of Installation Fee back in late 2024.
 - Dissociate Commons off the Authors. Somekind of special Episode miniwad with key philosophy of unassociate art and various works off from artists due to various reasons. Again, without refering just particular artist explicitly. Rather, in general, by rabbit hole / topic context.
-- *You guys hated me for no reason and then expect me to respect that? Hah, bullshit. You wish for me to no longer admire your magnificent masterpiece?! Well then. Then I shall cease my protection for you against review bombs who knows.*. Text Intermission. This is very rude & controversial, where do we place this?
+- *You guys hated me for no reason and then expect me to respect that? Hah, bullshit. You wish for me to no longer admire your magnificent masterpiece?! Well then. Then I shall cease my protection for you against review bombs who knows.*. Text Intermission. This is very rude & controversial, where do we place this? `$HATEDFATE`
 - Has opposing philosophy against the dictators, threatened to eventually be one with. The Orwellian something but DNB, but too many agents got punished.
+- Freedoom Generations. Coverage for Doom Eternal
+- Freedoom Phase 0. Coverage for Doom The Dark Ages
+- The Unheard Story. Inspire the Korean film Parasite! Spolier in end. The poor protagonist breaking point bla bla bla. Looks like it's the poor guy blamed for the death of the rich. But you already saw right who should be blamed right, in my opinion? the rich guy along many, should be taken a look at.
+- Luke Ken Doom?! yeah. If 3D Realm harrassed you, go to here! bring BUILD magicness here!
+- complen the Ken Silverman licenses of BUILD engine where source ports out there are constricted
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

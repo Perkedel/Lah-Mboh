@@ -58,6 +58,10 @@ For the thing we've yoinked
 - [Ignitable Cauldron](https://www.doomworld.com/forum/topic/149424-interactive-ignitable-fire-cauldron/). Kan3. ???. [YOINKED HERETIC FIRE CAULDRON REALM667](https://www.realm667.com/repository/prop-stop/light-sources/1054-fire-cauldron#preview); [Tutorial Explanation](https://youtu.be/luwc4DCNi0A)
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
 - [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
+- [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/doom-toolbox)
+	- DoomDoctor. Spit debug reports (System Time, Mapname, Skill, etc.) on VM Abort & on demand
+	- Nomina. Automatically tag Things to beautify its class name.
+- [Hellscape Navigator](https://forum.zdoom.org/viewtopic.php?p=1068272&hilit=neon+grid#p1068272). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/hellscape-navigator). Advanced Automap tools to aid navigating complex maps
 
 ## Reuses
 
