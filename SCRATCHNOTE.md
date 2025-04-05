@@ -6,7 +6,8 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 
 - Don't touch my button! An overprotective Cyberdemon dormant, gets triggered when you press this button & then tries to revenge up in your ass.
 - US style residential house where the actual boss is. You've teleported right onto him the Spider Mastermind on accident when stepping on mysterious sector as you see it in Automap. Don't worry, we can resurrect him, lemme get you back. Followed by stanley parable open giant happy ending No. 1
-- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid
+- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid. **OK**
+- No jump after terrywadded? 
 
 ## Idea & Random
 
@@ -39,6 +40,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - The Unheard Story. Inspire the Korean film Parasite! Spolier in end. The poor protagonist breaking point bla bla bla. Looks like it's the poor guy blamed for the death of the rich. But you already saw right who should be blamed right, in my opinion? the rich guy along many, should be taken a look at.
 - Luke Ken Doom?! yeah. If 3D Realm harrassed you, go to here! bring BUILD magicness here!
 - complen the Ken Silverman licenses of BUILD engine where source ports out there are constricted
+- The Cauterizer. Sunat Laser but giant sized, a sword. Actually, it's not laser (yeah impossible & if so, too complex). It's just a red hot wire 1200 C. So hot, upon cutting also cauterize the area instantly, canceling the bleeding right ahead.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
