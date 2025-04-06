@@ -164,7 +164,7 @@ Episode MBOHTEST
 Episode MBH01
 {
 	name = "Mboh Adventure"
-	//PicName = "LMBHEMNU"
+	PicName = "LMBHAMN"
 }
 
 Map MBOHTEST lookup "MBOHTEST"

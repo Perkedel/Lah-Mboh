@@ -18,6 +18,7 @@ ACTOR ACHU1 19521
   Height 128
   Mass 100000
   +SOLID
+  Tag "Achuchur Tree"
   States
   {
   Spawn:
@@ -25,6 +26,26 @@ ACTOR ACHU1 19521
   }
 }
 // End DoomTree	
+
+// Default Cube
+ACTOR DEFC1 19560
+{
+	//$Category Decoration
+	//$Title Blender Default Cube
+	Health 10000
+	Radius 32
+	Height 60
+	Mass 50
+	Gravity 0
+	+SOLID
+	Tag "Blender Default Cube"
+	States
+	{
+		Spawn:
+			DEFC A -1	
+	}
+}
+// End Default Cube
 
 
 // TDRR's STUFFS!

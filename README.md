@@ -42,11 +42,14 @@ ceiling (yea I know that's inefficient unlike yours with BSP). Come from root th
 
 but eh.. both disadvantages & advantages on each own idk.
 
+<details>
+<summary>Screenshots!!</summary>
 ![item variety](/src/screenshot/itemvarietytest.png)  
 ![enemy tester](/src/screenshot/enemytester.png)  
 ![boss brain](/src/screenshot/ohnobossbrain.png)  
 ![knockoff](/src/screenshot/pove1m1knockoff.png)  
 ![shooting range](/src/screenshot/shootingrangefrombehind.png)  
+</details>
 
 ## ~~Second~~ ~~Third~~ ~~4th~~ ~~3472983749th~~ Whateverth Ever Patch WAD designed exclusively for FreeDoom
 

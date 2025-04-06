@@ -28,3 +28,14 @@ Model ACHU1
     FrameIndex ACHU A 0 0
     Frame ACHU A 0 0
 }
+
+Model DEFC1
+{
+    Model 0 "models/DefaultCubeThing.obj"
+    Path "models/DefaultCubeThing.obj"
+    Scale 32 32 32
+    Offset 0 0 30
+    
+    FrameIndex DEFC A 0 0
+    Frame DEFC A 0 0
+}

@@ -1,0 +1,17 @@
+{
+  "type": "gameconf",
+  "version": "1.0.0",
+  "metadata": { },
+  "data":
+  {
+    "title": "Lah-Mboh",
+    "author": "JOELwindows7",
+    "description": "Test & Megawad",
+    "version": "2025.05",
+    "iwad": "doom2.wad",
+    "pwads": ["id1-res.wad","id1-weap.wad"],
+    "executable": "id24",
+    "mode": "commercial",
+    "options": null
+  }
+}

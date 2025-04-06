@@ -39,6 +39,9 @@ jobs:
         run: |
           echo "We must firstly copy the yoink folder readme to txt version so you can just 2x click it."
           cp yoinks/README.md yoinks/README.txt
+          cp README.md README.txt
+          cp CREDITS.md CREDITS.txt
+          cp Lah-Mboh.txt WADINFO
           echo "that should do it"
           echo "btw, Let's keep other idgames description in the file even we copied it outside."
           echo "People are nasty. copying just the PWAD file itself ignoring its complementary txt file."
@@ -51,7 +54,7 @@ jobs:
           ls
           pwd
           echo "Zip now"
-          zip -r Lah-Mboh.zip .
+          zip -9 -r Lah-Mboh.zip .
           zip -dr Lah-Mboh.zip yoinks
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
@@ -73,15 +76,15 @@ jobs:
           ls
           pwd
           
-      - name: Upload These all
-        uses: actions/upload-artifact@v4.6.1
-        with:
-          name: Lah-Mboh
-          path: |
-            Lah-Mboh.pk3
-            Lah-Mboh.pk7
-            Lah-Mboh.txt
-          if-no-files-found: error
+      # - name: Upload These all
+      #   uses: actions/upload-artifact@v4.6.1
+      #   with:
+      #     name: Lah-Mboh
+      #     path: |
+      #       Lah-Mboh.pk3
+      #       Lah-Mboh.pk7
+      #       Lah-Mboh.txt
+      #     if-no-files-found: error
       
       # There was SilverMiner recommending me XZ
       # https://www.doomworld.com/forum/post/2912992
@@ -92,7 +95,7 @@ jobs:
           ls
           pwd
           echo "Shut zip"
-          zip Lah-Mboh.zip Lah-Mboh.pk3
+          zip -9 Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
           zip -u Lah-Mboh.zip yoinks
           echo "Scroll Thru 7zeas"
@@ -117,6 +120,16 @@ jobs:
           echo "AAAA"
           ls
           pwd
+      
+      - name: Upload These all
+        uses: actions/upload-artifact@v4.6.1
+        with:
+          name: Lah-Mboh
+          path: |
+            Lah-Mboh.zip
+            Lah-Mboh.tar.xz
+            Lah-Mboh.7z
+          if-no-files-found: error
       
       # Well, It had to be everywhere right?
       # https://github.com/marketplace/actions/butler-to-itch
