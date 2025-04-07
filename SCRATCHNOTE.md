@@ -44,6 +44,9 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - *Mari, kita hormati kakek pertama & gengsi. Belilah DOOM Full paket di toko kaset terdekat.*. *Let's respect our first grandfather & clout. Buy Doom Full package at your nearest cartridge store*. Poster PSA to invite all DOOMer to buy original DOOM everything down to the latest one, depsite there's already Freedoom & other open source replacement coverages, again, all just not to be ashamed against everyone who did have one, politically speaking. Well personally, I also don't want to disrespect the first grandfather (John Romero) & also not be ashamed against you gamers, so I have one. Maybe you should too, help his today's families because who knows, by your time, things even harder for even the descends of John Romero & families, regardless by your time everything already Public Domain because that's over 70 years post mortem.
 - *I'd rather slap back same side he slapped me*. Inspired from a Bible quote where if you slapped left, then reply slap right, which metaphorically means, avoid revenge. This is of course is uncomfortable to follow for not deity.
 - Tower of Slaughterion. NUTS without the lag. ZZZ ala Battle Tower using W & W - OIIA song.
+- Resource Management trouble Challenge. Hard mode: Excess that's thrown away will be counted & deducts your scoring (based on [Doomworld eevee's WasteNot](https://eevee.itch.io/wastenot)), Easy Declare mode: excess resources will be calculated & left behind instead of thrown away (based on [Zhs2's Intelligent Supplies](https://forum.zdoom.org/viewtopic.php?t=71897)).
+- Saya Mau Berak. Timed Megawads. You must quickly Use the Toilet to End Level. If you timeout, you'll Die Shitting your Pants.
+- *XYZ Rabbithole is dead, I was banned from the community, Stop making mods for it*. An episode or level name
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

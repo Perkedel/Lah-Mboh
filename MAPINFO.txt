@@ -55,6 +55,7 @@ gameinfo
 		"$DOWNTOOKED",
 		"$HAVETHEHATE",
 		"$CORRUPTTHENNOW",
+		"$IHATEHARDMAPS",
 		"$WHERDGOING"
 	
 	addcreditpage = 

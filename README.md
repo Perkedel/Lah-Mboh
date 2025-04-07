@@ -95,7 +95,7 @@ see [`CONTRIBUTING.md `](/CONTRIBUTING.md) for more informations.
 
 - Does not replace assets (Nor Episodes, Nor Maps, nor anything). Compatible with other Doom mods! Infact, designed to test Mods
  - Except unused items such as Unholy Bible & Evil Sceptres. Yeah, nobody would ever cover this IWADly anyway, I think. These are just useless Item completion items from Press Release beta, and it's just removed by the release of Original DOOM.
-- Benefits GZDoom features
+- Benefits GZDoom, ID24 (**NEW**), & various other features
 - Wide variety of tests
 - Other levels you can try
 

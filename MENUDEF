@@ -1,0 +1,43 @@
+// These are menu definition. add more menu here!
+// https://zdoom.org/wiki/MENUDEF
+// (JOELwindows7)
+
+// NSFW Content
+AddOptionMenu "OptionsMenu"
+{
+	Submenu "$NSFWOptionSay", "NSFWContentOptions"
+}
+
+AddOptionMenu "OptionsMenuSimple"
+{
+	Submenu "$NSFWOptionSay", "NSFWContentOptions"
+}
+
+OptionValue "NSFWContentValues"
+{
+	1, "$NSFWOn"
+	0, "$NSFWOff"
+}
+
+OptionMenu "NSFWContentOptions"
+{
+	Title "$NSFWContentTitle"
+	Caption "$NSFWContentTitle"
+	
+	StaticText "$NSFWWarn", "Orange"
+	StaticText ""
+	
+	Option "NSFW", "nsfwcontent", "NSFWContentValues"
+	StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
+	
+	StaticText ""
+	StaticText "$NSFWRequire"
+	StaticText ""
+}
+
+AddOptionMenu "GameplayOptions"
+{
+	StaticText ""
+	Submenu "$NSFWOptionSay", "NSFWContentOptions"
+}
+// end NSFW

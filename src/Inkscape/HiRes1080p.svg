@@ -31,14 +31,14 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="0.76536273"
-     inkscape:cx="1092.9458"
+     inkscape:cx="1092.2925"
      inkscape:cy="457.95279"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer57"><inkscape:grid
+     inkscape:current-layer="layer2"><inkscape:grid
        id="grid1"
        units="mm"
        originx="0"
@@ -137,7 +137,7 @@
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="LahMbohMore"
-     style="display:inline"><g
+     style="display:none"><g
        id="g62"
        transform="matrix(1.8749998,0,0,1.8749998,327.50007,339.99996)"
        style="display:inline"><path
@@ -390,7 +390,7 @@
            y="0"><tspan
              x="100.46381"
              y="251.6795"
-             id="tspan165">Big Shoutouts - CREDITS.md</tspan></text><text
+             id="tspan6">Big Shoutouts - CREDITS.md</tspan></text><text
            xml:space="preserve"
            id="text9"
            style="font-weight:900;font-size:64px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect9);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
@@ -399,7 +399,7 @@
            transform="translate(894.41619)"><tspan
              x="187.37592"
              y="251.6795"
-             id="tspan171">Full Info - README.md</tspan></text><rect
+             id="tspan8">Full Info - README.md</tspan></text><rect
            style="opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
            id="rect10"
            width="1700"
@@ -419,79 +419,79 @@
            y="0"><tspan
              x="120"
              y="337.22647"
-             id="tspan172">NerdKoopa:
+             id="tspan9">NerdKoopa:
 </tspan><tspan
              x="120"
              y="358.55979"
-             id="tspan173">- Vehicles
+             id="tspan10">- Vehicles
 </tspan><tspan
              x="120"
              y="379.8931"
-             id="tspan174">
+             id="tspan11">
 </tspan><tspan
              x="120"
              y="401.22641"
-             id="tspan175">Jekyll Grim Payne:
+             id="tspan12">Jekyll Grim Payne:
 </tspan><tspan
              x="120"
              y="422.55972"
-             id="tspan177">- Shooting Range Dummy
+             id="tspan13">- Shooting Range Dummy
 </tspan><tspan
              x="120"
              y="443.89304"
-             id="tspan178">
+             id="tspan14">
 </tspan><tspan
              x="120"
              y="465.22635"
-             id="tspan181">Plums:
+             id="tspan15">Plums:
 </tspan><tspan
              x="120"
              y="486.55966"
-             id="tspan182">- Sky Texture Collections &amp; Demo Map
+             id="tspan19">- Sky Texture Collections &amp; Demo Map
 </tspan><tspan
              x="120"
              y="507.89298"
-             id="tspan183">
+             id="tspan22">
 </tspan><tspan
              x="120"
              y="529.22629"
-             id="tspan184">PillowBlaster &amp; Mima-sama:
+             id="tspan23">PillowBlaster &amp; Mima-sama:
 </tspan><tspan
              x="120"
              y="550.5596"
-             id="tspan186">- Werror Handler RO.pk3
+             id="tspan29">- Werror Handler RO.pk3
 </tspan><tspan
              x="120"
              y="571.89292"
-             id="tspan187">
+             id="tspan30">
 </tspan><tspan
              x="120"
              y="593.22623"
-             id="tspan188">inkoalawetrust:
+             id="tspan31">inkoalawetrust:
 </tspan><tspan
              x="120"
              y="614.55954"
-             id="tspan196">- Big City map &amp; Urban Props
+             id="tspan44">- Big City map &amp; Urban Props
 </tspan><tspan
              x="120"
              y="635.89285"
-             id="tspan198">
+             id="tspan45">
 </tspan><tspan
              x="120"
              y="657.22617"
-             id="tspan199">ObAddon Community:
+             id="tspan46">ObAddon Community:
 </tspan><tspan
              x="120"
              y="678.55948"
-             id="tspan200">- Level Generator
+             id="tspan50">- Level Generator
 </tspan><tspan
              x="120"
              y="699.89279"
-             id="tspan201">- Textures
+             id="tspan51">- Textures
 </tspan><tspan
              x="120"
              y="721.22611"
-             id="tspan202">- Extra things </tspan></text><text
+             id="tspan52">- Extra things </tspan></text><text
            xml:space="preserve"
            id="text13"
            style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect13);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
@@ -500,90 +500,90 @@
            transform="translate(399.78667)"><tspan
              x="120"
              y="337.22647"
-             id="tspan203">Ukiro:
+             id="tspan53">Ukiro:
 </tspan><tspan
              x="120"
              y="358.55979"
-             id="tspan204">- Textures
+             id="tspan54">- Textures
 </tspan><tspan
              x="120"
              y="379.8931"
-             id="tspan205">
+             id="tspan55">
 </tspan><tspan
              x="120"
              y="401.22641"
-             id="tspan206">Jarewill:
+             id="tspan56">Jarewill:
 </tspan><tspan
              x="120"
              y="422.55972"
-             id="tspan207">- Jmod the Gmod-like spawn menu
+             id="tspan57">- Jmod the Gmod-like spawn menu
 </tspan><tspan
              x="120"
              y="443.89304"
-             id="tspan208">
+             id="tspan58">
 </tspan><tspan
              x="120"
              y="465.22635"
-             id="tspan209">Matakrow:
+             id="tspan59">Matakrow:
 </tspan><tspan
              x="120"
              y="486.55966"
-             id="tspan210">- HAMTEX Dev Textures
+             id="tspan60">- HAMTEX Dev Textures
 </tspan><tspan
              x="120"
              y="507.89298"
-             id="tspan211">
+             id="tspan61">
 </tspan><tspan
              x="120"
              y="529.22629"
-             id="tspan212">SpaceTrash:
+             id="tspan62">SpaceTrash:
 </tspan><tspan
              x="120"
              y="550.5596"
-             id="tspan213">- Dev Textures
+             id="tspan63">- Dev Textures
 </tspan><tspan
              x="120"
              y="571.89292"
-             id="tspan214">
+             id="tspan64">
 </tspan><tspan
              x="120"
              y="593.22623"
-             id="tspan215">Nash:
+             id="tspan65">Nash:
 </tspan><tspan
              x="120"
              y="614.55954"
-             id="tspan216">- Oh God, there are too many to list </tspan><tspan
+             id="tspan66">- Oh God, there are too many to list </tspan><tspan
              x="120"
              y="635.89285"
-             id="tspan217">here!!
+             id="tspan67">here!!
 </tspan><tspan
              x="120"
              y="657.22617"
-             id="tspan218">- Template &amp; Example Textures
+             id="tspan68">- Template &amp; Example Textures
 </tspan><tspan
              x="120"
              y="678.55948"
-             id="tspan219">
+             id="tspan69">
 </tspan><tspan
              x="120"
              y="699.89279"
-             id="tspan220">Gutawer &amp; phantombeta:
+             id="tspan70">Gutawer &amp; phantombeta:
 </tspan><tspan
              x="120"
              y="721.22611"
-             id="tspan221">- ZForm the ZDoom Menu framework
+             id="tspan71">- ZForm the ZDoom Menu framework
 </tspan><tspan
              x="120"
              y="742.55942"
-             id="tspan222">
+             id="tspan72">
 </tspan><tspan
              x="120"
              y="763.89273"
-             id="tspan223">madame-rachelle:
+             id="tspan73">madame-rachelle:
 </tspan><tspan
              x="120"
              y="785.22605"
-             id="tspan224">- Slaughtermap Performance Booster</tspan></text><text
+             id="tspan74">- Slaughtermap Performance Booster</tspan></text><text
            xml:space="preserve"
            id="text14"
            style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect14);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
@@ -592,87 +592,87 @@
            transform="translate(899.78667)"><tspan
              x="120"
              y="337.22647"
-             id="tspan225">Korp-kat:
+             id="tspan75">Korp-kat:
 </tspan><tspan
              x="120"
              y="358.55979"
-             id="tspan226">- Furdoom
+             id="tspan76">- Furdoom
 </tspan><tspan
              x="120"
              y="379.8931"
-             id="tspan227">- MIDIs everywhere
+             id="tspan77">- MIDIs everywhere
 </tspan><tspan
              x="120"
              y="401.22641"
-             id="tspan228">
+             id="tspan78">
 </tspan><tspan
              x="120"
              y="422.55972"
-             id="tspan229">PillowBlaster &amp; Mima-sama:
+             id="tspan79">PillowBlaster &amp; Mima-sama:
 </tspan><tspan
              x="120"
              y="443.89304"
-             id="tspan230">- Russian Overkill
+             id="tspan80">- Russian Overkill
 </tspan><tspan
              x="120"
              y="465.22635"
-             id="tspan231">
+             id="tspan81">
 </tspan><tspan
              x="120"
              y="486.55966"
-             id="tspan232">Kenney.nl:
+             id="tspan82">Kenney.nl:
 </tspan><tspan
              x="120"
              y="507.89298"
-             id="tspan233">- PUBLIC DOMAIN ASSETS!!! IYEAY!!!
+             id="tspan83">- PUBLIC DOMAIN ASSETS!!! IYEAY!!!
 </tspan><tspan
              x="120"
              y="529.22629"
-             id="tspan234">
+             id="tspan84">
 </tspan><tspan
              x="120"
              y="550.5596"
-             id="tspan235">Demiosis:
+             id="tspan85">Demiosis:
 </tspan><tspan
              x="120"
              y="571.89292"
-             id="tspan236">- Blood Pack
+             id="tspan86">- Blood Pack
 </tspan><tspan
              x="120"
              y="593.22623"
-             id="tspan237">
+             id="tspan87">
 </tspan><tspan
              x="120"
              y="614.55954"
-             id="tspan238">Doomarchvilledemon:
+             id="tspan88">Doomarchvilledemon:
 </tspan><tspan
              x="120"
              y="635.89285"
-             id="tspan239">- Fly
+             id="tspan89">- Fly
 </tspan><tspan
              x="120"
              y="657.22617"
-             id="tspan240">
+             id="tspan90">
 </tspan><tspan
              x="120"
              y="678.55948"
-             id="tspan241">MogWaltz:
+             id="tspan91">MogWaltz:
 </tspan><tspan
              x="120"
              y="699.89279"
-             id="tspan242">- Burning things
+             id="tspan92">- Burning things
 </tspan><tspan
              x="120"
              y="721.22611"
-             id="tspan243">
+             id="tspan93">
 </tspan><tspan
              x="120"
              y="742.55942"
-             id="tspan244">Leszek Szary:
+             id="tspan94">Leszek Szary:
 </tspan><tspan
              x="120"
              y="763.89273"
-             id="tspan245">- SFX</tspan></text><text
+             id="tspan95">- SFX</tspan></text><text
            xml:space="preserve"
            id="text15"
            style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect15);display:inline;opacity:1;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
@@ -681,109 +681,109 @@
            transform="translate(1299.4667)"><tspan
              x="120"
              y="337.22647"
-             id="tspan246">Skelegant:
+             id="tspan96">Skelegant:
 </tspan><tspan
              x="120"
              y="358.55979"
-             id="tspan247">- Girl PWADs wow
+             id="tspan97">- Girl PWADs wow
 </tspan><tspan
              x="120"
              y="379.8931"
-             id="tspan249">
+             id="tspan98">
 </tspan><tspan
              x="120"
              y="401.22641"
-             id="tspan250">Kinsie:
+             id="tspan99">Kinsie:
 </tspan><tspan
              x="120"
              y="422.55972"
-             id="tspan251">- Test Levels
+             id="tspan100">- Test Levels
 </tspan><tspan
              x="120"
              y="443.89304"
-             id="tspan252">- Other Levels &amp; Other PWADs
+             id="tspan101">- Other Levels &amp; Other PWADs
 </tspan><tspan
              x="120"
              y="465.22635"
-             id="tspan253">
+             id="tspan121">
 </tspan><tspan
              x="120"
              y="486.55966"
-             id="tspan254">Sgt. Mk. IV:
+             id="tspan129">Sgt. Mk. IV:
 </tspan><tspan
              x="120"
              y="507.89298"
-             id="tspan255">- Brutal Doom
+             id="tspan132">- Brutal Doom
 </tspan><tspan
              x="120"
              y="529.22629"
-             id="tspan256">
+             id="tspan133">
 </tspan><tspan
              x="120"
              y="550.5596"
-             id="tspan257">pa1nki113r:
+             id="tspan134">pa1nki113r:
 </tspan><tspan
              x="120"
              y="571.89292"
-             id="tspan258">- Project Brutality
+             id="tspan141">- Project Brutality
 </tspan><tspan
              x="120"
              y="593.22623"
-             id="tspan259">
+             id="tspan143">
 </tspan><tspan
              x="120"
              y="614.55954"
-             id="tspan260">Backyard Badasses:
+             id="tspan144">Backyard Badasses:
 </tspan><tspan
              x="120"
              y="635.89285"
-             id="tspan261">- Freedoom Bad*ss Map pack
+             id="tspan145">- Freedoom Bad*ss Map pack
 </tspan><tspan
              x="120"
              y="657.22617"
-             id="tspan262">
+             id="tspan146">
 </tspan><tspan
              x="120"
              y="678.55948"
-             id="tspan263">HyperUltra64:
+             id="tspan147">HyperUltra64:
 </tspan><tspan
              x="120"
              y="699.89279"
-             id="tspan264">- Treasure Tech
+             id="tspan148">- Treasure Tech
 </tspan><tspan
              x="120"
              y="721.22611"
-             id="tspan265">
+             id="tspan149">
 </tspan><tspan
              x="120"
              y="742.55942"
-             id="tspan266">aaaa</tspan></text><text
+             id="tspan150">aaaa</tspan></text><text
            xml:space="preserve"
            id="text16"
            style="font-weight:900;font-size:21.3333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Heavy';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect16);display:inline;opacity:0.998844;fill:#ffffff;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"><tspan
              x="642.6404"
              y="817.22647"
-             id="tspan267">Visit https://github.com/Perkedel/Lah-Mboh for source code
+             id="tspan151">Visit https://github.com/Perkedel/Lah-Mboh for source code
 </tspan><tspan
              x="950"
              y="838.55979"
-             id="tspan268">
+             id="tspan152">
 </tspan><tspan
              x="838.45879"
              y="859.8931"
-             id="tspan269">Cool and good thancc.
+             id="tspan153">Cool and good thancc.
 </tspan><tspan
              x="950"
              y="881.22641"
-             id="tspan270">
+             id="tspan158">
 </tspan><tspan
              x="808.09082"
              y="902.55972"
-             id="tspan271">https://perkedel.netlify.app</tspan></text></g></g><g
+             id="tspan159">https://perkedel.netlify.app</tspan></text></g></g><g
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="Level Title"
-       style="display:inline"><g
+       style="display:none"><g
          inkscape:groupmode="layer"
          id="layer5"
          inkscape:label="Hideout Enter"
@@ -2147,7 +2147,10 @@
              x="980.78546"
              y="730.52875"
              style="stroke-width:1.19469"
-             id="tspan118">for Freedoom 2</tspan></text></g></g></g><g
+             id="tspan118">for Freedoom 2</tspan></text></g></g><g
+       inkscape:groupmode="layer"
+       id="layer58"
+       inkscape:label="Ma" /></g><g
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="LahMbohTransparentText"

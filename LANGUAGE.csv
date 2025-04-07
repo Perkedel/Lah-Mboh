@@ -16,7 +16,8 @@ Elephant Slaugtherion,MBH03,it’s dark here,Slaughterion Gajah,,,,
 Travelexer,MBH04,Simple Find 3 keys central hub level,,,,,
 Pathway Blocked,MBH05,There are too many enemies ahead of you in your way! Go farther to just about the center of crowd then install the bomb to finish.,Jalan Terblokir,,,,
 Rest Area,MBH06,You have arrived at a rest area. Relax & healing!,Tempat Istirahat,,,,
-Tribulation Stack Overflew,MBH07,Slaughterion again?,Tumpukan Cobaan Luber,,,,
+Tower of Tribulation,MBH07,"Slaughterion again?
+A 9 floor tower full of Invaders",Menara Pencobaan,,,,
 Progressively Worse,MBH08,Progressively Worse.,Semakin Parah,,,,
 Painful Facts,MBH09,Beat this Pain Lord / Baron of Hell. Then immediately get out from here. The just opened new enemies won’t count,Fakta menyakitkan,,,,
 Everyone’s Chaingunner,MBH10,"This level is exclusively chaingunners, or here: Minigun Zombies. You are also given minigun supplies throughout the level.",Semuanya Chaingunner,,,,
@@ -44,7 +45,8 @@ Don’t worry about the car, the DaNuBeau managed to portal the SUV back home th
 I must get out from here,MBH23,"Second part of getting stuck in hell!
 Slaughterion time!",Saya harus keluar dari sini,,,,
 This is just hell themed city right?,MBH24,"You just realized now, that this is just another DNB realm which themed Hell.
-But then again, this also being invaded by Invaders.",Ini cuman kota bertema neraka biasa kan?,,,,
+But then again, this also being invaded by Invaders.
+Oh yeah btw, welcome to the Arvester’s moon: Jongkale. Yes, this giant rock is red.",Ini cuman kota bertema neraka biasa kan?,,,,
 I wish Fireblades were here,MBH25,"Another Slaughterion map which is Stacked like in Legacy of Rust.
 Since at the time of making this level FD24 is not done yet, you are forced to use SKAG 1337 / BFG 9000.",Seandainya Fireblade disini,,,,
 I wish mom knows technology,MBH26,So she can maybe intervene against perpetrators?,Seandainya mama melek teknologi,,,,
@@ -95,7 +97,28 @@ Atau apabila tidak bisa, Anda dapat menebak teleporter yang ada dibawah.",,,,
 "Hello,
 I’m Choral Bae",ENTERCHOR,test choral bae enter,"Halo,
 Saya Choral Bae",,,,
-,,,,,,,
+"You people expressed hate towards me for absolute nought.
+Then expected me to respect that wish?!
+
+How poppycocks. You wish for me to no longer admire your magnificent
+Masterpiece once and for all?
+
+Then so be it.
+Henceforth, Shall I cease my duty of protection for you, against any disasters that may come.
+Including Mass Protests.
+
+You requested for it.",HATEDFATE,"Controversial self thought from Kaorfa, not Caliborn this time. It happened very often to him.","Kalian semua menaruh kebencian terhadap saya tanpa alasan.
+Lalu ingin saya menghormati permintaan tersebut?
+
+Sangat tidak masuk akal. Kalian tidak ingin saya mengagumi
+Karya seni terbaik kalian?
+
+Baiklah jika demikian.
+Mulai saat ini, Akan saya bebastugaskan wewenang perlindungan bagi kalian,
+Dari berbagi bencana yang mungkin akan datang.
+Termasuk, Protes Masal.
+
+Kalian yang meminta demikian.",,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -196,6 +219,16 @@ Got the Suspicious Memory Card... Wonder what does this contain..,BETA_BONUS4_R,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
+,,Menu Strings,,,,,
+Mature Content,NSFWContentTitle,,Konten Dewasa,,,,
+WARNING!: Must be biologically mature! Avoid turning this on at public place such as PC Cafe!,NSFWWarn,,PERHATIAN!: Wajib dewasa secara biologis! Hindari menyalakan opsi ini pada tempat publik seperti warnet!,,,,
+Shake it Baby!,NSFWOn,,Ayo goyang sayang!,,,,
+OFF,NSFWOff,,MATI,,,,
+Experience will contain Sussy Baka!,NSFWDescOn,,Pengalaman akan mengandung Asemelehoy Uhuy!,,,,
+Experience will be bland,NSFWDescOff,,Pengalaman akan menjadi bantet,,,,
+You may need to load respective complementary PWADs in order to activate such part of the experience.,NSFWRequire,,Anda mungkin membutuhkan setiap PWAD tambahan yang sesuai untuk mengaktifkan bagian dari pengalaman tersebut,,,,
+Settings to turn on FULL Experience,NSFWCaption,,Pengaturan untuk menyalakan Pengalaman PENUH,,,,
+Parental Control,NSFWOptionSay,,Pengaturan Orang Tua,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -463,3 +496,18 @@ Indonesia VantaBlack!",CORRUPTTHENNOW,"Play at Indonesia Gelap campaign. Indones
 Happened in Indonesia, e.g. where punishment bill pauses, and of course, corruptors are protected, leaving all society suffers as usual.","Pada Jaman Dahulu Kala, pemerintah kita korup
 Sekarang, udah pas di terparahnya! YEY!
 Indonesia VantaBlack!",,,,
+"Same, I hate hard maps & slaughterions too!
+But pls never downvote & not to mention:
+Harrass the guy/gal that made it.
+
+DNB mission is to collect files.
+Not to find political clouts.",IHATEHARDMAPS,"There are many hard mappacks too.
+But that never be the reason to make some big hot take podcast about those.
+Infact, why would you even watch such kind of thing?
+Don’t be like my dad, who always watch various kinds of hot heated podcast about A vs B.
+In front of everyone (big TV) even!","Sama, gw juga benci Map susah & slaughterions!
+Tapi mohon jgn pernah downvote, apalagi:
+Ancam siapapun yg bikin.
+
+Misi DNB adalah mengoleksi file.
+Bukan mencari sensasi politik",,,,
