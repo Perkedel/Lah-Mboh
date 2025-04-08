@@ -56,6 +56,11 @@ gameinfo
 		"$HAVETHEHATE",
 		"$CORRUPTTHENNOW",
 		"$IHATEHARDMAPS",
+		"$FEELBADCOMPAT",
+		"$COPYNOIA",
+		"$COPYNOIA2",
+		"$COPYNOIA3",
+		"$NUTSUNLAG",
 		"$WHERDGOING"
 	
 	addcreditpage = 

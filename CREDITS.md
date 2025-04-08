@@ -23,6 +23,12 @@ For the thing we've yoinked
 - [![Doom Text Generator](/graphics/Generated/Eevee-DoomTextGen/text-gen-title.png)](https://www.doomworld.com/forum/topic/147196-doom-text-generator-%E2%80%94-last-updated-2024-11-25/). Eevee. ???. [![SOURCE CODE](/graphics/Generated/Eevee-DoomTextGen/source-code-say.png)](https://github.com/eevee/doom-text-generator); [![GO AHEAD, try it.](/graphics/Generated/Eevee-DoomTextGen/try-it-say.png)](https://c.eev.ee/doom-text-generator/)
 - [UDB ID24 Config](https://www.doomworld.com/forum/topic/147678-id24-0992-currently-in-draft-status/). Gooberman. ???. Config for Ultimate Doom Builder
 - [UDB ID24 Config](https://www.doomworld.com/forum/topic/152053-if-anyone-needs-a-udb-config-for-id24/). SyntaxError999. ???. Config for Ultimate Doom Builder
+- [Doom Tools](https://www.doomworld.com/forum/topic/126794-the-official-doomtools-thread/). MTrop. **MIT License**. Various Doom utilities
+- PNG Optimization Tools Trifecta: [Tutorial & Pre-packages from Combinebobnt Zandronum](https://zandronum.com/forum/viewtopic.php?t=7659). Use for SLADE!
+	- [PNGOut](https://github.com/imagemin/pngout-bin). imagemin. **MIT License**. [SOURCE CODE](https://github.com/imagemin/pngout-bin); Lossless PNG Optimizations.
+	- [PNGCrush](https://pmt.sourceforge.io/pngcrush/). pmt. [???](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/LICENSE). [SOURCE CODE](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/)
+	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`~~](https://community.chocolatey.org/packages/DeflOpt)). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
+- [Doom WAD Descriptive Parameters](https://www.doomworld.com/forum/post/1782450). Jimmy Squared. ???. Template of Parameter to be placed in your forum page about your mods.
 
 ## Addons
 
@@ -38,7 +44,8 @@ For the thing we've yoinked
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 - [Mechadon's Box o skies](https://www.doomworld.com/forum/topic/92795-meks-box-o-skies-v3-look-up-in-the-sky-more-skies/). Mechadon. ???.
 - [TDRR's Skulltag CTF Base](https://forum.zdoom.org/viewtopic.php?t=61373). TDRR, original CTF stuffs from Skulltag team. ??? Yes Include, Must Credit.
-- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/). Arvell. Free to Use Textures. The Texture WAD (`DEX_Textures.wad`) itself replaces the Title & Credit screen, as well as the Title Card itself! **NEON GRID TEXTURE**
+- [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/). Arvell. Free to Use Textures. The Texture WAD (`DEX_Textures.wad`) itself replaces the Title & Credit screen, as well as the Title Card itself!, so we gotta select just the Textures. **NEON GRID TEXTURE**
+- [BIGDOOR Textures](https://www.doomworld.com/forum/topic/143829-the-texture-pack-for-bigdoor-lovers-bigdoors-in-bigger-and-smaller-sizes/). Meerschweinmann. ???. Texture pack for BIGDOOR Lover. We use the Hi-color version, & then Optimize PNG using PNG Optimize Tri-fecta
 
 ## Dependencies
 

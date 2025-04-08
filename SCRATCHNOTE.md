@@ -8,6 +8,7 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 - US style residential house where the actual boss is. You've teleported right onto him the Spider Mastermind on accident when stepping on mysterious sector as you see it in Automap. Don't worry, we can resurrect him, lemme get you back. Followed by stanley parable open giant happy ending No. 1
 - [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid. **OK**
 - No jump after terrywadded? 
+- Put Box Air Conditioner tall & Acid Rinsing Shower system after the Sector hurt test.
 
 ## Idea & Random
 
@@ -47,6 +48,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Resource Management trouble Challenge. Hard mode: Excess that's thrown away will be counted & deducts your scoring (based on [Doomworld eevee's WasteNot](https://eevee.itch.io/wastenot)), Easy Declare mode: excess resources will be calculated & left behind instead of thrown away (based on [Zhs2's Intelligent Supplies](https://forum.zdoom.org/viewtopic.php?t=71897)).
 - Saya Mau Berak. Timed Megawads. You must quickly Use the Toilet to End Level. If you timeout, you'll Die Shitting your Pants.
 - *XYZ Rabbithole is dead, I was banned from the community, Stop making mods for it*. An episode or level name
+- AI Cheat Detect: Dualsense. The AI Anti-Cheat detects cheating by seeing your controller struggle motions. e.g., when pressing a Force Feedbacked trigger, the user should be seen have a little struggles in its motion sensing & trigger press graph pattern; & when vibrating, the RAW uncalibrated motion sensing should results that there is a vibration mixed with other motions. If this is absent or what, This could mean that they used a counterfeit controller, or worse: Cheatcon.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

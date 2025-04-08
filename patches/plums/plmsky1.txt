@@ -1,0 +1,62 @@
+===========================================================================
+Primary purpose         : Texture resource
+===========================================================================
+Title                   : plums' skystravaganza
+Filename                : plmsky1.wad
+Release date            : 2014-07-19
+Author                  : plums
+Email Address           : 68k @ quikphix . org
+
+Description             : A collection of skies, made from manipulating
+                          photos & editing iwad skies.
+
+                          Includes a demo map with sky transfers.
+                          (PrBoom+ -complevel 9 or more advanced port)
+                          
+                          A few skies are also available as PNGs with
+                          their own palettes, inside the wad.
+
+Additional Credits to   : Everyone who took those photos. 
+                          No sources, sorry :/
+                          
+                          Music is Starlight Zone from Sonic the Hedgehog,
+                          sequenced by Monster Iestyn and tweaked by me.
+===========================================================================
+* What is included *
+
+New levels              : MAP01
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : non-Doom palette PNGs
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Demo map only
+Cooperative 2-4 Player  : n/a
+Deathmatch 2-4 Player   : n/a
+Other game styles       : n/a
+Difficulty Settings     : n/a
+
+
+* Construction *
+
+Base                    : Graphics modified from photos
+                          Map new from scratch
+Editor(s) used          : GIMP, SLADE, ImageMagick
+
+
+* Copyright / Permissions *
+
+You may do whatever you want with the contents of this file. 
+Credit is appreciated but not required.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

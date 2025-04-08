@@ -99,6 +99,22 @@ see [`CONTRIBUTING.md `](/CONTRIBUTING.md) for more informations.
 - Wide variety of tests
 - Other levels you can try
 
+```
+Name: Lah-Mboh?
+Map Format: UDMF
+Ports Tested: GZDoom since v4.11, VKDoom as of since February 2025
+IWAD: Freedoom Phase 2 (Doom 2 nor TNT nor Plutonia does not fully cover all textures as Freedoom does)
+Map(s): MBOHTEST, MBH01-31, etc. experimentals
+Music: See CREDITS.md
+Gameplay: Single play/co-op, deathmatch, etc.
+Difficulty Settings: Yes
+Multiplayer Placement: Yes
+Build Time: Since February 2025
+Textures: See CREDITS.md
+Requirements: Jumping permitted, crouching permitted, freelook permitted
+```
+[Template from Jimmy²](https://www.doomworld.com/forum/post/1782450).
+
 ## What's with the name?
 
 This entire project was supposedly named `I don't know man` something: `idkman`. But of course, you just saw it touches id software 

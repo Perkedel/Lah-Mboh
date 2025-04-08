@@ -1,0 +1,108 @@
+This is a collection of textures for DOOM from me, Meerschweinmann.
+Mostly BIGDOOR related.
+
+
+Not everything is made by me from scratch. 
+Nevertheless, i invested many hours in it.
+
+
+
+There are 3 versions of this WAD file.
+
+The HC (highcolor) version includes some textures as 32bit PNG.
+The PAL version includes all textures as paletted variants.
+The VE (vanilla enhanced) version includes a Crispy DOOM/International DOOM/Woof
+compatible Texture1 lump.
+
+
+It is recommended to use ColdPal for the paletted and vanilla enhanced versions,
+because the blue of the big screens and the blue planet on PLANET2B texture look
+too oversaturated with the original DOOM palette.
+
+You can download ColdPal from ReaperAA here: 
+https://www.doomworld.com/idgames/graphics/coldpal 
+
+The two ColdPal files can simply copied in the WAD file with SLADE3.
+
+But you can use every other color palette with desaturated blues too.
+
+
+
+
+The doors are variants with different sizes of ID Softwares original DOOR 
+textures made by me. 
+Everyone with eyes should be able to see this.
+By the way, i love the BIGDOORs since i opened my first at E1M1 in 1994 :)
+
+
+In the "32in24-15 Tex" pack i found a 256 pixel wide gray BIGDOOR named BIGDOORC.
+Because i wanted it in green and brown too, 
+i made them from this as template and my BIGDOOR journey began.
+
+
+THANKS TO THE PERSON WHO MADE BIGDOORC as it inspirated me to make this WAD file.
+
+
+BDR1282W (The gray 256 pixel wide BIGDOOR) included in my WAD file is BIGDOORC 
+with differences here and there to match the other BIGDOORS i had made.
+
+
+The big tileable BIGDOORS are made of three parts. A left, center and right part.
+
+The naming scheme of these is following:
+
+BD1281ZL
+
+"BD" for BIGDOOR, "128" for its height, "1" for brown, "Z" for 512/768 wide doors,
+and "L" for left part.
+
+"2" stands for gray
+"3" stands for green
+
+"Y" stands for 384/576 wide doors
+"X" stands for 320 wide doors
+"W" stands for 256 wide doors
+
+
+
+In the "32in24-15 Tex" ressource pack i found a texture named COMPVENT.
+That was the template for the included CMPVEN/CMPVN variants.
+
+And in "32in25-25 Tex" ressource i found a texture named MIDFENC2.
+I made height variants from 64 to 192 pixels in 16 pixel steps.
+Originally this texture seems to be from Espi. 
+RIP Espi, your Suspended in Dusk is great.
+
+
+The COMPSER1 and COMPSER2 textures are made from photos of server-racks and fit
+in COMPTALL style frames.
+
+
+The monitor/screen textures are collections of various parts of textures from 
+texturepacks i have found at "www.doomworld.com/afterglow/textures/" 
+and were merged by me into COMPTALL style frames or monitor frames,
+that i have them in one place to use.
+
+
+The REACAS textures were made with a texture named REACASK as template from the
+Eternity Engine map pack "Caverns of Darkness".
+
+For those who want 32x32 and 16x16 pixels crate textures in brown,
+i added two modified CRATELIT and CRATINY textures.
+
+
+Somewhere long time ago i found a PLAT1 texture in 200 pixels height.
+I really don't know anymore where i got this.
+Because i have often the problem that the standard 128 pixel height version does
+not fit correct,
+so i made from this 200 pixel variant and the original PLAT1 variants of
+112, 144, 160, 176 and 192 pixels height platform textures.
+
+
+If someone, i did not know, is the creator of parts of this texture pack,
+let me know and i will name you here.
+
+
+Have fun with it.
+
+Meerschweinmann
