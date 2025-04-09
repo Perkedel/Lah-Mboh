@@ -344,6 +344,14 @@ script "WelcomeHome" (void)
 	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
 }
 
+script "ProgressivelyWorseWeirdEntered" (void)
+{
+	extra_talk = "Well uh.. This doesn't make sense..\nThere's an overlap in this building!\nThis feels like exploring Hollow back in 2090s.\nDon't stay too long there anyway!";
+	scan_character();
+	set_second = 8.0;
+	HudMessage(s:"Whoah! what the hell is this?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+}
+
 script "PainfulFactsEntered" (void)
 {
 	extra_talk = "The target `Painful Facts` up ahead.\nWow, what've they done this place?\nUgh!, it's lagging!\nWell, we gotta hurry.";

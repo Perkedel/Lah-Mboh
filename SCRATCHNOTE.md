@@ -9,6 +9,7 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 - [Diabolus EX](https://www.doomworld.com/forum/topic/101473-gzdoom-diabolus-ex-v11/) has Neon grid. **OK**
 - No jump after terrywadded? 
 - Put Box Air Conditioner tall & Acid Rinsing Shower system after the Sector hurt test.
+- use [counter](https://zdoom.org/wiki/ThingCount) to count enemies in Sniper level!
 
 ## Idea & Random
 
