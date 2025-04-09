@@ -49,6 +49,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Saya Mau Berak. Timed Megawads. You must quickly Use the Toilet to End Level. If you timeout, you'll Die Shitting your Pants.
 - *XYZ Rabbithole is dead, I was banned from the community, Stop making mods for it*. An episode or level name
 - AI Cheat Detect: Dualsense. The AI Anti-Cheat detects cheating by seeing your controller struggle motions. e.g., when pressing a Force Feedbacked trigger, the user should be seen have a little struggles in its motion sensing & trigger press graph pattern; & when vibrating, the RAW uncalibrated motion sensing should results that there is a vibration mixed with other motions. If this is absent or what, This could mean that they used a counterfeit controller, or worse: Cheatcon.
+- ECS Doom. Doom with Things an Entity Component System class. Modular description! add stuffs to it. Automatically converts Doom's description into ECS modules. Make it all Data Oriented.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

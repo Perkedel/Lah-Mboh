@@ -7,7 +7,7 @@ Unbullshitments included! Please immediately create Issue for any still-bullshat
 
 **Download**: [Release](https://github.com/Perkedel/Lah-Mboh/releases)  
 Other Page: [Itch](https://joelwindows7.itch.io/lah-mboh)
-Forum Thread: [Doomworld](https://www.doomworld.com/forum/topic/151743-gzdoom-zscript-lah-mboh-test-map-megawads/), [ZDoom Forum](https://forum.zdoom.org/viewtopic.php?t=80264)
+Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-mboh-test-megawads), ~~[Doomworld](https://www.doomworld.com/forum/topic/151743-gzdoom-zscript-lah-mboh-test-map-megawads/)~~, [ZDoom Forum](https://forum.zdoom.org/viewtopic.php?t=80264)
 
 > [!WARNING] 
 > SFW ONLY! This repo can contain everything including: 
