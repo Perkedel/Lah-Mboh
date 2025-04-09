@@ -61,6 +61,9 @@ gameinfo
 		"$COPYNOIA2",
 		"$COPYNOIA3",
 		"$NUTSUNLAG",
+		"$VIOLFORBID",
+		"$QUITAMA",
+		"$UNBEHAVE",
 		"$WHERDGOING"
 	
 	addcreditpage = 

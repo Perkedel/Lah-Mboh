@@ -105,13 +105,16 @@ For the thing we've yoinked
 	- every assets possible!
 - Wikipedia.
 	- [CFExpress Logo](https://en.wikipedia.org/wiki/File:CFexpress_logo.svg). Locke Cole. **PUBLIC DOMAIN**.
-- [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**. 
+- [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**.  [SOURCE CODE](https://github.com/keshikan/DSEG); Display Segment font! 7-segment, 14-segment, weird-segments too!
 
 ## Sounds
 
 - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
 
 ## Musics
+
+> [!TIP]
+> Musics people have contributed, & we have yoinked outta somewhere in the wild.
 
 - [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
 	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
@@ -154,3 +157,4 @@ For the thing we've yoinked
 - [Apagender flag & Midgate texture](https://www.doomworld.com/forum/post/2908686). JustAthel. ???.
 - [Persona Creep Sky](https://www.doomworld.com/forum/post/2909407). TheSuperdave938. ???.
 - [Post Your Doom Textures Curated Collection](https://www.doomworld.com/forum/topic/145782-pyddtex-pydt-compilation-and-restoration-retrieval/). Collected by JustAthel. ???. The [Post Your Doom Texture Thread](https://www.doomworld.com/forum/topic/90900-post-your-doom-textures/) Attempted recollections. **PLS YOINK SOME!!**
+- [Skybox Sharing with the community]https://www.doomworld.com/forum/topic/93446-skybox-for-sharing-with-the-community/). Eradrop. ???. Skyboxes even more!!!
