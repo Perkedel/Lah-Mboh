@@ -64,6 +64,7 @@ gameinfo
 		"$VIOLFORBID",
 		"$QUITAMA",
 		"$UNBEHAVE",
+		"$PLAGIAIF",
 		"$WHERDGOING"
 	
 	addcreditpage = 
