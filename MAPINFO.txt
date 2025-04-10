@@ -65,6 +65,7 @@ gameinfo
 		"$QUITAMA",
 		"$UNBEHAVE",
 		"$PLAGIAIF",
+		"$BURNCOOKIE",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -168,14 +169,30 @@ clusterdef 25200
 Episode MBOHTEST 
 {
 	name = "Lah Mboh?"
+	lookup = "MBOHEP"
 	PicName = "LMBHEMNU"
 }
 
 Episode MBH01
 {
 	name = "Mboh Adventure"
+	lookup = "MBOHADV"
 	PicName = "LMBHAMN"
 }
+
+Episode OIIA
+{
+	name = "Tower of Slaugterion"
+	lookup = "OIIATOWER"
+	//PicName = "LMBHAMN"
+}
+
+Episode FEATHERDM
+{
+	name = "Legacy of Feathers"
+	lookup = "FEATHEREP"
+}
+
 
 Map MBOHTEST lookup "MBOHTEST"
 {
@@ -692,11 +709,6 @@ map GARUG2 "Garug 2"
 	author = "JOELwindows7"
 	next = "MBOHTEST"	
 	exitPic = "LMBHTIHD"
-}
-
-Episode FEATHERDM
-{
-	name = "Legacy of Feathers"
 }
 
 map CAPTURTN "Capturation"

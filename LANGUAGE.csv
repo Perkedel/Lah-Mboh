@@ -38,7 +38,7 @@ That agent is from our agency, we must save him!",Kau tak boleh berakhir spt ini
 ,MBH16,,,,,,
 ,MBH17,,,,,,
 Everyone’s Flying,MBH18,"This level contains lots of flying enemies: Cacodemon, Lost Soul, & Pain Elemental",Semuanya Terbang,,,,
-Giant Assault guy,MBH19,"Beat this Assault Tripod / Cyberdemon. After he died, survive for atleast 15 second, then the exit door opens.",Si tukang Assault Gedi,,,,
+Heartbreaking Incidents,MBH19,"Beat this Assault Tripod / Cyberdemon named Heartbreaking Incidents. After he died, survive for atleast 15 second, then the exit door opens.",Kejadian Menyakitkan,,,,
 Welcome to Technoland,MBH20,"Level inspired from Atomic Heart’s outside park, complete with Soviet Porno song from Freedoom 2.
 This episode, mix Computer & Hell textures!",Selamat Datang di Pulau Tekno,,,,
 Just Follow the Red Carpet,MBH21,You are entering confusing computer themed maze. Except the right way has already been red carpeted.,Ikuti saja karpet merah,,,,
@@ -64,17 +64,18 @@ No retrigger open anymore.
 Luckily DaNeBeau SUV arrived and opened secret wall next by the door. Turns out, the SUV had just been
 Upgraded with an experimental DOOM like teleporter system.
 Instead of portaling, you can teleport like Latsufir & families (from FNF Last Funkin Moment)",Saya segera berubah jadi Ethereal,,,,
-CEO of Entitlement,MBH30,Bossbrain / Icon of Sin level.,CEO dari Keberkuasaan,,,,
-HORRAY YOU DID IT,MBH31,"Game end, but there is plot twist, that the MBH30 boss brain is not the target actually. The real target hides somewhere.",HORE ANDA BERHASIL,,,,
+Valley of Sorrowness,MBH30,"Bossbrain / Icon of Sin level. Beat the Invader CEO, named Valley of Sorrowness.",Lembah Kekelaman,,,,
+HORRAY YOU DID IT,MBH31,"Game end, but there is plot twist, that the MBH30 boss brain is not the target actually. The real target hides somewhere.
+Spoiler: Accidental telefrag the actual Valley Sorrow on his personal working space. A Spider Mastermind!",HORE ANDA BERHASIL,,,,
 Test Name,CHORALBE,Test UMAPINFO capability,Nama Tes,,,,
+Template Empty,MBHTMPL,,Kosong Template,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+,,EPISODE NAMES,,,,,
+Mboh Adventure,MBOHADV,Megawad,,,,,
+Tower of Slaughterion,OIIATOWER,Ala ZZZ Battle Tower with W&W – OIIA song. 10 waves of enemies. Chosen skill affects how difficult the enemy sets are,Menara Slaughterion,,,,
+Legacy of Feathers,FEATHEREP,Multiplayer Deathmatch maps,,,,,
+Lah Mboh?,MBOHEP,,,,,,
 ,,,,,,,
 ,,ENTER TEXT,,,,,
 "As you’ve pressed End Secret, 
@@ -570,3 +571,4 @@ Thanks for not skipping quit confirmation message,QUITAMA,,Terima kasih untuk ti
 Doesn’t even have to be an AI Talk?",PLAGIAIF,"Play on Matrix What if I told you, this time about AI who are programmed to steal & mashes information.
 Although such ideas might have been there since the ancient times which btw, done by humans.","Bagaimana bila begini, bahwa Penyontek Massal
 Bahkan tidak mesti sebuah Obrolan AI?",,,,
+Burner your Cookies,BURNCOOKIE,,Bakar Cookie mu,,,,

@@ -106,6 +106,7 @@ For the thing we've yoinked
 - Wikipedia.
 	- [CFExpress Logo](https://en.wikipedia.org/wiki/File:CFexpress_logo.svg). Locke Cole. **PUBLIC DOMAIN**.
 - [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**.  [SOURCE CODE](https://github.com/keshikan/DSEG); Display Segment font! 7-segment, 14-segment, weird-segments too!
+- [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans). eifetx. **OFL-1.1**. [SOURCE CODE](https://fonts.google.com/specimen/Pixelify+Sans); Pixel font sans! Should be perfect for subtitles & many text for Pixelorama
 
 ## Sounds
 
