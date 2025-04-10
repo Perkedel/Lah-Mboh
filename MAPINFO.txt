@@ -66,6 +66,7 @@ gameinfo
 		"$UNBEHAVE",
 		"$PLAGIAIF",
 		"$BURNCOOKIE",
+		"$TONYLCSIGN",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -705,6 +706,13 @@ map CURAG "Curag"
 }
 
 map GARUG2 "Garug 2"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"	
+	exitPic = "LMBHTIHD"
+}
+
+map MBHTMPL lookup "MBHTMPL"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"	
