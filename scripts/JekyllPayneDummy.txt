@@ -240,7 +240,7 @@ class JekyllPShootingRangeDummy : Actor
 
     override void Tick()
     {        
-        super.Tick();
+        super.Tick(); 
 
 		if (deadtics > 0)
 		{

@@ -10,6 +10,7 @@ Here are random scratchnotes idk what to do but it had to be stored before I for
 - No jump after terrywadded? 
 - Put Box Air Conditioner tall & Acid Rinsing Shower system after the Sector hurt test.
 - use [counter](https://zdoom.org/wiki/ThingCount) to count enemies in Sniper level!
+- Put your boots back on! the boots provide anti fall damage protection
 
 ## Idea & Random
 
