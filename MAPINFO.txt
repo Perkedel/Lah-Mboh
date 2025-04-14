@@ -343,7 +343,7 @@ Map MBH10 lookup "MBH10"
 	next = "MBH11"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
-	music = "D_BETWEE"
+	music = "D_STALKS"
 	par = 120
 	sucktime = 0
 	exitPic = "LMBHTIHD"
