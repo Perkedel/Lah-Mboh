@@ -53,6 +53,8 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - *XYZ Rabbithole is dead, I was banned from the community, Stop making mods for it*. An episode or level name
 - AI Cheat Detect: Dualsense. The AI Anti-Cheat detects cheating by seeing your controller struggle motions. e.g., when pressing a Force Feedbacked trigger, the user should be seen have a little struggles in its motion sensing & trigger press graph pattern; & when vibrating, the RAW uncalibrated motion sensing should results that there is a vibration mixed with other motions. If this is absent or what, This could mean that they used a counterfeit controller, or worse: Cheatcon.
 - ECS Doom. Doom with Things an Entity Component System class. Modular description! add stuffs to it. Automatically converts Doom's description into ECS modules. Make it all Data Oriented.
+- The Provoked. Mancubus on wheelchair. Classname FatModerator. Shoots fireball onto the sky & then the fireball flies like guided missle towards player, at high speed as Cyberdemon's missile. You must take cover a lot. id, you're going to be responsible for class naming Mancubus `fatso`. You have no idea, what's funny in your time, becomes so provoking & so body shaming today. So much, everyone has to bites the dust in their own community whatsoever. Well, it's unchangeable. They have to face it. Who the hell asking help anyway? Or hangout with strangers who knows what their true faces are, these days?
+- In Indonesia, you fight organizations (Mass organizations / ormas) who claims do good, with no evidence of good. In US (& around & maybe various countries of Europe maybe), you fight individuals who claims do good, with no evidence of good.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
