@@ -18,7 +18,7 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 ## Dependencies:
 - IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [~~`doom2.wad`~~ (**PAID**, Werror! Incomplete Texture!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
 - Source Port: [GZDoom latest](https://zdoom.org/downloads).
-    - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.10.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.14.
+    - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.11.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.13.
     - Otherwise you must **use the latest version**!
 - Mod PWADs:
     - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa. **WAIT!!**, [**use this instead!**](/yoinks/vvpck1.0-mapUnconflict.pk3), because the original overrides MAP01!
