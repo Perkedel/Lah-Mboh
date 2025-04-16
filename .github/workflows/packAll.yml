@@ -56,6 +56,7 @@ jobs:
           echo "Zip now"
           zip -9 -r Lah-Mboh.zip .
           zip -dr Lah-Mboh.zip yoinks
+          zip -dr Lah-Mboh.zip *.dbs
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
           pwd
@@ -70,6 +71,7 @@ jobs:
           7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z *
           7z d Lah-Mboh.7z Lah-Mboh.pk3
           7z d Lah-Mboh.7z yoinks
+          7z d Lah-Mboh *.dbs
           echo "What Does it contains now?"
           7z l Lah-Mboh.7z
           mv Lah-Mboh.7z Lah-Mboh.pk7
