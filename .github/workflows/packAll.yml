@@ -48,6 +48,11 @@ jobs:
           echo "WE FUCKING NEED SHOUTOUT!!! THATS ALL I WANT! UPLOAD YESS, BUT PLS THE TXT FILE TOO!!"
           echo "Infact goes everywhere! Reupload all my videos YESS, but keep the watermark! I will never provide unwatermarked version"
           echo "even I got paid inf money. Just know, its from me!"
+      
+      - name: cleanseing
+        run: |
+          echo "Clean unecessary files not needed in the distributed archive!"
+          rm -rf maps/*.dbs
         
       - name: Zip it
         run: |
@@ -56,7 +61,9 @@ jobs:
           echo "Zip now"
           zip -9 -r Lah-Mboh.zip .
           zip -dr Lah-Mboh.zip yoinks
-          zip -dr Lah-Mboh.zip *.dbs
+          zip -dr Lah-Mboh.zip bonus
+          zip -dr Lah-Mboh.zip source
+          zip -dr Lah-Mboh.zip src
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
           pwd
@@ -71,7 +78,9 @@ jobs:
           7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z *
           7z d Lah-Mboh.7z Lah-Mboh.pk3
           7z d Lah-Mboh.7z yoinks
-          7z d Lah-Mboh *.dbs
+          7z d Lah-Mboh.7z bonus
+          7z d Lah-Mboh.7z source
+          7z d Lah-Mboh.7z src
           echo "What Does it contains now?"
           7z l Lah-Mboh.7z
           mv Lah-Mboh.7z Lah-Mboh.pk7
@@ -100,16 +109,19 @@ jobs:
           zip -9 Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
           zip -u Lah-Mboh.zip yoinks
+          zip -u Lah-Mboh.zip bonus
           echo "Scroll Thru 7zeas"
           7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z Lah-Mboh.pk7
           7z u Lah-Mboh.7z Lah-Mboh.txt
           7z u Lah-Mboh.7z yoinks
+          7z u Lah-Mboh.7z bonus
           echo "Here total content of this 7z"
           7z l Lah-Mboh.7z
           echo "also tar.xz"
           tar -cvf Lah-Mboh.tar Lah-Mboh.pk7
           tar -uvf Lah-Mboh.tar Lah-Mboh.txt
           tar -uvf Lah-Mboh.tar yoinks
+          tar -uvf Lah-Mboh.tar bonus
           xz -v9e Lah-Mboh.tar
           echo "Now lets check content"
           xz -t Lah-Mboh.tar.xz
