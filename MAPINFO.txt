@@ -99,6 +99,11 @@ gameinfo
 DoomEdNums
 {
 	15209 = JekyllPShootingRangeDummy
+	16128 = DNBCoin
+	16129 = DNBQuarter
+	16130 = DNBGold
+	16131 = DNBGoldBar
+	16132 = DNBGoldCat
 }
 // I'm tired of this bullshit. Just lemme build level already!
 

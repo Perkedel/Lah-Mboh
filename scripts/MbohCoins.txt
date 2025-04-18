@@ -1,0 +1,111 @@
+// Strife Coins added for DOOM
+// Just inherit the Strife coin here like Chubz did on Strife Dialog Tutorial
+// https://www.youtube.com/watch?v=MFgGaZPZ5m4
+// https://zdoom.org/wiki/Classes:Coin
+// (JOELwindows7)
+
+class DNBCoin : Coin
+{
+	Default {
+		//$Category Powerups
+		//$Title DNB 1 Coin
+		Inventory.PickupSound "items/DNBCoin";
+		Inventory.Icon "IDCOI";
+		scale 0.3;
+	}
+	States
+	{
+		Spawn:
+			DCOI A -1 BRIGHT;
+			Loop;
+	}
+}
+
+class DNBQuarter: DNBCoin
+{
+	// 10 Gold
+	Default
+	{
+		//$Category Powerups
+		//$Title DNB 10 Coin
+		Inventory.Amount 10;
+		+INVENTORY.ALWAYSPICKUP
+		Tag "$TAG_10GOLD"; // "10 gold"
+		Inventory.PickupMessage "$TXT_10GOLD"; // "You picked up 10 gold."
+		scale 0.4;
+	}
+	
+	States
+	{
+		Spawn:
+			DQUA A -1 BRIGHT;
+			Loop;
+	}
+}
+
+class DNBGold: DNBCoin
+{
+	// 25 Gold
+	Default
+	{
+		//$Category Powerups
+		//$Title DNB 25 Coin
+		Inventory.Amount 25;
+		+INVENTORY.ALWAYSPICKUP
+		Tag "$TAG_25GOLD"; // "10 gold"
+		Inventory.PickupMessage "$TXT_25GOLD"; // "You picked up 25 gold."
+		scale 0.4;
+	}
+	
+	States
+	{
+		Spawn:
+			DGOL A -1 BRIGHT;
+			Loop;
+	}
+}
+
+class DNBGoldBar: DNBCoin
+{
+	// 50 Gold
+	Default
+	{
+		//$Category Powerups
+		//$Title DNB 50 Coin
+		Inventory.Amount 50;
+		+INVENTORY.ALWAYSPICKUP
+		Tag "$TAG_50GOLD"; // "50 gold"
+		Inventory.PickupMessage "$TXT_50GOLD"; // "You picked up 50 gold."
+		scale 0.5;
+	}
+	
+	States
+	{
+		Spawn:
+			DGBA A -1 BRIGHT;
+			Loop;
+	}
+}
+
+class DNBGoldCat: DNBCoin
+{
+	// 300 Gold, lmao Ankha coin! Actually, this is based on Mel "ExodusCat" Starasch, which is a knock-off of Ankha
+	// Also, no, Arsinikk, this is not based on your cat. The head is that Lah-Mboh egg.
+	Default
+	{
+		//$Category Powerups
+		//$Title DNB 300 Coin
+		Inventory.Amount 300;
+		+INVENTORY.ALWAYSPICKUP
+		Tag "$TAG_300GOLD"; // "300 gold"
+		Inventory.PickupMessage "$TXT_300GOLD"; // "You picked up 300 gold."
+		scale 0.8;
+	}
+	
+	States
+	{
+		Spawn:
+			DACA A -1 BRIGHT;
+			Loop;
+	}
+}

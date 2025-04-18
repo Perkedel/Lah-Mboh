@@ -1,0 +1,27 @@
+// JOELwindows7: I've yoinked Chubz's tutorial of Jump Pad & edited to make it reusable everywhere!
+// https://www.youtube.com/watch?v=kOtEg917eHM Jump Pad
+// https://www.youtube.com/@Chubzdoomer moar!!!
+
+#library "ChubzJumpPad"
+#include "zcommon.acs"
+
+script "JumpPadNow" (int horizontalAngle, int horizontalForce, int verticalForce)
+{
+	bool flash = true;
+	ThrustThing(horizontalAngle, horizontalForce, 0, 0);
+	ThrustThingZ(0, verticalForce, 0, 0);
+	PlaySound(0, "JUMPPAD", CHAN_AUTO, 0.5, FALSE, ATTN_NORM);
+	if(flash) ACS_NamedExecute("JumpPadFlash",0,0,0,125);
+	Radius_Quake(7, 8, 0, 50, 0);
+}
+
+script "JumpPadFlash" (int r, int g, int b)
+{
+	// 0,0,125
+	//int amount = 0.5;
+	//int second = 0.15;
+	//FadeTo(r, g, b, amount, second);
+	FadeTo(r, g, b, 0.5, 0.15);
+	Delay(6);
+	FadeTo(0, 0, 0, 0.0, 0.15);
+}

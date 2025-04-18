@@ -5,6 +5,7 @@ DummyButtonHit
 GetGift
 GoToLevel
 GiveUsAll
+ChubzJumpPad
 
 // TDRR
 CTF

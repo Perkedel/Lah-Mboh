@@ -1,0 +1,33 @@
+// Somewhere OpenGL effext
+// (JOELwindows7)
+
+// Coin shines based on Chubz's tutorial Strife Dialog
+// https://www.youtube.com/watch?v=MFgGaZPZ5m4
+pointlight COINLIGHT
+{
+    color 0.83 0.69 0.22
+    size 8
+	dontlightself 1
+}
+
+object DNBCoin
+{
+    frame DCOIA {light COINLIGHT}
+}
+object DNBQuarter
+{
+    frame DQUAA {light COINLIGHT}
+}
+object DNBGold
+{
+    frame DGOLA {light COINLIGHT}
+}
+object DNBGoldBar
+{
+    frame DGBAA {light COINLIGHT}
+}
+object DNBGoldCat
+{
+    frame DACAA {light COINLIGHT}
+}
+// end Coin shines
