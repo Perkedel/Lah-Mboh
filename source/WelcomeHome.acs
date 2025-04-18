@@ -350,7 +350,7 @@ script "WelcomeHome" (void)
 	// Now, Scan the character
 	scan_character();
 	
-	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "ProgressivelyWorseWeirdEntered" (void)
@@ -358,21 +358,21 @@ script "ProgressivelyWorseWeirdEntered" (void)
 	extra_talk = "Well uh.. This doesn't make sense..\nThere's an overlap in this building!\nThis feels like exploring Hollow back in 2090s.\nDon't stay too long there anyway!";
 	scan_character();
 	set_second = 8.0;
-	HudMessage(s:"Whoah! what the hell is this?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Whoah! what the hell is this?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "PainfulFactsEntered" (void)
 {
 	extra_talk = "The target `Painful Facts` up ahead.\nWow, what've they done this place?\nUgh!, it's lagging!\nWell, we gotta hurry.";
 	set_second = 8.0;
-	HudMessage(s:"Okay, this is it.\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Okay, this is it.\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "PainfulFactsKilled" (void)
 {
 	extra_talk = "Whoa oh no! Big Slaughterion!!\nGTFO HERE!!!, THIS WON'T COUNT!!";
 	set_second = 8.0;
-	HudMessage(s:"YESS! You did it!",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"YESS! You did it!",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "FollowRedCarpet" (void)
@@ -380,7 +380,7 @@ script "FollowRedCarpet" (void)
 	scan_character();
 	set_second = 8.0;
 	extra_talk = "Just follow the red carpet. Yeah, the owner himself kept getting lost.\nIdk why, but.. yeah\nAlso huh? I didn't see EXIT legend here.., mmf, must be old module,\nmaybe need upgrade I guess...";
-	HudMessage(s:"This is very easy,", s:label_player,s:".\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"This is very easy,", s:label_player,s:".\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "RedCarpetKeyFound" (void)
@@ -388,7 +388,7 @@ script "RedCarpetKeyFound" (void)
 	//scan_character();
 	set_second = 5.0;
 	extra_talk = "There's the button. Yeah.. the EXIT button & the legend is supposed to be there!\n& it's not that far.. huh.. Let's just go.";
-	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "RedCarpetTerryTrapped" (void)
@@ -397,7 +397,7 @@ script "RedCarpetTerryTrapped" (void)
 	//scan_character();
 	set_second = 4.0;
 	extra_talk = "WHAT THE?!\nUgh, I got a bad feeling about this.. I hope this is just owner's surprise haha?.. \nDid ExodusCat informed about this? I hope so, But.. before invasion,\nno message?";
-	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "RedCarpetTerryCrusherStarted" (void)
@@ -405,7 +405,7 @@ script "RedCarpetTerryCrusherStarted" (void)
 	//scan_character();
 	set_second = 2.0;
 	extra_talk = "OOH SH8888888!!!!!!!!!\nI KNEW IT!!";
-	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "TerryWaddedMySubs" (void)
@@ -414,7 +414,7 @@ script "TerryWaddedMySubs" (void)
 	scan_character();
 	set_second = 7.0;
 	extra_talk = "Argh, dang it! I should've known & hence tell you that:\nThe Invaders Terry-fies places too!\nWe must act fast, before they Terry-fy the rest!\nNow, go pick up your gears..., it's somewhere, I hope..\nNo wonder there's no EXIT. We gotta take this place back for him & others!";
-	HudMessage(s:"Whoao! You okay,", s:label_player,s:"?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,0,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Whoao! You okay,", s:label_player,s:"?!\n",s:extra_talk;HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "ExitSike" (void)
@@ -423,5 +423,5 @@ script "ExitSike" (void)
 	scan_character();
 	delay(5);
 	set_second = 5.0;
-	HudMessage(s:"Hahahaha.\nI know you would. Congratulations.\nBut no. When I say you're BLOCKED, respect it.\n& kill yourself.\nGo back to the field,\n & let my friends end your suffering, that's you want right?";HUDMSG_PLAIN | HUDMSG_LOG,0,CR_RED,0.5,0.25,set_second);
+	HudMessage(s:"Hahahaha.\nI know you would. Congratulations.\nBut no. When I say you're BLOCKED, respect it.\n& kill yourself.\nGo back to the field,\n & let my friends end your suffering, that's you want right?";HUDMSG_PLAIN | HUDMSG_LOG,188,CR_RED,0.5,0.25,set_second);
 }
