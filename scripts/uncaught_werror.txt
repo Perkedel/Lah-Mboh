@@ -59,7 +59,7 @@ class DNB_werrorHandler : DNB_werrorUncaught {
 	
 	override void OnAbort(){
 		super.OnAbort();
-		werror_say = "You've gone goofed up boy/gal/buddy!";
+		werror_say = StringTable.Localize("$WERRORVMABORT");
 		console.printf("\c[red]%s", werror_say);
 		//console.printf("\c[fire]You've gone goofed up boy/gal!");
 		
@@ -89,11 +89,11 @@ class ManualCrash : Actor {
 	override void BeginPlay(){
 		super.BeginPlay();
 		// Start() or idk whatever!
-		console.printf("\c[fire]Okay. Now please get out of the console to commence the crash,\nor delete this actor immediately to cancel.");
+		console.printf(StringTable.Localize("$MANUALWERRORSPAWNED"));
 	}
 	override void PostBeginPlay(){
 		super.PostBeginPlay();
-		console.printf("\c[brick]Crash Confirmed. Now crashing GZDoom softly...");
+		console.printf(StringTable.Localize("$MANUALWERRORCOMMENCE"));
 	}
 	override void Tick(){
 		super.Tick();

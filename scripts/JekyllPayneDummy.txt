@@ -95,7 +95,8 @@ class JekyllPShootingRangeDummy : Actor
 		Mass 100;
 		painsound "targetdummy/pain";
 		painchance 96;
-		Tag "Target dummy";		
+		//Tag "Target dummy";		
+		Tag "$JEKYLLTARGETDUMMY";	
 	}
 
 	static clearscope double LinearMap(double val, double source_min, double source_max, double out_min, double out_max, bool clampIt = false)
@@ -115,7 +116,8 @@ class JekyllPShootingRangeDummy : Actor
 		class<Actor> cls = classname;
 		if (!cls)
 		{
-			console.printf("%s is not a valid class name. Reverting to default dummy model.", classname);
+			//console.printf("%s is not a valid class name. Reverting to default dummy model.", classname);
+			console.printf(StringTable.Localize("$JEKYLLNAMEINVALID"), classname);
 			return;
 		}
 		
@@ -123,7 +125,8 @@ class JekyllPShootingRangeDummy : Actor
 
 		if (!def.bISMONSTER)
 		{
-			console.printf("%s is not a monster class name. Reverting to default dummy model.", classname);
+			//console.printf("%s is not a monster class name. Reverting to default dummy model.", classname);
+			console.printf(StringTable.Localize("$JEKYLLNOTMONSTER"), classname);
 			return;
 		}
 
@@ -136,7 +139,8 @@ class JekyllPShootingRangeDummy : Actor
 				spriteMainState = def.spawnstate;				
 			if (!spriteMainState)
 			{
-				console.printf("%s class does not have a valid spawn states. Reverting to default dummy model.", classname);
+				//console.printf("%s class does not have a valid spawn states. Reverting to default dummy model.", classname);
+				console.printf(StringTable.Localize("$JEKYLLSPAWNINVALID"), classname);
 				return;
 			}
 			sprite = spriteMainState.sprite;
@@ -277,7 +281,9 @@ class JekyllPShootingRangeDummy : Actor
 				}
 				SpawnDamageNumbers(receivedDmg);
 
-				console.printfEx(PRINT_NOLOG, "\c[Green]%s received \c[Red]%d damage\c[Green] from \c[Cyan]%s\c[Green] (source: \c[Cyan]%s\c[Green])%s", GetTag(), receivedDmg, inf, src, died);
+				//console.printfEx(PRINT_NOLOG, "\c[Green]%s received \c[Red]%d damage\c[Green] from \c[Cyan]%s\c[Green] (source: \c[Cyan]%s\c[Green])%s", GetTag(), receivedDmg, inf, src, died);
+                //console.printfEx(PRINT_NOLOG, StringTable.Localize("\c[Green]%s $JEKYLLRECEIVED \c[Red]%d $JEKYLLDAMAGE\c[Green] $JEKYLLFROM \c[Cyan]%s\c[Green] ($JEKYLLSOURCE: \c[Cyan]%s\c[Green])%s"), GetTag(), receivedDmg, inf, src, died);
+                console.printfEx(PRINT_NOLOG, StringTable.Localize("$JEKYLLDUMMYDAM"), GetTag(), receivedDmg, inf, src, died);
                 receivedDmg = 0;
             }
         }

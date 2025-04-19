@@ -21,38 +21,45 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 	override void buttonClickCommand(LMBH_ZF_Button caller, Name command)
 	{
 		// pls why switch case only numbers not string?! Don't make me look like that guy.
+		// https://zdoom.org/wiki/ChangeLevel_(ZScript)
 		if(command == "L-JUSTFITE"){
 			console.printf("GO to JUSTFITE");
 			//CallACS("ChangeLevel","JUSTFITE",0, CHANGELEVEL_NOINTERMISSION);
 			//ACS_NamedExecute("LevelJustfite",0);
-			CallACS("LevelJustfite");
+			//CallACS("LevelJustfite");
+			Level.ChangeLevel("JUSTFITE",0,CHANGELEVEL_NOINTERMISSION,-1);
 			//Destroy();
 			//Close();
 			link.Close();
 		}
 		else if(command == "L-RIGHTFRN"){
 			console.printf("GO to RIGHTFRN");
-			CallACS("LevelRightFrn");
+			//CallACS("LevelRightFrn");
+			Level.ChangeLevel("RIGHTFRN",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
 		else if(command == "L-MBHADV"){
 			console.printf("GO to Megawad Mboh Adventure");
-			CallACS("MegawadMBHADV");
+			//CallACS("MegawadMBHADV");
+			Level.ChangeLevel("MBH01",0,CHANGELEVEL_NOINTERMISSION | CHANGELEVEL_RESETINVENTORY | CHANGELEVEL_RESETHEALTH,-1);
 			link.Close();
 		}
 		else if(command == "L-PLMSKY1"){
 			console.printf("GO to PLMSKY1");
-			CallACS("LevelPlmSky1");
+			//CallACS("LevelPlmSky1");
+			Level.ChangeLevel("PLMSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
 		else if(command == "L-MECHSKY1"){
 			console.printf("GO to MECHSKY1");
-			CallACS("LevelMechSky1");
+			//CallACS("LevelMechSky1");
+			Level.ChangeLevel("MECHSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
 		else if(command == "L-CHORALBE"){
 			console.printf("GO to Choral Bae");
-			CallACS("LevelChoralBe");
+			//CallACS("LevelChoralBe");
+			Level.ChangeLevel("CHORALBE",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
 		else
@@ -133,7 +140,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Label.create(
         	(8,16),
         	(96,16),
-        	"Go to Level",
+        	StringTable.Localize("$GOTOLEVELSAY"),
         	smallFont
         );
         elem.Pack(mainFrame);

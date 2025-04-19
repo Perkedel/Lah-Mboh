@@ -748,7 +748,7 @@ DamageType LatexGoo
 	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
 	NoArmor
 	Factor = 1.5
-	Obituary = "%s has been Changed"
+	Obituary = "$LATEXGOODEATH"
 	// shut up! I know!
 }
 
@@ -756,6 +756,6 @@ DamageType Etheric
 {
 	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
 	Factor = 5
-	Obituary = "%s has turned into an Ethereal"
+	Obituary = "$ETHEREALIZEDDEATH"
 	// haha lol ZZZ
 }
