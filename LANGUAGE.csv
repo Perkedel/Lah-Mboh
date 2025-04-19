@@ -37,7 +37,8 @@ Shoot Afar,MBH14,Sniper level. Test your accurate aim,Tembak yg jauh,,,,
 You can’t end like this!,MBH15,"Ala FraggleScript machinima test.
 Simply interact with that agent who’s about to jump off a cliff just by his agency rented house.
 That agent is from our agency, we must save him!",Kau tak boleh berakhir spt ini!,,,,
-,MBH16,,,,,,
+Chamber Triviatron,MBH16,"A trivia level utilizing heavily on ACS. The first is not a trivia, but just Guess Number, which the answer determined by level start.
+The rest of the question is actual quiz escape room, some of which based on Holy Bible.",Ruang Triviatron,,,,
 Necromancing Fellow,MBH17,All Arch-viles / Necromancers are flagged Friendly. Free them from the prisons and have your life easy.,Kawan Pembangkit Kubur,,,,
 Everyone’s Flying,MBH18,"This level contains lots of flying enemies: Cacodemon, Lost Soul, & Pain Elemental",Semuanya Terbang,,,,
 Heartbreaking Incidents,MBH19,"Beat this Assault Tripod / Cyberdemon named Heartbreaking Incidents. After he died, survive for atleast 15 second, then the exit door opens.",Kejadian Menyakitkan,,,,
@@ -76,7 +77,7 @@ Template Empty,MBHTMPL,,Kosong Template,,,,
 ,,EPISODE NAMES,,,,,
 Mboh Adventure,MBOHADV,Megawad,,,,,
 Tower of Slaughterion,OIIATOWER,Ala ZZZ Battle Tower with W&W – OIIA song. 10 waves of enemies. Chosen skill affects how difficult the enemy sets are,Menara Slaughterion,,,,
-Legacy of Feathers,FEATHEREP,Multiplayer Deathmatch maps,,,,,
+Legacy of Feathers,FEATHEREP,Multiplayer Deathmatch maps,Tradisi Kukuruyuk,,,,
 Lah Mboh?,MBOHEP,,,,,,
 ,,,,,,,
 ,,ENTER TEXT,,,,,
