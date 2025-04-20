@@ -95,8 +95,8 @@ class JekyllPShootingRangeDummy : Actor
 		Mass 100;
 		painsound "targetdummy/pain";
 		painchance 96;
-		//Tag "Target dummy";		
-		Tag "$JEKYLLTARGETDUMMY";	
+		Tag "Target dummy";		
+		//Tag "$JEKYLLTARGETDUMMY";	
 	}
 
 	static clearscope double LinearMap(double val, double source_min, double source_max, double out_min, double out_max, bool clampIt = false)

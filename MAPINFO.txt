@@ -127,7 +127,7 @@ clusterdef 200
 
 clusterdef 300
 {
-	// Painful fact defeated
+	// Painful facts defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
 	ExitText = lookup, "EXITMBHE1"	
 	//pic = "COMPBLU"
@@ -137,7 +137,7 @@ clusterdef 300
 
 clusterdef 301
 {
-	// Giant Assault guy defeated
+	// Heartbreaking Incidents (Giant Assault guy) defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
 	ExitText = lookup, "EXITMBHE2"	
 	//pic = "COMPBLU"
@@ -147,7 +147,7 @@ clusterdef 301
 
 clusterdef 330
 {
-	// Final Boss
+	// Final Boss Valley of Despair
 	//EnterText= lookup, "ENTERMBHBOSS"
 	ExitText = lookup, "EXITMBHBOSS"	
 	//pic = "COMPBLU"

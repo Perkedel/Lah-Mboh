@@ -28,7 +28,7 @@ OptionMenu "NSFWContentOptions"
 	StaticText ""
 	
 	Option "NSFW", "nsfwcontent", "NSFWContentValues"
-	StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
+	//StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
 	
 	StaticText ""
 	StaticText "$NSFWRequire"
