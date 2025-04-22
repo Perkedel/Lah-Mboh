@@ -345,6 +345,11 @@ function void scan_character (void)
 	// haha skelectric
 }
 
+script "ScanCharacter" (void)
+{
+	scan_character();	
+}
+
 script "WelcomeHome" (void)
 {
 	// Now, Scan the character

@@ -512,7 +512,7 @@ Map MBH21 lookup "MBH21"
 	enterPic = "LMBHDARK"
 }
 
-Map MBH22 lookup "MBH21"
+Map MBH22 lookup "MBH22"
 {
 	author = "JOELwindows7"
 	next = "MBH23"

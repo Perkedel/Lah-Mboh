@@ -36,7 +36,8 @@ The following is the minimum atleast setup you can do to get started:
     - [itch.io](https://itch.io/game-mods/tag-doom). Sometimes also on itch.io too as well.
     - [ZDoom forum](https://forum.zdoom.org/index.php?sid=5d3c199fff371517a31b05c0130727f8). There are [Total Conversions](https://forum.zdoom.org/viewforum.php?f=19&sid=5cc88a122e8ed676c4847d71b1e2528e), [Maps](https://forum.zdoom.org/viewforum.php?f=42&sid=ae12c3d2a1591cf6c6fa46815e321e5d), and other [Gameplay Mods](https://forum.zdoom.org/viewforum.php?f=43)
 - Get Launchers. You can just drag & drop mods to your DOOM.exe (then Source Port should automatically load your purchased DOOM IWAD & whatever IWAD in its folder), but it'd be much easier with Launchers!
-    - [DoomRunner](https://github.com/Youda008/DoomRunner/releases). **RECOMMENDED**
+    - [DoomRunner](https://github.com/Youda008/DoomRunner/releases). **RECOMMENDED**, Place your IWAD, Map PWADs & Mod PWADs, and your source ports accordingly & build your presets consists of what mods & what map packs.
+    - [nstlaurent's idgames wrangled launcher](https://github.com/nstlaurent/DoomLauncher). idgames at your hands, manages idgames mods & your source ports. [Thread](https://www.doomworld.com/forum/topic/69346-doom-launcher-doom-frontend-database-v376-102024/)
     - [lcferrum's fork of ZDL](https://github.com/lcferrum/qzdl/releases).
     
 ### Configuring
@@ -68,6 +69,9 @@ Minimally, assembling your experience should roughly goes like this:
 > [!NOTE]
 > If you ask, we indeed have DOOM I + II. Just prefers Freedoom since it covers also both Final DOOM in 1 single IWAD, whereas original DOOM IWADs, do not.  
 > Soon, Freedoom is also covering ID24, under [FD24](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/)
+
+### Sauces
+- [DOOM Awesome guide](https://github.com/snakers4/awesome_doom_quickstart). snakers4.
 
 by JOELwindows7  
 Perkedel Technologies  

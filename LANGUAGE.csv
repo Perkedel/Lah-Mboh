@@ -278,6 +278,7 @@ I need everything!,CHOICE_NEEDALL,,Saya butuh semuanya!,,,,
 I need healing!,CHOICE_NEEDHEAL,,Saya butuh healing!,,,,
 I need Energy / Berserk!,CHOICE_NEEDBERSERK,,Saya butuh Energi / Berserk!,,,,
 I need all powerups!,CHOICE_NEEDPOWERUP,,Saya butuh semua powerup!,,,,
+,RESPONSE_NEEDALL,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -285,6 +286,45 @@ I need all powerups!,CHOICE_NEEDPOWERUP,,Saya butuh semua powerup!,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+"Okay, you did it!
+Get inside, & the Yellow key’s behind the vane wall.",REDCARPET_DONE,,"Okeh, berhasil!
+Sekarang masuk, & kunci kuning ada dibelakang tembok perhiasan.",,,,
+"Now finally, ......
+Wait, this.. isn’t part of the plan..
+Worry not, the owner likes to suddenly change things.
+So uh, I trust you can figure this one out easily.",REDCARPET_YELLOWKEY,,"Nah sekarang, .......
+Bentar, ini.. bukan bagian planning...
+Jgn khawatir, ownernya suka ngubah rumah ini mendadak.
+Jadi, harusnya kamu bisa langsung sih.",,,,
+OOOOOOOOOOOOOOOOOH!!!!! SH8888888!!!!!,REDCARPET_TERRYWAD,,OOOOOOOOOOOOOOOOOOH!!! ANJ8888888!!!,,,,
+,,ENTERED DIALOG,,,,,
+"Okay, so..
+Just walk these red carpets. The owner kept forgeting
+his own path. Don’t worry, he asked our help,
+& we’re doing this.",ENTER_REDCARPET,,"Okeh jadi..
+Jalan aja karpet merah ini. Pemiliknya lupa terus
+jalannya sendiri. Tenang, dia minta tolong kita
+& kita melakukannya.",,,,
+"Hey! You okay there?! Hoh thancc God!
+Argh, dang it! I should've known & hence tell you that:
+The Invaders Terry-fies places too!
+
+We must act fast, before they Terry-fy the rest!
+Now, go pick up your gears..., it's somewhere, I hope..
+No wonder there's no EXIT. We gotta take this place back for him & others!",ENTER_TERRYFYING,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -486,7 +526,7 @@ I like this game! Don’t mind if I do,COPYTHEGAME,Watch out! Don’t Copy offic
 Only enemies calls us Facist,CALLSUSFACIST,"Sometimes, the DNB opposition & pretty much wokes in general would calls us that, while you see, how hypocritical, right?",Hanya musuh yang menyebut kami Fasisme,,,,
 I forgor,IFORGOR,Opposite of I rember,Aku lupa,,,,
 ,,aaa,,,,,
-"Pls, don’t go to VRChat, ChilloutVR, or any meetup social media of that matter!
+"Pls, don’t go to XYZ, ABC, or any meetup social media of that matter!
 Without POC License enforcement, it’s havoc! Worse than Hell, Hollows, & Invasion combined!
 It’s no longer just about being Blocked, you know..",SOCIALDANGEROUS,"Social media in general without government level / Radio-like of moderation is dangerous, Joel stated circa 2024
 Fun fact, as Arenod Sediron, Dasandim, & friends passed this law, it of course causes backlash. And of course, they don’t turn back.
