@@ -67,4 +67,20 @@ Issue is designed for bug reporting & too small too fork for submissions.
 
 Simply Clone this entire source code, then load this entire project folder as your PWAD.
 
+## Get Started
+
+- Prepare your environment!
+	- Make empty folder dedicated for your contribution
+	- `cd ~/DoomProjectFolder` there
+	- `git clone https://github.com/Perkedel/Lah-Mboh`, and you shall see a new folder of this source code
+	- `cd Lah-Mboh`
+- Setup your Doom! Read [`INSTALL.md`](/INSTALL.md) file
+	- GZDoom / VKDoom Latest
+	- Load this entire source code folder into your load order, i.e. `gzdoom -iwad freedoom2.wad -file core.wad Lah-Mboh customMod.wad` stuff like that
+	- `Lah-Mboh` must be loaded after core mods & before maps + resources + extra mods.
+	- Ultimate Doom Builder for mapping
+	- SLADE for lump edits such as compiling ACS, Aligning & Adding Textures, compressing PNG, etc.
+	- Sekaiju for MIDI
+	- Audacity for recording, audio edit, & coversion
+
 ## Iyeah

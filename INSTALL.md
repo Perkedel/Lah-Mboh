@@ -23,11 +23,11 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 - Mod PWADs:
     - [Voxel Vehicles](https://www.doomworld.com/idgames/prefabs/vvpck1_0) from NerdKoopa. **WAIT!!**, [**use this instead!**](/yoinks/vvpck1.0-mapUnconflict.pk3), because the original overrides MAP01!
     - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/) from inkoalawetrust. We recommend to pick the full Map (1st dl) rather than just the prop.
-    - see more on [`CREDITS.md`](CREDITS.md) section `Dependencies`
+    - see more on [`CREDITS.md`](/CREDITS.md) section `Dependencies`
 - Launcher (Optional, but Essentially Recommended): such as [Doom Runner](https://github.com/Youda008/DoomRunner), [lcferum's fork of ZDL](https://github.com/lcferrum/qzdl), etc etc.
 
 > [!IMPORTANT]
-> There are also PWADs we've preincluded for your convenience & other stuffs. See [`CREDITS.md`](CREDITS.md) for more info.
+> There are also PWADs we've preincluded for your convenience & other stuffs. See [`CREDITS.md`](/CREDITS.md) for more info.
 
 ## Steps
 
@@ -45,6 +45,16 @@ Showing the easy & quick ways
 > It is highly recommended to use Doom launchers of your favourite to make mod selections easy.  
 > Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!
+
+## Editing Setups
+
+1. Download & extract / install the following editors
+    - Ultimate Doom Builder. For mapping
+    - SLADE 3. for Lump edits such as Textures, ACS, etc.
+    - Sekaiju. for MIDI
+    - Audacity. for Audio such as recording, edit, & conversions
+    - Laplace or VSCode. for Text IDE project
+2. Start Editing
 
 ## Compatibility
 

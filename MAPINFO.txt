@@ -422,7 +422,7 @@ Map MBH15 lookup "MBH15"
 	par = 30
 	sucktime = 0
 	exitPic = "LMBHTIHD"
-	InterMusic = "D_BURNBO"
+	InterMusic = "D_DM2INT"
 	enterPic = "LMBHDARK"
 }
 
