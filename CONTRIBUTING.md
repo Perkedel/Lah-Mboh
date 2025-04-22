@@ -78,9 +78,9 @@ Simply Clone this entire source code, then load this entire project folder as yo
 	- GZDoom / VKDoom Latest
 	- Load this entire source code folder into your load order, i.e. `gzdoom -iwad freedoom2.wad -file core.wad Lah-Mboh customMod.wad` stuff like that
 	- `Lah-Mboh` must be loaded after core mods & before maps + resources + extra mods.
-	- Ultimate Doom Builder for mapping
-	- SLADE for lump edits such as compiling ACS, Aligning & Adding Textures, compressing PNG, etc.
-	- Sekaiju for MIDI
+	- [Ultimate Doom](https://ultimatedoombuilder.github.io/) Builder for mapping
+	- [SLADE](https://slade.mancubus.net/) for lump edits such as compiling ACS, Aligning & Adding Textures, compressing PNG, etc.
+	- [Sekaiju](https://openmidiproject.opal.ne.jp/) for MIDI
 	- Audacity for recording, audio edit, & coversion
 
 ## Iyeah
