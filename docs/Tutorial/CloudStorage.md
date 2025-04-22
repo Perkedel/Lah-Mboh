@@ -7,6 +7,11 @@
 
 ## Steps
 
+1. Open your cloud storage URL
+2. Try upload. Many cloud storage web app supports drag & drop function, or you can just click upload button
+3. wait until upload complete
+4. Right click to that new file OR click menu (usually a 3 dot icon next to file), then obtain the share URL.
+
 ### Google Drive
 
 Link = [drive.google.com](https://drive.google.com)
