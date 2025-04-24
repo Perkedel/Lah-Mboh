@@ -62,6 +62,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("CHORALBE",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-FREELD"){
+			console.printf("GO to Freeloader hell");
+			Level.ChangeLevel("FREELD",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -210,6 +215,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: "Choral Bae",
         	cmdHandler: handler,
         	command: "L-CHORALBE"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,64),
+        	(100,16),
+        	text: "Freeloader Lord",
+        	cmdHandler: handler,
+        	command: "L-FREELD"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

@@ -72,7 +72,9 @@ HORRAY YOU DID IT,MBH31,"Game end, but there is plot twist, that the MBH30 boss 
 Spoiler: Accidental telefrag the actual Valley Sorrow on his personal working space. A Spider Mastermind!",HORE ANDA BERHASIL,,,,
 Test Name,CHORALBE,Test UMAPINFO capability,Nama Tes,,,,
 Template Empty,MBHTMPL,,Kosong Template,,,,
-,,,,,,,
+Freeloader lord,FREELD,"A fanfic again!
+You just thrown into a hell, because you sparsdated DOOM & share all of them, 
+even Bethesda has long discontinued DOOM I + II in every digital stores.",Master Freeloader,,,,
 ,,,,,,,
 ,,EPISODE NAMES,,,,,
 Mboh Adventure,MBOHADV,Megawad,,,,,
@@ -199,7 +201,28 @@ Dari berbagi bencana yang mungkin akan datang.
 Termasuk, Protes Masal.
 
 Kalian yang meminta demikian.",,,,
-,,,,,,,
+"You have been died.
+
+And unfortunately, a corrupt angel in Heaven was
+friend with our enemies & found that:
+
+you freeloaded every single editions of DOOM down to DOOM I + II
+& their latest modern franchise releases.
+Despite all, have been long discontinued on all digital stores,
+not to mention physical distributions. Both new stock & used.
+
+Hence you’re thrown to a hell, where freeloaders eternally suffers.",ENTERFREELD,,"Anda telah meninggal.
+
+Dan sayangnya, seorang malaikat korup sedang
+bersengkokol dengan musuh kita & menemukan bahwa:
+
+Anda membajak setiap edisi DOOM hingga bahkan DOOM I + II
+& semua rilis modern franchise tersebut.
+Walaupun semuanya, telah lama didiskontinyu di semua toko digital,
+apalagi distribusi fisik. Baik stok baru & bekas.
+
+Sehingga Anda harus dijerumuskan ke neraka, dimana semua
+tukang bajak tersiksa abadi.",,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -265,7 +288,31 @@ Untuk melindungi dunia kita dari serangan para Invaders.",,,,
 "Goodbye,
 Choral Bae signing out!",EXITCHOR,test choral bae exit,"Da dah,
 Choral Bae pamit undur diri!",,,,
-,,,,,,,
+"Without hesitations, you stepped out off the hell,
+leaving the poor soul now the lord, behind.
+
+You didn’t know get to know who he was, 
+what’s his name,
+his life,
+etc. etc. Etc.
+
+But one thing for sure:
+The lord made it easy to get you gamers out,
+Despite himself can’t at all.
+
+A real sacrificial nobleness, even by death, and no regret.",EXITFREELD,,"Tanpa basa-basi, Andapun keluar dari neraka,
+meninggalkan jiwa malang itu sekarang pemilik, dibelakang.
+
+Anda bahkan tidak mengetahui siapa itu dia,
+namanya, 
+kehidupannya, 
+dan sebagainya.
+
+Tapi satu hal yang pasti:
+Pemilik itu sengaja buat kalian para gamers keluar dengan mudanya,
+Walaupun ia sendiri tidak bisa sama sekali.
+
+Benar2 pengorbanan sangat mulia, bahkan lewat dari kematian, tanpa penyesalan",,,,
 ,,,,,,,
 ,,DIALOG,,,,,
 Welcome home,WELCOMEHOME,Greeting sensor,Selamat datang kembali,,,,
@@ -279,6 +326,134 @@ I need healing!,CHOICE_NEEDHEAL,,Saya butuh healing!,,,,
 I need Energy / Berserk!,CHOICE_NEEDBERSERK,,Saya butuh Energi / Berserk!,,,,
 I need all powerups!,CHOICE_NEEDPOWERUP,,Saya butuh semua powerup!,,,,
 ,RESPONSE_NEEDALL,,,,,,
+(Explain situations),CHOICE_EXPLAIN,generic choice to answer explain full story of what happened.,(Jelaskan situasi),,,,
+Yup,CHOICE_YUP,,,,,,
+Nope,CHOICE_NOPE,,Nggak,,,,
+Wait what?!,CHOICE_WAITWHAT,,Hah apa?!,,,,
+Uhm...,CHOICE_UHM,,Ehm...,,,,
+...,CHOICE_DOTS,,,,,,
+Okay,CHOICE_OKAY,,Oke,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+"Hello! Welcome to the hell!
+Oh, don’t worry about the zombies. I own this place now.
+Come, right this way.",FLD_WELCOME,,"Halo! Selamat datang di neraka!
+Oh, jangan khawatir dgn zombie2 itu. Ini tempatku sekarang.
+Silahkan, lewat sini.",,,,
+"So tell me.
+How did you ended up in here?",FLD_HOWDIDHELL,,"Jadi gimana.
+Kok kamu bisa disini?",,,,
+"Ah, I see..",FLD_RECEIVEDSITUATIONS,,"Oh, begitu..",,,,
+"Well, I dislike hiding my own situations just because for time,
+so I’m gonna tell you now:
+I took my former leader’s place. Don’t worry, my relationship with leader good..
+Yeah uh.. He’s doing Robin Hood, for the people.
+Of course, those... people upsets, including the demon whose been friend with.
+So I helped my leader one last time.
+My first & last sacrifice. Separated from my leader forever haha!... ha..",FLD_EXPLAINSELF,,"Ya, gw sih gk mau nyembunyiin gw kenapa cuman buat saatnya,
+Jadi gw mau kasih tahu lu skrng:
+Gw menggantikan tempat bos gw yg seharusnya. Gpp, hubungan gw ama bos baik kok.
+Jadi uh.. ia telah melakukan sebuah Si Pitung, buat rakyat.
+Tentu saja, orang.... itu kesel, termasuk iblis itu yg udah lama bersengkokol dgn mrk.
+Jadi saya ambil cara buat bantu si bos ini sekali lagi.
+Pengorbanan pertama & terakhirku. Terpisah dari bos gw selamanya haha!.... ha..",,,,
+"You can say that it’s similar.
+Only... a larger scale, & more political.",FLD_EXPLAINCONTINUE,,"Bisa dibilang sih mirip.
+Hanya saja... berskala besar, & lebih politik.",,,,
+"I trust you could read my full mind,
+I know you’re from DNB right?
+Hence have Dasandimian power of such.",FLD_READMIND,,"Sepertinya, harusnya kau bisa baca pikiran full gw,
+Dari DNB kan?
+Mestinya punya kekuatan Dasandimian itu.",,,,
+"Uh anyway..,
+I have something to show you.
+Right this way.",FLD_ANYWAYS,,"Eh anyway..,
+Gw ada sesuatu yg lu musti lihat.
+Lewat sini.",,,,
+"Don’t worry about these zombies.
+I froze them up & turned them to shooting dummy.
+You know, for training. Coz they come up often.
+& they’re always aggresive.",FLD_POOLZOMBIES,,"Jangan khawatir dengan zombie2 itu.
+Aku sudah membekukan mereka & menjadikannya
+dummy lapangan tembak.
+Ya, buat latihan. Krn mereka terus datang,
+& mereka selalu agresif",,,,
+"So, about the DOOM.
+You know, you could’ve just buy the used discs from pawn shop right?
+Nah, bullshit, ikr? Scalpers like to profit off of the dead horse you see?",FLD_FREELOADING,,"Jadi, soal DOOM.
+Lu bisa aja sih, beli bekasnya dari pasar loak ya kan?
+Alah, hoaks tuh, iya gk sih? Para penimbun memang suka nyari profit
+dari mayat busuk sekalipun ya dong?",,,,
+"Right, here it is.
+Here’s the Yellow Key. Go ahead, pick this up,
+& try open that door.",FLD_ARRIVETELE,,"Okeh, disini.
+Ini Kunci Kuning. Silahkan diambil,
+& coba buka pintu itu.",,,,
+"I knew that worked!
+I did that too!!
+Once this tube opens, and yeah.",FLD_ENTEREXCLUSIVE,,"Tuh kan bisa!
+Gw udah coba yg sama!!
+Pernah sekali tabung ini kebuka, dan yah!",,,,
+"GO!, Get out from here!
+I don’t want to see you suffer!
+Get a new life! While you still allowed to!
+
+I can only stay tho, But hence so I’ll guard this place.
+Pray for me, so Jesus picks me up when He comes back!
+
+Quick! Tomorrow new mortals coming!
+Who knows they’re another freeloader which are more aggressive than before.
+
+It’s okay! I’ll hold them off until He’s back! I swear, can’t walk into the tube!",FLD_GETOUT,,"CEPAT!, Keluar dari sini!
+Gw gk mau lu menderita!
+Ambil kehidupan baru! Selama lu masih boleh!
+
+Aku ngestuck disini sih, Tapi bakal kujaga tempat ini.
+Doakan gw, biar Yesus ambil gw pas Dia balik!
+
+Cepat! Besok orang mati baru akan datang!
+Siapa tahu mereka pembajak yg lain yg lebih agresif dari sblmnya.
+
+Gpp! Gw tahan mereka sampai Ia balik! Gw beneran, gk bisa masuk tabung itu!",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -310,6 +485,31 @@ Bentar, ini.. bukan bagian planning...
 Jgn khawatir, ownernya suka ngubah rumah ini mendadak.
 Jadi, harusnya kamu bisa langsung sih.",,,,
 OOOOOOOOOOOOOOOOOH!!!!! SH8888888!!!!!,REDCARPET_TERRYWAD,,OOOOOOOOOOOOOOOOOOH!!! ANJ8888888!!!,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,NAME DIALOG,,,,,
+DaNeBeau,NAME_DANEBEAU,,,,,,
+Freeloader lord,NAME_FLD,,Master Freeloader,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,ENTERED DIALOG,,,,,
 "Okay, so..
 Just walk these red carpets. The owner kept forgeting

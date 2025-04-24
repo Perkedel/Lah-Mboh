@@ -155,6 +155,15 @@ clusterdef 330
 	//flat = "FLAT5_4"
 }
 
+clusterdef 510
+{
+	// Random Short Level Freeloader
+	EnterText= lookup, "ENTERFREELD"
+	ExitText = lookup, "EXITFREELD"	
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+}
+
 clusterdef 25200
 {
 	// Choral Bae test
@@ -682,6 +691,16 @@ Map JUSTFITE lookup "JUSTFITE"
 	sky1 = "SKY1"
 	BaronSpecial
 	SpecialAction_OpenDoor
+	exitPic = "LMBHTIHD"
+}
+
+Map FREELD lookup "FREELD"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "PSTSKY3"
+	cluster = 510
+	music = "D_ADRIAN"
 	exitPic = "LMBHTIHD"
 }
 
