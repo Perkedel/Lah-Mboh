@@ -168,3 +168,4 @@ For the thing we've yoinked
 - [Persona Creep Sky](https://www.doomworld.com/forum/post/2909407). TheSuperdave938. ???.
 - [Post Your Doom Textures Curated Collection](https://www.doomworld.com/forum/topic/145782-pyddtex-pydt-compilation-and-restoration-retrieval/). Collected by JustAthel. ???. The [Post Your Doom Texture Thread](https://www.doomworld.com/forum/topic/90900-post-your-doom-textures/) Attempted recollections. **PLS YOINK SOME!!**
 - [Skybox Sharing with the community]https://www.doomworld.com/forum/topic/93446-skybox-for-sharing-with-the-community/). Eradrop. ???. Skyboxes even more!!!
+- [Bury my heart knee deep](https://www.doomworld.com/idgames/levels/doom2/j-l/kneedeep). scwiba / PixelScuba. NO EDIT NO REUSE, YES REUPLOAD. The secret barrier is actually walls of barrel. Fire rocket to the wall where its shockwave hits those barrel.

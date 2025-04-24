@@ -245,3 +245,13 @@ decal TalentHouseParkingFee 4013
 	X-Scale 0.1
 	Y-Scale 0.1
 }
+
+decal Wahaw 4014
+{
+	// Eevee text generated
+	// https://github.com/eevee/doom-text-generator
+	pic Wahaw
+	// pic in small
+	X-Scale 0.25
+	Y-Scale 0.25
+}
