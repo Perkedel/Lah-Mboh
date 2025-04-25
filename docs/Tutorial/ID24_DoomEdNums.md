@@ -32,7 +32,8 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
 > [!TIP]
 > Gez: If you don't like negative numbers, you can use positive values instead. This is because the same value can interpreted as a signed or an unsigned integer. The hexadecimal representation is the same anyway, as hex values do not have signs. Here's the big ol' table.
 
-| Thing |Negval | Hexval | Posval |
+| Thing | Negval | Hexval | Posval |
+| - | - | - | - |
 | Ghoul | -28672 | 9000 | 36864 |
 | Banshee | -28671 | 9001 | 36865 |
 | Mindweaver | -28670 | 9002 | 36866 |
