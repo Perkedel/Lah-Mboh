@@ -67,6 +67,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("FREELD",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-TELEFAST"){
+			console.printf("GO to Telefast demo");
+			Level.ChangeLevel("TELEFAST",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -97,7 +102,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 104;
+		double daHeight = 200;
 		// Add a background.
         background = LMBH_ZF_Image.Create
         (
@@ -117,11 +122,11 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         let boxTexture = LMBH_ZF_BoxTextures.CreateTexturePixels
         (
             // The texture itself.
-            "graphics/ZFormsExamples/BoxTexture.png",
+            "graphics/Box8x8.png",
             // The top-left corner of the middle of the box.
-            (32, 32),
+            (2, 2),
             // The bottom-right corner of the middle of the box.
-            (64, 64),
+            (6, 6),
             // Whether to scale (true) or tile (false) the sides.
             false,
             // Whether to scale (true) or tile (false) the middle.
@@ -131,7 +136,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
         	(0,32),
-        	(320,200-32),
+        	(320,190-32),
         	8,	
         	daHeight,
         	32,
@@ -153,7 +158,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         // list
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
-        	(320,200),
+        	(320,190),
         	4	
         );
         liste.Pack(scrollactFrame);
@@ -225,6 +230,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: "Freeloader Lord",
         	cmdHandler: handler,
         	command: "L-FREELD"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,72),
+        	(100,16),
+        	text: "Teleport Guy",
+        	cmdHandler: handler,
+        	command: "L-TELEFAST"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

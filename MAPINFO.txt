@@ -704,6 +704,16 @@ Map FREELD lookup "FREELD"
 	exitPic = "LMBHTIHD"
 }
 
+Map TELEFAST lookup "TELEFAST"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SMLCLD01"
+	//cluster = 510
+	music = "D_STLKS2"
+	exitPic = "LMBHTIHD"
+}
+
 map PLMSKY1 lookup "PLMSKY1"
 {
 	author = "plums & JOELwindows7"
