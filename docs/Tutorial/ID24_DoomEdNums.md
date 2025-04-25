@@ -16,12 +16,12 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
  
 ### Monsters
 
-- [Banshee](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Banshee). -28671 (3008 in ID24 Decorate)
-- [Vassago](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Vassago). -28668 (3011 in ID24 Decorate). It's 2 S', not 1 (vasago)!
-- [Mindweaver](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Mindweaver). -28670 (3009 in ID24 Decorate). Looks like Arachnotron, but weaker than Arachnotron & uses Chaingun like Spider Mastermind instead of Plasma gun.
-- [Ghoul](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Ghoul_(Legacy_of_Rust)). -28672 (3007 in ID24 Decorate). Beta Lost Soul and shoots energy pellet instead of fly crash towards you
-- [Shocktrooper](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Shocktrooper). -28669 (3010 in ID24 Decorate). Evil Marine. When killed, its head decaps with interupted huge pain scream.
-- [Tyrant](https://web.archive.org/web/20250407133807/https://doomwiki.org/wiki/Tyrant_(Legacy_of_Rust)). -28667, -28666, -28665 (3012 in ID24 Decorate). Cyberdemon before the cybernetics
+- [Banshee](https://doomwiki.org/wiki/Banshee). -28671 (3008 in ID24 Decorate)
+- [Vassago](https://doomwiki.org/wiki/Vassago). -28668 (3011 in ID24 Decorate). It's 2 S', not 1 (vasago)!
+- [Mindweaver](https://doomwiki.org/wiki/Mindweaver). -28670 (3009 in ID24 Decorate). Looks like Arachnotron, but weaker than Arachnotron & uses Chaingun like Spider Mastermind instead of Plasma gun.
+- [Ghoul](https://doomwiki.org/wiki/Ghoul_(Legacy_of_Rust)). -28672 (3007 in ID24 Decorate). Beta Lost Soul and shoots energy pellet instead of fly crash towards you
+- [Shocktrooper](https://doomwiki.org/wiki/Shocktrooper). -28669 (3010 in ID24 Decorate). Evil Marine. When killed, its head decaps with interupted huge pain scream.
+- [Tyrant](https://doomwiki.org/wiki/Tyrant_(Legacy_of_Rust)). -28667, -28666, -28665 (3012 in ID24 Decorate). Cyberdemon before the cybernetics
  
 ### Friendly
 
@@ -103,16 +103,16 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
 - [DOOM I + II](https://web.archive.org/web/20250407133807/https://store.steampowered.com/app/2280/DOOM__DOOM_II/). Legacy of Rust was the newest PWAD that premieres ID24.
 - [Lah-Mboh?](https://web.archive.org/web/20250407133807/https://www.doomworld.com/forum/topic/151743-gzdoom-zscript-id24-lah-mboh-test-map-megawads/). Test ID24 in GZDoom & derivatives (use above ID24 Decorate & id24res.wad).
 - GooberMan's ID24, FD24, & other ID24 topics below
-    - ???
+    - https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/
     - https://web.archive.org/web/20250407133808/https://www.doomworld.com/forum/topic/146943-id24-a-new-feature-set-standard/?do=findComment&comment=2831079
     - https://www.doomworld.com/forum/topic/146943-id24-a-new-feature-set-standard/
     - https://drive.google.com/drive/folders/1Vw5fpmR0bVfFeHZ_xamVvn584xXtXp6M?usp=sharing Spec
-    - https://youtu.be/TCCFdOl_CP0
+    - https://youtu.be/TCCFdOl_CP0 Demo
     
 ## Placements
 
-![Open chosen Thing properties with right click on your selected Thing](/src/screenshots/type_manual_id24.png)
-![Manually type the number you desire according to above table](/src/screenshots/type_manual_id24-2.png)
+![Open chosen Thing properties with right click on your selected Thing](/src/screenshot/type_manual_id24.png)  
+![Manually type the number you desire according to above table](/src/screenshot/type_manual_id24-2.png)  
 
 ## Addendum
 As of now, there is no such format config that supports ID24. You can simply load the necessary PWADs & id24res.wad. Since assuming you used ID24 Decorate, you should see the ID24 monsters there in the list.
