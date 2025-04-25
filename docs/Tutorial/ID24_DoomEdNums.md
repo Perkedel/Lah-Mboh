@@ -96,6 +96,9 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
 | Heatwave Generator  |            -28620 | 9034  |  36916 |
 | Incinerator                |     -28619 | 9035  |  36917 |
 
+> [!TIP]
+> some Things without DoomEdNums does not mean does not exist. It's just has no editor number (like other some DoomEdNumless built-in Things), since they are e.g. a particle what aren't meant to be placed as a init spawn in a map.
+
 ## Extras
 
 - [Obsidian Plauge's ID24 Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Mapper's resource PWAD & Gameplay PWAD to add ID24 monster. Just load the id24res.wad alongside it.
