@@ -104,6 +104,7 @@ DoomEdNums
 	16130 = DNBGold
 	16131 = DNBGoldBar
 	16132 = DNBGoldCat
+	24120 = ExtraTallExplosiveBarrel
 }
 // I'm tired of this bullshit. Just lemme build level already!
 
@@ -183,29 +184,33 @@ clusterdef 25200
 
 Episode MBOHTEST 
 {
-	name = "Lah Mboh?"
-	lookup = "MBOHEP"
+	//name = "Lah Mboh?"
+	//lookup = "MBOHEP"
+	name = "$MBOHEP"
 	PicName = "LMBHEMNU"
 }
 
 Episode MBH01
 {
-	name = "Mboh Adventure"
-	lookup = "MBOHADV"
+	//name = "Mboh Adventure"
+	//lookup = "MBOHADV"
+	name = "$MBOHADV"
 	PicName = "LMBHAMN"
 }
 
 Episode OIIA
 {
-	name = "Tower of Slaugterion"
-	lookup = "OIIATOWER"
+	//name = "Tower of Slaugterion"
+	//lookup = "OIIATOWER"
+	name = "$OIIATOWER"
 	//PicName = "LMBHAMN"
 }
 
 Episode FEATHERDM
 {
-	name = "Legacy of Feathers"
-	lookup = "FEATHEREP"
+	//name = "Legacy of Feathers"
+	//lookup = "FEATHEREP"
+	name = "$FEATHEREP"
 }
 
 

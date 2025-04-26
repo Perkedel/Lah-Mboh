@@ -5,6 +5,7 @@ version "4.10"
 // stuffs
 #include "scripts/Gifter.txt"
 #include "scripts/MbohCoins.txt"
+#include "scripts/WeirdThings.txt"
 
 // crashes
 #include "scripts/uncaught_werror.txt"

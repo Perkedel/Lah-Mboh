@@ -1,0 +1,5 @@
+// C'mon key config! more like.. custom classes..
+// JOELwindows7
+
+// Tyler-J player config
+addplayerclass TylerConfigPlayer

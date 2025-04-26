@@ -3,6 +3,9 @@
 // I'm afraid that won't work in DECORATE I think.
 // (JOELwindows7)
 
+// Includes
+#INCLUDE "scripts/decorate/Shootist.txt"
+
 // Doom Tree using Jval's tree Generator
 // https://www.doomworld.com/forum/topic/119954-doomtree-procedural-generated-tree-sprites-voxels/
 // https://github.com/jval1972/DOOMTREE
@@ -46,6 +49,131 @@ ACTOR DEFC1 19560
 	}
 }
 // End Default Cube
+
+// ZDoom Random Stuffs
+// A_SetRoll example
+// https://zdoom.org/wiki/A_SetRoll
+ACTOR RotatedThing 23120
+{
+	//$Category Decoration
+	//$Title Rotated Thing Roll Example
+  	Radius 32
+  	Height 64
+  	+NOGRAVITY
+  	+ROLLSPRITE
+  	+ROLLCENTER
+  	States
+  	{
+  		Spawn:
+    		//FBTE A -1 NoDelay A_SetRoll(random(0, 359))
+    		DWAS A -1 NoDelay A_SetRoll(random(0, 359))
+    		Stop
+  	}
+}
+
+// Actor Special Trick
+// https://zdoom.org/wiki/Using_Action_Special_tricks
+Actor HTC2SectorLightControllerSlow
+{
+ 	var int user_size;
+	var int user_max;
+	var int user_sectors[3];
+	var int user_colorprog;
+	+NOINTERACTION
+	RenderStyle None
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserArray("user_sectors",0,1311)
+		TNT1 A 0 A_SetUserArray("user_sectors",1,1312)
+		TNT1 A 0 A_SetUserArray("user_sectors",2,1313)
+		TNT1 A 0 A_SetUserVar("user_max",3)
+		TNT1 A 0 A_SetUserVar("user_size",0)
+		TNT1 A 0 A_SetUserVar("user_colorprog",1)
+	Lighting1:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],255,0,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting2:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,64,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting3:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,128,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting4:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,192,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting5:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,255,0)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting6:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,192,64)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting7:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,128,128)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting8:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,64,192)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting9:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,0,255)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting10:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,0,192)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting11:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,0,128)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	Lighting12:
+		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,0,64)
+		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
+		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
+		Loop
+	NextCycle:
+		TNT1 A 5 A_SetUserVar("user_size",0)
+		TNT1 A 0 A_SetUserVar("user_colorprog",user_colorprog+1)
+		TNT1 A 0 A_JumpIf(user_colorprog>=13,"NC2")
+	NextCycleCont:
+		TNT1 A 0 A_JumpIf(user_colorprog==1,"Lighting1")
+		TNT1 A 0 A_JumpIf(user_colorprog==2,"Lighting2")
+		TNT1 A 0 A_JumpIf(user_colorprog==3,"Lighting3")
+		TNT1 A 0 A_JumpIf(user_colorprog==4,"Lighting4")
+		TNT1 A 0 A_JumpIf(user_colorprog==5,"Lighting5")
+		TNT1 A 0 A_JumpIf(user_colorprog==6,"Lighting6")
+		TNT1 A 0 A_JumpIf(user_colorprog==7,"Lighting7")
+		TNT1 A 0 A_JumpIf(user_colorprog==8,"Lighting8")
+		TNT1 A 0 A_JumpIf(user_colorprog==9,"Lighting9")
+		TNT1 A 0 A_JumpIf(user_colorprog==10,"Lighting10")
+		TNT1 A 0 A_JumpIf(user_colorprog==11,"Lighting11")
+		TNT1 A 0 A_JumpIf(user_colorprog==12,"Lighting12")
+	NC2:
+		TNT1 A 0 A_SetUserVar("user_colorprog",1)
+		Goto NextCycleCont
+	}
+}
+// End ZDoom Random Stuffs
 
 
 // TDRR's STUFFS!

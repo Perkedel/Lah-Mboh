@@ -31,6 +31,7 @@ $random menu/quit2 { vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swi
 
 // Chubzdoomer
 JUMPPAD   JUMPPAD
+// End Chubzdoomer
 
 // TDRR
 BlueFlagDropped bludrop
@@ -41,3 +42,35 @@ RedFlagDropped reddrop
 RedFlagReturn redretu
 RedFlagTaken redtake
 RedScores redscor
+// End TDRR
+
+// TylerJ
+CLTFIRE    CLTFIRE
+CLTRLOD     CLTRLOD
+CLTMPTY      CLTMPTY
+
+AKfr    Akfr
+AKRELOAD AKRELOAD
+AKRELOAD2   AKRELOAD2
+AKCLIP  AKCLIP
+AKEmpty   AKEmpty
+
+RKTZFIRE  RKTZFIRE
+rktzxpl  rktzxpl
+RktzRld   RktzRld
+
+
+         // Shell Sounds //
+
+$random SHLCLT  { SHLCLT1 SHLCLT2 SHLCLT3 } 
+$limit  SHLCLT  5
+SHLCLT1	SHLCLT1
+SHLCLT2	SHLCLT2
+SHLCLT3	SHLCLT3
+
+$random weapons/akcasing  { weapons/akcasing1 weapons/akcasing2 weapons/akcasing3 } 
+$limit weapons/akcasing  5
+weapons/akcasing1	akcasin1
+weapons/akcasing2	akcasin2
+weapons/akcasing3	akcasin3
+// End TylerJ

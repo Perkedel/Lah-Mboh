@@ -332,6 +332,12 @@ function void scan_character (void)
 	// Main Player (Unnamed either intentionally or unintentional)
 	else if(CheckActorClass(PlayerNumber(),"MainPlayer")) {label_player = "UNTITLED";extra_talk="Wait, what? yeah,, what's your name??..\nargh!";}
 	
+	// Tyler-J
+	/*
+	Weapon Templates https://www.doomworld.com/forum/topic/129542-modern-shootist-weapon-template/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"TylerConflictPlayer")) {label_player = "Tyler-J";extra_talk="";}
+	
 	// Alt name & misc too generic names
 	else if(CheckActorClass(PlayerNumber(),"Doomguy")) {label_player = "Doomguy";extra_talk="";}
 	else if(CheckActorClass(PlayerNumber(),"DoomguyAncestor")) {label_player = "Dadguy";extra_talk="";}

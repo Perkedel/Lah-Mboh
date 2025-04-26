@@ -1,0 +1,13 @@
+// Extra Weird stuffs
+
+class ExtraTallExplosiveBarrel : ExplosiveBarrel
+{
+	Default
+	{
+		//$Category "Obstacles"
+		//$Title "Extra Tall Collider Barrel"
+		Height 2048; // but regular guns can shoot it!
+		ProjectilePassHeight 10; // that works, but how about the hitscan bullets? guns can still hit it..
+		//MaxStepHeight 2048; // Nope, this means long leg
+	}
+}
