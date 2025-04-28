@@ -72,6 +72,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("TELEFAST",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-DONUTER"){
+			console.printf("GO to Floor Donut demo");
+			Level.ChangeLevel("DONUTER",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -102,7 +107,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 200;
+		double daHeight = 256;
 		// Add a background.
         background = LMBH_ZF_Image.Create
         (
@@ -158,7 +163,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         // list
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
-        	(320,190),
+        	(320,daHeight),
         	4	
         );
         liste.Pack(scrollactFrame);
@@ -240,6 +245,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: "Teleport Guy",
         	cmdHandler: handler,
         	command: "L-TELEFAST"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+         elem = LMBH_ZF_Button.create(
+        	(8,72),
+        	(100,24),
+        	text: "Floor Donut Demo",
+        	cmdHandler: handler,
+        	command: "L-DONUTER"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

@@ -77,7 +77,11 @@ You just thrown into a hell, because you sparsdated DOOM & share all of them,
 even Bethesda has long discontinued DOOM I + II in every digital stores.",Master Freeloader,,,,
 Teleport Guy,TELEFAST,Test fast teleport thing,Si Teleporter,,,,
 Different World,DIFFWRLD,Test change dimension emulation,Dunia berbeda,,,,
-,,,,,,,
+Floor Donut,DONUTER,"To do donut, make a pilar & acid pool surrounding it.
+The Pillar linedefs must face towards the pool, & the pool linedefs in total faces towards the pool.
+Tag this pillar sector, make switch that runs Floor Donut action, where tag point to this pillar.
+Adjust speed for pool & pillar respectively.
+It is recommended, the pillar sector flat is as same as the main floor.",Palang Asam,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

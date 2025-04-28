@@ -787,6 +787,17 @@ map CHORALBE lookup "CHORALBE"
 	exitPic = "LMBHTIHD"
 }
 
+map DONUTER lookup "DONUTER"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+// Damages
+
 DamageType LatexGoo
 {
 	// https://zdoom.org/wiki/MAPINFO/Damage_type_definition
