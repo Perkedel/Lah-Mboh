@@ -137,6 +137,8 @@ Here is a list of playtesters you can take contact : [Austinado's Playtesters Co
 > **Genres don't like**: Slaughter
 > **Preferred souce ports**: GZDoom (& Derivatives), DSDA (for down to vanilla compatibilty & strict quirks that fail on GZDoom)
 > **Refused source ports**: all others
+> **Prefered IWAD if it's a PWAD**: Freedoom Phase 2 (DOOM II & Final DOOM replacement coverages)
+> **Refused IWAD**: -
 > **Demos or written comments**: both
 > **Contact (Personal forum thread/ Private message)**: I'm sorry, I don't have any I can share publicly. But just guess it by trying to query my username on your *favourite* popular POC chat app.
 > **Notes**: Here:
@@ -144,9 +146,12 @@ Here is a list of playtesters you can take contact : [Austinado's Playtesters Co
 > Rules:
 > - Use persistent public website! If not, your files will be yoinked on sight, no exception.
 > - No Closed beta! If you insist, give me permission to reupload that file for everyone therefore to try. If you afraid, then finish it up and make it publicly available.
+> - this PWAD must costs $0. Currently refuse if PWAD is above $0.
 > - No slaughter! I'll use cheats if you do that, unless you gave long time Invulnerability script or something that makes it look easy for all casuals. Or if there has to be, make that optional and escapable with all those demons & Completer Items marked No Completition.
 > - Yes Jokewad! I need entertainment. Days rougher every second!
 > - NO Terrywad! No screamer allowed! (You'll break my customers ears) If you have to, only rely on Icon of Sin like in End Death & end of E1 episode. & if you really must have terrywad, make the death End Level or whatever fun to watch.
+> - Even though I already purchased DOOM I + II, I still use Freedoom IWAD. It's okay if you wish me to use those original IWADs instead (e.g. due to arts that explicitly derives original DOOM). But you are not allowed to make macros that prevent Doomers from playing your mod if say they are on Freedoom, not DOOM (That's corpo level of greed DRM practices!).
+> - NSFW allowed. e.g., Duke Nukem like H stuffs
 
 ### Advice n°8 : Make sure you know the difference between a "training map" and a real map that deserves to be released
 
@@ -171,7 +176,8 @@ With this in mind, I recommend not to start with something too ambitious for our
 > [!NOTE]
 > Again, DO NOT & NEVER force yourself to be impressive the first try!! 
 > You always have alot of stuffs to do than just start dedicating yourself into a rabbithole.  
-> I've learned this the hard way, that, to solve a problem in a rabbit hole, requires that another esoteric methods to solve, that probably is beyond your knowledges & capabilities.
+> I've learned this the hard way, that, to solve a problem in a rabbit hole, requires that another esoteric methods to solve, that probably is beyond your knowledges & capabilities.  
+> As a result, it is very terrible, & unlikable, heck may get you banned (if they're not DNB POC guaranteed & hence super toxic).
 
 ### Advice n°10 : Do not copy and paste parts of maps made by another author
 
@@ -197,6 +203,9 @@ You should imitate the mappers you like.
 > another e.g., we also ripped offs DOOM I E1M2, into Water Processing cave in level 2 of this Mboh Adventure.
 >
 > & to make it fair, we also ripped off Freedoom Phase 2 Quadrant Key level (MAP04) in level Travelexer.
+>
+> Now, unless for testing purpose, overall, you should avoid outright copy pasting someone else's map regardless if it's `Authors MAY use the contents of this file as a base for..`.  
+> The key for this one is: *Just be creative Even tho I'm succ, so I may remake & immitate other parts of whom I know*.
 
 ### Advice n°11 : Understand that you are exposed to criticism, and be prepared for it
 
