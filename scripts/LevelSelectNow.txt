@@ -185,7 +185,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,16),
         	(96,32),
-        	text: "(MEGAWAD) Mboh Adventure",
+        	text: String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV")),
         	cmdHandler: handler,
         	command: "L-MBHADV"
         );
@@ -195,7 +195,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,24),
         	(96,16),
-        	text: "Just Fight!",
+        	text: StringTable.Localize("$JUSTFITE"),
         	cmdHandler: handler,
         	command: "L-JUSTFITE"
         );
@@ -205,7 +205,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,32),
         	(100,16),
-        	text: "Front of you",
+        	text: StringTable.Localize("$RIGHTFRN"),
         	cmdHandler: handler,
         	command: "L-RIGHTFRN"
         );
@@ -215,7 +215,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,40),
         	(100,16),
-        	text: "Plums' Skies",
+        	text: StringTable.Localize("$PLMSKY1"),
         	cmdHandler: handler,
         	command: "L-PLMSKY1"
         );
@@ -225,7 +225,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,48),
         	(100,16),
-        	text: "Mech's Skies",
+        	text: StringTable.Localize("$MECHSKY1"),
         	cmdHandler: handler,
         	command: "L-MECHSKY1"
         );
@@ -235,7 +235,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,56),
         	(100,16),
-        	text: "Choral Bae",
+        	text: StringTable.Localize("$CHORALBE"),
         	cmdHandler: handler,
         	command: "L-CHORALBE"
         );
@@ -245,7 +245,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,64),
         	(100,16),
-        	text: "Freeloader Lord",
+        	text: StringTable.Localize("$FREELD"),
         	cmdHandler: handler,
         	command: "L-FREELD"
         );
@@ -255,7 +255,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,72),
         	(100,16),
-        	text: "Teleport Guy",
+        	text: StringTable.Localize("$TELEFAST"),
         	cmdHandler: handler,
         	command: "L-TELEFAST"
         );
@@ -265,7 +265,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,72),
         	(100,24),
-        	text: "Floor Donut Demo",
+        	text: StringTable.Localize("$DONUTER"),
         	cmdHandler: handler,
         	command: "L-DONUTER"
         );
@@ -275,7 +275,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem = LMBH_ZF_Button.create(
         	(8,80),
         	(100,32),
-        	text: "Sector Portal Test",
+        	text: StringTable.Localize("$PORTALA"),
         	cmdHandler: handler,
         	command: "L-PORTALA"
         );
