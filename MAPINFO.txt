@@ -311,7 +311,7 @@ Map MBH06 lookup "MBH06"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
-	enterPic = "LMBHTRAV"
+	enterPic = "LMBHREST"
 }
 
 Map MBH07 lookup "MBH07"
@@ -339,7 +339,7 @@ Map MBH08 lookup "MBH08"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
-	enterPic = "LMBHTRAV"
+	enterPic = "LMBHWORS"
 }
 
 Map MBH09 lookup "MBH09"
@@ -355,7 +355,7 @@ Map MBH09 lookup "MBH09"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
-	enterPic = "LMBHTRAV"
+	enterPic = "LMBHPFAC"
 }
 
 Map MBH10 lookup "MBH10"
@@ -369,7 +369,7 @@ Map MBH10 lookup "MBH10"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
-	enterPic = "LMBHTRAV"
+	enterPic = "LMBHCGU2"
 }
 
 Map MBH11 lookup "MBH11"
@@ -481,7 +481,7 @@ Map MBH18 lookup "MBH18"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_BURNBO"
-	enterPic = "LMBHDARK"
+	enterPic = "LMBHEFLY"
 }
 
 Map MBH19 lookup "MBH19"
@@ -497,7 +497,7 @@ Map MBH19 lookup "MBH19"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_BURNBO"
-	enterPic = "LMBHDARK"
+	enterPic = "LMBCYAS"
 }
 
 Map MBH20 lookup "MBH20"
@@ -525,7 +525,7 @@ Map MBH21 lookup "MBH21"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_DM2INT"
-	enterPic = "LMBHDARK"
+	enterPic = "LMBHCARP"
 }
 
 Map MBH22 lookup "MBH22"
@@ -595,7 +595,7 @@ Map MBH26 lookup "MBH26"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_DM2INT"
-	enterPic = "LMBHTRR2"
+	enterPic = "LMBHRTFM"
 }
 
 Map MBH27 lookup "MBH27"
@@ -623,7 +623,7 @@ Map MBH28 lookup "MBH28"
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_DM2INT"
-	enterPic = "LMBHTRR2"
+	enterPic = "LMBH"
 }
 
 Map MBH29 lookup "MBH29"
@@ -802,6 +802,31 @@ map PORTALA lookup "PORTALA"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map TOTITLE lookup "TOTITLE"
+{
+	author = "JOELwindows7"
+	//next = EndPic, "LMBHTIHD"
+	next = "EndTitle"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map TOTITLE2 lookup "TOTITLE2"
+{
+	author = "JOELwindows7"
+	//next = EndPic, "LMBHTIHD"
+	//next = "EndTitle"
+	next = endgame
+		{
+			hscroll = "LMBHENDR"	, "LMBHENDL"
+			music = "D_IMPACTE", 0 // the music, then loop bool. I think 0 means false.
+		}
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"

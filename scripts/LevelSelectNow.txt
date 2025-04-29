@@ -82,6 +82,14 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("PORTALA",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-TOTITLE"){
+			Level.ChangeLevel("TOTITLE",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
+		else if(command == "L-TOTITLE2"){
+			Level.ChangeLevel("TOTITLE2",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -112,7 +120,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 256;
+		double daHeight = 256+128;
 		// Add a background.
         background = LMBH_ZF_Image.Create
         (
@@ -265,11 +273,31 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         elem.Pack(liste);
         
         elem = LMBH_ZF_Button.create(
-        	(8,72),
+        	(8,80),
         	(100,32),
         	text: "Sector Portal Test",
         	cmdHandler: handler,
         	command: "L-PORTALA"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,88),
+        	(100,32),
+        	text: StringTable.Localize("$TOTITLE"),
+        	cmdHandler: handler,
+        	command: "L-TOTITLE"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,96),
+        	(100,32),
+        	text: StringTable.Localize("$TOTITLE2"),
+        	cmdHandler: handler,
+        	command: "L-TOTITLE2"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

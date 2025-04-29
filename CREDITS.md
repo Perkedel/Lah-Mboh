@@ -129,6 +129,7 @@ For the thing we've yoinked
 	- `D_E2M8` = `D_TREDIS`. Korp - Treble Dissension
 	- `D_E3M8` = `D_ZENITH`. Lola "BlueWorrior" Harvey - The Zenith
 	- `D_E4M1` = `D_LIBSTAR`. continuum.mid - Liberate the Stars
+	- `D_E4M2` = `D_FITEHRD`. Proxy-MIDI - Fight Harder... To Obtain A Better Victory!
 	- `D_E4M5` = `D_MCODE`. Korp - Main Code
 	- `D_E4M7` = `D_AMBIGU`. Korp - Ambiguity
 	- `D_E4M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
