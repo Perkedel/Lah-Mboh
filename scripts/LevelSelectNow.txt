@@ -77,6 +77,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("DONUTER",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-PORTALA"){
+			console.printf("GO to Portal Sector demo");
+			Level.ChangeLevel("PORTALA",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -249,12 +254,22 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
         
-         elem = LMBH_ZF_Button.create(
+        elem = LMBH_ZF_Button.create(
         	(8,72),
         	(100,24),
         	text: "Floor Donut Demo",
         	cmdHandler: handler,
         	command: "L-DONUTER"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,72),
+        	(100,32),
+        	text: "Sector Portal Test",
+        	cmdHandler: handler,
+        	command: "L-PORTALA"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

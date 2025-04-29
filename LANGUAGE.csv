@@ -82,7 +82,7 @@ The Pillar linedefs must face towards the pool, & the pool linedefs in total fac
 Tag this pillar sector, make switch that runs Floor Donut action, where tag point to this pillar.
 Adjust speed for pool & pillar respectively.
 It is recommended, the pillar sector flat is as same as the main floor.",Palang Asam,,,,
-,,,,,,,
+Portal Sector Test,PORTALA,,Tes Portal Sektor,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -512,8 +512,8 @@ Yippie! Thank you so much!,TL_RESPONSEGOOD,,Yippie! Makasih ya!,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
-,,,,,,,
+WIPEOUT,ZZZ_WIPEOUT,All enemies have died,,,,,
+SIGNAL LOST,ZZZ_SIGNALLOST,All of you died (All Players died),,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -975,3 +975,21 @@ Dan produksi kami selalu tok-cer.
 Untuk Dalam & Luar ruangan, pribadi & proyek franchise,
 Datanglah ke Wakerise Signage.
 Tonton terus untuk lebih lanjut.",,,,
+"There is ZERO shame, for failure making maps
+Vanilla or even atleast MBF21 compatible.
+Bull8888 I’d say: No cool for that GZDoom only
+That’s a lie! Don’t trust ‘em!",NOSHAMEFAILVANILLA,"Some people believe that making mods that only works GZDoom automatically makes you no cool.
+This toxic standard is what pours melted aluminum into the live rabbithole.","Tiada alasan untuk MALU, karena gagal membuat map
+kompatibel dengan Vanilla ataupun seenggaknya MBF21.
+Bohong kata saya: Gak keren karena khusus GZDoom
+Hoaks! Jangan percaya!",,,,
+"It only make sense for replacement IWAD to equivalently
+Formatted the same as the original IWADs.
+Same goes for another XYZ, will be in format XYZ.
+Although to be fair, we’re doing this just for coverage.",VANILLACOMPAT2,"Let the Replacer IWAD follows the same format as the original IWAD.
+If you like to make not-for-merging PWADs, it’s f88888 yours! Do whatever you want.
+After-all, this Demo format (only record inputs) is rather wrong I would say.
+Could’ve been motion like MMD Motions or 3D Model animation graph instead","Hanya masuk akal untuk IWAD pengganti sama2
+Berformat itu juga seperti pada IWAD aslinya.
+Sama juga dengan XYZ lainnya, berformat XYZ.
+Cuman seadilnya, kami melakukannya demi coverage aja sih.",,,,

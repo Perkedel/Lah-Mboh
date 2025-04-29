@@ -67,6 +67,8 @@ gameinfo
 		"$PLAGIAIF",
 		"$BURNCOOKIE",
 		"$TONYLCSIGN",
+		"$NOSHAMEFAILVANILLA",
+		"$VANILLACOMPAT2",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -788,6 +790,15 @@ map CHORALBE lookup "CHORALBE"
 }
 
 map DONUTER lookup "DONUTER"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map PORTALA lookup "PORTALA"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"

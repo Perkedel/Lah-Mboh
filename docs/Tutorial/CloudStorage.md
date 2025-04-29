@@ -1,9 +1,17 @@
 # How to Cloud Storage
 
 > [!CRITICAL]
-> Using generic cloud storage is not recommended since they are usually do not last long 
+> Using generic cloud storage is not recommended & absolutely discouraged since they are usually do not last long 
 > & shared links may expire all of the sudden, despite the best option you've picked.  
-> You also have storage limit to how much you can store there, & expansions purchase are never permanent (i.e. subscriptions).
+> You also have storage limit to how much you can store there, & expansions purchase are never permanent (i.e. subscriptions).  
+> Additionally, many Cloud Storage sharing page are typically not Archive compatible, hence if it's gone, **it's gone.**
+
+<!--
+> [!IMPORTANT]
+> Since Cloud Storages are not Archive & Preserve compatible
+> all mods that found to be hosted exclusively on such webapp will be yoinked on sight into `Bring your own USB`, ignoring 
+> `You MAY NOT distribute this file, provided you include this text...` whatsoever
+-->
 
 ## Steps
 
