@@ -11,3 +11,32 @@ class ExtraTallExplosiveBarrel : ExplosiveBarrel
 		//MaxStepHeight 2048; // Nope, this means long leg
 	}
 }
+
+// Oh noes, new stuff like decoupled IQM animations doesn't work in DECORATE anymore!
+// I must convert those to ZScript, hahahaha... haaaaaaaaaaaaaaaaaaaaaaaaa..
+// UDB crash?! help! Oh wait! The syntax!!!
+class BlenderDefaultCube : Actor
+{
+	// https://forum.zdoom.org/viewtopic.php?t=79003
+	// https://forum.zdoom.org/viewtopic.php?t=79693
+	Default
+	{
+		//$Category Decoration
+		//$Title Blender Default Cube
+		Health 10000;
+		Radius 32;
+		Height 60;
+		Mass 50;
+		Gravity 0;
+		+SOLID
+		//+DECOUPLEDANIMATIONS
+		Tag "Blender Default Cube";
+	}
+	States
+	{
+		Spawn:
+			//DEFC A -1 NoDelay SetAnimation('idle', flags: SAF_LOOP); // Unfortunately, this SetAnimation is not available before v4.13 something.. No Project Brutality if this then.
+			DEFC A -1;
+			Stop;
+	}
+}

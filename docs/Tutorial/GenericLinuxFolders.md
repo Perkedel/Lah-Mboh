@@ -1,0 +1,77 @@
+# Linux Folders Layout in General
+
+Many Linux kernel based Operating Systems would have directory structure that's similar to UNIX itself, with some modification per Distros, and as follows
+
+- `/`. Root folder where everything starts. Regular file down to special virtual file representing somethings
+- `/boot`. Boot folder. Your boot partition are always mounted into this folder. This contains every settings, Secure Boot certs, & barebone apps (such as EFI the UEFI boot file) needed to get your Linux running.
+- `/mnt`. Mount folder. commands that mounts storage or whatever mountable, usually goes to here. each folder represents the drive that mounted. And when unmounted, that sub-directory content will be emptied.
+- `/media`. Same as `/mnt`, but usually found on modern Distros like Ubuntu. first level of sub-directories assigns to your username, then inside the drive you pluged in or mounted yourself somehow. Ubuntu uses this technic by default.
+- `/dev`. Virtual folder representing devices connected on this computer. Unlike Windows or anything CP/M like where drives are lettered `A:`, `B:`, `C:` & so on, in UNIX, derivatives & similar, devices are represented as a virtual file.
+    - The drive & devices are represented in various tickers.
+    - `sda`. SATA drive number `A`, and so on. Harddisk, SATA drive, etc. SATA or USB SATA. This is nowadays very common.
+    - `hda`. Harddisk drive number `A`, and so on. Harddisk or whatever drive connected via legacy such as IDE.
+    - `mmcblk??`. eMMC block such as SD Card
+    - `nvmep0n1`. NVMe drive number `1` on PCIe `0`
+    - `null`. Represents nothing. anything that goes there, goes to nothing, like blackhole. Writing to this results nothing, & always successful. Pulling (`dd`) from it results End Of File immediately. Useful for dry run / test no write
+    - `zero`. Same as `null` but is a source `0x00`. You can pull (`dd`) stuffs from this into some file for certain size, and then it will contains zeros in the hex view. Writing to it is same like `/dev/null`, so for that use that instead. Useful for data initialization, where you pull from it this into something disk drive or an image file.
+    - `random`. Represents Pseudo-random generators. This generates random garbles. Pulling (`dd`) from this into a file results random garbages. Also another file to overwrite something with, to erase sensitive records hopefully beyond recovery. Or maybe just some simple use case of Random.
+    - `full`. Represents disk full emulation. Writing to this always errors disk full. Useful to test disk full errors. Pulling (`dd`) it is like pulling infinite amount of `0x00`s from how infinite it this Doraemon's magic pocket.
+    - `stdin`. A Standard Input from your typing something or whatever input
+    - `stdout. A Standard Output to terminal
+    - `stderr`. A Standard Error to terminal
+- `/home`. Home folder containing system user save datas. Each sub-directory of this are the users added on this computer
+    - `yourusername`. your own username. Shortly, the `/home/yourusername/` of yours can be represented as **`~`** or **`$HOME`**. Many terminal emulators starts at `~`
+        - `Documents`. Your document folder
+        - `Downloads`. Your download folder
+        - `Pictures`. Your picture folder
+        - `Musics`. Your musics folder
+        - `.config`. configuration of application that saves on user account basis. Therfore, each user have different configs. This folder contains sub-directories where each app settings goes.
+        - `someAppSaveFolder`. Sometimes, devs makes the save folder right in  your `~` folder. On Windows port, it's sometimes be at `C:/Users/yourusername/someAppFolder`, or `%APPDATA%/someAppFolder`. The latter is more common.
+        - etc.
+    - `othername`. another user account, & so on
+- `/root`. Home folder for user `root`. This is user is built in & full of administrative privileges. Like usual, anything that happens with this user session, goes inside this special home folder.
+- `/usr`. User related programs
+    - `bin`. Some modern Linux distro, put package manager installed apps here in `/usr/bin`.
+        - `share`. `/usr/bin/share`, contains text & media files shareable across applications. Many Assets be here, such as Themes, sounds, etc etc.
+        - `X11`. This is just a symbolic link / shortcut back to `/usr/bin`.
+    - `sbin`. apps also, but for superuser stuffs. like in `/sbin`, usually on Modern Distros.
+    - `include`. C libraries, headers & stuffs. This is how you can `#include` something to your C & related programming languages.
+    - `lib`. Objects (`.o`, `.so`, etc.). Basically libraries that compiled goes to here. In Windows it's `.dll` on your `C:/Windows/System32` something2.
+    - `lib32`. Same as `/lib` but for 32-bit ones, if your host system is 64 bit.
+- `/bin`. Application binary folder, where your installed app goes, or just an internal distro compiled apps.
+- `/sbin`. Administrator Application binary folder. same as `/bin`, but for superuser stuffs. e.g., Android rootings places those binaries into this folder.
+- `/lib`. Library folder. Kernel modules & various system libraries
+- `/lost+found`. When you run check disk onto this disk, corrupted or lost files that it found, will be placed there.
+- `/etc`. System Settings folder.
+- `/opt`. Optional Apps folder. Some other Linux distros put package manager apps here
+- `/tmp`. Temporary folder. Caches & other temporary stuffs are here. You can engage cleanups once you done. The system itself also do so automatically. However, it's best that you also take action to make it effective.
+- `/var`. Variable / Log folders. Many application puts long text of debug prints here. If you have trouble, you can pick the file spat by the app & send to the devs. Also like `/tmp`, you can safely delete it, I think..
+- `/run`. Runtime data folder. Contains volatile user data
+- `/proc`. Tasks folder. This virtual folder represents the processes that's running.
+    - `cpuinfo`. Represents CPU details
+    - `filesystems`. Represents tasks that's running
+    - `interrupts`. Represents interupts details. Numbers of interrupts per IRQ
+    - `ioports`. Represents IO addresses used by devices on the server
+    - `meminfo`. Represents RAM & stuffs memory details
+    - `modules`. Represents what kernel modules used
+    - `mount`. Represents details about mounted drives
+    - `stat`. Represents detailed statistic of your system.
+    - `swaps`. Represent Swap / Page details
+- `/sys`. ???. Says here *It is a virtual file system for modern Linux distributions to store and allows modification of the devices connected to the system.* according to geeks for geek
+- `/srv`. Server data folder. Contains data relating to serverings.
+- `/version`. Represents Linux kernel version
+- `/snap`. Snap package manager apps. Vanilla Ubuntu always have this. This Snap idea is useless & not open standard, you should go back to regular Debian (`apt`) packaging instead, or maybe use Flatpack.
+- `/swapfile`. Represents swap partition or virtually somehere. In Windows, it's called Paging. This is the betweener of CPU & RAM, to prevent bloating the RAM itself. Files that not needed for now, would be temporarily placed onto critical temporary virtual file of your disk. Refectes when needed again.
+
+## Sauces
+
+- https://www.geeksforgeeks.org/linux-directory-structure/
+- https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
+- https://en.wikipedia.org/wiki//dev/random
+- https://en.wikipedia.org/wiki/Null_device
+- https://en.wikipedia.org/wiki//dev/full
+- https://en.wikipedia.org/wiki/Bit_bucket
+- https://en.wikipedia.org/wiki/Black_hole_(networking)
+- https://en.wikipedia.org/wiki/Unix_philosophy
+- https://en.wikipedia.org/wiki/Standard_streams
+- https://en.wikipedia.org/wiki/Device_file

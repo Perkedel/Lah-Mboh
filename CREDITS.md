@@ -30,6 +30,7 @@ For the thing we've yoinked
 	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`~~](https://community.chocolatey.org/packages/DeflOpt)). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
 - [Doom WAD Descriptive Parameters](https://www.doomworld.com/forum/post/1782450). Jimmy Squared. ???. Template of Parameter to be placed in your forum page about your mods.
 - [Chiptone SFX Generator](https://sfbgames.itch.io/chiptone). SFB Games. **No Source Code**. Generate Chiptune SFX, the spiritual successor to sfxr.
+- [Unicode Doom font Generator](https://forum.zdoom.org/viewtopic.php?t=65818). ErmacMKIII. **GNU GPL v3**. [Source Code](https://github.com/ErmacMKIII/UnicodeDoomFontCreator), Generate Unicode fonts out of fonts installed on your system!
 
 ## Addons
 
@@ -51,8 +52,12 @@ For the thing we've yoinked
 	- [Jump pad](https://www.youtube.com/watch?v=kOtEg917eHM)
 	- [Strife Dialog](https://www.youtube.com/watch?v=MFgGaZPZ5m4)
 - [Tyler-J's Weapons Template](https://www.doomworld.com/forum/topic/129542-modern-shootist-weapon-template/). Tyler-J & URROVA. ???. Template weapons ft. URROVA's fix. **The projectile template is gone, pls remake!**
+- [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
 
 ## Dependencies
+
+> [!NOTE]
+> These are PWADs you must download yourselves manually, which we can't easily include due to size constrain, Updateness, & other reasons.
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **[Available Unconflict Pre-edit](/yoinks/vvpck1.0-mapUnconflict.pk3), Please load this instead! We have edited its testmap namespace so it no longer replaces IWAD's MAP01!**
 - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
@@ -68,12 +73,34 @@ For the thing we've yoinked
 - [ID24 to Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Obsidian Plague. ???. This is Legacy of Rust's Actors ported to ZDoom DECORATE.
 - [id24res.wad](https://store.steampowered.com/app/2280/DOOM__DOOM_II/). id Software. **PROPRIETARY** & **PAID**. In order for the above ID24 to Decorate to work, you must also buy & load this pwad file. Once you purchased & downloaded it, it's in: `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\rerelease\id24res.wad`. [an effort to cover this in Freedoom](https://www.doomworld.com/forum/topic/146968-fd24-free-replacement-for-id24reswad/) is coming soon. Until that's done, **ID24 will not be featured in Mboh Adventure Megawad**.
 - [Ignitable Cauldron](https://www.doomworld.com/forum/topic/149424-interactive-ignitable-fire-cauldron/). Kan3. ???. [YOINKED HERETIC FIRE CAULDRON REALM667](https://www.realm667.com/repository/prop-stop/light-sources/1054-fire-cauldron#preview); [Tutorial Explanation](https://youtu.be/luwc4DCNi0A)
+- [Lewisk3's Ultimate Classic Minimap](https://github.com/Lewisk3/UltimateClassicMinimap). Lewisk3.  **MIT License**. **OPTIONAL RECOMMENDED** Minimap showing what's around you, instead of having to `Tab` & fullscreen map
+- [Damnums](https://forum.zdoom.org/viewtopic.php?t=55048). Xaser. **MIT License**. **OPTIONAL RECOMMENDED** [Source code](https://github.com/XaserAcheron/damnums). Show damage number every hit, like many video games.
+- [Simple HUD Addon](https://forum.zdoom.org/viewtopic.php?t=60356). Tekkish. ???. **OPTIONAL RECOMMENDED** Permanent HUD addition showing extra but useful details of your DOOM experiences.
+	- [Video Demo](https://youtu.be/Nrwv5oar3ro).
+	- [Ammo Info](https://github.com/Tekkish/AmmoInfo). List of Ammos you had and available in the game.
+	- [Crosshair HP](https://github.com/Tekkish/CrosshairHP/releases/latest). How much HP left is that Thing there?
+	- [HitMarker](https://github.com/Tekkish/HitMarkers/). Add MLG crazy CS:GO-like hit mark everytime you gave DMG to a Thing.
+	- [Level Info](https://github.com/Tekkish/LevelInfo/). List how many kills, items collected, & secret you've entered there. As well as powerups in effect & their time remainings
+	- [Player Info](https://github.com/Tekkish/PlayerInfo/releases/latest). Your status, such as HP, Armor, ammo for the weapon you hold right now, & Keys you had.
+	- Want everything all at once? **[There's pre-packaged All-in-one too as well](https://github.com/Tekkish/SimpleHUDAddons/releases/latest)**!
 - [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
 - [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
 - [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/doom-toolbox)
 	- DoomDoctor. Spit debug reports (System Time, Mapname, Skill, etc.) on VM Abort & on demand
 	- Nomina. Automatically tag Things to beautify its class name.
-- [Hellscape Navigator](https://forum.zdoom.org/viewtopic.php?p=1068272&hilit=neon+grid#p1068272). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/hellscape-navigator). Advanced Automap tools to aid navigating complex maps
+	- [Various Others](https://github.com/mmaulwurff/). [Yes](https://mmaulwurff.github.io/pages/toolbox)
+		- [Autosave Save](https://github.com/mmaulwurff/autoautosave). Automatically save your game after triggering certain events. With Console + TTS notification, both can be disabled.
+		- [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Firstly, Must copy paste whole ZScript file, rename the namespaces, & re-add your own namepace of it)!
+		- [Precise Crosshair](https://github.com/mmaulwurff/precise-crosshair). Make crosshair point to where your gun actually points at. Disable the built-in crosshair & use this one instead!
+		- [Mod Menu](https://github.com/mmaulwurff/mod-menu). Wrangles all mod option menus into 1 single collection page for easy & tidy access.
+		- [Target spy](https://github.com/mmaulwurff/target-spy). Add highlight of the enemy HP, classnames, etc. you aimed at. 
+		- [Damage Per Second Widget](https://github.com/mmaulwurff/dps-widget). Graph how many damages you did in one second.
+		- [Laser Sight](https://github.com/mmaulwurff/laser-sight). Laser sight mod!!!
+		- [Graveyard](https://forum.zdoom.org/viewtopic.php?f=43&t=68835). Place graveyard where you die. It's like Mario Maker death `X` marks. [Source Code](https://github.com/mmaulwurff/graveyard)
+		- [Hellscape Navigator](https://forum.zdoom.org/viewtopic.php?p=1068272&hilit=neon+grid#p1068272). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/hellscape-navigator). Advanced Automap tools to aid navigating complex maps
+		- [Sound to Screen](https://github.com/mmaulwurff/sound-to-screen). **IMPORTANT for A11Y HEARING** Sound source mini-popup telling where played sound comes from, like Minecraft. With dangerness colors, & options to enable loudness number.
+- [FlexiHUD](https://www.doomworld.com/forum/topic/142937-flexihud-a-highly-flexible-hud-mod-for-gzdoom-411/). Jekyll Grim. ???. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/jekyllgrim/UniversalFlexibleHUD), Extra HUDs that you can customize crazily, compatible with many IWADs & PWADs out there.
+- [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. Skins for `DoomPlayer` (Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
 
 ## Reuses
 
@@ -112,6 +139,7 @@ For the thing we've yoinked
 	- [CFExpress Logo](https://en.wikipedia.org/wiki/File:CFexpress_logo.svg). Locke Cole. **PUBLIC DOMAIN**.
 - [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**.  [SOURCE CODE](https://github.com/keshikan/DSEG); Display Segment font! 7-segment, 14-segment, weird-segments too!
 - [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans). eifetx. **OFL-1.1**. [SOURCE CODE](https://github.com/eifetx/pixelify-sans); Pixel font sans! Should be perfect for subtitles & many text for Pixelorama
+- [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
 
 ## Sounds
 
@@ -174,3 +202,10 @@ For the thing we've yoinked
 - [Daniel's Simple Weapon Mod](https://www.doomworld.com/forum/topic/143858-daniels-simple-weapons/). Zdexium / DaADHDoomGuy. ???. Simple Weapon stuffs
 - [ZDexium's Common Weapon Mod](https://zdexium.itch.io/zcwm). Zdexium / DaADHDoomGuy. ???. Another one
 - [Joblez Simple Weapon Mod](https://forum.zdoom.org/viewtopic.php?t=75568). Joblez. ???. yea
+- [Toby's Accessibility Mod & Operation MDK](https://forum.zdoom.org/viewtopic.php?t=71349). alando1. ???. ([DW](https://www.doomworld.com/forum/topic/134280-toby-accessibility-mod-doom-for-the-blind-v80-released/)), Mod that adds audio aid for hard of visions & Headless DOOM! Blinds & all headless devices can now play DOOM, helped with audio cue of your surroundings, doors, items, etc.
+	- [Download from Drive](https://drive.google.com/file/d/1Ebf-CG_oRIGkjWLcxMtDs9d4ybYPhruE/view?usp=sharing)
+	- [Audio Manual](https://drive.google.com/file/d/1ZNWdSQ8FYtAaMji4AjziX_gIb0ZhOt11/view?usp=sharing)
+	- [Operation MDK](https://drive.google.com/file/d/1RhDAVQdABXvOAOLrIXyC4fCor2JD-C_l/view?usp=sharing), [Thread](https://www.doomworld.com/forum/topic/140103-operation-mdk-updated-12252024/)
+	- [Documentary: Gaming Through New Eyes](https://youtu.be/P7n9s7yBlGw)
+	- [Spotlight video](https://youtu.be/8oiWLNx2pL0)
+	- [Spotlight Video old](https://youtu.be/wROtoytCC5w)

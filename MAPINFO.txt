@@ -107,6 +107,7 @@ DoomEdNums
 	16131 = DNBGoldBar
 	16132 = DNBGoldCat
 	24120 = ExtraTallExplosiveBarrel
+	19560 = BlenderDefaultCube
 }
 // I'm tired of this bullshit. Just lemme build level already!
 
@@ -827,6 +828,15 @@ map TOTITLE2 lookup "TOTITLE2"
 			hscroll = "LMBHENDR"	, "LMBHENDL"
 			music = "D_IMPACTE", 0 // the music, then loop bool. I think 0 means false.
 		}
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map FONTES lookup "FONTES"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"

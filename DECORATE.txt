@@ -26,11 +26,13 @@ ACTOR ACHU1 19521
   {
   Spawn:
     ACHU A -1
+    Stop
   }
 }
 // End DoomTree	
 
 // Default Cube
+/*
 ACTOR DEFC1 19560
 {
 	//$Category Decoration
@@ -41,13 +43,19 @@ ACTOR DEFC1 19560
 	Mass 50
 	Gravity 0
 	+SOLID
+	//+DECOUPLEDANIMATIONS
 	Tag "Blender Default Cube"
 	States
 	{
+		// https://forum.zdoom.org/viewtopic.php?t=79003
+		// https://forum.zdoom.org/viewtopic.php?t=79693
 		Spawn:
-			DEFC A -1	
+			//DEFC A -1 NoDelay SetAnimation('rotate', flag:SAF_LOOP)
+			DEFC A -1
+			Stop
 	}
 }
+*/
 // End Default Cube
 
 // ZDoom Random Stuffs

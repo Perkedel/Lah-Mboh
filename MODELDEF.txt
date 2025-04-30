@@ -29,7 +29,7 @@ Model ACHU1
     Frame ACHU A 0 0
 }
 
-Model DEFC1
+Model BlenderDefaultCube
 {
     Model 0 "models/DefaultCubeThing.obj"
     Path "models/DefaultCubeThing.obj"
@@ -39,3 +39,17 @@ Model DEFC1
     FrameIndex DEFC A 0 0
     Frame DEFC A 0 0
 }
+
+// New version of cube, requires ZScript Actor!
+// DECORATE is not supported
+/*
+Model BlenderDefaultCube
+{
+    Model 0 "DefaultCube.iqm"
+    Path "models/"
+    Scale 32 32 32
+    Offset 0 0 30
+    
+    BaseFrame
+}
+*/
