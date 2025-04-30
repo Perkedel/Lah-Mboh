@@ -1,7 +1,7 @@
 # How to mostly not lost in Frag Deathmatch & other competitive multiplayer games
 
 Uh... I don't play competitive multiplayer much. So, based on [*How to Mostly Not Die*](/docs/Tutorial/HowToMostlyNotDie.md), 
-Here are few extension tips you can follow
+Here are few extension tips you can follow:
 
 ## Use High Hertz Display!
 

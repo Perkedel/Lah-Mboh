@@ -22,25 +22,25 @@
 
 ### Google Drive
 
-Link = [drive.google.com](https://drive.google.com)
-Shared sample =
+Link = [drive.google.com](https://drive.google.com)  
+Shared sample =  
 
 ### MEGA.nz
 
-Link = [MEGA.nz](https://mega.nz)
-Shared sample =
-Shared Separated sample (**NOT RECOMMENDED**) =
-Separate key sample =
+Link = [MEGA.nz](https://mega.nz)  
+Shared sample =  
+Shared Separated sample (**NOT RECOMMENDED**) =  
+Separate key sample =  
 
 > [!NOTE]
 > MEGA shared link has 2 parts: address & the key (one after the `#`). Ensure these parts are intact when you share, otherwise, ommiting the key will cause client to be asked about the encryption key.
 
 ### MediaFire
 
-Link = [mediafire.com](https://mediafire.com)
-Shared sample =
+Link = [mediafire.com](https://mediafire.com)  
+Shared sample =  
 
 ### Dropbox
 
 Link = [dropbox.com](https://dropbox.com)
-Shared sample =
+Shared sample = 
