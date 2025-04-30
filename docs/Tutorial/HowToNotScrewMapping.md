@@ -46,7 +46,7 @@ However, running out of ammunition and health at critical moments is most of the
 
 As is often said, better too much than not enough.
 
-> ![NOTE]
+> [!NOTE]
 > Repeated moments of resource depletion causes casual Doomers to give up and/or start using cheats!
 > Always test your WAD maps like if you were a noob & optimize that all casual Doomers would have the time & will to finish
 > This one key you must remember is **Resource Guarantee**.
