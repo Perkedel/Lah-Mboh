@@ -59,6 +59,6 @@ As always, every competitive multiplayer games, wants it digital, or real life, 
 
 Accept defeat very well, because this is just a game, you know.., [***why you heff to be maed?***](https://youtu.be/xzpndHtdl9A). [Yeah](https://youtu.be/-Ns14hRqwY8)
 
-So, cheating, even in my personal view, just.. cringe. You don't get anything right? Why cheat? It's somebody houses just so you know. Just don't crash the party, I beg you. Everyone wants to play.
+So, cheating in this competitive context, even in my personal view, just.. cringe. You don't get anything right? Why cheat? It's somebody houses just so you know. Just don't crash the party, I beg you. Everyone wants to play.
 
 Yeah if you succ at it, play something else I guess, maybe fragging isn't your thing? Okay, fine. The world's isn't wide anymore as it used to be, I have ordered my people to rewide it again with many more games. I hope it works.
