@@ -98,8 +98,8 @@ You can pick which ways to upload your level
 - GitHub, GitLab, BitBucket, Codeberg, itch. For Total Conversions, Gameplay Mods, Full Game
 - Steam, itch. for Commercial Full Game
 
-> [!CRITICAL]
-> It is not recommended to publish your stuff solely on Forums with [Cloud Storage]() link or Direct Upload. Such area may not last long & can downtakes anytime.  
+> [!CAUTION]
+> It is not recommended to publish your stuff solely on Forums with [Cloud Storage](CloudStorage.md) link or Direct Upload. Such area may not last long & can downtakes anytime.  
 > At worst (such as unviable to idgames), you should pick long lasting area above such as GitHub, GitLab, BitBucket, or Codeberg. The Forum will be used for marketing.
 
 > [!TIP]
