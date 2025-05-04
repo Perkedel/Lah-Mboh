@@ -144,6 +144,12 @@ For the thing we've yoinked
 ## Sounds
 
 - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
+- Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
+	- Revenant Problem. Extractions into filenames as follows
+		- `DSERGB.opus` (was `DSFLAMST`). Burp after beer
+		- `DSSKSW.opus` (was `DSSSDTH`). Revenant now press the switch instead of you.
+		- `DSTTC.opus` (was `DSSPISIT`). Gman says `It's time to choose.`
+		- `OMFACE.opus` (was `DSSSSIT`). `Oooh!, my faace!!..`
 
 ## Musics
 
@@ -169,6 +175,17 @@ For the thing we've yoinked
 	- `D_EVIL` FreeDM = `D_SYTIME`. Kevin Martins (Velvetic) - The Syntax of Time
 - [Freedoom Attic](https://github.com/freedoom/attic). fraggle et al. **BSD License Clause-3**. Unused Freedoom contents
 	- `?` = `?`. ??? - ???
+- Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
+	- Revenant Problem. Extractions into filenames as follows
+		- `HEROD.mid`. Charles Alexander - Herod's Song
+		- `REVDAN.mid`. ???
+		- `AWDMH.mid`. Around the World DMH Edit. Sequence of ATC
+		- `REVPR4.mid`. ???
+		- `CEWTOU.mid`. Cascada - Everytime we touch. ***Cause everytime we touch...***
+		- `FISHPOL.mid`. Lee Jackson - Fish Polka
+		- `VASTITL.mid`. Vasago - ???. Sauce detected: http://www.student.wau.nl/~olivier/midi/ (GONE)
+		- `REVPRRE.mid`. ???
+		- `REVPINT.mid`. Mark Lovegrove - *Revenant Intermission* (?)
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 	- `D_RUNNIN` = `D_SSLZN`. SEGA - Starlight Zone (Sonic 1)
 - [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that published music under CC0 / Public Domain!

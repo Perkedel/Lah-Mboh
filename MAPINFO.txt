@@ -842,6 +842,17 @@ map FONTES lookup "FONTES"
 	exitPic = "LMBHTIHD"
 }
 
+map MORATE lookup "MORATE"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	music = "HEROD"
+	InterMusic = "REVPINT"
+}
+
 // Damages
 
 DamageType LatexGoo

@@ -74,3 +74,11 @@ weapons/akcasing1	akcasin1
 weapons/akcasing2	akcasin2
 weapons/akcasing3	akcasin3
 // End TylerJ
+
+// Revenant100
+// uhh, there's no music definition? fullpath then?
+morale/welcome DSTTC
+morale/myface OMFACE
+morale/burp DSERGB
+morale/opposite DSSKSW
+// end Revenant100
