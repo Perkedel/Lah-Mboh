@@ -191,6 +191,9 @@ For the thing we've yoinked
 - [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that published music under CC0 / Public Domain!
 	- Kevin Macleod - Study & Relax
 	- Bryan Teoh - Mysterious Lights
+- [GeneralUser Soundfont](https://schristiancollins.com/generaluser.php). S Christian Collins / mrbumpy409. [Yes Commercial Yes Font](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt). [Source Code](https://github.com/mrbumpy409/GeneralUser-GS/), General user soundfont for most GM & GS MIDIs.
+	- `D_HCOLL.mid`. S Christian Collins - The Hybrid Colllage. Onestop of General User, tests the capability of this soundfont
+	- `D_SCTTG.mid`. ??? - Santa Coming to Town.
 - [DairyOrange Fart Reverb](https://youtu.be/hr7GyFM7pX4). DairyOrange. ???. Fart with extra reverb
 - [Fart original](https://youtu.be/5VM0tQ7GDNc). Unknown, used in kmlkmljkl's hamster meme. ???. Fart without reverb. 
 
@@ -226,3 +229,4 @@ For the thing we've yoinked
 	- [Documentary: Gaming Through New Eyes](https://youtu.be/P7n9s7yBlGw)
 	- [Spotlight video](https://youtu.be/8oiWLNx2pL0)
 	- [Spotlight Video old](https://youtu.be/wROtoytCC5w)
+- [GeneralUser Soundfont](https://schristiancollins.com/generaluser.php). S Christian Collins / mrbumpy409. [Yes Commercial Yes Font](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt). [Source Code](https://github.com/mrbumpy409/GeneralUser-GS/), General user soundfont for most GM & GS MIDIs.

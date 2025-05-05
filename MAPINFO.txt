@@ -895,6 +895,15 @@ map DODSAR lookup "DODSAR"
 	cluster = 26211
 }
 
+map T_SCTTG lookup "T_SCTTG"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
 // Damages
 
 DamageType LatexGoo

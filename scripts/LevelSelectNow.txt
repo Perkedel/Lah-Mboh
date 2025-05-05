@@ -98,6 +98,10 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("DODTEL",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-T_SCTTG"){
+			Level.ChangeLevel("T_SCTTG",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -128,7 +132,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 256+128;
+		double daHeight = 256+128+32;
 		// Add a background.
         background = LMBH_ZF_Image.Create
         (
@@ -326,6 +330,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: StringTable.Localize("$DODTEL"),
         	cmdHandler: handler,
         	command: "L-DODTEL"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,120),
+        	(100,32),
+        	text: StringTable.Localize("$T_SCTTG"),
+        	cmdHandler: handler,
+        	command: "L-T_SCTTG"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
