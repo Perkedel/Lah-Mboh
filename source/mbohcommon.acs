@@ -1,0 +1,5 @@
+#library "mbohcommon"
+#include "zcommon.acs"
+
+#libdefine USELESS_NUMBER 1
+// instead of #define

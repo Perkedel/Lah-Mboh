@@ -1,0 +1,88 @@
+// Bring ZZZ Wipeout anywhere you'd like.
+// Remember, use ACS_NamedExecute("PortableWipeout",0,1,0,0);
+// where second number of the name, is your argument between Normal or Secret exit.
+// (JOELwindows7)
+
+#library "PortableWipeout"
+#include "zcommon.acs"
+
+int GlobalPortableWipeout = 0;
+
+script "PortableWipeout" (int toSecret, int startPos, int hideDetail, int length)
+{
+	int setLength = 5.0;
+	int intLength = 5;
+	
+	/*
+	if(length > 0)
+	{
+		setLength = length * 1.0;
+	}
+	*/
+	
+	SetFont("BIGFONT");
+	HudMessage(l:"ZZZ_WIPEOUT";HUDMSG_PLAIN,920,CR_ORANGE,0.5,0.5,setLength);
+	
+	// Level Info
+	if(hideDetail == 0){
+		// Obtain details https://zdoom.org/wiki/GetLevelInfo
+		// Timer https://zdoom.org/wiki/Timer
+		int mKills = GetLevelInfo (LEVELINFO_KILLED_MONSTERS),
+			mKillsTotal = GetLevelInfo (LEVELINFO_TOTAL_MONSTERS),
+			mItems = GetLevelInfo (LEVELINFO_FOUND_ITEMS),
+			mItemsTotal = GetLevelInfo (LEVELINFO_TOTAL_ITEMS),
+			mSecrets = GetLevelInfo  (LEVELINFO_FOUND_SECRETS),
+			mSecretsTotal = GetLevelInfo (LEVELINFO_TOTAL_SECRETS),
+			mTime = Timer() / 35,
+			mParTime = GetLevelInfo (LEVELINFO_PAR_TIME);
+		
+		// GZDoom Internationalization Spreadsheet https://docs.google.com/spreadsheets/d/1pvwXEgytkor9SClCiDn4j5AH7FedyXS-ocCbsuQIXDU/edit?gid=644190417#gid=644190417
+		// Language https://zdoom.org/wiki/LANGUAGE
+		SetFont("UbuntuS");
+		//SetFont("SMALLFONT");
+		HudMessage(l:"TXT_IMKILLS";HUDMSG_PLAIN,930,CR_YELLOW,0.2,0.55,setLength);
+		HudMessage(l:"TXT_IMITEMS";HUDMSG_PLAIN,931,CR_YELLOW,0.2,0.6,setLength);
+		HudMessage(l:"TXT_IMSECRETS";HUDMSG_PLAIN,932,CR_YELLOW,0.2,0.65,setLength);
+		
+		// Count
+		HudMessage(d: mKills;HUDMSG_PLAIN,940,CR_YELLOW,0.6,0.55,setLength);
+		HudMessage(d: mItems;HUDMSG_PLAIN,941,CR_YELLOW,0.6,0.6,setLength);
+		HudMessage(d: mSecrets;HUDMSG_PLAIN,942,CR_YELLOW,0.6,0.65,setLength);
+		
+		// Of
+		HudMessage(s:"/";HUDMSG_PLAIN,950,CR_YELLOW,0.7,0.55,setLength);
+		HudMessage(s:"/";HUDMSG_PLAIN,951,CR_YELLOW,0.7,0.6,setLength);
+		HudMessage(s:"/";HUDMSG_PLAIN,952,CR_YELLOW,0.7,0.65,setLength);
+		
+		// Total
+		HudMessage(d: mKillsTotal;HUDMSG_PLAIN,960,CR_YELLOW,0.8,0.55,setLength);
+		HudMessage(d: mItemsTotal;HUDMSG_PLAIN,961,CR_YELLOW,0.8,0.6,setLength);
+		HudMessage(d: mSecretsTotal;HUDMSG_PLAIN,962,CR_YELLOW,0.8,0.65,setLength);
+		
+		// Time
+		HudMessage(l:"TXT_IMTIME";HUDMSG_PLAIN,970,CR_YELLOW,0.25,0.7,setLength);
+		HudMessage(l:"TXT_IMPAR";HUDMSG_PLAIN,971,CR_YELLOW,0.75,0.7,setLength);
+		HudMessage(d: mTime/60, s:":", d:(mTime%60)/10, d:mTime%10 ;HUDMSG_PLAIN,972,CR_YELLOW,0.25,0.75,setLength);
+		HudMessage(d: mParTime/60, s:":", d:(mParTime%60)/10, d:mParTime%10 ;HUDMSG_PLAIN,973,CR_YELLOW,0.75,0.75,setLength);
+	}
+	
+	FadeTo(255,100,0,0.5,0.2);
+	GlobalPortableWipeout = 1;
+	SetPlayerProperty(1,1,PROP_TOTALLYFROZEN);
+	SetPlayerProperty(1,1,PROP_GODMODE2);
+	Delay (35 * intLength);
+	SetPlayerProperty(1,0,PROP_TOTALLYFROZEN);
+	SetPlayerProperty(1,0,PROP_GODMODE2);
+	GlobalPortableWipeout = 0;
+	switch(toSecret){
+		case 0:
+			Exit_Normal(startPos);
+			break;
+		case 1:
+			Exit_Secret(startPos);
+			break;
+		default:
+			
+			break;
+	}
+}

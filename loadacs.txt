@@ -5,6 +5,8 @@ DummyButtonHit
 GetGift
 GoToLevel
 GiveUsAll
+PortableWipeout
+mbohcommon
 
 // Chubzdoomer
 ChubzJumpPad

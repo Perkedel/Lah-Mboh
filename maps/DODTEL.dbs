@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	PORTALA
+	DODTEL
 	{
 		
 		resources
@@ -18,10 +18,11 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
+				requiredarchives = "";
 			}
 		}
 		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "FIREBLU1";
+		defaultceiltexture = "CEIL1_1";
 		defaulttoptexture = "STARTAN1";
 		defaultwalltexture = "STARTAN1";
 		defaultbottomtexture = "STARTAN1";
@@ -37,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -230.8275f;
-		viewpositiony = 93.38974f;
-		viewscale = 0.8449995f;
+		viewpositionx = 127.9505f;
+		viewpositiony = -229.3279f;
+		viewscale = 1.42805f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -50,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 32;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;

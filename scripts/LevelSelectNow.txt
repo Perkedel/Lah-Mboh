@@ -94,6 +94,10 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("MORATE",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-DODTEL"){
+			Level.ChangeLevel("DODTEL",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -312,6 +316,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: StringTable.Localize("$MORATE"),
         	cmdHandler: handler,
         	command: "L-MORATE"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,112),
+        	(100,32),
+        	text: StringTable.Localize("$DODTEL"),
+        	cmdHandler: handler,
+        	command: "L-DODTEL"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);

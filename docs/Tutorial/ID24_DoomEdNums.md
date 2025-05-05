@@ -25,7 +25,7 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
  
 ### Friendly
 
-- [Helper Dog](https://doomwiki.org/wiki/Helper_dog). 888. (BONUS) MBF21's sample of Friendly Monster AI. This intrestingly is covered by the Source Port itself (since the fact the feature comes from the Marine's Best Friend Source Port itself) rather than the IWADs, as you can see inside the internal PK3 of the e.g. GZDoom (gzdoom.pk3) that has this Thing, including its sprites. There is a whistle command in Eternity Engine you can try to call the dogs (it's a tribute!).
+- [Helper Dog](https://doomwiki.org/wiki/Helper_dog). 888. (BONUS) MBF21's sample of Friendly Monster AI. This intrestingly is covered by the Source Port itself (since the fact the feature comes from the [Marine's Best Friend](https://doomwiki.org/wiki/MBF) Source Port itself) rather than the IWADs, as you can see inside the internal PK3 of the e.g. GZDoom (gzdoom.pk3) that has this Thing, including its sprites. There is a `whistle` command ([sauces in Trivia](https://doomwiki.org/wiki/Helper_dog), [Eternity Engine](https://doomwiki.org/wiki/Eternity_Engine)) in Eternity Engine you can try to call the dogs (it's a tribute!).
 
 ## Table from Gez
 

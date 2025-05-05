@@ -179,6 +179,18 @@ clusterdef 25200
 	music = "D_OXIDNE" // 
 }
 
+clusterdef 26211
+{
+	// Dodgy Teleporter Test
+	hub
+	//EnterText= lookup, "ENTERCHOR"
+	//ExitText = lookup, "EXITCHOR"	
+	//pic = "COMPBLU"
+	pic = "LMBHEMPT"
+	//flat = "FLAT5_4"
+	//music = "D_OXIDNE" // 
+}
+
 /*
 
  DEFINE LEVELS!!!!!!!!!!!!
@@ -851,6 +863,36 @@ map MORATE lookup "MORATE"
 	exitPic = "LMBHTIHD"
 	music = "HEROD"
 	InterMusic = "REVPINT"
+}
+
+map DODTEL lookup "DODTEL"
+{
+	author = "JOELwindows7"
+	next = "DODCYB"
+	secretnext = "DODSAR"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	cluster = 26211
+}
+
+map DODCYB lookup "DODCYB"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "FIRESK09"
+	exitPic = "LMBHTIHD"
+	cluster = 26211
+}
+
+map DODSAR lookup "DODSAR"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	cluster = 26211
 }
 
 // Damages

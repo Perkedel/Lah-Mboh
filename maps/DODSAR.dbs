@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	PORTALA
+	DODSAR
 	{
 		
 		resources
@@ -18,10 +18,11 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
+				requiredarchives = "";
 			}
 		}
 		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "FIREBLU1";
+		defaultceiltexture = "CEIL1_1";
 		defaulttoptexture = "STARTAN1";
 		defaultwalltexture = "STARTAN1";
 		defaultbottomtexture = "STARTAN1";
@@ -37,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -230.8275f;
-		viewpositiony = 93.38974f;
-		viewscale = 0.8449995f;
+		viewpositionx = 27.5137f;
+		viewpositiony = -292.1534f;
+		viewscale = 1.42805f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -50,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 32;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -82,6 +83,30 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 105;
+				activetab = true;
+			}
 		}
 	}
 }
