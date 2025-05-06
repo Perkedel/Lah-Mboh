@@ -1,5 +1,8 @@
 // Extra Weird stuffs
+// (JOELwindows7 & others) 
 
+// Idk how to simulate infinitely tall without compat options!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// This is for... Knee deep in heart
 class ExtraTallExplosiveBarrel : ExplosiveBarrel
 {
 	Default
@@ -40,3 +43,312 @@ class BlenderDefaultCube : Actor
 			Stop;
 	}
 }
+
+// ZDoom Used()
+// https://zdoom.org/wiki/Used
+// Odd Barrel. Explode if you Use this Barrel while having BFG.
+class OddBarrel : ExplosiveBarrel
+{
+	Default
+	{
+		//$Category "Obstacles"
+		//$Title "Odd Barrel"
+	}
+    override bool Used (Actor user)
+    {
+        if (user && user.CountInv("BFG9000"))
+        {
+        	A_StartSound("misc/tink");
+            A_Die();
+            return true;
+        }
+
+        return false;
+    }
+}
+
+// Switchable Tech lamp
+class SwitchableLamp : TechLamp
+{
+	Default
+	{
+		//$Category "Light sources"
+		//$Title "Switchable Tech Lamp"
+	}
+	
+	bool lamp_on; //Used to track whether the lamp is on
+
+	override bool Used (Actor user)
+	{
+		if (!lamp_on)
+		{
+			// Attach dynamic light, play a standard switch sound
+			// and move to the LampOn state label:
+			A_AttachLight('lamplight', DynamicLight.PulseLight, "DDDDFF", 96, 99, DYNAMICLIGHT.LF_ATTENUATE, (0,0,72), 0.4);
+			A_StartSound("switches/normbutn");
+			SetStateLabel("LampOn");
+		}
+		else
+		{
+			// Remove the light, play the sound, change states:
+			A_RemoveLight('lamplight');
+			A_StartSound("switches/normbutn");
+			SetStateLabel("Spawn");
+		}
+		// flip the value of lamp_on:
+		lamp_on = !lamp_on;
+		return true;
+	}
+
+	States
+	{
+	Spawn:
+		TLMP C -1;
+		stop;
+	LampOn:
+		// This is how the regular TechLamp looks:
+		TLMP ABCD 4 Bright;
+		Loop;
+	}
+}
+//end Used()
+
+// https://zdoom.org/wiki/Using_user_variables_in_ZScript inkoalawetrust. user variable!
+// https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE also configurable actors inkoalawetrust
+// https://zdoom.org/wiki/Using_inheritance
+// Customizable Zombieman!
+class CustomizableZombieman : Zombieman
+{
+	bool user_EnableBurstFire; // if true, the zombie will shoot in bursts.
+	bool user_AvoidMelee; // Makes the zombie avoid melee, as he has no melee attack.
+	bool user_BecomeWimpy; // Frightened when receives pain
+	int user_BulletAmount; // How many bullets to fire at every burst.
+	int user_Firerate; // How fast each round is fired, in tics.
+	int bulletAmount; // Counts down how many bullets have been fired.
+
+	Default
+	{
+		//$Title Former Human (Customizable)
+		//$Category Monsters
+	}
+
+	override void PostBeginPlay()
+	{
+		super.PostBeginPlay();
+		if (user_Firerate <= 0) user_FireRate = 5;
+		if (user_BulletAmount <= 0) bulletAmount = 5;
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		bAvoidMelee = user_AvoidMelee; // Turn the eponymous flag on or off based on the user variables' value.
+	}
+	
+	// https://zdoom.org/wiki/Using_inheritance
+	States
+	{
+		Pain:
+			TNT1 A 0 
+			{
+				if(user_BecomeWimpy)
+					bFRIGHTENED = true;
+			}
+			goto Super::Pain;
+		Missile:
+			TNT1 A 0 A_JumpIf (user_EnableBurstFire,"CustomMissile");
+			POSS E 10 A_FaceTarget;
+			POSS F 8 A_PosAttack;
+			POSS E 8;
+			Goto See;
+		CustomMissile:
+			POSS E 10
+			{
+				tics = user_Firerate; // Yes, you can directly change how many tics a frame state lasts, but A_SetTics works too.
+				A_FaceTarget();
+			}
+			POSS F 8
+			{
+				tics = user_Firerate;
+				A_PosAttack();
+			}
+			POSS E 8 A_SetTics (user_Firerate);
+			TNT1 A 0
+			{
+				// if the amount of rounds to fire is left to 0 or less, and the eponymous user variable is set to 1 or above.
+				if (bulletAmount <= 0 && user_BulletAmount >= 1)
+				{
+					bulletAmount = user_BulletAmount;
+					Return State (Null); // Leave this state frame and go to the next state (Goto See;).
+				}
+				if (bulletAmount <= 0 && user_BulletAmount <= 0) // Default counter amount if no value is given.
+				{
+					bulletAmount = 5;
+					Return State (Null);
+				}
+				// If bulletAmount is still above 0.
+				bulletAmount--; // Decrement
+				Return A_Jump (256,"CustomMissile"); // And jump back to the start of the state.
+			}
+			Goto See;
+	}
+}
+
+// Editor Keys https://zdoom.org/wiki/Editor_keys
+// Big Zombieman, but I decided to make it also customizable too hahahaha
+//class BigZombieman : Zombieman
+class BigZombieman : CustomizableZombieman
+{
+    Default
+    {
+        //$Title "Former Human (Big Customizable)"
+        //$Angled
+        //$Category "Monsters"
+        health 1000;
+        scale 1.5;
+        radius 30;
+        height 56;
+        speed 6;
+    }
+}
+
+// Particle Plasma Fireball
+class ParticlePlasmaFire : Actor
+{
+	int freqPerTic;
+
+	Default
+	{
+		//$Title "Plasmafall"
+		//$Category "Decoration"
+		//$Arg0 "Particles per tic"
+		//$Arg0Tooltip "Determines the number of particles spawned per tic"
+		+NOINTERACTION
+		+NOBLOCKMAP
+		radius 16;
+	}
+
+	override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		// make frequency per tic equal to the value of
+		// the first argument, but clamp between 1-40:
+		freqPerTic = Clamp(args[0], 1, 40);
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		if (isFrozen())
+			return;
+		
+		FSpawnParticleParams fp;
+		fp.texture = TexMan.CheckForTexture('PLSSB0');
+		fp.flags = SPF_FULLBRIGHT|SPF_ROLL|SPF_REPLACE;
+		fp.color1 = "";
+		for (int i = freqPerTic; i > 0; i--)
+		{
+			fp.lifetime = random[fp](40, 80);
+			
+			fp.pos.x = pos.x + frandom[fp](-radius, radius);
+			fp.pos.y = pos.y + frandom[fp](-radius, radius);
+			fp.pos.z = pos.z + frandom[fp](0, 16);
+			
+			fp.vel.xy = (frandom[fp](-2, 2), frandom[fp](-2, 2));
+			fp.vel.z = frandom[fp](2, 4);
+			fp.accel.xy = -(fp.vel.xy * 0.035); //acceleration is aimed to the opposite of velocity
+			fp.accel.z = -(fp.vel.z / fp.lifetime);
+
+			fp.size = random[fp](4, 10);
+			fp.sizeStep = -(fp.size / fp.lifetime); //size reduces to 0 over lifetime
+			fp.startalpha = frandom[fp](0.75, 1.0);
+			fp.fadestep = -1;
+			fp.startRoll = frandom[fp](0, 360);
+			fp.rollvel = frandom[fp](-15, 15);
+			fp.rollacc = -(fp.rollvel / fp.lifetime); //rollvel reduces to 0 over lifetime
+
+			Level.SpawnParticle(fp);
+		}
+	}
+}
+
+// end Editor Keys
+
+// Configurable Decorate
+// https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE
+
+// Actor States & Anonymous Function
+// https://zdoom.org/wiki/Actor_states#Anonymous_functions
+class FateImp : DoomImp // was SuperImp
+{
+     Default
+     {
+		//$Title "Fate Imp"
+		//$Category "Monsters"
+         Health 1500;
+         Mass 200;
+         PainChance 10;
+     }
+     States 
+     {
+     // Removes the Raise sequence:
+     Raise:
+         stop;
+	}
+   
+}
+
+
+// https://zdoom.org/wiki/Operators_(ZScript) Operators
+// https://zdoom.org/wiki/Statements Statements
+
+// Inheritance https://zdoom.org/wiki/Using_inheritance
+// Plasma Gun Zombie
+class PlasmaZombie : ZombieMan
+{
+  Default
+  {
+		//$Title "Former Human (Plasma)"
+        //$Angled
+        //$Category "Monsters"
+    health 40;
+    dropitem "Cell";
+    missiletype "PlasmaBall";
+  }	 
+  States
+  {
+  Missile:
+    POSS E 10 A_FaceTarget;
+    POSS F 5 A_MissileAttack;
+    POSS E 5 A_FaceTarget;
+    POSS F 5 A_MissileAttack;
+    POSS E 5 A_FaceTarget;
+    POSS F 5 A_MissileAttack;
+    goto See;
+  }
+}
+
+// Scripted Zombie. Scripted Marine but Zombie instead. Right?
+// https://zdoom.org/wiki/ACS_ExecuteAlways
+class ScriptedZombie : ZombieMan
+{
+  Default
+  {
+		//$Title "Former Human (Scripted)"
+        //$Angled
+        //$Category "Monsters"
+    health 40;
+  }
+  States
+  {
+  Missile:
+    POSS E 10 A_FaceTarget;
+    POSS F 5 ACS_ExecuteAlways (999,0,0);
+    goto See;
+  Death:
+    POSS A 1 Door_Open (1337, 16);
+    stop;
+  }
+}
+
+

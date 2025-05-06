@@ -27,7 +27,7 @@ For the thing we've yoinked
 - PNG Optimization Tools Trifecta: [Tutorial & Pre-packages from Combinebobnt Zandronum](https://zandronum.com/forum/viewtopic.php?t=7659). Use for SLADE!
 	- [PNGOut](https://github.com/imagemin/pngout-bin). imagemin. **MIT License**. [SOURCE CODE](https://github.com/imagemin/pngout-bin); Lossless PNG Optimizations.
 	- [PNGCrush](https://pmt.sourceforge.io/pngcrush/). pmt. [???](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/LICENSE). [SOURCE CODE](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/)
-	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`~~](https://community.chocolatey.org/packages/DeflOpt)). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
+	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`](https://community.chocolatey.org/packages/DeflOpt)~~). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
 - [Doom WAD Descriptive Parameters](https://www.doomworld.com/forum/post/1782450). Jimmy Squared. ???. Template of Parameter to be placed in your forum page about your mods.
 - [Chiptone SFX Generator](https://sfbgames.itch.io/chiptone). SFB Games. **No Source Code**. Generate Chiptune SFX, the spiritual successor to sfxr.
 - [Unicode Doom font Generator](https://forum.zdoom.org/viewtopic.php?t=65818). ErmacMKIII. **GNU GPL v3**. [Source Code](https://github.com/ErmacMKIII/UnicodeDoomFontCreator), Generate Unicode fonts out of fonts installed on your system!
@@ -50,9 +50,20 @@ For the thing we've yoinked
 - [BIGDOOR Textures](https://www.doomworld.com/forum/topic/143829-the-texture-pack-for-bigdoor-lovers-bigdoors-in-bigger-and-smaller-sizes/). Meerschweinmann. ???. Texture pack for BIGDOOR Lover. We use the Hi-color version, & then Optimize PNG using PNG Optimize Tri-fecta
 - [Chubzdoomer Tutorials](https://www.youtube.com/@Chubzdoomer). Chubzdoomer. ???. Tutorials & Random stuffs I applied here!:
 	- [Jump pad](https://www.youtube.com/watch?v=kOtEg917eHM)
-	- [Strife Dialog](https://www.youtube.com/watch?v=MFgGaZPZ5m4)
+	- [Strife Dialog](https://www.youtube.com/watch?v=MFgGaZPZ5m4). YOU FORGOR TO YOINK THE MAP EPISODE!!!
 - [Tyler-J's Weapons Template](https://www.doomworld.com/forum/topic/129542-modern-shootist-weapon-template/). Tyler-J & URROVA. ???. Template weapons ft. URROVA's fix. **The projectile template is gone, pls remake!**
 - [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
+- [ZDoom Tutorials](https://zdoom.org/wiki/). Various. Various, Tutorial.
+	- [Configurable Decorates](https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE). inkoalawetrust
+	- [Switchable Decorate](https://zdoom.org/wiki/Creating_decorations_that_can_be_(de)activated)
+	- [Projectile Trap Launcher](https://zdoom.org/wiki/Projectile_Trap)
+	- [Editor Keys](https://zdoom.org/wiki/Editor_keys)
+	- [`Used()` Function](https://zdoom.org/wiki/Used)
+	- [Actor Variables ZScript](https://zdoom.org/wiki/Using_user_variables_in_ZScript). inkoalawetrust
+	- [User Variables](https://zdoom.org/wiki/User_variable)
+	- [Anonymous Functions Actor States](https://zdoom.org/wiki/Actor_states#Anonymous_functions)
+	- [Inheritance](https://zdoom.org/wiki/Using_inheritance)
+	- [Actor Replacement](https://zdoom.org/wiki/Actor_replacement). No, we'll never use `Replaces`. Always add new, yeah!
 
 ## Dependencies
 
@@ -205,7 +216,7 @@ For the thing we've yoinked
 > You can see those files in the `yoinks` folder.
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3); Unconflicted demo map `MAP01` into `VVPCKTEST` or I forgor what name; [WADINFO](/yoinks/vvpck1.0.txt)
-- [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ,/build.py` myself lol! thankfully it's easy haha!); [WADINFO](/yoinks/damnums.txt)
+- [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ./build.py` myself lol! thankfully it's easy haha!); [WADINFO](/yoinks/damnums.txt)
 
 ## Random
 

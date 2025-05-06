@@ -94,7 +94,9 @@ Dodgy Teleporter,DODTEL,,Dodgy Teleporter,,,,
 Oh no! Cyberdemon!,DODCYB,,Oh tidak! Cyberdemon!,,,,
 Yess! Shotgun guy!,DODSAR,,Yess! Zombie shotgun!,,,,
 Machinima Test,T_SCTTG,,Tes Machinima,,,,
-,,,,,,,
+Abnormal Zombies,T_CUZOM,"inkoalawetrust customizable zombies
+
+https://zdoom.org/wiki/Using_user_variables_in_ZScript",Zombie Abnormal,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -205,8 +207,10 @@ Target Dummy,JEKYLLTARGETDUMMY,,,,,,
 %o was shot down by %k's Colt-1911.,COLTDEATH,Tyler-J’s template gun,%o telah tertembak mati oleh Colt-1911-nya %k.,,,,
 %o got blasted by %k!,ROCKETZDEATH,,%o kena roketnya %k!,,,,
 %o was shot down by %k's AK47.,AKDEATH,,%o telah tertembak mati oleh AK-47-nya %k.,,,,
-,,,,,,,
-,,,,,,,
+%o was smited by an elite Cacodemon,ELITECACODTH,"Configurable Decorate
+
+https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE",%o telah dibumihanguskan oleh seekor Cacodemon elit,,,,
+%o became an elite Cacodemon's snack !,ELITECACOATE,,%o telah dijadikan cemilan Cacodemon elit !,,,,
 ,,,,,,,
 ,,,,,,,
 ,,ENTER TEXT,,,,,

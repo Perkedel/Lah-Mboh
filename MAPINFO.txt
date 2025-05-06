@@ -96,7 +96,7 @@ gameinfo
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 }
 
-// NOT COMPATIBLE WITH ZANDRONUM HAHAHAHAHAHA, fug.
+// NOT COMPATIBLE WITH ZANDRONUM HAHAHAHAHAHAhahaaaa, fug.
 // https://www.doomworld.com/forum/topic/123676-custom-monster-in-mapinfo-for-zandronum-fails-with-doomednums-unknown-top-level-keyword/
 DoomEdNums
 {
@@ -108,6 +108,14 @@ DoomEdNums
 	16132 = DNBGoldCat
 	24120 = ExtraTallExplosiveBarrel
 	19560 = BlenderDefaultCube
+	28335 = SwitchableLamp
+	28336 = OddBarrel
+	27554 = CustomizableZombieman // inkoalawetrust
+	27555 = BigZombieman
+	27556 = PlasmaZombie
+	27557 = RocketZombieMan
+	27822 = FateImp
+	27921 = ParticlePlasmaFire
 }
 // I'm tired of this bullshit. Just lemme build level already!
 
@@ -902,6 +910,16 @@ map T_SCTTG lookup "T_SCTTG"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
+}
+
+map T_CUZOM lookup "T_CUZOM"
+{
+	author = "JOELwindows7 ft. inkoalawetrust"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	music = "D_UNDERTO"
 }
 
 // Damages

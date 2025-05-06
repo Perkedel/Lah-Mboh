@@ -1,0 +1,51 @@
+// MOBA Destroyable tower for that game mode in idtech1.
+// (JOELwindows7)
+
+Actor MobaTower 27452
+{
+	//$Category Decoration
+	//$Title MOBA Tower
+	// Should we base it from here?
+	// https://zdoom.org/wiki/Classes:CommanderKeen
+	// maybe not.
+	
+	Health 5000
+	Radius 256
+	Height 512
+	Mass 100000000000
+	PainChance 256
+	+SOLID
+	+SHOOTABLE
+	+COUNTKILL
+	+NOICEDEATH
+	+FRIENDLY
+	+ISMONSTER
+	+NOBLOOD
+	+DONTGIB
+	+NOTELEFRAG
+	
+	// TODO: Pls replace the sound to own one!!!
+	PainSound "keen/pain"
+  	DeathSound "keen/death"
+	
+	States
+	{
+		Spawn:
+			MOBA A -1
+			Loop
+		Death:
+			// https://doomwiki.org/wiki/A_Fall
+			//MODT A 0 A_NoBlocking
+			//MODT AAAA 6 A_SCREAM
+			MODT AAAA 6 A_ScreamAndUnblock // I didn't know there's this!
+			MODT BCD 6
+			MODT DD 6
+			MODT EFGH 6
+			MODT H -1
+			Stop
+		Pain:
+			MOPN A 4
+			MOPN A 8 A_Pain
+			Goto Spawn
+	}
+}

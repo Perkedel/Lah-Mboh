@@ -120,3 +120,5 @@ class ManualCrash : Actor {
 		// see Marisa Kirisame w_butan.asc (https://archive.org/details/abort_m)
 	}
 }
+
+

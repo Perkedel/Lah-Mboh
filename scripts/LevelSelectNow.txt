@@ -102,6 +102,10 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("T_SCTTG",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-T_CUZOM"){
+			Level.ChangeLevel("T_CUZOM",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else
 		{
 			console.printf("GO to %s", command);
@@ -132,7 +136,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 256+128+32;
+		double daHeight = 256+128+128;
 		// Add a background.
         background = LMBH_ZF_Image.Create
         (
@@ -340,6 +344,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: StringTable.Localize("$T_SCTTG"),
         	cmdHandler: handler,
         	command: "L-T_SCTTG"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+        
+        elem = LMBH_ZF_Button.create(
+        	(8,128),
+        	(100,32),
+        	text: StringTable.Localize("$T_CUZOM"),
+        	cmdHandler: handler,
+        	command: "L-T_CUZOM"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
