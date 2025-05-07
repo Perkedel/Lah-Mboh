@@ -110,12 +110,17 @@ DoomEdNums
 	19560 = BlenderDefaultCube
 	28335 = SwitchableLamp
 	28336 = OddBarrel
+	28337 = JustOddBarrel
 	27554 = CustomizableZombieman // inkoalawetrust
 	27555 = BigZombieman
 	27556 = PlasmaZombie
 	27557 = RocketZombieMan
 	27822 = FateImp
+	27823 = MatryoskaDoomImp
 	27921 = ParticlePlasmaFire
+	26521 = HealingBackpack
+	26522 = HealthPack
+	26621 = VitalityBonus
 }
 // I'm tired of this bullshit. Just lemme build level already!
 
@@ -129,7 +134,7 @@ clusterdef 200
 {
 	// Kaorfa's Hideout found
 	EnterText= lookup, "ENTERKRFHIDE"
-	ExitText = lookup, "EXITKRFHIDE"	
+	ExitText = lookup, "EXITKRFHIDE"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"

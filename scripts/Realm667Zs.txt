@@ -1,0 +1,96 @@
+// Realm667 Assets Collections ZScripts
+// Amalgamated by JOELwindows7
+
+// Insanity Sphere. DBJ87, That_One_Doom_Mod, BlueShadow, originally from id Software x Midway DOOM 64
+// https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30
+// ------------------------------------------------------------------------------------------------
+//
+//   Insanity
+//
+//     - Written by Blue Shadow.
+//
+// ------------------------------------------------------------------------------------------------
+
+class PowerInsanity : Powerup
+{
+	int defDur;
+
+	override void AttachToOwner (Actor other)
+	{
+		Super.AttachToOwner(other);
+
+		// Get the default duration of the powerup.
+		defDur = GetDefaultByType("InsanityStart").EffectTics;
+	}
+
+	override void InitEffect ()
+	{
+		Super.InitEffect();
+
+		if(owner != null && owner.player != null)
+		{
+			owner.A_PlaySound("InsanitySphere/Start", CHAN_BODY, 0.7);
+		}
+	}
+
+	override void DoEffect ()
+	{
+		Super.DoEffect();
+
+		if(owner != null && owner.player != null)
+		{
+			// Play the "half" sound when the powerup is at half duration.
+			if(EffectTics == (defDur >> 1))
+			{
+				owner.A_PlaySound("InsanitySphere/Half", CHAN_BODY, 0.7);
+			}
+
+			// Play the "end" sound when the powerup is at the blinking stage.
+			if(EffectTics == BLINKTHRESHOLD)
+			{
+				owner.A_PlaySound("InsanitySphere/End", CHAN_BODY, 0.7);
+			}
+		}
+	}
+
+	override void OwnerDied ()
+	{
+		if(owner != null && owner.player != null)
+		{
+			// Owner is dead, so stop whatever sound that's playing on the "body" channel.
+			owner.A_StopSound(CHAN_BODY);
+		}
+
+		Super.OwnerDied();
+	}
+}
+
+
+// Checkpoint Disk. Matacrat
+/*
+Name: Checkpoint Disk / Save Disk
+Type: Checkpoint / Powerup
+Palette: Doom
+Summon: sp_SaveDisk
+Use type: Instant
+Duration: 1 to 3 Seconds.
+Brightmaps: No
+Actor modification: No
+ACS: Yes
+
+Code: Matacrat (and a bit of Korshun)
+GLDefs: Matacrat
+Sounds: EarthBound's Healing Sound and Tomb Raider's Secret Sound
+Sprites: Save Disk Graphic (STDISK) from Id Software
+Sprite Edit: None
+Idea Base: Exl's Save Disk System and BioHazard's Checkpoint system.
+*/
+class sp_MultiplayerAutosave
+{
+    static clearscope void sp_ZscriptAutoSave()
+    {
+        LevelLocals.MakeAutoSave();
+    }
+}
+
+// acquired mapper block syndrome

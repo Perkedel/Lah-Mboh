@@ -143,3 +143,76 @@ ACTOR RocketZombieMan : CustomizableZombieman
 			Goto See
     }
 }
+
+// Global variables
+// https://zdoom.org/wiki/ZScript_global_variables
+// Pointer
+// https://zdoom.org/wiki/Actor_pointer#ZScript
+// https://zdoom.org/wiki/Actor_states#Flow_control flow control
+// https://zdoom.org/wiki/A_FadeTo Fade
+// https://zdoom.org/wiki/A_FadeOut Fade once
+// Fade Cacodemon projectile
+ACTOR Fadeball : CacodemonBall
+{
+  RenderStyle "Translucent"
+  Alpha 1.0
+  States
+  {
+  Spawn:
+    BAL2 AB 4 Bright A_FadeOut(0.2)
+    Loop
+  }
+}
+
+// https://zdoom.org/wiki/A_FadeIn fadein
+ACTOR Ghostball : CacodemonBall
+{
+  RenderStyle "Translucent"
+  Alpha 0
+  States
+  {
+  Spawn:
+    BAL2 AB 4 Bright A_FadeIn(0.2)
+    Loop
+  }
+}
+
+// Cool Plasma Ball
+//Actor CoolPlasmaBall : PlasmaBall replaces PlasmaBall
+Actor CoolPlasmaBall : PlasmaBall
+{
+   Radius 9
+   Height 6
+   Scale 0.75
+   RenderStyle Add
+   Alpha 0.8
+   
+   States
+   {
+   Spawn:
+     PLSS AAAAAABBBBBB 1 Bright A_SpawnItemEx("CPBTrail", 0, 0, 0, 0, 0, 0, 0, 0)
+     Loop
+   }
+}
+
+// & Trail
+Actor CPBTrail
+{
+   Radius 9
+   Height 6
+   Scale 0.75
+   RenderStyle Add
+   Alpha 0.8
+   
+   +NOGRAVITY
+   +NOBLOCKMAP
+   +NOCLIP
+   
+   States
+   {
+   Spawn:
+     PLSS AAAAAABBBBBB 1 Bright A_FadeOut
+     Loop
+   }
+}
+

@@ -97,10 +97,11 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
 | Incinerator                |     -28619 | 9035  |  36917 |
 
 > [!TIP]
-> some Things without DoomEdNums does not mean does not exist. It's just has no editor number (like other some DoomEdNumless built-in Things), since they are e.g. a particle what aren't meant to be placed as a init spawn in a map.
+> some Things without DoomEdNums does not mean does not exist. It's just has no editor number (like other some DoomEdNumless built-in Things), since they are e.g. a particle that aren't meant to be placed as an init spawn in a map.
 
 ## Extras
 
+- [Latest Doom Items DoomEdNums of GZDoom Source Code](https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/doomitems.txt).
 - [Obsidian Plauge's ID24 Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Mapper's resource PWAD & Gameplay PWAD to add ID24 monster. Just load the id24res.wad alongside it.
 - [Rum & Raisin Doom boomtest.wad](https://github.com/GooberMan/rum-and-raisin-doom/blob/master/wads/boomtest.wad). Test MBF21! You can load this wad locally with DOOM I + II.
 - [DOOM I + II](https://web.archive.org/web/20250407133807/https://store.steampowered.com/app/2280/DOOM__DOOM_II/). Legacy of Rust was the newest PWAD that premieres ID24.

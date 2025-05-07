@@ -67,6 +67,27 @@ class OddBarrel : ExplosiveBarrel
     }
 }
 
+// Just Explode Barrel. OddBarrel but always explode when Player uses it
+// https://zdoom.org/wiki/Creating_interactive_decorations
+class JustOddBarrel : ExplosiveBarrel
+{
+	Default
+	{
+		//$Category "Obstacles"
+		//$Title "Odd Barrel (Always)"
+	}
+    override bool Used (Actor user)
+    {
+        if (user && user.player)
+        {
+            A_Die();
+            return true;
+        }
+
+        return false;
+    }
+}
+
 // Switchable Tech lamp
 class SwitchableLamp : TechLamp
 {
@@ -351,4 +372,172 @@ class ScriptedZombie : ZombieMan
   }
 }
 
+// Global variables
+// https://zdoom.org/wiki/ZScript_global_variables
+// Pointer
+// https://zdoom.org/wiki/Actor_pointer#ZScript
+// https://zdoom.org/wiki/Actor_states#Flow_control flow control
+// https://zdoom.org/wiki/A_FadeTo Fade
+// https://zdoom.org/wiki/A_FadeOut Fade once
+// Matryoska Imp
+//class DoomImpEnhanced : DoomImp replaces DoomImp
+class MatryoskaDoomImp : DoomImp
+{
+	Default
+	{
+		//$Title "Imp (Matryoska)"
+        //$Angled
+        //$Category "Monsters"
+	}
+	States 
+	{
+	Death:
+		TNT1 A 0 
+		{
+			A_NoBlocking();
+			Actor foo = Spawn("DoomImp",pos);
+			if (foo) //it's important to null-check the spawned actor, just in case
+			{
+				foo.health = 500;
+				foo.scale *= 2;
+				foo.speed *= 0.5;
+			}
+			//A_FadeOut(0.01);
+			A_FadeTo(0,0.1,false); // amount default 0.1, 
+		}
+		//TROO I 1 A_FadeOut(0.01);
+		//wait;
 
+		GoTo Super::Death;
+	}
+}
+
+// Pulsar. Pls add textures!
+// https://zdoom.org/wiki/Creating_interactive_decorations
+class Pulsar : Actor
+{
+  Default
+  {
+    Height 40;
+    Radius 20;
+    +SHOOTABLE // Will react to being hit by attacks
+    Painchance 255; // Will always enter its Pain state sequence when damaged
+    PainSound "pulsar/pulse"; // Sound made when A_Pain is called
+    +NODAMAGE // Will not actually take any damage from being attacked but will still react
+    +NODAMAGETHRUST // Cannot be moved by damage
+    +BRIGHT // All sprites of this actor are drawn fullbright
+  }
+  States
+  {
+  Spawn:
+    HAX7 A -1; // This actor is not animated and shows only one sprite in its Spawn sequence
+    stop;
+  Pain:
+    HAX7 A 15;
+    HAX7 B 15 A_Pain;
+    HAX7 C 20 A_Explode(flags:XF_NOTMISSILE); // Will deal radius damage, like the Rocket
+    goto Spawn;
+  }
+}
+
+// Use https://zdoom.org/wiki/Use
+// https://zdoom.org/wiki/Inventory_virtual_functions
+// https://zdoom.org/wiki/TryPickup
+// https://zdoom.org/wiki/GiveBody
+// https://zdoom.org/wiki/User_variable
+// https://zdoom.org/wiki/Classes:Health
+// https://zdoom.org/wiki/Classes:Medikit
+// Healing Backpack
+class HealingBackpack : Backpack
+{
+	int user_GiveHealth;
+
+	Default
+	{
+		//$Title "Backpack (Healing)"
+		//$Category "Health and Armor"
+		+Inventory.AUTOACTIVATE
+	}
+
+	override void PostBeginPlay()
+	{
+		super.PostBeginPlay();
+		if(user_GiveHealth == 0){
+			user_GiveHealth = 100;
+		}
+	}
+
+	override bool Use(bool pickup)
+	{
+		// bDepleted will be set to true if the backpack
+		// was dropped with the 'drop' command. Check that
+		// it's false, so that the player can't heal
+		// themselves by repeatedly dropping and picking
+		// up this backpack:
+		if (!bDepleted && owner)
+		{
+			owner.GiveBody(user_GiveHealth);
+		}
+		// We don't want backpack to be consumed:
+		return false;
+	}
+}
+
+// Health Pack?!?!?
+class HealthPack : Inventory
+{
+    Default
+    {
+		//$Title "Stimpack (Pack)"
+		//$Category "Health and Armor"
+        Inventory.PickupMessage "$PICKHEALTHPACK";
+    }
+
+    override bool TryPickup (in out Actor toucher)
+    {
+        if (toucher.GiveBody(-25))
+        {
+            GoAwayAndDie();
+            return true;
+        }
+
+        return false;
+    }
+
+    States
+    {
+		Spawn:
+			STIM A -1;
+			Stop;
+    }
+}
+
+// https://zdoom.org/wiki/Classes:MaxHealth
+// Vitality Bonus
+class VitalityBonus : MaxHealth
+{
+    Default
+    {
+		//$Title "Health bonus (VitalPlus)"
+		//$Category "Health and Armor"
+        Inventory.Amount 10; // was giving 1, also make it bigger
+        Inventory.MaxAmount 2000; // was 200, let's make it bigger
+        Inventory.PickupMessage "$PICKVITALITYBONUS";
+
+        +COUNTITEM
+        +INVENTORY.ALWAYSPICKUP
+    }
+
+    States
+    {
+		Spawn:
+			BON1 ABCDCB 6;
+			Loop;
+    }
+}
+
+// https://zdoom.org/wiki/Classes:Berserk
+// https://zdoom.org/wiki/Classes:PowerStrength
+// https://zdoom.org/wiki/Classes:PowerupGiver
+// https://zdoom.org/wiki/Classes:Powerup
+// https://zdoom.org/wiki/Classes:PowerDoubleFiringSpeed

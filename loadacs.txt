@@ -16,3 +16,6 @@ CTF
 
 // Zdoom tutorial
 ElitCaco //The ACS scripts the Elite Cacodemon uses.
+
+// Realm667
+Realm667ACS

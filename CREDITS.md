@@ -59,11 +59,27 @@ For the thing we've yoinked
 	- [Projectile Trap Launcher](https://zdoom.org/wiki/Projectile_Trap)
 	- [Editor Keys](https://zdoom.org/wiki/Editor_keys)
 	- [`Used()` Function](https://zdoom.org/wiki/Used)
+	- [`Use()`](https://zdoom.org/wiki/Use)
 	- [Actor Variables ZScript](https://zdoom.org/wiki/Using_user_variables_in_ZScript). inkoalawetrust
 	- [User Variables](https://zdoom.org/wiki/User_variable)
 	- [Anonymous Functions Actor States](https://zdoom.org/wiki/Actor_states#Anonymous_functions)
 	- [Inheritance](https://zdoom.org/wiki/Using_inheritance)
 	- [Actor Replacement](https://zdoom.org/wiki/Actor_replacement). No, we'll never use `Replaces`. Always add new, yeah!
+	- [Global Variables](https://zdoom.org/wiki/ZScript_global_variables)
+	- [Actor Pointers](https://zdoom.org/wiki/Actor_pointer#ZScript)
+	- [Fade Once](https://zdoom.org/wiki/A_FadeOut)
+	- [Fade In](https://zdoom.org/wiki/A_FadeIn)
+	- [Fade Target](https://zdoom.org/wiki/A_FadeTo)
+	- [ZScript Menus](https://zdoom.org/wiki/ZScript_menus)
+	- [Interactive Decorations](https://zdoom.org/wiki/Creating_interactive_decorations)
+	- [Max Health](https://zdoom.org/wiki/Classes:MaxHealth)
+- [Plerb's 90's CGI Textures](https://www.doomworld.com/forum/topic/151605-plerbtex-v35-90s-cgi-textures-and-more/). Plerb. ???. **PLS YOINK CAREFULLY!, DO NOT REPLACE IWAD'S**, Pack of textures with vibes of 90's CGI.
+- [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???.
+    - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
+    - [Regeneration Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#credits-47). Scalliano (original from id Software & Monolith, Quake3).
+    - [Insanity Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30). DBJ87, That_One_Doom_Mod, & BlueShadow (original from id Software x Midway Doom64).
+    - [Rage Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-44). Captain Toenail.
+    - [Checkpoint Disk](https://www.realm667.com/repository/item-store/others#preview-2). Matacrat (aaaaaa).
 
 ## Dependencies
 
@@ -111,7 +127,7 @@ For the thing we've yoinked
 		- [Hellscape Navigator](https://forum.zdoom.org/viewtopic.php?p=1068272&hilit=neon+grid#p1068272). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/hellscape-navigator). Advanced Automap tools to aid navigating complex maps
 		- [Sound to Screen](https://github.com/mmaulwurff/sound-to-screen). **IMPORTANT for A11Y HEARING** Sound source mini-popup telling where played sound comes from, like Minecraft. With dangerness colors, & options to enable loudness number.
 - [FlexiHUD](https://www.doomworld.com/forum/topic/142937-flexihud-a-highly-flexible-hud-mod-for-gzdoom-411/). Jekyll Grim. ???. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/jekyllgrim/UniversalFlexibleHUD), Extra HUDs that you can customize crazily, compatible with many IWADs & PWADs out there.
-- [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. Skins for `DoomPlayer` (Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
+- [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. Skins for `DoomPlayer` (consists of: Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
 
 ## Reuses
 

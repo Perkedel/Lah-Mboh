@@ -1,0 +1,167 @@
+// Realm667 ACS
+// Amalgamated by JOELwindows7
+#library "Realm667ACS"
+#include "zcommon.acs"
+
+// Checkpoint Disk Matacrat
+//////////////////////////////////////////////////////////////
+//						SAVE DISK START						//
+//////////////////////////////////////////////////////////////
+// was 32035
+#define SP_DISK_TID 32735
+#define SP_MAXPLAYERS 64
+
+script "sp_checkpoint_warp_connected" ENTER
+{
+	ACS_NamedExecuteAlways("sp_checkpoint_warp",0);
+}
+
+// Warps player to checkpoint set and Gives Spawn Protection to the player.
+script "sp_checkpoint_warp" RESPAWN
+{
+	if (!sp_PlayerKeyDown(-1, BT_ZOOM) && GetCvar("sp_ZCancel") == TRUE || !GetCvar("sp_ZCancel"))
+	{
+		if (sp_ActorExists(SP_DISK_TID) && sp_ActorExists(0))
+		{
+			SetHudSize(320,240,TRUE);
+			until (sp_PlayerKeyDown(-1, BT_ZOOM) && GetCvar("sp_ZCancel") || sp_RoomForWarp() || !sp_ActorExists(0))
+			{
+				if (GetCvar("sp_ZCancel") == TRUE)
+				{
+					HudMessage(s:"            ",l:"sp_CheckWait",s:"\n ",l:"sp_CheckWaitZoom"; HUDMSG_FADEOUT | HUDMSG_COLORSTRING, 0,"sp_Chlorine", 160.0, 190.0, 1.0, 2.0);
+				}
+				else
+				{
+					HudMessage(s:"  ",l:"sp_CheckWait"; HUDMSG_FADEOUT | HUDMSG_COLORSTRING, 0,"sp_Chlorine", 161.0, 185.0, 1.0, 2.0);
+				}
+				delay(35);
+			}
+			SetHudSize(0, 0,TRUE);
+			if (!sp_PlayerKeyDown(-1, BT_ZOOM) && GetCvar("sp_ZCancel") == TRUE && sp_ActorExists(0) || !GetCvar("sp_ZCancel") && sp_ActorExists(0))
+			{
+				if(GetCvar("sp_ProtectSpawned") == TRUE)
+				{
+					GiveInventory("sp_PowerLoad", 1);
+				}
+				FadeTo(0, 0, 160,0.40, 0.0);
+				FadeTo(0, 0, 0, 0.0, 0.3);
+				ChangeActorAngle(0,Random(0.0,1.0));
+				ThrustThingZ(0, Random(GetCvar("sp_SpawnVelocityZ_Min"),GetCvar("sp_SpawnVelocityZ_Max")), 0, 0);
+				ThrustThing(Random(0,256),GetCvar("sp_SpawnVelocityXY"), 1, 0);
+			}
+		}
+	}
+}
+
+// Logs "[PLAYERNAME] just hit a checkpoint!" and saves the game.
+script "sp_checkpoint_hit" (void)
+{
+	if(GetCvar("sp_ProtectActivator") == TRUE)
+	{
+		GiveInventory ("sp_PowerSaved", 1);
+	}
+
+	AutoSave();
+
+	if (GameType() != GAME_SINGLE_PLAYER)
+	{
+		ScriptCall("sp_MultiplayerAutosave", "sp_ZscriptAutoSave"); // Saves the Game in GZDoom's Multiplayer
+		HudMessageBold(s:""; HUDMSG_PLAIN, 880, 0, 0.0, 0.0, 0.0, 0.0);
+		SetHudSize(320,240,TRUE);
+		HudMessageBold (s:"\c[sp_Chlorine]",n:0,s:" ",l:"sp_CheckHit"; HUDMSG_FADEOUT | HUDMSG_COLORSTRING | HUDMSG_LOG, 880,"sp_Chlorine", 160.0, 62.0, 1.0, 2.0);
+		SetHudSize(0, 0,TRUE);
+		AmbientSound("SP_CHECK", 127);
+	}
+	else
+	{
+		AmbientSound("SP_SAVED", 127);
+	}
+
+	FadeTo(0, 0, 160,0.25, 0.0);
+	FadeTo(0, 0, 0, 0.0, 0.3);
+}
+
+// Clears previous checkpoints.
+script "sp_checkpoint_wipe" (void)
+{
+	if (sp_ActorExists(SP_DISK_TID))
+	{
+		thing_remove(SP_DISK_TID);
+	}
+}
+
+script "sp_SetTID" (void)
+{
+	Thing_ChangeTID (0, SP_DISK_TID);
+}
+
+// Revives all players.
+script "sp_revive_all" (void)
+{
+	if (GameType() != GAME_SINGLE_PLAYER && GetPlayerAccountName(0) != 0)
+	{
+		delay(35);
+		int i = 0;
+		while (i<SP_MAXPLAYERS)
+		{
+			SetDeadSpectator(i,FALSE);
+			i++;
+			delay(GetCvar("sp_ResDelay"));
+		}
+	}
+}
+
+// Kills all players. Used for testing.
+script "sp_iamlegend" (void)
+{
+	int i = 1;
+	while (i<SP_MAXPLAYERS)
+	{
+		SetDeadSpectator(i,TRUE);
+		i++;
+		delay(1);
+	}
+}
+
+// Logs your coordinates into a function ready for preset placing.
+// Should Only be in [STANDALONE] Versions.
+script "sp_getlocation" (void) NET
+{
+	LocalAmbientSound("SP_SAVED", 127);
+	print(s:"X: ",f:GetActorX(0),s:"\nY: ",f:GetActorY(0),s:"\nZ: ",f:GetActorZ(0));
+	Log(s:"PlaceCheckpoint(",f:GetActorX(0),s:",",f:GetActorY(0),s:",",f:GetActorZ(0),s:");");
+}
+
+// Modified from acsutils
+function bool sp_PlayerKeyDown(int player, int key)
+{
+	int buttons = GetPlayerInput(player, INPUT_BUTTONS);
+
+	if ((buttons & key) == key) { return TRUE; }
+		return FALSE;
+}
+
+function bool sp_RoomForWarp(void)
+{
+	if (!SetActorPosition(0, GetActorX(SP_DISK_TID), GetActorY(SP_DISK_TID), GetActorZ(SP_DISK_TID), TRUE && !sp_ActorExists(SP_DISK_TID)))
+		return FALSE;
+	return TRUE;
+}
+
+function bool sp_ActorExists(int tid)
+{
+	if (tid != 0)
+		return ClassifyActor(tid) != ACTOR_NONE;
+	return sp_notflag(ClassifyActor(tid), ACTOR_WORLD);
+}
+
+function bool sp_notflag(int flags, int flag)
+{
+	return !(flags & flag);
+}
+//TODO Add a function to move all players to an activators position.
+//	   Add a function to move all players to the active checkpoint.
+
+//////////////////////////////////////////////////////////////
+//						SAVE DISK END						//
+//////////////////////////////////////////////////////////////

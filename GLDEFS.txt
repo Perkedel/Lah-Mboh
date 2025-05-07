@@ -31,3 +31,88 @@ object DNBGoldCat
     frame DACAA {light COINLIGHT}
 }
 // end Coin shines
+
+// Realm667!!
+// Haste Sphere Scalliano
+PulseLight HasteSphere
+{
+Color 1.0 1.0 0.0
+Size 40
+SecondarySize 56
+Interval 5.0
+}
+
+Object HasteSphere
+{
+Frame HAST { Light HasteSphere }
+}
+
+// Regen Sphere Scalliano
+PulseLight RegenSphere
+{
+Color 1.0 0.0 0.0
+Size 40
+SecondarySize 56
+Interval 5.0
+}
+
+Object RegenSphere
+{
+Frame REGN { Light RegenSphere }
+}
+
+// Insanity Sphere DBJ87
+pointlight InsanitySphere
+{
+    color 0.8 0.3 0.3
+    size 36
+	offset 0 16 0
+}
+object InsanitySphere
+{
+	frame INSSA { light InsanitySphere }
+	frame INSSB { light InsanitySphere }
+	frame INSSC { light InsanitySphere }
+	frame INSSD { light InsanitySphere }
+}
+// Rage Sphere Captain Toenail
+pulselight RAGE
+{
+	color 1.0 0.2 0.2
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+object RageSphere
+{
+	frame RAGS { light RAGE }
+}
+
+// Checkpoint Disk Matacrat
+pulselight sp_SavePulse
+{
+    color 0 0.1 0.5
+    size 35
+    secondarySize 30
+    interval 10
+    dontlightself 0
+    offset 0 35 0
+}
+
+object sp_SaveDisk
+{
+    frame SAVEA0 { light sp_SavePulse }
+}
+
+object sp_PlayerSpawner
+{
+    frame TNT1A0 { light sp_SavePulse }
+}
+
+object sp_FlashSpawner
+{
+    frame TNT1A0 { light sp_SavePulse }
+}
+// End Realm667

@@ -6,6 +6,7 @@ version "4.11.3"
 #include "scripts/Gifter.txt"
 #include "scripts/MbohCoins.txt"
 #include "scripts/WeirdThings.txt"
+#include "scripts/Realm667Zs.txt"
 
 // crashes
 #include "scripts/uncaught_werror.txt"

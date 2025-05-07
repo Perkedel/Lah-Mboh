@@ -82,3 +82,18 @@ morale/myface OMFACE
 morale/burp DSERGB
 morale/opposite DSSKSW
 // end Revenant100
+
+// Realm667
+// InsanitySphere DBJ87
+InsanitySphere/Start		D3BERS01
+InsanitySphere/Half			D3BERS02
+InsanitySphere/End			D3BERS03
+InsanityPunch/Swing1		D3PUNCH1
+InsanityPunch/Swing2		D3PUNCH2
+InsanityPunch/Impact		D3PUNCHH
+
+// Checkpoint Disk Matacrat
+SP_CHECK SP_CHECK
+SP_SAVED SP_SAVED
+
+// End Realm667

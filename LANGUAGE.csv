@@ -14,7 +14,8 @@ Garug Immigration Center,MBH01,"Level 1 of Megawad, Knock off E1M1 Ultimate Doom
 Water Processings,MBH02,"Level 2, Knock off E1M2 Ultimate Doom",Pemroses Air,,,,
 Elephant Slaugtherion,MBH03,it’s dark here,Slaughterion Gajah,,,,
 Travelexer,MBH04,Simple Find 3 keys central hub level,,,,,
-Pathway Blocked,MBH05,There are too many enemies ahead of you in your way! Go farther to just about the center of crowd then install the bomb to finish.,Jalan Terblokir,,,,
+Pathway Blocked,MBH05,"There are too many enemies ahead of you in your way! 
+Go farther to just about the center of crowd then install the bomb to finish.",Jalan Terblokir,,,,
 Rest Area,MBH06,You have arrived at a rest area. Relax & healing!,Tempat Istirahat,,,,
 Tower of Tribulation,MBH07,"Slaughterion again?
 A 9 floor tower full of Invaders",Menara Pencobaan,,,,
@@ -31,7 +32,8 @@ Watch out! There are many Hurt Sectors too!",Kilasan Persepsi,,,,
 "Green Barrel, Huge Explosion",MBH13,"Barrels O fun knockoff. A play of a famous quote “Tong kosong nyaring bunyinya”. 
 (Empty barrel has the loudest ding)
 It means someone who knows less, yaps alot. Or in this relevancy: acts than think
-You must be quiet until you reach the barrel that you supposed to explode. The enemy should all be killed. Take the key from the first, as
+You must be quiet until you reach the barrel that you supposed to explode. 
+The enemy should all be killed. Take the key from the first, as
 The first enemy you saw triggers Door unlock upon death.","Tong Hijau, Besar Ledakannya",,,,
 Shoot Afar,MBH14,Sniper level. Test your accurate aim,Tembak yg jauh,,,,
 You can’t end like this!,MBH15,"Ala FraggleScript machinima test.
@@ -41,7 +43,8 @@ Chamber Triviatron,MBH16,"A trivia level utilizing heavily on ACS. The first is 
 The rest of the question is actual quiz escape room, some of which based on Holy Bible.",Ruang Triviatron,,,,
 Necromancing Fellow,MBH17,All Arch-viles / Necromancers are flagged Friendly. Free them from the prisons and have your life easy.,Kawan Pembangkit Kubur,,,,
 Everyone’s Flying,MBH18,"This level contains lots of flying enemies: Cacodemon, Lost Soul, & Pain Elemental",Semuanya Terbang,,,,
-Heartbreaking Incidents,MBH19,"Beat this Assault Tripod / Cyberdemon named Heartbreaking Incidents. After he died, survive for atleast 15 second, then the exit door opens.",Kejadian Menyakitkan,,,,
+Heartbreaking Incidents,MBH19,"Beat this Assault Tripod / Cyberdemon named Heartbreaking Incidents. 
+After he died, survive for atleast 15 second, then the exit door opens.",Kejadian Menyakitkan,,,,
 Welcome to Technoland,MBH20,"Level inspired from Atomic Heart’s outside park, complete with Soviet Porno song from Freedoom 2.
 This episode, mix Computer & Hell textures!",Selamat Datang di Pulau Tekno,,,,
 Just Follow the Red Carpet,MBH21,You are entering confusing computer themed maze. Except the right way has already been red carpeted.,Ikuti saja karpet merah,,,,
@@ -173,6 +176,82 @@ Picked up AK ammo.,PICKAMMOAK,,Dapat amunisi AK.,,,,
 Picked up rocket.,PICKROCKET,,Dapat roket.,,,,
 Picked up Box of AK ammo,PICKBOXAK,,Dapat sekotak amunisi AK.,,,,
 Picked up box of ammo.,PICKAMMOBOX,,Dapat sekotak amunisi.,,,,
+Picked up a health pack.,PICKHEALTHPACK,,Dapat sekotak obat.,,,,
+Picked up a vitality bonus.,PICKVITALITYBONUS,,Dapat bonus vitalitas.,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,Matacrat Save Disk,,,,,
+,,ACS,,,,,
+\c[sp_Chlorine]just hit a Checkpoint!,sp_CheckHit,,\c[sp_Chlorine]telah meraih Checkpoint!,,,,
+\c[sp_Chlorine]Waiting to warp...,sp_CheckWait,,\c[sp_Chlorine]Bersiap teleportasi...,,,,
+\c[sp_Chlorine]Hold the Zoom Key to cancel.,sp_CheckWaitZoom,,\c[sp_Chlorine]Tahan tombol Zoom untuk batal.,,,,
+,,Decorate,,,,,
+\c[sp_Chlorine]You've reached a Checkpoint.,sp_CheckHitYou,,\c[sp_Chlorine]Anda telah meraih Checkpoint.,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -358,10 +437,12 @@ his life,
 etc. etc. Etc.
 
 But one thing for sure:
-The lord made it easy to get you gamers out,
+The lord made it easy 
+to get you gamers out,
 Despite himself can’t at all.
 
-A real sacrificial nobleness, even by death, and no regret.",EXITFREELD,,"Tanpa basa-basi, Andapun keluar dari neraka,
+A real sacrificial nobleness, 
+Even by death, and no regret.",EXITFREELD,,"Tanpa basa-basi, Andapun keluar dari neraka,
 meninggalkan jiwa malang itu sekarang pemilik, dibelakang.
 
 Anda bahkan tidak mengetahui siapa itu dia,
@@ -370,10 +451,12 @@ kehidupannya,
 dan sebagainya.
 
 Tapi satu hal yang pasti:
-Pemilik itu sengaja buat kalian para gamers keluar dengan mudanya,
+Pemilik itu sengaja buat kalian para 
+gamers keluar dengan mudanya,
 Walaupun ia sendiri tidak bisa sama sekali.
 
-Benar2 pengorbanan sangat mulia, bahkan lewat dari kematian, tanpa penyesalan",,,,
+Benar2 pengorbanan sangat mulia, 
+bahkan lewat dari kematian, tanpa penyesalan",,,,
 ,,,,,,,
 ,,DIALOG,,,,,
 Welcome home,WELCOMEHOME,Greeting sensor,Selamat datang kembali,,,,
@@ -386,7 +469,17 @@ I need everything!,CHOICE_NEEDALL,,Saya butuh semuanya!,,,,
 I need healing!,CHOICE_NEEDHEAL,,Saya butuh healing!,,,,
 I need Energy / Berserk!,CHOICE_NEEDBERSERK,,Saya butuh Energi / Berserk!,,,,
 I need all powerups!,CHOICE_NEEDPOWERUP,,Saya butuh semua powerup!,,,,
-,RESPONSE_NEEDALL,,,,,,
+Here's all the ammenities,RESPONSE_NEEDALL,,"Baik, ini semuanya.",,,,
+Here's your MegaSphere.,RESPONSE_NEEDHEAL,,"Baik, ini Megasphere Anda.",,,,
+Here's your Berserk.,RESPONSE_NEEDBERSERK,,"Baik, ini Berserk Anda.",,,,
+Here's all the powerups,RESPONSE_NEEDPOWERUP,,"Baik, ini semua Powerup Anda.",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 (Explain situations),CHOICE_EXPLAIN,generic choice to answer explain full story of what happened.,(Jelaskan situasi),,,,
 Yup,CHOICE_YUP,,,,,,
 Nope,CHOICE_NOPE,,Nggak,,,,
@@ -396,7 +489,7 @@ Uhm...,CHOICE_UHM,,Ehm...,,,,
 Okay,CHOICE_OKAY,,Oke,,,,
 Okay cool,CHOICE_OKAYCOOL,,Oke boleh,,,,
 Impressive!,CHOICE_IMPRESSIVE,,Menakjubkan!,,,,
-,,,,,,,
+Nvm.,CHOICE_NVM,,Gak jadi.,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -449,7 +542,8 @@ Ya, buat latihan. Krn mereka terus datang,
 & mereka selalu agresif",,,,
 "So, about the DOOM.
 You know, you could’ve just buy the used discs from pawn shop right?
-Nah, bullshit, ikr? Scalpers like to profit off of the dead horse you see?",FLD_FREELOADING,,"Jadi, soal DOOM.
+Nah, bullshit, ikr? Scalpers like to profit 
+off of the dead horse you see?",FLD_FREELOADING,,"Jadi, soal DOOM.
 Lu bisa aja sih, beli bekasnya dari pasar loak ya kan?
 Alah, hoaks tuh, iya gk sih? Para penimbun memang suka nyari profit
 dari mayat busuk sekalipun ya dong?",,,,
@@ -1019,7 +1113,7 @@ Proprietarisme, Paywallisme, & Parsialisme",,,,
 Haha, Mancubus chance.",NUTSUNLAG,"Mancubus / Combat Slug class name is Fatso. Idk why, id..
 GZDoom comprises so much features that makes craziest mods & even new standalone games possible
 With caveat that it becomes so laggy more Things coming e.g.","NUTS, nggak ngelag lagi di GZDoom?!
-Haha, Sangat Mancubus sekali.",,,,
+Haha, sangat Mancubus sekali.",,,,
 "Being such does no grant you any kind of hatreds toward them.
 So no. Collect them. Foster & care them like usual.
 Then bring the light.",VIOLFORBID,,"Meski demikian bukan berarti boleh benci terhadap mereka

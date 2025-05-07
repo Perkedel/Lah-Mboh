@@ -42,11 +42,37 @@ script "GiveUsSpecials" (void)
 	int X = GetActorX(0);
 	int Y = GetActorY(0);
 	
+	// maybe keep the rest spawned in case pickup faile
 	Spawn("Berserk",X,Y,0);
 	Spawn("InvulnerabilitySphere",X,Y,0);
 	Spawn("BlurSphere",X,Y,0);
 	Spawn("Infrared",X,Y,0);
 	Spawn("RadSuit",X,Y,0);
+	// or should we abolish this entirely?
+
+	// Additionally, rest of everything, just give it all..
+	// https://zdoom.org/wiki/Classes:Powerup
+	GiveInventory("PowerDoubleFiringSpeed", 99999999);
+	GiveInventory("PowerDamage", 99999999);
+	GiveInventory("PowerBuddha", 99999999);
+	GiveInventory("PowerDrain", 99999999);
+	GiveInventory("PowerFlight", 99999999);
+	GiveInventory("PowerFrightener", 99999999);
+	GiveInventory("PowerHighJump", 99999999);
+	GiveInventory("PowerInfiniteAmmo", 99999999);
+	GiveInventory("PowerGhost", 99999999);
+	GiveInventory("PowerShadow", 99999999);
+	GiveInventory("PowerInvulnerable", 99999999);
+	GiveInventory("PowerIronFeet", 99999999);
+	GiveInventory("PowerMask", 99999999);
+	GiveInventory("PowerTorch", 99999999);
+	GiveInventory("PowerProtection", 99999999);
+	GiveInventory("PowerReflection", 99999999);
+	GiveInventory("PowerRegeneration", 99999999);
+	GiveInventory("PowerScanner", 99999999);
+	GiveInventory("PowerSpeed", 20);
+	GiveInventory("PowerTargeter", 99999999);
+	GiveInventory("PowerWeaponLevel2", 99999999);
 }
 
 script "JustBerserk" (void)

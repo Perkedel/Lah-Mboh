@@ -8,6 +8,7 @@
 #INCLUDE "scripts/decorate/MobaTower.txt"
 #INCLUDE "scripts/decorate/TrapProjectileLauncher.txt"
 #INCLUDE "scripts/decorate/ZdoomWeird.txt"
+#INCLUDE "scripts/decorate/Realm667Deco.txt"
 
 // Doom Tree using Jval's tree Generator
 // https://www.doomworld.com/forum/topic/119954-doomtree-procedural-generated-tree-sprites-voxels/

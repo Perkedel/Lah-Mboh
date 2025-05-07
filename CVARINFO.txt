@@ -7,3 +7,17 @@ user int nsfwcontent = 0;
 // TDRR's CVARs
 //server bool ctfannouncer = true;
 //server int ctflimit = 0;
+
+// Realm667
+// Checkpoint Disk Matacrat
+//Spawn Protection
+server bool sp_ProtectActivator = TRUE;
+server bool sp_ProtectSpawned = TRUE;
+
+//Respawning Options
+server bool sp_ZCancel = TRUE;
+server int sp_SpawnVelocityZ_Min = 28;
+server int sp_SpawnVelocityZ_Max = 32;
+server int sp_SpawnVelocityXY = 5;
+server int sp_ResDelay = 14;
+// End Realm667

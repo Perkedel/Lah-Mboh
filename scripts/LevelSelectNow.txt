@@ -183,7 +183,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         // Textoid
         elem = LMBH_ZF_Label.create(
         	(8,16),
-        	(96,16),
+        	(128,16),
         	StringTable.Localize("$GOTOLEVELSAY"),
         	smallFont
         );
