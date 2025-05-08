@@ -9,16 +9,15 @@ Unbullshitments included! Please immediately create Issue for any still-bullshat
 Other Page: [Itch](https://joelwindows7.itch.io/lah-mboh)  
 Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-mboh-test-megawads), ~~[Doomworld](https://www.doomworld.com/forum/topic/151743-gzdoom-zscript-lah-mboh-test-map-megawads/)~~, [ZDoom Forum](https://forum.zdoom.org/viewtopic.php?t=80264)
 
+<detail>
+<Summary>WARNINGs</Summary>
+
 > [!WARNING]
-> <detail>
-> <summary>Save Compatibility</summary>
-> Due to the way DOOM engine was designed, even with GZDoom and & derivatives, **it is no longer 
-> recommended** to load & forget if you are playing a Gigawad (Giant Megawad that tracks your level completition).  
+> **Save Compatibility**  
+> Due to the way DOOM engine was designed, even with GZDoom and & derivatives, **it is no longer recommended to load & forget, if you are playing a Gigawad (Giant Megawad that tracks your level completition).** 
 > This is because we may add or collapse amount of ACS loaded, and difference in these number will affect the compatibility.
-> </detail> 
 > 
-> <detail>
-> <summary>On Contributing</summary>
+> **On Contributing**  
 > SFW ONLY! This repo can contain everything including: 
 > - swearings
 > - insults
@@ -40,7 +39,7 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 > .  
 > Also no. Not even derogatory N-words will be found in our NSFW extension PWADs. Very obvious reasons. 
 > That'll be once another one, unsauced but same Gitlab idk. (read small note in [`CONTRIBUTING.md`](CONTRIBUTING.md))
-> </detail>
+</detail>
 
 ## A Random Doom Stuffs
 
