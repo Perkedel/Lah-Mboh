@@ -255,7 +255,7 @@ you know like App repo or item store thingy?
 C'mon, let's get out from DOOM & come back to ZZZ & Godot. I know Godot had betrayed all of us, but that's the only way!
 The GZDoom is another level of wrongs! Just get over with the limitation & get out from here!
 That way we don't have to rely against save compatibility, & personally tracking completition is unecessary hence had to be on the engine level itself
-CVAR which had completed by `server`, not by `user`. Because games like ZZZ changes alot. Really, *why would I gotta reregister new account every update?*
+CVAR which had completed by config file, not by save game. Because games like ZZZ changes alot. Really, *why would I gotta reregister new account every update?*
 Why is the save incompatible only because a new ACS module was added?
 See the point there?
 
