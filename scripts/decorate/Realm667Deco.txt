@@ -3,6 +3,21 @@
 
 // Haste Sphere. Scalliano, originally from id Software's Quake 3
 // https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27
+/*
+Name: Haste Sphere
+Type: Speed
+Palette: Custom
+Summon: Hastesphere
+Use type: Instant
+
+Submitted: scalliano
+Decorate: scalliano
+GLDefs: scalliano
+Sounds: None
+Sprites: Id Software
+Sprite Edit: scalliano
+Idea Base: Doom-class Haste powerup from Generations Arena mod for Q3
+*/
 actor HasteSphere : PowerupGiver 32602
 {
     //$Category Powerups
@@ -26,6 +41,22 @@ actor HasteSphere : PowerupGiver 32602
 
 // Regen Sphere. Scalliano.
 // https://www.realm667.com/repository/item-store/powerups-artifacts#credits-47
+/*
+Name: Regeneration Sphere
+Type: Regeneration
+Palette: Custom
+Summon: Regensphere
+Duration: 60 seconds
+Use type: Instant
+
+Submitted: scalliano
+Decorate: scalliano
+GLDefs: scalliano
+Sounds: None
+Sprites: Id Software, Monolith Productions
+Sprite Edit: scalliano
+Idea Base: Doom-class Regen powerup from Generations Arena mod for Q3
+*/
 // was 32602
 actor RegenSphere : PowerupGiver 32603
 {
@@ -48,11 +79,139 @@ actor RegenSphere : PowerupGiver 32603
 	}
 }
 
+// Ammo Sphere Dreadopp
+// https://www.realm667.com/repository/item-store/powerups-artifacts#preview-2
+/*
+Name: Ammo Sphere
+Type: Ammo
+Palette: Custom
+Summon: AmmoSphere
+Use Type: Instant
+Duration: 30 seconds
+
+Submitted: Dreadopp
+Decorate: Dreadopp
+GLDefs: Dreadopp
+Sounds: Id Software
+Sprites: Id Software
+Sprite Edit: Dreadopp
+*/
+// was 21468
+Actor AmmoSphere : PowerupGiver 32604
+{
+	//$Category Powerups
+    //$Title Ammo Sphere
+	Game Doom
+	+COUNTITEM
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.FANCYPICKUPSOUND
+	Inventory.PickupMessage "Infinite Ammo!"
+	Inventory.PickupSound "misc/p_pkup"
+	Powerup.Duration -30
+	Powerup.Type "PowerInfiniteAmmo"
+	Powerup.Color "255 0 0" 0.4
+	States
+	{
+	Spawn:
+		AMSP ABCD 6 bright
+		loop
+	}
+}
+
+// Oxygen Canister Dusk
+// https://www.realm667.com/repository/item-store/others#preview-6
+/*
+Name: Oxygen Canister
+Type: Other
+Palette: Doom
+Summon: OxygenCanister
+Use type: Instant
+Duration: Instant
+Added States: No
+ACS: Yes
+
+When picked up, refills the player's air supply. Useful when the player
+has to stay underwater for an extended period of time.
+
+Note: in the Pickup state in the bottle's DECORATE, notice the following:
+ACS_ExecuteAlways (800, 0, 700) - The 700 is the amount of air to supply.
+700 is usually the player's normal air supply, thus giving the player 700
+of it refills it full.
+
+Also, in the ACS code, the MAXAIRSUPPLY constant should be set to the maximum
+amount of air the player to be able to get via oxygen canisters. Increasing it
+will (theoretically) allow the player to get more than 100% air ala health
+bonuses, decreasing it will only allow the player to get that much air from
+oxygen canisters and not the maximum of 700.
+
+Submitted: Dusk
+Decorate: Dusk
+GLDefs: Dusk
+Sprites: Rogue Entertainment
+Sprite Edit: Dusk
+Idea Base: Lack of one.
+*/
+// was 18000
+actor OxygenCanister : CustomInventory 32599 {
+	//$Category Powerups
+    //$Title Oxygen Canister
+	+ALWAYSPICKUP
+	+AUTOACTIVATE
+	inventory.pickupmessage "Picked up an oxygen canister."
+	states {
+	Spawn:
+		OXCN A 8 BRIGHT
+		OXCN B 8
+		loop
+	Pickup:
+		//TNT1 A 0 ACS_ExecuteAlways (800, 0, 700)
+		TNT1 A 0 ACS_NamedExecuteAlways ("ReOxygenateSupply", 0, 700)
+		TNT1 A 5
+		stop
+	}
+}
 
 // Insanity Sphere. DBJ87, That_One_Doom_Mod, BlueShadow, originally from id Software x Midway DOOM 64
 // https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30
+/*
+Name: Insanity Sphere
+Type: Protection, Damage, Regeneration
+Palette: Custom
+Summon: InsanitySphere
+Use Type: Instant
+Duration: 60 seconds
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+
+You’ve been succumbed to Demonic Torment, but embrace it and unleash Hell's fury!
+
+You take 50% less damage and gain a more powerful Berserk Punching based offence,
+using both arms for faster attacks. You'll heal yourself or increase your health
+up to 200% while damaging others and will pull yourself towards your target to
+ensure your rage is fully spread!
+
+While enraged, you can't swap weapons. However, you can pick up items as normal
+and other Sphere's powers will stack with this. If you have inventory items such
+as Sentry Bots or Medical Supply Packs, they can also be used as normal.
+
+-Remember, you are restricted to punching.
+-Being overrun by large groups is still a danger, especially if your armour gets
+destroyed, but if you can keep hitting targets you will at least recover health.
+-Don't expect to kill bosses easily! You've got a strength improvement but big
+bosses such as the Cyberdemon won't die in 2-3 hits.
+
+Code: DBJ87, Blue Shadow (DECORATE Edit and ZScript)
+GLDefs: DBJ87
+Sounds: Id Software (Doom 3)
+Sprites: Id Software (Doom 2), Midway (Doom64)
+Sprite Edit: Blue Shadow, That_One_Doom_Mod (Fist Redux)
+Idea Base: Own Idea, Doom 3
+*/
 // was 15087
-Actor InsanitySphere : CustomInventory 32702//15087
+Actor InsanitySphere : CustomInventory 32702
 {
   //$Category Powerups
   //$Title Insanity Sphere
@@ -193,6 +352,28 @@ Actor InsanityProtection : PowerupGiver
 
 // Rage Sphere. Captain Toenail, inspired from Unreal's Berserk
 // https://www.realm667.com/repository/item-store/powerups-artifacts#preview-44
+/*
+Information:
+Name: Rage Sphere
+Type: Firing Speed Multiplier
+Palette: Custom
+Summon: RageSphere
+Use type: Instant
+Duration: 60 Seconds
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+GLDefs: Captain Toenail
+Sprites: Doom
+Sprite Edit: Captain Toenail
+Idea Base: Unreal's Berserk PowerUp
+
+Description:
+A sphere powerup that doubles fire rate for 60 seconds.
+*/
 // was 12572
 ACTOR RageSphere : PowerupGiver 32703
 {
@@ -302,7 +483,7 @@ Actor sp_FlashSpawner : Actor
 			TNT1 A 0 ACS_NamedExecuteAlways("sp_SetTID", 0)
 			TNT1 A 0 ACS_NamedExecute("sp_revive_all", 0)
 			TNT1 A 3 ACS_NamedExecuteAlways("sp_checkpoint_wipe", 0)
-			TNT1 A 1 A_SpawnItemEx ("sp_PlayerSpawner",0,0,0,0,0,0,0,SXF_ABSOLUTEANGLE,0,32035)
+			TNT1 A 1 A_SpawnItemEx ("sp_PlayerSpawner",0,0,0,0,0,0,0,SXF_ABSOLUTEANGLE,0,32735)
 			TNT1 A 1
 			Stop
 	}
@@ -339,6 +520,43 @@ Actor sp_PowerLoad : sp_PowerSaved
 	Powerup.Duration 105
 }
 
+// Save PDA Scalliano
+// https://www.realm667.com/repository/item-store/others#preview-7
+/*
+Name: PDA
+Connection: None
+Type: Item
+Palette: Doom
+Summon: PDA
+Use Type: Instant
+
+Submitted: scalliano
+Decorate: scalliano
+GLDefs: None
+Sounds: None
+Sprites: scalliano
+Idea Base: Doom 3 PDA
+*/
+// was 29876
+Actor PDA : CustomInventory 32734
+{
+	//$Title Save PDA
+	//$Category Powerups
+    Height 16
+    Radius 11
+    Inventory.PickupMessage "Saving..."
+    States
+    {
+        Spawn:
+            3PDA A -1
+            Stop
+        Pickup:
+            TNT1 A 0 AutoSave
+            Stop
+    }
+}
+
+
 // You can DoomEdNum Minus like ID24 does!
 // https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/doomitems.txt
 // Read More `/docs/Tutorial/ID24_DoomEdNums.md` about ID24 ed num
@@ -348,3 +566,342 @@ Actor sp_PowerLoad : sp_PowerSaved
 
 // Numbers of ACS Module loaded affect Save Compatibility! Beware of the consequences
 // of adding and removing numbers of LOADACS modules!
+
+// Mega map Captain Toenail
+// https://www.realm667.com/repository/item-store/others#preview-5
+/*
+Information:
+Name: Mega Map
+Type: Scanner
+Palette: Doom
+Summon: MegaMap
+Use type: Instant
+Duration: Till map end
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+GLDefs: Captain Toenail
+Sprites: Captain Toenail
+Idea Base: IDDT cheat code
+
+Description:
+	A superior version of the computer map. Not only reveals the map but all
+	items and enemies too.
+*/
+// was 12765
+ACTOR MegaMap : CustomInventory 32465
+{
+	//$Title Mega Map
+	//$Category PowerUps
+
+	+COUNTITEM
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.MaxAmount 0
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.PickupMessage "Mega Map!"
+
+		States
+		{
+			Spawn:
+				MMAP ABCDCB 6 Bright
+				Loop
+			Pickup:
+				TNT1 A 1 A_GiveInventory ("Allmap")
+				TNT1 A 0 A_GiveInventory ("DoomScanner")
+				Stop
+		}
+}
+
+ACTOR DoomScanner : PowerupGiver
+{
+	Powerup.Type "Scanner"
+	+INVENTORY.AUTOACTIVATE
+}
+
+// Jump Boots Captain Toenail
+//
+// was 19696
+ACTOR JumpBoots : CustomInventory 32396
+{
+	//$Title Jump Boots
+	//$Category PowerUps
+	+COUNTITEM
+	+INVENTORY.INVBAR
+	Inventory.Amount 3
+	Inventory.MaxAmount 3
+	Inventory.Icon "JBOIA0"
+	Inventory.PickupMessage "You picked up a pair of jump boots!"
+	States
+	{
+		Spawn:
+			JBOT ABC 8 bright
+			Loop
+		Use:
+			TNT1 A 1 A_CheckFloor ("UpwardThrust")
+			// prevents user activating jump when
+			// in mid-air.
+			stop
+		UpwardThrust:
+			TNT1 A 1 ACS_NamedExecute("bootJumpScript", 0)
+			Stop
+	}
+}
+
+// Bullet Ant Venom Quantum_Dranger
+// https://www.realm667.com/repository/item-store/others#preview
+/*
+Name: Bullet Ant Venom
+Type: Offensive
+Palette: Doom
+Summon: ItemSyringe
+Use Type: Inventory
+Duration: Instant
+Brightmaps: No
+Added States: No
+ACS: No
+
+The end result of a project to create a cheaper form of execution for the money-strapped Phobos
+base. This syringe contains enough bullet ant poison to kill a human and leave an elephant reeling.
+The power of the most painful insect on earth can be seen immediately, as anything the needle
+strikes is turned into a blinded screaming spasm pile.
+
+(Fires a syringe that slowly damages the enemy)
+
+Submitted: Quantum_Dranger
+Code: Quantum_Dranger, Gothic
+Sprites: WOLF 3D, Doom Alpha
+Sprite Edit: Quantum_Dranger
+Idea Base: Own idea
+*/
+// Was no DoomEdNum
+ACTOR ItemSyringeBulletAntVenom : CustomInventory 31751
+{
+	//$Title Bullet Ant Venom Srynge
+	//$Category Weapons
+  +COUNTITEM
+  +INVENTORY.INVBAR
+  +INVENTORY.PICKUPFLASH
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.Icon "ARTISTIN"
+  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupMessage "Picked up a syringe full of bullet ant venom."
+  Inventory.DefMaxAmount
+  States
+  {
+  Spawn:
+    STIN A 1
+    Loop
+  Use:
+    TNT1 A 0 A_FireCustomMissile("ATKSyringe",0,0,0,0,1)
+    Stop
+  }
+}
+
+Actor ATKSyringe
+{
+	Radius 5
+	Height 5
+	Speed 30
+	DamageType Poison
+	Damage 0
+	Projectile
+	var int user_theta;
+	+DontSplash
+	+SeekerMissile //So the warping works
+	+Forcepain
+	States
+	{
+	Spawn:
+		TNT1 A 0 Nodelay A_SetUserVar("user_theta",0)
+		NEDL ABCD 3 
+		goto Spawn+1
+	Xdeath:
+		TNT1 A 0 A_Explode (2,8,XF_NOSPLASH)
+		TNT1 A 0 A_JumpIf(user_theta==50, "Death")
+		TNT1 A 0 A_SetUserVar ("user_theta", user_theta+1)
+		NEDL DDDDDDDDDD 2 A_Warp(AAPTR_TRACER, 20, 0, 32, 0, WARPF_NOCHECKPOSITION|WARPF_INTERPOLATE)
+		TNT1 A 0 A_JumpIfHealthLower(1,"Death",AAPTR_TRACER)
+		TNT1 A 0 A_Warp(AAPTR_TRACER, 20, 0, 32, 0, WARPF_NOCHECKPOSITION|WARPF_INTERPOLATE,"Xdeath")
+		//Loop
+	Death:
+	Crash:
+		NEDL C 200 A_Gravity
+		NEDL C 1 A_Fadeout(0.05)
+		Wait
+	}
+}
+
+// Score Treasury Cyantusk
+// https://www.realm667.com/repository/item-store/others#preview-8
+// https://zdoom.org/wiki/Classes:ScoreItem
+/*
+Name: Score Treasury
+Type: Score
+Palette: Custom (various sources)
+Summon: SmallMineral, BigMineral, EclipseMineralSpawner
+Use type: Instant
+Duration: Instant
+Brightmaps: No
+Actor Modification: No
+ACS: No
+
+
+These are the jewels from Tyrian. They give points according to their type, which are as follows:
+
+- SmallMineral: +20 points
+- BigMineral: +50 points
+
+In the file it's also coded a Treasury Spawner which spawns various jewels, just to show off their
+beauty! You can use it when destroying or opening an object, like a chest, for instance. Its called
+"EclipseMineralSpawner".
+
+Code: Cyantusk
+Sounds: Eclipse Software (ripped by Magma MK-II)
+Sprites: Eclipse Software (ripped by Magma MK-II)
+Sprite Edit: Cyantusk
+Idea Base: New idea from scratch
+*/
+Actor EclipseMineralBase : CustomInventory
+{
+	Radius 16
+	Height 52
+	Inventory.Amount 0
+	Inventory.MaxAmount 0
+	+Inventory.UNDROPPABLE
+	+Inventory.AUTOACTIVATE
+	+Inventory.ALWAYSPICKUP
+	+COUNTITEM
+	+MOVEWITHSECTOR
+	+DONTGIB
+	+FLOATBOB
+	Inventory.PickupSound "misc/EclipseMineral"
+}
+
+// was no DoomEdNum
+Actor EclipseMineralSpawner 31440
+{
+	//$Title Eclipse Mineral Spawner
+	//$Category Powerups
+	//$Sprite TSBLA0
+	States
+	{
+	Spawn:
+		TNT1 AAAAAAAAAA 0 NoDelay A_SpawnItemEx("SmallMineral", 0, 0, 0, FRandom(-5, 5), FRandom(-5, 5), FRandom(-5, 5))
+		TNT1 AAAAAAAA 0 A_SpawnItemEx("BigMineral", 0, 0, 0, FRandom(-5, 5), FRandom(-5, 5), FRandom(-5, 5))
+		Stop
+	}
+}
+
+// was no DoomEdNum
+Actor SmallMineral : EclipseMineralBase 31441
+{
+	//$Title Eclipse Small Mineral
+	//$Category Powerups
+	//$Sprite TSBLA0
+	Inventory.PickupMessage "You got a Small Mineral!"
+	
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_Jump(256, "Blue", "Yellow", "Red", "Green", "Orange", "Purple", "Pink", "White", "Cyan", "Teal", "Brown", "Lime")
+		Stop
+	Blue:
+        TSBL ABCDEDCB 4 Bright
+        Loop
+	Yellow:
+        TSYE ABCDEDCB 4 Bright
+        Loop
+	Red:
+        TSRE ABCDEDCB 4 Bright
+        Loop
+	Green:
+        TSGR ABCDEDCB 4 Bright
+        Loop
+	Orange:
+        TSOR ABCDEDCB 4 Bright
+        Loop
+	Purple:
+        TSPU ABCDEDCB 4 Bright
+        Loop
+	Pink:
+        TSPI ABCDEDCB 4 Bright
+        Loop
+	White:
+        TSWH ABCDEDCB 4 Bright
+        Loop
+	Cyan:
+        TSCY ABCDEDCB 4 Bright
+        Loop
+	Teal:
+        TSTE ABCDEDCB 4 Bright
+        Loop
+	Brown:
+        TSBR ABCDEDCB 4 Bright
+        Loop
+	Lime:
+        TSLI ABCDEDCB 4 Bright
+        Loop
+	Use:
+		TNT1 A 0 A_GiveInventory("ScoreItem", 20)
+		Stop
+	}
+}
+
+// was no DoomEdNum
+Actor BigMineral : EclipseMineralBase 31442
+{
+	//$Title Eclipse Big Mineral
+	//$Category Powerups
+	//$Sprite TBBLA0
+	Inventory.PickupMessage "You got a Big Mineral!"
+	
+	States
+	{
+    Spawn:
+		TNT1 A 0 NoDelay A_Jump(256, "Blue", "Yellow", "Red", "Green", "Orange", "Purple", "Pink", "White", "Cyan", "Teal", "Brown", "Lime")
+		Stop
+	Blue:
+        TBBL ABCDEF 4 Bright
+        Loop
+	Yellow:
+        TBYE ABCDEF 4 Bright
+        Loop
+	Red:
+        TBRE ABCDEF 4 Bright
+        Loop
+	Green:
+        TBGR ABCDEF 4 Bright
+        Loop
+	Orange:
+        TBOR ABCDEF 4 Bright
+        Loop
+	Purple:
+        TBPU ABCDEF 4 Bright
+        Loop
+	Pink:
+        TBPI ABCDEF 4 Bright
+        Loop
+	White:
+        TBWH ABCDEF 4 Bright
+        Loop
+	Cyan:
+        TBCY ABCDEF 4 Bright
+        Loop
+	Teal:
+        TBTE ABCDEF 4 Bright
+        Loop
+	Brown:
+        TBBR ABCDEF 4 Bright
+        Loop
+	Lime:
+        TBLI ABCDEF 4 Bright
+        Loop
+	Use:
+		TNT1 A 0 A_GiveInventory("ScoreItem", 50)
+		Stop
+	}
+}

@@ -1,0 +1,20 @@
+// ZDoom Wiki ACS scripts!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// amalgamated by JOELwindows7
+#library "ZDoomWeirdACS"
+#include "ZCommon.acs"
+
+// https://zdoom.org/wiki/ACS_NamedExecuteAlways
+script "AvoidDeathScript" (void)
+{
+  SetPlayerProperty(0, 1, PROP_BUDDHA);  // Sets buddha mode for player
+  while(1) // Permanent Loop
+  {
+    if(GetActorProperty(0, APROP_HEALTH) <= 1) // Checks if the player is wounded enough to heal
+    {
+      SetPlayerProperty(0, 0, PROP_BUDDHA); // Remove the buddha mode
+      GiveInventory("Health", 100);        // and heal the player
+      terminate;
+    }
+    delay(1);
+  }
+}

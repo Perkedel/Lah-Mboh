@@ -73,6 +73,7 @@ For the thing we've yoinked
 	- [ZScript Menus](https://zdoom.org/wiki/ZScript_menus)
 	- [Interactive Decorations](https://zdoom.org/wiki/Creating_interactive_decorations)
 	- [Max Health](https://zdoom.org/wiki/Classes:MaxHealth)
+	- [ACS Named Execute Always](https://zdoom.org/wiki/ACS_NamedExecuteAlways)
 - [Plerb's 90's CGI Textures](https://www.doomworld.com/forum/topic/151605-plerbtex-v35-90s-cgi-textures-and-more/). Plerb. ???. **PLS YOINK CAREFULLY!, DO NOT REPLACE IWAD'S**, Pack of textures with vibes of 90's CGI.
 - [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???.
     - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
@@ -80,6 +81,13 @@ For the thing we've yoinked
     - [Insanity Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30). DBJ87, That_One_Doom_Mod, & BlueShadow (original from id Software x Midway Doom64).
     - [Rage Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-44). Captain Toenail.
     - [Checkpoint Disk](https://www.realm667.com/repository/item-store/others#preview-2). Matacrat (aaaaaa).
+    - [Save PDA](https://www.realm667.com/repository/item-store/others#preview-7). Scalliano.
+    - [Infinite Ammo Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-2). Dreadopp.
+    - [Oxygen Canister](https://www.realm667.com/repository/item-store/others#preview-6). Dusk
+    - [Megamap Tablet](https://www.realm667.com/repository/item-store/others#preview-5). Captain Toenail
+    - [Jump Boots](https://www.realm667.com/repository/item-store/others#preview-4). Captain Toenail
+    - [Bullet Ant Venom](https://www.realm667.com/repository/item-store/others#preview). Quantum_Dranger
+    - [Score Treasury](https://www.realm667.com/repository/item-store/others#preview-8). Cyantusk
 
 ## Dependencies
 

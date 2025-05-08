@@ -96,4 +96,10 @@ InsanityPunch/Impact		D3PUNCHH
 SP_CHECK SP_CHECK
 SP_SAVED SP_SAVED
 
+// Jump Boots Captain Toenail
+Boots/Jump		DSBOTJMP
+
+// Score Treasury Cyantusk
+misc/EclipseMineral	TYRMINPK
+$volume misc/EclipseMineral 0.8
 // End Realm667

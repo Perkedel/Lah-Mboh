@@ -1,7 +1,7 @@
 // Configurable Decorate
 // https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE
-#Library "ElitCaco"
-#Include "ZCommon.acs"
+#library "ElitCaco"
+#include "ZCommon.acs"
 
 //RandomPick, but for ACS because Zandronum doesn't have it, can only have up to 4 inputs sadly.
 

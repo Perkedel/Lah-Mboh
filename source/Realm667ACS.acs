@@ -165,3 +165,26 @@ function bool sp_notflag(int flags, int flag)
 //////////////////////////////////////////////////////////////
 //						SAVE DISK END						//
 //////////////////////////////////////////////////////////////
+
+// Oxygen Canister Dusk
+// This determines how much the player has normally while on ground.
+// If your map/mod gives player more air supply, edit this constant
+// and recompile the script.
+#define MAXAIRSUPPLY 700
+
+// was 800
+script "ReOxygenateSupply" (int supply) {
+	int n = GetAirSupply (PlayerNumber()) + supply;
+	if (n > MAXAIRSUPPLY) n = MAXAIRSUPPLY;
+	SetAirSupply (PlayerNumber(), n);
+}
+
+// Jump Boots Captain Toenail
+script "bootJumpScript" (void)
+{
+    //play jump pad sfx
+    ActivatorSound("boots/jump",127);
+    
+    //thrust player
+    ThrustThingZ (0, 80, 0, 0);
+}

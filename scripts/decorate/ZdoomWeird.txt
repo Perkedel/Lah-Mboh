@@ -216,3 +216,16 @@ Actor CPBTrail
    }
 }
 
+// https://zdoom.org/wiki/ACS_NamedExecuteAlways
+// Avoid Death Totem of Undying
+Actor AvoidDeath : CustomInventory
+{
+  Inventory.MaxAmount 0
+  +INVENTORY.AUTOACTIVATE
+  States
+  {
+  Use:
+    TNT1 A 0 ACS_NamedExecuteAlways("AvoidDeathScript", 0)
+    Stop
+  }
+}

@@ -115,4 +115,44 @@ object sp_FlashSpawner
 {
     frame TNT1A0 { light sp_SavePulse }
 }
+
+// Ammo Sphere Dreadopp
+Pointlight AmmoSphereLight
+{
+	Color 0.8 0.0 0.0
+	Size 18
+}
+
+Object AmmoSphere
+{
+	Frame AMSP { Light AmmoSphereLight }
+}
+
+// Oxygen Canister Dusk
+pulselight OXYCAN {
+	color 0.47 1.0 0.44
+	size 16
+	secondarysize 14
+	interval 2.0
+}
+
+object OxygenCanister {
+	frame OXCN {light OXYCAN}
+}
+
+// Mega Map Captain Toenail
+pulselight MEGAMAP
+{
+    color 0.4 0.0 0.0
+    size 32
+    secondarySize 40
+    interval 0.5
+    offset 0 8 0
+	dontlightself 1
+}
+
+object MegaMap
+{
+    frame MMAP  { light MEGAMAP }
+}
 // End Realm667
