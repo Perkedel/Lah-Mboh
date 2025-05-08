@@ -69,6 +69,8 @@ gameinfo
 		"$TONYLCSIGN",
 		"$NOSHAMEFAILVANILLA",
 		"$VANILLACOMPAT2",
+		"$USEROKILL",
+		"$AVOIDTERRY",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -240,6 +242,87 @@ Episode FEATHERDM
 	//lookup = "FEATHEREP"
 	name = "$FEATHEREP"
 }
+
+
+
+/*
+Maybe we should make shorts into each episodes instead don't you think?
+Easier than have to add each & every of them to our janky level selectors like many Upstart Projects.
+(e.g.: RAMP builds each & every portal shrine every level, This one we had ZForms based mouse click)
+And because our DOOM inspired Godoter would be this way. New game comprises episode selection = game selections.
+& when you click it, the next page you'll see is form to select characters, difficulties, etc. Then a big start button to start episode
+you know like App repo or item store thingy?
+C'mon, let's get out from DOOM & come back to ZZZ & Godot. I know Godot had betrayed all of us, but that's the only way!
+The GZDoom is another level of wrongs! Just get over with the limitation & get out from here!
+That way we don't have to rely against save compatibility, & personally tracking completition is unecessary hence had to be on the engine level itself
+CVAR which had completed by `server`, not by `user`. Because games like ZZZ changes alot. Really, *why would I gotta reregister new account every update?*
+Why is the save incompatible only because a new ACS module was added?
+See the point there?
+
+so yeah, that's the proposal. We should explore... I forgot that Zandronum game. It's Floppy Disk multiplayer!!
+How does it work?
+Anyway we gotta put the selection in this episode selection screen instead, don't you think?
+The interface & revamped setup wizard is for another video.
+*/
+
+/*
+
+Intermissions!!!!!!!!!!!!!!
+
+*/
+
+Intermission Inter_BrainiacBye
+{
+	TextScreen
+	{
+		Text = "$ENDBRAINIAC78"
+		TextColor = "LightBlue"
+	}
+	link = Inter_Titlescreen
+}
+
+Intermission Inter_FunnyCastTest
+{
+	Image
+	{
+		Background = "LMBHTIHD"
+		Time = -1
+		Music = "$MUSIC_EVIL"
+	}
+	link = FunnyCastTest
+}
+
+Intermission FunnyCastTest
+{
+	// https://zdoom.org/wiki/MAPINFO/Intermission_definition
+	// https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/common.txt
+	// MBOHTEST
+
+	Cast
+	{
+		CastClass = "ZombieMan"
+		CastName = "$CC_FUNNYZOMBIE"
+		AttackSound = "Missile", 1, "grunt/attack"
+		AttackSound = "Missile", 2, "grunt/attack"
+		AttackSound = "Missile", 3, "grunt/attack"
+	}
+
+	Cast
+	{
+		CastClass = "ShotgunGuy"
+		CastName = "$CC_FUNNYFARTGUN"
+		AttackSound = "Missile", 1, "funny/fartbret"
+	}
+	// link must be another intermission, cannot back to level anymore!
+	//link = MBOHTEST
+	link = Inter_BrainiacBye
+}
+
+/*
+
+Maps!!!!!!!!!!!!!!
+
+*/
 
 
 Map MBOHTEST lookup "MBOHTEST"
@@ -853,6 +936,16 @@ map TOTITLE2 lookup "TOTITLE2"
 			hscroll = "LMBHENDR"	, "LMBHENDL"
 			music = "D_IMPACTE", 0 // the music, then loop bool. I think 0 means false.
 		}
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
+map TOTITLE3 lookup "TOTITLE3"
+{
+	author = "JOELwindows7"
+	//next = EndPic, "LMBHTIHD"
+	next = EndSequence, "Inter_FunnyCastTest"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"

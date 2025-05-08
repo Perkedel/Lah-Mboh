@@ -90,6 +90,10 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("TOTITLE2",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-TOTITLE3"){
+			Level.ChangeLevel("TOTITLE3",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 		else if(command == "L-MORATE"){
 			Level.ChangeLevel("MORATE",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
@@ -106,6 +110,7 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("T_CUZOM",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		
 		else
 		{
 			console.printf("GO to %s", command);
@@ -354,6 +359,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: StringTable.Localize("$T_CUZOM"),
         	cmdHandler: handler,
         	command: "L-T_CUZOM"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+
+		elem = LMBH_ZF_Button.create(
+        	(8,136),
+        	(100,32),
+        	text: StringTable.Localize("$TOTITLE3"),
+        	cmdHandler: handler,
+        	command: "L-TOTITLE3"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
