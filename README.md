@@ -11,14 +11,15 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 
 > [!WARNING]
 > <details>
-> <summary>**Save Compatibility**</summary>  
+> <summary><b>Save Compatibility</b></summary>  
 > Due to the way DOOM engine was designed, even with GZDoom and & derivatives, **it is no longer recommended to load & forget, if you are playing a Gigawad (Giant Megawad that tracks your level completition).** 
 > This is because we may add or collapse amount of ACS loaded, and difference in these number will affect the compatibility.
 > </details> 
 >
 > <details>
-> <summary>**On Contributing**</summary>  
+> <summary><b>On Contributing</b></summary>  
 > SFW ONLY! This repo can contain everything including: 
+> 
 > - swearings
 > - insults
 > - Germany chancelor & symbols
@@ -30,6 +31,7 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 > - etc.
 > 
 > but **NOT**:
+> 
 > - actual pornography
 > - derogatory N-words.  
 > If you wish to add actual pornography, contribute & use to our NSFW PWAD `LINK_PLS` there instead!  
