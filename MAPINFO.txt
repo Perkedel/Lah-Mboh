@@ -1015,6 +1015,17 @@ map MORATE lookup "MORATE"
 	InterMusic = "REVPINT"
 }
 
+map SELDUAR lookup "SELDUAR"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	music = "HEROD"
+	InterMusic = "REVPINT"
+}
+
 map DODTEL lookup "DODTEL"
 {
 	author = "JOELwindows7"

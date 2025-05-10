@@ -101,7 +101,7 @@ Machinima Test,T_SCTTG,,Tes Machinima,,,,
 Abnormal Zombies,T_CUZOM,"inkoalawetrust customizable zombies
 
 https://zdoom.org/wiki/Using_user_variables_in_ZScript",Zombie Abnormal,,,,
-,,,,,,,
+Press who detonated first,SELDUAR,,Pencet siapa yang duar duluan,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -787,16 +787,34 @@ all around christmas tree,SCTTG_XMASTREE,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+"Welcome to dilemma game. It’s time to choose.
+In 90 seconds, either of you must press the button against the window,
+Of your opponents. Once pressed, no option change.
+
+If either of you got it first, the later will be detonated.
+And if neither of you presses, both of you will be detonated.",SLD_WELCOME,,"Selamat datang di permaninan dilema. Waktunya memilih.
+Dalam 90 detik, salah satu dari kalian harus menekan tombol berhadapan jendela,
+Ke lawan kalian. Setelah ditekan, tidak bisa berubah lagi.
+
+Jika salah satu menekan duluan, yang telat diledakan.
+Dan jika tak satupun menekan, dua2nya akan diledakan.",,,,
+Good luck!,SLD_START,,Semoga berhasil.,,,,
+"Neither of you pressed.
+So long to your lives.",SLD_NEITHER,,"Tak satupun menekan.
+Sampai jumpa nyawa kalian.",,,,
+It’s ,SLD_PRESSED,,Bahwa ,,,,
+Left (Red),SLD_LEFT,,Kiri (Merah),,,,
+Right (Blue),SLD_RIGHT,,Kanan (Biru),,,,
+ who pressed!,SLD_WHOPRESS,, lah yang menekan!,,,,
+"Time’s up.
+So, what’s the result?",SLD_TIMEOUT,,"Waktu habis.
+Jadi, apa hasilnya?",,,,
+"Huh, my system somehow broken here.
+You already understand that I do not tolerate cheating?
+I don’t care even that’s none of your fault.",SLD_INVALID,,"Huh, sistemku rusak nih.
+Kalian harusnya sudah tahu, bahwa saya tidak mentolerir kecurangan?
+Tidak peduli bahkan bukan salah kalian semua.",,,,
+Contemplate your decisions.,SLD_END,,Renungkan keputusan kalian.,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

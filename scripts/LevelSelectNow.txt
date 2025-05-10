@@ -110,7 +110,11 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("T_CUZOM",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
-		
+		else if(command == "L-SELDUAR"){
+			Level.ChangeLevel("SELDUAR",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
+
 		else
 		{
 			console.printf("GO to %s", command);
@@ -369,6 +373,17 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	text: StringTable.Localize("$TOTITLE3"),
         	cmdHandler: handler,
         	command: "L-TOTITLE3"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+
+		elem = LMBH_ZF_Button.create(
+        	(8,144),
+        	(100,32),
+        	//text: StringTable.Localize("$SELDUAR"),
+			String.Format("(DM) %s", StringTable.Localize("$SELDUAR"))
+        	cmdHandler: handler,
+        	command: "L-SELDUAR"
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
