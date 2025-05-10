@@ -18,6 +18,8 @@ body:
         Thank you for your interest for Level & Mod Submissions. Before you can submit your edits back to us, ensure you've read & understood our Contributing documents.
 
         The Full Instruction is [right here!](/CONTRIBUTING.md)
+
+        ## Info:
   - type: input
     id: level_name
     attributes:

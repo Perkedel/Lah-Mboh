@@ -29,6 +29,8 @@ body:
 
         You must provide the following files:
         - `the_level.wad` / `the_level.pk3` / `the_level.pk7` / `the_level.7z` / `the_level.zip`
+
+        ## Info:
   - type: input
     id: level_name
     attributes:
