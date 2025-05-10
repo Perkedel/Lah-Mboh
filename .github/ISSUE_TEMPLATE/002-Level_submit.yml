@@ -3,8 +3,8 @@
 # Had no shame!! Why only in Markdown?!
 # (JOELwindows7)
 
-name: Level Submit
-description: Submit a level!
+name: Levels & Mods Submit
+description: Submit levels & mods without using Fork & Pull Request
 title: "[Level]: "
 labels: ["level", "triage"]
 #projects: ["octo-org/1", "octo-org/44"]
@@ -19,7 +19,7 @@ body:
         Hello? Yuhuu..!!, You are submitting a level without Git?  
         C'mon! It's easy! Now that you have GitHub Account, all you have to do, is to go back to this Source code page again. 
         - Press `Fork` top right. 
-        - Now, just insert your level into folder `maps` (`Add New Files` there & drag & drop)
+        - Now, just insert your level into folder `maps` (`Add New Files` there & drag & drop). For other files, see [PK3](https://zdoom.org/wiki/Using_ZIPs_as_WAD_replacement) structures on ZDoom Wiki
         - commit, push (upload) to your fork
         - Pull Request et voila!
 
@@ -28,13 +28,13 @@ body:
         ## Required Files:
 
         You must provide the following files:
-        - `the_level.wad`
+        - `the_level.wad` / `the_level.pk3` / `the_level.pk7` / `the_level.7z` / `the_level.zip`
   - type: input
     id: level_name
     attributes:
       label: Level Name
       description: Level `Title` that will be written to main `MAPINFO.txt`
-      placeholder: ex. MyCoolLevel.wad / COLLEV / My Cool Level
+      placeholder: ex. MyCoolLevel.wad / My Cool Level
     validations:
       required: true
   - type: input
