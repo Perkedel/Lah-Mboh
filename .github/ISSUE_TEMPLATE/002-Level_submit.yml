@@ -18,7 +18,10 @@ body:
         # You chose to Submit Levels without using Git way!
         Hello? Yuhuu..!!, You are submitting a level without Git?  
         C'mon! It's easy! Now that you have GitHub Account, all you have to do, is to go back to this Source code page again. 
-        Press `Fork` top right. Now, just insert your level into folder `maps` (`Add New Files` there & drag & drop), commit, push (upload) to your fork, Pull Request et voila!
+        - Press `Fork` top right. 
+        - Now, just insert your level into folder `maps` (`Add New Files` there & drag & drop)
+        - commit, push (upload) to your fork
+        - Pull Request et voila!
 
         The Full Instruction is [right here!](/CONTRIBUTING.md)
 
@@ -40,6 +43,13 @@ body:
       placeholder: https://cloud.example.com/share/eA7Tb7
     validations:
       required: true
+  - type: markdown
+    id: tips_desc
+    attributes:
+      value: |
+        > [!TIP]
+        > You can attempt to attach wad files directly here!, since level only WAD files are typically very small.  
+        > Always make sure to notify us manually once you've submitted this issue, just in case.
   - type: textarea
     id: describe
     attributes:
