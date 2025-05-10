@@ -381,7 +381,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	(8,144),
         	(100,32),
         	//text: StringTable.Localize("$SELDUAR"),
-			String.Format("(DM) %s", StringTable.Localize("$SELDUAR"))
+			text: String.Format("(DM) %s", StringTable.Localize("$SELDUAR")),
         	cmdHandler: handler,
         	command: "L-SELDUAR"
         );
