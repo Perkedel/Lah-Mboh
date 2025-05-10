@@ -57,6 +57,8 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - In Indonesia, you fight organizations (Mass organizations / ormas) who claims do good, with no evidence of good. In US (& around & maybe various countries of Europe maybe), you fight individuals who claims do good, with no evidence of good.
 - New idea. Freedoom Phase Eternal is Ender game knock off. After you anhilate entire alien civilization you guilt. then suddenly a queen serpentipede has recently laid eggs, desperate for new home as she is dying. The player who won commemorate awards fly a plane with bringing these eggs to planets far away
 - Freedoom Dark ages. the alien used to be ally, but then at the end betrayed the player which led to Phase 1.
+- The tree in the center of Lah-Mboh facility is named `Unseen appreciation`. You are so big, but the room for motion is tight, hence nobody sees your top. The top represents your magnum opus. The tree goes down, and that's when the magnum opus toples along with it to the ground, for everyone to see. [Mendel](https://en.wikipedia.org/wiki/Gregor_Mendel)'s Inheritance Variable Probability was despised for mismatching against popular Darwinian Evolution theory. After he died suffering epilepsy, the Darwinian theory eventually wanes of, and the scientist discovered much better theory, which is Mendel's. Idk, that's what I heard from long lost comics many years ago!
+- [Coincident's How to Okuplok](https://youtu.be/LMRtjJ1luAs).
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

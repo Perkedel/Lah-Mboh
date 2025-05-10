@@ -102,4 +102,27 @@ Boots/Jump		DSBOTJMP
 // Score Treasury Cyantusk
 misc/EclipseMineral	TYRMINPK
 $volume misc/EclipseMineral 0.8
+
+// DP-28 Br0leg
+DP28/Fire DP28FR
+$volume DP28/Fire 0.5
+
+// Jackbomb Ichor
+$limit jackbomb/music 4
+
+jackbomb/throw		JBOMBFIR
+jackbomb/explode	JBOMBEXP
+jackbomb/music		JBOMBMUS
+
+// Flare Touch Scalliano
+Flare/Light	FLARLITE
+Flare/Loop	FLARLOOP
+
+$Volume Flare/Light 0.5
+$Volume Flare/Loop 0.5
+$Limit Flare/Loop 5
+
+// Duke Nukem Toilet Fuzzy Blaze
+TOILET1      TOILET1
+BREAK1       BREAK1
 // End Realm667

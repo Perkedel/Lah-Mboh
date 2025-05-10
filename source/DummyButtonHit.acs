@@ -10,9 +10,12 @@ script "DummyButtonHit" (void) {
 	// https://github.com/Tekkish/SimpleHUDAddons/releases/latest
 	//Log(s:"HIT!: ", n:getUserCvarString(PlayerNumber(),"class"), s:"(DETERMINATION: ", n:PlayerNumber(),s:")");
 	//Log(s:"HIT!: ", n:PlayerClass(PlayerNumber), s:"(DETERMINATION: ", n:PlayerNumber(),s:")");
+	// //s:GetActorProperty(PlayerNumber(),APROP_Damage),s:""
 	Log(s:"HIT!: ", 
 		s:GetActorProperty(PlayerNumber(),APROP_NameTag), 
-		s:" (DET: ", n:PlayerNumber(),s:") -> ",
-		s:GetActorProperty(PlayerNumber(),APROP_Damage),s:"");
+		s:" (DET: ", n:PlayerNumber(),s:", DMG: ",
+		d:GetActorProperty(PlayerNumber(),APROP_Damage), s: ", ",
+		s:"T: ", s:GetActorProperty(PlayerNumber(),APROP_DamageType),
+		s:")");
 	// DET = Determination. Undertale & Deltarune. This is you controling the body.
 }

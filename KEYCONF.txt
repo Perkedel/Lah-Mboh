@@ -3,3 +3,8 @@
 
 // Tyler-J player config
 addplayerclass TylerConfigPlayer
+
+// Realm667
+// Jackbomb Ichor
+addplayerclass IchorTestPlayer
+// end Realm 667

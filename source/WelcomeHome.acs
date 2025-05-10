@@ -336,7 +336,13 @@ function void scan_character (void)
 	/*
 	Weapon Templates https://www.doomworld.com/forum/topic/129542-modern-shootist-weapon-template/
 	*/
-	else if(CheckActorClass(PlayerNumber(),"TylerConflictPlayer")) {label_player = "Tyler-J";extra_talk="";}
+	else if(CheckActorClass(PlayerNumber(),"TylerConfigPlayer")) {label_player = "Tyler-J";extra_talk="";}
+
+	// Ichor
+	/*
+	Jackbomb
+	*/
+	else if(CheckActorClass(PlayerNumber(),"IchorTestPlayer")) {label_player = "Ichor Jackbomber";extra_talk="";}
 	
 	// Alt name & misc too generic names
 	else if(CheckActorClass(PlayerNumber(),"Doomguy")) {label_player = "Doomguy";extra_talk="";}

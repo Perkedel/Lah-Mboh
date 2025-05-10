@@ -94,3 +94,302 @@ class sp_MultiplayerAutosave
 }
 
 // acquired mapper block syndrome
+
+// Crates Rifleman
+// https://www.realm667.com/repository/prop-stop/technical#preview-8
+/*
+Information:
+Name: Crate Models
+Connection: N/A
+Palette: Doom
+Summon: Cube[32, 64][Blue, Green, Brown], Crate[32, 64, 128][Clean, Plank, Cross]
+Ambient Sound: N/A
+De-/Activatable: N/A
+Destroyable: N/A
+Special Effects: N/A
+Brightmaps: N/A
+Actor modification: N/A
+ACS: N/A
+
+Credits:
+Code: Rifleman
+GLDefs: N/A
+Sounds: N/A
+Sprites: OTEX by ukiro
+Sprite Edit: Rifleman
+Idea Base: No need to make crates with sectors.
+
+Description:
+15 models of crates - no need to draw sectors or use 3d floors.
+*/
+Class Cube64 : Actor
+{
+	Default
+	{
+	Health 1;
+	Radius 38;
+	Height 64;
+	+DontThrust;
+	+Solid;
+	+PuffOnActors;
+	+Shootable;
+	+NoDamage;
+	+NoBlood;
+	+NotAutoaimed;
+	}
+	States
+	{
+		Spawn:
+		TNT1 A -1;
+		Stop;
+	}
+}
+
+Class Cube64Blue : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 64x64 Blue
+	}
+	States
+	{
+		Spawn:
+		TCBL A -1;
+		Stop;
+	}
+}
+Class Cube64Green : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 64x64 Green
+	}
+	States
+	{
+		Spawn:
+		TCGR A -1;
+		Stop;
+	}
+}
+Class Cube64Brown : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 64x64 Brown
+	}
+	States
+	{
+		Spawn:
+		TCBR A -1;
+		Stop;
+	}
+}
+Class Crate64Clean : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 64x64 Clean
+	}
+	States
+	{
+		Spawn:
+		CRCL A -1;
+		Stop;
+	}
+}
+Class Crate64Plank : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 64x64 Plank
+	}
+	States
+	{
+		Spawn:
+		CRPL A -1;
+		Stop;
+	}
+}
+Class Crate64Cross : Cube64
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 64x64 Cross
+	}
+	States
+	{
+		Spawn:
+		CRCR A -1;
+		Stop;
+	}
+}
+
+Class Cube128 : Cube64
+{
+	Default
+	{
+	
+	Health 1;
+	Radius 76;
+	Height 128;
+	}
+	States
+	{
+		Spawn:
+		FCAN A -1;
+		Stop;
+	}
+}
+
+Class Crate128Clean : Cube128
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 128x128 Clean
+	}
+	States
+	{
+		Spawn:
+		CRCL A -1;
+		Stop;
+	}
+}
+Class Crate128Plank : Cube128
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 128x128 Plank
+	}
+	States
+	{
+		Spawn:
+		CRPL A -1;
+		Stop;
+	}
+}
+Class Crate128Cross : Cube128
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 128x128 Cross
+	}
+	States
+	{
+		Spawn:
+		CRCR A -1;
+		Stop;
+	}
+}
+
+Class Cube32 : Cube64
+{
+	Default
+	{
+	Health 1;
+	Radius 20;
+	Height 32;
+	}
+	States
+	{
+		Spawn:
+		FCAN A -1;
+		Stop;
+	}
+}
+
+Class Cube32Blue : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 32x32 Blue
+	}
+	States
+	{
+		Spawn:
+		TCBL A -1;
+		Stop;
+	}
+}
+
+Class Cube32Green : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 32x32 Green
+	}
+	States
+	{
+		Spawn:
+		TCGR A -1;
+		Stop;
+	}
+}
+
+Class Cube32Brown : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title TechCrate 32x32 Brown
+	}
+	States
+	{
+		Spawn:
+		TCBR A -1;
+		Stop;
+	}
+}
+
+Class Crate32Clean : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 32x32 Clean
+	}
+	States
+	{
+		Spawn:
+		CRCL A -1;
+		Stop;
+	}
+}
+Class Crate32Plank : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 32x32 Plank
+	}
+	States
+	{
+		Spawn:
+		CRPL A -1;
+		Stop;
+	}
+}
+Class Crate32Cross : Cube32
+{
+	Default
+	{
+	//$Category Decoration/Crate Models
+	//$Title Crate 32x32 Cross
+	}
+	States
+	{
+		Spawn:
+		CRCR A -1;
+		Stop;
+	}
+}

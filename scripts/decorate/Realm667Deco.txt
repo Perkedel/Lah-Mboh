@@ -172,6 +172,85 @@ actor OxygenCanister : CustomInventory 32599 {
 	}
 }
 
+// Flare Torch Scalliano
+// https://www.realm667.com/repository/item-store/gadgets#preview-7
+/*
+Name: Flares
+Type: Light
+Palette: Custom
+Summon: Flare, FlareBox
+Use Type: Inventory
+
+NOTES
+This is most useful in OpenGL mode, with dynamic lights on, where it can illuminate
+a small area. Otherwise it's simply a marker.
+
+Submitted: scalliano
+Decorate: scalliano
+Sprites: id Software, scalliano
+Sprite Edit: scalliano
+Sounds: Raven Software
+Idea Base: Tomb Raider, Quake 4
+*/
+// was no DoomEdNum
+Actor Flare : CustomInventory 32581
+{
+	//$Category Weapons
+    //$Title Flare
+  Radius 4
+  Height 18
+  +INVENTORY.INVBAR
+  Inventory.MaxAmount 20
+  Inventory.Icon "FLARD0"
+  Inventory.PickupMessage "You picked up a flare."
+  States
+  {
+  Spawn:
+    FLAR D -1
+    Stop
+  Use:
+    TNT1 A 1 A_SpawnItemEx ("ActiveFlare", 56, 0, 28, 0, 0, 0, 0, 1)
+    Stop
+  }
+}
+
+// was no DoomEdNum
+Actor ActiveFlare 32582//You can give this a DoomEdNum, to place it in a map editor
+{
+	//$Category Decoration
+    //$Title Flare (Active)
+  Radius 22
+  Height 11
+  States
+  {
+  Spawn:
+    FLAR A 0 Bright
+    FLAR A 0 Bright A_PlaySound("Flare/Light")
+    FLAR A 0 Bright A_PlaySoundEx("Flare/Loop", "SoundSlot7", 1, -1)
+    FLAR AB 1 Bright
+    Goto Spawn+3
+  }
+}
+
+// was no DoomEdNum
+Actor FlareBox : CustomInventory 32583
+{
+	//$Category Ammunition
+    //$Title Box of Flares
+  Radius 28
+  Height 16
+  Inventory.PickupMessage "You picked up a box of flares."
+  States
+  {
+  Spawn:
+    FLAR C -1
+    Stop
+  Pickup:
+    TNT1 A 1 A_GiveInventory ("Flare", 5)
+    Stop
+  }
+}
+
 // Insanity Sphere. DBJ87, That_One_Doom_Mod, BlueShadow, originally from id Software x Midway DOOM 64
 // https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30
 /*
@@ -903,5 +982,1364 @@ Actor BigMineral : EclipseMineralBase 31442
 	Use:
 		TNT1 A 0 A_GiveInventory("ScoreItem", 50)
 		Stop
+	}
+}
+
+// DP-28 Br0leg
+// https://www.realm667.com/repository/armory/other-sources-styles#preview-6
+/*
+Name: DP28
+Class: 4
+Type: Hitscan
+Palette: Custom
+Summon: DP28
+Ammo Type: DP28Ammo (custom)
+Altfire: No
+Powered Mode: No
+Added States: No
+
+Code: lolo_is_cool, Br0leg
+Sounds: Valve
+Sprites: Tripwire (Red Orchestra 2), id Software (Doom hands), Monolith Software (Blood hands)
+Sprite Edit: Br0leg
+Idea Base: Real life World War II inspiration
+*/
+// was no DoomEdNum
+Actor DP28 : Weapon 31752
+{
+	//$Title DP-28
+	//$Category Weapons
+Decal BulletChip
+Weapon.SelectionOrder 500
+Weapon.SlotNumber 4
+Inventory.PickupMessage "You found a DP28!"
+Obituary "%o was shot down by %k's DP28."
+Weapon.AmmoType "DP28Ammo"
+Weapon.AmmoGive 47
+Weapon.AmmoUse 1
+Weapon.Kickback 150
+AttackSound "DP28/Fire"
+Scale 0.5
+States
+	{
+	Spawn:
+		DP28 P -1
+		Stop
+	Select:
+		DP28 A 1 A_Raise(16)
+		Loop
+	Deselect:
+		DP28 A 1 A_Lower(16)
+		Loop
+	Ready:
+		DP28 A 1 A_WeaponReady
+		Loop
+	Fire:
+		TNT1 A 0 A_GunFlash
+		TNT1 A 0 A_Jump(256,"fire1","fire2","fire3","fire4","fire5")
+	Fire1:
+		DP2F AB 1 Bright
+		TNT1 A 4
+		Goto Ready
+	Fire2:
+		DP2F CD 1 Bright
+		TNT1 A 4
+		Goto Ready
+	Fire3:
+		DP2F EF 1 Bright
+		TNT1 A 4
+		Goto Ready
+	Fire4:
+		DP2F GH 1 Bright
+		TNT1 A 4
+		Goto Ready
+	Fire5:
+		DP2F IJ 1 Bright
+		TNT1 A 4
+		Goto Ready
+	Flash:
+		DP28 A 2 Bright A_FireBullets(1,1,-1,10,"BulletPuff",1)
+		DP28 BCBB 1
+		Stop
+	}
+}
+
+// was no DoomEdNum
+Actor DP28Ammo : Ammo 31753
+{
+	//$Title DP-28 Ammo Box
+	//$Category Ammunition
+Inventory.PickupMessage "Picked up some MG rounds."
+Inventory.Amount 47
+Inventory.MaxAmount 235
+Ammo.BackpackAmount 47
+Ammo.BackpackMaxAmount 470
+Inventory.Icon "DP28M0"
+States
+	{
+	Spawn:
+		DP28 M -1
+		Stop
+	}
+}
+
+// Jackbomb Ichor. Not that Ichor I guess..
+// https://www.realm667.com/repository/armory/other-sources-styles#preview-11
+/*
+--- Information ---
+Name: JackBomb
+Class 7
+Type: Projectile (grenade)
+Palette: Doom
+Summon: JackBomb
+Ammo: JackBombAmmo (ammo comes from the weapon pickups much like Hexen's flechette)
+Alt-Fire: Yes (drops jackbomb instead of throws it)
+Powered Mode: No
+Added States: Yes for monsters. Also, custom damage factors for the player (to make him immune to the minor damage caused by 
+the luring effect)
+
+--- Credits ---
+Submitted: Ichor
+Decorate: Ichor
+GLDefs: Ichor
+Sounds: Blood, typical jack-in-the-box music
+Sprites: American McGee's Alice
+Idea Base: World's Most Interesting Bomb
+
+--- Description ---
+This is the jackbomb from American McGee's Alice. However, the behavior is quite different. Instead of just a bomb that goes 
+off after a delay, it acts like a lure to draw any nearby enemies towards it in a vain attempt to attack it. After the lovely 
+song ends and the jack pops up, it explodes. The range and damage is devastating, so it would be most wise to watch the fun 
+from a distance. Use around large crowds for maximum effect and laughs.
+*/
+// was no DoomEdNum
+ACTOR JackBomb : Weapon 31754
+{
+	//$Title Jackbomb
+	//$Category Weapons
+    +FLOORCLIP
+    +FLOATBOB
+    +CHEATNOTWEAPON
+    +INVENTORY.IGNORESKILL
+	Weapon.SlotNumber 6
+    Weapon.AmmoType1 "JackBombAmmo"
+    Weapon.AmmoType2 "JackBombAmmo"
+    Weapon.AmmoGive1 1
+    Weapon.AmmoUse1 1
+    Weapon.AmmoUse2 1
+    +WEAPON.NOAUTOAIM
+    Scale 0.125
+    Inventory.PickupMessage "You picked up a jackbomb."
+    States
+    {
+    Spawn:
+	WJKB A -1 Bright
+	Loop
+    Ready:
+	JBOX A 1 A_WeaponReady
+	Loop
+    Deselect:
+	JBOX A 1 A_Lower
+	JBOX AA 0 A_Lower
+	Loop
+    Select:
+	JBOX A 1 A_Raise
+	TNT1 AA 0 A_Raise
+	Loop
+    Fire:
+	JBOX A 0 A_JumpIfInventory("ThrowForce",16,"ThrowJackBombG")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",15,"ThrowJackBombG")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",14,"ThrowJackBombF")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",13,"ThrowJackBombE")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",12,"ThrowJackBombD")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",11,"ThrowJackBombC")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",10,"ThrowJackBombB")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",9,"ThrowJackBombA")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",8,"ThrowJackBomb9")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",7,"ThrowJackBomb8")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",6,"ThrowJackBomb7")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",5,"ThrowJackBomb6")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",4,"ThrowJackBomb5")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",3,"ThrowJackBomb4")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",2,"ThrowJackBomb3")
+	JBOX A 0 A_JumpIfInventory("ThrowForce",1,"ThrowJackBomb2")
+	JBOX A 0 A_GiveInventory("ThrowForce",1)
+	JBOX A 2 A_GunFlash
+	JBOX A 0 A_ReFire
+    ThrowJackBomb1:
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb1",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb2:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb2",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb3:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb3",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb4:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb4",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb5:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb5",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb6:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb6",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb7:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb7",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb8:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb8",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBomb9:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBomb9",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombA:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombA",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombB:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombB",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombC:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombC",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombD:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombD",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombE:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombE",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombF:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombF",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    ThrowJackBombG:
+	JBOX A 2 A_GiveInventory("ThrowForce",1)
+	JBOX A 0 A_Refire
+	JBOX BCD 1
+	TNT1 A 9
+	JBOX EF 1
+	JBOX G 0 A_PlayWeaponSound("jackbomb/throw")
+	JBOX G 0 A_TakeInventory("ThrowForce",16)
+	JBOX G 1 A_FireCustomMissile("JackBombG",0,1,8,0)
+	JBOX HIJKLMNO 1
+	TNT1 A 8
+	JBOX DCBA 2
+	Goto Ready
+    AltFire:
+	JBOX A 2 A_PlayWeaponSound("jackbomb/throw")
+	TNT1 A 8 A_FireCustomMissile("JackBombAlt",0,1,8,0)
+	JBOX DCBA 2
+	Goto Ready
+    Flash:
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",16,32)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",15,30)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",14,28)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",13,26)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",12,24)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",11,22)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",10,20)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",9,18)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",8,16)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",7,14)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",6,12)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",5,10)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",4,8)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",3,6)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",2,4)
+	TNT1 A 0 A_JumpIfInventory("ThrowForce",1,2)
+	TNT1 A 0
+	Stop
+	DYNG A 2 Bright
+	Loop
+	DYNG B 2 Bright
+	Loop
+	DYNG C 2 Bright
+	Loop
+	DYNG D 2 Bright
+	Loop
+	DYNG E 2 Bright
+	Loop
+	DYNG F 2 Bright
+	Loop
+	DYNG G 2 Bright
+	Loop
+	DYNG H 2 Bright
+	Loop
+	DYNG I 2 Bright
+	Loop
+	DYNG J 2 Bright
+	Loop
+	DYNG K 2 Bright
+	Loop
+	DYNG L 2 Bright
+	Loop
+	DYNG M 2 Bright
+	Loop
+	DYNG N 2 Bright
+	Loop
+	DYNG O 2 Bright
+	Loop
+	DYNG P 2 Bright
+	Loop
+    }
+}
+
+ACTOR JackBombProj
+{
+    Speed 0
+    Radius 8
+    Height 8
+    Health 100000
+    Scale 0.25
+    Damage 16
+    Mass 0xFFFFFFFFFF
+    ReactionTime 73
+    +EXTREMEDEATH
+    +INVULNERABLE
+    +SHOOTABLE
+    +NOBLOOD
+    +FORCERADIUSDMG
+    +DONTSPLASH
+    +THRUACTORS
+    +FLOORCLIP
+    +SPECTRAL
+    -COUNTKILL
+    -SOLID
+    DamageFactor "ChaosExpl1", 0
+    DamageFactor "ChaosExpl2", 0
+    States
+    {
+    Spawn:
+	TNT1 A 0
+	JBTH A 0 A_PlaySound("jackbomb/music",8,1.2,0)
+	JBTH A 0 A_SpawnItemEx("JackBombChaos1",0,0,16,0,0,0,0,32,0)
+	JBTH A 0 A_SpawnItemEx("JackBombChaos2",0,0,16,0,0,0,0,32,0)
+	JBTH BCDEDCBABCDEDCBA 5 Bright A_CountDown
+	Goto Spawn+2
+    Death:
+	JBTH BCD 5 Bright
+	JBTH FG 3 Bright
+	JBTH H 15 Bright
+	TNT1 A 0 A_PlaySound("jackbomb/explode")
+	TNT1 A 0 Bright A_Explode(1000,350,1)
+	TNT1 A 0 A_SpawnItemEx("JackBombExplosion",0,0,0,0,0,0,0,32)
+	TNT1 AAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("ExplosionBit",0,0,0,frandom(3,6),frandom(3,6),frandom(5,10),frandom(0,360),0)
+	TNT1 A 10
+	Stop
+    }
+}
+
+ACTOR JackBomb1
+{
+    Speed 6
+    Radius 8
+    Height 8
+    Scale 0.25
+    Damage 0
+    Gravity 0.65
+    PROJECTILE
+    +GRENADETRAIL
+    -NOGRAVITY
+    +EXTREMEDEATH
+    BounceType "Hexen"
+    +BOUNCEONACTORS
+    +CANBOUNCEWATER
+    +PAINLESS
+    +NODAMAGETHRUST
+    BounceFactor 0.4
+    BounceCount 6
+    States
+    {
+    Spawn:
+	TNT1 A 0 
+	TNT1 A 0 ThrustThingZ(0,random(10,15),0,1)
+        JBTH A 1 Bright 
+        Goto Spawn+2
+    Death:
+	TNT1 A 0 A_SpawnItemEx("JackBombProj",0,0,0,0,0,0,0,32,0)
+	Stop
+    }
+}
+
+ACTOR JackBomb2 : JackBomb1
+{
+    Speed 7
+}
+
+ACTOR JackBomb3 : JackBomb1
+{
+    Speed 9
+}
+
+ACTOR JackBomb4 : JackBomb1
+{
+    Speed 10
+    States
+    {
+    Spawn:
+	TNT1 A 0 
+	TNT1 A 0 ThrustThingZ(0,random(12,14),0,1)
+        JBTH A 1 Bright 
+        Goto Spawn+2
+    }
+}
+
+ACTOR JackBomb5 : JackBomb4
+{
+    Speed 12
+}
+
+ACTOR JackBomb6 : JackBomb4
+{
+    Speed 13
+}
+
+ACTOR JackBomb7 : JackBomb1
+{
+    Speed 15
+    States
+    {
+    Spawn:
+	TNT1 A 0 
+	TNT1 A 0 ThrustThingZ(0,random(14,16),0,1)
+        JBTH A 1 Bright 
+        Goto Spawn+2
+    }
+}
+
+ACTOR JackBomb8 : JackBomb7
+{
+    Speed 16
+}
+
+ACTOR JackBomb9 : JackBomb7
+{
+    Speed 18
+}
+
+ACTOR JackBombA : JackBomb1
+{
+    Speed 19
+    States
+    {
+    Spawn:
+	TNT1 A 0 
+	TNT1 A 0 ThrustThingZ(0,random(16,18),0,1)
+        JBTH A 1 Bright 
+        Goto Spawn+2
+    }
+}
+
+ACTOR JackBombB : JackBombA
+{
+    Speed 21
+}
+
+ACTOR JackBombC : JackBombA
+{
+    Speed 22
+}
+
+ACTOR JackBombD : JackBomb1
+{
+    Speed 24
+    States
+    {
+    Spawn:
+	TNT1 A 0 
+	TNT1 A 0 ThrustThingZ(0,random(18,20),0,1)
+        JBTH A 1 Bright 
+        Goto Spawn+2
+    }
+}
+
+ACTOR JackBombE : JackBombD
+{
+    Speed 25
+}
+
+ACTOR JackBombF : JackBombD
+{
+    Speed 27
+}
+
+ACTOR JackBombG : JackBombD
+{
+    Speed 28
+}
+
+ACTOR JackBombAlt : JackBomb1
+{
+    BounceFactor 0.3
+    BounceCount 3
+    Speed 3
+    States
+    {
+    Spawn:
+	JBTH A 1 Bright
+        Loop
+    }
+}
+
+ACTOR JackBombChaos1
+{
+    +STRIFEDAMAGE
+    +DONTSPLASH
+    +FORCERADIUSDMG
+    +NODAMAGETHRUST
+    PROJECTILE
+    DamageType ChaosExpl1
+    States
+    {
+    Spawn:
+	TNT1 A 0
+	TNT1 A 0 A_Explode(1,1200,0)
+	Stop
+    }
+}
+
+ACTOR JackBombChaos2
+{
+    +STRIFEDAMAGE
+    +DONTSPLASH
+    +FORCERADIUSDMG
+    +NODAMAGETHRUST
+    PROJECTILE
+    DamageType ChaosExpl2
+    States
+    {
+    Spawn:
+	TNT1 A 0
+	TNT1 A 0 A_Explode(1,1200,0)
+	Stop
+    }
+}
+
+// was no DoomEdNum
+ACTOR JackBombAmmo : Ammo 31755
+{
+	//$Title Jackbomb Ammo
+	//$Category Ammunition
+    Inventory.Amount 1
+    Inventory.MaxAmount 10
+    +IGNORESKILL
+    Inventory.Icon "JBAMMO"
+	States
+	{
+		Spawn:
+			JBTH A -1 Bright
+			Stop
+	}
+}
+
+ACTOR ThrowForce : Inventory
+{
+    Inventory.Amount 1
+    Inventory.MaxAmount 16
+}
+
+ACTOR JackBombExplosion
+{
+    Radius 5
+    Height 5
+    Speed 0
+    Scale 3.2
+    RenderStyle Add
+    +NOINTERACTION
+    States
+    {
+    Spawn:
+	EXP3 ABCDEFGHIJKLMNOPQRSTUVWXYZ 3 Bright A_FadeOut(0.03)
+	EXP3 Z 1 A_FadeOut
+	Wait
+    }
+}
+
+ACTOR ExplosionBit
+{
+    PROJECTILE
+    +RIPPER
+    +DONTSPLASH
+    +BLOODLESSIMPACT
+    BounceType "Doom" 
+    Mass 1
+    Radius 8
+    Height 6
+    Speed 10
+    Damage 0
+    States
+    {
+    Spawn:
+	WRBL P 1 Bright A_Gravity
+	Loop
+    Death:
+	WRBL P 40 Bright 
+	Stop
+    }
+}
+
+// was TestPlayer. Yeah, we could cause conflict if the name's too generic like in AHiT.
+ACTOR IchorTestPlayer : DoomPlayer //replaces DoomPlayer
+{
+	Player.DisplayName "Ichor Jackbomber"
+	Player.startitem "JackBomb"
+	Player.startitem "JackBombAmmo" 10
+	Player.StartItem "Fist"
+    DamageFactor "ChaosExpl1", 0
+    DamageFactor "ChaosExpl2", 0
+    PainChance "ChaosExpl1", 0
+    PainChance "ChaosExpl2", 0
+}
+// Jesus Christ! TestLevel!! And even they lost the source code itself so no more rebaking!
+
+// was TestImp
+ACTOR IchorTestImp : DoomImp 30541 //replaces DoomImp
+{
+    States
+    {
+    Pain.ChaosExpl1:
+	TNT1 A 0
+	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_ChangeFlag("QUICKTORETALIATE",1)
+	Goto Spawn
+    Pain.ChaosExpl2:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("QUICKTORETALIATE",0)
+	Goto See
+    }
+}
+
+// Duke Nukem Toilet Fuzzy Blaze
+// https://www.realm667.com/repository/prop-stop/technical#preview-37
+/*
+Name: Toilet
+Connection: None
+Palette: Doom
+Summon: Toilet1
+Ambient Sound: Yes (when broken)
+De-/Activatable: No
+Destroyable: Yes
+Special Effects: Yes (spawns fountain when destroyed)
+
+Submitted: FuzzyBlaze
+Decorate: FuzzyBlaze
+Sprites: 3D Realms
+Sounds: 3D Realms
+Sprite Edit: Las Rojas
+*/
+// was 290. Should we keep?
+ACTOR Toilet1 290
+{
+	//$Category Decoration
+    //$Title Toilet
+  SpawnID 125
+  Tag "Toilet"
+  Health 10
+  Radius 10
+  Height 34
+  Mass 10000000
+  +SOLID
+  +SHOOTABLE
+  +NOBLOOD
+  +ACTIVATEMCROSS
+  +DONTGIB
+  +NOICEDEATH
+  +OLDRADIUSDMG
+  DeathSound "BREAK1"
+  States
+  {
+  Spawn:
+    TOIL A 6
+    Loop
+  Death:
+    TOIL A 1 A_Scream
+    TOIL B 4
+	TOIL C 2
+	TOIL D 2
+	TOIL E 2
+	TOIL F 3
+	Goto Water
+  Water:
+    TOIF A 3 A_PlaySound ("TOILET1")
+	TOIF B 3
+	TOIF C 3
+	TOIF D 3
+	TOIF A 3
+	TOIF B 3
+	TOIF C 3
+	TOIF D 3
+    TOIF A 3
+	TOIF B 3
+	TOIF C 3
+	TOIF D 3
+    TOIF A 3
+	TOIF B 3
+	TOIF C 3
+	TOIF D 3
+	Loop
+  }
+}
+
+// Pipe Duke Nukem FuzzyBlaze
+//
+/*
+Name: Pipe Pack
+Connection: None
+Palette: Custom
+Summon: HPipe[1-5]
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+
+Submitted: FuzzyBlaze
+Decorate: FuzzyBlaze
+GLDefs: none
+Sprites: 3DRealms
+Idea Base: The pipes from Duke 3D
+*/
+
+// (JOELwindows7) Hey, you better build base instead!
+ACTOR DukePipe
+{
+	Radius 16
+  	Height 128
+	Tag "DukePipe"
+	+SOLID
+	States
+	{
+		Spawn:
+			TNT1 A -1 // Provide graphics your own!!!
+			Stop
+	}
+}
+
+// Was 325. Guess we should keep..
+ACTOR HPipe1 : DukePipe 325
+{
+	//$Category Decoration
+    //$Title Pipe 1
+  Tag "Pipe 1"
+  States
+  {
+  Spawn:
+    PIP1 A -1
+    Stop
+  }
+}
+
+// Was 326
+ACTOR HPipe2 : DukePipe 326
+{
+	//$Category Decoration
+    //$Title Pipe 2
+  Tag "Pipe 2"
+  States
+  {
+  Spawn:
+    PIP2 A -1
+    Stop
+  }
+}
+
+// Was 327
+ACTOR HPipe3 : DukePipe 327
+{
+	//$Category Decoration
+    //$Title Pipe 3
+  Tag "Pipe 3"
+  States
+  {
+  Spawn:
+    PIP3 A -1
+    Stop
+  }
+}
+
+// Was 328
+ACTOR HPipe4 : DukePipe 328
+{
+	//$Category Decoration
+    //$Title Pipe 4
+  Tag "Pipe 4"
+  States
+  {
+  Spawn:
+    PIP4 A -1
+    Stop
+  }
+}
+
+// Was 329
+ACTOR HPipe5 : DukePipe 329
+{
+	//$Category Decoration
+    //$Title Pipe 5
+  Tag "Pipe 5"
+  States
+  {
+  Spawn:
+    PIP5 A -1
+    Stop
+  }
+}
+
+// Traffic Cones Captain Toenail
+// https://www.realm667.com/repository/prop-stop/technical#preview-38
+/*
+Information:
+Name: Traffic Cones
+Connection: None
+Palette: Doom
+Summon: TrafficCone(Green/Yellow/Blue/Red)
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+GLDefs: Captain Toenail
+Sprites: Captain Toenail
+
+Description:
+	Traffic cones in a variety of colours. Can be toggled to be pushable
+	in map editor. Reflective strip glows in dark.
+*/
+// was 15220
+ACTOR TrafficCone 26220
+{
+	//$Title Traffic Cone Orange
+	//$Category Obstacles/Traffic Cones
+	//$NotAngled
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+	//$Sprite CONEA0
+	Radius 10
+	Height 30
+	Health 0x7FFFFFFF
+	Scale 0.8
+
+	+SOLID
+	+NOBLOOD
+	+DONTGIB
+	+NOTAUTOAIMED
+	//+BUDDHA // Not supported by Zandronum 
+
+	// extra from crates
+	+NOICEDEATH
+	+PuffOnActors
+	+Shootable
+	+NoDamage
+
+		States
+		{
+			Spawn:
+				CONE A 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+				Goto Spawn2
+			MakePushable:
+				CONE A 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CONE A 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				CONE A 0 A_ChangeFlag ("SHOOTABLE", TRUE)
+			Spawn2:
+				CONE A -1
+				Stop
+		}
+}
+
+// was 15221, sorry, the comments do not inherit somehow..
+ACTOR TrafficConeGreen : TrafficCone 26221
+{
+	//$Title Traffic Cone Green
+	//$Category Obstacles/Traffic Cones
+	//$NotAngled
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+	//$Sprite CONEB0
+		States
+		{
+			Spawn:
+				CONE B 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+				Goto Spawn2
+			MakePushable:
+				CONE B 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CONE B 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				CONE B 0 A_ChangeFlag ("SHOOTABLE", TRUE)
+			Spawn2:
+				CONE B -1
+				Stop
+		}
+}
+
+// was 15222
+ACTOR TrafficConeYellow : TrafficCone 26222
+{
+	//$Title Traffic Cone Yellow
+	//$Category Obstacles/Traffic Cones
+	//$NotAngled
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+	//$Sprite CONEC0
+		States
+		{
+			Spawn:
+				CONE C 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+				Goto Spawn2
+			MakePushable:
+				CONE C 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CONE C 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				CONE C 0 A_ChangeFlag ("SHOOTABLE", TRUE)
+			Spawn2:
+				CONE C -1
+				Stop
+		}
+}
+
+// was 15223
+ACTOR TrafficConeBlue : TrafficCone 26223
+{
+	//$Title Traffic Cone Blue
+	//$Category Obstacles/Traffic Cones
+	//$NotAngled
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+	//$Sprite CONED0
+		States
+		{
+			Spawn:
+				CONE D 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+				Goto Spawn2
+			MakePushable:
+				CONE D 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CONE D 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				CONE D 0 A_ChangeFlag ("SHOOTABLE", TRUE)
+			Spawn2:
+				CONE D -1
+				Stop
+		}
+}
+
+// was 15224
+ACTOR TrafficConeRed : TrafficCone 26224
+{
+	//$Title Traffic Cone Red
+	//$Category Obstacles/Traffic Cones
+	//$NotAngled
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+	//$Sprite CONEE0
+		States
+		{
+			Spawn:
+				CONE E 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+				Goto Spawn2
+			MakePushable:
+				CONE E 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CONE E 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				CONE E 0 A_ChangeFlag ("SHOOTABLE", TRUE)
+			Spawn2:
+				CONE E -1
+				Stop
+		}
+}
+
+// Duke Nukem Explosive Fire Extinguisher Captain Toenail
+//
+/*
+Information:
+Name: Fire Extinguisher
+Connection: None
+Palette: Doom
+Summon: FireExtinguisher(Floor), CryoExtinguisher(Floor)
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: Yes
+Special Effects: No
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+Sprites: Captain Toenail, Doom
+Sprite Edit: Captain Toenail
+Idea Base: Exploding fire extinguishers in Duke Nukem 3D
+
+Description:
+	A fire extinguisher. Explodes when shot. Blue cryo extinguishers freeze 
+	targets. Place wall extinguishers directly on linedef with zheight. Floor
+	extinguishers are placed as regular props. Can be toggled to be pushable.
+*/
+// was 14400
+ACTOR FireExtinguisher 28410
+{
+	//$Title Fire Extinguisher (Wall Mounted)
+	//$Category Obstacles/Fire Extinguishers
+
+	Health 20
+	Radius 5.5
+	Height 28
+	Scale 0.6
+	Mass 0x7FFFFFFF
+	
+	+SHOOTABLE
+	+NOBLOOD
+	+DONTGIB
+	+NOICEDEATH
+	+NOGRAVITY
+	+FIXMAPTHINGPOS
+	+DONTFALL
+	//+DONTTHRUST // Zandronum does not support this flag. Using Mass 0x7FFFFFFF instead.
+  
+	DeathSound "world/barrelx"
+	Obituary "%o was extinguished."
+
+		States
+		{
+			Spawn:
+				FEXT A -1 
+				Stop
+			Death:
+				FEXT B 4
+				FEXT C 4 A_Scream
+				FEXT DDDDD 0 A_SpawnItemEx ("ExtinguisherCloud", random(-32,32), 0, random(0, 32), 0, 0, 0, random(1,360))
+				FEXT D 5 A_Explode (75, 96, XF_NOTMISSILE)
+				FEXT EF 5
+				Stop
+		}
+}
+
+// was 14401
+ACTOR CryoExtinguisher : FireExtinguisher 28411
+{
+	//$Title Cryo Extinguisher (Wall Mounted)
+
+	Obituary "%o was frozen stiff."
+
+		States
+		{
+			Spawn:
+				CEXT A -1 
+				Stop
+			Death:
+				CEXT B 4
+				CEXT C 4 A_Scream
+				CEXT DDDDD 0 A_SpawnItemEx ("ExtinguisherCloud", random(-32,32), 0, random(0, 32), 0, 0, 0, random(1,360))
+				CEXT D 0 A_SpawnItem ("CryoSparkleSpawner", 0, 16)
+				CEXT D 0 A_SpawnItem ("CryoExplosion") // Zandronum does not support damagetype on A_Explode. Spawning explosion actor as workaround.
+				//CEXT D 5 A_Explode (75, 96, XF_NOTMISSILE, 0, 0, 0, 0, None, "Ice")
+				FEXT EF 5
+				Stop
+		}
+}
+
+// was 14403
+ACTOR FireExtinguisherFloor : FireExtinguisher 28413
+{
+	//$Title Fire Extinguisher (Floor)
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+
+	Mass 500
+	
+	+SOLID
+	-NOGRAVITY
+	-FIXMAPTHINGPOS
+	-DONTFALL
+	//-DONTTHRUST
+
+		States
+		{
+			Spawn:
+				FEXT A 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+			Spawn2:
+				FEXT A -1
+				Stop
+			MakePushable:
+				FEXT A 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				FEXT A 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				goto Spawn2
+			Death:
+				FEXT B 4
+				FEXT C 4 A_Scream
+				FEXT DDDDD 0 A_SpawnItemEx ("ExtinguisherCloud", random(-32,32), 0, random(0, 32), 0, 0, 0, random(1,360))
+				FEXT D 5 A_Explode (75, 96, XF_NOTMISSILE)
+				FEXT EF 5
+				Stop
+		}
+}
+
+// was 14404
+ACTOR CryoExtinguisherFloor : CryoExtinguisher 28414
+{
+	//$Title Cryo Extinguisher (Floor)
+	//$Arg0 Pushable
+	//$Arg0Default 1
+	//$Arg0Type 11
+	//$Arg0Enum falsetrue
+
+	Mass 500
+	
+	+SOLID
+	-NOGRAVITY
+	-FIXMAPTHINGPOS
+	-DONTFALL
+	//-DONTTHRUST
+
+		States
+		{
+			Spawn:
+				CEXT A 0 NoDelay A_JumpIf(args[0] == 1, "MakePushable")
+			Spawn2:
+				CEXT A -1
+				Stop
+			MakePushable:
+				CEXT A 0 A_ChangeFlag ("PUSHABLE", TRUE)
+				CEXT A 0 A_ChangeFlag ("SLIDESONWALLS", TRUE)
+				goto Spawn2
+			Death:
+				CEXT B 4
+				CEXT C 4 A_Scream
+				CEXT DDDDD 0 A_SpawnItemEx ("ExtinguisherCloud", random(-32,32), 0, random(0, 32), 0, 0, 0, random(1,360))
+				CEXT D 0 A_SpawnItem ("CryoSparkleSpawner", 0, 16)
+				CEXT D 0 A_SpawnItem ("CryoExplosion")
+				//CEXT D 5 A_Explode (75, 96, XF_NOTMISSILE, 0, 0, 0, 0, None, "Ice")
+				FEXT EF 5
+				Stop
+		}
+}
+
+
+ACTOR ExtinguisherCloud
+{
+	+NOINTERACTION
+
+		States
+		{
+			Spawn:
+				EXTS A 0 NoDelay A_Jump (256, "FadeAwayA", "FadeAwayB", "FadeAwayC", "FadeAwayD") //Zandronum does not support XFLIP/YFLIP flags yet so doing it this way
+			FadeAwayA:
+				EXTS A 1 A_FadeOut (0.02)
+				EXTS A 0 A_SetScale (scalex+0.01,scaley+0.01)
+				Loop
+			FadeAwayB:
+				EXTS B 1 A_FadeOut (0.02)
+				EXTS B 0 A_SetScale (scalex+0.01,scaley+0.01)
+				Loop
+			FadeAwayC:
+				EXTS C 1 A_FadeOut (0.02)
+				EXTS C 0 A_SetScale (scalex+0.01,scaley+0.01)
+				Loop
+			FadeAwayD:
+				EXTS D 1 A_FadeOut (0.02)
+				EXTS D 0 A_SetScale (scalex+0.01,scaley+0.01)
+				Loop
+		}
+}
+
+ACTOR CryoSparkle
+{
+	Scale 0.3
+	RenderStyle Add
+	Translation "Ice"
+
+	+NOINTERACTION
+
+		States
+		{
+			Spawn:
+				CSPK DCBABCD 4 Bright
+				Stop
+		}
+}
+
+ACTOR CryoSparkleSpawner
+{
+	+NOINTERACTION
+
+		States
+		{
+			Spawn:
+				TNT1 A 9 NoDelay
+				TNT1 AAAAAAAAAAAAAAA 3 A_SpawnItemEx ("CryoSparkle", random(-40,40), 0, random(-20,20), 0, 0, 0, random(1,360))
+				Stop
+		}
+}
+
+ACTOR CryoExplosion
+{
+	DamageType Ice
+
+	+MISSILE
+	+NOBLOCKMAP
+	+NOGRAVITY
+
+	States
+	{
+		Spawn:
+			TNT1 A 1 NoDelay A_Explode (75, 96)
+			Stop
 	}
 }

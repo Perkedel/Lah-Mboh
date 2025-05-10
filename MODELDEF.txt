@@ -53,3 +53,111 @@ Model BlenderDefaultCube
     BaseFrame
 }
 */
+
+// Realm667
+// Crates Rifleman
+Model Cube32Blue
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube32blue.md3"
+	FrameIndex TCBL A 0 0
+}
+
+Model Cube32Green
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube32green.md3"
+	FrameIndex TCGR A 0 0
+}
+
+Model Cube32Brown
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube32brown.md3"
+	FrameIndex TCBR A 0 0
+}
+
+Model Cube64Blue
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube64blue.md3"
+	FrameIndex TCBL A 0 0
+}
+
+Model Cube64Green
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube64green.md3"
+	FrameIndex TCGR A 0 0
+}
+
+Model Cube64Brown
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "cube64brown.md3"
+	FrameIndex TCBR A 0 0
+}
+
+Model Crate32Plank
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate32plank.md3"
+	FrameIndex CRPL A 0 0
+}
+
+Model Crate32Cross
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate32cross.md3"
+	FrameIndex CRCR A 0 0
+}
+
+Model Crate32Clean
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate32clean.md3"
+	FrameIndex CRCL A 0 0
+}
+
+Model Crate64Clean
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate64clean.md3"
+	FrameIndex CRCL A 0 0
+}
+
+Model Crate64Plank
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate64plank.md3"
+	FrameIndex CRPL A 0 0
+}
+
+Model Crate64Cross
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate64cross.md3"
+	FrameIndex CRCR A 0 0
+}
+
+Model Crate128Plank
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate128plank.md3"
+	FrameIndex CRPL A 0 0
+}
+
+Model Crate128Cross
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate128cross.md3"
+	FrameIndex CRCR A 0 0
+}
+
+Model Crate128Clean
+{
+	Path "models/Realm667/Rifleman"
+	Model 0 "crate128clean.md3"
+	FrameIndex CRCL A 0 0
+}
+// End Realm667

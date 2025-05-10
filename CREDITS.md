@@ -74,6 +74,7 @@ For the thing we've yoinked
 	- [Interactive Decorations](https://zdoom.org/wiki/Creating_interactive_decorations)
 	- [Max Health](https://zdoom.org/wiki/Classes:MaxHealth)
 	- [ACS Named Execute Always](https://zdoom.org/wiki/ACS_NamedExecuteAlways)
+	- [Random Spawner](https://zdoom.org/wiki/Classes:RandomSpawner). yoink?
 - [Plerb's 90's CGI Textures](https://www.doomworld.com/forum/topic/151605-plerbtex-v35-90s-cgi-textures-and-more/). Plerb. ???. **PLS YOINK CAREFULLY!, DO NOT REPLACE IWAD'S**, Pack of textures with vibes of 90's CGI.
 - [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???.
     - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
@@ -88,6 +89,14 @@ For the thing we've yoinked
     - [Jump Boots](https://www.realm667.com/repository/item-store/others#preview-4). Captain Toenail
     - [Bullet Ant Venom](https://www.realm667.com/repository/item-store/others#preview). Quantum_Dranger
     - [Score Treasury](https://www.realm667.com/repository/item-store/others#preview-8). Cyantusk
+    - [DP-28](https://www.realm667.com/repository/armory/other-sources-styles#preview-6). Br0leg.
+    - [Jackbomb](https://www.realm667.com/repository/armory/other-sources-styles#preview-11). Ichor.
+    - [Flare torch](https://www.realm667.com/repository/item-store/gadgets#preview-7). Scalliano
+    - [Duke Nukem Toilet](https://www.realm667.com/repository/prop-stop/technical#preview-37). FuzzyBlaze. *Aaaah, much better.*
+    - [Duke Nukem Pipes](https://www.realm667.com/repository/prop-stop/technical#preview-25). FuzzyBlaze.
+    - [Duke Nukem Explosive Fire Extinguisher](https://www.realm667.com/repository/prop-stop/technical#preview-14). Captain Toenail
+    - [Crate Models](https://www.realm667.com/repository/prop-stop/technical#preview-8). Riffleman
+    - [Traffic Cones](https://www.realm667.com/repository/prop-stop/technical#preview-38). Captain Toenail
 
 ## Dependencies
 

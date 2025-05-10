@@ -255,3 +255,22 @@ decal Wahaw 4014
 	X-Scale 0.25
 	Y-Scale 0.25
 }
+
+decal NecroDedNo 4014
+{
+	// Freedoom Necromancer death scream
+	pic NecroDed
+	// pic in 512 x 512
+	X-Scale 0.25
+	Y-Scale 0.25
+}
+
+decal WWTHFD 4013
+{
+	// Who Wants to have a Freedoom. parody of Freedoom & Millionaire
+	// for mod https://www.moddb.com/games/doom/addons/wwtbam-music-for-doom
+	pic WWTHFD
+	// pic in 1024 x 1024
+	X-Scale 0.1
+	Y-Scale 0.1
+}

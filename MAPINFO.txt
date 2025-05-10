@@ -123,8 +123,52 @@ DoomEdNums
 	26521 = HealingBackpack
 	26522 = HealthPack
 	26621 = VitalityBonus
+
+	// Realm667
+	// Crates Rifleman
+	// Was 164XX
+	23700 = Cube32Blue
+	23701 = Cube32Green
+	23702 = Cube32Brown
+	23703 = Cube64Blue
+	23704 = Cube64Green
+	23705 = Cube64Brown
+	23706 = Crate32Clean
+	23707 = Crate32Plank
+	23708 = Crate32Cross
+	23709 = Crate64Clean
+	23710 = Crate64Plank
+	23711 = Crate64Cross
+	23712 = Crate128Clean
+	23713 = Crate128Plank
+	23714 = Crate128Cross
+	// End Realm667
 }
 // I'm tired of this bullshit. Just lemme build level already!
+
+SpawnNums
+{
+
+	// Realm667
+	// Crates Rifleman
+	// Was 164XX
+	23700 = Cube32Blue
+	23701 = Cube32Green
+	23702 = Cube32Brown
+	23703 = Cube64Blue
+	23704 = Cube64Green
+	23705 = Cube64Brown
+	23706 = Crate32Clean
+	23707 = Crate32Plank
+	23708 = Crate32Cross
+	23709 = Crate64Clean
+	23710 = Crate64Plank
+	23711 = Crate64Cross
+	23712 = Crate128Clean
+	23713 = Crate128Plank
+	23714 = Crate128Cross
+	// End Realm667
+}
 
 
 clusterdef 100
