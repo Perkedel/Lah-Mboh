@@ -32,7 +32,7 @@ body:
   - type: input
     id: level_name
     attributes:
-      label: Level Name
+      label: Level / Mod Name
       description: Level `Title` that will be written to main `MAPINFO.txt`
       placeholder: ex. MyCoolLevel.wad / My Cool Level
     validations:

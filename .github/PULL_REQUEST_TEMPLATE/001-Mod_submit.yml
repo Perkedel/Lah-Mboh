@@ -1,0 +1,51 @@
+# Using GitHub's example
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser
+# Reedited by JOELwindows7 for DOOM
+
+name: Mod Submit
+description: Submit mods without using Fork & Pull Request
+title: "[Mod]: "
+labels: ["mod", "triage"]
+#projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - JOELwindows7
+body:
+  - type: markdown
+    id: info
+    attributes:
+      value: |
+        # You chose to Submit Levels & Mods, Fork & Pull Requat way!
+        Thank you for your interest for Level & Mod Submissions. Before you can submit your edits back to us, ensure you've read & understood our Contributing documents.
+
+        The Full Instruction is [right here!](/CONTRIBUTING.md)
+  - type: input
+    id: level_name
+    attributes:
+      label: Level / Mod Name
+      description: Level `Title` that will be written to main `MAPINFO.txt`
+      placeholder: ex. MyCoolLevel.wad / My Cool Level
+    validations:
+      required: true
+  - type: input
+    id: download_url
+    attributes:
+      label: Extra Files
+      description: Do you have extra files that we should consider taking a look at, which cannot be inserted directly in Git due to various reasons?
+      placeholder: https://cloud.example.com/share/eA7Tb7
+    validations:
+      required: false
+  - type: markdown
+    id: tips_desc
+    attributes:
+      value: |
+        > [!TIP]
+        > You can attempt to attach wad files directly here!, since level only WAD files are typically very small.  
+        > Always make sure to notify us manually once you've submitted this issue, just in case.
+  - type: textarea
+    id: describe
+    attributes:
+      label: Description
+      description: Describe your level & mod contents
+      placeholder: This is my cool mods, it got bla bla bla, and this this this..
+    validations:
+      required: true
