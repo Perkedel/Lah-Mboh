@@ -12,7 +12,9 @@ assignees:
   - JOELwindows7
 body:
   - type: markdown
+    id: info
     attributes:
+      label: Info
       value: |
         # You chose to Submit Levels without using Git way!
         Hello? Yuhuu..!!, You are submitting a level without Git?  
@@ -27,13 +29,16 @@ body:
         - `the_level.wad`
   - type: input
     id: level_name
-    label: Level Name
-    required: true
+    attributes:
+      label: Level Name
+      required: true
   - type: input
     id: download_url
-    label: Download URL
-    required: true
+    attributes:
+      label: Download URL
+      required: true
   - type: textarea
     id: describe
-    label: Description
-    required: true
+    attributes:
+      label: Description
+      required: true
