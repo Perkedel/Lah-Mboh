@@ -83,4 +83,29 @@ Simply Clone this entire source code, then load this entire project folder as yo
 	- [Sekaiju](https://openmidiproject.opal.ne.jp/) for MIDI
 	- Audacity for recording, audio edit, & coversion
 
+## Submitting Levels
+
+Use Pull Request! (**TODO: TUTORIAL PLS!**)
+
+- Fork this source code
+- Clone
+- Add your level
+- Commit & Push to your fork.
+- Repeat save to GitHub until you got all the levels done.
+- Once done, make Pull Request back here.
+- When we receive the notification, we will promptly review those new map wads & if good enough & safe, will be accepted.
+
+### Tips for Level, Mods ZScript & DECORATE, Assets, etc.
+
+- No need Difficulty Implementation yet! We will handle this if necessary. It's okay if you had, and we'll still adjust it further.
+- No need to edit the Level Selector & MAPINFO. We'll also handle those.
+- Must write author! inside each of your `map` field of MAPINFO, the `Author` cannot be empty! You don't want your name be forgotten right? 
+- While we are too lazy to check license of whatever assets contained in your Pull request, Please **AVOID including files that originally PAID**. Such as PWADs, IWADs, MIDIs (Yamaha Musicsoft e.g.), etc. We do not want to sparsdat in this repository, because this repository should make it to arcade machine somehow.
+- [Compress your files!](/docs/Tutorial/SladeMaintenance.md). Using Trifecta PNG Optimizer to the SLADE, Render / Convert SFX & Audio Musics in(to) Opus, prioritize musics in MIDI, etc.
+- (Personal) If you make slaughter / impossible: 
+    - make this entirely optional & escapable
+    - All those cameo enemies there `No Completition` (leave just the main boss Completition)
+    - even if you provide equal or more arsenals.
+- Ensure all resource available to the brim, especially Health & Weapons! Repeated & consistent resource depletion in every New Game causes players to cheat!
+
 ## Iyeah
