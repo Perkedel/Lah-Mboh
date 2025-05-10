@@ -1,5 +1,5 @@
 # wtf, where's the yml template?!
-# This is embarrasing! Asking AI again to help me write again!?
+# This is embarrasing! Asking AI & using AI suggester again to help me write again!?
 # Had no shame!! Why only in Markdown?!
 # (JOELwindows7)
 
@@ -14,7 +14,6 @@ body:
   - type: markdown
     id: info
     attributes:
-      label: Info
       value: |
         # You chose to Submit Levels without using Git way!
         Hello? Yuhuu..!!, You are submitting a level without Git?  
@@ -31,14 +30,20 @@ body:
     id: level_name
     attributes:
       label: Level Name
+      placeholder: ex. MyCoolLevel.wad / COLLEV / My Cool Level
+    validations:
       required: true
   - type: input
     id: download_url
     attributes:
       label: Download URL
+      placeholder: https://cloud.example.com/share/eA7Tb7
+    validations:
       required: true
   - type: textarea
     id: describe
     attributes:
       label: Description
+      placeholder: This is my cool level, it got bla bla bla, and this this this..
+    validations:
       required: true
