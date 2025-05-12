@@ -136,6 +136,8 @@ Class Cube64 : Actor
 	+NoDamage;
 	+NoBlood;
 	+NotAutoaimed;
+	+CANPASS;
+	+ACTLIKEBRIDGE;
 	}
 	States
 	{
