@@ -178,15 +178,17 @@ For the thing we've yoinked
 	- this overlay should disturb the AI from learning the image
 	- [sauce more](https://www.reddit.com/r/CuratedTumblr/comments/1dkioq6/ai_blocking_image_overlays/)
 	- [sauce again](https://www.tumblr.com/arson-jellyfish69/750555399114080256/put-these-on-the-top-layer-above-everything-set)  found somewhere
-- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/)
+- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
 	- MIDIs!!!!!!!!!
 	- Therefore, The credits for [Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), & [Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), as well as [Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack) & [FreeDM](https://doomwiki.org/wiki/FreeDM_music)
 	- every assets possible!
+	- [Freedoom Attic](https://github.com/freedoom/attic). fraggle et al. **BSD License Clause-3**. Unused Freedoom contents
 - Wikipedia.
 	- [CFExpress Logo](https://en.wikipedia.org/wiki/File:CFexpress_logo.svg). Locke Cole. **PUBLIC DOMAIN**.
 - [DSEG Segment Font](https://www.keshikan.net/fonts-e.html). Keshikan. **OFL-1.1**.  [SOURCE CODE](https://github.com/keshikan/DSEG); Display Segment font! 7-segment, 14-segment, weird-segments too!
 - [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans). eifetx. **OFL-1.1**. [SOURCE CODE](https://github.com/eifetx/pixelify-sans); Pixel font sans! Should be perfect for subtitles & many text for Pixelorama
 - [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
+- Bad Explosion. nthompson. ???. The Freesound file is gone! I still have one.
 
 ## Sounds
 
@@ -222,6 +224,15 @@ For the thing we've yoinked
 	- `D_EVIL` FreeDM = `D_SYTIME`. Kevin Martins (Velvetic) - The Syntax of Time
 - [Freedoom Attic](https://github.com/freedoom/attic). fraggle et al. **BSD License Clause-3**. Unused Freedoom contents
 	- `?` = `?`. ??? - ???
+	- `ralphis/d_e1m1.mid` = `dm_ha1`. Ralphis Vickers - Hangar 1
+	- `ralphis/e1m1.mid` = `dm_ha2`. Ralphis Vickers - Hangar 2
+	- `ralphis/d_e1m5.mid` = `ral_e1m5`. Ralphis Vickers - ???
+	- `picklehammer/d_introa.mid` = `pham_tl`. picklehammer - Freedoom 1 old intro
+	- `picklehammer/d_dm2ttl.mid` = `pham_d2tl`. picklehammer - Freedoom 2 old intro
+	- `picklehammer/d_dm2int.mid` = `pham_d2in`. picklehammer - Freedoom old Intermmission
+	- `dbimmidi/INTER - Korp - Resprenselessness.mid` = `D_RESPRE`. Korp - Resprenselessness from Double Impact
+	- `dbimmidi/TITLE - continuum.mid - Triple Impact.mid` = `D_TRIMTL`. Continuum.mid - Triple Impact (Title Screen) from Double Impact
+	- `hyena/d_evil.mid` = `hye_evil`. hyena - Evil Born from Me
 - Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
 	- Revenant Problem. Extractions into filenames as follows
 		- `HEROD.mid`. Charles Alexander - Herod's Song
