@@ -2343,3 +2343,124 @@ ACTOR CryoExplosion
 			Stop
 	}
 }
+
+// Bushes (No, we did not yoink it 1st, they did!) Gothic
+// https://www.realm667.com/repository/prop-stop/vegetation#preview
+/*
+Name: Bushes
+Connection: None
+Palette: Doom
+Summon: Bush[1-7,U,A,C], BushDmg[1-11], ShootBush[1-7]
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: Yes
+Special Effects: No
+Brightmaps: No
+ACS: No
+
+Code: Gothic
+Sprites: id Software (ripped by Xaser, Jimmy & Minigunner), osjclatchford
+Sprite Edit: Gothic
+Sounds: Freesound.org (LampEight)
+
+Nov 14, 2021 update:
+-Added more variants, thanks to osjclatchford.
+-Re-organized actors.
+-Added shootable variants.
+-Converted the wad to pk3.
+*/
+#include "scripts/decorate/Realm667DecoMoar/BushesNormal.txt"
+#include "scripts/decorate/Realm667DecoMoar/BushesDamaged.txt"
+#include "scripts/decorate/Realm667DecoMoar/BushesShootable.txt"
+
+// Prototype Nature Props
+// https://www.realm667.com/repository/prop-stop/vegetation#preview-7
+/*
+Code: PGE
+GLDefs: PGE
+Sprites: id Software
+Idea Base: "Romero's Doom Dump Gore" on R667
+
+Name: Development Nature Decor
+Connection: None
+Palette: Doom
+Summon: BushShort, BurntBushShort1, BurntBushShort2, BushTall, BurntBushTall1,
+BurntBushTall2, BigTreeBloody, BigTreeSmooth, CarlsbadRock Stalagmite2, Stalagtite2
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+Brightmaps: No
+ACS: No
+
+Description:
+Natural props found in Doom's prototypes and RomeroDoomDump.
+*/
+// was 19306
+ACTOR BigTreeBloody : BigTree 30306
+{
+	//$Title Big Tree (Bloody)
+	//$Category Decoration/Development Trees and Rocks
+  States
+  {
+  Spawn:
+    TRE3 A -1
+    Stop
+  }
+}
+
+// was 19307
+ACTOR BigTreeSmooth : BigTree 30307
+{
+	//$Title Big Tree (Smooth)
+	//$Category Decoration/Development Trees and Rocks
+  States
+  {
+  Spawn:
+    TRE4 A -1
+    Stop
+  }
+}
+
+// was 19308
+ACTOR CarlsbadRock 30308
+{
+	//$Title Stalagmite (Carl)
+	//$Category Decoration/Development Trees and Rocks
+  Radius 40
+  Height 94
+  ProjectilePassHeight 0
+  +SOLID
+  States
+  {
+  Spawn:
+    CARL A -1
+    Stop
+  }
+}
+
+// was 19318
+ACTOR Stalagmite2 : Stalagmite 30318
+{
+	//$Title Stalagmite 2
+	//$Category Decoration/Development Trees and Rocks
+  States
+  {
+  Spawn:
+    SMT4 A -1
+    Stop
+  }
+}
+
+// was 19319
+ACTOR Stalagtite2 : Stalagtite 30319 // Stalactite is deliberately misspelled
+{
+	//$Title Stalactite 2
+	//$Category Decoration/Development Trees and Rocks
+  States
+  {
+  Spawn:
+    SMT3 A -1
+    Stop
+  }
+}

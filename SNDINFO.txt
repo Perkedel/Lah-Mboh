@@ -125,4 +125,10 @@ $Limit Flare/Loop 5
 // Duke Nukem Toilet Fuzzy Blaze
 TOILET1      TOILET1
 BREAK1       BREAK1
+
+// Bush Gothic
+$random Ambient/BushDamaged { BushDamaged1 BushDamaged2 BushDamaged3 }
+BushDamaged1 bushdmg1
+BushDamaged2 bushdmg2
+BushDamaged3 bushdmg3
 // End Realm667

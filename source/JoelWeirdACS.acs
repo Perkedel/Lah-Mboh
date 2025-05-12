@@ -1,0 +1,9 @@
+// Oh shit. I broke my save because of adding another LoadACS. wtf?!
+// YOu gotta fix this issue!
+// Oh well, whatever.
+// (JOELwindows7)
+
+script "PortableHappyHappy" (void)
+{
+    // https://www.doomworld.com/forum/topic/152208-01apr2125-happy-happy/
+}

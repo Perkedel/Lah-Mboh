@@ -142,6 +142,39 @@ DoomEdNums
 	23712 = Crate128Clean
 	23713 = Crate128Plank
 	23714 = Crate128Cross
+	// Bushes Gothic
+	// Was no DoomEdNum
+	// Normal Bush
+	30870 = Bush1
+	30871 = Bush2
+	30872 = Bush3
+	30873 = Bush4
+	30874 = Bush5
+	30875 = Bush6
+	30876 = Bush7
+	30877 = BushU
+	30878 = BushA
+	30879 = BushC
+	// Damaged Bush
+	30880 = BushDmg1
+	30881 = BushDmg2
+	30882 = BushDmg3
+	30883 = BushDmg4
+	30884 = BushDmg5
+	30885 = BushDmg6
+	30886 = BushDmg7
+	30887 = BushDmg8
+	30888 = BushDmg9
+	30889 = BushDmg10
+	30869 = BushDmg11
+	// Shotable Bush
+	30890 = ShootBush1
+	30891 = ShootBush2
+	30892 = ShootBush3
+	30893 = ShootBush4
+	30894 = ShootBush5
+	30895 = ShootBush6
+	30896 = ShootBush7
 	// End Realm667
 }
 // I'm tired of this bullshit. Just lemme build level already!

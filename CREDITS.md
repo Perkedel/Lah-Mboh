@@ -97,6 +97,8 @@ For the thing we've yoinked
     - [Duke Nukem Explosive Fire Extinguisher](https://www.realm667.com/repository/prop-stop/technical#preview-14). Captain Toenail
     - [Crate Models](https://www.realm667.com/repository/prop-stop/technical#preview-8). Riffleman
     - [Traffic Cones](https://www.realm667.com/repository/prop-stop/technical#preview-38). Captain Toenail
+    - [Bushes](https://www.realm667.com/repository/prop-stop/vegetation#preview). Gothic
+    - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
 
 ## Dependencies
