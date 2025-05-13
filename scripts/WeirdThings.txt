@@ -635,3 +635,22 @@ class VitalityBonus : MaxHealth
 // https://zdoom.org/wiki/Classes:PowerupGiver
 // https://zdoom.org/wiki/Classes:Powerup
 // https://zdoom.org/wiki/Classes:PowerDoubleFiringSpeed
+
+// https://zdoom.org/wiki/A_FaceTarget
+class HomingLostSoul : LostSoul
+{
+	Default
+	{
+		//$Title Lost Soul (Homing)
+		//$Category Monsters
+	}
+
+    States
+    {
+    Missile:
+        SKUL C 10 Bright A_FaceTarget;
+        SKUL D 4 Bright A_SkullAttack;
+        SKUL CD 4 Bright;
+        Goto Missile; // Instead of `Misile+2` (resulting go back to Skull Attack), it instead Face target again, & again.
+    }
+}

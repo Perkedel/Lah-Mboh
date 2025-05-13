@@ -120,6 +120,7 @@ DoomEdNums
 	27822 = FateImp
 	27823 = MatryoskaDoomImp
 	27564 = RapidShotgunGuy // inkoalawetrust & JOELwindows7
+	27565 = HomingLostSoul 
 	27921 = ParticlePlasmaFire
 	26521 = HealingBackpack
 	26522 = HealthPack

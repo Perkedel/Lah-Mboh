@@ -75,6 +75,7 @@ For the thing we've yoinked
 	- [Max Health](https://zdoom.org/wiki/Classes:MaxHealth)
 	- [ACS Named Execute Always](https://zdoom.org/wiki/ACS_NamedExecuteAlways)
 	- [Random Spawner](https://zdoom.org/wiki/Classes:RandomSpawner). yoink?
+	- [Actor Face target now](https://zdoom.org/wiki/A_FaceTarget).
 - [Plerb's 90's CGI Textures](https://www.doomworld.com/forum/topic/151605-plerbtex-v35-90s-cgi-textures-and-more/). Plerb. ???. **PLS YOINK CAREFULLY!, DO NOT REPLACE IWAD'S**, Pack of textures with vibes of 90's CGI.
 - [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???.
     - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
