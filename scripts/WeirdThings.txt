@@ -44,6 +44,96 @@ class BlenderDefaultCube : Actor
 	}
 }
 
+// Rapid Fire Shotgun guy
+/*
+Now that we've learned it, how about we also make the shotgun guy version?
+These guys come from wretched lives of Corruption (not just financial tho).
+The Harrasser found these souls, reincarnated them, & equipped them with ultra training & weapons to match.
+Yeah, you're gonna need to make the Map respawnable Single player just like in the likes of Cube Sauerbraten & other DM focused games.
+*/
+class RapidShotgunGuy : ShotgunGuy
+{
+	// see the Zombies one we got from inkoalawetrust's ZDoom Wiki tutorial!
+	bool user_EnableBurstFire; // if true, the zombie will shoot in bursts.
+	bool user_AvoidMelee; // Makes the zombie avoid melee, as he has no melee attack.
+	bool user_BecomeWimpy; // Frightened when receives pain
+	bool user_painless; // never feel pain
+	int user_initHealth; // set start health
+	int user_BulletAmount; // How many bullets to fire at every burst.
+	int user_Firerate; // How fast each round is fired, in tics.
+	int bulletAmount; // Counts down how many bullets have been fired.
+
+	Default
+	{
+		//$Title Former Sergeant (Customizable)
+		//$Category Monsters
+		Health 10000;
+	}
+
+	override void PostBeginPlay()
+	{
+		super.PostBeginPlay();
+		if(user_painless) A_ChangeFlag("NOPAIN",user_painless); // just it to true! argh whatever.
+		if (user_Firerate <= 0) user_FireRate = 5;
+		if (user_BulletAmount <= 0) bulletAmount = 5;
+		if (user_initHealth > 0) A_SetHealth(user_initHealth);
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		bAvoidMelee = user_AvoidMelee; // Turn the eponymous flag on or off based on the user variables' value.
+	}
+
+	// Inheritance!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	States
+	{
+		Pain:
+			TNT1 A 0 
+			{
+				if(user_BecomeWimpy)
+					bFRIGHTENED = true;
+			}
+			goto Super::Pain;
+		Missile:
+			TNT1 A 0 A_JumpIf (user_EnableBurstFire,"CustomMissile");
+			SPOS E 10 A_FaceTarget;
+			SPOS F 10 BRIGHT A_SposAttackUseAtkSound;
+			SPOS E 10;
+			Goto See;
+		CustomMissile:
+			SPOS E 10
+			{
+				tics = user_Firerate; // Yes, you can directly change how many tics a frame state lasts, but A_SetTics works too.
+				A_FaceTarget();
+			}
+			SPOS F 10
+			{
+				tics = user_Firerate;
+				A_SposAttackUseAtkSound();
+			}
+			SPOS E 10 A_SetTics (user_Firerate);
+			TNT1 A 0
+			{
+				// if the amount of rounds to fire is left to 0 or less, and the eponymous user variable is set to 1 or above.
+				if (bulletAmount <= 0 && user_BulletAmount >= 1)
+				{
+					bulletAmount = user_BulletAmount;
+					Return State (Null); // Leave this state frame and go to the next state (Goto See;).
+				}
+				if (bulletAmount <= 0 && user_BulletAmount <= 0) // Default counter amount if no value is given.
+				{
+					bulletAmount = 5;
+					Return State (Null);
+				}
+				// If bulletAmount is still above 0.
+				bulletAmount--; // Decrement
+				Return A_Jump (256,"CustomMissile"); // And jump back to the start of the state.
+			}
+			Goto See;
+	}
+}
+
 // ZDoom Used()
 // https://zdoom.org/wiki/Used
 // Odd Barrel. Explode if you Use this Barrel while having BFG.
@@ -143,6 +233,8 @@ class CustomizableZombieman : Zombieman
 	bool user_EnableBurstFire; // if true, the zombie will shoot in bursts.
 	bool user_AvoidMelee; // Makes the zombie avoid melee, as he has no melee attack.
 	bool user_BecomeWimpy; // Frightened when receives pain
+	bool user_painless; // never feel pain
+	int user_initHealth; // set start health
 	int user_BulletAmount; // How many bullets to fire at every burst.
 	int user_Firerate; // How fast each round is fired, in tics.
 	int bulletAmount; // Counts down how many bullets have been fired.
@@ -156,8 +248,10 @@ class CustomizableZombieman : Zombieman
 	override void PostBeginPlay()
 	{
 		super.PostBeginPlay();
+		if(user_painless) A_ChangeFlag("NOPAIN",user_painless); // just it to true! argh whatever.
 		if (user_Firerate <= 0) user_FireRate = 5;
 		if (user_BulletAmount <= 0) bulletAmount = 5;
+		if (user_initHealth > 0) A_SetHealth(user_initHealth);
 	}
 
 	override void Tick()

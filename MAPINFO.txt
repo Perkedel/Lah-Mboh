@@ -119,6 +119,7 @@ DoomEdNums
 	27557 = RocketZombieMan
 	27822 = FateImp
 	27823 = MatryoskaDoomImp
+	27564 = RapidShotgunGuy // inkoalawetrust & JOELwindows7
 	27921 = ParticlePlasmaFire
 	26521 = HealingBackpack
 	26522 = HealthPack
@@ -1106,6 +1107,17 @@ map T_CUZOM lookup "T_CUZOM"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
 	music = "D_UNDERTO"
+}
+
+map T_RSPAWN lookup "T_RSPAWN"
+{
+	author = "JOELwindows7 ft. inkoalawetrust"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "FIRESK09"
+	exitPic = "LMBHTIHD"
+	music = "D_UNDERTO"
+	AllowRespawn
 }
 
 // Damages
