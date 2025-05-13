@@ -654,3 +654,7 @@ class HomingLostSoul : LostSoul
         Goto Missile; // Instead of `Misile+2` (resulting go back to Skull Attack), it instead Face target again, & again.
     }
 }
+
+// https://zdoom.org/wiki/Thing_Remove
+// https://zdoom.org/wiki/Thing_Spawn
+// https://zdoom.org/wiki/Dynamic_arrays
