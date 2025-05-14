@@ -31,7 +31,6 @@ gameinfo
 		"$STARBUCKCOSTEQ",
 		"$SURROUNDLACK",
 		"$COPYTHEGAME",
-		"$CALLSUSFACIST",
 		"$IFORGOR",
 		"$SOCIALDANGEROUS",
 		"$PRAISEMIMA",
@@ -71,6 +70,7 @@ gameinfo
 		"$VANILLACOMPAT2",
 		"$USEROKILL",
 		"$AVOIDTERRY",
+		"$SUPLEMA",
 		"$WHERDGOING"
 	
 	addcreditpage = 

@@ -229,3 +229,6 @@ Actor AvoidDeath : CustomInventory
     Stop
   }
 }
+
+// https://zdoom.org/wiki/Making_Weapon_Pieces
+// https://zdoom.org/wiki/Custom_CVARs_with_ZScript
