@@ -14,9 +14,33 @@ class LevelSelectNow
 	}
 }
 
+class HardCodeLevelName
+{
+	string level;
+	string label;
+
+	static HardCodeLevelName Create(string level, string label = "")
+	{
+		let h = New('HardCodeLevelName');
+		if(h)
+		{
+			h.level = level;
+			h.label = label;
+		}
+		return h;
+	}
+}
+
 class LevelSelectNowHandler : LMBH_ZF_Handler
 {
 	LevelSelectNowMenu link;
+
+	override void elementHoverChanged(LMBH_ZF_Element caller, Name command, bool unhovered) 
+	{
+		// I gotta Jmod again!
+		If(unhovered||!(caller is "LMBH_ZF_Button")){Return;}
+		link.SetFocus(caller,LMBH_ZF_NavEventType_Tab);
+	}
 	
 	override void buttonClickCommand(LMBH_ZF_Button caller, Name command)
 	{
@@ -118,6 +142,10 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			Level.ChangeLevel("T_RSPAWN",0,CHANGELEVEL_NOINTERMISSION,-1);
 			link.Close();
 		}
+		else if(command == "L-T_CA_OUT"){
+			Level.ChangeLevel("T_CA_OUT",0,CHANGELEVEL_NOINTERMISSION,-1);
+			link.Close();
+		}
 
 		else
 		{
@@ -127,15 +155,58 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 	}
 }
 
+class LMHB_ZF_BaseGenericMenu : LMBH_ZF_GenericMenu
+{
+
+}
+
 class LevelSelectNowMenu : LMBH_ZF_GenericMenu 
 {
 	LMBH_ZF_ListFrame liste;
 	LMBH_ZF_Image background;
 	Font smallFont;
+	Array<HardCodeLevelName> hardCodeLevels;
+	// static const HardCodeLevelName hardCodeLevels[] = 
+	// {
+	// 	HardCodeLevelName.Create("MBOHADV")
+	// };
+
+	void bringHardCodeLevelNames()
+	{
+		// https://zdoom.org/wiki/Arrays
+		// https://zdoom.org/wiki/ZScript_data_types#Arrays
+		// https://zdoom.org/wiki/Dynamic_arrays
+		hardCodeLevels.clear();
+		hardCodeLevels.push(HardCodeLevelName.Create("MBOHADV", String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV"))));
+		hardCodeLevels.push(HardCodeLevelName.Create("JUSTFITE", StringTable.Localize("$JUSTFITE")));
+		hardCodeLevels.push(HardCodeLevelName.Create("RIGHTFRN", StringTable.Localize("$RIGHTFRN")));
+		hardCodeLevels.push(HardCodeLevelName.Create("PLMSKY1", StringTable.Localize("$PLMSKY1")));
+		hardCodeLevels.push(HardCodeLevelName.Create("MECHSKY1", StringTable.Localize("$MECHSKY1")));
+		hardCodeLevels.push(HardCodeLevelName.Create("CHORALBE", StringTable.Localize("$CHORALBE")));
+		hardCodeLevels.push(HardCodeLevelName.Create("FREELD", StringTable.Localize("$FREELD")));
+		hardCodeLevels.push(HardCodeLevelName.Create("TELEFAST", StringTable.Localize("$TELEFAST")));
+		hardCodeLevels.push(HardCodeLevelName.Create("DONUTER", StringTable.Localize("$DONUTER")));
+		hardCodeLevels.push(HardCodeLevelName.Create("PORTALA", StringTable.Localize("$PORTALA")));
+		hardCodeLevels.push(HardCodeLevelName.Create("TOTITLE", StringTable.Localize("$TOTITLE")));
+		hardCodeLevels.push(HardCodeLevelName.Create("TOTITLE2", StringTable.Localize("$TOTITLE2")));
+		hardCodeLevels.push(HardCodeLevelName.Create("TOTITLE3", StringTable.Localize("$TOTITLE3")));
+		hardCodeLevels.push(HardCodeLevelName.Create("MORATE", StringTable.Localize("$MORATE")));
+		hardCodeLevels.push(HardCodeLevelName.Create("SELDUAR", String.Format("(DM) %s", StringTable.Localize("$SELDUAR"))));
+		hardCodeLevels.push(HardCodeLevelName.Create("DODTEL", StringTable.Localize("$DODTEL")));
+		hardCodeLevels.push(HardCodeLevelName.Create("T_SCTTG", StringTable.Localize("$T_SCTTG")));
+		hardCodeLevels.push(HardCodeLevelName.Create("T_CUZOM", StringTable.Localize("$T_CUZOM")));
+		hardCodeLevels.push(HardCodeLevelName.Create("T_RSPAWN", StringTable.Localize("$T_RSPAWN")));
+		hardCodeLevels.push(HardCodeLevelName.Create("T_CA_OUT", StringTable.Localize("$T_CA_OUT")));
+	}
 	
 	override void init (Menu parent)
 	{
 		LevelSelectNowHandler handler;
+
+		bringHardCodeLevelNames();
+		// hardCodeLevels = {
+		// 	HardCodeLevelName("MBOHADV"),
+		// };
 		
 		Vector2 baseRes = (320, 200);
 		Super.init(parent);
@@ -179,6 +250,16 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
             // Whether to scale (true) or tile (false) the middle.
             false
         );
+
+		let focusBox = LMBH_ZF_BoxTextures.CreateTexturePixels (
+			//"Graphics/FocusIndicator.png",
+			"graphics/Box8x8Focus.png",
+			(2, 2),
+			(6, 6),
+			false,
+			false
+		);
+
         
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
@@ -211,12 +292,31 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         liste.Pack(scrollactFrame);
         
         //Level now
+		for(int i = 0; i < hardCodeLevels.size(); i++)
+		{
+			string compensateLabel = hardCodeLevels[i].label;
+			if(compensateLabel == "") compensateLabel = hardCodeLevels[i].level;
+			elem = LMBH_ZF_Button.create(
+				(8,16+(4*i)),
+				(96,16),
+				text: compensateLabel,
+				cmdHandler: handler,
+				command: String.Format("L-%s",hardCodeLevels[i].level)
+				//, hover: focusBox
+			);
+			//elem.Pack(scrollactFrame);
+			elem.Pack(liste);
+		}
+
+		// PAIN IS TEMPORARY, GLORY IS FOREVER
+		/*
         elem = LMBH_ZF_Button.create(
         	(8,16),
         	(96,32),
         	text: String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV")),
         	cmdHandler: handler,
         	command: "L-MBHADV"
+			//, hover: focusBox
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
@@ -231,6 +331,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
         
+
         elem = LMBH_ZF_Button.create(
         	(8,32),
         	(100,16),
@@ -402,5 +503,38 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         );
         //elem.Pack(scrollactFrame);
         elem.Pack(liste);
+
+		elem = LMBH_ZF_Button.create(
+        	(8,160),
+        	(100,32),
+        	text: StringTable.Localize("$T_CA_OUT"),
+        	cmdHandler: handler,
+        	command: "L-T_CA_OUT"
+        );
+        //elem.Pack(scrollactFrame);
+        elem.Pack(liste);
+		*/
+	}
+
+	override void setupFocusIndicator() {
+		let focusBox = LMBH_ZF_BoxTextures.CreateTexturePixels (
+			//"Graphics/FocusIndicator.png",
+			"graphics/Box8x8Focus.png",
+			(2, 2),
+			(6, 6),
+			false,
+			false
+		);
+
+		setFocusIndicator(LMBH_ZF_BoxImage.create((0, 0), (0, 0), focusBox));
+		setFocusPriority(LMBH_ZF_FocusPriority_JustAboveFocused);
+	}
+	override void positionFocusIndicator(Vector2 pos, Vector2 size) {
+		getFocusIndicator().setBox(pos, size);
+	}
+	override void changeFocusIndicator(LMBH_ZF_Element oldFocus, LMBH_ZF_Element newFocus)
+	{
+		super.changeFocusIndicator(oldFocus,newFocus);
+		//Console.printf("FOCUS: %s", newFocus.getCommand());
 	}
 }

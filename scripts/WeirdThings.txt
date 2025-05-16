@@ -658,3 +658,99 @@ class HomingLostSoul : LostSoul
 // https://zdoom.org/wiki/Thing_Remove
 // https://zdoom.org/wiki/Thing_Spawn
 // https://zdoom.org/wiki/Dynamic_arrays
+
+// https://zdoom.org/wiki/Classes:Thinker
+// looks like corpse handler would be a nice addition!
+class CorpseHandler : EventHandler
+{
+	override void WorldThingDied(worldEvent e)
+	{
+		if (e.thing && e.thing.bIsMonster)
+		{
+			//CorpseFader.Create(e.thing);
+		}
+	}
+}
+
+// and the attachment! We should use CVAR for each quirks dipswitches!
+
+class CorpseAttachment : Thinker
+{
+	Actor victim; //pointer to monster
+
+	static CorpseAttachment Create(Actor victim)
+	{
+		// Create and null-check the thinker:
+		let c = New('CorpseFader');
+		if (c)
+		{
+			// Pass the victim pointer to the thinker:
+			//c.victim = victim;
+			c.configure(victim);
+		}
+		// Always return a pointer to the created object:
+		return c;
+	}
+
+	virtual void configure(Actor victimNew){
+		victim = victimNew;
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		// If the victim no longer exists, destroy this thinker:
+		if (!victim)
+		{
+			Destroy();
+			return;
+		}
+		// If the victim is alive, do nothing:
+		if (victim.health > 0)
+		{
+			return;
+		}
+	}
+}
+
+// here corpse fader
+class CorpseFader : CorpseAttachment
+{
+	// This is the create method, with an argument
+	// to pass a pointer to the monster:
+	static CorpseFader Create(Actor victim)
+	{
+		// Create and null-check the thinker:
+		let c = New('CorpseFader');
+		if (c)
+		{
+			// Pass the victim pointer to the thinker:
+			//c.victim = victim;
+			c.configure(victim);
+		}
+		// Always return a pointer to the created object:
+		return c;
+	}
+
+	override void configure(Actor victimNew){
+		super.configure(victimNew);
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		// If the victim no longer exists, destroy this thinker:
+		if (!victim)
+		{
+			Destroy();
+			return;
+		}
+		// If the victim is alive, do nothing:
+		if (victim.health > 0)
+		{
+			return;
+		}
+		// Otherwise fade it out gradually:
+		victim.A_FadeOut(0.02);
+	}
+}

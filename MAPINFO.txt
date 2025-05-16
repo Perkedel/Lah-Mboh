@@ -4,7 +4,8 @@ gameinfo
 	// Core of the core. Pro of the core of the core!
 	// who's that guy again?
 	addeventhandlers =
-		//"JekyllPShootingRangeHandler", //This netevent quite buggy on such as La Tailor Girl it triggers every tick or something
+		"JekyllPShootingRangeHandler", //This netevent quite buggy on such as La Tailor Girl it triggers every tick or something
+		"CorpseHandler",
 		"DNB_werrorHandler"
 	
 	addquitmessages =
@@ -206,12 +207,12 @@ SpawnNums
 }
 
 
-clusterdef 100
+cluster 100
 {
 	hub	
 }
 
-clusterdef 200
+cluster 200
 {
 	// Kaorfa's Hideout found
 	EnterText= lookup, "ENTERKRFHIDE"
@@ -223,7 +224,7 @@ clusterdef 200
 	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
 
-clusterdef 300
+cluster 300
 {
 	// Painful facts defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
@@ -233,7 +234,7 @@ clusterdef 300
 	//flat = "FLAT5_4"
 }
 
-clusterdef 301
+cluster 301
 {
 	// Heartbreaking Incidents (Giant Assault guy) defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
@@ -243,7 +244,7 @@ clusterdef 301
 	//flat = "FLAT5_4"
 }
 
-clusterdef 330
+cluster 330
 {
 	// Final Boss Valley of Despair
 	//EnterText= lookup, "ENTERMBHBOSS"
@@ -253,7 +254,7 @@ clusterdef 330
 	//flat = "FLAT5_4"
 }
 
-clusterdef 510
+cluster 510
 {
 	// Random Short Level Freeloader
 	EnterText= lookup, "ENTERFREELD"
@@ -262,7 +263,7 @@ clusterdef 510
 	//flat = "FLAT5_4"
 }
 
-clusterdef 25200
+cluster 25200
 {
 	// Choral Bae test
 	EnterText= lookup, "ENTERCHOR"
@@ -273,7 +274,7 @@ clusterdef 25200
 	music = "D_OXIDNE" // 
 }
 
-clusterdef 26211
+cluster 26211
 {
 	// Dodgy Teleporter Test
 	hub
@@ -283,6 +284,13 @@ clusterdef 26211
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
 	//music = "D_OXIDNE" // 
+}
+
+cluster 26555
+{
+	// cave in out test
+	hub
+	pic = "LMBHEMPT"
 }
 
 /*
@@ -1098,6 +1106,7 @@ map T_SCTTG lookup "T_SCTTG"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
+	PauseMusicInMenus
 }
 
 map T_CUZOM lookup "T_CUZOM"
@@ -1119,6 +1128,35 @@ map T_RSPAWN lookup "T_RSPAWN"
 	exitPic = "LMBHTIHD"
 	music = "D_UNDERTO"
 	AllowRespawn
+	RandomPlayerStarts
+}
+
+map T_CA_OUT lookup "T_CA_OUT"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "FIRESK09"
+	exitPic = "LMBHTIHD"
+	music = "D_RUNNIN2"
+	cluster = 26555
+	AllowRespawn
+	RandomPlayerStarts
+	RememberState
+}
+
+map T_CA_IN lookup "T_CA_IN"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "FIRESK09"
+	exitPic = "LMBHTIHD"
+	music = "D_RUNNIN2"
+	cluster = 26555
+	AllowRespawn
+	RandomPlayerStarts
+	RememberState
 }
 
 // Damages

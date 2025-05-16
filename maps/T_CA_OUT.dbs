@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	T_RSPAWN
+	T_CA_OUT
 	{
 		
 		resources
@@ -21,11 +21,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "DEM1_6";
-		defaultceiltexture = "CEIL5_3";
-		defaulttoptexture = "AQCONC16";
-		defaultwalltexture = "AQCONC16";
-		defaultbottomtexture = "AQCONC16";
+		defaultfloortexture = "FLAT5_5";
+		defaultceiltexture = "F_SKY1";
+		defaulttoptexture = "AQCONC01";
+		defaultwalltexture = "AQCONC01";
+		defaultbottomtexture = "AQCONC01";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -300.2214f;
-		viewpositiony = -1031.13f;
-		viewscale = 5.30224f;
+		viewpositionx = 168.4289f;
+		viewpositiony = -150.0314f;
+		viewscale = 2.413402f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -51,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 8;
+			gridsize = 16;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -83,20 +83,6 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
-		}
-		
-		fieldtypes
-		{
-			
-			thing
-			{
-				user_enableburstfire = 3;
-				user_avoidmelee = 3;
-				user_bulletamount = 0;
-				user_firerate = 0;
-				user_inithealth = 0;
-				user_painless = 3;
-			}
 		}
 	}
 }

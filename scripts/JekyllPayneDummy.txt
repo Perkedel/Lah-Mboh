@@ -35,7 +35,10 @@ class JekyllPShootingRangeHandler : EventHandler
 	override void NetworkProcess(consoleEvent e)
 	{
 		name eventname = e.name;
-		if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) >= 0)
+		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) >= 0)
+		if (eventname == 'summonJekyllDummy')
+		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) != -1)
+		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) == 0)
 		{
 			let pmo = players[e.player].mo;
 			if (!pmo)
