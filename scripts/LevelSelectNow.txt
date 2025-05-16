@@ -97,6 +97,13 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 	}
 	*/
 
+	static String timerToString(int t)
+	{
+		int timed = t / 35;
+		// https://zdoom.org/wiki/Timer
+		return String.format("%d:%d%d", timed/60, (timed%60)/10, (timed%10));
+	}
+
 	void bringFocuses()
 	{
 		// Let's give these level buttons their next focuses.
@@ -297,7 +304,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		levelScreenshot = LMBH_ZF_Image.create
 		(
 			(0,32),
-			(240,180),
+			(240,140),
 			"graphics/ForumCover.png",
 			LMBH_ZF_Image.AlignType_TopLeft,
 			imageScale: (0.125, 0.125)
@@ -305,13 +312,20 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		levelScreenshot.pack(mainFrame);
 
 		levelTitleSay = LMBH_ZF_Label.create(
-        	(8,32+180),
+        	(8,32+140),
         	(240,16),
         	StringTable.Localize("..."),
         	smallFont
         );
 		levelTitleSay.pack(mainFrame);
 
+		levelInfoBox = LMBH_ZF_Label.create(
+        	(8,32+140+16),
+        	(240,500),
+        	StringTable.Localize("..."),
+        	conFont
+        );
+		levelInfoBox.pack(mainFrame);
         // list
 		
         liste = LMBH_ZF_ListFrame.create(
@@ -381,6 +395,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 			*/
 			if(brokenDownLevel[0] == "L")
 			{
+				// https://zdoom.org/wiki/Structs:LevelInfo
 				levelInfo = LevelInfo.FindLevelInfo(brokenDownLevel[1]);
 				/*
 				if(sayLabel)
@@ -392,13 +407,19 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 				{
 					String titler = levelInfo.mapName;
 					String descBox = levelInfo.authorName.."\n\n";
+					// alas, no way to load how many monsters, items, & secrets without being in it first.
+					//descBox = descbox .. "M = " .. "\n";
+					//descBox = descbox .. "I = " .. "\n";
+					//descBox = descbox .. "S = " .. levelInfo.Total_Secrets .. "\n";
+					descBox = descbox .. "\n";
+					descBox = descbox .. "Par = " .. timerToString(levelInfo.parTime) .. "\n";
 					if(levelScreenshot)
 					{
 
 					}
 					if(levelTitleSay)
 					{
-						levelTitleSay.setText(title);
+						levelTitleSay.setText(titler);
 					}
 					if(levelInfoBox)
 					{

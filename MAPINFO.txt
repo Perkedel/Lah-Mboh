@@ -438,6 +438,8 @@ Map MBH01 lookup "MBH01"
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"
 	//enterPic = "LMBHPENT"
+	ResetHealth
+	ResetInventory
 }
 
 Map MBH02 lookup "MBH02"
