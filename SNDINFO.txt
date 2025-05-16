@@ -132,3 +132,9 @@ BushDamaged1 bushdmg1
 BushDamaged2 bushdmg2
 BushDamaged3 bushdmg3
 // End Realm667
+
+// Enjay
+// Breakable Glass
+world/njGlass   NJGLASS     //Glass smashing
+$limit	world/njGlass		4
+// End Enjay

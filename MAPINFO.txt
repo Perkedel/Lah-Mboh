@@ -1161,6 +1161,20 @@ map T_CA_IN lookup "T_CA_IN"
 	RememberState
 }
 
+map T_NJ_BGL lookup "T_NJ_BGL"
+{
+	author = "Enjay ft. zzrion"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	//music = "D_RUNNIN2"
+	//cluster = 26555
+	AllowRespawn
+	RandomPlayerStarts
+	//RememberState
+}
+
 // Damages
 
 DamageType LatexGoo

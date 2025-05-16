@@ -1,0 +1,29 @@
+// Moar small weird Decorates I yoinked
+// amalgamated by JOELwindows7
+
+// Enjay Breakable glass
+/*
+https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641
+*/
+ACTOR NJGlassShard : GlassShard
+{
+  Radius 5
+  Mass 5
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  BounceType "HexenCompat"
+  BounceFactor 0.3
+  Renderstyle Translucent
+  Alpha 0.4
+  States
+  {
+  Spawn:
+    NJGL ABCDE 4
+    Loop
+  Death:
+    NJGL E 30
+    Stop
+  }
+
+}

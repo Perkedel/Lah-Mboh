@@ -13,6 +13,10 @@ CanvasTexture TargetDummyDamage 192 32
 // Matakrow HAMTEX
 Switch	Doom 3		DEVMEGA1	On Pic	DEVMEGA2	Tics 0
 
+// Jankified Ala Strife Glass Break using Enjay & zzrion's
+/* Switch Doom 3	SMGLASS1 On sound world/njGlass Pic GLBROK Tics 0 */
+Switch Doom 3	ZRIONGLS On sound world/njGlass Pic GLBROK Tics 0
+
 //Texture Warps
 
 //Water

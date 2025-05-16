@@ -182,6 +182,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("T_CUZOM", StringTable.Localize("$T_CUZOM")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_RSPAWN", StringTable.Localize("$T_RSPAWN")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_CA_OUT", StringTable.Localize("$T_CA_OUT")));
+		hardCodeLevels.push(HardCodeLevelName.Create("T_NJ_BGL", StringTable.Localize("$T_NJ_BGL")));
 	}
 	
 	override void init (Menu parent)

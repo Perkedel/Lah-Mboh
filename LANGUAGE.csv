@@ -105,7 +105,7 @@ Press who detonated first,SELDUAR,,Pencet siapa yang duar duluan,,,,
 Rapid Fire Shotgun guy,T_RSPAWN,,Tuan Shotgun Rapid Fire,,,,
 Somewhere in desert,T_CA_OUT,,Gurun entah dimana,,,,
 Entered the cave,T_CA_IN,,Masuk ke goa,,,,
-,,,,,,,
+Enjay’s Breakable Glass,T_NJ_BGL,,Kaca Pecah Belah Enjay,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -422,7 +422,32 @@ apalagi distribusi fisik. Baik stok baru & bekas.
 
 Sehingga Anda harus dijerumuskan ke neraka, dimana semua
 tukang bajak tersiksa abadi.",,,,
-,,,,,,,
+"You have been assassinated.
+
+Once again, that corrupt angel had another evil friend,
+Which sent his other friend to assassinate you in sleep for:
+
+Criticizing the state of Classic DOOM rabbithole, that
+as of late, you expressed concern regarding numbers of
+Slaughterions coming up recently.
+
+As usual, those people in the forum do not lightly takes it.
+
+And so here you are. Now you are forced to beat a
+Slaughterion, without flee-away DNB always provide.",ENTERSLTSULT,,"Anda telah ditembak mati.
+
+Sekali lagi, si malaikat korup itu punya teman jahat lain lagi,
+yang telah mengirim temannya yg lain utk menembak mati Anda
+pas tidur dengan alasan:
+
+Mengkritisi kondisi rabbithole DOOM Klasik terkini, bahwa
+saat ini, Anda mengekspresikan isu mengenai jumlah
+Slaughterion yang sudah sangat marak saat ini.
+
+Seperti biasa, orang2 di forum tersebut merasa sangat tersinggung.
+
+Dan disinilah Anda. Sekarang dipaksa menyelesaikan
+Slaughterion ini, tanpa opsi kabur seperti yg DNB selalu sediakan.",,,,
 ,,,,,,,
 ,,,,,,,
 ,,EXIT TEXT,,,,,
@@ -519,7 +544,14 @@ bahkan lewat dari kematian, tanpa penyesalan",,,,
 "That’s all for today!
 Bye for now..",ENDBRAINIAC78,Brainiac78 style of end video,"Itu saja hari ini!
 Sampai jumpa nanti..",,,,
-,,,,,,,
+"Unexpectedly, you were once again reign victory.
+
+Even tho you were thrown to hell, there’s always souls out there
+Who still ready as always to help you, even themselves can’t anymore.",EXITSLTSULT,,"Sungguh tak terduga, Anda sekali lagi menang.
+
+Bahkan disaat Anda terjerumus, akan selalu ada jiwa disana
+Yang siap selalu utk menolong, walaupun tidak dapat untuk
+diri mereka sendiri.",,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

@@ -101,6 +101,10 @@ For the thing we've yoinked
     - [Bushes](https://www.realm667.com/repository/prop-stop/vegetation#preview). Gothic
     - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
+- [Breakable Glass](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641). Enjay & zzrion. ???.
+    - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)
+    - [ZZrion Glass Tex](https://forum.zdoom.org/viewtopic.php?f=37&t=31139&p=809591#p809591)
+    - [Lazygamer tutorial](https://www.youtube.com/watch?v=MIEXpOepepE)
 
 ## Dependencies
 
