@@ -18,6 +18,7 @@ class HardCodeLevelName
 {
 	string level;
 	string label;
+	LevelInfo info;
 
 	static HardCodeLevelName Create(string level, string label = "")
 	{
@@ -26,6 +27,7 @@ class HardCodeLevelName
 		{
 			h.level = level;
 			h.label = label;
+			h.info = LevelInfo.FindLevelInfo(level);
 		}
 		return h;
 	}
@@ -48,7 +50,8 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 		// https://zdoom.org/wiki/ChangeLevel_(ZScript)
 		// https://zdoom.org/wiki/String
 		String nameSake = command;
-		Array<String> breakItDown;
+		//Array<String> breakItDown = LevelSelectNowMenu.breaklevelCommand(nameSake);
+		Array<String> breakItDown ;
 		nameSake.split(breakItDown, "::");
 		if(breakItDown[0] == "L")
 		{
@@ -57,108 +60,6 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 			link.Close();
 		}
 		// PAIN IS TEMPORARY, GLORY IS FOREVER
-		/*
-		if(command == "L-JUSTFITE"){
-			console.printf("GO to JUSTFITE");
-			//CallACS("ChangeLevel","JUSTFITE",0, CHANGELEVEL_NOINTERMISSION);
-			//ACS_NamedExecute("LevelJustfite",0);
-			//CallACS("LevelJustfite");
-			Level.ChangeLevel("JUSTFITE",0,CHANGELEVEL_NOINTERMISSION,-1);
-			//Destroy();
-			//Close();
-			link.Close();
-		}
-		else if(command == "L-RIGHTFRN"){
-			console.printf("GO to RIGHTFRN");
-			//CallACS("LevelRightFrn");
-			Level.ChangeLevel("RIGHTFRN",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-MBHADV"){
-			console.printf("GO to Megawad Mboh Adventure");
-			//CallACS("MegawadMBHADV");
-			Level.ChangeLevel("MBH01",0,CHANGELEVEL_NOINTERMISSION | CHANGELEVEL_RESETINVENTORY | CHANGELEVEL_RESETHEALTH,-1);
-			link.Close();
-		}
-		else if(command == "L-PLMSKY1"){
-			console.printf("GO to PLMSKY1");
-			//CallACS("LevelPlmSky1");
-			Level.ChangeLevel("PLMSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-MECHSKY1"){
-			console.printf("GO to MECHSKY1");
-			//CallACS("LevelMechSky1");
-			Level.ChangeLevel("MECHSKY1",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-CHORALBE"){
-			console.printf("GO to Choral Bae");
-			//CallACS("LevelChoralBe");
-			Level.ChangeLevel("CHORALBE",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-FREELD"){
-			console.printf("GO to Freeloader hell");
-			Level.ChangeLevel("FREELD",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-TELEFAST"){
-			console.printf("GO to Telefast demo");
-			Level.ChangeLevel("TELEFAST",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-DONUTER"){
-			console.printf("GO to Floor Donut demo");
-			Level.ChangeLevel("DONUTER",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-PORTALA"){
-			console.printf("GO to Portal Sector demo");
-			Level.ChangeLevel("PORTALA",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-TOTITLE"){
-			Level.ChangeLevel("TOTITLE",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-TOTITLE2"){
-			Level.ChangeLevel("TOTITLE2",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-TOTITLE3"){
-			Level.ChangeLevel("TOTITLE3",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-MORATE"){
-			Level.ChangeLevel("MORATE",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-DODTEL"){
-			Level.ChangeLevel("DODTEL",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-T_SCTTG"){
-			Level.ChangeLevel("T_SCTTG",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-T_CUZOM"){
-			Level.ChangeLevel("T_CUZOM",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-SELDUAR"){
-			Level.ChangeLevel("SELDUAR",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-T_RSPAWN"){
-			Level.ChangeLevel("T_RSPAWN",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		else if(command == "L-T_CA_OUT"){
-			Level.ChangeLevel("T_CA_OUT",0,CHANGELEVEL_NOINTERMISSION,-1);
-			link.Close();
-		}
-		*/
 		else
 		{
 			console.printf("GO to %s", command);
@@ -176,13 +77,25 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 {
 	LMBH_ZF_ListFrame liste;
 	LMBH_ZF_Image background;
-	Font smallFont;
+	Font smallFont, conFont;
 	Array<HardCodeLevelName> hardCodeLevels;
 	Array<LMBH_ZF_Element> levelButtons;
+	LMBH_ZF_Label sayLabel, levelTitleSay, levelInfoBox;
+	LMBH_ZF_Image levelScreenshot;
 	// static const HardCodeLevelName hardCodeLevels[] = 
 	// {
 	// 	HardCodeLevelName.Create("MBOHADV")
 	// };
+
+	// The return type cannot be dynamic array. Argh bullshit! wtf, GZdoom?!
+	/*
+	static Array<String> breakLevelCommand(String cmd)
+	{
+		Array<String> breakItDown;
+		cmd.split(breakItDown, "::");
+		return breakItDown;
+	}
+	*/
 
 	void bringFocuses()
 	{
@@ -216,7 +129,9 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		}
 
 		// now let's focus on the first button!
-		self.setFocus(levelButtons[0], LMBH_ZF_NavEventType_Tab);
+		if(levelButtons.size() > 0){
+			setFocus(levelButtons[0], LMBH_ZF_NavEventType_FocusChangeCount);
+		}
 	}
 
 	void bringHardCodeLevelNames()
@@ -233,13 +148,14 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		// https://zdoom.org/wiki/Arrays
 		// https://zdoom.org/wiki/ZScript_data_types#Arrays
 		// https://zdoom.org/wiki/Dynamic_arrays
+		// https://zdoom.org/wiki/Structs:LevelInfo
 
 		// clear first! the buttons, then the definition itself! this order surely avoids Null Pointer reference I think.
 		levelButtons.clear();
 		hardCodeLevels.clear();
 
 		// Now add here!
-		hardCodeLevels.push(HardCodeLevelName.Create("MBOHADV", String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV"))));
+		hardCodeLevels.push(HardCodeLevelName.Create("MBH01", String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV"))));
 		hardCodeLevels.push(HardCodeLevelName.Create("JUSTFITE", StringTable.Localize("$JUSTFITE")));
 		hardCodeLevels.push(HardCodeLevelName.Create("RIGHTFRN", StringTable.Localize("$RIGHTFRN")));
 		hardCodeLevels.push(HardCodeLevelName.Create("PLMSKY1", StringTable.Localize("$PLMSKY1")));
@@ -270,12 +186,13 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		// 	HardCodeLevelName("MBOHADV"),
 		// };
 		
-		Vector2 baseRes = (320, 200);
+		Vector2 baseRes = (640, 400);
 		Super.init(parent);
 		SetBaseResolution (baseRes);
 		
 		 // Get GZDoom's new options menu smallfont.
         smallFont = OptionFont ();
+		conFont = Font.GetFont("UbuntuC");
 		
 		handler = new ('LevelSelectNowHandler');
 		handler.link = self;
@@ -345,8 +262,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
-        	(0,32),
-        	(320,190-32),
+        	(240,32),
+        	(640-240,380-32),
         	8,	
         	daHeight,
         	32,
@@ -359,34 +276,67 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         // Textoid
         elem = LMBH_ZF_Label.create(
         	(8,16),
-        	(128,16),
+        	(640,16),
         	StringTable.Localize("$GOTOLEVELSAY"),
         	smallFont
         );
         elem.Pack(mainFrame);
-        
+		
+        // Test Textoid
+		/*
+		sayLabel = LMBH_ZF_Label.create(
+        	(128,16),
+        	(640-128,16),
+        	StringTable.Localize("..."),
+        	conFont
+        );
+		sayLabel.Pack(mainFrame);
+		*/
+
+		// Level Infos!
+		levelScreenshot = LMBH_ZF_Image.create
+		(
+			(0,32),
+			(240,180),
+			"graphics/ForumCover.png",
+			LMBH_ZF_Image.AlignType_TopLeft,
+			imageScale: (0.125, 0.125)
+		);
+		levelScreenshot.pack(mainFrame);
+
+		levelTitleSay = LMBH_ZF_Label.create(
+        	(8,32+180),
+        	(240,16),
+        	StringTable.Localize("..."),
+        	smallFont
+        );
+		levelTitleSay.pack(mainFrame);
+
         // list
+		
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
-        	(320,daHeight),
+        	(640-16-240,daHeight), // 320, daHeight
         	4	
         );
         liste.Pack(scrollactFrame);
         
+
         //Level now
 		for(int i = 0; i < hardCodeLevels.size(); i++)
 		{
 			string compensateLabel = hardCodeLevels[i].label;
 			if(compensateLabel == "") compensateLabel = StringTable.Localize(String.Format("$%s",hardCodeLevels[i].level));
 			elem = LMBH_ZF_Button.create(
-				(8,16+(4*i)),
-				(50,16),
+				(8,(16*i)),
+				(640-16-240,16),
 				text: compensateLabel,
 				cmdHandler: handler,
 				command: String.Format("L::%s",hardCodeLevels[i].level)
 				//, hover: focusBox
+				, fnt: conFont
 			);
-			//elem.Pack(scrollactFrame);
+			// elem.Pack(scrollactFrame);
 			elem.Pack(liste);
 			levelButtons.push(elem);
 		}
@@ -415,6 +365,47 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 	override void changeFocusIndicator(LMBH_ZF_Element oldFocus, LMBH_ZF_Element newFocus)
 	{
 		super.changeFocusIndicator(oldFocus,newFocus);
+		LevelInfo levelInfo;
 		//Console.printf("FOCUS: %s", newFocus.getCommand());
+		//Array<String> brokenDownLevel = breakLevelCommand(newFocus.command);
+		if(!newFocus) {return;}
+		String nameSake = newFocus.getCommand();
+		if(nameSake.length() > 0)
+		{
+			Array<String> brokenDownLevel;
+			nameSake.split(brokenDownLevel, "::");
+			// in Haxe there's inliner here, idk how does that work but I think it's what I meant
+			/*
+			To bring that entire function thingy right on place on compile rather than referencing it.
+			yeah don't know how that worked.
+			*/
+			if(brokenDownLevel[0] == "L")
+			{
+				levelInfo = LevelInfo.FindLevelInfo(brokenDownLevel[1]);
+				/*
+				if(sayLabel)
+				{
+					sayLabel.setText(levelInfo.authorName);
+				}
+				*/
+				if(levelInfo)
+				{
+					String titler = levelInfo.mapName;
+					String descBox = levelInfo.authorName.."\n\n";
+					if(levelScreenshot)
+					{
+
+					}
+					if(levelTitleSay)
+					{
+						levelTitleSay.setText(title);
+					}
+					if(levelInfoBox)
+					{
+						levelInfoBox.setText(descBox);
+					}
+				}
+			}
+		}
 	}
 }
