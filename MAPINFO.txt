@@ -1119,6 +1119,8 @@ map T_CUZOM lookup "T_CUZOM"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
 	music = "D_UNDERTO"
+	eventHandlers =
+		"CorpseVampirismHandler"
 }
 
 map T_RSPAWN lookup "T_RSPAWN"

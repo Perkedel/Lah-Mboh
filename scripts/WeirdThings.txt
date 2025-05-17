@@ -227,6 +227,7 @@ class SwitchableLamp : TechLamp
 // https://zdoom.org/wiki/Using_user_variables_in_ZScript inkoalawetrust. user variable!
 // https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE also configurable actors inkoalawetrust
 // https://zdoom.org/wiki/Using_inheritance
+// https://zdoom.org/wiki/Actor_properties#Skip_Super
 // Customizable Zombieman!
 class CustomizableZombieman : Zombieman
 {
@@ -324,6 +325,7 @@ class BigZombieman : CustomizableZombieman
         radius 30;
         height 56;
         speed 6;
+		DropItem "VitalityBonus", 255, 1000;
     }
 }
 
@@ -630,6 +632,15 @@ class VitalityBonus : MaxHealth
     }
 }
 
+// the no completition version for something, that can't be from functions
+class VitalityBonusNoComplete : VitalityBonus
+{
+	Default
+	{
+		-COUNTITEM
+	}
+}
+
 // https://zdoom.org/wiki/Classes:Berserk
 // https://zdoom.org/wiki/Classes:PowerStrength
 // https://zdoom.org/wiki/Classes:PowerupGiver
@@ -668,7 +679,32 @@ class CorpseHandler : EventHandler
 		if (e.thing && e.thing.bIsMonster)
 		{
 			//CorpseFader.Create(e.thing);
+			handleTheCorpseNow(e);
 		}
+	}
+
+	virtual void handleTheCorpseNow(worldEvent e)
+	{
+
+	}
+}
+
+// Oh my God! add my own!
+class CorpseVampirismHandler: CorpseHandler
+{
+	override void handleTheCorpseNow(worldEvent e)
+	{
+		CorpseVampirism.Create(e.thing);
+	}
+}
+
+// okey yours back too
+class CorpseFaderHandler: CorpseHandler
+{
+	override void handleTheCorpseNow(worldEvent e)
+	{
+		// IDEA: make same like this but ZZZ Hollow enemy death particle!
+		CorpseFader.Create(e.thing);
 	}
 }
 
@@ -677,6 +713,7 @@ class CorpseHandler : EventHandler
 class CorpseAttachment : Thinker
 {
 	Actor victim; //pointer to monster
+	bool singleUseTrigger; // use for singleuse trigger
 
 	static CorpseAttachment Create(Actor victim)
 	{
@@ -710,6 +747,13 @@ class CorpseAttachment : Thinker
 		{
 			return;
 		}
+
+		/*
+		if(!singleUseTrigger)
+		{
+			singleUseTrigger = true;
+		}
+		*/
 	}
 }
 
@@ -753,4 +797,64 @@ class CorpseFader : CorpseAttachment
 		// Otherwise fade it out gradually:
 		victim.A_FadeOut(0.02);
 	}
+}
+
+// Alright, my turn! Vitality bonus per corpse!!!!
+// https://zdoom.org/wiki/A_SpawnItemEx
+// https://zdoom.org/wiki/Constants
+class CorpseVampirism : CorpseAttachment
+{
+	const howManyTimes = 10;
+
+	static CorpseVampirism Create(Actor victim)
+	{
+		// Create and null-check the thinker:
+		let c = New('CorpseVampirism');
+		if (c)
+		{
+			// Pass the victim pointer to the thinker:
+			//c.victim = victim;
+			c.configure(victim);
+		}
+		// Always return a pointer to the created object:
+		return c;
+	}
+
+	override void Tick()
+	{
+		super.Tick();
+		// If the victim no longer exists, destroy this thinker:
+		if (!victim)
+		{
+			Destroy();
+			return;
+		}
+		// If the victim is alive, do nothing:
+		if (victim.health > 0)
+		{
+			return;
+		}
+
+		// Otherwise spawn lots & lots of Vitality Bonuses
+		if(!singleUseTrigger)
+		{
+			if(victim)
+			{
+				for(int i = 0; i < howManyTimes; i ++)
+				{
+					// FIXME: how to return 2 values at the same time?!
+					// let bleed = victim.A_SpawnItemEx("VitalityBonus");
+					/*
+					if(bleed)
+					{
+						bleed.A_ChangeFlag(FLAG_NO_CHANGE,0,FLAG_NO_CHANGE);
+					}
+					*/
+					victim.A_SpawnItemEx("VitalityBonusNoComplete");
+				}
+			}
+			singleUseTrigger = true;
+		}
+	}
+	// Take that 🖕, recover-less slaughterions!
 }
