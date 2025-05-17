@@ -671,6 +671,8 @@ class HomingLostSoul : LostSoul
 // https://zdoom.org/wiki/Dynamic_arrays
 
 // https://zdoom.org/wiki/Classes:Thinker
+// https://zdoom.org/wiki/Structs:WorldEvent
+// https://zdoom.org/wiki/Events_and_handlers
 // looks like corpse handler would be a nice addition!
 class CorpseHandler : EventHandler
 {
