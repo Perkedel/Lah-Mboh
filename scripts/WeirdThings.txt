@@ -679,11 +679,11 @@ class CorpseHandler : EventHandler
 		if (e.thing && e.thing.bIsMonster)
 		{
 			//CorpseFader.Create(e.thing);
-			handleTheCorpseNow(e);
+			handleTheCorpseNow(e, e.thing);
 		}
 	}
 
-	virtual void handleTheCorpseNow(worldEvent e)
+	virtual void handleTheCorpseNow(worldEvent e, Actor thingy)
 	{
 
 	}
@@ -692,19 +692,19 @@ class CorpseHandler : EventHandler
 // Oh my God! add my own!
 class CorpseVampirismHandler: CorpseHandler
 {
-	override void handleTheCorpseNow(worldEvent e)
+	override void handleTheCorpseNow(worldEvent e, Actor thingy)
 	{
-		CorpseVampirism.Create(e.thing);
+		CorpseVampirism.Create(thingy);
 	}
 }
 
 // okey yours back too
 class CorpseFaderHandler: CorpseHandler
 {
-	override void handleTheCorpseNow(worldEvent e)
+	override void handleTheCorpseNow(worldEvent e, Actor thingy)
 	{
 		// IDEA: make same like this but ZZZ Hollow enemy death particle!
-		CorpseFader.Create(e.thing);
+		CorpseFader.Create(thingy);
 	}
 }
 
