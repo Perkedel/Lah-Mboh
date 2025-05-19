@@ -674,6 +674,9 @@ class HomingLostSoul : LostSoul
 // https://zdoom.org/wiki/Structs:WorldEvent
 // https://zdoom.org/wiki/Events_and_handlers
 // looks like corpse handler would be a nice addition!
+/*
+I'd like to edit this!
+*/
 class CorpseHandler : EventHandler
 {
 	override void WorldThingDied(worldEvent e)
@@ -859,4 +862,20 @@ class CorpseVampirism : CorpseAttachment
 		}
 	}
 	// Take that 🖕, recover-less slaughterions!
+}
+
+// How about.. some old Press Release BFG?
+class BFG9000Old : BFG9000
+{
+	Default
+	{
+		//$Title BFG9500
+		//$Category Weapons
+		Weapon.SelectionOrder 2801;
+	}
+	States
+	{
+		AltFire:
+			Goto OldFire;
+	}
 }

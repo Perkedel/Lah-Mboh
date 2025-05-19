@@ -126,6 +126,7 @@ DoomEdNums
 	26521 = HealingBackpack
 	26522 = HealthPack
 	26621 = VitalityBonus
+	23959 = BFG9000Old
 
 	// Realm667
 	// Crates Rifleman
