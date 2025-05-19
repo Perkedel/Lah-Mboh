@@ -228,6 +228,8 @@ class SwitchableLamp : TechLamp
 // https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE also configurable actors inkoalawetrust
 // https://zdoom.org/wiki/Using_inheritance
 // https://zdoom.org/wiki/Actor_properties#Skip_Super
+// https://zdoom.org/wiki/DamageMobj
+// https://zdoom.org/wiki/TakeSpecialDamage
 // Customizable Zombieman!
 class CustomizableZombieman : Zombieman
 {
@@ -235,6 +237,9 @@ class CustomizableZombieman : Zombieman
 	bool user_AvoidMelee; // Makes the zombie avoid melee, as he has no melee attack.
 	bool user_BecomeWimpy; // Frightened when receives pain
 	bool user_painless; // never feel pain
+	bool user_immuneProjectile; // immune to projectiles
+	bool user_immuneFire; // immune to Fire damage
+	bool user_andThrowProjectileBack; // & throw the projectile back at the user. Like that enemy from head battle
 	int user_initHealth; // set start health
 	int user_BulletAmount; // How many bullets to fire at every burst.
 	int user_Firerate; // How fast each round is fired, in tics.
@@ -259,6 +264,31 @@ class CustomizableZombieman : Zombieman
 	{
 		super.Tick();
 		bAvoidMelee = user_AvoidMelee; // Turn the eponymous flag on or off based on the user variables' value.
+	}
+
+	override int DamageMobj (Actor inflictor, Actor source, int damage, Name mod, int flags, double angle)
+	{
+		if (inflictor && inflictor.bMISSILE && user_immuneProjectile)
+		{
+			if(user_andThrowProjectileBack)
+			{
+				// TODO: Implement throw projectile back at the inflictor.
+			}
+			return 0;
+		}
+		
+		return super.DamageMobj(inflictor, source, damage, mod, flags, angle);
+	}
+
+	override int TakeSpecialDamage(Actor inflictor, Actor source, int damage, Name damagetype)
+	{
+		if (damagetype == 'Fire' && user_immuneFire)
+		{
+			// IDEA: fire back?
+			return 0;
+		}
+		
+		return super.TakeSpecialDamage(inflictor, source, damage, damagetype);
 	}
 	
 	// https://zdoom.org/wiki/Using_inheritance
@@ -864,6 +894,19 @@ class CorpseVampirism : CorpseAttachment
 	// Take that 🖕, recover-less slaughterions!
 }
 
+/*
+- https://zdoom.org/wiki/Classes:Decal
+- https://zdoom.org/wiki/Projectile
+- https://zdoom.org/wiki/ExplodeMissile
+- https://zdoom.org/wiki/DepleteAmmo
+- https://zdoom.org/wiki/Actor_states#NoDelay
+
+https://zdoom.org/wiki/A_BFGSound
+https://zdoom.org/wiki/A_BFGSound
+https://zdoom.org/wiki/Classes:BFG9000
+https://zdoom.org/wiki/A_FireOldBFG
+*/
+
 // How about.. some old Press Release BFG?
 class BFG9000Old : BFG9000
 {
@@ -871,11 +914,68 @@ class BFG9000Old : BFG9000
 	{
 		//$Title BFG9500
 		//$Category Weapons
-		Weapon.SelectionOrder 2801;
+		Weapon.SelectionOrder 4800;
+		Weapon.SlotNumber 7;
 	}
 	States
 	{
 		AltFire:
 			Goto OldFire;
+	}
+}
+
+// https://zdoom.org/wiki/Classes:MedicalKit
+// https://zdoom.org/wiki/Classes:Health
+// https://zdoom.org/wiki/Classes:Medikit
+// https://zdoom.org/wiki/Classes:Stimpack
+// https://zdoom.org/wiki/Classes:MedPatch
+// https://zdoom.org/wiki/Classes:SurgeryKit
+// Now, how about.. inventory version of those Strife Health packs?
+// here in DOOM, like it does with Duke Nukem except also the Stimpack!
+
+class MedikitLater: MedicalKit
+{
+	Default
+	{
+		//$Title Medikit (Carryable)
+		//$Category Health and Armor
+	}
+	States
+	{
+		Spawn:
+			MEDI A -1;
+			Stop;
+	}
+}
+
+class StimpackLater: MedPatch 
+{
+	Default
+	{
+		//$Title Stimpack (Carryable)
+		//$Category Health and Armor
+	}
+	States
+	{
+		Spawn:
+			STIM A -1;
+			Stop;
+	}
+}
+
+class SoulsphereLater: SurgeryKit
+{
+	// uh.. idk how. Soulsphere max to 200..
+	Default
+	{
+		//$Title Soulsphere (Carryable)
+		//$Category Health and Armor
+		Health 100;
+	}
+	States
+	{
+		Spawn:
+			SOUL ABCDCB 6 Bright;
+			Loop;
 	}
 }

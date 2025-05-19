@@ -127,6 +127,9 @@ DoomEdNums
 	26522 = HealthPack
 	26621 = VitalityBonus
 	23959 = BFG9000Old
+	22711 = MedikitLater
+	22712 = StimpackLater
+	22713 = SoulsphereLater
 
 	// Realm667
 	// Crates Rifleman
