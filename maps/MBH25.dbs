@@ -5,7 +5,7 @@ strictpatches = 0;
 maps
 {
 	
-	SELDUAR
+	MBH25
 	{
 		
 		resources
@@ -21,11 +21,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "FLOOR0_1";
-		defaultceiltexture = "CEIL1_1";
-		defaulttoptexture = "STARTAN1";
-		defaultwalltexture = "STARTAN1";
-		defaultbottomtexture = "STARTAN1";
+		defaultfloortexture = "DEM1_6";
+		defaultceiltexture = "DEM1_5";
+		defaulttoptexture = "MARBGRAY";
+		defaultwalltexture = "MARBGRAY";
+		defaultbottomtexture = "MARBGRAY";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -93.07469f;
-		viewpositiony = 85.47301f;
-		viewscale = 6.89292f;
+		viewpositionx = -1973.636f;
+		viewpositiony = 3112.748f;
+		viewscale = 0.8449987f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -51,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 8;
+			gridsize = 64;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -83,30 +83,6 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
-		}
-		
-		scriptdocuments
-		{
-			
-			document0
-			{
-				filename = "DIALOGUE";
-				hash = 3588187714;
-				resource;
-				tabtype = 0;
-				scripttype = 18;
-			}
-			
-			document1
-			{
-				filename = "SCRIPTS";
-				hash = 3469170009;
-				resource;
-				tabtype = 0;
-				scripttype = 1;
-				caretposition = 611;
-				activetab = true;
-			}
 		}
 	}
 }

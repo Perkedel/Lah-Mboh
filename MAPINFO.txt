@@ -1073,6 +1073,8 @@ map SELDUAR lookup "SELDUAR"
 	exitPic = "LMBHTIHD"
 	music = "HEROD"
 	InterMusic = "REVPINT"
+	AllowRespawn
+	//RandomPlayerStarts
 }
 
 map DODTEL lookup "DODTEL"

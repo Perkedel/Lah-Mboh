@@ -53,6 +53,12 @@ And another case, There is a class that does not attack but heals & provides eff
 
 Sometimes also, classes are just skins, so it's just weapon. Such as [Cube 2: Sauerbraten](http://sauerbraten.org/), or regular Fortnite modes, other whatever. And hence just focus on obtaining whatever weapon you see & use it best you can.
 
+## Focus fragging!
+
+With whatever weapons you have, if you are in Frag modes of multiplayer, then.. **Just frag!**, that's all. With whatever you're holding on, shoot as fast as you can. If necessary, shower them all until you frag.
+
+& if the weapon is lagging, find time to change to a faster ones, quickly while be aware around you, and frag again.
+
 ## Sportmanship, Sportmanship, SPORTIVITAS!!
 
 As always, every competitive multiplayer games, wants it digital, or real life, requires sportmanship.

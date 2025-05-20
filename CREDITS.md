@@ -65,7 +65,7 @@ For the thing we've yoinked
 	- [Anonymous Functions Actor States](https://zdoom.org/wiki/Actor_states#Anonymous_functions)
 	- [Inheritance](https://zdoom.org/wiki/Using_inheritance)
 	- [Actor Replacement](https://zdoom.org/wiki/Actor_replacement). No, we'll never use `Replaces`. Always add new, yeah!
-	- [Global Variables](https://zdoom.org/wiki/ZScript_global_variables)
+- [Global Variables](https://zdoom.org/wiki/ZScript_global_variables)
 	- [Actor Pointers](https://zdoom.org/wiki/Actor_pointer#ZScript)
 	- [Fade Once](https://zdoom.org/wiki/A_FadeOut)
 	- [Fade In](https://zdoom.org/wiki/A_FadeIn)
