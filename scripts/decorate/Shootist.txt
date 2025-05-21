@@ -23,7 +23,7 @@ Actor TylerConfigPlayer : Doomplayer
 */
 
 // Colt1911
-ACTOR TemplateGUN : weapon 29644
+ACTOR TemplateGUN : DoomWeapon 29644
 {
 	//$Category Weapons
 	//$Title Template Gun
@@ -122,7 +122,7 @@ ACTOR TemplateGUN : weapon 29644
 }
 
 // AK-47
-ACTOR TemplateAK : weapon 28614
+ACTOR TemplateAK : DoomWeapon 28614
 {
 	//$Category Weapons
 	//$Title Template AK-47
@@ -240,7 +240,7 @@ ACTOR TemplateAK : weapon 28614
 }
 
 // Rocketz
-Actor RocketzLauncher : weapon 29720
+Actor RocketzLauncher : DoomWeapon 29720
 {
 	//$Category Weapons
 	//$Title Template Rocket Launcher
