@@ -86,6 +86,8 @@ class JekyllPShootingRangeDummy : Actor
 
 	Default
 	{
+		//$Title Target Dummy
+		//$Category Decoration
 		+ISMONSTER
 		+SHOOTABLE
 		+SOLID
@@ -93,13 +95,16 @@ class JekyllPShootingRangeDummy : Actor
 		+NOTIMEFREEZE
 		+NODAMAGE
 		+NOBLOOD
+		+DONTGIB
+		+PUFFONACTORS
+		+NOICEDEATH
 		Radius 20;
 		Height 72;
 		Mass 100;
 		painsound "targetdummy/pain";
 		painchance 96;
-		Tag "Target dummy";		
-		//Tag "$JEKYLLTARGETDUMMY";	
+		//Tag "Target dummy";		
+		Tag "$JEKYLLTARGETDUMMY";	
 	}
 
 	static clearscope double LinearMap(double val, double source_min, double source_max, double out_min, double out_max, bool clampIt = false)
@@ -203,7 +208,7 @@ class JekyllPShootingRangeDummy : Actor
 				if (!bSHOOTABLE)
 				{
 					dnum.scale.y *= 1.2;
-				}		
+				}
 			}
 		}
 	}
@@ -268,7 +273,8 @@ class JekyllPShootingRangeDummy : Actor
 				string died;
 				if (bFLATSPRITE && classhealth <= 0)
 				{
-					died = " \c[Red]and died";
+					// died = " \c[Red]and died";
+					died = StringTable.Localize("$JEKYLLDUMMYDIED");
 					A_StartSound(deathsound, CHAN_BODY, CHANF_NOSTOP);
 					classhealth = health;
 					bSHOOTABLE = false;
@@ -301,7 +307,7 @@ class JekyllPShootingRangeDummy : Actor
 
 	States {
 	Spawn:
-		AMRK A -1;
+		JDUM A -1;
 		stop;
 	}
 }

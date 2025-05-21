@@ -979,3 +979,5 @@ class SoulsphereLater: SurgeryKit
 			Loop;
 	}
 }
+
+// https://zdoom.org/wiki/Structs:Wads

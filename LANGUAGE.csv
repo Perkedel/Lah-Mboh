@@ -59,8 +59,13 @@ Slaughterion time!",Saya harus keluar dari sini,,,,
 This is just hell themed city right?,MBH24,"You just realized now, that this is just another DNB realm which themed Hell.
 But then again, this also being invaded by Invaders.
 Oh yeah btw, welcome to the Arvester’s moon: Jongkale. Yes, this giant rock is red.",Ini cuman kota bertema neraka biasa kan?,,,,
-I wish Fireblades were here,MBH25,"Another Slaughterion map which is Stacked like in Legacy of Rust.
-Since at the time of making this level FD24 is not done yet, you are forced to use SKAG 1337 / BFG 9000.",Seandainya Fireblade disini,,,,
+Fertilisius,MBH25,"Another Slaughterion map which is Stacked like in Legacy of Rust.
+Since at the time of making this level FD24 is not done yet, you are forced to use SKAG 1337 / BFG 9000.
+
+Was I wish Fireblades were here / Seandainya Fireblade disini.
+Don’t ask what you think that pillar looks on the outside hence the new map name.
+
+Also this place is indeed to farm those new Invaders after manifested from previous plant somewhere.",Peternakan,,,,
 I wish mom knows technology,MBH26,So she can maybe intervene against perpetrators?,Seandainya mama melek teknologi,,,,
 I’m done for,MBH27,My reputation has been forever destroyed. Everyone now hates me.,Tamat sudah riwayatku,,,,
 "Yes, I am suffering",MBH28,Puzzle level only?,"Ya, saya menderita",,,,
@@ -333,7 +338,7 @@ from,JEKYLLFROM,,dari,,,,
 source,JEKYLLSOURCE,,sumber,,,,
 Target Dummy,JEKYLLTARGETDUMMY,,,,,,
 \c[Green]%s received \c[Red]%d damage\c[Green] from \c[Cyan]%s\c[Green] (source: \c[Cyan]%s\c[Green])%s,JEKYLLDUMMYDAM,,\c[Green]%s menerima \c[Red]%d damage\c[Green] dari \c[Cyan]%s\c[Green] (sumber: \c[Cyan]%s\c[Green])%s,,,,
-,,,,,,,
+ \c[Red]and died,JEKYLLDUMMYDIED,, \c[Red]dan mati,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

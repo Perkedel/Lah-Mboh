@@ -15,7 +15,7 @@ And don't forget, go to your advanced display setting, so the Hertz mode goes to
 
 ## Use best of the best mouse
 
-With HUGE polling rate, HUGE in everything. Anything that makes your Aim fast & accurate
+With HUGE polling rate, HUGE in everything good. Anything that makes your Aim fast & accurate.
 
 ## Disable Mouse Acceleration!
 

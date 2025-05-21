@@ -18,7 +18,6 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
-				requiredarchives = "";
 			}
 		}
 		defaultfloortexture = "DEM1_6";
@@ -38,9 +37,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -1973.636f;
-		viewpositiony = 3112.748f;
-		viewscale = 0.8449987f;
+		viewpositionx = -2015.919f;
+		viewpositiony = 2868.185f;
+		viewscale = 3.13742f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -51,7 +50,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 16;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;

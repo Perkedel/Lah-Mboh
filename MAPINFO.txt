@@ -131,6 +131,11 @@ DoomEdNums
 	22712 = StimpackLater
 	22713 = SoulsphereLater
 
+	// Weapons Resource WAD
+	/*
+	Reserve 25000s!! or change em a bit.
+	*/
+
 	// Realm667
 	// Crates Rifleman
 	// Was 164XX

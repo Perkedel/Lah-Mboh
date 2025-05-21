@@ -12,7 +12,7 @@ Model JekyllPShootingRangeDummy
     angleoffset 90
     scale 10 10 12
 
-    Frame AMRK A 0 0
+    Frame JDUM A 0 0
 }
 
 // I want these trees 3D!

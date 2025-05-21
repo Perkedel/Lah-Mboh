@@ -12,7 +12,7 @@ funny/fartReverb "sounds/DairyOrange/fart_with_extra_reverb.opus"
 funny/fartBret "sounds/fart funny hamster.opus"
 
 // Jekyll Grim Payne
-targetdummy/pain "sounds/camelmoan.ogg"
+targetdummy/pain "sounds/camelmoan.opus"
 
 // Quit Sounds
 /*

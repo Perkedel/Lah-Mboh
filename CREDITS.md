@@ -31,6 +31,9 @@ For the thing we've yoinked
 - [Doom WAD Descriptive Parameters](https://www.doomworld.com/forum/post/1782450). Jimmy Squared. ???. Template of Parameter to be placed in your forum page about your mods.
 - [Chiptone SFX Generator](https://sfbgames.itch.io/chiptone). SFB Games. **No Source Code**. Generate Chiptune SFX, the spiritual successor to sfxr.
 - [Unicode Doom font Generator](https://forum.zdoom.org/viewtopic.php?t=65818). ErmacMKIII. **GNU GPL v3**. [Source Code](https://github.com/ErmacMKIII/UnicodeDoomFontCreator), Generate Unicode fonts out of fonts installed on your system!
+- [Visual Studio Code](https://code.visualstudio.com/). Microsoft. **MIT License** (with proprietary components). [Source Code](https://github.com/microsoft/vscode), IDE to edit text advancedly.
+    - <span style="font-size:xx-small;">[Windsurf (Codeium)](https://windsurf.com/plugins). Windsurf. **PROPRIETARY**. Because sometimes I need to repeat writings & GitHub Copilot is rather not so compplete. **No, otherwise, I wrote & draw things by hand**. I hate cheating, just.. tired to repetitive. Until Localer here. Fucking hell, this is embarrassing & shameful! You, you, you, you! YOu cheater, no idea what you doing, hence [you're the monkey](https://www.youtube.com/watch?v=RZAq-_gz_W8). Have any idea what are these brains used for? For helping! Not like.. tell em to do anything for you and then snatch the credit out of it, yikes!. Argh I hate this so much, this is the only way I repeat stuffs! I always figure things on my own, or sometime yoink someone's way by hand, study it, and then itterate by hand!</span>
+- [Zed](https://zed.dev/). Zed Industries. **GNU GPL v3**. [Source Code](https://github.com/zed-industries/zed), Better Better Rust Text Editor IDE.
 
 ## Addons
 
