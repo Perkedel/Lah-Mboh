@@ -274,3 +274,184 @@ decal WWTHFD 4016
 	X-Scale 0.1
 	Y-Scale 0.1
 }
+
+// Weapon Resource Wad
+Generator FireShot	                DoomImpScorch
+
+Decal MultiBall1Scorch1
+{
+	pic APLSA0
+	add 1.0
+	x-scale 2.0
+	y-scale 2.0
+	animator GoAway
+	lowerdecal MultiBallScorchLower1
+}
+
+Decal MultiBall1Scorch2
+{
+	pic APLSB0
+	add 1.0
+	x-scale 2.0
+	y-scale 2.0
+	animator GoAway
+	lowerdecal MultiBallScorchLower2
+}
+
+Decalgroup MultiBall1Scorch
+{
+	MultiBall1Scorch1	1
+	MultiBall1Scorch2	1
+}
+
+Decal MultiBall2Scorch1
+{
+	pic YPLSA0
+	add 1.0
+	x-scale 2.0
+	y-scale 2.0
+	animator GoAway
+	lowerdecal MultiBallScorchLower1
+}
+
+Decal MultiBall2Scorch2
+{
+	pic YPLSB0
+	add 1.0
+	x-scale 2.0
+	y-scale 2.0
+	animator GoAway
+	lowerdecal MultiBallScorchLower2
+}
+
+DecalGroup MultiBall2Scorch
+{
+	MultiBall2Scorch1	1
+	MultiBall2Scorch2	1
+}
+
+Decal MultiScorchScorchLower2
+{
+	pic PLASMA2
+	shade "00 00 00"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+Decal MultiScorchScorchLower1
+{
+	pic PLASMA1
+	shade "00 00 00"
+	x-scale 0.6
+	y-scale 0.6
+	randomflipx
+	randomflipy
+}
+
+Decal MultiBall3Lightning1
+{
+	pic BFGLITE1
+	shade "FA 00 00"
+	fullbright
+	randomflipx
+	animator GoAway2
+	lowerdecal BFGScorch
+}
+
+
+Decal MultiBall3Lightning2
+{
+	pic BFGLITE2
+	shade "FA 00 00"
+	fullbright
+	randomflipy
+	animator GoAway2
+	lowerdecal BFGScorch
+}
+
+DecalGroup MultiBall3Lightning
+{
+	MultiBall3Lightning1	1
+	MultiBall3Lightning2	1
+}
+
+
+Generator MultiProjectile1		MultiBall1Scorch
+Generator MultiProjectile2		MultiBall2Scorch
+Generator MultiProjectile3		MultiBall3Lightning
+
+Generator Bolt1                         BFGLightning
+
+Generator COPGun			BulletChip
+
+Generator Flame	                        DoomImpScorch 
+Generator FlameNoDamage	                DoomImpScorch
+
+Generator SeekerMissile                 Scorch
+
+Generator Tazer                         BulletChip
+
+Generator WalterPPK                     BulletChip
+
+Generator AutomaticShotgun              BulletChip
+
+Decal HeavyScorchLower1
+{
+	pic CBALSCR1
+	shade "00 00 00"
+	x-scale 0.2
+	y-scale 0.2
+	randomflipx
+	randomflipy
+}
+
+Decal HeavyScorchLower2
+{
+	pic CBALSCR2
+	shade "00 00 00"
+	x-scale 0.2
+	y-scale 0.2
+	randomflipx
+	randomflipy
+}
+
+DecalGroup HeavyScorchLower
+{
+	HeavyScorchLower1 1
+	HeavyScorchLower2 1
+}
+
+
+
+Decal HeavyScorch1
+{
+	pic CBALSCR1
+	shade "30 30 30"
+	fullbright
+	x-scale 0.4
+	y-scale 0.4
+	animator GoAway
+	lowerdecal HeavyScorchLower
+}
+
+Decal HeavyScorch2
+{
+	pic CBALSCR2
+	shade "30 30 30"
+	fullbright
+	x-scale 0.4
+	y-scale 0.4
+	animator GoAway
+	lowerdecal HeavyScorchLower
+}
+
+DecalGroup HeavyScorch
+{
+	HeavyScorch1 1
+	HeavyScorch2 1
+}
+
+Generator HeavyBullet                   HeavyScorch
+// end WRW

@@ -1,0 +1,5297 @@
+// Weapons Resource WAD
+/*
+Alas, we only able to get the old 1.5a. the last 2.2 is gone because DRteam broke the file sharing.
+pls reupload! I don't care how terrible it is!
+
+https://www.doomworld.com/idgames/combos/wrw
+https://zdoom.org/wiki/Weapons_Resource_WAD
+http://files.drdteam.org/index.php/files/get/gOEJPHX4Cy/wrw2-2.zip **GONE**
+
+Yoinked by JOELwindows7 as is, with few edits for Lah-Mboh
+*/
+
+//Weapon: Fire Wand
+//By: HobbsTiger1
+
+// was 25000
+ACTOR FireWand : Weapon 25000
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Fire Wand!"
+   Weapon.AmmoType "Ember"
+   Weapon.AmmoGive 20
+   Weapon.AmmoUse 1
+   Scale 0.5
+   States
+   {
+   Spawn:
+      FWDW A -1
+      Loop
+   Ready:
+      FWND A 1 A_WeaponReady
+      Loop
+   Deselect:
+      FWND A 1 A_Lower
+      Loop
+   Select:
+      FWND A 1 A_Raise
+      Loop
+   Fire:
+      FWND A 3
+      FWND B 0 A_GunFlash
+      FWND B 0 A_PlayWeaponSound("weapons/firewand")
+      FWND C 4 A_FireCustomMissile("FireShot",0,1,0,0)
+      FWND C 5
+      FWND A 3 A_ReFire
+      Goto Ready
+   Hold:
+      FWND C 0 A_PlayWeaponSound("weapons/firewand")
+      FWND C 4 A_FireCustomMissile("FireShot",0,1,0,0)
+      Goto Ready
+   }
+}
+
+ACTOR FireShot
+{
+   Radius 3
+   Height 3
+   Speed 30
+   Damage 2
+   Scale 0.5
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   +FIREDAMAGE
+   States
+   {
+   Spawn:
+      FSHT A 2 Bright
+      FSHT A 2 Bright
+      FSHT A 2 Bright
+      FSHT A 2 Bright
+      FSHT A 2 Bright
+      FSHT A 2 Bright
+      Loop
+   Death:
+      FSHT A 0 Bright A_Explode
+      FSHT B 0 Bright
+      FSHT B 3 Bright
+      FSHT C 3 Bright
+      FSHT D 3 Bright
+      FSHT E 3 Bright
+      Stop
+   }
+}
+
+ACTOR Ember : Ammo 25001
+{
+   Inventory.Amount 5
+   Inventory.MaxAmount 200
+   Ammo.BackpackAmount 5
+   Ammo.BackpackMaxAmount 400
+   Inventory.PickupMessage "Picked up some Embers."
+   Inventory.Icon FEMBA0
+   States
+   {
+   Spawn:
+      FEMB A 1024
+      Stop
+   }
+}
+
+ACTOR BigEmber : Ember 25002
+{
+   Inventory.Amount 20
+   Inventory.PickupMessage "Picked up lots of Embers."
+   States
+   {
+   Spawn:
+      FEMB B 1024
+      Stop
+   }
+}
+
+//Weapon: Imp Claw and Super Imp Claw
+//By: Bouncy
+
+// was 25003
+ACTOR ImpClaw : Weapon 25003
+{
+   Inventory.PickupMessage "You got the Imp Claw!"
+   States
+   {
+   Spawn:
+      CLAP A -1
+      Loop
+   Ready: 
+      CLAW A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      CLAW A 1 A_Lower
+      Loop
+   Select: 
+      CLAW A 1 A_Raise
+      Loop
+   Fire: 
+      CLAW A 0 A_JumpIfNoAmmo(1)
+      CLAW B 4 A_GunFlash
+      CLAW CDEF 4
+      Goto Ready
+   Flash:
+      CLAW B 0 A_Playsound ("imp/attack")
+      CLAW B 4 A_FireCustomMissile("DoomImpBall",0,1,8,-8)
+      Stop
+   } 
+} 
+
+// was 25004
+ACTOR SuperImpClaw : Weapon 25004
+{
+   Inventory.PickupMessage "You got the Super Imp Claw!"
+   States
+   {
+   Spawn:
+      CLP2 ABCDCB 5
+      Loop
+   Ready: 
+      CLAW A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      CLAW A 1 A_Lower
+      Loop
+   Select:
+      CLAW A 1 A_Raise
+      Loop
+   Fire: 
+      CLA2 A 2 A_JumpIfNoAmmo(1)
+      CLA2 B 2 A_GunFlash
+      Goto Ready
+   Flash:
+      CLA2 A 2 A_Playsound ("imp/attack")
+      CLA2 B 2 A_FireCustomMissile("DoomImpBall",0,1,8,-8)
+      Stop
+   } 
+} 
+
+//Weapon: Insanity Plasma Rifle
+//By: Kirby
+
+ACTOR InsanityRifle : Weapon 25005
+{
+   Inventory.PickupMessage "You got the Insanity Rifle!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 30
+   Weapon.AmmoUse 6
+   States
+   {
+   Spawn:
+      IPLU A -1
+      Loop
+   Ready:
+      IPLG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      IPLG A 1 A_Lower
+      Loop
+   Select:
+      IPLG A 1 A_Raise
+      Loop
+   Fire:
+      IPLG A 0 A_JumpIfNoAmmo(1)
+      IPLG A 2
+      IPLG A 2 A_GunFlash
+      Goto Ready
+   Flash:
+      IPLF A 2
+      IPLF B 2
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,-10)
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,10)
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,0)
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,-10)
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,10)
+      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,0)
+      Stop
+   }
+}
+
+ACTOR InsPlasma
+{
+   Radius 3
+   Height 4
+   Speed 25
+   Damage 18
+   PROJECTILE
+   +STRIFEDAMAGE
+   SeeSound "weapons/plasmaf"
+   DeathSound "weapons/plasmax"
+   States
+   {
+   Spawn:
+      IPLS AB 8
+      LOOP
+   Death:
+      IPLE ABCDE 4
+      Stop
+   }
+}
+
+//Weapon: Multi-Projectile Weapon.
+//By: TheDarkArchon
+
+ACTOR MultiProjectileWeapon : Weapon 25006
+{
+   Inventory.PickupMessage "You got the M6000 Multi-Projectile Weapon!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.Kickback 175
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 60
+   Weapon.AmmoUse 10
+   States
+   {
+   Spawn:
+      MULT A -1
+      Loop
+   Ready: 
+      MPWG A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      MPWG A 1 A_Lower
+      Loop
+   Select: 
+      MPWG A 1 A_Raise
+      Loop
+   Fire: 
+      MPWG A 0 A_JumpIfInventory("ProjectileWeaponCharge",2,21)
+      MPWG A 0 A_JumpIfInventory("ProjectileWeaponCharge",1,9)
+      MPWG C 0 A_PlaySound("weapons/charge1")
+      MPWG C 10 A_GiveInventory("ProjectileWeaponCharge",1)
+      MPWG C 0 A_Refire
+      MPWF A 0 Bright A_FireCustomMissile("MultiProjectile1",0,1,0,0)
+      MPWF A 5 Bright A_Light1
+      MPWF B 5 Bright A_Light2
+      MPWG B 0 A_TakeInventory("ProjectileWeaponCharge",999)
+      MPWG B 5 A_Light0
+      Goto Ready
+      MPWG D 0 A_PlaySound("weapons/charge2")
+      MPWG D 10 A_GiveInventory("ProjectileWeaponCharge",1)
+      MPWG D 0 A_Refire
+      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",-25,1,0,0)
+      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",0,1,0,0)
+      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",25,1,0,0)
+      MPWF E 4 Bright A_Light2
+      MPWF D 4 Bright A_Light2
+      MPWF C 8 Bright A_Light1
+      MPWG B 0 A_TakeInventory("ProjectileWeaponCharge",999)
+      MPWG B 6 A_Light0
+      Goto Ready
+      MPWG F 0 A_PlaySound("weapons/charge3")
+      MPWG E 15 
+      MPWG E 0 Bright A_FireCustomMissile("MultiProjectile3",0,1,0,0)
+      MPWF HHHH 0 BRIGHT A_FireBullets(4,4,2,15,"MultiPuff",1)
+      MPWF H 8 Bright A_Light2
+      MPWF G 8 Bright 
+      MPWF F 8 Bright A_Light1
+      MPWG B 0 A_TakeInventory("ProjectileWeaponCharge",999)
+      MPWG B 10 A_Light0
+      MPWG A 10
+      Goto Ready
+   } 
+} 
+
+ACTOR MultiProjectile1 : PlasmaBall
+{
+   Damage 15
+   Scale 2.0
+   ExplosionDamage 112
+   ExplosionRadius 112
+   SeeSound "weapons/mtifire1"
+   States
+   {
+   Spawn:
+      APLS AB 1 Bright
+      Loop
+   Death:
+      APBX A 2 Bright A_Explode
+      APBX BCDE 2 Bright
+      Stop
+   }
+}
+
+ACTOR MultiProjectile2 : MultiProjectile1
+{
+   Damage 18
+   ExplosionDamage 64
+   ExplosionRadius 64
+   +SEEKERMISSILE
+   SeeSound "weapons/mtifire2"
+   States
+   {
+   Spawn:
+      YPLS AB 1 Bright A_SeekerMissile(4,6)
+      Loop
+   Death:
+      YPLE A 2 Bright A_Explode
+      YPLE BCDE 2 Bright
+      Stop
+   }
+}
+
+ACTOR MultiProjectile3 : BFGBall
+{
+   Translation 2
+   ExplosionDamage 330
+   ExplosionRadius 330
+   DONTHURTSHOOTER
+   Scale 1.15
+   SeeSound "weapons/mtifire3"
+   States
+   {
+   Spawn:
+      BFS1 AB 2 Bright
+      Loop
+   Death:
+      BFE1 AB 3 Bright 
+      BFE1 C 3 Bright A_Explode
+      BFE1 BA 3 Bright
+      RFOG ABCDEF 3 Bright
+      Stop
+   }
+}
+
+ACTOR ProjectileWeaponCharge : Ammo
+{
+   Inventory.MaxAmount 3
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 3
+}
+
+ACTOR MultiPuff : BulletPuff
+{
+   Translation 2
+   States
+   {
+   Spawn:
+   Crash:
+      RFOG ABCDEF 3 Bright
+      Stop
+   }
+}
+
+//Weapon: Charged Plasma Bolter
+//By: wildweasel
+
+ACTOR PlasmaBolter : Weapon 25007
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Charged Plasma Bolter!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 30
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      PCNW A -1
+      Loop
+   Ready:
+      PCNG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      PCNG A 1 A_Lower
+      Loop
+   Select:
+      PCNG A 1 A_Raise
+      Loop
+   Fire:
+      PCNF B 2 Bright A_FireCustomMissile("SuperPlasmaBall",1,1,8,0)
+      PCNF A 2 Bright
+      PCNG BA 3
+      PCNG A 1 A_ReFire
+      Goto Ready
+   Hold:
+      PCNF A 2 BRIGHT A_FireCustomMissile("SmallPlasmaBall",1,1,8,0)
+      PCNG BA 2
+      PCNG A 1 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR BigPlasmaTrail
+{
+   Radius 4
+   Height 3
+   Speed 1
+   Scale 1.75
+   +NOGRAVITY
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.5
+   States
+   {
+   Spawn:
+      PLSS ABAB 2
+      Stop
+   }
+}
+
+ACTOR SmallPlasmaTrail
+{
+   Radius 4
+   Height 3
+   Speed 1
+   Scale 0.4
+   +NOGRAVITY
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.5
+   States
+   {
+   Spawn:
+      PLSS ABAB 2
+      Stop
+   }
+}
+
+ACTOR SuperPlasmaBall
+{ 
+   Damage 15
+   Alpha 0.90
+   Scale 2
+   Speed 40
+   ExplosionDamage 40
+   ExplosionRadius 32
+   PROJECTILE
+   SeeSound "weapons/plasma2"
+   States
+   {
+   Spawn:
+      PLSS A 0 Bright
+      PLSS A 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
+      Loop
+   Death:
+      PLSE A 3 Bright A_Explode
+      PLSE B 0
+      PLSE B 0
+      PLSE B 0
+      PLSE B 0
+      PLSE BCDE 3 Bright
+      Stop
+   }
+}
+
+ACTOR SmallPlasmaBall
+{ 
+   Damage 5
+   Alpha 0.90
+   Scale 0.50
+   Speed 25
+   SeeSound "weapons/plasma"
+   PROJECTILE
+   States
+   {
+   Spawn:
+      PLSS A 0 Bright
+      PLSS A 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
+      Loop
+   Death:
+      PLSE A 3 Bright
+      PLSE B 0
+      PLSE B 0
+      PLSE B 0
+      PLSE B 0
+      PLSE BCDE 3 Bright
+      Stop
+   }
+}
+
+//Weapon XB-4 Sniper Rifle
+//By: killingblair
+
+ACTOR XBSniper : Weapon 25008
+{
+   Inventory.PickupMessage "You got the XB-4 Sniper Rifle!"
+   Inventory.PickupSound "misc/w_pkup"
+   AttackSound "weapons/snipshot"
+   Weapon.AmmoGive 40
+   Weapon.AmmoUse 10
+   Weapon.AmmoType "Clip"
+   States
+   {
+   Spawn:
+      XBPC A -1
+      Loop
+   Ready: 
+      XBSN A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      XBSN A 1 A_Lower
+      Loop
+   Select:  
+      XBSN A 1 A_Raise
+      Loop
+   Fire:
+      XBSN A 0 A_JumpIfNoAmmo(1)
+      XBFR A 5 A_FireBullets(0, 0,1,20,0,10)
+      XBSN B 5
+      XBSN C 5
+      XBSN D 5
+      XBSN E 0 A_Playsound ("weapons/snipcock")
+      XBSN E 5
+      XBSN D 5
+      XBSN C 5
+      XBSN B 5
+      Goto Ready
+   }
+}
+
+//Weapon: Serious Bomb
+//By: Cutmanmike
+
+ACTOR SeriousBomb : Weapon 25009
+{
+   Inventory.PickupSound "misc/w_pkup" 
+   Inventory.Pickupmessage "You got the Serious bomb!"
+   States 
+   { 
+   Spawn: 
+      BOMB O -1 
+      Loop 
+   Ready: 
+      BOMB A 0 A_Playsound("weapons/zippo")
+      BOMB A 3 A_WeaponReady 
+      BOMB B 3 A_WeaponReady 
+      Goto Ready+1
+   Deselect: 
+      BOMB C 0 A_Playsound("weapons/zippo")
+      BOMB C 1 A_Lower 
+      Goto Deselect+1
+   Select: 
+      BOMB C 1 A_Raise 
+      Loop
+   Fire: 
+      BOMB A 0 A_JumpIfNoAmmo(1)
+      BOMB DEFGHIJKLM 3
+      BOMB N 40
+      BOMB N 0 A_Gunflash
+      BOMB N 0 A_Playsound("weapons/serious")
+      BOMB N 0 A_Takeinventory("Seriousbomb")
+      BOMB C 160 
+      Goto Ready
+   Flash: 
+      BOMB P 0 A_FireCustomMissile("BombRadius", 0, 0, 0, 0)
+      BOMB P 100
+      Stop 
+   } 
+}
+
+ACTOR BombRadius
+{
+   Radius 1
+   Height 1
+   Speed 0
+   PROJECTILE
+   RENDERSTYLE NONE
+   EXPLOSIONDAMAGE 10000
+   EXPLOSIONRADIUS 10000
+   DONTHURTSHOOTER
+   States
+   {
+   Spawn:
+      PLAY A 1 A_Explode
+      PLAY A 1 A_Explode
+      PLAY A 1 A_Explode
+      PLAY A 1 A_Explode
+      Stop
+   }
+}
+
+//Weapon: Gauntlets
+//By: HobbsTiger1
+
+ACTOR Gauntlet : Weapon 25010
+{
+   +MELEEWEAPON
+   +NOALERT
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Gauntlets!"
+   AttackSound "weapons/gpunch"
+   Weapon.AmmoUse 0
+   States
+   {
+   Spawn:
+      GLTW A 1024
+      Stop
+   Ready:
+      GLET A 1 A_WeaponReady
+      Loop
+   Deselect:
+      GLET A 1 A_Lower
+      Loop
+   Select:
+      GLET A 1 A_Raise
+      Loop
+   Fire:
+      GLET B 3 A_PlayWeaponSound("weapons/gswing")
+      GLET C 3 A_CustomPunch(6, 0, 0, "Puff")
+      GLET D 3
+      GLET D 0
+      GLET C 3
+      GLET B 3
+      Goto Ready
+   }
+}
+
+//Weapon: Lighsaber
+//By: Cutmanmike
+
+ACTOR Lightsaber : Weapon 25011
+{
+   Inventory.PickupSound "misc/d3pickup"  
+   Weapon.AmmoUse 0 
+   Obituary "%o was slashed %k's Lightsaber" 
+   Inventory.PickupMessage "You got the Lightsaber!"
+   Meleesound "weapons/sclash"
+   States 
+   { 
+   Spawn: 
+      SABR G -1
+      Loop
+   Ready: 
+      SABR A 0 A_Playsound("weapons/sidle")
+      SABR A 4 A_WeaponReady 
+      SABR B 4 A_WeaponReady 
+      Loop 
+   Deselect: 
+      SABR A 1 A_Playsound("weapons/soff")
+      SABR A 1 A_Lower
+      Goto Deselect+1
+   Select: 
+      SABR A 0 A_Playsound("weapons/son")
+      SABR A 1 A_Raise 
+      Goto Select+1
+   Fire: 
+      SABR C 3 
+      SABR D 3 
+      SABR E 3  A_Playsound("weapons/sattack")
+      SABR F 3  A_CustomPunch(80, 1, 0, 0)
+      SABR E 3 
+      SABR D 3 
+      Goto Ready 
+   AltFire: 
+      SABR H 0  A_Playsound("weapons/sidle")
+      SABR HHHH 1  A_FireCustomMissile("Fakedeflect", 0, 0, 0, 0)
+      SABR IIII 1  A_FireCustomMissile("Fakedeflect", 0, 0, 0, 0)
+      Goto Ready 
+   Flash: 
+      SAWG A 0
+      Stop 
+   } 
+}
+
+ACTOR Fakedeflect
+{
+   Health 5
+   Height 35
+   Radius 12
+   Speed  8
+   RENDERSTYLE NONE
+   +NOBLOOD
+   +SHOOTABLE
+   +NOGRAVITY
+   +REFLECTIVE
+   +NOCLIP
+   States
+   {
+   Spawn: 
+      SARG AA 2 
+      Stop
+   Death: 
+      SARG A 0
+      Stop
+   }
+}
+
+//Weapon: Demon Hand
+//By: wario
+
+ACTOR DemonHand : Weapon 25012
+{
+   Inventory.PickupMessage "You got the Demon hand!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoUse 10
+   Weapon.AmmoGive 50
+   States
+   {
+   Spawn:
+      REDP A -1
+      Loop
+   Ready: 
+      REDH B 1 A_WeaponReady
+      Loop
+   Deselect: 
+      REDH A 1 A_Lower
+      Loop
+   Select: 
+      REDH A 1 A_Raise
+      Loop
+   Fire: 
+      REDH BCD 8 
+      REDH E 8 A_GunFlash
+      REDH E 0 A_FireCustomMissile("Handshot",-15,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",15,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",-25,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",25,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",-5,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",5,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",-10,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",10,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",-20,0,0,0)
+      REDH E 0 A_FireCustomMissile("Handshot",20,1,0,0)
+      REDH E 6 A_FireCustomMissile("Handshot2",0,0,0,0)
+      REDH E 5 A_ReFire
+      Goto Ready
+   Flash:
+      REDH E 6 A_Playsound ("weapons/handshot")
+      Stop
+   } 
+} 
+
+ACTOR Handshot
+{
+   Radius 12
+   Height 20
+   Speed 30
+   Damage 5
+   Scale 0.5
+   +MISSILE
+   +DOOMBOUNCE
+   States
+   {
+   Spawn:
+      RDHP AB 6 Bright
+      Loop
+   Death:
+      RDHP CD 0 A_Playsound ("weapons/handdead")
+      RDHP CD 6 Bright
+      Stop
+   }
+}
+
+ACTOR Handshot2
+{
+   Radius 12
+   Height 20
+   Speed 10
+   Damage 20
+   Scale 1.5
+   PROJECTILE
+   +SEEKERMISSILE
+   DeathSound "imp/shotx"
+   States
+   {
+   Spawn:
+      RDHP AB 5 A_SeekerMissile(30,30)	
+      Loop
+   Death:
+      RDHP CD 6 Bright
+      Stop
+   }
+}
+
+//Weapon: Molotov Cocktail
+//By: Scientist
+
+ACTOR Molotovx : Weapon 25013
+{ 
+   Scale 0.25
+   Weapon.AmmoType  "Cell" 
+   Weapon.AmmoGive 10
+   Weapon.AmmoUse 10
+   Inventory.PickupSound "misc/w_pkup" 
+   Inventory.PickupMessage "You got a Molotov Cocktail!"
+   Obituary "%o can't handle his cocktail."
+   States 
+   { 
+   Spawn: 
+      MOGT A 2
+      MOGT B 2
+      MOGT C 2
+      MOGT D 2
+      MOGT E 2
+      Loop 
+   Ready: 
+      MOGL A 2 A_WeaponReady
+      MOGL B 2 A_WeaponReady
+      MOGL C 2 A_Light1
+      MOGL D 2 A_WeaponReady
+      MOGL E 2 A_Light0
+      Loop 
+   Deselect: 
+      MOGL A 1 A_Lower
+      MOGL B 1 A_Lower
+      Loop 
+   Select: 
+      MOGL C 1 A_Raise
+      MOGL D 1 A_Raise 
+      Loop 
+   Fire: 
+      MOGG B 10 
+      MOGF A 2 A_GunFlash 
+      MOGF B 10 A_FireCustomMissile("Bottlex", 0, 1, 0, 5) 
+      MOGF B 8 A_ReFire 
+      Goto Ready 
+   Flash: 
+      MOGG B 5 
+      MOGG B 5 
+      Stop 
+   } 
+} 
+
+ACTOR Bottlex
+{
+   DeathSound "weapons/bottle"
+   Scale 0.4
+   Radius 12
+   Height 8
+   Speed 30
+   Damage 5
+   +FIREDAMAGE
+   +NOBLOCKMAP
+   +ACTIVATEPCROSS
+   +ACTIVATEIMPACT
+   +NOTELEPORT
+   +DROPOFF
+   +DONTFALL
+   +MISSILE
+   ExplosionDamage 128
+   ExplosionRadius 128
+   States
+   {
+   Spawn:
+      MOGT A 1
+      MOGT B 1
+      MOGT C 1 
+      MOGT D 1
+      MOGT E 1
+      Loop
+   Death:
+      FRTF G 1 
+      FRTF H 1 A_Explode
+      FRTF I 0 A_CustomMissile("HFirex", 24, 24, 0)
+      FRTF H 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF I 0 A_CustomMissile("HFirex", 24, -24, 0)
+      FRTF ABC 3
+      FRTF C 0 A_Jump(191,4)
+      FRTF C 0 A_Explode
+      FRTF DEFGHIJ 3
+      FRTF KLMNO 3
+      Stop
+   }
+}
+
+ACTOR HFirex
+{
+   +NOCLIP
+   +MISSILE
+   +DROPOFF
+   +RANDOMIZE
+   +FIREDAMAGE
+   Scale 1.5
+   Speed 0
+   Damage 5
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   ExplosionDamage 5
+   ExplosionRadius 64
+   States
+   {
+   Spawn:
+      NULL A 8
+      FRTF ABC 3
+      FRTF ABC 3 
+      FRTF C 0 A_Explode
+      FRTF C 0 A_Jump(191,4)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF ABC 3
+      FRTF C 0 A_Explode
+      FRTF ABC 3
+      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF ABC 3
+      FRTF C 0 A_Explode
+      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF DEFGHIJ 3
+      FRTF ABC 3
+      FRTF C 0 A_Explode
+      FRTF DEFGHIJ 3 
+      FRTF ABC 3  
+      FRTF C 0 A_Explode
+      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_Explode
+      FRTF DEFGHIJ 3
+      FRTF ABC 3 
+      FRTF C 0 A_Explode
+      FRTF DEFGHIJ 3
+      FRTF KLMNO 3
+      Stop
+   }
+}
+
+//Weapon: Gyro Plasma Burster
+//By: TheDarkArchon
+
+ACTOR GyroBurster : Weapon 25014
+{
+   Inventory.PickupMessage "You got the Gyro Plasma Burster!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.Kickback 1
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 100
+   Weapon.AmmoUse 100
+   Obituary "%o came too close to %k's Gyro Plasma Burster"
+   States
+   {
+   Spawn:
+      GYRO A -1
+      Loop
+   Ready:
+      GBSG A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      GBSG A 1 A_Lower
+      Loop
+   Select: 
+      GBSG A 1 A_Raise
+      Loop
+   Fire:
+      GBSG B 0 A_PlayWeaponSound("weapons/gyrocrge")
+      GBSG BCDEF 17
+      GBSF A 0 Bright A_GunFlash
+      GBSF A 0 Bright A_PlayWeaponSound("weapons/gyrofire")
+      GBSF A 6 Bright A_FireCustomMissile("GyroBurst", 0, 1, 6, 0)
+      GBSF B 6 Bright
+      GBSG A 12
+      Goto Ready
+   Flash:
+      TNT1 A 8 A_Light2
+      TNT1 A 4 A_Light1
+      TNT1 A 0 A_Light0
+      Stop
+   }
+}
+
+
+ACTOR GyroBurst 
+{
+   Height 1
+   Radius 1
+   Damage 0
+   Speed 2
+   PROJECTILE
+   States
+   {
+   Spawn:
+      BFS1 AB 16 Bright
+      BFS1 AB 8 Bright
+      BFS1 AB 4 Bright
+      BFS1 AB 2 Bright
+      BFS1 ABABABABABABABABABABABABABABAB 1 Bright
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)                   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)  
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)                   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)  
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)                   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)  
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)                   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)  
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)                   
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)  
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFE1 ABCDEF 4
+      Stop
+      }
+}
+
+ACTOR GyroBall
+{
+   Scale 0.75
+   Speed 35
+   Radius 12
+   Height 8
+   Damage 2
+   SeeSound "weapons/plasmaf"
+   DeathSound "weapons/plasmax"
+   PROJECTILE
+   States
+   {
+   Spawn:
+      APLS AB 5 BRIGHT
+      Loop
+   Death:
+      APBX ABCDE 5 BRIGHT
+      Stop
+   }
+}
+
+//Weapon: Freeze Thrower
+//By: Cutmanmike
+
+ACTOR FreezeThrower : Weapon 25015
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Freeze Thrower!"
+   Obituary "%o was frozen by %k's Freeze Thrower" 
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 20
+   Weapon.AmmoUse 1
+   Weapon.AmmoType2 "Cell"
+   Weapon.AmmoUse2 2
+   Weapon.Kickback 0
+   Weapon.YAdjust 0
+   AttackSound "weapons/frzshot"
+   States
+   {
+   Spawn:
+      FREZ P -1
+      Loop
+   Ready:
+      FREZ A 1 A_WeaponReady
+      Loop
+   Deselect:
+      FREZ A 1 A_Lower
+      Loop
+   Select:
+      FREZ A 1 A_Raise
+      Loop
+   Fire:
+      FREZ A 0 A_JumpIfNoAmmo(1)
+      FREZ C 0 A_FireCustomMissile("FreezeBall", 0, 1, 6, 0)
+      FREZ C 2 A_GunFlash
+      FREZ D 2
+      FREZ E 2
+      FREZ E 0 A_Playsound("weapons/frzshot")
+      FREZ F 2
+      FREZ C 2
+      FREZ A 0 A_ReFire
+      goto Ready   
+   AltFire:
+      FREZ A 0 A_JumpIfNoAmmo(1)
+      FREZ C 0 A_Playsound("weapons/frzball")
+      FREZ CCCCC 2 A_FireCustomMissile("FreezeVapor", 0, 1, 6, 0)
+      FREZ A 0 A_ReFire
+      Goto Ready   
+   Flash:
+      FREZ C 0
+      Stop
+   }
+}
+
+ACTOR FreezeBall
+{
+   Speed 30
+   Damage 10
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.5
+   +HEXENBOUNCE
+   +ICEDAMAGE
+   States
+   {
+   Spawn:
+      FREZ I 2
+      FREZ J 2
+      FREZ H 2
+      FREZ I 2
+      FREZ J 2
+      FREZ H 2
+      FREZ I 2
+      FREZ J 2
+      FREZ H 2
+      FREZ I 2	
+      FREZ J 2
+      FREZ H 2
+      FREZ I 2
+      FREZ J 2
+      FREZ H 2
+      FREZ I 2
+      FREZ J 2
+      FREZ H 2
+      FREZ H 0 A_Die
+      Goto Death
+   Death:
+      FREZ J 2
+      FREZ K 2
+      FREZ L 2
+      FREZ M 2
+      FREZ N 2
+      FREZ O 2
+      Stop
+   }
+}
+
+ACTOR FreezeVapor
+{
+   Speed 9
+   Damage 1
+   PROJECTILE
+   Radius 2
+   Height 2
+   +RIPPER
+   +ICEDAMAGE
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.2
+   States
+   {
+   Spawn:
+      PLSK AB 1
+      PLSS CDEFGHIJKLMNOPQRSTUVWXYZ 1
+      PLSZ ABC 1
+      Stop
+   Death:
+      PLSZ C 0
+      Stop 
+   } 
+}
+
+//Weapon: TRAIL Gun
+//By: Post
+//Uses SpawnID 31
+
+ACTOR TrailGun : Weapon 25016
+{  
+   SpawnID 31
+   Inventory.PickupMessage "You got the Trail Gun!"
+   Weapon.AmmoGive 75
+   Weapon.AmmoUse 25
+   Weapon.AmmoType2 "Cell"
+   Weapon.AmmoUse2 50
+   Weapon.AmmoType "Cell"
+   Weapon.Kickback 40
+   Scale 0.50
+   AttackSound "weapons/trailatt" 
+   States 
+   { 
+   Spawn: 
+      PLZP A -1 
+      Loop
+   Ready: 
+      PLZM A 1 A_WeaponReady
+      Goto ready
+   Deselect: 
+      PLZM A 1 A_Lower 
+      Loop
+   Select: 
+      PLZM A 1 A_Raise 
+      Loop
+   Fire: 
+      PLZM A 2
+      PLZF A 3 Bright
+      PLZF B 0 A_PlaySound("weapons/trailatt")
+      PLZF B 0 A_FireCustomMissile("Bolt1",0,1,0,0)
+      PLZF B 4 Bright
+      PLZF A 3 A_Refire
+      PLZM B 4 Bright
+      PLZM C 12 Bright
+      PLZM BA 4 Bright 
+      Goto Ready
+   AltFire: 
+      PLZF A 2 Bright
+      PLZF B 0 A_PlaySound("weapons/trailpls")
+      PLZF B 0 A_FireCustomMissile("Bolt2",0,1,0,0)
+      PLZF B 4 Bright
+      PLZM B 4 Bright
+      PLZM C 12 Bright
+      PLZM BA 4 Bright 
+      Goto Ready
+   Hold:
+      PLZF A 3 Bright
+      PLZF B 0 A_PlaySound("weapons/trailbfg")
+      PLZF B 0 A_FireCustomMissile("Bolt1",0,1,0,0)
+      PLZF B 4 Bright
+      PLZF A 3 A_Refire
+      Goto Fire+5
+   Flash: 
+      CMBS A 0  
+      Stop 
+   } 
+}
+
+ACTOR Bolt1
+{
+   Speed 65
+   Height 2
+   Radius 4
+   Mass 9
+   Damage 55
+   SeeSound "weapons/trailatt"
+   DeathSound "weapons/trailpls"
+   ExplosionRadius 20
+   ExplosionDamage 5
+   PROJECTILE
+   +RIPPER
+   Scale 1.30
+   RENDERSTYLE ADD
+   States
+   {
+   Spawn:
+      APLS A 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      Loop       
+   Death: 
+      APBX A 4 A_Explode
+      APBX BCDE 4
+      Stop   
+   }
+}
+
+ACTOR Bolt1Trail
+{
+   Speed 1
+   Height 2
+   Radius 4
+   Mass 9
+   Damage 0
+   ExplosionRadius 200
+   ExplosionDamage 125
+   PROJECTILE
+   Scale 0.80
+   RENDERSTYLE ADD
+   States
+   {
+   Spawn:
+      APLS AB 0
+      Goto Death       
+   Death: 
+      APBX ABCDE 2 Bright
+      Stop
+   }
+}
+
+ACTOR Bolt2
+{
+   
+   Speed 45
+   Height 2
+   Radius 4
+   Mass 9
+   Damage 55
+   SeeSound "weapons/trailatt"
+   DeathSound "weapons/trailpls"
+   ExplosionRadius 200
+   ExplosionDamage 150
+   PROJECTILE
+   Scale 0.80
+   +RIPPER
+   +HEXENBOUNCE
+   RENDERSTYLE ADD
+   States
+   {
+   Spawn:
+      BFS1 A 2 Bright
+      BFS1 A 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 B 2 Bright
+      BFS1 B 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 A 2 Bright
+      BFS1 A 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 B 2 Bright
+      BFS1 B 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      Goto Death       
+   Death: 
+      BFE1 A 4 A_Explode
+      BFE1 BCDEF 4 Bright
+      Stop    
+   }
+}
+
+ACTOR Bolt2Trail 
+{
+   Speed 1
+   Height 2
+   Radius 4
+   Mass 9
+   Damage 0
+   ExplosionRadius 200
+   ExplosionDamage 125
+   PROJECTILE
+   Scale 0.80
+   RENDERSTYLE ADD
+   States
+   {
+   Spawn:
+      APLS AB 0
+      Goto Death       
+   Death: 
+      APBX ABCDE 2 Bright
+      Stop   
+   }
+}
+
+//Weapon: Pipebomb
+//By: Xaser
+//Uses ThingID 1999 and SpawnID 201
+
+ACTOR D2C_Pipebomb : Weapon 25018
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got a pipebomb!"
+   Weapon.AmmoType "D2C_PipebombAmmo"
+   Weapon.AmmoGive 1
+   Weapon.AmmoUse 1
+   Weapon.Kickback 0
+   AttackSound "weapons/pbarm"
+   Scale 0.1
+   + NOALERT
+   States
+   {
+   Spawn:
+      PIPB A -1
+      Loop
+   Ready:
+      PIPE A 1 A_WeaponReady
+      Loop
+   Deselect:
+      PIPE A 1 A_Lower
+      Loop
+   Select:
+      PIPE A 1 A_Raise
+      Loop
+   Fire:
+      PIPE BCDEFGH 1
+      PIPE Z 8
+      PIPE IJKLMNOP 1
+      PIPE P 0 A_FireCustomMissile("Pipebomb",0,1,0,0)
+      PIPE Q 8 A_PlayWeaponSound("weapons/pbthrow")
+      PIPE RSTU 1
+      PIPE Z 8
+      PIPE P 0 A_GiveInventory("D2C_Detonator")
+      PIPE P 0 A_TakeInventory("D2C_Pipebomb")
+      PIPE HGFEDCB 1
+      PIPE A 4
+      PIPE A 4 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR D2C_Detonator : Weapon
+{
+   Weapon.SelectionOrder 1
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You should not see this message, loser!"
+   Weapon.AmmoType "D2C_PipebombAmmo"
+   Weapon.AmmoGive 0
+   Weapon.AmmoUse 0
+   Weapon.Kickback 1000
+   AttackSound "weapons/mauler1"
+   Scale 0.1
+   + NOALERT
+   States
+   {
+   Spawn:
+      PIPB A -1
+      Loop
+   Ready:
+      DETO A 1 A_WeaponReady
+      Loop
+   Deselect:
+      DETO A 1 A_Lower
+      Loop
+   Select:
+      DETO A 1 A_Raise
+      Loop
+   Fire:
+      DETO B 2
+      DETO B 0 A_AlertMonsters
+      DETO B 0 Thing_Projectile(1999,201,0,0,0)
+      DETO C 2 Thing_ReMove(1999)
+      DETO B 2
+      DETO A 8
+      DETO DEFGHIJKLMNO 1
+      DETO Z 8
+      DETO Z 0 A_GiveInventory("D2C_Pipebomb")
+      DETO Z 3 A_TakeInventory("D2C_Detonator")
+      goto Deselect
+   }
+}
+
+ACTOR Pipebomb : Rocket
+{ 
+    Scale 0.1
+    - NOGRAVITY
+    // + LOWGRAVITY
+    + DOOMBOUNCE
+    Damage 0
+    ExplosionDamage 255
+    ExplosionRadius 128
+    SeeSound "weapons/pbbounce"
+    DeathSound "weapons/pbbounce"
+    Renderstyle Normal
+    Alpha 255
+    States
+    {
+    Spawn:
+      PIPB A 1 Thing_ChangeTid(0,1999)
+      Loop
+    Death:
+      PIPB A 1
+      PIPB A 1 Thing_ChangeTid(0,1999)
+      PIPB A 1 
+      Goto Death+2
+    }
+}
+
+ACTOR PipebombExplosion 
+{
+    SeeSound "weapons/explode"
+    SpawnID 201
+    Radius 8
+    Height 56
+    Speed 0
+    ExplosionDamage 255
+    ExplosionRadius 192
+    States
+    {
+    Spawn:
+        NKXP B 3 BRIGHT
+        NKXP C 3 BRIGHT
+        NKXP D 3 BRIGHT A_Explode
+        NKXP EFGHIJKLMNOPQRSTUV 3 BRIGHT
+        Stop
+    }
+}
+
+ACTOR D2C_PipebombAmmo : Ammo
+{
+   Inventory.Amount 1
+   Inventory.MaxAmount 25
+   Ammo.BackpackAmount 1
+   Ammo.BackpackMaxAmount 40
+   Inventory.Icon PIPBB0
+   Inventory.PickupMessage ""
+   States
+   {
+   Spawn:
+      PIPB C   -1     
+   }
+}
+
+//Weapon: COP Derringer
+//By: Xaser
+
+ACTOR COPGun : Weapon 25019
+{
+   +NOALERT
+   +AMMO_OPTIONAL
+   +STRIFEDAMAGE
+   Inventory.PickupSound "weapons/magnumclose"
+   Inventory.PickupMessage "You got the COP Derringer!"
+   Weapon.AmmoType "Shell"
+   Weapon.AmmoGive 16
+   Weapon.AmmoUse 1
+   Weapon.Kickback 20
+   AttackSound "weapons/copfire"
+   States
+   {
+   Spawn:
+      COPP A -1
+      Loop
+   Ready:
+      COPG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      COPG A 1 A_Lower
+      Loop
+   Select:
+      COPG A 1 A_Raise
+      Loop
+   Fire:
+      COPG A 0 A_JumpIfInventory("COPgunInClip", 1, 2)
+      COPG A 1
+      Goto Ready
+      COPG A 0 A_GunFlash
+      COPG A 0 A_FireCustomMissile("CheapAlert",0,0,0,0)
+      COPG A 0 A_TakeInventory("COPgunInClip",1)
+      COPG B 1 Bright A_FireBullets(2,2,1,35,0,0)
+      COPG CD 1 Bright
+      COPG A 1 A_ReFire
+      Goto Ready
+   Hold:
+      COPG A 1
+      COPG A 1 A_ReFire
+      Goto Ready
+   AltFire:
+      COPG A 0 A_JumpIfInventory("COPgunInClip", 4, 2)
+      COPG A 0 A_JumpIfInventory("Shell", 1, 2)
+      COPG A 0 
+      Goto Ready
+      COPR A 2 A_PlaySound("weapons/copopen")
+      COPR B 2
+      COPR CD 2
+      COPR E 1
+      COPR FGHIJKLM 2 
+      COPR N 0 A_TakeInventory("Shell",1)
+      COPR N 0 A_GiveInventory("COPgunInClip",1)
+      COPR N 0 A_JumpIfInventory("COPgunInClip",4,2)
+      COPR N 0 A_JumpIfInventory("Shell",1,2)
+      COPR N 0 
+      Goto AltFire+22
+      COPR N 0 
+      Goto AltFire+16
+      COPR N 2 A_PlaySound("weapons/copload")
+      COPR O 2
+      COPR P 2 A_PlayWeaponSound("weapons/copclose")
+      COPR QR 2
+      COPR STUVWXYZ 2
+      COPG A 2
+      Goto Ready
+   Flash:
+      MAGG K 1 Bright A_Light2
+      MAGG K 1 Bright A_Light1
+      MAGG K 1 Bright A_Light0
+      Stop
+   }
+}
+
+ACTOR COPgunInClip : PuzzleItem
+{
+   - INVBAR
+   Inventory.MaxAmount 4
+   Inventory.Icon NULLA0
+   States
+   {
+   Spawn:
+      NULL A 4
+      Loop
+   }
+}
+
+ACTOR CheapAlert
+{
+   Health 1000
+   Radius 1
+   Height 1
+   Speed  0
+   Damage 0
+   Mass   1   
+   PROJECTILE
+   +NOCLIP
+   States
+   {
+   Spawn:
+      NULL A 0 
+      NULL A 1 A_AlertMonsters
+      Stop
+   }
+}
+
+//Weapon: Flame Thrower
+//By: Bouncy
+
+ACTOR TheFlameThrower : Weapon 20020
+{
+   Inventory.PickupMessage "You got the Flamethrower!"
+   Obituary "%o was burninated by %k's flamethrower!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 30
+   Weapon.AmmoUse 2
+   States
+   {
+   Spawn:
+      FLTP A -1
+      Loop
+   Ready: 
+      FLTW A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      FLTW A 1 A_Lower
+      Loop
+   Select: 
+      FLTW A 1 A_Raise
+      Loop
+   Fire: 
+      FLTW A 0 A_JumpIfNoAmmo(1)
+      FLTW B 1 A_GunFlash
+      FLTW C 1
+      Goto Ready
+   Flash:
+      FLTW B 0 A_Playsound ("weapons/flamesht")
+      FLTW B 1 A_FireCustomMissile("Flame",0,1,0,0)
+      FLTW B 0
+      FLTW B 0 A_FireCustomMissile("FlameNoDamage",0,1,0,0)
+      FLTW C 1
+      Stop
+   } 
+} 
+
+
+ACTOR Flame
+{
+   Radius 12
+   Height 30
+   Speed 7
+   Damage 4
+   PROJECTILE
+   RENDERSTYLE ADD
+   ALPHA 0.67
+   +FIREDAMAGE
+   States
+   {
+   Spawn:
+      FLME ABCDEFGH 2 Bright
+   Death:
+      FLME IJKLMNOPQR 2 Bright
+      Stop
+   }
+}
+
+ACTOR FlameNoDamage : Flame
+{
+   Damage 0
+}
+
+//Weapon: Reincarnator
+//By: Cutmanmike
+
+ACTOR Vilestaff : Weapon 25021
+{
+   Inventory.PickupSound "misc/w_pkup" 
+   Weapon.AmmoGive 10 
+   Weapon.AmmoUse 1 
+   Weapon.AmmoUse2 50 
+   Weapon.AmmoType "Darkmana"
+   Weapon.AmmoType2 "Darkmana"
+   Inventory.PickupSound "misc/w_pkup" 
+   Inventory.PickupMessage "You got the staff of the vile!"
+   States 
+   { 
+   Spawn: 
+      REVI H -1 
+      Loop
+   Ready: 
+      REVI A 1 A_WeaponReady 
+      Loop
+   Deselect: 
+      REVI A 1 A_Lower 
+      Loop
+   Select: 
+      REVI A 1 A_Raise 
+      Loop 
+   Fire: 
+      REVI A 0 A_JumpIfNoAmmo(1) 
+      REVI B 1 
+      REVI C 1
+      REVI D 1
+      REVI E 1 A_Playsound("weapons/vilesht2")
+      REVI E 2 A_FireCustomMissile("Vilefake2", 0, 1, 0, 0) 
+      REVI D 1 
+      REVI C 1
+      REVI B 1
+      REVI A 10
+      Goto Ready 
+   AltFire: 
+      REVI E 0 A_JumpIfNoAmmo(1) 
+      REVI E 0 A_Playsound("weapons/vilesht1")
+      REVI E 0 A_FireCustomMissile("Vilefake", 0, 1, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 5, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 10, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 15, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 20, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 25, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 30, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 35, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 40, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 45, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 50, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 55, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 60, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 65, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 70, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 75, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 80, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 85, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 90, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 95, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 100, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 105, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 110, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 115, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 120, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 125, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 130, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 135, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 140, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 145, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 150, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 155, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 160, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 165, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 170, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 175, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 180, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 185, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 190, 0, 0, 0) 
+      REVI E 0 A_FireCustomMissile("Vilefake", 195, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 200, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 205, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 210, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 215, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 220, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 225, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 230, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 235, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 240, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 245, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 250, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 255, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 260, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 265, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 270, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 275, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 280, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 285, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 290, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 295, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 300, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 305, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 310, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 315, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 320, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 325, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 330, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 335, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 340, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 345, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 350, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 355, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("Vilefake", 360, 0, 1, 0)
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2 
+      REVI G 2 
+      REVI F 2
+      REVI G 2 
+      REVI F 2 
+      REVI D 2 
+      REVI C 2
+      REVI B 2
+      REVI A 2
+      Goto Ready 
+   } 
+}
+
+ACTOR Vilefake2
+{
+   +FRIENDLY
+   +NOCLIP
+   Radius 50
+   Height 5
+   PROJECTILE
+   RENDERSTYLE NONE
+   Speed 7
+   States
+   {
+   Spawn:
+      PLAY AAAAA 6 A_VileChase
+      Stop
+   Death:
+      Play A 1
+      Stop
+   Heal:
+      Play A 1
+      Stop 
+   }
+}
+
+
+ACTOR Vilefake
+{
+   Speed 20
+   +FRIENDLY
+   +NOCLIP
+   Radius 50
+   Height 5
+   PROJECTILE
+   RENDERSTYLE NONE
+   States
+   {
+   Spawn:
+      PLAY AAAAAAAAAAAAAAA 8 A_VileChase
+      Stop
+   Death:
+      PLAY A 1
+      Stop
+   Heal:
+      Play A 1
+      Stop
+   }
+}
+
+ACTOR Darkmana : Ammo 25022
+{
+   +FLOATBOB
+   Inventory.Amount 5
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 10
+   Ammo.BackpackMaxAmount 100
+   Inventory.Icon REVII0
+   States
+   {
+   Spawn:
+      REVI I -1
+      Stop
+   }
+}
+
+//Weapon: Flak Cannon
+//By: ant1991331
+
+ACTOR FlakCannon : Weapon 25023
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Flak Cannon!"
+   Weapon.AmmoType "Clip"
+   Weapon.AmmoGive 50
+   Weapon.AmmoUse 2
+   Obituary "%o is picking %k's shrapnel out his teeth."
+   States
+   {
+   Spawn:
+      FLAP A -1
+      Loop
+   Ready:
+      FLAK A 0 A_PlayWeaponSound("weapons/flakl")
+      FLAK B 7
+      FLAK C 7
+      FLAK C 1 A_WeaponReady
+      Goto Ready+3
+   Deselect:
+      FLAK C 1 A_Lower
+      Loop
+   Select:
+      FLAK A 1 A_Raise
+      Loop
+   Fire:
+      FLAK D 0 A_PlayWeaponSound("weapons/flaks")
+      FLAK B 0 A_FireCustomMissile(Chunk1,0,1,15,-18)
+      FLAK B 0 A_FireCustomMissile(Chunk2,0,1,18,13)
+      FLAK B 0 A_FireCustomMissile(Chunk3,0,1,13,5)
+      FLAK B 0 A_FireCustomMissile(Chunk4,0,1,0,-15)
+      FLAK B 0 A_FireCustomMissile(Chunk2,0,1,-18,12)
+      FLAK B 0 A_FireCustomMissile(Chunk1,0,0,-13,8)
+      FLAK D 7 Bright
+      FLAK E 7 Bright
+      FLAK A 7
+      FLAK A 7 A_PlayWeaponSound("weapons/grenad")
+      FLAK A 7 A_PlayWeaponSound("weapons/flakl")
+      FLAK B 7
+      FLAK C 7
+      Goto Ready+3
+   }
+}
+
+ACTOR Chunk1
+{
+   Radius 3
+   Height 4
+   Speed 35
+   Damage 5
+   Mass 250
+   Scale 0.2
+   +MISSILE
+   +HEXENBOUNCE
+   +LOWGRAVITY
+   States
+   {
+   Spawn:
+      FLAS A 200
+      Stop
+   Death:
+      BLUD C 10 A_CustomMissile("FlakBlood", 0, 0, 0, 0)
+      BLUD BA 10
+      Stop
+   }
+}
+
+ACTOR Chunk2 : Chunk1
+{
+   States
+   {
+   Spawn:
+      FLAS B 200
+      Stop
+   }
+}
+
+ACTOR Chunk3 : Chunk1
+{
+    States
+    {
+    Spawn:
+        FLAS C 200
+        stop
+    }
+}
+
+ACTOR Chunk4 : Chunk1
+{
+    States
+    {
+    Spawn:
+        FLAS D 200
+        stop
+    }
+}
+
+ACTOR FlakBlood
+{
+   +NOGRAVITY
+   Damage 0
+   Radius 0
+   +MISSILE
+   Speed 0
+   Height 0
+   States
+   {
+   Spawn:
+      BLUD CBA 10
+      Stop
+   }
+}
+
+//Weapon: Seeker Missile Launcher
+//By: NecroMage
+
+ACTOR SeekerMissileLauncher : Weapon 25024
+{
+   Inventory.PickupMessage "You got the Seeker Missile Launcher!"
+   Inventory.PickupSound "misc/w_pkup"
+   AttackSound "weapons/seeker"
+   Weapon.AmmoGive 10
+   Weapon.AmmoUse 2
+   Weapon.AmmoType "RocketAmmo"
+   States
+   {
+   Spawn:
+      SEML A -1
+      Loop
+   Ready:
+      SEML B 5 A_WeaponReady
+      Loop
+   Deselect:
+      SEML B 1 A_Lower
+      Loop
+   Select:
+      SEML B 1 A_Raise
+      Loop
+   Fire:
+      SEML B 0 A_JumpIfNoAmmo(1)
+      SEML B 24 A_GunFlash
+      Goto Ready
+   Flash:
+      SEML C 6
+      SEML D 6
+      SEML E 6
+      SEML F 6 A_FireCustomMissile("SeekerMissile",0,1,0,0)
+      Stop
+   }
+}
+
+ACTOR SeekerMissile : Rocket
+{
+   Damage 80
+   ExplosionDamage 64
+   PROJECTILE
+   +SEEKERMISSILE
+   DeathSound "weapons/missile"
+   States
+   {
+   Spawn:
+      MISL A 1 A_SeekerMissile(90,90)
+      Loop
+   }
+}
+
+//Weapon: Tazer
+//By: HellsBane
+
+ACTOR Tazer : Weapon 25025
+{
+   Inventory.PickupMessage "You got a tazer!"
+   Inventory.PickupSound "misc/w_pkup"
+   AttackSound "weapons/tazer"
+   States
+   {
+   Spawn:
+      TAZT A -1
+      Loop
+   Ready:
+      TAZO A 5 A_WeaponReady
+      Loop
+   Deselect:
+      TAZO A 1 A_Lower
+      Loop
+   Select:
+      TAZO A 1 A_Raise
+      Loop
+   Fire:
+      TAZO A 1 A_JumpIfNoAmmo(1)
+      TAZO B 0 A_PlayWeaponSound("weapons/tazershot")
+      TAZO B 3 A_CustomPunch(10, 1, 0, 0)
+      TAZO C 0 A_PlayWeaponSound("weapons/tazershot")
+      TAZO C 3
+      TAZO C 0 A_PlayWeaponSound("weapons/tazershot")
+      Goto Ready
+   Hold:
+      TAZO A 1 A_JumpIfNoAmmo(1)
+      TAZO B 3 A_CustomPunch(10, 1, 0, 0)
+      TAZO C 3
+      Goto Ready
+   }
+}
+
+//Weapon: Walter PPK
+//By: NecroMage
+
+ACTOR WalterPPK : Weapon 25026
+{
+   Inventory.PickupMessage "You got the Walther PPK, complete with silencer!"
+   Inventory.PickupSound "misc/w_pkup"
+   AttackSound "weapons/walter"
+   Weapon.AmmoGive 25
+   Weapon.AmmoUse 2
+   Weapon.AmmoType "Clip"
+   +NOALERT
+   States
+   {
+   Spawn:
+      WALT F -1
+      Loop
+   Ready:
+      WALT A 5 A_WeaponReady
+      Loop
+   Deselect:
+      WALT A 1 A_Lower
+      Loop
+   Select:
+      WALT A 1 A_Raise
+      Loop
+   Fire:
+      WALT A 0 A_JumpIfNoAmmo(1)
+      WALT B 3
+      WALT C 3 A_GunFlash
+      WALT D 3
+      WALT A 7
+      Goto Ready
+   Flash:
+      WALT E 3 A_FireBullets(2,2,1,10,0,1)
+      Stop
+   }
+}
+
+//Weapon: BFG2704
+//By: Inuyasha_989
+
+ACTOR BFG2704 : BFG9000 25027
+{
+   Inventory.PickupMessage "You got the legendary BFG 2704!"
+   Weapon.Ammogive 60
+   Weapon.Ammouse 1
+   States
+   {
+   Spawn:
+      BFUG A -1
+      LOOP
+   Ready:
+      BFJG A 1 A_WeaponReady
+      LOOP
+   Deselect:
+      BFJG A 1 A_Lower
+      LOOP
+   Select:
+      BFJG A 0
+      BFJG A 1 A_Raise
+      Goto Select+1
+   Fire:
+      BFJG A 4 A_Playsound ("weapons/bfg")
+      BFJI ABCDEFGHI 8
+      BFJG B 10 A_GunFlash
+      BFJG B 0 A_PlaySound ("weapons/bfgshot1")
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      Goto Ready
+    Flash:
+      BFJF A 5
+      BFJF B 5
+      BFJF C 5
+      STOP
+   }
+}
+
+ACTOR BFGMini
+{
+   Radius 12
+   Height 20
+   Speed 25
+   Damage 20
+   Scale 1.5
+   PROJECTILE
+   DeathSound "imp/shotx"
+   States
+   {
+   Spawn:
+      RDHP AB 5	
+      Loop
+   Death:
+      RDHP CD 6 Bright
+      Stop
+   }
+}
+
+ACTOR BFGPlasma
+{
+   Radius 3
+   Height 4
+   Speed 25
+   Damage 18
+   PROJECTILE
+   +STRIFEDAMAGE
+   DeathSound "weapons/plasmax"
+   States
+   {
+   Spawn:
+      IPLS AB 8
+      LOOP
+   Death:
+      IPLE ABCDE 4
+      Stop
+   }
+}
+
+//Weapon: Incendinary Shell Launcher
+//By: TheDarkArchon
+
+ACTOR IncendinaryShellLauncher : Weapon 25028
+{
+   Inventory.PickupMessage "You got the Incendinary Shell Launcher!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.Kickback 150
+   Weapon.AmmoType "IncendShells"
+   Weapon.AmmoGive 2
+   Weapon.AmmoUse 1
+   Obituary "%o was immolated by %k's Incendinary Shell Launcher"
+   States
+   {
+   Spawn:
+      INLA A -1
+      Loop
+   Ready:
+      ISLG A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      ISLG A 1 A_Lower
+      Loop
+   Select: 
+      ISLG A 1 A_Raise
+      Loop
+   Fire:
+      ISLF A 0 BRIGHT A_GunFlash
+      ISLF A 3 BRIGHT A_FireCustomMissile("IncendinaryShell",0,1,0,0)
+      ISLF BC 3 BRIGHT 
+      ISLG DCB 3
+      ISLG A 20
+      ISLG A 0 A_Refire
+      Goto Ready
+   Flash:
+      TNT1 A 6 A_Light2
+      TNT1 A 3 A_Light1
+      TNT1 A 0 A_Light0
+      Stop
+   }
+}
+
+ACTOR IncendShells : Ammo 25029
+{
+   Radius 20
+   Height 16
+   Inventory.PickupMessage "Picked up 3 incendinary shells"
+   Inventory.PickupSound "misc/i_pkup"
+   Inventory.Amount 3
+   Inventory.MaxAmount 15
+   Ammo.BackpackAmount 3
+   Ammo.BackpackMaxAmount 30
+   Scale 0.5
+   Inventory.Icon INSHB0
+   States
+   {
+   Spawn:
+      INSH A -1
+      Stop
+   }
+}
+
+ACTOR IncendinaryShell
+{
+   Radius 20
+   Height 16
+   Damage 15
+   Speed 30
+   +FIREDAMAGE
+   ExplosionDamage 64
+   ExplosionRadius 128
+   SeeSound "weapons/incendf"
+   DeathSound "weapons/incendx"
+   PROJECTILE
+   States
+   {
+   Spawn:
+      ISHL A 1
+      Loop
+   Death:
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,45)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,90)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,135)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,225)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,270)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,315)
+      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,45)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,90)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,135)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,225)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,270)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,315)
+      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,60)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,120)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,240)
+      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,300)
+      FIRE A 2 Bright A_Explode
+      FIRE B 2 Bright
+      FIRE A 2 Bright A_Explode 
+      FIRE B 2 Bright
+      FIRE C 2 Bright A_PlaySound("vile/firecrkl")
+      FIRE B 2 Bright A_Explode
+      FIRE C 2 Bright 
+      FIRE B 2 Bright
+      FIRE C 2 Bright 
+      FIRE D 2 Bright A_Explode
+      FIRE C 2 Bright 
+      FIRE D 2 Bright A_Explode 
+      FIRE C 2 Bright 
+      FIRE D 2 Bright A_Explode
+      FIRE E 2 Bright
+      FIRE D 2 Bright A_Explode 
+      FIRE E 2 Bright
+      FIRE D 2 Bright A_Explode
+      FIRE E 2 Bright A_PlaySound("vile/firecrkl") 
+      FIRE FEFEFGHGHGH 2 Bright
+      Stop
+   }
+}
+
+ACTOR IncendNearFire
+{
+   Speed 36
+   Height 1
+   Radius 1
+   PROJECTILE
+   +NOCLIP
+   +FIREDAMAGE
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.3
+   States
+   {
+   Spawn:
+      TNT1 A 1
+      TNT1 A 0 A_Die
+      Goto Death         
+   Death:
+      TNT1 A 1 A_CustomMissile("IncendFire",0,0,0)  
+      Stop
+   }
+}
+
+ACTOR IncendFarFire : IncendNearFire
+{
+   States
+   {
+   Spawn:
+      TNT1 A 2	
+      TNT1 A 0 A_Die
+      Goto Death         
+   Death:
+      TNT1 A 1 A_CustomMissile("IncendDelayFire",0,0,0) 
+      Stop
+   }
+}
+
+ACTOR IncendFire
+{
+   Speed 0
+   Height 1
+   Radius 1
+   ExplosionDamage 40
+   ExplosionRadius 64
+   SeeSound "vile/firecrkl"
+   PROJECTILE
+   +NOCLIP
+   +FIREDAMAGE
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.3
+   States
+   {
+   Spawn:
+      FIRE ABAB 2 Bright A_Explode
+      FIRE C 0 Bright A_Explode
+      FIRE C 2 Bright A_PlaySound("vile/firecrkl")
+      FIRE BCBCDCDCDEDED 2 Bright A_Explode
+      FIRE E 0 Bright A_Explode
+      FIRE E 2 Bright A_PlaySound("vile/firecrkl") 
+      FIRE FEFEF 2 Bright A_Explode
+      FIRE GHGHGH 2 Bright
+      Stop
+    }
+}
+
+ACTOR IncendDelayFire : IncendFire
+{
+   SeeSound ""
+   ExplosionDamage 40
+   ExplosionRadius 64
+   States
+   {
+   Spawn:
+      TNT1 A 18
+      TNT1 A 0 A_PlaySound("vile/firecrkl")
+      FIRE ABAB 2 Bright A_Explode
+      FIRE C 0 Bright A_Explode
+      FIRE C 2 Bright A_PlaySound("vile/firecrkl")
+      FIRE BCBCDCDCDEDED 2 Bright A_Explode
+      FIRE E 0 Bright A_Explode
+      FIRE E 2 Bright A_PlaySound("vile/firecrkl") 
+      FIRE FEFEF 2 Bright A_Explode
+      FIRE GHGHGH 2 Bright
+      Stop
+    }
+}
+
+ACTOR IncendDrop : IncendNearFire
+{
+   Speed 18
+   - NOGRAVITY
+   - NOCLIP
+   ExplosionDamage 40
+   ExplosionRadius 64
+   States
+   {
+   Spawn:
+      FIRE CD 4 Bright
+      Loop
+   Death:
+      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,72)
+      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,144)    
+      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,216)
+      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,288)       
+      FIRE ABAB 2 Bright A_Explode
+      FIRE C 0 Bright A_Explode
+      FIRE C 2 Bright A_PlaySound("vile/firecrkl")
+      FIRE BCBCDCDCDEDED 2 Bright A_Explode
+      FIRE E 0 Bright A_Explode
+      FIRE E 2 Bright A_PlaySound("vile/firecrkl") 
+      FIRE FEFEF 2 Bright A_Explode
+      FIRE GHGHGH 2 Bright
+      Stop
+   }
+}
+
+ACTOR IncendDropFire : IncendFire
+{
+   ExplosionDamage 32
+   ExplosionRadius 48
+   States
+   {
+   Spawn:
+      TNT1 A 6
+      TNT1 A 0 A_PlaySound("vile/firecrkl")
+      FIRE ABAB 2 BRIGHT A_Explode
+      FIRE C 0 BRIGHT A_Explode
+      FIRE C 2 BRIGHT A_PlaySound("vile/firecrkl")
+      FIRE BCBCDCDCDEDED 2 BRIGHT A_Explode
+      FIRE E 0 BRIGHT A_Explode
+      FIRE E 2 BRIGHT A_PlaySound("vile/firecrkl") 
+      FIRE FEFEF 2 BRIGHT A_Explode
+      FIRE GHGHGH 2 BRIGHT
+      Stop
+   }
+}
+
+ACTOR IncendDropFireSpread : IncendNearFire
+{
+   States
+   {
+   Spawn:
+      TNT1 A 1
+      TNT1 A 0 A_Die
+      Goto Death         
+   Death:
+      TNT1 A 1 A_CustomMissile("IncendDropFire",0,0,0)  
+      Stop
+   }
+}
+
+//Weapon: Magnum
+//By: Bashe
+
+ACTOR Magnum : Weapon 25030
+{
+   Weapon.SelectionOrder 304
+   Inventory.PickupSound "misc/W_pkup"
+   Inventory.PickUpMessage "You got the Magnum!"
+   Weapon.AmmoType "MagnumBullets" 
+   Weapon.AmmoGive 4 
+   Weapon.AmmoUse 1 
+   AttackSound "weapons/magnum"
+   States
+   {
+   Spawn:
+      MAGP A -1
+      Loop
+   Ready:
+      MAGN A 1 A_WeaponReady
+      Loop
+   Deselect:
+      MAGN A 1 A_Lower
+      Loop
+   Select:
+      MAGN A 1 A_Raise
+      Loop
+   Fire:
+      MAGN A 0 A_JumpIfNoAmmo (3)
+      MAGF A 3 A_FireBullets (4, 1, 1, 20, "puff", 1)
+      MAGN B 2
+      MAGN C 2
+      MAGN D 2
+      MAGN E 3
+      MAGN D 2
+      MAGN C 2
+      MAGN B 2
+      MAGN A 8
+      MAGN A 0 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR MagnumBullets : Ammo 25031
+{
+   Inventory.Amount 6
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 3
+   Ammo.BackpackMaxAmount 80
+   Inventory.Icon MAGBA0
+   Inventory.PickupMessage "Picked up 10 .357 Magnum bullets."
+   States
+   {
+   Spawn:
+      MAGB A   -1
+      Loop
+   }
+}
+
+//Weapon: Quake Axe
+//By: Wills
+
+ACTOR Axe : Weapon 25032
+{
+   +MELEEWEAPON
+   Inventory.PickupSound "weapons/quakeaxe"
+   Inventory.PickupMessage "You got the axe!"
+   AttackSound "weapons/quakeaxe"
+   Weapon.AmmoUse 0
+   Scale 0.5
+   States
+   {
+   Spawn:
+      QAXP A -1
+      Loop
+   Ready:
+      QAXE A 1 A_WeaponReady
+      Loop
+   Deselect:
+      QAXE A 1 A_Lower
+      Loop
+   Select:
+      QAXE A 1 A_Raise
+      Loop
+   Fire:
+      QAXE B 4
+      QAXE C 4
+      QAXE D 4 A_CustomPunch(12, 0, 0, "Puff")
+      QAXE D 4 A_ReFire
+      Goto Ready
+   }
+}
+
+//Weapon: BFG 11K
+//By: wario
+
+ACTOR BFG11k : Weapon 25033
+{
+   Inventory.PickupMessage "You got the BFG11k. Time to completely destroy this place!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoUse 60
+   Weapon.AmmoGive 60
+   States
+   {
+   Spawn:
+      BFGP A -1
+      Loop
+   Ready: 
+      BFGT A 5 A_Playsound ("weapons/chargeup")
+      BFGT B 5 A_WeaponReady
+      BFGT C 5 A_WeaponReady
+      BFGT D 5 A_WeaponReady
+      Loop
+   Deselect: 
+      BFGT A 1 A_Lower
+      Loop
+   Select: 
+      BFGT A 1 A_Raise
+      Loop
+   Fire: 
+      BFGT E 8 A_Playsound ("weapons/bfgboom")
+      BFGT F 8
+      BFGT G 8
+      BFGT H 0 A_FireCustomMissile("bfgshot2",0,1,0,0)
+      BFGT H 0 A_FireCustomMissile("Redprojectile",-11,0,0,0)
+      BFGT H 0 A_FireCustomMissile("Redprojectile",8,0,0,0)
+      BFGT H 0 A_FireCustomMissile("Redprojectile",11,0,0,0)
+      BFGT H 8 A_FireCustomMissile("Redprojectile",-8,0,0,0)
+      BFGT I 5
+      BFGT J 5 
+      BFGT K 5
+      BFGT L 5
+      Goto Ready
+   } 
+}
+ 
+ACTOR bfgshot2 : BFGBall
+{
+   Speed 20
+   Scale 1.5
+   States
+   {
+   Death:
+      BFE1 A 2
+      BFE1 A 0 A_CustomMissile("bfgspark", 0, 0, 180)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 170)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 160)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 150)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 140)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 130)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 120)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 110)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 100)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 90)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 80)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 70)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 60)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 50)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 40)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 30)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 20)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 10)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 190)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 200)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 210)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 220)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 230)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 240)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 250)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 260)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 270)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 280)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 290)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 300)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 310)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 320)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 330)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 340)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 350)
+      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 360)
+      BFE1 B 2
+      BFE1 C 2
+      BFE1 D 2
+      Stop
+   }
+}
+
+ACTOR Redprojectile 
+{
+   Radius 10
+   Height 20
+   Speed 20
+   Damage 4
+   PROJECTILE
+   +RIPPER
+   States
+   {
+   Spawn:
+      REDP BC 6 Bright 
+      Loop
+   Death:
+      REDP DEF 0 A_Playsound ("weapons/redhit")
+      REDP DEF 6 Bright
+      Stop
+   }
+}
+
+
+ACTOR bfgspark
+{
+   Radius 12
+   Height 20
+   Speed 30
+   Damage 0
+   PROJECTILE
+   States
+   {
+   Spawn:
+      RDHP AB 6 Bright
+      Loop
+   Death:
+      RDHP CD 0 A_Playsound ("weapons/redhit")
+      BFE1 A 0 A_CustomMissile("Redprojectile", 0, 0, 180)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 170)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 160)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 150)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 140)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 130)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 120)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 110)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 100)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 90)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 80)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 70)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 60)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 50)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 40)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 30)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 20)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 10)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 190)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 200)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 210)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 220)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 230)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 240)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 250)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 260)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 270)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 280)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 290)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 300)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 310)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 320)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 330)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 340)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 350)
+      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 360)
+      RDHP CD 6 Bright
+      Stop
+   }
+}
+
+//Weapon: Automatic Shotgun
+//By: TheDarkArchon
+
+ACTOR AutomaticShotgun : Weapon 25034
+{
+   Inventory.PickupMessage "You got the Automatic Shotgun!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.SelectionOrder 375
+   Weapon.Kickback 175
+   Weapon.AmmoType1 "AutoShotgunClip"
+   Weapon.AmmoType2 "Shell"
+   Weapon.AmmoGive2 8
+   Weapon.AmmoUse 1
+   AttackSound "weapons/gun"
+   Obituary "%o was pinned to the wall by %k's Auto Shotgun"
+   +AMMO_OPTIONAL
+   States
+   {
+   Spawn:
+      ASGN A -1
+      Loop
+   Ready: 
+      ASGG A 0 A_JumpIfInventory("AutoShotgunClip",1,2)
+      ASGG A 0 A_GiveInventory("BoltCheck",1)
+      ASGG A 1 A_WeaponReady
+      Loop
+   Deselect: 
+      ASGG A 1 A_Lower
+      Loop
+   Select: 
+      ASGG A 1 A_Raise
+      Loop
+   Fire: 
+      ASGG A 0 A_JumpIfNoAmmo(11)
+      ASGF A 0 BRIGHT A_GunFlash
+      ASGF A 0 BRIGHT A_FireCustomMissile("ShotgunSmoke",0,0,8,3)
+      ASGF A 0 BRIGHT A_FireCustomMissile("ShotgunCasing",45+random(-8,8),0,2,3)
+      ASGF A 2 BRIGHT A_FireBullets(5,5,10,4,"BulletPuff",1)
+      ASGF B 2 BRIGHT
+      ASGG BCDEF 2
+      Goto Ready
+   AltFire:
+      ASGG A 0 A_JumpIfInventory("AutoShotgunClip",5,25)
+      ASGG A 0 A_JumpIfInventory("Shell",1,1)
+      Goto Ready
+      ASGR ABCD 2
+      ASGR E 6
+      ASGR FG 1
+      ASGR HI 2
+      ASGR J 3 A_PlayWeaponSound("weapons/gunin")
+      ASGR J 0 A_TakeInventory("Shell",1)
+      ASGR J 0 A_GiveInventory("AutoShotgunClip",1)
+      ASGR K 3
+      ASGR L 3
+      ASGR MN 2
+      ASGR E 6
+      ASGR E 0 A_JumpIfInventory("AutoShotgunClip",5,2)
+      ASGR E 0 A_JumpIfInventory("Shell",1,6)
+      ASGR DCBA 2
+      ASGG A 4 A_JumpIfInventory("BoltCheck",1,2)
+      Goto Ready
+      ASGR F 0
+      Goto AltFire+7
+      ASGR PQRST 2
+      ASGR U 4 A_PlayWeaponSound("weapons/gunbolt")
+      ASGR V 4
+      ASGR WXYZ 2
+      ASG2 A 1
+      ASGG A 4 A_TakeInventory("BoltCheck",999)
+      Goto Ready
+   Flash:
+      TNT1 A 2 BRIGHT A_Light1
+      TNT1 A 3 BRIGHT A_Light2
+      TNT1 A 0 BRIGHT A_Light0 
+      Stop
+   } 
+} 
+
+ACTOR AutoShotgunClip : Ammo 
+{
+   Inventory.MaxAmount 5 
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 5 
+   Inventory.Icon ASGNA0
+}
+
+ACTOR ShotgunCasing
+{
+   Height 12
+   Radius 9
+   Speed 4
+   Scale 0.45
+   PROJECTILE
+   +DOOMBOUNCE
+   - NOGRAVITY
+   SeeSound "weapons/casing2"
+   States
+   {
+   Spawn:
+      D3S1 A 0 A_PlaySound("NULL")
+      D3S1 ACBHEGFD 1
+      Goto Spawn+1
+   Death:
+      D3S1 A 0 A_Jump(32,8)
+      D3S1 A 0 A_Jump(37,8)
+      D3S1 A 0 A_Jump(43,8)
+      D3S1 A 0 A_Jump(51,8)
+      D3S1 A 0 A_Jump(64,8)
+      D3S1 A 0 A_Jump(85,8)
+      D3S1 A 0 A_Jump(128,8)
+      D3S1 A 350
+      Stop
+      D3S1 B 350
+      Stop
+      D3S1 C 350
+      Stop
+      D3S1 D 350
+      Stop
+      D3S1 E 350
+      Stop
+      D3S1 F 350
+      Stop
+      D3S1 G 350
+      Stop
+      D3S1 H 350
+      Stop
+   }
+}
+
+ACTOR ShotgunSmoke
+{
+   Radius 1
+   Height 1
+   PROJECTILE
+   +NOCLIP
+   Scale 0.2
+   Speed 2
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.6
+   States
+   {
+   Spawn:
+      SMOK ABCDEFGHIJKLMNOPQ 1 
+      Stop
+   Death:
+      SMOK OPQ 1
+      Stop
+   }
+}
+
+ACTOR BoltCheck : Ammo
+{
+   Inventory.MaxAmount 1 
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 1
+   Inventory.Icon TNT1A0
+}
+
+//Weapon: Heavy Rifle
+//By: ZChronos
+
+ACTOR HeavyRifle : Weapon 25035
+{ 
+   Inventory.PickupMessage "You got the Heavy Rifle!" 
+   Inventory.PickupSound "misc/w_pkup" 
+   Weapon.AmmoType "Clip" 
+   Weapon.AmmoGive 50 
+   Weapon.AmmoUse 5 
+   Weapon.Kickback 900 
+   States 
+   {
+   Spawn: 
+      HVYR A -1 
+      Loop 
+   Ready: 
+      HVRG A 1 A_WeaponReady 
+      Loop
+   Deselect: 
+      HVRG A 1 A_Lower 
+      Loop 
+   Select: 
+      HVRG A 0 A_PlaySound("weapons/rifleup") 
+      HVRG A 1 A_Raise 
+      Goto Select+1 
+   Fire:
+      HVRF A 5 Bright A_FireCustomMissile("HeavyBullet", 0, 1, 0, 0)
+      HVRF B 5 Bright A_Recoil(3) 
+      HVRG A 10
+      HVRG A 0 A_Refire
+      Goto Ready
+   }
+}
+
+ACTOR HeavyBullet
+{
+   Speed 40
+   Damage 20
+   Radius 6
+   Height 8
+   PROJECTILE
+   +STRIFEDAMAGE
+   SeeSound "weapons/riflefre"
+   RENDERSTYLE ADD
+   ALPHA 0.7 
+   States
+   {
+   Spawn:
+      BULL A 1 Bright
+      Loop
+   Death:
+      HPUF ABCD 3
+      Stop
+   }
+}
+
+//Weapon: Crystal Gun
+//By: Daniel
+
+ACTOR CrystalGun : Weapon 25036
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Crystal Gun!"
+   Weapon.AmmoType "Crystal"
+   Weapon.AmmoGive 6
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      CRST A -1
+      Loop
+   Ready:
+      CRYG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      CRYG A 1 A_Lower
+      Loop
+   Select:
+      CRYG A 1 A_Raise
+      Loop
+   Fire:
+      CRYG A 1
+      CRYG B 2
+      CRYG C 0 A_PlayWeaponSound("weapons/crlaunch")
+      CRYG C 7 A_FireCustomMissile("CrystalShot",0,1,8,6)
+      CRYG D 2
+      CRYG A 4
+      CRYG A 1 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR CrystalShot
+{
+   Radius 4
+   Height 5
+   Speed 20
+   Damage 12
+   PROJECTILE
+   +SEEKERMISSILE
+   +ICEDAMAGE
+   RENDERSTYLE ADD
+   ALPHA 1.0
+   ExplosionDamage 80
+   ExplosionRadius 20
+   DeathSound "weapons/crbreak"
+   States
+   {
+   Spawn:
+      CRYS A 1 Bright A_SeekerMissile (1, 2)
+      CRYS A 1 Bright A_CustomMissile("CrystalShotTrail",0,0,0)
+      CRYS A 2 Bright A_SeekerMissile (1, 2)
+      CRYS A 2 Bright A_SeekerMissile (1, 2)
+      CRYS A 2 Bright A_SeekerMissile (1, 2)
+      CRYS A 2 Bright A_SeekerMissile (1, 2)
+      CRYS A 2 Bright A_SeekerMissile (1, 2)
+      Loop
+   Death:
+      CRYE A 3 Bright A_Explode
+      CRYE BC 3 Bright
+      CRYE DEF 2 Bright
+      Stop
+   }
+}
+
+ACTOR CrystalShotTrail
+{
+   Radius 4
+   Height 3
+   Speed 10
+   Scale 0.6
+   +NOGRAVITY
+   RenderStyle Translucent
+   Alpha 0.67
+   States
+   {
+   Spawn:
+      CRYT A 1
+      CRYT A 3 A_PlaySound("weapons/crtrail")
+      CRYT BC 3
+      CRYT D 2
+      Stop 
+   }
+}
+
+ACTOR Crystal : Ammo 25037
+{
+   RENDERSTYLE ADD
+   ALPHA 1.0
+   Inventory.Amount 3
+   Inventory.MaxAmount 100
+   Ammo.BackpackAmount 3
+   Ammo.BackpackMaxAmount 200
+   Inventory.PickupMessage "Picked up an ice crystal."
+   Inventory.Icon CRS1A0
+   States
+   {
+   Spawn:
+      CRS1 A -1 Bright
+      Loop
+   }
+}
+
+ACTOR CrystalAmount : Crystal 25038
+{
+   Inventory.Amount 15
+   Inventory.PickupMessage "Picked up an amount of ice crystals."
+   States
+   {
+   Spawn:
+      CRS2 A -1 Bright
+      Loop
+   }
+}
+
+//Weapon: Fire Bomb Launcher
+//By: Daniel
+
+ACTOR FirebombGun : Weapon 25039
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Firebomb!"
+   Weapon.AmmoType "PowerMissile"
+   Weapon.AmmoGive 2
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      FBRM A -1
+      Loop
+   Ready:
+      FRBG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      FRBG A 1 A_Lower
+      Loop
+   Select:
+      FRBG A 1 A_Raise
+      Loop
+   Fire:
+      FRBG B 3 Bright A_Light1
+      FRBG C 0 A_Light2
+      FRBG C 0 A_PlayWeaponSound("weapons/fblaunch")
+      FRBG C 4 Bright A_FireCustomMissile("FirebombShot",0,1,0,6)
+      FRBG A 12 A_Light0
+      FRBG A 0 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR FirebombShot
+{
+   Radius 11
+   Height 8
+   Speed 22
+   Damage 21
+   PROJECTILE
+   ExplosionDamage 128
+   ExplosionRadius 160
+   DeathSound "weapons/fbexpl"
+   Obituary "%o was killed by a Firebomb missile."
+   States
+   {
+   Spawn:
+      FRMS A 0 Bright A_PlaySound("weapons/missfly")
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      FRMS A 2 Bright A_CustomMissile("FirebombMissileTrail",0,0,0)
+      Loop
+   Death:
+      FRME A 3 Bright A_Explode
+      FRME B 0 A_CustomMissile("FirebombExplosion1",1,0,45)
+      FRME B 0 A_CustomMissile("FirebombExplosion1",1,0,135)
+      FRME B 0 A_CustomMissile("FirebombExplosion1",1,0,225)
+      FRME B 0 A_CustomMissile("FirebombExplosion1",1,0,315)
+      FRME BCDEFGHIJKLMNOPQRS 3 Bright
+      Stop
+   }
+}
+
+ACTOR FirebombExplosion1
+{
+   Radius 11
+   Height 8
+   Speed 18
+   Damage 6
+   +NOBLOCKMAP 
+   +DROPOFF 
+   +MISSILE 
+   +ACTIVATEIMPACT 
+   +ACTIVATEPCROSS 
+   ExplosionDamage 128
+   ExplosionRadius 144
+   Obituary "%o was killed by a Firebomb explosion."
+   States
+   {
+   Spawn:
+      FRME A 1 Bright
+      Loop
+   Death:
+      FRME A 0
+      FRME A 0 A_PlaySound("weapons/fbexpl")
+      FRME A 3 Bright A_Explode
+      FRME B 1 Bright
+      FRME B 2 Bright A_CustomMissile("FirebombExplosion2",25,0,180)
+      FRME CDEFGHIJKLMNOPQRS 3 Bright
+      Stop
+   }
+}
+
+ACTOR FirebombExplosion2 : FirebombExplosion1
+{
+   ExplosionRadius 136
+   States
+   {
+   Death:
+      FRME A 0
+      FRME A 0 A_PlaySound("weapons/fbexpl")
+      FRME A 3 Bright A_Explode
+      FRME B 1 Bright
+      FRME B 2 Bright A_CustomMissile("FirebombExplosion3",20,0,180)
+      FRME CDEFGHIJKLMNOPQRS 3 Bright
+      Stop
+   }
+}
+
+ACTOR FirebombExplosion3 : FirebombExplosion1
+{
+   Speed 14
+   Damage 5
+   ExplosionRadius 128
+   States
+   {
+   Death:
+      FRME A 0
+      FRME A 0 A_PlaySound("weapons/fbexpl")
+      FRME A 3 Bright A_Explode
+      FRME BCDEFGHIJKLMNOPQRS 3 Bright
+      Stop
+   }
+}
+
+ACTOR FirebombMissileTrail
+{
+   Radius 4
+   Height 3
+   Speed 1
+   Scale 0.7
+   +NOGRAVITY
+   RenderStyle Translucent
+   Alpha 0.5
+   States
+   {
+   Spawn:
+      MTRL A 2
+      MTRL AB 3
+      MTRL CD 3
+      MTRL E 4
+      MTRL F 5
+      Stop 
+   }
+}
+
+ACTOR PowerMissile : Ammo 25040
+{
+   Inventory.Amount 1
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 1
+   Ammo.BackpackMaxAmount 100
+   Inventory.PickupMessage "Picked up some power missiles."
+   Inventory.Icon PWMAA0
+   States
+   {
+   Spawn:
+      PWMA A -1
+      Loop
+   }
+}
+
+ACTOR PowerMissileBox : PowerMissile 25041
+{
+   Inventory.Amount 5
+   Inventory.PickupMessage "Picked up a box of power missiles."
+   States
+   {
+   Spawn:
+      PWMB A -1
+      Loop
+   }
+}
+
+//Weapon: Poison Gun
+//By: Daniel
+
+ACTOR PoisonGun : Weapon 25042
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Poison Launcher!"
+   Weapon.AmmoType "PoisonRecipient"
+   Weapon.AmmoGive 4
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      POIS A -1
+      Loop
+   Ready:
+      POIG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      POIG A 1 A_Lower
+      Loop
+   Select:
+      POIG A 1 A_Raise
+      Loop
+   Fire:
+      POIG A 3
+      POIG B 0 A_PlayWeaponSound("weapons/psnlaunch")
+      POIG B 6 A_FireCustomMissile("PoisonShot",0,1,4,5)
+      POIG A 12
+      POIG A 0 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR PoisonShot
+{
+   Radius 10
+   Height 8
+   Speed 18
+   Scale 0.5
+   Damage 30
+   PROJECTILE
+   +NOTARGET
+   ExplosionDamage 128
+   ExplosionRadius 256
+   DeathSound "weapons/psnbreak"
+   States
+   {
+   Spawn:
+      PSNS A 64 Bright
+      PSNS A 1 Bright A_Gravity
+      PSNS A 1 Bright
+      Goto Spawn+3
+   Death:
+      PSNE A 3 Bright
+      PSNE B 4 Bright
+      PSNE C 1 Bright A_Explode
+      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,0)
+      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,90)
+      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,180)
+      PSNE C 3 A_CustomMissile("PoisonShotCloud1",5,0,270)
+      PSNE DEFGCBA 6 Bright
+      Stop
+   }
+}
+
+ACTOR PoisonShotCloud1
+{
+   Radius 10
+   Height 8
+   Speed 16
+   Mass 2000
+   Damage 10
+   +NOBLOCKMAP 
+   +DROPOFF 
+   +MISSILE 
+   +ACTIVATEIMPACT 
+   +ACTIVATEPCROSS 
+   +NOTARGET
+   ExplosionDamage 96
+   ExplosionRadius 256
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.67
+   States
+   {
+   Spawn:
+      PSNE A 1 Bright
+      Loop
+   Death:
+      PSNE A 3 Bright
+      PSNE B 4 Bright
+      PSNE C 1 Bright A_Explode
+      PSNE C 0 A_Jump(16,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,0)
+      PSNE C 0 A_Jump(16,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,90)
+      PSNE C 0 A_Jump(16,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,180)
+      PSNE C 0 A_Jump(16,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,270)
+      PSNE DEFGCBA 6 Bright
+      Stop
+   }
+}
+
+ACTOR PoisonShotCloud2
+{
+   Radius 10
+   Height 8
+   Speed 8
+   Mass 3000
+   Damage 10
+   +NOBLOCKMAP 
+   +DROPOFF 
+   +MISSILE 
+   +ACTIVATEIMPACT 
+   +ACTIVATEPCROSS 
+   +NOTARGET
+   ExplosionDamage 64
+   ExplosionRadius 160
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.33
+   States
+   {
+   Spawn:
+      PSNE A 1 Bright
+      Loop
+   Death:
+      PSNE A 3 Bright
+      PSNE B 4 Bright
+      PSNE C 1 Bright A_Explode
+      PSNE C 0 A_Jump(32,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,0)
+      PSNE C 0 A_Jump(32,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,90)
+      PSNE C 0 A_Jump(32,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,180)
+      PSNE C 0 A_Jump(32,2)
+      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,270)
+      PSNE DEFGCBA 6 Bright
+      Stop
+   }
+}
+
+ACTOR PoisonShotCloud3
+{
+   Radius 10
+   Height 8
+   Speed 8
+   Mass 4000
+   Damage 10
+   +NOBLOCKMAP 
+   +DROPOFF 
+   +MISSILE 
+   +ACTIVATEIMPACT 
+   +ACTIVATEPCROSS 
+   +NOTARGET
+   ExplosionDamage 48
+   ExplosionRadius 96
+   RENDERSTYLE TRANSLUCENT
+   ALPHA 0.15
+   States
+   {
+   Spawn:
+      PSNE A 1 Bright
+      Loop
+   Death:
+      PSNE A 3 Bright
+      PSNE B 4 Bright
+      PSNE C 5 Bright A_Explode
+      PSNE DEFGCBA 6 Bright
+      Stop
+   }
+}
+
+ACTOR PoisonRecipient : Ammo 25043
+{
+   Inventory.Amount 2
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 2
+   Ammo.BackpackMaxAmount 100
+   Inventory.PickupMessage "Picked up some poison recipients."
+   Inventory.Icon PSNRA0
+   States
+   {
+   Spawn:
+      PSNR A -1
+      Loop
+   }
+}
+
+ACTOR PoisonRecipientPile : PoisonRecipient 25044
+{
+   Inventory.Amount 10
+   Inventory.PickupMessage "Picked up a pile of poison recipients."
+   States
+   {
+   Spawn:
+      PSNA A -1
+      Loop
+   }
+}
+
+//Weapon: Railgun
+//By: Daniel
+
+ACTOR RailGun : Weapon 25045
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the RailGun!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 10
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      RGUN A -1
+      Loop
+   Ready:
+      RLGG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      RLGG A 1 A_Lower
+      Loop
+   Select:
+      RLGG A 1 A_Raise
+      Loop
+   Fire:
+      RLGG A 0 A_PlayWeaponSound("weapons/railgc")
+      RLGG A 13 A_GunFlash
+      RLGG A 7 A_RailAttack(150,0,5)
+      RLGG A 25
+      RLGG A 0 A_ReFire
+      Goto Ready
+   Flash:
+      RLGF AC 1 Bright
+      RLGF EG 2 Bright
+      RLGF H 3 Bright
+      RLGF I 5 Bright A_Light1
+      RLGF J 7 Bright A_Light2
+      RLGF K 1 Bright A_Light0
+      RLGF H 4 Bright
+      RLGF GFE 3 Bright
+      RLGF DCBA 2 Bright
+      Stop
+   }
+}
+
+//Weapon: SMG
+//BY: Daniel
+
+ACTOR SubMachineGun : Weapon 25046
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the SubMachine Gun!"
+   Weapon.AmmoType "Clip"
+   Weapon.AmmoGive 16
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      SMCH A -1
+      Loop
+   Ready:
+      SMGG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      SMGG A 1 A_Lower
+      Loop
+   Select:
+      SMGG A 1 A_Raise
+      Loop
+   Fire:
+      SMGG B 0 A_GunFlash
+      SMGG B 0 A_PlayWeaponSound("weapons/smg")
+      SMGG B 3 A_FireBullets(3,3,1,6,0,1) 
+      SMGG C 0 A_CheckReload
+      SMGG C 0 A_PlayWeaponSound("weapons/smg")
+      SMGG C 3 A_FireBullets(3,3,1,6,0,1) 
+      SMGG A 0 A_ReFire
+      Goto Ready
+   Flash:
+      SMGG B 3 Bright A_Light1
+      SMGG C 3 Bright A_Light2
+      SMGG C 0 Bright A_Light0
+      Stop
+   }
+}
+
+//Weapon: Devastator
+//By Daniel
+
+ACTOR Devastator : Weapon 25047
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Devastator Weapon!"
+   Weapon.AmmoType "MiniRockets"
+   Weapon.AmmoGive 12
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      DVST A -1
+      Loop
+   Ready:
+      DEVG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      DEVG A 1 A_Lower
+      Loop
+   Select:
+      DEVG A 1 A_Raise
+      Loop
+   Fire:
+      DEVG B 0 A_Light2
+      DEVG B 0 A_PlayWeaponSound("weapons/devshot")
+      DEVG B 3 A_FireCustomMissile("DevastatorShot",0,1,-3,6)
+      DEVG A 3 A_Light1
+      DEVG C 0 A_Light2
+      DEVG C 0 A_PlayWeaponSound("weapons/devshot")
+      DEVG C 3 A_FireCustomMissile("DevastatorShot",0,1,3,6)
+      DEVG A 3 A_Light0
+      DEVG A 4 A_ReFire
+      Goto Ready
+   }
+}
+
+ACTOR DevastatorShot
+{
+   Radius 4
+   Height 4
+   Speed 18
+   Scale 0.2
+   Damage 12
+   PROJECTILE
+   ExplosionDamage 64
+   ExplosionRadius 48
+   SeeSound "weapons/devlnch"
+   DeathSound "weapons/devexpl"
+   States
+   {
+   Spawn:
+      MNSS A 1 Bright
+      Loop
+   Death:
+      GRNE A 3 Bright A_Explode
+      GRNE BCDEFGHIJKLMN 3 Bright
+      Stop
+   }
+}
+
+ACTOR MiniRockets : Ammo 25048
+{
+   Inventory.Amount 6
+   Inventory.MaxAmount 100
+   Ammo.BackpackAmount 6
+   Ammo.BackpackMaxAmount 200
+   Inventory.PickupMessage "Picked up some mini rockets."
+   Inventory.Icon MNRAA0
+   States
+   {
+   Spawn:
+      MNRA A -1
+      Loop
+   }
+}
+
+ACTOR MiniRocketBox : MiniRockets 25049
+{
+   +ALWAYSPICKUP
+   Inventory.Amount 30
+   Inventory.PickupMessage "Picked up a box of mini rockets."
+   States
+   {
+   Spawn:
+      MNRB A -1
+      Loop
+   }
+}
+
+//Weapon: Grenade Launcher
+//By: Daniel
+
+ACTOR GrenadeLauncher : Weapon 25050
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Grenade Launcher!"
+   Weapon.AmmoType "Grenades"
+   Weapon.AmmoGive 6
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      GRLN A -1
+      Loop
+   Ready:
+      GRNG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      GRNG A 1 A_Lower
+      Loop
+   Select:
+      GRNG A 1 A_Raise
+      Loop
+   Fire:
+      GRNG A 2
+      GRNG B 0 A_GunFlash
+      GRNG B 0 A_PlayWeaponSound("weapons/grenlau")
+      GRNG B 5 A_ThrowGrenade("GrenadeShot",-4,13,9,0)
+      GRNG C 5
+      GRNG D 5
+      GRNG A 4
+      GRNG A 3 A_ReFire
+      Goto Ready
+   Flash:
+      GRNG B 5 Bright A_Light1
+      GRNG C 5 Bright A_Light2
+      GRNG C 0 A_Light0
+      Stop
+   }
+}
+
+ACTOR GrenadeShot
+{
+   Radius 4
+   Height 3
+   Damage 1
+   +NOBLOCKMAP 
+   +DROPOFF 
+   +MISSILE 
+   +ACTIVATEIMPACT 
+   +ACTIVATEPCROSS 
+   +DOOMBOUNCE 
+   SeeSound "weapons/grenhit"
+   DeathSound "weapons/grenexpl"
+   ExplosionDamage 160
+   ExplosionRadius 192
+   States
+   {
+   Spawn:
+      GRNS AB 3
+      Loop
+   Death:
+      GRNE A 2 Bright A_Explode
+      GRNE BCDEFGHIJKLMN 3 Bright
+      Stop
+   }
+}
+
+ACTOR Grenades : Ammo 25051
+{
+   Inventory.Amount 3
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 3
+   Ammo.BackpackMaxAmount 100
+   Inventory.PickupMessage "Picked up some grenades."
+   Inventory.Icon GRNAA0
+   States
+   {
+   Spawn:
+      GRNA A -1
+      Loop
+   }
+}
+
+ACTOR GrenadeBox : Grenades 25052
+{
+   Inventory.Amount 15
+   Inventory.PickupMessage "Picked up a box of grenades."
+   States
+   {
+   Spawn:
+      GRNB A -1
+      Loop
+   }
+}
+
+//Weapon: .20 Pistol
+//By: Daniel
+
+ACTOR Pistol3 : Weapon 25053
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got a .20 Pistol!"
+   Weapon.AmmoType "Clip"
+   Weapon.AmmoGive 20
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      PIS3 A -1
+      Loop
+   Ready:
+      PST3 A 1 A_WeaponReady
+      Loop
+   Deselect:
+      PST3 A 1 A_Lower
+      Loop
+   Select:
+      PST3 A 1 A_Raise
+      Loop
+   Fire:
+      PST3 A 3
+      PST3 B 0 A_PlayWeaponSound("weapons/pistol3")
+      PST3 B 0 A_Light1
+      PST3 B 4 Bright A_FireBullets(2,1,1,6,0,1) 
+      PST3 C 5 A_Light0
+      PST3 A 3 A_ReFire
+      Goto Ready
+   }
+}
+
+//Weapon: Duke3D Shotgun
+//By: Daniel
+
+ACTOR Shotgun2 : Weapon 25054
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Duke3D Shotgun!"
+   Weapon.AmmoType "Shell"
+   Weapon.AmmoGive 8
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      SGN5 A -1
+      Loop
+   Ready:
+      SHT5 A 1 A_WeaponReady
+      Loop
+   Deselect:
+      SHT5 A 1 A_Lower
+      Loop
+   Select:
+      SHT5 A 1 A_Raise
+      Loop
+   Fire:
+      SHT5 A 2
+      SHT5 B 0 A_Light2
+      SHT5 B 0 A_PlayWeaponSound("weapons/shtgn2fr")
+      SHT5 B 5 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 C 0 Bright A_Light0
+      SHT5 C 4 Bright A_CheckReload
+      SHT5 DEF 4
+      SHT5 G 5
+      SHT5 H 4
+      SHT5 I 4 A_PlayWeaponSound("weapons/shtgn2rl")
+      SHT5 JK 4
+      SHT5 A 0 A_ReFire
+      Goto Ready
+   }
+}
+
+//Weapon: Quad Shotgun
+//By: Daniel
+
+ACTOR HiPrecisionGun : Weapon 25055
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Quad Shotgun!"
+   Weapon.AmmoType "Shell"
+   Weapon.AmmoGive 32
+   Weapon.AmmoUse 4
+   States
+   {
+   Spawn:
+      SGN3 A -1
+      Loop
+   Ready:
+      SHT3 A 1 A_WeaponReady
+      Loop
+   Deselect:
+      SHT3 A 1 A_Lower
+      Loop
+   Select:
+      SHT3 A 1 A_Raise
+      Loop
+   Fire:
+      SHT3 A 3
+      SHT3 C 4 A_GunFlash
+      SHT3 D 0 A_PlayWeaponSound("weapons/hpshotfr")
+      SHT3 D 5 A_FireBullets(3,2,18,10,"puff",4)
+      SHT3 A 32
+      SHT3 B 21 A_PlayWeaponSound("weapons/hpshotrl")
+      SHT3 A 4
+      SHT3 A 5 A_ReFire
+      Goto Ready
+   Flash:
+      SHT3 C 4 Bright A_Light1
+      SHT3 D 5 Bright A_Light2
+      SHT3 D 0 A_Light0
+      Stop
+   }
+}
+
+//Weapon: Phobos Dust Blower
+//By: Marty Razor Kirra
+
+ACTOR PhobosDustBlower : Weapon 25056
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got a Phobos Dust Blower!"
+   Obituary "%o was blown away by %k's Dust Blower" 
+   Weapon.Kickback 10000000
+   AttackSound "weapons/pdbshot"
+   States
+   {
+   Spawn:
+      PDBM A -1
+      Loop
+   Ready:
+      PDBG A 1 A_WeaponReady
+      Loop
+   Deselect:
+      PDBG A 1 A_Lower
+      Loop
+   Select:
+      PDBG A 1 A_Raise
+      Loop
+   Fire:
+      PDBF ABC 2 A_FireCustomMissile("PhobosAir", 0, 2, 7, 0)
+      PDBG A 0 A_ReFire
+      Goto Ready   
+   Flash:
+      PDBF A 0
+      Stop
+   }
+}
+
+ACTOR PhobosAir
+{ 
+   Radius 5 
+   Height 5 
+   Damage 1 
+   Speed 13 
+   SeeSound "weapons/pdbshot" 
+   PROJECTILE 
+   RENDERSTYLE TRANSLUCENT
+   -NOBLOCKMAP
+   +REFLECTIVE
+   +NOBLOOD
+   +SHOOTABLE
+   +STRIFEDAMAGE
+   States 
+   {
+   Spawn:
+      PDBA ABCDEFGHIJKLMNOPQRSTUVWXYZ 1
+      DEBR ABC 1
+      Stop
+   Death:
+      DEBR C 0
+      Stop 
+   } 
+}
+
+//Weapon: Demon Spawner
+//By: chaoscentral
+
+ACTOR MonsterSpawner : Weapon 25057
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Demon Spawner!"
+   Weapon.AmmoType1 "Orbs"
+   Weapon.AmmoGive1 5
+   Weapon.AmmoUse1 1
+   Weapon.AmmoType2 "Orbs"
+   Weapon.AmmoGive2 0
+   Weapon.AmmoUse2 10
+   States
+   {
+   Spawn:
+      PSNW A -1
+      Loop
+   Select:
+      PSNG A 1 A_Raise
+      Loop
+   Deselect:
+      PSNG A 1 A_Lower
+      Loop
+   Ready:
+      PSNG A 1 A_WeaponReady
+      Loop
+   Fire:
+      PSNG A 4
+      PSNG B 6
+      TNT1 A 0 A_PlaySound("weapons/monspwnf")
+      PSNG C 6 A_FireCustomMissile("MonsterDropper",0,1,0,0)
+      PSNG A 4
+      Goto Ready
+   AltFire:
+      PSNG A 4
+      PSNG B 6
+      TNT1 A 0 A_PlaySound("weapons/monspwnf")
+      PSNG C 6 A_FireCustomMissile("MonsterDropper2",0,1,0,0)
+      PSNG A 4
+      Goto Ready
+   }
+}
+
+ACTOR MonsterDropper
+{
+   Radius 4
+   Height 8
+   Speed 10
+   Scale 0.7
+   +NOTARGET
+   +FRIENDLY
+   PROJECTILE
+   +FLOORCLIP
+   States
+   {
+   Spawn:
+      BOSF ABCD 4 
+      Loop
+   Death:
+      TNT1 A 0
+      FIRE A 2 A_PlaySound("weapons/monspwnx")
+      FIRE BC 2
+      TNT1 A 0 A_Jump(43, 7)
+      TNT1 A 0 A_Jump(43, 8)
+      TNT1 A 0 A_Jump(43, 9)
+      TNT1 A 0 A_Jump(43, 10)
+      TNT1 A 0 A_Jump(43, 11)
+      TNT1 A 0 A_Jump(43, 12)
+      TNT1 A 0 A_Jump(255, 5)
+      GRNE L 0 A_SpawnItem("ZombieGuy2",1,0,0)
+      TNT1 A 0 A_Jump(255, 10)
+      GRNE L 0 A_SpawnItem("ShotgunGuy2",1,0,0)
+      TNT1 A 0 A_Jump(255, 8)
+      GRNE L 0 A_SpawnItem("DoomImp2",1,0,0)
+      TNT1 A 0 A_Jump(255, 6)
+      GRNE L 0 A_SpawnItem("ChainGuy2",1,0,0)
+      TNT1 A 0 A_Jump(255, 4)
+      GRNE L 0 A_SpawnItem("Demon666",1,0,0)
+      TNT1 A 0 A_Jump(255, 2)
+      GRNE L 0 A_SpawnItem("Spectre2",1,0,0)
+      FIRE DEFGH 2
+      TNT1 A -1
+      Stop
+   } 
+}
+
+ACTOR MonsterDropper2
+{
+   Radius 8
+   Height 16
+   Speed 12
+   Scale 1.25
+   +NOTARGET
+   +FRIENDLY
+   PROJECTILE
+   +FLOORCLIP
+   States
+   {
+   Spawn:
+      BOSF ABCD 4 
+      LOOP
+   Death:
+      TNT1 A 0
+      FIRE A 2 A_PlaySound("weapons/monspwnx")
+      FIRE BC 2
+      TNT1 A 0 A_Jump(43, 5)
+      TNT1 A 0 A_Jump(43, 6)
+      TNT1 A 0 A_Jump(43, 7)
+      TNT1 A 0 A_Jump(43, 8)
+      TNT1 A 0 A_Jump(255, 5)
+      TFOG A 0 A_SpawnItem("HellKnight2",1,0,0)
+      TNT1 A 0 A_Jump(255, 6)
+      TFOG A 0 A_SpawnItem("BaronOfHell2",1,0,0)
+      TNT1 A 0 A_Jump(255, 4)
+      TFOG A 0 A_SpawnItem("Cacodemon2",1,0,0)
+      TNT1 A 0 A_Jump(255, 2)
+      TFOG A 0 A_SpawnItem("Archvile2",1,0,0)
+      FIRE DEFGH 2
+      TNT1 A -1 
+      Stop
+   } 
+}
+
+ACTOR ZombieGuy2 : ZombieMan
+{
+   +FRIENDLY
+}
+
+ACTOR ShotgunGuy2 : ShotgunGuy
+{
+   +FRIENDLY
+}
+
+ACTOR DoomImp2 : DoomImp
+{
+   +FRIENDLY
+}
+
+ACTOR ChainGuy2 : ChaingunGuy
+{
+   +FRIENDLY
+}
+
+ACTOR Demon666 : Demon
+{
+   +FRIENDLY
+}
+
+ACTOR Spectre2 : Spectre
+{
+   +FRIENDLY
+}
+
+ACTOR HellKnight2 : HellKnight
+{
+   +FRIENDLY
+}
+
+ACTOR Cacodemon2 : Cacodemon
+{
+   +FRIENDLY
+}
+
+ACTOR BaronOfHell2 : BaronOfHell
+{
+   +FRIENDLY
+}
+
+ACTOR Archvile2 : Archvile
+{
+   +FRIENDLY
+}
+
+ACTOR Orbs : Ammo
+{
+   Inventory.Amount 5
+   Inventory.MaxAmount 50
+   Ammo.BackpackAmount 10
+   Ammo.BackpackMaxAmount 100
+   Inventory.Icon GRNBA0
+}
+
+ACTOR OrbAmmo : Orbs 25058
+{
+   Inventory.Amount 5
+   States
+   {
+   Spawn:
+      GRNB A -1
+      Loop
+   }
+}
+
+//Weapon: Land Mines
+//By: Inuyasha_989
+
+ACTOR LandMineLayer : Weapon
+{
+   Inventory.PickupMessage "You got some Landmines!"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.AmmoType "Mines"
+   Weapon.AmmoGive 5
+   Weapon.AmmoUse 1
+   States
+   {
+   Spawn:
+      MINE A -1
+      Loop
+   Ready:
+      LAYR A 1 A_WeaponReady
+      Loop
+   Deselect:
+      LAYR A 1 A_Lower
+      Loop
+   Select:
+      LAYR A 1 A_Raise
+      Loop
+   Fire:
+      LAYR B 3
+      LAYR CDEFG 3
+      LAYR H 5 A_FireCustomMissile("Landmine2",0,1,0,0)
+      Goto Ready
+   }
+}
+
+ACTOR Landmine
+{
+   Radius 5
+   Height 5
+   Mass 1000000
+   Health 20
+   Damage 10
+   SeeSound "weapons/tink"
+   ExplosionDamage 192
+   ExplosionRadius 128
+   DONTHURTSHOOTER
+   Speed 0
+   +NOBLOOD
+   +SHOOTABLE
+   +MISSILE
+   States
+   {
+   Spawn:
+      MINE A 0 A_Gravity
+      MINE AB 5
+      Loop
+   Death:
+      MISL B 0 A_PlaySound("weapons/mineexpl")
+      MISL B 8 A_Explode
+      MISL C 6
+      MISL D 4
+      Stop
+   }
+}
+
+
+ACTOR Landmine2
+{
+   Radius 5
+   Height 5
+   Mass 1000000
+   Health 20
+   Damage 10
+   SeeSound "weapons/tink"
+   DONTHURTSHOOTER
+   Speed 10
+   +NOBLOOD
+   +SHOOTABLE
+   +MISSILE
+   +DOOMBOUNCE
+   States
+   {
+   Spawn:
+      MINE A 0 A_Gravity
+      MINE AB 5
+      Loop
+   Death:
+      MINE A 0 A_SpawnItem("Landmine")
+      Stop
+   }
+}
+
+ACTOR Mines : Ammo
+{
+   Inventory.Amount 2
+   Inventory.MaxAmount 20
+   Ammo.BackpackAmount 5
+   Ammo.BackpackMaxAmount 40
+   Inventory.PickupMessage "Picked up some Landmines."
+   Inventory.Icon MINEA0
+   States
+   {
+   Spawn:
+      MINE B -1
+      Stop
+   }
+}
+
+//Weapon: Blaster Pistol
+//By: Inuyasha_989
+
+ACTOR BlasterPistol : Weapon
+{
+   Inventory.Pickupsound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Blaster Pistol!"
+   Weapon.AmmoType "Cell"
+   Weapon.AmmoGive 50
+   Weapon.AmmoUse 1
+   Weapon.Ammotype2 "Cell"
+   Weapon.AmmoUse2 2
+   States
+   {
+   Spawn:
+      BLAP A -1
+      Loop
+   Ready:
+      BLPS A 1 A_WeaponReady
+      Loop
+   Deselect:
+      BLPS A 1 A_Lower
+      Loop
+   Select:
+      BLPS A 1 A_Raise
+      Loop
+   Fire:
+      BLPS A 2
+      BLPS B 2
+      BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
+      BLPS C 2 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS D 2 
+      BLPS C 3
+      BLPS B 2
+      Goto Ready
+   Hold:
+      BLPS A 2
+      BLPS B 2
+      BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
+      BLPS C 2 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS D 2 
+      BLPS C 3
+      BLPS B 2
+      Goto Ready
+    Altfire:
+      BLPS A 1
+      BLPS B 1
+      BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
+      BLPS C 1 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS D 1 
+      BLPS C 2
+      BLPS B 1 
+      Goto Ready
+   }
+}
+
+ACTOR PistolBlast
+{
+   Radius 3
+   Height 3
+   Speed 30
+   Damage 5
+   PROJECTILE
+   +NOGRAVITY
+   DeathSound "weapons/plasmax"
+   States
+   {
+   Spawn:
+      IPLS A 0 BRIGHT
+      IPLS A 2 A_CustomMissile("Blasttrail",0,0,0,0)
+      IPLS B 2 A_CustomMissile("Blasttrail",0,0,0,0)
+      IPLS A 2 A_CustomMissile("Blasttrail",0,0,0,0)
+      IPLS B 2 A_CustomMissile("Blasttrail",0,0,0,0)
+      Loop
+   Death:
+      IPLE ABCDE 4
+      Stop
+   }
+}
+
+ACTOR Blasttrail
+{
+   +NOCLIP
+   +NOGRAVITY
+   Speed 0
+   Scale 0.4
+   RENDERSTYLE ADD
+   Alpha 0.5
+   States
+   {
+   Spawn:
+      IPLS AB 3
+      Stop
+   }
+}
+
+//Weapon: Burst Shotgun
+//By: Inuyasha_989
+
+ACTOR Burstshotgun : Weapon 26005
+{
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got the Burst Shotgun!"
+   Weapon.AmmoType2 "Shell"
+   Weapon.AmmoType1 "BSGShell"
+   Weapon.AmmoGive2 15
+   Weapon.AmmoUse 1
+   +AMMO_OPTIONAL
+   +NOALERT
+   AttackSound "weapons/burstshot"
+   States
+   {
+   Spawn:
+      SGN5 A -1
+      Loop
+   Ready:
+      SHT5 A 1 A_WeaponReady
+      Loop
+   Deselect:
+      SHT5 A 1 A_Lower
+      Loop
+   Select:
+      SHT5 A 1 A_Raise
+      Loop
+   Fire:
+      SHT5 A 0 A_JumpIfNoAmmo(13)
+      SHT5 A 0 A_JumpIfInventory("BSGShell",5,1)
+      SHT5 A 0 A_FireCustomMissile("CheapAlert")
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 A 2
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 A 2
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 A 2
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 A 2
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 A 2
+      Goto Ready
+      SHT5 A 0 A_JumpIfInventory("Shell",5,2)
+      SHT5 A 2
+      Goto Ready
+      SHT5 ACDEF 5
+      SHT5 GH 4
+      SHT5 I 0 A_PlaySound("weapons/burstin")
+      SHT5 I 0 A_TakeInventory("Shell", 1)
+      SHT5 I 5 A_GiveInventory("BSGShell", 1)
+      SHT5 I 0 A_JumpIfInventory("BSGShell", 5, 2)
+      SHT5 I 0 A_JumpIfInventory("Shell", 1, 3)
+      SHT5 JK 5
+      Goto Ready
+      SHT5 A 0
+      Goto Fire+20
+   }
+}
+
+ACTOR BSGShell : Ammo 26035
+{
+   Inventory.Amount 1
+   Inventory.MaxAmount 5
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 5
+   Inventory.Icon SGN5A0
+}
+
+//Weapon: Random Projectile Launcher
+//By: Inuyasha_989
+
+ACTOR RandProjLauncher : Weapon
+{
+   Inventory.PickupMessage "You got the Random Projectile Launcher! Wonder what it does?"
+   Inventory.PickupSound "misc/w_pkup"
+   Weapon.AmmoType "UACProtoEn"
+   Weapon.AmmoGive 100
+   Weapon.AmmoUse 10  
+   States
+   {
+   Spawn:
+      RNPR A -1
+      LOOP
+   Ready: 
+      RPRL A 1 A_WeaponReady
+      LOOP
+   Deselect: 
+      RPRL A 1 A_Lower
+      LOOP
+   Select: 
+      RPRL A 1 A_Raise
+      Loop
+   Fire:
+      RPRL A 0 A_Jump(36,130)
+      RPRL A 0 A_Jump(36,117)
+      RPRL A 0 A_Jump(36,104)
+      RPRL A 0 A_Jump(36,91)
+      RPRL A 0 A_Jump(36,78)
+      RPRL A 0 A_Jump(36,65)
+      RPRL A 0 A_Jump(26,51)
+      RPRL A 0 A_Jump(77,39)
+      RPRL A 0 A_Jump(50,26)
+      RPRL A 0 A_Jump(128,13)
+      Goto Fire+5
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("DoomImpBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("DoomImpBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("DoomImpBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("DoomImpBall", -20, 0, 0, 0)  
+      RPRL D 6 A_FireCustomMissile("DoomImpBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("CacodemonBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CacodemonBall", -10, 0, 0, 0)                       
+      RPRL D 0 A_FireCustomMissile("CacodemonBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CacodemonBall", -20, 0, 0, 0)  
+      RPRL D 6 A_FireCustomMissile("CacodemonBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("BaronBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("BaronBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("BaronBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("BaronBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("BaronBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("ArachnotronPlasma", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("ArachnotronPlasma", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("ArachnotronPlasma", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("ArachnotronPlasma", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("ArachnotronPlasma", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("Rocket", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("Rocket", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("Rocket", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("Rocket", -20, 1, 0, 0)
+      RPRL D 6 A_FireCustomMissile("Rocket", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("CometR", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CometR", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CometR", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CometR", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("CometR", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("SoulHarvesterBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("RedSkullBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("RedSkullBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("RedSkullBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("RedSkullBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("RedSkullBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("FastImpBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("FastImpBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("FastImpBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("FastImpBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("FastImpBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("CacoLichBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CacoLichBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CacoLichBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("CacoLichBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("CacoLichBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+      RPRL A 0
+      RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
+      RPRL BC 8
+      RPRL D 0
+      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("TorturedSoulBall", 0, 1, 0, 0)
+      RPRL EF 8
+      Goto Ready
+   }
+}
+
+ACTOR UACProtoEn : Ammo 25017
+{
+   Inventory.Amount 20
+   Inventory.MaxAmount 250
+   Ammo.BackpackAmount 20
+   Ammo.BackpackMaxAmount 500
+   Inventory.PickupMessage "Picked up some UAC Prototype Cells"
+   Inventory.Icon UAPEA0
+   States
+   {
+   Spawn:
+      UAPE A -1
+      Stop
+   }
+}
+
+actor CometR
+{
+    Radius 6
+    Height 8
+    Speed 10
+    Damage 5
+    ExplosionDamage 40
+    ExplosionRadius 80
+    Scale .55
+    PROJECTILE
+    SeeSound "weapons/launch"
+    DeathSound "weapons/explosion"
+    MissileType CometTailR
+    MissileHeight 0
+    States
+    {
+    Spawn:
+       COMT AAAABBBBCCCC 1 Bright A_MissileAttack
+       Loop
+    Death:
+       COMT D 3 Bright
+       COMT E 3 Bright 
+       COMT E 0 A_CustomMissile("CometDeathR", 0, 0, 0)
+       Stop
+    }
+}
+
+Actor CometTailR
+{
+    PROJECTILE
+    RENDERSTYLE ADD
+    +NOCLIP
+    ALPHA 0.4
+    States
+    {
+    Spawn:
+       FRTB ABCDEFGHI 1 Bright
+       Stop
+    }
+}
+
+Actor CometDeathR
+{
+    PROJECTILE
+    RENDERSTYLE ADD
+    +NOCLIP
+    ALPHA 0.7
+    States
+    {
+    Spawn:
+       COMT FGHI 3 Bright
+       Stop
+    }
+}
+
+actor SoulHarvesterBall
+{
+    Radius 8
+    Height 6
+    Speed 9
+    Damage 3
+    +SEEKERMISSILE
+    PROJECTILE
+    RENDERSTYLE ADD
+    ALPHA 0.8
+    SeeSound "weapons/scream"
+    DeathSound "imp/shotx"
+    States
+    {
+    Spawn:
+       SHFB A 0 bright A_PlaySound("weapons/scream")
+       SHFB ABCABC 4 Bright A_SeekerMissile (10,20)
+       Loop
+    Death:
+       SHFB DEFG 4 Bright
+       Stop
+    }
+}
+
+actor RedSkullBall
+{
+    Radius 8
+    Height 6
+    Speed 15
+    Damage 12
+    PROJECTILE
+    RENDERSTYLE ADD
+    ALPHA 0.67
+    SeeSound "imp/attack"
+    DeathSound "imp/shotx"
+    States
+    {
+    Spawn:
+       WLP4 ABCB 4
+       Loop
+    Death:
+       WLP4 DEFG 4
+       Stop
+    }
+}
+
+ACTOR FastImpBall
+{
+    Radius 6
+    Height 8
+    Speed 12
+    Damage 4
+    Projectile
+    +RANDOMIZE
+    RenderStyle Add
+    Alpha 0.67
+    SeeSound "imp/attack"
+    DeathSound "imp/shotx"
+    States
+    {
+    Spawn:
+       BALX AB 4 BRIGHT
+       Loop
+    Death:
+       BALX CDE 6 BRIGHT
+       Stop
+	}
+}
+
+ACTOR CacoLichBall
+{
+    Radius 8
+    Height 6
+    Speed 12
+    Damage 7
+    PROJECTILE
+    +SEEKERMISSILE
+    RENDERSTYLE ADD
+    ALPHA 0.8
+    SeeSound "Imp/attack"
+    DeathSound "Imp/shotx"
+    States
+    {
+    Spawn:
+       CBAL AB 4 BRIGHT A_SeekerMissile(5,15)
+       Loop
+    Death:
+       CBAL CDEFG 6 BRIGHT
+       Stop
+	}
+}
+
+actor TorturedSoulBall 
+{ 
+    Radius 8 
+    Height 6 
+    Speed 20 
+    Damage 5 
+    PROJECTILE 
+    RENDERSTYLE ADD 
+    ALPHA 0.67 
+    DeathSound "imp/shotx" 
+    States 
+    { 
+    Spawn: 
+       TRBL AB 4 
+       Loop 
+    Death: 
+       TRBL CDE 4 
+       Stop 
+    } 
+}
+
+//Weapon: Barnicle Plasma Twine
+//By: Chronoteeth and TheDarkArchon
+
+ACTOR Barnicle : Weapon 21000
+{
+    Weapon.SelectionOrder 350
+    Inventory.PickupSound "misc/w_pkup"
+    Inventory.PickupMessage "You got the Barnicle Plasma Twine!"
+    Weapon.AmmoType1 "BarnicleAmmo"
+    Weapon.AmmoGive1 100
+    Weapon.AmmoUse1 1
+    States
+    {
+    Spawn:
+       UBER A 3
+       UBER B 3
+       UBER C 3        
+       UBER D 3
+       UBER E 3
+       UBER F 3    
+       UBER G 3
+       UBER H 3
+       UBER I 3    
+       Loop
+    Ready:
+       BARR ABCDEFGH 1
+       BARG A 1 A_WeaponReady
+       Goto Ready+8
+    Deselect:
+       BARG A 1
+       BARR A 0 A_PlayWeaponSound("weapons/barnicledown")
+       BARR HGFEDCBA 1
+       BARR A 0 A_Lower
+       Goto Deselect+9
+    Select:
+       TNT1 A 0 A_PlayWeaponSound("weapons/barnicleup")
+       TNT1 AAAAAAAAA 0 A_Raise
+       TNT1 A 1 A_Raise
+       Goto Select+1
+    Fire:
+       BARF A 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
+       BARF B 1 A_FireCustomMissile("Tentacle2",0,0,8,4)
+       BARF C 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
+       BARF B 1 A_FireCustomMissile("Tentacle2",0,0,8,4)
+       BARF A 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
+       BARF D 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
+       BARF E 1 A_FireCustomMissile("Tentacle1",0,0,8,4)
+       BARF F 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
+       BARF E 1 A_FireCustomMissile("Tentacle1",0,0,8,4)
+       BARF D 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
+       Goto Ready+8
+     }
+}
+
+ACTOR Tentacle1
+{
+    Scale 0.3
+    Radius 13
+    Height 8
+    Damage 1
+    MissileType TentacleTrail1
+    Speed 22
+    SeeSound "weapons/barniclefire"
+    MissileHeight 0
+    PROJECTILE
+    +STRIFEDAMAGE
+    +RIPPER
+    - NOGRAVITY
+    +HEXENBOUNCE
+    States
+    {
+    Spawn:
+       BNT1 A 1
+       BNT1 AABBCCDDEEFF 2 A_MissileAttack
+       Stop
+    Death:
+       TNT1 A 1
+       Stop
+    }
+}
+
+ACTOR TentacleTrail1
+{
+    Scale 0.275
+    Radius 1
+    Height 1
+    Damage 0
+    PROJECTILE
+    +NOBLOCKMAP
+    States
+    {
+    Spawn:
+    Death:
+       BNT1 ABCDEF 1
+       Stop
+    }
+}
+
+ACTOR Tentacle2
+{
+    Scale 0.3
+    Radius 13
+    Height 8
+    Damage 1
+    MissileType TentacleTrail2
+    Speed 22
+    SeeSound "weapons/barniclefire"
+    MissileHeight 0
+    PROJECTILE
+    +STRIFEDAMAGE
+    +RIPPER
+    - NOGRAVITY
+    +HEXENBOUNCE
+    States
+    {
+    Spawn:
+       BNT2 A 1
+       BNT2 AABBCCDDEEFF 2 A_MissileAttack
+       Stop
+    Death:
+       TNT1 A 1
+       Stop
+    }
+}
+
+ACTOR TentacleTrail2
+{
+    Scale 0.275
+    Radius 1
+    Height 1
+    Damage 0
+    PROJECTILE
+    +NOBLOCKMAP
+    States
+    {
+    Spawn:
+    Death:
+       BNT2 ABCDEF 1
+       Stop
+    }
+}
+
+ACTOR BarnicleAmmo : Ammo 20482
+{
+    Radius 20
+    Height 16
+    Inventory.PickupMessage "Picked up a Barnicle Plasma Rod."
+    Inventory.PickupSound "misc/i_pkup"
+    Inventory.Amount 75
+    Inventory.MaxAmount 350
+    Ammo.BackpackAmount 75
+    Ammo.BackpackMaxAmount 700
+    Inventory.Icon EBARA0
+    States
+    {
+    Spawn:
+       EBAR ABCDEDCB 2
+       Loop
+    }
+}
+
+//Weapon: Necronomicon
+//By: Froon
+
+ACTOR Necronomicon : Weapon 25100
+{
+    Inventory.PickupSound "misc/w_pkup" 
+    Weapon.AmmoGive 10 
+    Weapon.AmmoUse 3 
+    Weapon.AmmoUse2 10 
+    Weapon.AmmoType "Darkmana"
+    Weapon.AmmoType2 "Darkmana"
+    Inventory.PickupSound "misc/w_pkup" 
+    Inventory.PickupMessage "You got the Necronomicon!"
+    +FLOATBOB
+    States
+    {
+    Spawn:
+       NCRO A -1 
+       Loop
+    Ready: 
+       NECR A 1 A_WeaponReady 
+       Loop
+    Deselect: 
+       NECR A 1 A_Lower 
+       Loop
+    Select: 
+       NECR A 1 A_Raise 
+       Loop
+    Fire:
+       NECR A 0 A_JumpIfNoAmmo(1) 
+       NECR A 30 A_Playsound("weapons/incant")
+       NECR B 10
+       NECR C 8
+       NECR D 2
+       NECR E 16 A_FireCustomMissile("GhostEgg", 0, 1, 0, 0)
+       NECR D 4
+       NECR C 4
+       NECR B 4
+       NECR A 4
+       Goto Ready
+    AltFire:
+       NECR A 0 A_JumpIfNoAmmo(1) 
+       NECR A 30 A_Playsound("weapons/incant")
+       NECR B 10
+       NECR C 8
+       NECR D 2
+       NECR E 16 A_FireCustomMissile("GhostEgg2", 0, 1, 0, 0)
+       NECR D 4
+       NECR C 4
+       NECR B 4
+       NECR A 4
+       Goto Ready
+   
+    }
+}
+
+ACTOR GhostEgg : PlasmaBall
+{
+    Damage 0
+    SeeSound "weapons/spirit1"
+    DeathSound NONE
+    RENDERSTYLE NONE
+    States
+    {
+    Spawn:
+       PLSS A 5
+      
+       Goto Death
+    Death:
+       PLSS A 1 A_SpawnItem("GhostHatch", 1, 0, 0)
+       Stop
+    }
+}
+
+ACTOR GhostHatch
+{
+    RENDERSTYLE ADD
+    +NOGRAVITY
+    +NOCLIP
+    States
+    {
+    Spawn:
+       SPI1 JIHGFE 4
+       SPI1 A 4 A_SpawnItem("Ghost", 1, 0, 0)
+       Stop
+    }
+}         
+      
+ACTOR Ghost
+{
+    RENDERSTYLE ADD
+    +FRIENDLY
+    +FLOAT
+    +LOOKALLAROUND
+    +NOBLOCKMONST
+    +NOGRAVITY
+    Radius 10
+    Height 20
+    Speed 16
+    States
+    {
+    Spawn:
+       SPI1 AABB 2 A_VileChase
+       Loop
+    Heal:
+       SPI1 EFGHIJ 2
+       Stop
+   
+    }
+}      
+
+ACTOR GhostEgg2 : GhostEgg
+{
+    States
+    {
+    Spawn:
+       PLSS A 7
+       Goto Death
+    Death:
+       Death:
+       PLSS A 1 A_SpawnItem("GhostHatch2", 1, 0, 0)
+       Stop
+    }
+}
+
+ACTOR GhostHatch2
+{
+    RENDERSTYLE ADD
+    +NOGRAVITY
+    +NOCLIP
+    States
+    {
+    Spawn:
+       SPI2 JIHGFE 4
+       SPI2 A 4 A_SpawnItem("Ghost2", 1, 0, 0)
+       Stop
+    }
+}
+ACTOR Ghost2
+{
+    Health 300
+    Radius 16
+    Height 56
+    Mass 500
+    Speed 16
+    PainChance 50
+    +LOOKALLAROUND
+    +FLOAT 
+    +NORADIUSDMG
+    +SHOOTABLE
+    +NOGRAVITY 
+    +NOICEDEATH
+    +FRIENDLY
+    +NOBLOCKMONST
+    RENDERSTYLE ADD
+    States
+    {
+    Spawn: 
+    See: 
+       SPI2 AABB 2 A_VileChase 
+       Loop 
+    Melee: 
+       SPI2 A 4 A_FaceTarget 
+       SPI2 B 2 A_SargAttack 
+       SPI2 B 2 A_VileChase
+       Goto See  
+    Pain: 
+       SPI2 AB 2  
+       Goto See
+    Heal:
+       SPI2 EFGHIJ 2
+       Stop
+    Death:
+       SPI1 J 0 A_SpawnItem("GhostHatch", 1, 0, 0)
+       Stop
+    }
+}

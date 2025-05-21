@@ -110,6 +110,10 @@ For the thing we've yoinked
     - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)
     - [ZZrion Glass Tex](https://forum.zdoom.org/viewtopic.php?f=37&t=31139&p=809591#p809591)
     - [Lazygamer tutorial](https://www.youtube.com/watch?v=MIEXpOepepE)
+- [Weapon Resource WAD](https://zdoom.org/wiki/Weapons_Resource_WAD). Serveral people!. Yes Yoink, No Confuse trademark. Weapons vaganza
+    - The [latest version is **GONE**](http://files.drdteam.org/index.php/files/get/gOEJPHX4Cy/wrw2-2.zip) because DRDTeam broke the File share! fucking hell! Even nobody Archived the working link sooner! It was on Megaupload (which FBI raided back then due to sparsdating haven issues) (cannot Archive because require captcha), and then moved to DRDTeam, which also broke now, that didn't Archived.
+    - So, the [old version on idgames](https://www.doomworld.com/idgames/combos/wrw) is the only one we could get. If you have the latest version, pls share! I don't care if indeed it's buggy & terrible, I want them!
+    - [Discussion that's left on Realm667](https://www.realm667.com/kunena/the-workshop/1970-weapons-resource-wad?start=50)
 
 ## Dependencies
 

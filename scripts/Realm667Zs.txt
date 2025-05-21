@@ -124,6 +124,9 @@ Description:
 */
 Class Cube64 : Actor
 {
+	//TODO: Make breakable
+	bool user_breakable;
+
 	Default
 	{
 	Health 1;

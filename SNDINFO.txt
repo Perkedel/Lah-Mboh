@@ -138,3 +138,158 @@ BushDamaged3 bushdmg3
 world/njGlass   NJGLASS     //Glass smashing
 $limit	world/njGlass		4
 // End Enjay
+
+// Weapon resource Wad
+weapons/firewand                dsflamer
+
+weapons/charge1                 dsmpchg1
+weapons/charge2	                dsmpchg2
+weapons/charge3                 dsmpchg3
+weapons/mtifire1                dsmpfir1
+weapons/mtifire2                dsmpfir2
+weapons/mtifire3                dsmpfir3
+
+weapons/plasma                  dsgenpls
+weapons/plasma2                 dsgenpl2
+
+weapons/snipshot                dssniper
+weapons/snipcock                dssnprco
+
+weapons/zippo	                dszippo
+weapons/serious	                dsbomb
+
+weapons/gswing                  dsswing
+weapons/gpunch                  dspunch
+
+weapons/son                     dssabreu
+weapons/soff                    dssabreo
+weapons/sidle                   dssabrei
+weapons/sattack                 dssabrea
+weapons/sclash                  dssawhit
+
+weapons/handshot                dsplasmi
+weapons/handdead                dsprojed
+
+weapons/bottle			dsbottle
+
+weapons/gyrocrge	        dsgrocrg
+weapons/gyrofire	        dsgrofir
+
+weapons/frzshot                 dsfreeze
+weapons/frzball                 dsfreez2
+
+weapons/trailatt                dsplazma
+weapons/trailpls                dssmack
+weapons/trailbfg                dssplz
+
+weapons/pbbounce		dspipbnc
+weapons/pbthrow		        dspipthr
+weapons/pbarm		        dspiparm
+weapons/explode1	        dspipex1
+weapons/explode2	        dspipex2
+weapons/explode3	        dspipex3
+weapons/explode4	        dspipex4
+$random weapons/explode  { weapons/explode1 weapons/explode2 weapons/explode3 weapons/explode4 }
+
+weapons/copfire			dscopfir
+weapons/copopen			dscopopn
+weapons/copload			dscoplod
+weapons/copclose		dscopcls
+
+weapons/flamesht                dsflamet
+
+weapons/vilesht1                dsrevi01
+weapons/vilesht2                dsrevi02
+
+weapons/flakl                   dsflakl
+weapons/flaks                   dsflaks
+
+weapons/seeker                  dsseeker
+weapons/missile                 dsmsexpl
+
+weapons/tazer                   dstazn
+
+weapons/walter                  dsilence
+
+weapons/bfg                     dsbfgc1
+weapons/bfgshot1                dsbfff1
+
+weapons/incendf	                dsincndf
+weapons/incendx	                dsincndx
+
+weapons/magnum                  dsmagnum
+
+weapons/quakeaxe                dsaxe
+
+weapons/bfgboom                 dsbfg2
+weapons/redhit                  dshitw
+weapons/chargeup                dscharge
+
+weapons/gun	                dsashtgn
+weapons/gunin                   dsashtin
+weapons/gunbolt                 dsashtbt
+weapons/shell1			dsshell1
+weapons/shell2			dsshell2
+weapons/shell3			dsshell3
+$random weapons/casing2		{weapons/shell1 weapons/shell2 weapons/shell3}
+
+weapons/riflefre	        dshvyrfl
+weapons/rifleup		        dsriflup
+
+weapons/crlaunch                dscrysln
+weapons/crbreak                 dscrysbk
+weapons/crtrail                 dscrystr
+
+weapons/fblaunch                dsfrblnc
+weapons/fbexpl                  dsfrbxpl
+
+weapons/psnlaunch               dspsnlnc
+weapons/psnbreak                dspsnbrk
+
+weapons/railgc                  dsraicrg
+weapons/railgf                  dsraisht
+
+weapons/smg                     dssbmach
+
+weapons/devshot	                dsdevsht
+weapons/devlnch	                dsdevlnc
+weapons/devexpl	                dsdevxpl
+
+weapons/grenlau	                dsgrnlnc
+weapons/grenhit	                dsgrnhit
+weapons/grenexpl                dsgrnxpl
+
+weapons/pistol3                 dspistl3
+
+weapons/shtgn2fr                dssmshtf
+weapons/shtgn2rl                dsshtg2r
+
+weapons/hpshotfr                dshpshtf
+weapons/hpshotrl                dshpshtr
+
+weapons/pdbshot                 dspdbblw
+
+weapons/monspwnf		dsgrnlnc
+weapons/monspwnb		dsgrnhit
+weapons/monspwnx		dsgrnxpl
+
+weapons/tink 			dstink
+weapons/mineexpl 		dsmsexpl
+
+weapons/pstblast                dsgenpls
+
+weapons/burstshot               dsashtgn
+weapons/burstin                 dsashtin
+
+weapons/rndlaun                 dsbfg2
+weapons/launch                  cometlnc
+weapons/explosion               cometexp
+weapons/scream                  shfbscrm
+
+weapons/barnicledown		dsbarndn
+weapons/barnicleup		dsbarnup
+weapons/barniclefire		dsbarnfr
+
+weapons/incant	                dsincant
+weapons/spirit1                 dsspirt1
+// end WRW
