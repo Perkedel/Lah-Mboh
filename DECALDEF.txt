@@ -276,6 +276,7 @@ decal WWTHFD 4016
 }
 
 // Weapon Resource Wad
+
 Generator FireShot	                DoomImpScorch
 
 Decal MultiBall1Scorch1
@@ -454,4 +455,5 @@ DecalGroup HeavyScorch
 }
 
 Generator HeavyBullet                   HeavyScorch
+
 // end WRW

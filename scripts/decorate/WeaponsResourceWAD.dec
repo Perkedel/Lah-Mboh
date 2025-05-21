@@ -16,6 +16,9 @@ Yoinked by JOELwindows7 as is, with few edits for Lah-Mboh
 // was 25000
 ACTOR FireWand : Weapon 25000
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 25000
+   //Weapon.SelectionOrder 9800
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Fire Wand!"
    Weapon.AmmoType "Ember"
@@ -117,6 +120,8 @@ ACTOR BigEmber : Ember 25002
 // was 25003
 ACTOR ImpClaw : Weapon 25003
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 9801
    Inventory.PickupMessage "You got the Imp Claw!"
    States
    {
@@ -147,11 +152,13 @@ ACTOR ImpClaw : Weapon 25003
 // was 25004
 ACTOR SuperImpClaw : Weapon 25004
 {
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 9802
    Inventory.PickupMessage "You got the Super Imp Claw!"
    States
    {
    Spawn:
-      CLP2 ABCDCB 5
+      SIC2 ABCDCB 5
       Loop
    Ready: 
       CLAW A 1 A_WeaponReady
@@ -178,6 +185,8 @@ ACTOR SuperImpClaw : Weapon 25004
 
 ACTOR InsanityRifle : Weapon 25005
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 9803
    Inventory.PickupMessage "You got the Insanity Rifle!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.AmmoType "Cell"
@@ -241,6 +250,8 @@ ACTOR InsPlasma
 
 ACTOR MultiProjectileWeapon : Weapon 25006
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 9804
    Inventory.PickupMessage "You got the M6000 Multi-Projectile Weapon!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.Kickback 175
@@ -383,6 +394,8 @@ ACTOR MultiPuff : BulletPuff
 
 ACTOR PlasmaBolter : Weapon 25007
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 25007
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Charged Plasma Bolter!"
    Weapon.AmmoType "Cell"
@@ -513,6 +526,8 @@ ACTOR SmallPlasmaBall
 
 ACTOR XBSniper : Weapon 25008
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25008
    Inventory.PickupMessage "You got the XB-4 Sniper Rifle!"
    Inventory.PickupSound "misc/w_pkup"
    AttackSound "weapons/snipshot"
@@ -553,6 +568,8 @@ ACTOR XBSniper : Weapon 25008
 
 ACTOR SeriousBomb : Weapon 25009
 {
+   Weapon.SlotNumber 2
+   Weapon.SelectionOrder 25009
    Inventory.PickupSound "misc/w_pkup" 
    Inventory.Pickupmessage "You got the Serious bomb!"
    States 
@@ -614,6 +631,8 @@ ACTOR BombRadius
 
 ACTOR Gauntlet : Weapon 25010
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25010
    +MELEEWEAPON
    +NOALERT
    Inventory.PickupSound "misc/w_pkup"
@@ -650,6 +669,8 @@ ACTOR Gauntlet : Weapon 25010
 
 ACTOR Lightsaber : Weapon 25011
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25011
    Inventory.PickupSound "misc/d3pickup"  
    Weapon.AmmoUse 0 
    Obituary "%o was slashed %k's Lightsaber" 
@@ -720,6 +741,8 @@ ACTOR Fakedeflect
 
 ACTOR DemonHand : Weapon 25012
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 25012
    Inventory.PickupMessage "You got the Demon hand!"
    Weapon.AmmoType "Cell"
    Weapon.AmmoUse 10
@@ -807,6 +830,8 @@ ACTOR Handshot2
 
 ACTOR Molotovx : Weapon 25013
 { 
+   Weapon.SlotNumber 0
+   Weapon.SelectionOrder 25013
    Scale 0.25
    Weapon.AmmoType  "Cell" 
    Weapon.AmmoGive 10
@@ -956,6 +981,8 @@ ACTOR HFirex
 
 ACTOR GyroBurster : Weapon 25014
 {
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 25014
    Inventory.PickupMessage "You got the Gyro Plasma Burster!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.Kickback 1
@@ -1221,6 +1248,8 @@ ACTOR GyroBall
 
 ACTOR FreezeThrower : Weapon 25015
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 25015
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Freeze Thrower!"
    Obituary "%o was frozen by %k's Freeze Thrower" 
@@ -1342,6 +1371,8 @@ ACTOR FreezeVapor
 
 ACTOR TrailGun : Weapon 25016
 {  
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 25016
    SpawnID 31
    Inventory.PickupMessage "You got the Trail Gun!"
    Weapon.AmmoGive 75
@@ -1519,6 +1550,8 @@ ACTOR Bolt2Trail
 
 ACTOR D2C_Pipebomb : Weapon 25018
 {
+   Weapon.SlotNumber 0
+   Weapon.SelectionOrder 25018
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got a pipebomb!"
    Weapon.AmmoType "D2C_PipebombAmmo"
@@ -1561,6 +1594,8 @@ ACTOR D2C_Pipebomb : Weapon 25018
 
 ACTOR D2C_Detonator : Weapon
 {
+   Weapon.SlotNumber 0
+   Weapon.SelectionOrder 25014
    Weapon.SelectionOrder 1
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You should not see this message, loser!"
@@ -1666,6 +1701,8 @@ ACTOR D2C_PipebombAmmo : Ammo
 
 ACTOR COPGun : Weapon 25019
 {
+   Weapon.SlotNumber 2
+   Weapon.SelectionOrder 25019
    +NOALERT
    +AMMO_OPTIONAL
    +STRIFEDAMAGE
@@ -1775,6 +1812,8 @@ ACTOR CheapAlert
 
 ACTOR TheFlameThrower : Weapon 20020
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 25020
    Inventory.PickupMessage "You got the Flamethrower!"
    Obituary "%o was burninated by %k's flamethrower!"
    Weapon.AmmoType "Cell"
@@ -1840,6 +1879,8 @@ ACTOR FlameNoDamage : Flame
 
 ACTOR Vilestaff : Weapon 25021
 {
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 25021
    Inventory.PickupSound "misc/w_pkup" 
    Weapon.AmmoGive 10 
    Weapon.AmmoUse 1 
@@ -2049,6 +2090,8 @@ ACTOR Darkmana : Ammo 25022
 
 ACTOR FlakCannon : Weapon 25023
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25023
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Flak Cannon!"
    Weapon.AmmoType "Clip"
@@ -2165,6 +2208,8 @@ ACTOR FlakBlood
 
 ACTOR SeekerMissileLauncher : Weapon 25024
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 25024
    Inventory.PickupMessage "You got the Seeker Missile Launcher!"
    Inventory.PickupSound "misc/w_pkup"
    AttackSound "weapons/seeker"
@@ -2218,6 +2263,8 @@ ACTOR SeekerMissile : Rocket
 
 ACTOR Tazer : Weapon 25025
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25025
    Inventory.PickupMessage "You got a tazer!"
    Inventory.PickupSound "misc/w_pkup"
    AttackSound "weapons/tazer"
@@ -2256,6 +2303,8 @@ ACTOR Tazer : Weapon 25025
 
 ACTOR WalterPPK : Weapon 25026
 {
+   Weapon.SlotNumber 2
+   Weapon.SelectionOrder 25026
    Inventory.PickupMessage "You got the Walther PPK, complete with silencer!"
    Inventory.PickupSound "misc/w_pkup"
    AttackSound "weapons/walter"
@@ -2432,6 +2481,8 @@ ACTOR BFGPlasma
 
 ACTOR IncendinaryShellLauncher : Weapon 25028
 {
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 25028
    Inventory.PickupMessage "You got the Incendinary Shell Launcher!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.Kickback 150
@@ -2709,6 +2760,8 @@ ACTOR IncendDropFireSpread : IncendNearFire
 
 ACTOR Magnum : Weapon 25030
 {
+   Weapon.SlotNumber 2
+   Weapon.SelectionOrder 25030
    Weapon.SelectionOrder 304
    Inventory.PickupSound "misc/W_pkup"
    Inventory.PickUpMessage "You got the Magnum!"
@@ -2767,6 +2820,8 @@ ACTOR MagnumBullets : Ammo 25031
 
 ACTOR Axe : Weapon 25032
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25032
    +MELEEWEAPON
    Inventory.PickupSound "weapons/quakeaxe"
    Inventory.PickupMessage "You got the axe!"
@@ -2801,6 +2856,8 @@ ACTOR Axe : Weapon 25032
 
 ACTOR BFG11k : Weapon 25033
 {
+   Weapon.SlotNumber 7
+   Weapon.SelectionOrder 25033
    Inventory.PickupMessage "You got the BFG11k. Time to completely destroy this place!"
    Weapon.AmmoType "Cell"
    Weapon.AmmoUse 60
@@ -2971,6 +3028,8 @@ ACTOR bfgspark
 
 ACTOR AutomaticShotgun : Weapon 25034
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25034
    Inventory.PickupMessage "You got the Automatic Shotgun!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.SelectionOrder 375
@@ -3129,6 +3188,8 @@ ACTOR BoltCheck : Ammo
 
 ACTOR HeavyRifle : Weapon 25035
 { 
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 25035
    Inventory.PickupMessage "You got the Heavy Rifle!" 
    Inventory.PickupSound "misc/w_pkup" 
    Weapon.AmmoType "Clip" 
@@ -3186,6 +3247,8 @@ ACTOR HeavyBullet
 
 ACTOR CrystalGun : Weapon 25036
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 25036
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Crystal Gun!"
    Weapon.AmmoType "Crystal"
@@ -3305,6 +3368,8 @@ ACTOR CrystalAmount : Crystal 25038
 
 ACTOR FirebombGun : Weapon 25039
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 25039
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Firebomb!"
    Weapon.AmmoType "PowerMissile"
@@ -3500,6 +3565,8 @@ ACTOR PowerMissileBox : PowerMissile 25041
 
 ACTOR PoisonGun : Weapon 25042
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 25042
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Poison Launcher!"
    Weapon.AmmoType "PoisonRecipient"
@@ -3703,6 +3770,8 @@ ACTOR PoisonRecipientPile : PoisonRecipient 25044
 
 ACTOR RailGun : Weapon 25045
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 25045
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the RailGun!"
    Weapon.AmmoType "Cell"
@@ -3748,6 +3817,8 @@ ACTOR RailGun : Weapon 25045
 
 ACTOR SubMachineGun : Weapon 25046
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25046
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the SubMachine Gun!"
    Weapon.AmmoType "Clip"
@@ -3789,6 +3860,8 @@ ACTOR SubMachineGun : Weapon 25046
 
 ACTOR Devastator : Weapon 25047
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 25047
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Devastator Weapon!"
    Weapon.AmmoType "MiniRockets"
@@ -3880,6 +3953,8 @@ ACTOR MiniRocketBox : MiniRockets 25049
 
 ACTOR GrenadeLauncher : Weapon 25050
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 25050
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Grenade Launcher!"
    Weapon.AmmoType "Grenades"
@@ -3977,6 +4052,8 @@ ACTOR GrenadeBox : Grenades 25052
 
 ACTOR Pistol3 : Weapon 25053
 {
+   Weapon.SlotNumber 2
+   Weapon.SelectionOrder 25053
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got a .20 Pistol!"
    Weapon.AmmoType "Clip"
@@ -4012,6 +4089,8 @@ ACTOR Pistol3 : Weapon 25053
 
 ACTOR Shotgun2 : Weapon 25054
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25054
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Duke3D Shotgun!"
    Weapon.AmmoType "Shell"
@@ -4053,6 +4132,8 @@ ACTOR Shotgun2 : Weapon 25054
 
 ACTOR HiPrecisionGun : Weapon 25055
 {
+   Weapon.SlotNumber 3
+   Weapon.SelectionOrder 25055
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Quad Shotgun!"
    Weapon.AmmoType "Shell"
@@ -4095,6 +4176,8 @@ ACTOR HiPrecisionGun : Weapon 25055
 
 ACTOR PhobosDustBlower : Weapon 25056
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 25056
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got a Phobos Dust Blower!"
    Obituary "%o was blown away by %k's Dust Blower" 
@@ -4155,6 +4238,8 @@ ACTOR PhobosAir
 
 ACTOR MonsterSpawner : Weapon 25057
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25057
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Demon Spawner!"
    Weapon.AmmoType1 "Orbs"
@@ -4347,8 +4432,11 @@ ACTOR OrbAmmo : Orbs 25058
 //Weapon: Land Mines
 //By: Inuyasha_989
 
-ACTOR LandMineLayer : Weapon
+// was no DoomEdNum
+ACTOR LandMineLayer : Weapon 26003
 {
+   Weapon.SlotNumber 0
+   Weapon.SelectionOrder 26003
    Inventory.PickupMessage "You got some Landmines!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.AmmoType "Mines"
@@ -4452,8 +4540,11 @@ ACTOR Mines : Ammo
 //Weapon: Blaster Pistol
 //By: Inuyasha_989
 
-ACTOR BlasterPistol : Weapon
+// was no DoomEdNum
+ACTOR BlasterPistol : Weapon 26004
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 26004
    Inventory.Pickupsound "misc/w_pkup"
    Inventory.PickupMessage "You got the Blaster Pistol!"
    Weapon.AmmoType "Cell"
@@ -4550,6 +4641,8 @@ ACTOR Blasttrail
 
 ACTOR Burstshotgun : Weapon 26005
 {
+   Weapon.SlotNumber 4
+   Weapon.SelectionOrder 26005
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Burst Shotgun!"
    Weapon.AmmoType2 "Shell"
@@ -4617,8 +4710,11 @@ ACTOR BSGShell : Ammo 26035
 //Weapon: Random Projectile Launcher
 //By: Inuyasha_989
 
-ACTOR RandProjLauncher : Weapon
+// was no doomednum
+ACTOR RandProjLauncher : Weapon 26006
 {
+   Weapon.SlotNumber 6
+   Weapon.SelectionOrder 26006
    Inventory.PickupMessage "You got the Random Projectile Launcher! Wonder what it does?"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.AmmoType "UACProtoEn"
@@ -4960,8 +5056,11 @@ actor TorturedSoulBall
 //Weapon: Barnicle Plasma Twine
 //By: Chronoteeth and TheDarkArchon
 
-ACTOR Barnicle : Weapon 21000
+// was 21000
+ACTOR Barnicle : Weapon 21330
 {
+   Weapon.SlotNumber 5
+   Weapon.SelectionOrder 21330
     Weapon.SelectionOrder 350
     Inventory.PickupSound "misc/w_pkup"
     Inventory.PickupMessage "You got the Barnicle Plasma Twine!"
@@ -5123,6 +5222,8 @@ ACTOR BarnicleAmmo : Ammo 20482
 
 ACTOR Necronomicon : Weapon 25100
 {
+   Weapon.SlotNumber 1
+   Weapon.SelectionOrder 25100
     Inventory.PickupSound "misc/w_pkup" 
     Weapon.AmmoGive 10 
     Weapon.AmmoUse 3 

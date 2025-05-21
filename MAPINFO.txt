@@ -1181,10 +1181,24 @@ map T_NJ_BGL lookup "T_NJ_BGL"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
-	//music = "D_RUNNIN2"
+	music = "D_READ_M"
 	//cluster = 26555
 	AllowRespawn
 	RandomPlayerStarts
+	//RememberState
+}
+
+map wrwdemo lookup "wrwdemo"
+{
+	author = "So many people"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY2"
+	exitPic = "LMBHTIHD"
+	music = "D_READ_M"
+	//cluster = 26555
+	//AllowRespawn
+	//RandomPlayerStarts
 	//RememberState
 }
 

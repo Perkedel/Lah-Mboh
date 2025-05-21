@@ -178,6 +178,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("MORATE", StringTable.Localize("$MORATE")));
 		hardCodeLevels.push(HardCodeLevelName.Create("SELDUAR", String.Format("(DM) %s", StringTable.Localize("$SELDUAR"))));
 		hardCodeLevels.push(HardCodeLevelName.Create("DODTEL", StringTable.Localize("$DODTEL")));
+		hardCodeLevels.push(HardCodeLevelName.Create("WRWDEMO", StringTable.Localize("$WRWDEMO")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_SCTTG", StringTable.Localize("$T_SCTTG")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_CUZOM", StringTable.Localize("$T_CUZOM")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_RSPAWN", StringTable.Localize("$T_RSPAWN")));
@@ -207,7 +208,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
 		LMBH_ZF_Element elem;
 		
-		double daHeight = 256+128+128+128;
+		// double daHeight = 256+128+128+128;
+		double daHeight = (hardCodeLevels.size() * 16) + 128;
 		// Create the box image's textures.
         let boxTexture = LMBH_ZF_BoxTextures.CreateTexturePixels
         (
@@ -271,7 +273,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
         	(240,32),
-        	(640-240,380-32),
+        	(640-240,380-24),
         	8,	
         	daHeight,
         	32,
@@ -331,7 +333,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
-        	(640-16-240,daHeight), // 320, daHeight
+        	(640-16-240,daHeight+16), // 320, daHeight
         	4	
         );
         liste.Pack(scrollactFrame);

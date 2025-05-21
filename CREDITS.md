@@ -144,7 +144,7 @@ For the thing we've yoinked
 	- [Level Info](https://github.com/Tekkish/LevelInfo/). List how many kills, items collected, & secret you've entered there. As well as powerups in effect & their time remainings
 	- [Player Info](https://github.com/Tekkish/PlayerInfo/releases/latest). Your status, such as HP, Armor, ammo for the weapon you hold right now, & Keys you had.
 	- Want everything all at once? **[There's pre-packaged All-in-one too as well](https://github.com/Tekkish/SimpleHUDAddons/releases/latest)**!
-- [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**
+- [JMod Testing Suite](https://forum.zdoom.org/viewtopic.php?p=1256429). Jarewill. ???. **OPTIONAL RECOMMENDED**, The Spawn Things menu like in GMod
 - [Slaughtermap Performance Booster](https://forum.zdoom.org/viewtopic.php?t=75794). madame-rachelle. **MIT License**. **OPTIONAL RECOMMENDED**, [Source code](https://github.com/madame-rachelle/SlaughterMapPerformanceBooster)
 - [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/doom-toolbox)
 	- DoomDoctor. Spit debug reports (System Time, Mapname, Skill, etc.) on VM Abort & on demand
@@ -161,7 +161,7 @@ For the thing we've yoinked
 		- [Hellscape Navigator](https://forum.zdoom.org/viewtopic.php?p=1068272&hilit=neon+grid#p1068272). m8f. **GNU GPL v3**. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/mmaulwurff/hellscape-navigator). Advanced Automap tools to aid navigating complex maps
 		- [Sound to Screen](https://github.com/mmaulwurff/sound-to-screen). **IMPORTANT for A11Y HEARING** Sound source mini-popup telling where played sound comes from, like Minecraft. With dangerness colors, & options to enable loudness number.
 - [FlexiHUD](https://www.doomworld.com/forum/topic/142937-flexihud-a-highly-flexible-hud-mod-for-gzdoom-411/). Jekyll Grim. ???. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/jekyllgrim/UniversalFlexibleHUD), Extra HUDs that you can customize crazily, compatible with many IWADs & PWADs out there.
-- [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. Skins for `DoomPlayer` (consists of: Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
+- [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. **OPTIONAL RECOMMENDED**, Skins for `DoomPlayer` (consists of: Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
 
 ## Reuses
 
@@ -260,7 +260,7 @@ For the thing we've yoinked
 		- `REVPINT.mid`. Mark Lovegrove - *Revenant Intermission* (?)
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
 	- `D_RUNNIN` = `D_SSLZN`. SEGA - Starlight Zone (Sonic 1)
-- [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that published music under CC0 / Public Domain!
+- [FreePD Public Domain Musics](https://freepd.com/). Kevin Macleod. **CC0**. Label that publishes musics under CC0 / Public Domain!
 	- Kevin Macleod - Study & Relax
 	- Bryan Teoh - Mysterious Lights
 - [GeneralUser Soundfont](https://schristiancollins.com/generaluser.php). S Christian Collins / mrbumpy409. [Yes Commercial Yes Font](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt). [Source Code](https://github.com/mrbumpy409/GeneralUser-GS/), General user soundfont for most GM & GS MIDIs.
@@ -289,7 +289,7 @@ For the thing we've yoinked
 - [Apagender flag & Midgate texture](https://www.doomworld.com/forum/post/2908686). JustAthel. ???.
 - [Persona Creep Sky](https://www.doomworld.com/forum/post/2909407). TheSuperdave938. ???.
 - [Post Your Doom Textures Curated Collection](https://www.doomworld.com/forum/topic/145782-pyddtex-pydt-compilation-and-restoration-retrieval/). Collected by JustAthel. ???. The [Post Your Doom Texture Thread](https://www.doomworld.com/forum/topic/90900-post-your-doom-textures/) Attempted recollections. **PLS YOINK SOME!!**
-- [Skybox Sharing with the community]https://www.doomworld.com/forum/topic/93446-skybox-for-sharing-with-the-community/). Eradrop. ???. Skyboxes even more!!!
+- [Skybox Sharing with the community](https://www.doomworld.com/forum/topic/93446-skybox-for-sharing-with-the-community/). Eradrop. ???. Skyboxes even more!!!
 - [Bury my heart knee deep](https://www.doomworld.com/idgames/levels/doom2/j-l/kneedeep). scwiba / PixelScuba. NO EDIT NO REUSE, YES REUPLOAD. The secret barrier is actually walls of barrel. Fire rocket to the wall where its shockwave hits those barrel.
 - [Daniel's Simple Weapon Mod](https://www.doomworld.com/forum/topic/143858-daniels-simple-weapons/). Zdexium / DaADHDoomGuy. ???. Simple Weapon stuffs
 - [ZDexium's Common Weapon Mod](https://zdexium.itch.io/zcwm). Zdexium / DaADHDoomGuy. ???. Another one

@@ -2414,7 +2414,7 @@ Sprite "JDUMA0", 1024, 1024
 	Patch "DUMMYPLA", 0, 0
 }
 
-Texture "TARGETDUMMYDAMAGE", 192, 32
+Texture "TDDMG", 192, 32
 {
 }
 

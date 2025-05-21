@@ -8,3 +8,18 @@ addplayerclass TylerConfigPlayer
 // Jackbomb Ichor
 addplayerclass IchorTestPlayer
 // end Realm 667
+
+//Weapon Resource Wad
+//weaponsection Resources
+
+//setslot 1 Fist Chainsaw Gauntlet Lightsaber Tazer Axe MonsterSpawner Necronomicon
+//setslot 2 Pistol COPGun SeriousBomb WalterPPK Pistol3 Magnum
+//setslot 3 Shotgun SuperShotgun XBSniper FlakCannon AutomaticShotgun SubMachineGun Shotgun2 HiPrecisionGun
+//setslot 4 Chaingun FireWand ImpClaw TheFlameThrower HeavyRifle CrystalGun PhobosDustBlower Burstshotgun
+//setslot 5 RocketLauncher MultiProjectileWeapon FreezeThrower SeekerMissileLauncher Devastator GrenadeLauncher RandProjLauncher Barnicle
+//setslot 6 PlasmaRifle InsanityRifle PlasmaBolter DemonHand FirebombGun PoisonGun RailGun BlasterPistol
+//setslot 7 BFG9000 SuperImpClaw GyroBurster TrailGun Vilestaff BFG2704 IncendinaryShellLauncher BFG11k
+//setslot 0 D2C_Pipebomb D2C_Detonator LandMineLayer Molotovx
+
+// VKDoom! This is comment! & /* this is comment too!! */ Whyn't you correctly interpret?!
+// end WRW

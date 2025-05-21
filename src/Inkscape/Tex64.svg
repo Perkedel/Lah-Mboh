@@ -4382,7 +4382,7 @@
      inkscape:groupmode="layer"
      id="layer36"
      inkscape:label="SpriteImage"
-     style="display:inline"><g
+     style="display:none"><g
        inkscape:groupmode="layer"
        id="layer37"
        inkscape:label="Item"
@@ -4664,7 +4664,7 @@
    style="fill:#ffffff" />
 	<polygon
    class="st1"
-   points="13.52114,14.50215 13.52114,7.14814 18.82412,7.14814 18.11916,8.95614 15.34115,8.95614 15.34115,10.36215 17.39315,10.36215 16.68612,12.00714 15.34115,12.00714 15.34115,14.50215 "
+   points="13.52114,7.14814 18.82412,7.14814 18.11916,8.95614 15.34115,8.95614 15.34115,10.36215 17.39315,10.36215 16.68612,12.00714 15.34115,12.00714 15.34115,14.50215 13.52114,14.50215 "
    id="polygon12"
    style="fill:#ffffff" />
 	<path
@@ -5255,7 +5255,8 @@
          inkscape:groupmode="layer"
          id="layer63"
          inkscape:label="JekyllDummy"
-         sodipodi:insensitive="true"><rect
+         sodipodi:insensitive="true"
+         style="display:none"><rect
            style="opacity:0.998844;fill:#e9c6af;stroke:#000000;stroke-width:0.0264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
            id="rect251"
            width="2.1166666"
