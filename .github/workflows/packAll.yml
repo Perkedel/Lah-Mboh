@@ -68,6 +68,7 @@ jobs:
           zip -dr Lah-Mboh.zip bonus
           zip -dr Lah-Mboh.zip source
           zip -dr Lah-Mboh.zip src
+          zip -dr Lah-Mboh.zip LANGUAGE.ods
           mv Lah-Mboh.zip Lah-Mboh.pk3
           ls
           pwd
@@ -85,6 +86,7 @@ jobs:
           7z d Lah-Mboh.7z bonus
           7z d Lah-Mboh.7z source
           7z d Lah-Mboh.7z src
+          7z d Lah-Mboh.7z LANGUAGE.ods
           echo "What Does it contains now?"
           7z l Lah-Mboh.7z
           mv Lah-Mboh.7z Lah-Mboh.pk7

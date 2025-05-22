@@ -4,6 +4,16 @@
 // Duke Nukem 3D H Content
 user int nsfwcontent = 0;
 
+// Other Sensitive topic content that can get you banned on platforms 
+// even on the strictest fair use policy & satirical disclaimer ever
+user int derogatorycolor = 0; // n word moonman
+user int derogatorylgbt = 0; // neo gender phobia south park? family guy?
+user int derogatorynazi = 0; // anti-semitism wolfenstein
+
+// Flashing light safety
+user int flashingLight = 0;
+user int horrorcontent = 0;
+
 // TDRR's CVARs
 //server bool ctfannouncer = true;
 //server int ctflimit = 0;

@@ -73,6 +73,7 @@ gameinfo
 		"$AVOIDTERRY",
 		"$SUPLEMA",
 		"$KARBITAN",
+		"$SLINSALERT",
 		"$WHERDGOING"
 	
 	addcreditpage = 
