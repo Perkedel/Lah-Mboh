@@ -2464,3 +2464,215 @@ ACTOR Stalagtite2 : Stalagtite 30319 // Stalactite is deliberately misspelled
     Stop
   }
 }
+
+// Disguise Extra Keys
+// https://www.realm667.com/repository/item-store/keys-puzzle#preview-8
+/*
+Name: Various Doom Keys
+Type: Keys
+Palette: Custom
+Summon: GreenCard/Skull, OrangeCard/Skull, SilverCard/Skull, PinkCard/Skull, BrownCard/Skull, BlackCard/Skull
+Use type: Instant
+Duration: Map
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+
+A set of 12 re-colored keys for Doom.
+
+Code: Disguise, MagicWazard
+GLDefs: Disguise, MagicWazard
+Sprites: Id Software
+Sprite Edit: Disguise, Blue Shadow, MagicWazard
+Idea Base: Keys from Knee-Deep in ZDoom
+
+10/23/2019 - Blue Shadow
+- Renamed the icon lumps in order to resolve a conflict with GZDoom.
+- Made use of the LANGUAGE lump for the pickup and lock messages.
+- Added editor keys to the locks.
+- Removed the assigned editor numbers.
+*/
+// Keycards
+
+actor GreenCard : DoomKey
+{
+	//$Category Keys
+	//$Title Green Keycard
+	Inventory.PickupMessage "$VDK_GOTGREENCARD" 
+	Inventory.Icon "I_GRNCRD"
+	States
+	{
+	Spawn:
+		GKEY A 10
+		GKEY B 10 Bright
+		Loop
+	}
+}
+
+actor OrangeCard : DoomKey
+{
+	//$Category Keys
+	//$Title Orange Keycard
+	Inventory.PickupMessage "$VDK_GOTORANGECARD"
+	Inventory.Icon "I_ORGCRD"
+	States
+	{
+	Spawn:
+		OKEY A 10
+		OKEY B 10 Bright
+		Loop
+	}
+}
+
+actor SilverCard : DoomKey
+{
+	//$Category Keys
+	//$Title Silver Keycard
+	Inventory.PickupMessage "$VDK_GOTSILVERCARD"
+	Inventory.Icon "I_SLVCRD"
+	States
+	{
+	Spawn:
+		SKEY A 10
+		SKEY B 10 Bright
+		Loop
+	}
+}
+
+actor PinkCard : DoomKey
+{
+	//$Category Keys
+	//$Title Pink Keycard
+	Inventory.PickupMessage "$VDK_GOTPINKCARD"
+	Inventory.Icon "I_PNKCRD"
+	States
+	{
+	Spawn:
+		PKEY A 10
+		PKEY B 10 Bright
+		Loop
+	}
+}
+
+actor BrownCard : DoomKey
+{
+	//$Category Keys
+	//$Title Brown Keycard
+	Inventory.PickupMessage "$VDK_GOTBROWNCARD"
+	Inventory.Icon "I_BRNCRD"
+	States
+	{
+	Spawn:
+		BRKY A 10
+		BRKY B 10 Bright
+		Loop
+	}
+}
+
+actor BlackCard : DoomKey
+{
+	//$Category Keys
+	//$Title Black Keycard
+	Inventory.PickupMessage "$VDK_GOTBLACKCARD"
+	Inventory.Icon "I_BLKCRD"
+	States
+	{
+	Spawn:
+		BKKY A 10
+		BKKY B 10 Bright
+		Loop
+	}
+}
+
+// Skull keys
+
+actor GreenSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Green Skull Key
+	Inventory.PickupMessage "$VDK_GOTGREENSKULL"
+	Inventory.Icon "I_GRNSKU"
+	States
+	{
+	Spawn:
+		GSKU A 10
+		GSKU B 10 Bright
+		Loop
+	}
+}
+
+actor OrangeSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Orange Skull Key
+	Inventory.PickupMessage "$VDK_GOTORANGESKULL"
+	Inventory.Icon "I_ORGSKU"
+	States
+	{
+	Spawn:
+		OSKU A 10
+		OSKU B 10 Bright
+		Loop
+	}
+}
+
+actor SilverSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Silver Skull Key
+	Inventory.PickupMessage "$VDK_GOTSILVERSKULL"
+	Inventory.Icon "I_SLVSKU"
+	States
+	{
+	Spawn:
+		SSKU A 10
+		SSKU B 10 Bright
+		Loop
+	}
+}
+
+actor PinkSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Pink Skull Key
+	Inventory.PickupMessage "$VDK_GOTPINKSKULL"
+	Inventory.Icon "I_PNKSKU"
+	States
+	{
+	Spawn:
+		PSKU A 10
+		PSKU B 10 Bright
+		Loop
+	}
+}
+
+actor BrownSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Brown Skull Key
+	Inventory.PickupMessage "$VDK_GOTBROWNSKULL"
+	Inventory.Icon "I_BRNSKU"
+	States
+	{
+	Spawn:
+		BRSK A 10
+		BRSK B 10 Bright
+		Loop
+	}
+}
+
+actor BlackSkull : DoomKey
+{
+	//$Category Keys
+	//$Title Black Skull Key
+	Inventory.PickupMessage "$VDK_GOTBLACKSKULL"
+	Inventory.Icon "I_BLKSKU"
+	States
+	{
+	Spawn:
+		BKSK A 10
+		BKSK B 10 Bright
+		Loop
+	}
+}

@@ -107,6 +107,7 @@ For the thing we've yoinked
     - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
     - [Dark Imp Pack](https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6). 
         - Dark Imp Nami. Nanami, Itsnaturetodie, Ghastly, Itsnaturetodie
+	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
 - [Breakable Glass](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641). Enjay & zzrion. ???.
     - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)
@@ -284,6 +285,7 @@ For the thing we've yoinked
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3); Unconflicted demo map `MAP01` into `VVPCKTEST` or I forgor what name; [WADINFO](/yoinks/vvpck1.0.txt)
 - [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ./build.py` myself lol! thankfully it's easy haha!); [WADINFO](/yoinks/damnums.txt)
+- [Freedoom FD24 Resources](https://github.com/freedoom/freedoom/tree/fd24?tab=readme-ov-file). fraggle et al. **BSD License Clause-3**. I have to [compile myself last as of today FD24 branch of Freedoom](https://github.com/JOELwindows7/freedoom/actions/workflows/make.yml) just to taste the gist of it. [Here file DOWNLOAD as of now](https://github.com/Perkedel/Lah-Mboh/blob/main/yoinks/tempAdd/FD24). Mind you, this is temporary as there is a whole lots of lacks atm. Until it's all finished & merged back to the main, this is what we have now. **You must load the paid `id24res.wad`, then this `fd24.wad` to make alpha experience at least somewhat functional**. Without its asset available in this `fd24.wad`, you'll have several malfuntion so that's why.
 
 ## Random
 

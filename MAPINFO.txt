@@ -247,6 +247,12 @@ DoomEdNums
 	3214 = SpreadFireZombie
 	*/
 	// end mrw
+
+	// Disguise Extra Keys
+	// Where to put it? 26700s?
+	26700 = GreenCard
+	26701 = OrangeCard
+	26702 = SilverCard
 	// End Realm667
 }
 // I'm tired of this bullshit. Just lemme build level already!
