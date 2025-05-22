@@ -981,3 +981,5 @@ class SoulsphereLater: SurgeryKit
 }
 
 // https://zdoom.org/wiki/Structs:Wads
+// https://zdoom.org/wiki/LOCKDEFS
+// https://github.com/jekyllgrim/UniversalFlexibleHUD/blob/main/ITEMINFO.txt

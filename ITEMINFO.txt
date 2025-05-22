@@ -1,0 +1,5 @@
+// This is not standard file of DOOM or whatever source port.
+// it's for Jekyll Grim FlexiHUD
+// https://github.com/jekyllgrim/UniversalFlexibleHUD/blob/main/ITEMINFO.txt
+// Just add whatever countable item class name here, each line.
+// (JOELwindows7)
