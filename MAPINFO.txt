@@ -72,6 +72,7 @@ gameinfo
 		"$USEROKILL",
 		"$AVOIDTERRY",
 		"$SUPLEMA",
+		"$KARBITAN",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -187,6 +188,65 @@ DoomEdNums
 	30894 = ShootBush5
 	30895 = ShootBush6
 	30896 = ShootBush7
+
+	// Monster Resource WAD / Realm667 Bestiary
+	// Monsters. was 31XX, conflict with Obsidian Plague Decorate ID24
+	3500 = NamiDarkImp
+	3501 = VoidDarkImp
+	3502 = STDarkImp
+	/*
+	// uncomment when done!
+	// adding DoomEdNum to non-existing class crashes the loading!
+	3503 = StoneImp
+	3504 = Arachnophyte
+	3505 = ImpWarlord
+	3506 = DragonFamiliar
+	3507 = BatFamiliar
+	3508 = SnakeImp
+	3509 = Satyr
+	3510 = BloodDemonClone
+	3511 = CacolanternClone
+	3512 = BelphegorClone
+	3513 = ScorpionMastermind
+	3514 = HellGuard
+	3515 = CyberMastermind
+	3516 = NightmareCacodemon
+	3517 = SoulHarvester
+	3518 = EnhancedCacodemon
+	3519 = HellWarrior
+	3520 = Afrit
+	3521 = LordofHeresy
+	3522 = TorturedSoul
+	3523 = MaulerDemon
+	3524 = Terror
+	3525 = RailArachnotron
+	3526 = FastImp
+	3527 = HellsFury
+	3528 = FireWyvern
+	3529 = PlasmaElemental
+	3530 = Maelstrom
+	3531 = Cacolich1
+	3532 = Cacolich2
+	3533 = SuperImp
+	*/
+	// Humans
+	/*
+	// uncomment when done!
+	3200 = ZombieMarine
+	3201 = RapidFireTrooper
+	3202 = RocketGuy
+	3203 = RocketGuyImmune
+	3204 = ChainsawZombie
+	3205 = PlasmaZombie
+	3206 = ZombieRailgunner
+	3207 = ShotgunSoldier
+	3208 = BFGZombie
+	// 3209 - 3211 skipped
+	3212 = StealthFighter
+	3213 = RifleZombie
+	3214 = SpreadFireZombie
+	*/
+	// end mrw
 	// End Realm667
 }
 // I'm tired of this bullshit. Just lemme build level already!
@@ -1191,6 +1251,20 @@ map T_NJ_BGL lookup "T_NJ_BGL"
 map wrwdemo lookup "wrwdemo"
 {
 	author = "So many people"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY2"
+	exitPic = "LMBHTIHD"
+	music = "D_READ_M"
+	//cluster = 26555
+	//AllowRespawn
+	//RandomPlayerStarts
+	//RememberState
+}
+
+map mrwdemo lookup "mrwdemo"
+{
+	author = "Nanami, Realm667, et al"
 	next = "MBOHTEST"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY2"

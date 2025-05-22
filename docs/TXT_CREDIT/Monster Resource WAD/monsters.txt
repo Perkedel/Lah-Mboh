@@ -1,0 +1,134 @@
+===========================================================================
+
+Archive Maintainer      : please replace the old version of this file
+
+Update to               : monsters.wad
+
+===========================================================================
+Advanced engine needed  : ZDoom version 2.1.x
+Primary purpose         : Resource wad.
+===========================================================================
+Title                   : The ZDoom Monster Resource Wad (v4.0)
+Filename                : monsters.wad
+Release date            : 05/09/04
+Author                  : Several
+Email Address           : choelckers@elo-interactive.de (Graf Zahl)
+                          Kara@xfury.net (Nanami)
+Description             : A collection of monsters freely available to any
+                          wad authors. Though the wad is designed for ZDoom
+                          use with DECORATE, the sprites can be used freely
+                          as well.
+                          This is version 2.0 of the monster WAD that fixes
+                          a few bugs and adds several new monsters.
+                          See info.txt for a short description of the monsters.
+
+                          v3.0 contains a few minor bugfixes and some new monsters:
+                          -The Plasma Elemental
+                          -The Maelstrom
+                          -The Cacolich
+                          -The RifleZombie
+                          -The SpreadFireZombie
+                          
+                          v4.0 fixes a bug with the Terror and adds custom
+                          blood colors to the Cacolantern and Hell Warrior.
+                          A few sounds have been renamed as well.
+
+Additional Credits to   : Mancubus II  - Being really cool
+                          Nanami       - Dark Imps, Satyr, Cyber Mastermind,
+                                         wad compilation for v1.0
+                                         most scripting
+                          Espi         - Stone Imp, Imp Warlord, Hell Guard,
+                                         Bat and Dragon Familiars, additional
+                                         scripting
+                          Graf Zahl    - wad compilation for v2.0 and 3.0
+                                         Rapid Fire Trooper, Rocket Zombie,
+                                         Fire Wyvern, BFG Zombie, Stealth Fighter
+                                         additional scripting
+                          DD_133       - Additional scripting
+                          Cyb          - Void's Dark Imp, Snake Imp, Blood
+                                         Demon
+                          Bouncy       - Zombie Marine, Nightmare Cacodemon,
+                                         Chainsaw Zombie
+                                         Cacolich scripting
+                          AirRaid      - Not doing anything for this project
+                          Tormentor667 - Soul Harvester, Enhanced Cacodemon,
+                                         and Hell Warrior from TNT3,
+                                         Terror, Hell's Fury ans Maelstrom sprites
+                                         ZombieRailgunner/RifleZombie sprites
+                          TheDarkArchon- Hell's Fury scripting
+                                         Plasma Elemental scripting
+                                         Maelstrom scripting
+                                         Cacolich scripting
+                                         RifleZombie scripting
+                          LilWhiteMouse- Scorpion Mastermind
+                          Quasar       - Arachnophyte
+                          Xaser        - Tortured Soul
+                          Lexus Alyus  - Cacolantern sprite
+                          Assmaster    - Original Tortured Soul sprite
+                          Björn Ostmann- Baron from Rebirth
+                          Vader        - Cacolich sprites
+                          The Ultimate Doomer
+                                       - Plasma Elemental idea
+                          Innocent Crew- Rocket Zombie, Stealth Fighter and Super Imp
+                          The Alpha Dog Alliance (Strain)
+                                       - for inspiration and the Mauler Demon's sprite
+                          SkullTag     - SkullTag's Dark Imp, Blood Demon,
+                                         Cacolantern, Belphegor
+                          id Software  - Doom and Doom II
+                          Ravensoft    - Heretic and Hexen
+                          Randy Heit   - ZDoom
+===========================================================================
+* What is included *
+
+New levels              : 2 demo levels to demonstrate the new monsters
+Sounds                  : Yes.
+Music                   : No.
+Graphics                : Yes.
+Dehacked/BEX Patch      : No, the monsters are done in DECORATE.
+Demos                   : No.
+Other                   : No.
+Other files required    : Doom II and ZDoom version 2.1.x
+
+
+* Play Information *
+
+Game                    : Doom or Doom II
+Map #                   : N/A
+Single Player           : N/A
+Cooperative 2-4 Player  : N/A
+Deathmatch 2-4 Player   : N/A
+Other game styles       : N/A
+Difficulty Settings     : N/A
+
+
+* Construction *
+
+Base                    : Various monsters have various bases.
+Build Time              : N/A
+Editor(s) used          : Several.
+Known Bugs              : The Stealth fighter is missing rotations
+                          for its attack.
+May Not Run With...     : Any ZDoom version older than 2.1.x
+                          If you remove the custom blood colors
+                          it will work with older versions but
+                          is there really any need to use them
+                          anymore? ;)
+                          Legacy, Doomsday, Vavoom, etc.
+
+
+* Copyright / Permissions *
+
+This wad is designed to be used by level editors. Editors have full
+permission to do anything they want with this wad and its contents (except
+release it as their own work). This wad can be dismantled for inclusion in
+a wad, or simply referenced as "Wad requires The Monster Resource Wad."
+
+Please to not release altered versions of this WAD.
+If you want to do so anyway please release it under a different name to avoid
+any confusion.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+Additional credit to: Doom-Child for not being in the list of credits

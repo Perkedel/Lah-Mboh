@@ -1,0 +1,113 @@
+===========================================================================
+Advanced engine needed  : ZDoom version 2.0.96x (unofficial build, found at
+                          http://grubber.drdteam.org/doom/zdoom96x.zip) or
+                          GZDoom
+Primary purpose         : Resource wad.
+===========================================================================
+Title                   : The Weapons Resource Wad
+Filename                : wrw.wad
+Release date            : September 13, 2005
+Author                  : Several
+Email Address           : hello4781@netzero.net
+Description             : A spin-off of the Monster Resource WAD, this is a
+                          collection of DECORATE weapons created by the
+                          ZDoom community. Authors are allowed to freely use
+                          and/or modify any of the weapons and sprites contained
+                          in this wad to their heart's content.
+Additional Credits to   : HobbsTiger1   - Fire Wand, Gauntlet,
+                                          original project leader, judging
+                          DomRem        - Current project leader, judging,
+                                          demo level, text file, wiki page
+                          cutmanmike    - Serious Bomb, Vile Staff,
+                                          Lightsaber, Freezer, judging
+                          TheDarkArchon - Multi-Projectile Weapon, Gyro
+                                          Plasma Burster, Incendinary Shell
+                                          Launcher, Automatic Shotgun, Barnicle
+                                          Plasma Twine ZDoom version, judging
+                          Chronoteeth   - Barnicle Plasma Twine sprites/sounds/idea
+                                          and EDGE version, judging
+                          wildweasel    - Charged Plasma Bolter
+                          Kirby         - Insanity Rifle
+                          Bouncy        - Imp Claw, Super Imp Claw, Flamethrower
+                          killingblair  - XB-4 Sniper Rifle, demo level base
+                          wario         - Demon Hand, BFG 11000
+                          Scientist     - Molotov Cocktail
+                          Xaser         - COP Derringer, Pipebomb
+                          Post          - Trail Gun
+                          HellsBane     - Tazer
+                          NecroMage     - Walther PPK, Seeker Missile Launcher
+                          ant1991331    - Flak Cannon
+                          Inuyasha_989  - BFG 2704, Random Projectile Launcher,
+                                          Blaster Pistol, Land Mines, Burst
+                                          Shotgun
+                          Wills         - Quake Axe
+                          ZChronos      - Heavy Rifle
+                          Bashe         - Half-Life Magnum
+                          Daniel        - Crystal Gun, Fire Bomb Launcher, Poison
+                                          Gun, Railgun, SMG, Devastator, Grenade
+                                          Launcher, .20 Pistol, Duke3d Shotgun,
+                                          Quad Shotgun
+                          ChaosCentral  - Demon Spawner, hosting
+                          Marty Razor
+                          Kirra         - Phobos Dust Blower
+                          Froon         - Necronomicon
+                          Nmn           - Sprites for Imp Claws, XB-4 Sniper
+                                          rifle, Demon Hand, and Charged Plasma
+                                          Bolter, Half-Life Magnum muzzle flash
+                          Randy Heit    - ZDoom
+                          Graf Zahl     - Unofficial Build, GZDoom
+                          Grubber       - Unofficial Build
+                          ID Software   - Doom and Doom II
+                          3D Realms     - Duke Nukem 3D and Shadow Warrior
+                          Raven Software- Heretic and Hexen
+===========================================================================
+* What is included *
+
+New levels              : A demo level (wrwdemo.wad)
+Sounds                  : Yes.
+Music                   : No.
+Graphics                : Yes.
+Dehacked/BEX Patch      : No, the weapons are done in DECORATE.
+Demos                   : No.
+Other                   : No.
+Other files required    : Doom II and ZDoom version 2.0.96x.
+
+
+* Play Information *
+
+Game                    : Doom or Doom II
+Map #                   : MAP01 (In wrwdemo.wad)
+Single Player           : N/A
+Cooperative 2-4 Player  : N/A
+Deathmatch 2-4 Player   : N/A
+Other game styles       : N/A
+Difficulty Settings     : N/A
+
+
+* Construction *
+
+Base                    : Various weapons have various bases.
+Build Time              : N/A
+Editor(s) used          : Several.
+Known Bugs              : The BFG 11000 has been known to crash ZDoom on
+                          occasion. The COP Derringer crashes ZDoom in
+                          multiplayer.
+May Not Run With...     : ZDoom versions 2.0.96 or earlier
+                          doom2.exe or any source ports other than ZDoom
+                          or GZDoom
+
+* Copyright / Permissions *
+
+This wad is designed to be used by level editors. Editors have full
+permission to do anything they want with this wad and its contents (except
+release it as their own work). This wad can be dismantled for inclusion in
+a wad, or simply referenced as "Wad requires the Weapons Resource WAD."
+
+Please do not release altered versions of this WAD.
+If you want to do so anyway please release it under a different name to avoid
+any confusion.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://downloads.zdoomcentral.gwgaming.net/

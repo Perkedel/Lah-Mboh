@@ -398,3 +398,396 @@ Class Crate32Cross : Cube32
 		Stop;
 	}
 }
+
+// It's time for:
+/*
+*************************************************
+*
+*
+*			MONSTER RESOURCE WAD
+*			DEFINITIVE EDITION
+*
+*
+*
+*************************************************
+*/
+// Dark Imp Pack here 
+// https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6
+// Dark Imp Nanami
+/*
+Name: Dark Imp (Nami)
+Difficulty: Easy
+Connections: None
+Summon: NamiDarkImp
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Code: Nanami, Itsnaturetodie, Ghastly (ZScript conversion)
+GLDefs: Ghastly
+Sounds: Id Software
+Sprites: Id Software
+Sprite Edit: Nanami, Itsnaturetodie
+*/
+Class NamiDarkImp : Actor
+{
+  Default
+  {
+    Health 105;
+    Radius 20;
+    Height 56;
+    Speed 8;
+    PainChance 200;
+    SeeSound "imp/sight";
+    PainSound "imp/pain";
+    DeathSound "imp/death";
+    ActiveSound "imp/active";
+    Obituary "%o was cursed by a dark imp.";
+    HitObituary "%o was touched by a dark imp.";
+    MONSTER;
+    +FLOORCLIP
+  }
+
+  States
+  {
+  Spawn:
+    DRKI AB 10 A_Look();
+    Loop;
+  See:
+    DRKI AABBCCDD 3 A_Chase();
+    Loop;
+  Melee:
+  Missile:
+    DRKI EF 8 A_FaceTarget();
+    DRKI G 6 A_CustomComboAttack("DarkSeeker", 32, 3*random(1,8), "imp/melee");
+    Goto See;
+  Pain:
+    DRKI H 2;
+    DRKI H 2 A_Pain();
+    Goto See;
+  Death:
+    DRKI I 8;
+    DRKI J 8 A_Scream();
+    DRKI K 6;
+    DRKI L 6 A_Fall();
+    DRKI M -1;
+    Stop;
+  XDeath:
+    DRKI N 5;
+    DRKI O 5 A_XScream();
+    DRKI P 5;
+    DRKI Q 5 A_Fall();
+    DRKI RST 5;
+    DRKI U -1;
+    Stop;
+  Raise:
+    DRKI ML 8;
+    DRKI KJI 6;
+    Goto See;
+  }
+}
+
+Class DarkSeeker : Actor
+{
+  Default
+  {
+    Radius 8;
+    Height 6;
+    Speed 9;
+    Damage 3;
+    RENDERSTYLE "ADD";
+    ALPHA 0.67;
+    SeeSound "imp/attack";
+    DeathSound "imp/shotx";
+    Decal "DoomImpScorch";
+    PROJECTILE;
+    +SEEKERMISSILE
+  }
+
+  States
+  {
+  Spawn:
+    DKB1 AB 4 Bright A_SeekerMissile(5,10);
+    Loop;
+  Death:
+    DKB1 CDE 4 Bright;
+    Stop;
+  }
+}
+// Skulltag Dark Imp
+/*
+Name: Dark Imp (Skulltag)
+Difficulty: Easy
+Connection: None
+Summon: STDarkImp
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+Code: Skulltag, Vader, Ghastly (ZScript conversion)
+GLDefs: Ghastly, Sandypaper (Brightmaps)
+Sounds: Id Software
+Sprites: Id Software
+Sprite Edit: Vader
+Idea Base: Skulltag
+*/
+Class STDarkImp : Actor
+{
+  Default
+  {
+    Health 110;
+    Radius 20;
+    Height 56;
+    Speed 9;
+    PainChance 200;
+    SeeSound "imp/sight";
+    PainSound "imp/pain";
+    DeathSound "imp/death";
+    ActiveSound "imp/active";
+    Obituary "%o was cursed by a dark imp.";
+    HitObituary "%o was touched by a dark imp.";
+    MONSTER;
+    +FLOORCLIP
+  }
+
+  States
+  {
+  Spawn:
+    DRKS AB 10 A_Look();
+    Loop;
+  See:
+    DRKS AABBCCDD 3 A_Chase();
+    Loop;
+  Melee:
+  Missile:
+    DRKS EF 8 A_FaceTarget();
+    DRKS G 6 A_CustomComboAttack("DarkFast", 32, 3*random(1,8), "imp/melee");
+    Goto See;
+  Pain:
+    DRKS H 2;
+    DRKS H 2 A_Pain();
+    Goto See;
+  Death:
+    DRKS I 8;
+    DRKS J 8 A_Scream();
+    DRKS K 6;
+    DRKS L 6 A_Fall();
+    DRKS M -1;
+    Stop;
+  XDeath:
+    DRKI N 5;
+    DRKI O 5 A_XScream();
+    DRKI P 5;
+    DRKI Q 5 A_Fall();
+    DRKI RST 5;
+    DRKI U -1;
+    Stop;
+  Raise:
+    DRKS ML 8;
+    DRKS KJI 6;
+    Goto See;
+  }
+}
+
+Class DarkFast : Actor
+{
+  Default
+  {
+    Radius 8;
+    Height 6;
+    Speed 18;
+    Damage 3;
+    RENDERSTYLE "ADD";
+    ALPHA 0.67;
+    SeeSound "imp/attack";
+    DeathSound "imp/shotx";
+    Decal "DoomImpScorch";
+    PROJECTILE;
+  }
+
+  States
+  {
+  Spawn:
+    DKB1 AB 4 Bright;
+    Loop;
+  Death:
+    DKB1 CDE 4 Bright;
+    Stop;
+  }
+}
+
+// Void Dark Imp
+/*
+Name: Dark Imp (Void)
+Difficulty: Easy
+Connections: None
+Summon: VoidDarkImp
+Melee: Yes
+Distance: Projectile
+Type: Demon
+Brightmaps: Yes
+Actor modification: No
+ACS: No
+
+Code: Cyb, Vader, Ghastly Dragon (ZScript conversion)
+GLDefs: Ghastly Dragon, Sandypaper (Brightmaps)
+Sounds: Id Software
+Sprites: Id Software
+Sprite Edit: Vader, Nanami (recolor)
+Idea Base: Cyb
+*/
+Class VoidDarkImp : Actor
+{
+  Default
+  {
+    Health 130;
+    Radius 20;
+    Height 56;
+    Speed 7;
+    PainChance 200;
+    SeeSound "imp/sight";
+    PainSound "imp/pain";
+    DeathSound "imp/death";
+    ActiveSound "imp/active";
+    Obituary "%o was cursed by a dark imp.";
+    HitObituary "%o was touched by a dark imp.";
+    MONSTER;
+    +FLOORCLIP
+  }
+
+  States
+  {
+  Spawn:
+    DRKV AB 10 A_Look();
+    Loop;
+  See:
+    DRKV AABBCCDD 3 A_Chase();
+    Loop;
+  Melee:
+    DRKV EF 8 A_FaceTarget();
+    DRKV G 6 A_CustomComboAttack("DarkNormal", 32, 3*random(1,8), "imp/melee");
+    Goto See;
+  Missile:
+    DRKV E 0 A_Jump(64,"Missile2");
+    DRKV EF 8 A_FaceTarget();
+    DRKV G 6 A_SpawnProjectile("DarkNormal", 32, 0, 0);
+    Goto Missile3;
+  Missile2:
+    DRKV IJ 8 Bright A_FaceTarget();
+    DRKV K 6 Bright A_SpawnProjectile("DarkStrong", 32, 0, 0);
+  Missile3:
+    DRKV E 0 A_Jump(64,"Missile4");
+    DRKV EF 8 A_FaceTarget();
+    DRKV G 6 A_SpawnProjectile("DarkNormal", 32, 0, 0);
+    Goto See;
+  Missile4:
+    DRKV IJ 8 Bright A_FaceTarget();
+    DRKV K 6 Bright A_SpawnProjectile("DarkStrong", 32, 0, 0);
+    Goto See;
+  Pain:
+    DRKV H 2;
+    DRKV H 2 A_Pain();
+    Goto See;
+  Death:
+    DRKV L 8;
+    DRKV M 8 A_Scream();
+    DRKV N 5;
+    DRKV O 5 A_Fall();
+    DRKV P -1;
+    Stop;
+  XDeath:
+    DRKI N 5;
+    DRKI O 5 A_XScream();
+    DRKI P 5;
+    DRKI Q 5 A_Fall();
+    DRKI RST 5;
+    DRKI U -1;
+    Stop;
+  Raise:
+    DRKV PO 8;
+    DRKV NML 6;
+    Goto See;
+  }
+}
+
+Class DarkNormal : Actor
+{
+  Default
+  {
+    Radius 8;
+    Height 6;
+    Speed 9;
+    Damage 3;
+    RENDERSTYLE "ADD";
+    ALPHA 0.67;
+    SeeSound "imp/attack";
+    DeathSound "imp/shotx";
+    Decal "DoomImpScorch";
+    PROJECTILE;
+  }
+
+  States
+  {
+  Spawn:
+    DKB1 AB 4 Bright;
+    Loop;
+  Death:
+    DKB1 CDE 4 Bright;
+    Stop;
+  }
+}
+
+Class DarkStrong : Actor
+{
+  Default
+  {
+    Radius 8;
+    Height 6;
+    Speed 9;
+    Damage 6;
+    RENDERSTYLE "ADD";
+    ALPHA 0.67;
+    SeeSound "imp/attack";
+    DeathSound "imp/shotx";
+    Decal "DoomImpScorch";
+    PROJECTILE;
+  }
+
+  States
+  {
+  Spawn:
+    DKB2 AB 4 Bright A_SpawnItemEx("DarkTail", 0, 0, 0, 0, 0, 0, 0, 128);
+    Loop;
+  Death:
+    DKB2 CDE 4 Bright;
+    Stop;
+  }
+}
+
+Class DarkTail : Actor
+{
+  Default
+  {
+    RENDERSTYLE "ADD";
+    ALPHA 0.5;
+    PROJECTILE;
+    +NOCLIP
+  }
+
+  States
+  {
+  Spawn:
+    DKBT ABCDEF 2 Bright;
+    Stop;
+  }
+}
+
+
+
+// End MRW

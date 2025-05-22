@@ -112,7 +112,9 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
     - https://www.doomworld.com/forum/topic/146943-id24-a-new-feature-set-standard/
     - https://drive.google.com/drive/folders/1Vw5fpmR0bVfFeHZ_xamVvn584xXtXp6M?usp=sharing Spec
     - https://youtu.be/TCCFdOl_CP0 Demo
-    
+- [GZDoom Doom Items MAPINFO part](https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/doomitems.txt). Parts pertaining item Things in DOOM, **including ID24 stuffs**
+- [Freedoom FD24 commits so far](https://github.com/freedoom/freedoom/commits/fd24/). Commits of Freedoom's ID24 coverage called FD24 so far.
+
 ## Placements
 
 ![Open chosen Thing properties with right click on your selected Thing](/src/screenshot/type_manual_id24.png)  

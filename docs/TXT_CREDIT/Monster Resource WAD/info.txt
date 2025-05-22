@@ -1,0 +1,289 @@
+These monsters can be found in monsters.wad
+To check them out start ZDoom with
+ZDoom -file monsters.wad monsterdemo.wad
+--------------------------------------------------------------------------------------------
+
+NamiDarkImp
+    Editor number: 3100
+    created by Nanami
+    a black imp with twice as much health as the regular imp
+    shoots a homing missile
+
+VoidDarkImp
+    Editor number: 3101
+    Graphics by Nanami (same as above)
+    created by Cyb
+    a black imp with twice as much health as the regular imp
+    shoots two missiles for each attack - chooses randomly between a weaker and a stronger one
+
+STDarkImp
+    Editor number: 3102
+    created by Nanami
+    a black imp with twice as much health as the regular imp
+    shoots a very fast missile
+    This is the same as Skulltag's Dark Imp
+
+StoneImp
+    Editor number: 3103
+    created by Espi
+    a stone like imp with very high health
+    has only a very strong melee attack
+
+Arachnophyte
+    Editor number: 3104
+    created by Quasar
+    a floating variation of the Spider Mastermind with less health
+
+ImpWarlord
+    Editor number: 3105
+    created by Espi and Nanami
+    a medieval imp-like monster with 5 different attacks
+    it can enter a state of invulnerability when hurt
+
+DragonFamiliar
+    Editor number: 3106
+    created by Espi and Nanami
+    a small dragon
+    shoots 3 fireballs which do rather little damage
+    also launched by one of the Imp Warlord's attacks
+
+BatFamiliar
+    Editor number: 3107
+    created by Espi and Nanami
+    a small bat with only a melee attack
+    also launched by one of the Imp Warlord's attacks
+
+SnakeImp
+    Editor number: 3108
+    created by Cyb
+    a snake like imp
+    shoots fast green fire balls
+
+Satyr
+    Editor number: 3109
+    created by Nanami
+    a Baron like monster with only a melee attack
+
+BloodDemonClone
+    Editor number: 3110
+    from Skulltag
+    Sprites by Cyb
+    Like the normal Demon with twice as much health
+    and darker sprites
+
+CacolanternClone
+    Editor number: 3111
+    based on Skulltag's Cacolantern
+    sprites by Lexus Alyus
+    a brightly lit variation of the Cacodemon with
+    more health and a stronger attack
+
+BelphegorClone
+    Editor number: 3112
+    based on Skulltag's Belphegor
+    sprites by Nanami
+    a variation of the Baron of Hell with different colors,
+    more health and a stronger attack
+
+ScorpionMastermind
+    Editor number: 3113
+    by LilWhiteMouse
+    a scorpion like boss monster which attacks with rockets
+
+HellGuard
+    Editor number: 3114
+    by Espi
+
+CyberMastermind
+    Editor number: 3115
+    by Nanami
+    a terrifying mixture of a Cyberdemon and a Spider Mastermind
+
+NightmareCacodemon
+    Editor number: 3116
+    by Graf Zahl
+    sprites by Bouncy
+    This is the stuff true nightmares are made of
+    a blue, nearly invisible Cacodemon which moves extremely fast
+    and attacks faster than you can look.
+
+SoulHarvester
+    Editor number: 3117
+    by Tormentor667
+    a gray imp which shoots flaming skulls
+
+EnhancedCacodemon
+    Editor number: 3118
+    by Tormentor667
+    a gray Cacodemon which shoots a spread of 3 missiles
+
+HellWarrior
+    Editor number: 3119
+    by Tormentor667
+    a Baron like monster with a shield that can protect it from attacks
+
+Afrit
+    Editor number: 3120
+    by Nanami
+    a floating Baron like monster with a devastating Hell Fire attack
+
+LordofHeresy
+    Editor number: 3121
+    sprites by Björn Ostmann
+    scripting by Bouncy
+    a Baron like monster with huge wings.
+    can shoot up to 3 fireballs at once
+
+TorturedSoul
+    Editor number: 3122
+    by Xaser
+    original sprite by Assmaster
+    it resembles a Pain Elemental and shoots green poison clouds
+
+MaulerDemon
+    Editor number: 3123
+    idea from Nimrod 
+    sprites from Strain 
+    scripting by Graf Zahl
+    this mutated Demon ferociously jumps at you - even from large distances!
+
+Terror
+    Editor number: 3124
+    idea and sprites by Tormentor667
+    scripting by Graf Zahl
+    a mutated Lost Soul that explodes when it hits its target
+
+RailArachnotron
+    Editor number: 3125
+    idea and sprites by Tormentor667
+    scripting by Graf Zahl
+    an Arachnotron that shoots a railgun
+
+FastImp
+    Editor number: 3126
+    idea from Strain
+    scripting by Graf Zahl
+    a lighting fast Imp that shoots an endless string of fireballs
+    this one can sneak up on you faster than you look!
+
+HellsFury
+    Editor number: 3127
+    sprites by Tormentor667
+    scripting by TheDarkArchon
+    a Baron like monster that either shoots red fireballs or yellow flaming skulls
+
+FireWyvern
+    Editor number: 3128
+    by Graf Zahl
+    inspired by Hexen's Fire Demon and Mordeth
+    a green gargoyle that shoots fire balls
+    
+PlasmaElemental
+    Editor number: 3129
+    by The DarkArchon
+    Idea by The Ultimate Doomer
+    looks like a Pain Elemental but shoots a stream of plasma balls
+    Beware of its death!
+    
+Maelstrom
+    Editor number: 3130
+    by The DarkArchon
+    sprites by Tormentor667
+    It looks like the HellsFury's skull and attacks with
+    devastating electric lightning.
+
+Cacolich1
+	Editor number 3131
+    by The DarkArchon
+    sprites by Vader
+    Resembles a Cacodemon and attacks with a homing missile
+    and an acid flame thrower
+
+Cacolich2
+	Editor number 3132
+    by Bouncy
+    sprites by Vader
+    Similar to the one above but it attacks differently
+
+SuperImp:
+	Editor number 3133
+    by The Innocent Crew
+    Just a normal imp that attacks with the Baron's green slime ball
+    Unlike all other monsters this is not a complete definition.
+    Instead it inherits most of its information from the regular imp.
+
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+
+
+These monsters can be found in humans.wad
+To check them out start ZDoom with
+ZDoom -file humans.wad humandemo.wad
+--------------------------------------------------------------------------------------------
+
+ZombieMarine
+    Editor number: 3200
+    created by Bouncy
+    a zombie with a protective helmet
+    fires an automatic rifle
+
+RapidFireTrooper
+    Editor number: 3201
+    by Graf Zahl
+    a yellow haired zombie that fires a slow automatic gun
+
+RocketGuy
+    Editor number: 3202 (not immune to rocket damage)
+    Editor number: 3203 (immune to rocket damage)
+    by the Innocent Crew
+    a zombie that fires rockets
+
+ChainsawZombie
+    Editor number: 3204
+    by Bouncy
+    additional scripting by: Graf Zahl
+    a zombie that attacks with a chainsaw
+
+PlasmaZombie
+    Editor number: 3205
+    by Bouncy
+    a zombie that attacks with a plasma gun
+
+ZombieRailgunner
+    Editor number: 3206 (damage = 100)
+    Editor number: 3209 (damage = 70)
+    Editor number: 3210 (damage = 50)
+    Editor number: 3211 (damage = 30)
+    by Bouncy
+    graphics by Tormentor667
+    a zombie that attacks with a railgun
+    there are 4 variations with different amounts of damage per shot
+
+ShotgunSoldier
+    Editor number: 3207
+    a zombie that attacks with a shotgun
+    Like the player's shotgun, 7 bullets are fired
+
+BFGZombie
+    Editor number: 3208
+    by Graf Zahl
+    a zombie that attacks with a BFG
+
+StealthFighter
+    Editor number: 3212
+    by The Innocent Crew
+    a barely visible and extremely fast soldier in a stealth suit
+    shoots an automatic rifle
+    
+RifleZombie
+    Editor number: 3213
+    by TheDarkArchon
+    graphics by Tormentor667
+    It looks like the railgunner but shoots an extremely fast projectile
+
+SpreadFireZombie
+    Editor number: 3214
+    by TheDarkArchon
+    A chaingunner variaton shooting a spread of plasma
+    This one is inspired by one of Decent's weapons
+

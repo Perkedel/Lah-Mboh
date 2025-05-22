@@ -105,6 +105,8 @@ For the thing we've yoinked
     - [Traffic Cones](https://www.realm667.com/repository/prop-stop/technical#preview-38). Captain Toenail
     - [Bushes](https://www.realm667.com/repository/prop-stop/vegetation#preview). Gothic
     - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
+    - [Dark Imp Pack](https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6). 
+        - Dark Imp Nami. Nanami, Itsnaturetodie, Ghastly, Itsnaturetodie
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
 - [Breakable Glass](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641). Enjay & zzrion. ???.
     - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)
@@ -114,6 +116,10 @@ For the thing we've yoinked
     - The [latest version is **GONE**](http://files.drdteam.org/index.php/files/get/gOEJPHX4Cy/wrw2-2.zip) because DRDTeam broke the File share! fucking hell! Even nobody Archived the working link sooner! It was on Megaupload (which FBI raided back then due to sparsdating haven issues) (cannot Archive because require captcha), and then moved to DRDTeam, which also broke now, that didn't Archived.
     - So, the [old version on idgames](https://www.doomworld.com/idgames/combos/wrw) is the only one we could get. If you have the latest version, pls share! I don't care if indeed it's buggy & terrible, I want them!
     - [Discussion that's left on Realm667](https://www.realm667.com/kunena/the-workshop/1970-weapons-resource-wad?start=50)
+- [Monster Resource WAD](https://www.doomworld.com/idgames/combos/monsters). Lead by Kara Rader (Nanami), with several people submitted. Yes Yoink, No Confuse trademark. Monsters vaganza
+    - [Info on DoomWiki](https://doomwiki.org/wiki/Monster_Resource_WAD)
+    - **Please note!** These are all renewed on [Realm667 Bestiary](https://www.realm667.com/repository/beastiary/doom-style?start=180#credits-60), so we should yoink there instead. But we can just yoink its demo level tho.
+    - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
 
 ## Dependencies
 

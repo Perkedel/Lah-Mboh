@@ -159,13 +159,13 @@ weapons/zippo	                dszippo
 weapons/serious	                dsbomb
 
 weapons/gswing                  dsswing
-weapons/gpunch                  dspunch
+weapons/gpunch                  dspunc2
 
 weapons/son                     dssabreu
 weapons/soff                    dssabreo
 weapons/sidle                   dssabrei
 weapons/sattack                 dssabrea
-weapons/sclash                  dssawhit
+weapons/sclash                  dssawhi2
 
 weapons/handshot                dsplasmi
 weapons/handdead                dsprojed
@@ -273,7 +273,7 @@ weapons/monspwnf		dsgrnlnc
 weapons/monspwnb		dsgrnhit
 weapons/monspwnx		dsgrnxpl
 
-weapons/tink 			dstink
+weapons/tink 			dstin2
 weapons/mineexpl 		dsmsexpl
 
 weapons/pstblast                dsgenpls

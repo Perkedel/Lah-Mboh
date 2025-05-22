@@ -179,6 +179,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("SELDUAR", String.Format("(DM) %s", StringTable.Localize("$SELDUAR"))));
 		hardCodeLevels.push(HardCodeLevelName.Create("DODTEL", StringTable.Localize("$DODTEL")));
 		hardCodeLevels.push(HardCodeLevelName.Create("WRWDEMO", StringTable.Localize("$WRWDEMO")));
+		hardCodeLevels.push(HardCodeLevelName.Create("MRWDEMO", StringTable.Localize("$MRWDEMO")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_SCTTG", StringTable.Localize("$T_SCTTG")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_CUZOM", StringTable.Localize("$T_CUZOM")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_RSPAWN", StringTable.Localize("$T_RSPAWN")));
