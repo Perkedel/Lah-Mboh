@@ -42,6 +42,8 @@ OptionMenu "NSFWContentOptions"
 	//StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
 	
 	// other variables modders can use for safety of the YouTubers & Twitch streamers
+	//Option "$NSFLEnableSay", "nsflMaster", "nsflMasterValues" // Master options for such community guideline violations below
+	//Option "Guro", "gurocontent", "guroContentValues" // Gore bloods pretty much
 	//Option "Nazi", "derogatorynazi", "derogatoryNaziValues" // turn off to Wolfenstein EU distribution dot one
 	//Option "Neo-gender against", "derogatorylgbt", "derogatoryLgbtValues" // threat to scronch is forbidden. catch & repurify!
 	//Option "N-words", "derogatorycolor", "derogatoryColorValues" // Perkedel & affiliates forbid toner derogatory!

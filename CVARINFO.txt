@@ -6,6 +6,8 @@ user int nsfwcontent = 0;
 
 // Other Sensitive topic content that can get you banned on platforms 
 // even on the strictest fair use policy & satirical disclaimer ever
+user int nsflMaster = 0; // master option for below takedownable options
+user int gurocontent = 0; // Gore
 user int derogatorycolor = 0; // n word moonman
 user int derogatorylgbt = 0; // neo gender phobia south park? family guy?
 user int derogatorynazi = 0; // anti-semitism wolfenstein
