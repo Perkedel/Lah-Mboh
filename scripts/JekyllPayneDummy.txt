@@ -36,7 +36,8 @@ class JekyllPShootingRangeHandler : EventHandler
 	{
 		name eventname = e.name;
 		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) >= 0)
-		if (eventname == 'summonJekyllDummy')
+		// if (eventname == 'summonJekyllDummy')
+		if (eventname == 'summonJekyllDummy' || e.name.IndexOf('summonJekyllDummy') > -1)
 		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) != -1)
 		// if (eventname == 'summonJekyllDummy' || e.name.IndexOf(eventname) == 0)
 		{
@@ -167,7 +168,8 @@ class JekyllPShootingRangeDummy : Actor
 			}
 
 			A_SetTranslation("WoodenTranslation");
-			SetTag(String.Format("%s %s", def.GetTag(), "target dummy"));
+			// SetTag(String.Format("%s %s", def.GetTag(), "target dummy"));
+			SetTag(String.Format("%s %s", def.GetTag(), StringTable.Localize("$JEKYLLTARGETDUMMY")));
 			classhealth = def.GetMaxHealth();
 			health = def.GetMaxHealth();
 			A_SetSize(def.radius, def.height);
