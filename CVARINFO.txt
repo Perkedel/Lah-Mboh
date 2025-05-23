@@ -33,3 +33,15 @@ server int sp_SpawnVelocityZ_Max = 32;
 server int sp_SpawnVelocityXY = 5;
 server int sp_ResDelay = 14;
 // End Realm667
+
+// m8f
+// Stupid Achievements
+// namespace `sa_` 👉 `LMBH_`
+user int LMBH_vertical_position   = 0;
+user int LMBH_horizontal_position = 1;
+user int LMBH_animation_type      = 0;
+
+user bool LMBH_achieveNotification_enabled = true;
+
+nosave string LMBH_achievements = "";
+// end m8f

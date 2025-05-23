@@ -164,11 +164,11 @@ jobs:
       # Other Checksum
       # https://github.com/marketplace/actions/checksum-action
       # https://github.com/Solratic/checksum-action
-      - name: Moar Checksums
-        uses: Solratic/checksum-action@v1
-        with:
-          pattern: 'Lah-Mboh.*'
-          suffix: 'checksum'
+      # - name: Moar Checksums
+      #   uses: Solratic/checksum-action@v1
+      #   with:
+      #     pattern: 'Lah-Mboh.*'
+      #     suffix: 'checksum'
       
       # checksum moaoar
       # https://github.com/marketplace/actions/generate-checksum

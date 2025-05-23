@@ -78,3 +78,78 @@ OptionMenu "SeizureSafetyOptions" {
 	Option "$SeizureFlashTitle", "flashinglight", "SeizureFlashingValues"
 	Option "$SeizureHeartTitle", "horrorcontent", "SeizureHeartValues"
 }
+
+// m8f
+// Stupid Achievements
+// Namepace `sa_` 👉 `LMBH_`
+// Namepace `SA_` 👉 `LMBH_Achieve_`
+// Entry point /////////////////////////////////////////////////////////////////
+
+AddOptionMenu OptionsMenu
+{
+  	Submenu "$LMBH_Achieve_MENU_TITLE", LMBH_Achieve_Options
+}
+
+AddOptionMenu OptionsMenuSimple 
+{
+	Submenu "$LMBH_Achieve_MENU_TITLE", LMBH_Achieve_Options
+}
+
+
+// Option menus ////////////////////////////////////////////////////////////////
+
+OptionMenu LMBH_Achieve_Options
+{
+  Title "$LMBH_Achieve_MENU_TITLE"
+
+  StaticText "$LMBH_Achieve_ACHIEVEMENTS", 1
+  Submenu "$LMBH_Achieve_UNLOCKED", LMBH_UnlockedAchievements
+  Submenu "$LMBH_Achieve_LOCKED"  , LMBH_LockedAchievements
+
+  StaticText ""
+  Option "$LMBH_Achieve_NOTIFY"    , LMBH_achieveNotification_enabled, OnOff
+  Option "$LMBH_Achieve_HORIZONTAL", LMBH_horizontal_position, LMBH_HorizontalPositionValues
+  Option "$LMBH_Achieve_VERTICAL"  , LMBH_vertical_position,   LMBH_VerticalPositionValues
+  Option "$LMBH_Achieve_ANIMATION" , LMBH_animation_type,      LMBH_AnimationValues
+
+  StaticText ""
+  Command "$LMBH_Achieve_TEST", LMBH_testAchieve
+
+  StaticText ""
+  SafeCommand "$LMBH_Achieve_CLEAR", LMBH_clear_achievements
+}
+
+OptionMenu LMBH_LockedAchievements
+{
+  Class "LMBH_LockedAchievements"
+  Title "$LMBH_Achieve_LOCKED_TITLE"
+}
+
+OptionMenu LMBH_UnlockedAchievements
+{
+  Class "LMBH_UnlockedAchievements"
+  Title "$LMBH_Achieve_UNLOCKED_TITLE"
+}
+
+// Option values ///////////////////////////////////////////////////////////////
+
+OptionValue LMBH_HorizontalPositionValues
+{
+  0, "$LMBH_Achieve_LEFT"
+  1, "$LMBH_Achieve_RIGHT"
+}
+
+OptionValue LMBH_VerticalPositionValues
+{
+  0, "$LMBH_Achieve_TOP"
+  1, "$LMBH_Achieve_BOTTOM"
+}
+
+OptionValue LMBH_AnimationValues
+{
+  0, "$LMBH_Achieve_SLIDE_VERTICAL"
+  1, "$LMBH_Achieve_SLIDE_HORIZONTAL"
+  2, "$LMBH_Achieve_FADE_IN_OUT"
+  3, "$LMBH_Achieve_DISABLED"
+}
+// end m8f

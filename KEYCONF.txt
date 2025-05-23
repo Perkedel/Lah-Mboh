@@ -1,6 +1,11 @@
 // C'mon key config! more like.. custom classes..
 // JOELwindows7
 
+// Jekyll Grim
+// Shooting Range Dummy
+Alias spawnTestDummy "netevent spawnJekyllDummy"
+// end Jekyll Grim
+
 // Tyler-J player config
 addplayerclass TylerConfigPlayer
 
@@ -23,3 +28,10 @@ addplayerclass IchorTestPlayer
 
 // VKDoom! This is comment! & /* this is comment too!! */ Whyn't you correctly interpret?!
 // end WRW
+
+// m8f
+// Stupid Achievements
+// namespace `sa_` 👉 `LMBH_`
+Alias LMBH_clear_achievements "LMBH_achievements \"\""
+Alias LMBH_testAchieve "netevent LMBH:testAchieve"
+// end m8f

@@ -6,6 +6,9 @@ gameinfo
 	addeventhandlers =
 		"JekyllPShootingRangeHandler", //This netevent quite buggy on such as La Tailor Girl it triggers every tick or something
 		"CorpseHandler",
+		// Mboh Achievements, based on m8f's Stupid Achievements
+		"SrA_eventHandler",
+		"LMBH_achiever",
 		"DNB_werrorHandler"
 	
 	addquitmessages =

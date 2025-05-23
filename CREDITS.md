@@ -126,6 +126,8 @@ For the thing we've yoinked
     - [Info on DoomWiki](https://doomwiki.org/wiki/Monster_Resource_WAD)
     - **Please note!** These are all renewed on [Realm667 Bestiary](https://www.realm667.com/repository/beastiary/doom-style?start=180#credits-60), so we should yoink there instead. But we can just yoink its demo level tho.
     - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
+- [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. Some mods have not been active recently, so we decided to yoink some of them that do.
+    - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Firstly, Must copy paste whole ZScript file, rename the namespaces, & re-add your own namepace of it)!
 
 ## Dependencies
 
@@ -163,7 +165,7 @@ For the thing we've yoinked
 	- Nomina. Automatically tag Things to beautify its class name.
 	- [Various Others](https://github.com/mmaulwurff/). [Yes](https://mmaulwurff.github.io/pages/toolbox)
 		- [Autosave Save](https://github.com/mmaulwurff/autoautosave). Automatically save your game after triggering certain events. With Console + TTS notification, both can be disabled.
-		- [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Firstly, Must copy paste whole ZScript file, rename the namespaces, & re-add your own namepace of it)!
+		- ~~[Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Firstly, Must copy paste whole ZScript file, rename the namespaces, & re-add your own namepace of it)!~~ **Pre-included**, use `LMBH_` namespace!
 		- [Precise Crosshair](https://github.com/mmaulwurff/precise-crosshair). Make crosshair point to where your gun actually points at. Disable the built-in crosshair & use this one instead!
 		- [Mod Menu](https://github.com/mmaulwurff/mod-menu). Wrangles all mod option menus into 1 single collection page for easy & tidy access.
 		- [Target spy](https://github.com/mmaulwurff/target-spy). Add highlight of the enemy HP, classnames, etc. you aimed at. 
