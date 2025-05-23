@@ -8,7 +8,7 @@ Now you got Freedoom Phase 1 & 2, and also FreeDM. There is `fd24red.wad` each, 
 
 ## To load
 
-Since certain number of asset file literally missing, you still need the original [`id24res.wad` **paid**](https://store.steampowered.com/app/2280/DOOM__DOOM_II/) just before loading this `fd24.wad` in that order. Without the literall existence (at least empty dummy file to placehold those all) asset files, such experience of Things will malfunctions.
+Since certain number of asset file literally missing, you still need the original [`id24res.wad` (**paid**)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/) just before loading this `fd24.wad` in that order. Without the literall existence (at least empty dummy file to placehold those all) asset files, such experience of Things will malfunctions.
 
 Additionally, you also need `id24dec.wad` (load this even before `id24red.wad`) for ZDoom based source ports because they also lack ID24 classes. Of course, only by the future release of GZDoom later, should all ID24 stuffs be ready to use (hence you will no longer need those temporary DECORATEs). Mind you, this DECORATE DoomEdNum is not the same due to incompatibility with negative DoomEdNum, ID24 uses. 
 
