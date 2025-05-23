@@ -176,6 +176,8 @@ jobs:
         uses: jmgilman/actions-generate-checksum@v1.0.1
         with:
           patterns: |
+            Lah-Mboh.pk3
+            Lah-Mboh.pk7
             Lah-Mboh.zip
             Lah-Mboh.tar.xz
             Lah-Mboh.7z

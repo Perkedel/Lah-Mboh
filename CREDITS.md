@@ -38,6 +38,7 @@ For the thing we've yoinked
     - [SHA256 Checksum generator](https://github.com/marketplace/actions/sha256-checksum). Huy-Ngo. **MIT License**. [Source Code](https://github.com/Huy-Ngo/gha-sha), generate SHA-Sum cross platform
     - [Checksum Action](https://github.com/marketplace/actions/checksum-action). Solratic. **MIT License**. [Source Code](https://github.com/Solratic/checksum-action)
     - [Another Checksum](https://github.com/marketplace/actions/checksums-action). thewh1teagle. ???. [Source Code](https://github.com/thewh1teagle/checksum)
+    - [Moaoaoorooe checksum](https://github.com/marketplace/actions/generate-checksum). jmgilman. **MIT License**. [Source Code](https://github.com/jmgilman/actions-generate-checksum)
 
 ## Addons
 
