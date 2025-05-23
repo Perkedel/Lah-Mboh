@@ -986,3 +986,6 @@ class SoulsphereLater: SurgeryKit
 // https://zdoom.org/wiki/Structs:TexMan
 // https://zdoom.org/wiki/CVARINFO
 // https://zdoom.org/wiki/Structs:CVar#Handlers
+// aha firewing calamity blade fd24
+// phoenix wings
+// https://zdoom.org/wiki/SECRETS
