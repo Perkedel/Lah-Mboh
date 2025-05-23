@@ -170,6 +170,16 @@ jobs:
           pattern: 'Lah-Mboh.*'
           suffix: 'checksum'
       
+      # checksum moaoar
+      # https://github.com/marketplace/actions/generate-checksum
+      - name: Checksums Moaoaore
+        uses: jmgilman/actions-generate-checksum@v1.0.1
+        with:
+          patterns: |
+            Lah-Mboh.zip
+            Lah-Mboh.tar.xz
+            Lah-Mboh.7z
+      
       # idk anymore, there's alot
       # https://github.com/marketplace/actions/checksums-action
       # https://github.com/thewh1teagle/checksum
@@ -210,6 +220,7 @@ jobs:
           rm: true
           snapshots: true
           files: |
+            checksum.txt
             Lah-Mboh.zip
             Lah-Mboh.7z
             Lah-Mboh.tar.xz
