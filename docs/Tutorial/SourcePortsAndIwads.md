@@ -4,6 +4,10 @@ There are alot of Game Engines / Source Ports out there, along with their respec
 
 The following lists various engines, games, and the data for those engines.
 
+> [!IMPORTANT]  
+> Please immediately download mods, games, & more, especially hosted at cloud storages (MEGA, Mediafire, Google Drive, etc.).  
+> cloud storages not only never last, but has complicated systems that prevents crawlers like Internet Archive preserve the files themselves.
+
 ## Legends
 
 ### Symbol
@@ -45,6 +49,30 @@ Format = `WAD` / `IWAD`, `IPK3`
     - ZDoom (deprecated, see GZDoom)
     - GZDoom
         - VKDoom
+
+### Mods
+
+- ModDB:
+    - [DOOM II](https://www.moddb.com/games/doom-ii/mods)
+    - [DOOM I](https://www.moddb.com/games/doom/mods)
+    - [Freedoom](https://www.moddb.com/games/freedoom/mods)
+- Modding Haven:
+    - [DOOM Mods](https://moddinghaven.com/mediawiki/index.php/Doom_engine_mods)
+- Zandronum
+    - [List of mods on Wiki](https://wiki.zandronum.com/List_of_mods)
+    - Forum
+- ZDoom
+    - [Forum: Projects](https://forum.zdoom.org/viewforum.php?f=41&sid=676010c5a544e52c9534d236bcc18ff4)
+- itch.io
+    - [Mods tagged `Doom`](https://itch.io/game-mods/tag-doom)
+- [Doomworld](https://doomworld.com)
+    - [idgames interface](https://www.doomworld.com/idgames)
+    - Forum
+        - [Map Releases & Developments](https://www.doomworld.com/forum/4-map-releases-development/)
+        - [Gameplay Mods](https://www.doomworld.com/forum/83-gameplay-mods/)
+        - [Total Conversion & Full Games](https://www.doomworld.com/forum/86-total-conversions-full-games/)
+        - [Resources](https://www.doomworld.com/forum/80-resources/)
+- [iddq.ru / DOOM Power](https://iddqd.ru/)
 
 ## idtech2
 
