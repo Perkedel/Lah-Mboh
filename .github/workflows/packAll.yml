@@ -151,6 +151,40 @@ jobs:
             Lah-Mboh.7z
           if-no-files-found: error
       
+      # Now, checksums!
+      # SHA256 Checksum generator
+      # https://github.com/marketplace/actions/sha256-checksum
+      # https://github.com/Huy-Ngo/gha-sha
+      # https://github.com/Huy-Ngo/gha-sha/blob/main/.github/workflows/main.yml
+      - name: Generate SHA256 Checksum
+        uses: Huy-Ngo/gha-sha@v1.1.0
+        with:
+          glob: 'Lah-Mboh.*'
+      
+      # Other Checksum
+      # https://github.com/marketplace/actions/checksum-action
+      # https://github.com/Solratic/checksum-action
+      - name: Moar Checksums
+        uses: Solratic/checksum-action@v1
+        with:
+          pattern: 'Lah-Mboh.*'
+          suffix: 'checksum'
+      
+      # idk anymore, there's alot
+      # https://github.com/marketplace/actions/checksums-action
+      # https://github.com/thewh1teagle/checksum
+      - name: Even More Checksums
+        uses: thewh1teagle/checksum@v2
+        with:
+          patterns: |
+            Lah-Mboh.*
+            *.pk3
+            *.pk7
+            *.tar.xz
+            *.zip
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
       # Well, It had to be everywhere right?
       # https://github.com/marketplace/actions/butler-to-itch
       - name: Push to Itch

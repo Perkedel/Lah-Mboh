@@ -34,6 +34,10 @@ For the thing we've yoinked
 - [Visual Studio Code](https://code.visualstudio.com/). Microsoft. **MIT License** (with proprietary components). [Source Code](https://github.com/microsoft/vscode), IDE to edit text advancedly.
     - <span style="font-size:xx-small;">[Windsurf (Codeium)](https://windsurf.com/plugins). Windsurf. **PROPRIETARY**. Because sometimes I need to repeat writings & GitHub Copilot is rather not so compplete. **No, otherwise, I wrote & draw things by hand**. I hate cheating, just.. tired to repetitive. Until Localer here. Fucking hell, this is embarrassing & shameful! You, you, you, you! YOu cheater, no idea what you doing, hence [you're the monkey](https://www.youtube.com/watch?v=RZAq-_gz_W8). Have any idea what are these brains used for? For helping! Not like.. tell em to do anything for you and then snatch the credit out of it, yikes!. Argh I hate this so much, this is the only way I repeat stuffs! I always figure things on my own, or sometime yoink someone's way by hand, study it, and then itterate by hand!</span>
 - [Zed](https://zed.dev/). Zed Industries. **GNU GPL v3**. [Source Code](https://github.com/zed-industries/zed), Better Better Rust Text Editor IDE.
+- Continuous Integrations (CI, GitHub Actions, forgejo) stuffs
+    - [SHA256 Checksum generator](https://github.com/marketplace/actions/sha256-checksum). Huy-Ngo. **MIT License**. [Source Code](https://github.com/Huy-Ngo/gha-sha), generate SHA-Sum cross platform
+    - [Checksum Action](https://github.com/marketplace/actions/checksum-action). Solratic. **MIT License**. [Source Code](https://github.com/Solratic/checksum-action)
+    - [Another Checksum](https://github.com/marketplace/actions/checksums-action). thewh1teagle. ???. [Source Code](https://github.com/thewh1teagle/checksum)
 
 ## Addons
 
