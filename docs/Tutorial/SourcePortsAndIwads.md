@@ -37,37 +37,42 @@ Format = `WAD` / `IWAD`, `IPK3`
 
 ### Source Ports
 
-- (vanilla) (Source Code)
+- (vanilla) ([Source Code](https://github.com/id-Software/DOOM))
 - SMMU
-    - Eternity Engine (Successor to SMMU)
+    - [Eternity Engine](https://github.com/team-eternity/eternity) (Successor to SMMU) ([Source Code](https://github.com/team-eternity/eternity))
 - Boom
     - PrBOOM
         - PrBOOM+
-            - DSDA
+            - [DSDA](https://github.com/kraflab/dsda-doom) ([Source Code](https://github.com/kraflab/dsda-doom))
 - MBF
-- ZDoom
-    - ZDoom (deprecated, see GZDoom)
-    - GZDoom
-        - VKDoom
+- [ZDoom](https://zdoom.org/index)
+    - [ZDoom](https://zdoom.org/downloads) (deprecated, see GZDoom)
+    - [GZDoom](https://zdoom.org/downloads) ([Source Code](https://github.com/ZDoom/gzdoom))
+        - [VKDoom](https://vkdoom.org/) ([Source Code](https://vkdoom.org/))
+- Unity
+    - see DOOM I + II & downgrade it with Beta!
+- KEX
+    - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
+    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/)
 
 ### Mods
 
-- ModDB:
+- [ModDB](https://moddb.com):
     - [DOOM II](https://www.moddb.com/games/doom-ii/mods)
     - [DOOM I](https://www.moddb.com/games/doom/mods)
     - [Freedoom](https://www.moddb.com/games/freedoom/mods)
-- Modding Haven:
-    - [DOOM Mods](https://moddinghaven.com/mediawiki/index.php/Doom_engine_mods)
-- Zandronum
+- [Modding Haven](https://moddinghaven.com):
+    - [list of DOOM Mods on the Wiki](https://moddinghaven.com/mediawiki/index.php/Doom_engine_mods)
+- [Zandronum](https://zandronum.com):
     - [List of mods on Wiki](https://wiki.zandronum.com/List_of_mods)
     - Forum
-- ZDoom
+- [ZDoom](https://zdoom.org):
     - [Forum: Projects](https://forum.zdoom.org/viewforum.php?f=41&sid=676010c5a544e52c9534d236bcc18ff4)
-- itch.io
+- [itch.io](https://itch.io):
     - [Mods tagged `Doom`](https://itch.io/game-mods/tag-doom)
-- [Doomworld](https://doomworld.com)
+- [Doomworld](https://doomworld.com):
     - [idgames interface](https://www.doomworld.com/idgames)
-    - Forum
+    - [Forum](https://www.doomworld.com/forum/)
         - [Map Releases & Developments](https://www.doomworld.com/forum/4-map-releases-development/)
         - [Gameplay Mods](https://www.doomworld.com/forum/83-gameplay-mods/)
         - [Total Conversion & Full Games](https://www.doomworld.com/forum/86-total-conversions-full-games/)
@@ -84,30 +89,60 @@ Quake III & Doom 3
 
 ### IWAD
 
-- DOOM 3
+
 - Quake III Arena
 - Xonotic
 - OpenArena
+- Wolfenstein
+    - Return to the castle Wolfenstein
+    - Enemy Teritory
 
 ## idtech4
 
-DOOM (2016) (Previously known as DOOM 4), Wolfenstein New Collosus ????
+DOOM 3
+
+### IWAD
+
+- DOOM 3
+- Quake 4
 
 ## idtech5
 
-DOOM ????
+Rage
+
+### IWAD
+
+- Rage (yes, the not DOOM but still id Softwares)
+- Wolfenstein
+    - The New Order
+    - The Old Blood
 
 ## idtech6
 
-???
+DOOM (2016) (Previously known as DOOM 4), Wolfenstein New Collosus ????
+
+### IWAD
+
+- DOOM (2016)
+- Wolfenstein
+    - Wolfenstein II: The New Colossus
+    - Youngblood
 
 ## idtech7
 
 DOOM: Eternal
 
+### IWAD
+
+- DOOM: Eternal
+
 ## idtech8
 
 DOOM: Dark Ages
+
+### IWAD
+
+- DOOM: The Dark Ages
 
 ## Cube 1 (Deprecated, see Cube 2)
 
@@ -126,7 +161,7 @@ Format: ???
 
 ### IWAD
 
-Format = `PCK`
+Format = `PCK` & Other Datas
 
 - afdsfasd
 - Hexagon Engine
@@ -136,7 +171,7 @@ Format = `PCK`
 
 ### IWAD
 
-Format = Unity Engine Data
+Format = Unity Engine Datas
 
 - DOOM Unity (Deprecated)
 - Phoenotopia Awakening
@@ -171,3 +206,10 @@ Format = Unreal Engine Datas
 ## Unreal Engine 4
 
 ## Unreal Engine 5
+
+## Extra Articles
+
+- Wikipedia
+    - [Wikipedia: id tech](https://en.wikipedia.org/wiki/Id_Tech)
+    - [Wikipedia: Saber Interactive](https://en.wikipedia.org/wiki/Saber_Interactive)
+    - [Rage 2](https://en.wikipedia.org/wiki/Rage_2). While the Rage 1 is id Tech 5, Rage 2 is Avalance's proprietary in-house Apex Engine (still with id Software tho).
