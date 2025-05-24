@@ -4,6 +4,8 @@
 > We have renamed the namepspace of this mod here from `sa_` into `LMBH_` & `LMBH_Achieve_`.  
 > In this article, we're going to use the default `sa_` namespace. Whatever you call, should apply the same with according namespace you let or changed to.
 
+[Download Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements/releases)
+
 ## Creating Achievement
 
 To create achievement, make a new ZScript class based on `aaa`, then adjust your parameter
