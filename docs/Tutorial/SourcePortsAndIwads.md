@@ -8,6 +8,10 @@ The following lists various engines, games, and the data for those engines.
 > Please immediately download mods, games, & more, especially hosted at cloud storages (MEGA, Mediafire, Google Drive, etc.).  
 > cloud storages not only never last, but has complicated systems that prevents crawlers like Internet Archive preserve the files themselves.
 
+> [!NOTE]
+> This article may contains wrong information due to lack of intels.  
+> If you have any corrections & suggestions, feel free to submit the Issue using `Bug` template.
+
 ## Legends
 
 ### Symbol
@@ -54,6 +58,8 @@ Format = `WAD` / `IWAD`, `IPK3`
 - KEX
     - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
     - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/)
+- Android
+    - [DeltaTouch](http://opentouchgaming.com/delta-touch/), **PAID** [Buy on Google Play](https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch)
 
 ### Mods
 
@@ -90,7 +96,7 @@ Quake
 
 ## idtech3
 
-Quake III & Doom 3
+Quake III
 
 ### IWAD
 
@@ -112,6 +118,12 @@ DOOM 3
 - Quake 4
 
 ## idtech5
+
+> [!NOTE]
+> This is the oldest engine of id that's still **proprietary**  
+> By this evolution, you're on your own. But there is a pixel of hope.  
+> There has to be. In times of eon at least.  
+> (Open Sourcing proposal unconfirmed yet)
 
 Rage
 
@@ -164,6 +176,14 @@ Format: ???
 
 ## Godot Engine
 
+> [!NOTE]
+> Godot Engine has no known outstanding IWAD unlike other tech engines above.  
+> But there are also the 3rd parties that do make IWADs for this engine.
+
+### Links
+
+- [Website](https://godotengine.org)
+
 ### IWAD
 
 Format = `PCK` & Other Datas
@@ -174,10 +194,19 @@ Format = `PCK` & Other Datas
 
 ## Unity Engine
 
+> [!NOTE]
+> Unity Engine no longer has new outstanding IWAD since their first.  
+> But there are also the 3rd parties that still making IWADs for this engine.
+
+Unity Engine. [Wikipedia](https://en.wikipedia.org/wiki/Unity_(game_engine))
+
 ### IWAD
 
 Format = Unity Engine Datas
 
+- [GooBall](https://en.wikipedia.org/wiki/GooBall) (Deprecated). FIrst ever IWAD from Unity (was `Over the Edge I/S`)
+    - [Mac Binary download (Machintosh Repository)](https://www.macintoshrepository.org/26983-gooball), User = `KCN Demo User`, Copies = 5, Code = `THGC-ZCZZ-JRSF`, **OFFLINE**, Date = `2009-08-01`.
+    - [Pls vote so GOG preserve this relic!](https://www.gog.com/dreamlist/game/gooball-2005)
 - DOOM Unity (Deprecated)
 - Phoenotopia Awakening
 - Zenless Zone Zero
