@@ -127,7 +127,7 @@ For the thing we've yoinked
     - **Please note!** These are all renewed on [Realm667 Bestiary](https://www.realm667.com/repository/beastiary/doom-style?start=180#credits-60), so we should yoink there instead. But we can just yoink its demo level tho.
     - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
 - [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. Some mods have not been active recently, so we decided to yoink some of them that do.
-    - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Firstly, Must copy paste whole ZScript file, rename the namespaces, & re-add your own namepace of it)!
+    - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Make the achievement out of the class of it. The Achievement system will scan everything & list everything that's based on Achievement)!
 
 ## Dependencies
 
