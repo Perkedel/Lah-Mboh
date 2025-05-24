@@ -1,6 +1,6 @@
 # How to Cloud Storage
 
-> [!CRITICAL]
+> [!CAUTION]
 > Using generic cloud storage is not recommended & absolutely discouraged since they are usually do not last long 
 > & shared links may expire all of the sudden, despite the best option you've picked.  
 > You also have storage limit to how much you can store there, & expansions purchase are never permanent (i.e. subscriptions).  

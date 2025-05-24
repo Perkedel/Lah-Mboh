@@ -25,7 +25,7 @@ class ia_OneKill : sa_Achievement
 }
 ```
 
-full example:
+full example template:
 
 ```
 pls insert!
