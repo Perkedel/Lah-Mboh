@@ -8,7 +8,7 @@
 
 ## Creating Achievement
 
-To create achievement, make a new ZScript class based on `aaa`, then adjust your parameter
+To create achievement, make a new ZScript class based on `sa_Achievement`, then adjust your parameter
 
 ```zscript
 class ia_OneKill : sa_Achievement
