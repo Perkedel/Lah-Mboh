@@ -77,7 +77,12 @@ Format = `WAD` / `IWAD`, `IPK3`
         - [Gameplay Mods](https://www.doomworld.com/forum/83-gameplay-mods/)
         - [Total Conversion & Full Games](https://www.doomworld.com/forum/86-total-conversions-full-games/)
         - [Resources](https://www.doomworld.com/forum/80-resources/)
-- [iddq.ru / DOOM Power](https://iddqd.ru/)
+- [iddqd.ru / DOOM Power](https://iddqd.ru/)
+    - [Levels](https://iddqd.ru/levels)
+    - [Hosted New Source Port & Binaries Downloads](https://iddqd.ru/new)
+    - [Forum](https://i.iddqd.ru/)
+- [WAD-archive.com](https://archive.org/details/wadarchive). Download all!, [original rehosted site](https://www.wad-archive.com/).
+- [Doomshack.org](https://doomshack.org/)
 
 ## idtech2
 
