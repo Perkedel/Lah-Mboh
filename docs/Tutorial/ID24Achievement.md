@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-- **You cannot use Mods to get achievements**, unlike with Duke Nukem 3D World Tour. Wtf, Bethesda?! argh whatevea.
+- **You cannot use Mods to get achievements**, unlike with Duke Nukem 3D World Tour ([map for it](https://steamcommunity.com/sharedfiles/filedetails/?id=2359886578)). Wtf, Bethesda?! argh whatevea.
 
 ## End Screens
 
