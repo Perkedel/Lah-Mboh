@@ -62,6 +62,12 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Add [reason]() of Invasion in Lah-Mboh: Arenod Sediron who's affiliated with DNB has a sentence for corruption. Corruption here is not in just a sense of financial, but also other aspect with a similar pattern. when one becomes the Great Impact, that one worths appreciation. Of course, with being Great Impact comes caveat. The Corrupt will always takes it down, as their greed were no longer satisfied. These are the people DNB targets against. At that time, Corrupt people that got caught are sentenced permashamed. If just death sentence, where's the fun in that?. Everyone are happy to shame those who ruined Great Impacts, especially coming from Indonesia (because in their home, corruption was so thick & irrecoverable & hence this is the only way to vent). So much shame, the sentenceds mysteriously died without violence, like a self destruct activated without a height. A bunch of Harrassers found those poor souls & included them in their Invaders cloning pool.
 - *Juicy* Vassago. from Banished to ID24 hell. you have heavily criticized Legacy of Rust for its practice you consider milking dead horse at DOOM I + II. So, while you do fun, suddenly you got sniped & go to hell. You met this zesty Vassago that likes furry when he was alive. He's your friend & will guide you through intentionally confusing puzzle maze. He wishes that he had the more *Juicy* one, but instead this body is the only model that's available.
 - Argh! Eik Serkat!. don't worry about me, I will resurrect tomorrow.
+- Another Joker Revenant Games! Use [GothicDM textures](https://www.doomworld.com/idgames/graphics/gothictx) & designs. Step on one out of numbers of the nukage. One or few nukage contains actual Floor DMGs. Only 1 leads to progress & at the final, level complete.
+- the final part suddenly has lots grid of nukage pool. All but 1 are insta-death. *Wow, I am really impressed with such a formidable power of yours. Let's see if this at here in the last one could save you, Good Luck.*
+- Using ACS to randomize which sector becoming progress and neutral.
+- ydkj name `DownloadACar` triggers easter egg: Okay, I see you upset there, me too! But.. let's pretend we're nice people now, we shall discuss this later after the game, shall we? Okay, let's play the game first.
+- Alright, these are all the players, let's just begin the game!
+- Incarnage. anDOOM brutally
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

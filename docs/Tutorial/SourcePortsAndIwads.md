@@ -25,9 +25,13 @@ The following lists various engines, games, and the data for those engines.
 
 Format = `...`
 
-- Wolfenstein-3D
+- [Wolfenstein 3D](https://store.steampowered.com/app/2270/Wolfenstein_3D/), [GOG](https://www.gog.com/en/game/wolfenstein_3d)
+- Spear of Destiny, [~~steam~~](https://store.steampowered.com/app/9000/Spear_of_Destiny/) gone
+- [Super 3-D Noah Ark](https://store.steampowered.com/app/371180/Super_3D_Noahs_Ark/?snr=1_5_1100__1100&utm_source=steamwidget), [itch](https://wisdomtree.itch.io/s3dna)
 
 ### Source Ports
+
+- [ECWolf](https://maniacsvault.net/ecwolf/). [Source Code](https://bitbucket.org/ecwolf/ecwolf/src/master/).
 
 ## idtech1
 
