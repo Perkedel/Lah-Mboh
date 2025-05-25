@@ -989,3 +989,5 @@ class SoulsphereLater: SurgeryKit
 // aha firewing calamity blade fd24
 // phoenix wings
 // https://zdoom.org/wiki/SECRETS
+
+#include "scripts/ExistenceVerifier/ExistenceVerifier.zs"

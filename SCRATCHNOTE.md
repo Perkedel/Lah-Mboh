@@ -67,7 +67,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Using ACS to randomize which sector becoming progress and neutral.
 - ydkj name `DownloadACar` triggers easter egg: Okay, I see you upset there, me too! But.. let's pretend we're nice people now, we shall discuss this later after the game, shall we? Okay, let's play the game first.
 - Alright, these are all the players, let's just begin the game!
-- Incarnage. anDOOM brutally
+- Incarnage. anDOOM brutally. incarnate carnage.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
