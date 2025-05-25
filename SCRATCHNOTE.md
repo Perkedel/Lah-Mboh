@@ -68,6 +68,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - ydkj name `DownloadACar` triggers easter egg: Okay, I see you upset there, me too! But.. let's pretend we're nice people now, we shall discuss this later after the game, shall we? Okay, let's play the game first.
 - Alright, these are all the players, let's just begin the game!
 - Incarnage. anDOOM brutally. incarnate carnage.
+- `I FUCKING HATE FREEDOOM AND YOU'RE CLOWN FOR SUPPORTING IT`. A Patch Mod PK3 containing Extra textures from Final DOOM & others, designed for official DOOM IWADs. Covers Final DOOM & Exclusive Freedoom textures but using copyrighted DOOM textures & flats. To replicate Freedoom's coverages, but DOOM original. May still clash & misalign with maps designed for TNT Final DOOM IWADs due to way different arrangements, designs & offset.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 

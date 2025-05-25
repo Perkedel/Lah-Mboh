@@ -9,7 +9,7 @@ gameinfo
 		// Mboh Achievements, based on m8f's Stupid Achievements
 		"SrA_eventHandler",
 		"LMBH_achiever",
-		"ExistenceHandler",
+		"LMBH_ExistenceHandler",
 		"DNB_werrorHandler"
 	
 	addquitmessages =

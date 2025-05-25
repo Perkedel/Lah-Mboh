@@ -1,12 +1,13 @@
 // DEFINE THEM ALL!!!
 // (JOELwindows7)
-version "4.11.3"
+version "4.11.3" // Because Project Brutality, but we also want latest features too! bruh, dilemma!
 
 // stuffs
 #include "scripts/Gifter.txt"
 #include "scripts/MbohCoins.txt"
 #include "scripts/WeirdThings.txt"
 #include "scripts/Realm667Zs.txt"
+#include "scripts/ExistenceVerifier/ExistenceVerifier.zs"
 
 // crashes
 #include "scripts/uncaught_werror.txt"

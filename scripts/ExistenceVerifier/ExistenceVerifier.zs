@@ -1,3 +1,21 @@
+/*
+ * GNU General Public License, Version 3.0
+ *
+ * Copyright (c) 2025 Perkedel
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 // Existence Verifier. Inherit this class on your DLC stuffs
 // (JOELwindows7)
 
@@ -11,21 +29,21 @@
 // https://zdoom.org/wiki/Dictionary didn't know there is JSON-kindof thing here! I thought Godot was the only one had it.
 // https://zdoom.org/wiki/Operators_(ZScript)
 // https://zdoom.org/wiki/Using_inheritance
-class ExistenceVerifier: Actor abstract
+class LMBH_ExistenceVerifier: Actor abstract
 {
 	Default
 	{
-		ExistenceVerifier.name "DLC_NAME";
-		ExistenceVerifier.title "anDLC";
-		ExistenceVerifier.description "DESC";
-		ExistenceVerifier.nsfw false;
+		LMBH_ExistenceVerifier.name "DLC_NAME";
+		LMBH_ExistenceVerifier.title "anDLC";
+		LMBH_ExistenceVerifier.description "DESC";
+		LMBH_ExistenceVerifier.nsfw false;
 	}
 
-	static bool isExist(Class<ExistenceVerifier> theClass)
+	static bool isExist(Class<LMBH_ExistenceVerifier> theClass)
 	{
 		// scan if the class looked for is based on this very class.
 		//let c = AllActorClasses[i]; // YOINK! here all actors loaded in GZDoom.
-		if(theClass is 'ExistenceVerifier')
+		if(theClass is 'LMBH_ExistenceVerifier')
 		{
 			return true;
 		}
@@ -39,30 +57,43 @@ class ExistenceVerifier: Actor abstract
     // The Tester Command Line
 }
 
-class ExistenceHandler: StaticEventHandler
+class LMBH_ExistenceHandler: StaticEventHandler
 {
     //let expectedCommand = 'isDLCExist';
     // use Jekyll Dummy! the netevent
     override void NetworkProcess(consoleEvent e)
     {
-        let expectedCommand = 'isDLCExist';
+        let expectedCommand = 'LMBH:isDLCExist'; // e.g. `LMBH:isDLCExist:MyDLC`
         name eventname = e.name;
         if(e.name.indexOf(expectedCommand) > -1)
         {
             let pmo = players[e.player].mo;
-			if (!pmo)
-				return;
+			// if (!pmo)
+			// 	return;
             array<string> splitren;
             e.name.split(splitren,":");
-            let sayIt = "NOT FOUND";
-            if(ExistenceVerifier.isExist(splitren[1])) sayIt = "FOUND";
-            Console.printf("DLC Class "..splitren[1].." is ".. sayIt);
+            if(splitren.size() < 3)
+            {
+                Console.printf(StringTable.Localize("$EXISTENCE_USAGE"));
+                return;
+            }
+            let sayIt = StringTable.Localize("$EXISTENCE_NOTFOUND");
+            if(LMBH_ExistenceVerifier.isExist(splitren[2])) sayIt = StringTable.Localize("$EXISTENCE_FOUND");
+            // Console.printf("DLC Class "..splitren[2].." is ".. sayIt);
+            Console.printf(StringTable.Localize("$EXISTENCE_SCAN"),splitren[2],sayIt);
+            if(splitren[2] == "LMBH_ExampleDLCTest")
+            {
+                Console.printf(StringTable.Localize("$EXISTENCE_TEMPLATEO"),splitren[2]);
+                Console.printf(StringTable.Localize("$EXISTENCE_USAGE"));
+                Console.printf("\n");
+                Console.printf(StringTable.Localize("$EXISTENCE_DOWNLOAD"));
+            }
         }
     }
 }
 
 // We might wanna extend them now, I guess? No? Just be it one piece?
-extend class ExistenceVerifier
+extend class LMBH_ExistenceVerifier
 {
 	// var
 	String name;
@@ -78,13 +109,15 @@ extend class ExistenceVerifier
 }
 
 // Example of DLC. You, inherit above class on your own PWAD
-class ExampleDLCTest : ExistenceVerifier
+class LMBH_ExampleDLCTest : LMBH_ExistenceVerifier
 {
 	Default
 	{
-		ExistenceVerifier.name "ExampleDLCTest";
-		ExistenceVerifier.title "Example";
-		ExistenceVerifier.description "Lorem Ipsum";
-		ExistenceVerifier.nsfw false;
+		LMBH_ExistenceVerifier.name "ExampleDLCTest";
+		LMBH_ExistenceVerifier.title "Example";
+		LMBH_ExistenceVerifier.description "Lorem Ipsum";
+		LMBH_ExistenceVerifier.nsfw false;
 	}
 }
+
+#include "scripts/ExistenceVerifier/TemplateExistence.zs"

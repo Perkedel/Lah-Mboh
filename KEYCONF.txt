@@ -35,3 +35,7 @@ addplayerclass IchorTestPlayer
 Alias LMBH_clear_achievements "LMBH_achievements \"\""
 Alias LMBH_testAchieve "netevent LMBH:testAchieve"
 // end m8f
+
+// Existence verifier
+Alias LMBH_checkDLC "netevent LMBH:isDLCExist"
+Alias LMBH_testDLC "netevent LMBH:isDLCExist:LMBH_ExampleDLCTest"

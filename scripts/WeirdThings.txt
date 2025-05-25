@@ -990,4 +990,3 @@ class SoulsphereLater: SurgeryKit
 // phoenix wings
 // https://zdoom.org/wiki/SECRETS
 
-#include "scripts/ExistenceVerifier/ExistenceVerifier.zs"
