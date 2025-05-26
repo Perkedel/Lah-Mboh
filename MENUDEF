@@ -26,6 +26,8 @@ AddOptionMenu "GameplayOptions"
 // Extras for Main Menu
 // End game menu
 AddListmenu "MainMenu" before "QuitMenu" {
+	// https://zdoom.org/wiki/MENUDEF
+
 	// Thancc AFADoomer. That's what I'm looking for!
 	// https://www.afadoomer.com/wolf3d/downloads.html
 	// https://github.com/AFADoomer/Wolf3D/

@@ -11,6 +11,9 @@ The following lists various engines, games, and the data for those engines.
 > [!NOTE]
 > This article may contains wrong information due to lack of intels.  
 > If you have any corrections & suggestions, feel free to submit the Issue using `Bug` template.
+> 
+> Developers may edit the source port for their specific project.  
+> For best result, use the binary provided with from the IWAD if you'd like to play e.g. TCs, or a standalone designed game.
 
 ## Legends
 
@@ -25,9 +28,11 @@ The following lists various engines, games, and the data for those engines.
 
 Format = `...`
 
-- [Wolfenstein 3D](https://store.steampowered.com/app/2270/Wolfenstein_3D/), [GOG](https://www.gog.com/en/game/wolfenstein_3d)
-- Spear of Destiny, [~~steam~~](https://store.steampowered.com/app/9000/Spear_of_Destiny/) gone
+- [Wolfenstein 3D (with Spear of Destiny??)](https://store.steampowered.com/app/2270/Wolfenstein_3D/), [GOG](https://www.gog.com/en/game/wolfenstein_3d)
+    - [BONUS! Wolf Pack](https://store.steampowered.com/sub/770867/)
+- Spear of Destiny, [~~steam~~](https://store.steampowered.com/app/9000/Spear_of_Destiny/) gone, see Wolf3D above??
 - [Super 3-D Noah Ark](https://store.steampowered.com/app/371180/Super_3D_Noahs_Ark/?snr=1_5_1100__1100&utm_source=steamwidget), [itch](https://wisdomtree.itch.io/s3dna)
+- [See more at ECWolf Wiki](https://maniacsvault.net/ecwolf/wiki/Game_data)
 
 ### Source Ports
 
@@ -39,19 +44,42 @@ Format = `...`
 
 Format = `WAD` / `IWAD`, `IPK3`
 
-- DOOM Series
-    - DOOM
-    - DOOM II
+- DOOM Series, 
+    - DOOM. See DOOM I + II KEX
+    - DOOM II. See DOOM I + II KEX
+    - DOOM64. See DOOM64 KEX
+- Raven
+    - Heretic
+        - [Shadow of the Serpent Riders](https://store.steampowered.com/app/2390/Heretic_Shadow_of_the_Serpent_Riders/), [GOG](https://www.gog.com/game/heretic_shadow_of_the_serpent_riders)
+    - Hexen
+        - [Full](https://store.steampowered.com/app/2360/Hexen_Beyond_Heretic/), [GOG](https://www.gog.com/game/hexen_beyond_heretic)
+        - [Deathking of the Dark Citadel](https://store.steampowered.com/app/2370/Hexen_Deathkings_of_the_Dark_Citadel/), [GOG](https://www.gog.com/game/hexen_deathkings_of_the_dark_citadel)
+    - BONUS: [Raven Pack](https://store.steampowered.com/sub/439/)
+- Strife
+    - [Veteran Edition](https://store.steampowered.com/app/317040/Strife_Veteran_Edition/), [GOG](https://www.gog.com/game/strife_veteran_edition)
+- Chex Quest
+    - 1
+    - 2
+    - 3
+- [Freedoom](https://freedoom.github.io/download.html)
+    - Phase 1
+    - Phase 2
+- For ZDoom, See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
 
 ### Source Ports
 
 - (vanilla) ([Source Code](https://github.com/id-Software/DOOM))
+- [Chocolate](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Doom). Replicate Vanilla for Modern
+    - [Crispy](https://github.com/fabiangreffrath/crispy-doom)
 - SMMU
     - [Eternity Engine](https://github.com/team-eternity/eternity) (Successor to SMMU) ([Source Code](https://github.com/team-eternity/eternity))
 - Boom
     - PrBOOM
         - PrBOOM+
             - [DSDA](https://github.com/kraflab/dsda-doom) ([Source Code](https://github.com/kraflab/dsda-doom))
+    - MBF
+        - [Woof](https://github.com/fabiangreffrath/woof)
+            - [Nugget](https://github.com/MrAlaux/Nugget-Doom)
 - MBF
 - [ZDoom](https://zdoom.org/index)
     - [ZDoom](https://zdoom.org/downloads) (deprecated, see GZDoom)
@@ -60,10 +88,18 @@ Format = `WAD` / `IWAD`, `IPK3`
 - Unity
     - see DOOM I + II & downgrade it with Beta!
 - KEX
-    - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
-    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/)
+    - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/), [GOG](https://www.gog.com/en/game/doom_doom_ii)
+    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/), [GOG](https://www.gog.com/en/game/doom_64)
 - Android
-    - [DeltaTouch](http://opentouchgaming.com/delta-touch/), **PAID** [Buy on Google Play](https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch)
+    - [DeltaTouch](http://opentouchgaming.com/delta-touch/), **PAID** [Buy on Google Play](https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch). Collection of the following Source Ports:
+        - GZDoom
+        - ZDoom
+        - LZDoom
+        - Zandronum
+        - DSDA
+        - PrBoom+
+        - Chocolate
+        - Dhewm3
 
 ### Mods
 
@@ -98,6 +134,19 @@ Format = `WAD` / `IWAD`, `IPK3`
 
 Quake
 
+### IWAD
+
+- [Quake](https://store.steampowered.com/app/2310/Quake/), [GOG (with Expansions)](https://www.gog.com/game/quake_the_offering)
+- Quake II
+- BONUS: [Quake Bundle](https://store.steampowered.com/bundle/27500/Quake_Collection_Bundle/)
+- [LibreQuake](https://librequake.queer.sh/). [Source Code](https://github.com/lavenderdotpet/LibreQuake). The Freedoom of Quake / idTech2
+
+### Source Port
+
+- [FTEQW](https://fte.triptohell.info/downloads). [Source Code](https://fte.triptohell.info/downloads). Mod Best. Probably GZDoom of Quake
+- [QuakeSpasm-Spiked](https://triptohell.info/moodles/qss/). [Source Code](https://github.com/Shpoike/Quakespasm)
+- See [more source ports on Quake Wiki](https://quakewiki.org/wiki/Engines).
+
 ## idtech3
 
 Quake III
@@ -106,8 +155,8 @@ Quake III
 
 
 - Quake III Arena
-- Xonotic
-- OpenArena
+- [Xonotic](https://xonotic.org/), [Source Code](https://gitlab.com/xonotic/xonotic)
+- [OpenArena](http://www.openarena.ws/download.php), [Source Code organisation on GitHub](https://github.com/OpenArena)
 - Wolfenstein
     - Return to the castle Wolfenstein
     - Enemy Teritory
@@ -120,6 +169,10 @@ DOOM 3
 
 - DOOM 3
 - Quake 4
+
+### Source Ports
+
+- [Dhewm3](https://dhewm3.org/). [Source Code](https://github.com/dhewm/dhewm3)
 
 ## idtech5
 
@@ -190,12 +243,27 @@ Format: ???
 
 ### IWAD
 
+> [!NOTE]
+> Developers may edit the source port for their specific project.  
+> For best result, use the binary provided with from the IWAD
+
 Format = `PCK` & Other Datas
 
 - afdsfasd
+- [PVKK: Planetenverteidigungskanonenkommandant](https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/)
 - [Buckshot Roulette](https://store.steampowered.com/app/2835570/Buckshot_Roulette/) (**Needs Verification**)
-- Hexagon Engine
+- [Hexagon Engine](https://github.com/Perkedel/HexagonEngine)
 - etc.
+
+### Source Ports
+
+> [!IMPORTANT]
+> Godot Engine usually were not supposed to be used by its Engine itself! Rather,  
+> the developers compiles their IWADs & PWADs onto a standalone & Mod PCKs (or other types of datas) respectively.  
+> These compiled results are what's distributed & customer facing.
+
+- [(***Original Vanilla***)](https://godotengine.org/download/), [Source code](https://github.com/godotengine/godot)
+- I forgor the *Red Engine*!
 
 ## Unity Engine
 
@@ -222,6 +290,16 @@ Format = Unity Engine Datas
 - ChilloutVR (Arena DM)
 - etc.
 
+### Source Ports
+
+> [!IMPORTANT]
+> Unity Engine usually were not supposed to be used by its Engine itself! Rather,  
+> the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
+> These compiled results are what's distributed & customer facing.
+
+- [(***Proprietary Vanilla***)](https://unity.com/download)
+    - Use the Unity Hub to manage different versions of the Engine. The download link above nowadays serves this Hub.
+
 ## Unreal Engine 1
 
 ### IWAD
@@ -233,18 +311,58 @@ Format = Unreal Engine Datas
 
 ## Unreal Engine 2
 
+### IWAD
+
+### Source Ports
+
+- ***Proprietary Vanilla***
+
 ## Unreal Engine 3
 
 ### IWAD
 
 Format = Unreal Engine Datas
 
-- A Hat in Time
+- [A Hat in Time](https://store.steampowered.com/app/253230/A_Hat_in_Time/)
 - Bioshock Infinite
+
+### Source Ports
+
+> [!IMPORTANT]
+> Unreal Engine usually were not supposed to be used by its Engine itself! Rather,  
+> the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
+> These compiled results are what's distributed & customer facing.
+
+- ***Proprietary Vanilla***
 
 ## Unreal Engine 4
 
+### IWAD
+
+- Wuthering Waves (**Needs Verification**)
+- etc. There are so many!
+
+### Source Ports
+
+> [!IMPORTANT]
+> Unreal Engine usually were not supposed to be used by its Engine itself! Rather,  
+> the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
+> These compiled results are what's distributed & customer facing.
+
+- ***Proprietary Vanilla***
+
 ## Unreal Engine 5
+
+### IWAD
+
+### Source Ports
+
+> [!IMPORTANT]
+> Unreal Engine usually were not supposed to be used by its Engine itself! Rather,  
+> the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
+> These compiled results are what's distributed & customer facing.
+
+- ***Proprietary Vanilla***
 
 ## Extra Articles
 
