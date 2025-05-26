@@ -38,6 +38,11 @@ Format = Wolf Datas
 
 - [ECWolf](https://maniacsvault.net/ecwolf/). [Source Code](https://bitbucket.org/ecwolf/ecwolf/src/master/).
 
+### Mods
+
+- [Wolf3D.net](https://beta.wolf3d.net/)
+    - [ECWolf Mods & Standalones](https://beta.wolf3d.net/engines/ecwolf/games)
+
 ## idtech1
 
 ### IWAD
@@ -47,6 +52,8 @@ Format = `WAD` / `IWAD`, `IPK3`
 - DOOM Series, 
     - DOOM. See DOOM I + II KEX
     - DOOM II. See DOOM I + II KEX
+    - TNT: Evilution. See DOOM I + II KEX
+    - The Plutonia Experiment. See DOOM I + II KEX
     - DOOM64. See DOOM64 KEX
 - Raven
     - Heretic
@@ -68,6 +75,15 @@ Format = `WAD` / `IWAD`, `IPK3`
 - [Freedoom](https://freedoom.github.io/download.html)
     - Phase 1
     - Phase 2
+- Hacx
+    - [1.2](https://www.doomworld.com/idgames/themes/hacx/hacx12)
+    - [2.0](https://forum.drdteam.org/viewtopic.php?t=5771&)
+    - [Twitch 'n Kill](http://www.drnostromo.com/hacx/)
+- [Harmony](http://heroestospare.com/rabotik/harmony.php). The KEX version maybe extended (**Need Verification: Check Asset completeness**)
+- [Adventure of Square](http://adventuresofsquare.com/)
+- [Delaweare](https://spaceisgreen.nl/delaweare.htm)
+    - [Alt Download](https://web.archive.org/web/20250211191240/http://spaceisgreen.nl/delaweare.htm)
+    - [BONUS! Space is Green Website & More Stuffs](http://www.spaceisgreen.nl/)
 - For ZDoom, See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
 
 ### Source Ports
@@ -107,6 +123,10 @@ Format = `WAD` / `IWAD`, `IPK3`
 
 ### Mods
 
+- Bring your own ~~Floppy Disk~~ USB (COMING SOON). Pls help us order, separate or merge the safety types (each own repo)! There are:
+    - SFW
+    - NSFW
+    - NSFL (Derogatory. The Fictional Guro should already been SFW since that's what DOOM is)
 - [idgames](https://www.gamers.org/ftp/archives.html)
     - Folowing available master archives are:
         - [idgames1](ftp://archives.gamers.org/pub/idgames/) (**MOST ACTIVE: Vanilla, MBF, Boom**)
