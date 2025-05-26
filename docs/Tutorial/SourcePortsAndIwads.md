@@ -177,6 +177,11 @@ Quake III
 - Wolfenstein
     - Return to the castle Wolfenstein
     - Enemy Teritory
+- See [more IWADS at ioquake3's list](https://ioquake3.org/extras/derivative-games/)
+
+### Source Ports
+
+- [ioquake3](https://ioquake3.org/), [Source Code](https://github.com/ioquake/ioq3/) (**Needs Verification: idtech evolution number?**)
 
 ## idtech4
 
@@ -184,16 +189,23 @@ DOOM 3
 
 ### IWAD
 
-- DOOM 3
-- Quake 4
+- [DOOM 3](https://store.steampowered.com/app/9050/DOOM_3/), not BFG!!!
+- [Quake 4](https://store.steampowered.com/app/2210/Quake_4/)
 
 ### Source Ports
 
+- [(*original vanilla BFG*)](https://github.com/id-Software/DOOM-3-BFG)
 - [Dhewm3](https://dhewm3.org/). [Source Code](https://github.com/dhewm/dhewm3)
+- [RBDOOM-3-BFG](https://www.moddb.com/mods/rbdoom-3-bfg), [Source Code](https://github.com/RobertBeckebans/RBDOOM-3-BFG/)
+
+### Mods
+
+- [Mod SDK for dhewm3](https://github.com/dhewm/dhewm3-sdk)
+- See [more idtech4 mods for dhewm3 at official dhewm website](https://dhewm3.org/mods.html)
 
 ## idtech5
 
-> [!NOTE]
+> [!CAUTION]
 > This is the oldest engine of id that's still **proprietary**  
 > By this evolution, you're on your own. But there is a pixel of hope.  
 > There has to be. In times of eon at least.  
@@ -238,6 +250,11 @@ DOOM: Dark Ages
 
 ## BUILD Engine
 
+> [!CAUTION]
+> This Game Engine is **Partially Proprietary** or unable to be considered Free Culture compliant!  
+> See the [copy of BUILD License on eduke32](https://www.eduke32.com/buildlic.txt)  
+> Certain Source Port maybe dual licensed alongside such as GNU GPL series.
+
 Duke Nukem 3D, Blood, Powerslave, Shadow Warrior, Star Wars
 
 ### IWAD
@@ -262,10 +279,17 @@ Format = BUILD datas
 
 ### Source Ports
 
-- ([*original vanilla source code*](https://github.com/videogamepreservation/dukenukem3d))
+- ([*original vanilla source code*](https://github.com/videogamepreservation/dukenukem3d)), preserved by Video Games Preservation.
 - [Raze](https://raze.zdoom.org/downloads), [Source Code](https://github.com/ZDoom/Raze/). GZDoom for BUILD games
 - [EDuke32](https://www.eduke32.com/) (For Duke Nukem), [Source Code](https://voidpoint.io/terminx/eduke32)
 - NBlood (For Blood), [Source Code](https://github.com/NBlood/NBlood)
+
+### Mods
+
+- [Dukeworld](https://www.dukeworld.com/)
+    - [2001 - current](https://www.dukeworld.com/2001-current/)
+    - [classic dukeworld](https://www.dukeworld.com/classic%20dukeworld/)
+- [20th Anniversary: World Tour Steam Workshop](https://steamcommunity.com/app/434050/workshop/)
 
 ## Cube 1 (Deprecated, see Cube 2)
 
@@ -314,7 +338,15 @@ Format = `PCK` & Other Datas
 - [(***Original Vanilla***)](https://godotengine.org/download/), [Source code](https://github.com/godotengine/godot)
 - I forgor the *Red Engine*!
 
+### Mods
+
+- [Official Addons Repository](https://godotengine.org/asset-library/asset)
+
 ## Unity Engine
+
+> [!CAUTION]
+> This Game Engine is **Proprietary**!  
+> Source edit maybe available through contracts.
 
 > [!NOTE]
 > Unity Engine no longer has new outstanding IWAD since their first.  
@@ -349,8 +381,16 @@ Format = Unity Engine Datas
 - [(***Proprietary Vanilla***)](https://unity.com/download)
     - Use the Unity Hub to manage different versions of the Engine. The download link above nowadays serves this Hub.
 
+### Mods
+
+- [Unity Assets Store (Official)](https://assetstore.unity.com/)
+- [Fab](https://www.fab.com/)
 
 ## Unreal Engine 1
+
+> [!CAUTION]
+> Unreal Engine series is **Proprietary**! (**Need Verification: which one proprietary & open sourced?**)  
+> Source edit maybe available through contracts.
 
 ### IWAD
 
@@ -389,7 +429,8 @@ Format = Unreal Engine Datas
 
 ### IWAD
 
-- Wuthering Waves (**Needs Verification**)
+- Fortnite
+- Wuthering Waves (**Needs Verification: Unreal evolution number?**)
 - etc. There are so many!
 
 ### Source Ports
@@ -400,6 +441,10 @@ Format = Unreal Engine Datas
 > These compiled results are what's distributed & customer facing.
 
 - ***Proprietary Vanilla***
+
+### Mods
+
+- [(NEW) Fab (Official)](https://www.fab.com/)
 
 ## Unreal Engine 5
 
@@ -413,6 +458,10 @@ Format = Unreal Engine Datas
 > These compiled results are what's distributed & customer facing.
 
 - ***Proprietary Vanilla***
+
+### Mods
+
+- [(NEW) Fab (Official)](https://www.fab.com/)
 
 ## Extra Articles
 
