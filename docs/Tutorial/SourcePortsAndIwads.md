@@ -26,7 +26,7 @@ The following lists various engines, games, and the data for those engines.
 
 ### IWAD
 
-Format = `...`
+Format = Wolf Datas
 
 - [Wolfenstein 3D (with Spear of Destiny??)](https://store.steampowered.com/app/2270/Wolfenstein_3D/), [GOG](https://www.gog.com/en/game/wolfenstein_3d)
     - [BONUS! Wolf Pack](https://store.steampowered.com/sub/770867/)
@@ -218,6 +218,38 @@ DOOM: Dark Ages
 
 - DOOM: The Dark Ages
 
+
+## BUILD Engine
+
+Duke Nukem 3D, Blood, Powerslave, Shadow Warrior, Star Wars
+
+### IWAD
+
+Format = BUILD datas
+
+- Duke Nukem 3D. Format = `GRP`
+    - [20th Anniversary: World Tour](https://store.steampowered.com/app/434050/Duke_Nukem_3D_20th_Anniversary_World_Tour/)
+    - [20th Anniversary Full Kit With Extras on Zoom Platforms](https://www.zoom-platform.com/product/duke-nukem-3d-atomic-edition)
+- Blood. Format = Blood datas (`BLOOD.INI`, etc.)
+    - [Fresh Supply](https://store.steampowered.com/app/1010750/Blood_Fresh_Supply/), [GOG](https://www.gog.com/en/game/blood_fresh_supply)
+- [Powerslave / Exhumed](http://store.steampowered.com/app/1260020/), [GOG](https://www.gog.com/en/game/powerslave)
+- [NAM](https://store.steampowered.com/app/329650/NAM/), [GOG](https://www.gog.com/game/nam). Format = `GRP`
+- [Redneck Rampage](https://www.gog.com/en/game/redneck_rampage_collection). Format = `GRP`
+    - [Steam (No Music)](https://store.steampowered.com/app/565550/Redneck_Rampage/)
+    - [Rides Again (Steam, No Music)](https://store.steampowered.com/app/580940/Redneck_Rampage_Rides_Again/)
+- [Shadow Warrior](https://www.gog.com/en/game/shadow_warrior_complete), [Steam](https://store.steampowered.com/app/238070/Shadow_Warrior_Classic_1997/). Format = `GRP`
+    - [Classics Redux](https://store.steampowered.com/app/358400/Shadow_Warrior_Classic/)
+- [World War II GI](https://store.steampowered.com/app/376750/World_War_II_GI/). Format = `GRP`
+    - [Platoon Leader](http://dukertcm.com/knowledge-base/downloads-rtcm/wwiigi-addons/)
+- See [supported games for Raze at ZDoom Wiki](https://zdoom.org/wiki/Raze)
+
+### Source Ports
+
+- ([*original vanilla source code*](https://github.com/videogamepreservation/dukenukem3d))
+- [Raze](https://raze.zdoom.org/downloads), [Source Code](https://github.com/ZDoom/Raze/). GZDoom for BUILD games
+- [EDuke32](https://www.eduke32.com/) (For Duke Nukem), [Source Code](https://voidpoint.io/terminx/eduke32)
+- NBlood (For Blood), [Source Code](https://github.com/NBlood/NBlood)
+
 ## Cube 1 (Deprecated, see Cube 2)
 
 ## Cube 2
@@ -299,6 +331,7 @@ Format = Unity Engine Datas
 
 - [(***Proprietary Vanilla***)](https://unity.com/download)
     - Use the Unity Hub to manage different versions of the Engine. The download link above nowadays serves this Hub.
+
 
 ## Unreal Engine 1
 
