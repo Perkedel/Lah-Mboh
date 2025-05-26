@@ -1142,3 +1142,25 @@ object BlackSkull
     frame BKSK { light BLACKKEY }
 }
 // End Realm667
+
+// Alando1
+// Shoop Da Whoop
+/*
+Actually I made these myself. He had no such lighting for it.
+*/
+object ShoopDaWhoop
+{
+    frame LZAH {light BFGBALL}
+}
+
+object MyLazer
+{
+    //frame LAZH {light BFGBALL}
+    frame LAZA {light BFGBALL_X3}
+}
+
+object LazerSpray
+{
+    frame LAZ2 {light BFGBALL_X3}
+}
+// end Alando1

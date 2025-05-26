@@ -1,0 +1,50 @@
+=======================================================================
+Alando's Funny Weapon
+=======================================================================
+Title                   : Alando's Funny Weapon
+Filename                : MAHLAZA.wad
+Date Finished           : May 29th, 2009
+Author          	: Alando1 (Alan)
+E-Mail                  : ajd4070@hotmail.com
+Other Wads By Author   : alanguns.wad, or anything relating to the P.I.A.
+Description             : A super funny and super powerful weapon that replaces the BFG (Hint: IMA FIRIN MAH LAZAH!!!)
+Additional Credits      : To the creator of the Shoop Da Whoop You Tube skit.
+=======================================================================
+* Play Information *
+
+Source port                         : ZDoom, GZDoom, SkullTag (Any version)
+Map                                      : None
+Single Player                      : Yes
+Cooperative 2-4 Player  : Can be used
+Deathmatch 	         :  Can be used
+Difficulty Settings             : No
+New Sounds                       : Yes
+New Music                          : No
+New Graphics                    : Yes
+Demos Replaced               : None
+Other Game Styles	          : N/A
+
+
+* Construction *
+
+Base                    : From Scratch
+Build Time              : A day
+Editors used            : DeepSea,  Notepad, PictureIt! Express
+Known Bugs              : None reported.
+
+* Copyright / Permissions *
+
+Inspiration Note: After getting inspired by a friend of mine in one of my art classes in college, I researched the Shoop Da Whoop and got a kick out of it. After seeing that this laser type of thing and seeing how powerful it is, why not put something like that in Doom. I tested this on some monster heavy wads and man, it made Hell turn into Heaven (Easier). I hope you all will enjoy it and laugh your butt off. Don't forget to FIRE YOUR LAZAH!!!!!! LOL.
+
+
+You may distribute this WAD in any format 
+ (Internet, Diskette, CD, etc) as long as you include this file intact. 
+
+Remember, if you really want to own some bad guys, FIRE YOUR LAZAH!!!!!! BAAAAAAAHHHHHH!!!!!!!!!!!!!
+
+
+* Where to get this Wad?
+(You have it, don't ya?)
+
+
+ http://www.doomworld.com/idgames/ or any other mirrors.

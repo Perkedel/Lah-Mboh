@@ -191,7 +191,7 @@ Quake III
 ### IWAD
 
 
-- Quake III Arena
+- [Quake III Arena](https://store.steampowered.com/app/2200/Quake_III_Arena/) (Arena DM)
 - [Xonotic](https://xonotic.org/), [Source Code](https://gitlab.com/xonotic/xonotic)
 - [OpenArena](http://www.openarena.ws/download.php), [Source Code organisation on GitHub](https://github.com/OpenArena)
 - Wolfenstein
@@ -267,6 +267,25 @@ DOOM: Dark Ages
 
 - DOOM: The Dark Ages
 
+## GoldSrc
+
+Valve Half Life 1, Portal 1, TF1
+
+### IWAD
+
+### Source Port
+
+## Source 1
+
+Half Life 2, TF2, Portal 2,
+
+## Source 2
+
+Half Life Alyx
+
+### IWAD
+
+### Source Ports
 
 ## BUILD Engine
 
@@ -417,7 +436,7 @@ Format = Unity Engine Datas
 Format = Unreal Engine Datas
 
 - Unreal
-- Unreal Tournament
+- Unreal Tournament (Arena DM)
 
 ## Unreal Engine 2
 
@@ -489,3 +508,19 @@ Format = Unreal Engine Datas
     - [Wikipedia: id tech](https://en.wikipedia.org/wiki/Id_Tech)
     - [Wikipedia: Saber Interactive](https://en.wikipedia.org/wiki/Saber_Interactive)
     - [Rage 2](https://en.wikipedia.org/wiki/Rage_2). While the Rage 1 is id Tech 5, Rage 2 is Avalance's proprietary in-house Apex Engine (still with id Software tho).
+
+## HaxeFlixel
+
+> [!CAUTION]
+> This Game Engine is compiled framework only. Meaning in order to play or test, you must compile your project first, which consumes time.
+
+### IWAD
+
+- Friday Night Funkin
+
+### Source Ports
+
+### Mods
+
+> [!CAUTION]
+> Beware! Some games when modded means to compile a whole new fork, hence another full binary.

@@ -128,6 +128,8 @@ For the thing we've yoinked
     - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
 - [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. Some mods have not been active recently, so we decided to yoink some of them that do.
     - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Make the achievement out of the class of it. The Achievement system will scan everything & list everything that's based on Achievement)!
+- Alando1
+    - [ShoopDaWhoop Lazaaaaaaah](https://www.doomworld.com/idgames/combos/alazer). ???.
 
 ## Dependencies
 

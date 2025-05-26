@@ -293,3 +293,11 @@ weapons/barniclefire		dsbarnfr
 weapons/incant	                dsincant
 weapons/spirit1                 dsspirt1
 // end WRW
+
+// Alando1
+// Shoop da Whoop
+gun/shoop                 mahlazah
+gun/lazer1                 dslboom
+gun/lazer2                 dslboom2
+gun/lazer3                 dslboom3
+// end Alando1

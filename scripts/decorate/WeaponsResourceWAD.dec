@@ -1579,7 +1579,7 @@ ACTOR D2C_Pipebomb : Weapon 25018
       PIPE BCDEFGH 1
       PIPE Z 8
       PIPE IJKLMNOP 1
-      PIPE P 0 A_FireCustomMissile("Pipebomb",0,1,0,0)
+      PIPE P 0 A_FireCustomMissile("D2C_StrayPipebomb",0,1,0,0)
       PIPE Q 8 A_PlayWeaponSound("weapons/pbthrow")
       PIPE RSTU 1
       PIPE Z 8
@@ -1635,7 +1635,8 @@ ACTOR D2C_Detonator : Weapon
    }
 }
 
-ACTOR Pipebomb : Rocket
+// Pls don't use `Pipebomb` name, too generic!
+ACTOR D2C_StrayPipebomb : Rocket
 { 
     Scale 0.1
     - NOGRAVITY
@@ -1661,7 +1662,7 @@ ACTOR Pipebomb : Rocket
     }
 }
 
-ACTOR PipebombExplosion 
+ACTOR D2C_StrayPipebombExplosion 
 {
     SeeSound "weapons/explode"
     SpawnID 201
