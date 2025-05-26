@@ -3,3 +3,4 @@
 // (JOELwindows7)
 
 //IWAD = "freedoom2.wad"
+LOAD = "Lah-Piye.pk7"

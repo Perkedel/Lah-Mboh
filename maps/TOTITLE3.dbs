@@ -102,11 +102,11 @@ maps
 				requiredarchives = "";
 			}
 		}
-		defaultfloortexture = "FLOOR0_3";
-		defaultceiltexture = "CEIL3_2";
-		defaulttoptexture = "STARGR1";
-		defaultwalltexture = "STARGR1";
-		defaultbottomtexture = "STARGR1";
+		defaultfloortexture = "FLOOR0_2";
+		defaultceiltexture = "CEIL3_1";
+		defaulttoptexture = "STARBR1";
+		defaultwalltexture = "STARBR1";
+		defaultbottomtexture = "STARBR1";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;

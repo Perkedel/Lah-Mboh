@@ -23,6 +23,19 @@ AddOptionMenu "GameplayOptions"
 }
 // end Add Now!
 
+// Extras for Main Menu
+// End game menu
+AddListmenu "MainMenu" before "QuitMenu" {
+	// Thancc AFADoomer. That's what I'm looking for!
+	// https://www.afadoomer.com/wolf3d/downloads.html
+	// https://github.com/AFADoomer/Wolf3D/
+	IfGame (Doom, Strife, Chex) {
+		/* PatchItem "M_ENDGAME", "e", "EndGameMenu" // always add it this! */
+		TextItem "$MNU_ENDGAME", "e", "EndGameMenu" // always add it this!
+	}
+}
+
+
 // NSFW Content
 OptionValue "NSFWContentValues"
 {
