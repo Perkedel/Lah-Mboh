@@ -103,6 +103,18 @@ Format = `WAD` / `IWAD`, `IPK3`
 
 ### Mods
 
+- [idgames](https://www.gamers.org/ftp/archives.html)
+    - Folowing available master archives are:
+        - [idgames1](ftp://archives.gamers.org/pub/idgames/) (**MOST ACTIVE: Vanilla, MBF, Boom**)
+        - [idgames2](ftp://archives.gamers.org/pub/idgames2/)
+        - [unreal](ftp://archives.gamers.org/pub/unreal/).
+    - Use an FTP explorer to explore 
+    - The master is at [ftp://archives.gamers.org/](ftp://archives.gamers.org/)
+    - primary download server is [ftp://ftp.fu-berlin.de/](ftp://ftp.fu-berlin.de/). **Pls use this to explore & download**
+        - [idgames1](ftp://ftp.fu-berlin.de/pc/games/idgames/) (**MOST ACTIVE: Vanilla, MBF, Boom**)
+        - [idgames2](ftp://ftp.fu-berlin.de/pc/games/idgames2/)
+        - [unreal](ftp://ftp.fu-berlin.de/pc/games/unreal/)
+    - **idgames1 submission available!** Visit [this interface](https://www.gamers.org/cgi/IdgamesUpload.html) for the upload form.
 - [ModDB](https://moddb.com):
     - [DOOM II](https://www.moddb.com/games/doom-ii/mods)
     - [DOOM I](https://www.moddb.com/games/doom/mods)
@@ -129,6 +141,7 @@ Format = `WAD` / `IWAD`, `IPK3`
     - [Forum](https://i.iddqd.ru/)
 - [WAD-archive.com](https://archive.org/details/wadarchive). Download all!, [original rehosted site](https://www.wad-archive.com/).
 - [Doomshack.org](https://doomshack.org/)
+- DOOM I + II Mods on Bethesda (**can be explored in the game!**). Only covers **Vanilla through MBF21 & id24**
 
 ## idtech2
 
@@ -356,7 +369,7 @@ Format = Unreal Engine Datas
 
 Format = Unreal Engine Datas
 
-- [A Hat in Time](https://store.steampowered.com/app/253230/A_Hat_in_Time/)
+- [A Hat in Time](https://store.steampowered.com/app/253230/A_Hat_in_Time/) (Mod Workshop)
 - Bioshock Infinite
 
 ### Source Ports
