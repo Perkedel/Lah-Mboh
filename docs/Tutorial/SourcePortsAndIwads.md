@@ -57,10 +57,14 @@ Format = `WAD` / `IWAD`, `IPK3`
     - BONUS: [Raven Pack](https://store.steampowered.com/sub/439/)
 - Strife
     - [Veteran Edition](https://store.steampowered.com/app/317040/Strife_Veteran_Edition/), [GOG](https://www.gog.com/game/strife_veteran_edition)
-- Chex Quest
-    - 1
-    - 2
-    - 3
+- Chex Quest.
+    - [1](https://doomwiki.org/wiki/Chex_Quest)
+    - [2](https://doomwiki.org/wiki/Chex_Quest#Chex_Quest_2)
+    - [3](https://doomwiki.org/wiki/Chex_Quest_3)
+        - [Vanilla Edition](https://dsdarchive.com/wads/chex3v_1_0). Click that blue title! [Website](https://melodic-spaceship.neocities.org/chex3v/)
+        - [Huh Download](https://www.chexquest3.com/downloads/)
+    - Bonus: [Chex Quest HD](https://store.steampowered.com/app/804270/Chex_Quest_HD/)
+    - Bonus: [Ultimate ZDoom](http://www.doomlegends.com/chexquest/tucq.html)
 - [Freedoom](https://freedoom.github.io/download.html)
     - Phase 1
     - Phase 2
