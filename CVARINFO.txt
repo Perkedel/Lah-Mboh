@@ -16,6 +16,14 @@ user int derogatorynazi = 0; // anti-semitism wolfenstein
 user int flashingLight = 0;
 user int horrorcontent = 0;
 
+// THE FRIKING PERSISTENCE
+/*
+PLS HELP ME HOW TO PERSISTENCE BEYOND SAVE FILE!
+*/
+
+
+// end PERSISTENCE
+
 // TDRR's CVARs
 //server bool ctfannouncer = true;
 //server int ctflimit = 0;

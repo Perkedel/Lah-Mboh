@@ -550,7 +550,8 @@ ACTOR XBSniper : Weapon 25008
       Loop
    Fire:
       XBSN A 0 A_JumpIfNoAmmo(1)
-      XBFR A 5 A_FireBullets(0, 0,1,20,0,10)
+      // `0` puff error
+      XBFR A 5 A_FireBullets(0, 0,1,20,"BulletPuff",10)
       XBSN B 5
       XBSN C 5
       XBSN D 5
@@ -655,7 +656,7 @@ ACTOR Gauntlet : Weapon 25010
       Loop
    Fire:
       GLET B 3 A_PlayWeaponSound("weapons/gswing")
-      GLET C 3 A_CustomPunch(6, 0, 0, "Puff")
+      GLET C 3 A_CustomPunch(6, 0, 0, "BulletPuff")
       GLET D 3
       GLET D 0
       GLET C 3
@@ -698,7 +699,7 @@ ACTOR Lightsaber : Weapon 25011
       SABR C 3 
       SABR D 3 
       SABR E 3  A_Playsound("weapons/sattack")
-      SABR F 3  A_CustomPunch(80, 1, 0, 0)
+      SABR F 3  A_CustomPunch(80, 1, 0) // `0` puff errors, remove it!
       SABR E 3 
       SABR D 3 
       Goto Ready 
@@ -1735,7 +1736,7 @@ ACTOR COPGun : Weapon 25019
       COPG A 0 A_GunFlash
       COPG A 0 A_FireCustomMissile("CheapAlert",0,0,0,0)
       COPG A 0 A_TakeInventory("COPgunInClip",1)
-      COPG B 1 Bright A_FireBullets(2,2,1,35,0,0)
+      COPG B 1 Bright A_FireBullets(2,2,1,35,"BulletPuff",0) // `0` errors
       COPG CD 1 Bright
       COPG A 1 A_ReFire
       Goto Ready
@@ -2286,14 +2287,14 @@ ACTOR Tazer : Weapon 25025
    Fire:
       TAZO A 1 A_JumpIfNoAmmo(1)
       TAZO B 0 A_PlayWeaponSound("weapons/tazershot")
-      TAZO B 3 A_CustomPunch(10, 1, 0, 0)
+      TAZO B 3 A_CustomPunch(10, 1, 0) // `0` puff errors, remove it!
       TAZO C 0 A_PlayWeaponSound("weapons/tazershot")
       TAZO C 3
       TAZO C 0 A_PlayWeaponSound("weapons/tazershot")
       Goto Ready
    Hold:
       TAZO A 1 A_JumpIfNoAmmo(1)
-      TAZO B 3 A_CustomPunch(10, 1, 0, 0)
+      TAZO B 3 A_CustomPunch(10, 1, 0) // `0` puff errors, remove it!
       TAZO C 3
       Goto Ready
    }
@@ -2335,7 +2336,7 @@ ACTOR WalterPPK : Weapon 25026
       WALT A 7
       Goto Ready
    Flash:
-      WALT E 3 A_FireBullets(2,2,1,10,0,1)
+      WALT E 3 A_FireBullets(2,2,1,10,"BulletPuff",1) // `0` errors
       Stop
    }
 }
@@ -2786,7 +2787,7 @@ ACTOR Magnum : Weapon 25030
       Loop
    Fire:
       MAGN A 0 A_JumpIfNoAmmo (3)
-      MAGF A 3 A_FireBullets (4, 1, 1, 20, "puff", 1)
+      MAGF A 3 A_FireBullets (4, 1, 1, 20, "BulletPuff", 1)
       MAGN B 2
       MAGN C 2
       MAGN D 2
@@ -2846,7 +2847,7 @@ ACTOR Axe : Weapon 25032
    Fire:
       QAXE B 4
       QAXE C 4
-      QAXE D 4 A_CustomPunch(12, 0, 0, "Puff")
+      QAXE D 4 A_CustomPunch(12, 0, 0, "BulletPuff")
       QAXE D 4 A_ReFire
       Goto Ready
    }
@@ -3842,10 +3843,10 @@ ACTOR SubMachineGun : Weapon 25046
    Fire:
       SMGG B 0 A_GunFlash
       SMGG B 0 A_PlayWeaponSound("weapons/smg")
-      SMGG B 3 A_FireBullets(3,3,1,6,0,1) 
+      SMGG B 3 A_FireBullets(3,3,1,6,"BulletPuff",1) // `0` errors
       SMGG C 0 A_CheckReload
       SMGG C 0 A_PlayWeaponSound("weapons/smg")
-      SMGG C 3 A_FireBullets(3,3,1,6,0,1) 
+      SMGG C 3 A_FireBullets(3,3,1,6,"BulletPuff",1) // `0` errors
       SMGG A 0 A_ReFire
       Goto Ready
    Flash:
@@ -4078,7 +4079,8 @@ ACTOR Pistol3 : Weapon 25053
       PST3 A 3
       PST3 B 0 A_PlayWeaponSound("weapons/pistol3")
       PST3 B 0 A_Light1
-      PST3 B 4 Bright A_FireBullets(2,1,1,6,0,1) 
+      // The ZDoom complains if you bullet puff `0`, return to `BulletPuff`
+      PST3 B 4 Bright A_FireBullets(2,1,1,6,"BulletPuff",1) 
       PST3 C 5 A_Light0
       PST3 A 3 A_ReFire
       Goto Ready
@@ -4115,7 +4117,7 @@ ACTOR Shotgun2 : Weapon 25054
       SHT5 A 2
       SHT5 B 0 A_Light2
       SHT5 B 0 A_PlayWeaponSound("weapons/shtgn2fr")
-      SHT5 B 5 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 5 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 C 0 Bright A_Light0
       SHT5 C 4 Bright A_CheckReload
       SHT5 DEF 4
@@ -4158,7 +4160,7 @@ ACTOR HiPrecisionGun : Weapon 25055
       SHT3 A 3
       SHT3 C 4 A_GunFlash
       SHT3 D 0 A_PlayWeaponSound("weapons/hpshotfr")
-      SHT3 D 5 A_FireBullets(3,2,18,10,"puff",4)
+      SHT3 D 5 A_FireBullets(3,2,18,10,"BulletPuff",4)
       SHT3 A 32
       SHT3 B 21 A_PlayWeaponSound("weapons/hpshotrl")
       SHT3 A 4
@@ -4671,15 +4673,15 @@ ACTOR Burstshotgun : Weapon 26005
       SHT5 A 0 A_JumpIfNoAmmo(13)
       SHT5 A 0 A_JumpIfInventory("BSGShell",5,1)
       SHT5 A 0 A_FireCustomMissile("CheapAlert")
-      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
-      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
-      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
-      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
-      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"puff",1)
+      SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
       Goto Ready
       SHT5 A 0 A_JumpIfInventory("Shell",5,2)

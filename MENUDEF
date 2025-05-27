@@ -32,9 +32,23 @@ AddListmenu "MainMenu" before "QuitMenu" {
 	// https://www.afadoomer.com/wolf3d/downloads.html
 	// https://github.com/AFADoomer/Wolf3D/
 	IfGame (Doom, Strife, Chex) {
-		/* PatchItem "M_ENDGAME", "e", "EndGameMenu" // always add it this! */
-		TextItem "$MNU_ENDGAME", "e", "EndGameMenu" // always add it this!
+		PatchItem "M_ENDGAM", "e", "EndGameMenu" // always add it this!
+		//TextItem "$MNU_ENDGAME", "e", "EndGameMenu" // always add it this!
 	}
+	/*
+	I know, it's useless. If you'd like to quit, then just QuitGameMenu
+	and to New Game, then just NewGameMenu.
+	The EndGameMenu is there because there is e.g. go back to selector interface
+	like above WolfDoom ZDoom TC. Or in your case: KEX ultimated options of
+	Mod manager menu & Change Game menu, which only available if you are not in game.
+	Huh. wonder how to replicate that in GZDoom. I don't like to separate Engine
+	just to make TVLeanback Game selector menu, like KEX with KEX HTML Game selector menu
+	Very inellegant! 1 Engine, covers all. HAhaa, ikr, impossible.
+	btw, if you want to Wolfenstein, then just ECWolf already.
+	I sensed shenanigans around here 
+	but I am not allowed to tell in this Source Code Repository.
+	Still, remember to officially buy the games on Steam, to blend in.
+	*/
 }
 
 

@@ -19,16 +19,20 @@
 // Existence Verifier. Inherit this class on your DLC stuffs
 // (JOELwindows7)
 
-// Our scanner can scan your stuff the mod should look for & verify its existence.
-// The result can be handed over to the handler you desire.
-// thancc m8f for inspiration
-// https://github.com/mmaulwurff/stupid-achievements
-// the `sa_Achievement` which is that base achievement bit is what's the interest.
-// As well as the menu that list those class of it (`sa_AchievementList`).
-// again, this is not to be spawned.
-// https://zdoom.org/wiki/Dictionary didn't know there is JSON-kindof thing here! I thought Godot was the only one had it.
-// https://zdoom.org/wiki/Operators_(ZScript)
-// https://zdoom.org/wiki/Using_inheritance
+/*
+Our scanner can scan your stuff the mod should look for & verify its existence.
+The result can be handed over to the handler you desire.
+thancc m8f for inspiration
+https://github.com/mmaulwurff/stupid-achievements
+the `sa_Achievement` which is that base achievement bit is what's the interest.
+As well as the menu that list those class of it (`sa_AchievementList`).
+again, this is not to be spawned.
+https://zdoom.org/wiki/Dictionary didn't know there is JSON-kindof thing here! I thought Godot was the only one had it.
+https://zdoom.org/wiki/Operators_(ZScript)
+https://zdoom.org/wiki/Using_inheritance
+
+Alas, to have a `Default` property initializer, it's on `Actor` only. `Thinker` whose been inherited from, lacks such.
+*/
 class LMBH_ExistenceVerifier: Actor abstract
 {
 	Default

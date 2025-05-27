@@ -116,6 +116,6 @@ Unlike many modern games, WAD files can be easily read with nowadays tools & are
 
 ## Sources
 
-- aaa
+- [Getting Started on Classic DOOM](https://www.doomworld.com/forum/topic/113477-new-to-classic-doom-read-this-tutorial-for-help/). Doomkid
 - bbb
 - ccc

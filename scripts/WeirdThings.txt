@@ -921,6 +921,21 @@ class BFG9000Old : BFG9000
 	{
 		AltFire:
 			Goto OldFire;
+		// Fire:
+		// 	Goto OldFire;
+		// AltFire:
+		// 	// Unfortunately, we must redefine it, since we overwrote the Fire.
+		// 	// How are we suppose to bring it back?
+		// 	// Oh I know, like this?:
+		// 	//Goto super::Fire;
+		// 	// Nope, doesn't work. it shoots, but comes nothing
+		// 	BFGG A 20 A_BFGsound;
+		// 	BFGG B 10 A_GunFlash;
+		// 	BFGG B 10 A_FireBFG;
+		// 	BFGG B 20 A_ReFire;
+		// 	Goto Ready;
+
+		// No, replacing left click ruins it entirely. let's go back to former
 	}
 }
 
@@ -990,3 +1005,5 @@ class SoulsphereLater: SurgeryKit
 // phoenix wings
 // https://zdoom.org/wiki/SECRETS
 
+// https://zdoom.org/wiki/Classes:BulletPuff
+// https://zdoom.org/wiki/A_CustomPunch
