@@ -62,12 +62,17 @@ class LMBH_IwadDetect : StaticEventHandler
         https://zdoom.org/wiki/Structs:Wads
         https://zdoom.org/wiki/Events_and_handlers
         */
-        if(Wads.CheckNumForFullName("FREEDOOM"))
+        if(Wads.CheckNumForFullName("FREEDOOM") > -1)
         {
             Console.printf("\c[green]You have FREEDOOM!");
-        } else
+        }
+        else if(Wads.CheckNumForFullName("BLASPHEM") > -1) 
         {
-            Console.printf("There's no IWAD detectable by lumps. I assumes it either \c[green]original DOOM's\c-, clones, or \c[green]custom IWADs thereof\c-..");
+            Console.printf("\c[green]You have BLASPHEMER!");
+        }
+        else
+        {
+            Console.printf("There's no IWAD detectable by lumps. I assumes it either \c[green]original DOOM's\c-, \c[green]Raven's (Heretic or Hexen)\c-, \c[green]Strife\c-, clones, or a \c[green]custom IWAD thereof\c-..");
         }
     }
 }
@@ -85,4 +90,9 @@ some features that are different from IWADs appart.
 Remember, see the function that crashes when you used free replacement instead of legit DOOM.
 Other mods may even double measure crash if you use shareware DOOM's (`doom.id.doom1.shareware`), in case that GZDoom is patched to remove anti-shareware-patching.
 Yeah, let's not fight with Graf again. Basically it.
+
+https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/zscript/events.zs
+oh look, EventHandler itself is a StaticEventHandler. Interesting..
+
+https://github.com/ZDoom/gzdoom/blob/master/src/d_iwad.cpp
 */
