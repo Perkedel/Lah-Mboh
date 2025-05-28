@@ -61,18 +61,34 @@ class LMBH_IwadDetect : StaticEventHandler
 
         https://zdoom.org/wiki/Structs:Wads
         https://zdoom.org/wiki/Events_and_handlers
+
+        not Wads.CheckNumForFullName("FREEDOOM") > -1
         */
-        if(Wads.CheckNumForFullName("FREEDOOM") > -1)
+        if(Wads.FindLump("FREEDOOM") > -1)
         {
-            Console.printf("\c[green]You have FREEDOOM!");
+            Console.printf(StringTable.Localize("$IWDT_FD"));
         }
-        else if(Wads.CheckNumForFullName("BLASPHEM") > -1) 
+        else if(Wads.FindLump("BLASPHEM") > -1) 
         {
-            Console.printf("\c[green]You have BLASPHEMER!");
+            Console.printf(StringTable.Localize("$IWDT_BL"));
         }
         else
         {
-            Console.printf("There's no IWAD detectable by lumps. I assumes it either \c[green]original DOOM's\c-, \c[green]Raven's (Heretic or Hexen)\c-, \c[green]Strife\c-, clones, or a \c[green]custom IWAD thereof\c-..");
+            Console.printf(StringTable.Localize("$IWDT_UNKNOWN"));
+        }
+
+        // Now here's the CheckNumForFullname one.
+        /*
+        This function according to somewhere **read files loaded**.
+        whereas above FindLump finds whatever inside it.
+
+        argh how to work this? not with CheckNumForFullName ?
+        I gotta place it right next to this Mod PK3??????
+        https://zdoom.org/wiki/Structs:Wads Article about it does not exist! pls document!
+        */
+        if(Wads.CheckNumForFullName("ID24RES.WAD") != -1)
+        {
+            Console.printf(StringTable.Localize("$IWDT_ID24RES"));
         }
     }
 }
