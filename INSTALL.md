@@ -13,6 +13,13 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 > Don't believe us? Try it. `doom2.wad` or whatever id IWAD it, & compare.  
 > Only the [Kinsie-test](https://forum.zdoom.org/viewtopic.php?f=42&t=57221) inspired room on the right tunnel were supposed to have blue checkerboards (GZDoom `-NOFLAT-`). Nowhere else.
 > The console should not spit Texture Missing errors at all (Beside the ObAddon Texture 2 & 3 about `-GOTH-` & `-DOOM-` empty marker lumps, we'll fix that later).
+>
+> EDIT 2025-05-08: We're making patch that activates if you use DOOM OG IWADs. Who knows sometimes using Freedoom destroys dignity, which is a full blown hoax!  
+> No shame for unable to buy DOOM legit. Heck, even I had bought DOOM I + II with my Steam account, still use Freedoom. Because it had more stuffs than DOOM & Final DOOM combined. (minus the alignments of course)  
+> Beside, Bethesda had never wanted to `trigger` Red Cross international ever again, or any German stuffs of that matter even tho there's still Wolfenstein stuffs going on to this day (about 2015s tho). So they ommited it this in Medipacks, and that in the MAP31 & MAP32.  
+> How do I know? Find it on the place where everyone preserves old stuffs, you should already know what it is. The KEX are not the same file we know of, trust me!  
+> Just how do you find the copy of original DOOM if you know, it's a gory game? beside wests of course, No game store in your area interested, It's just outright gone into obscurity.  
+> Beware! Shenanigans still at large!
 
 [![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)  
 [![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)  
