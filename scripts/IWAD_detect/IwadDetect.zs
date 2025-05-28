@@ -93,7 +93,7 @@ class LMBH_IwadDetect : StaticEventHandler
     }
 }
 /*
-There is other ways one could find detection
+There are other ways one could make detection
 
 Lump Filtering:
 https://zdoom.org/wiki/Lump_filtering
@@ -104,7 +104,7 @@ specifically, if it's `doom.freedoom`, it does this. Otherwise if it's `doom.id`
 But wait, don't get sus too fast! It could be filtered because of different object looks & alignments. or maybe
 some features that are different from IWADs appart.
 Remember, see the function that crashes when you used free replacement instead of legit DOOM.
-Other mods may even double measure crash if you use shareware DOOM's (`doom.id.doom1.shareware`), in case that GZDoom is patched to remove anti-shareware-patching.
+Other mods may even double measure crash if you use shareware DOOM's (`doom.id.doom1.shareware`), in case that GZDoom fork is patched to remove anti-shareware-patching.
 Yeah, let's not fight with Graf again. Basically it.
 
 https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/zscript/events.zs
