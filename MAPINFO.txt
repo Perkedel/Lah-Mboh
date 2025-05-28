@@ -10,6 +10,7 @@ gameinfo
 		"SrA_eventHandler",
 		"LMBH_achiever",
 		"LMBH_ExistenceHandler",
+		"LMBH_IwadDetect",
 		"DNB_werrorHandler"
 	
 	addquitmessages =
