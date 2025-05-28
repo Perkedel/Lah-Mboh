@@ -14,9 +14,11 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 > Only the [Kinsie-test](https://forum.zdoom.org/viewtopic.php?f=42&t=57221) inspired room on the right tunnel were supposed to have blue checkerboards (GZDoom `-NOFLAT-`). Nowhere else.
 > The console should not spit Texture Missing errors at all (Beside the ObAddon Texture 2 & 3 about `-GOTH-` & `-DOOM-` empty marker lumps, we'll fix that later).
 
+[![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)  
+[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)
 
 ## Dependencies:
-- IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [~~`doom2.wad`~~ (**PAID**, Werror! Incomplete Texture!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
+- IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [`doom2.wad` (**PAID**, PLS_WAIT! Completing Texture Compats!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
 - Source Port: [GZDoom latest](https://zdoom.org/downloads).
     - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.11.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.13.
     - Otherwise you must **use the latest version**!
@@ -28,6 +30,15 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 
 > [!IMPORTANT]
 > There are also PWADs we've preincluded for your convenience & other stuffs. See [`CREDITS.md`](/CREDITS.md) for more info.
+
+> [!NOTE]
+> An OG DOOM Compatibility patch is being made, WIP
+> 
+> We basically yoinked Freedoom's stuffs into this here. Whatever that's missing in DOOM II (Typical IWAD for most Mods), Indeed Freedoom exclusives, & across others (such as Evilution, Plutonia, DOOM I, etc.).  
+> Please let us know what is missing, misaligned, etc., so we can complete this compatibility.  
+> Thancc, [DavidXNewton for the inspiration](https://ramp2024.doomproject.com/) (`freedoom` set of `flat`s were found in this GigaWAD to cover levels that uses those Freedoom stuffs. You know, communities submit levels whatever they are.). Cool and good.
+> 
+> Please beware, that we cannot easily fix compatibility between Evilution & Plutonia sets, especially their alignments.
 
 ## Steps
 

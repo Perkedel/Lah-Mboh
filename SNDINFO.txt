@@ -301,3 +301,8 @@ gun/lazer1                 dslboom
 gun/lazer2                 dslboom2
 gun/lazer3                 dslboom3
 // end Alando1
+
+// Can't Sleep NTMAI FrameMe
+// https://github.com/LocalInsomniac/FrameMe
+FrameMe/custom "sounds/leszek_gameover.opus"
+// end Can't Sleep

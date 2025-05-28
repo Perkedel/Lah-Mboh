@@ -5,6 +5,9 @@
 
 Unbullshitments included! Please immediately create Issue for any still-bullshat stuffs found!
 
+[![Download Page](/graphics/Generated/Eevee-DoomTextGen/freedoom-big-download.png)](INSTALL.md)  
+[![Submit your own level](/graphics/Generated/Eevee-DoomTextGen/doom-small-submit-your-own-level.png)](CONTRIBUTING.md)
+
 **Download**: [Release](https://github.com/Perkedel/Lah-Mboh/releases)  
 Other Page: [Itch](https://joelwindows7.itch.io/lah-mboh)  
 Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-mboh-test-megawads), ~~[Doomworld](https://www.doomworld.com/forum/topic/151743-gzdoom-zscript-lah-mboh-test-map-megawads/)~~, [ZDoom Forum](https://forum.zdoom.org/viewtopic.php?t=80264)
@@ -91,6 +94,9 @@ And you just saw, it OutDoomed the Hell into Fraggelicious (**OutPizza'd the Hut
 Enough yapping! let's go ahead & see here around.
 
 ## How to Install?!?!?!?
+
+> [!NOTE]
+> An OG DOOM Compatibility patch is being made, WIP 
 
 This Mod is a PWAD and you need to have a copy of a Doom IWAD.
 

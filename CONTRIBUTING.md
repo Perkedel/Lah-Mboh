@@ -3,6 +3,8 @@
 > [!IMPORTANT]
 > Comply these rules below to ensure your submission be includable
 
+[![Submit Levels Quick & Dirty](/graphics/Generated/Eevee-DoomTextGen/d-submitDirty.png)](https://github.com/Perkedel/Lah-Mboh/issues/new?template=002-Level_submit.yml)
+
 We trust that you've read & agreed with our general Terms of Service [here](https://perkedel.netlify.app/terms) & our Privacy Policy [here](https://perkedel.netlify.app/privacy_policy), these at hands.
 
 We also have to stress that you must ensure what you're about to submit is what you drew yourself, or if yoinked, you have either received permission from the author and/or auto-granted by the license of the yoinks you're using.
