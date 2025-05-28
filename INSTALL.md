@@ -15,7 +15,8 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 > The console should not spit Texture Missing errors at all (Beside the ObAddon Texture 2 & 3 about `-GOTH-` & `-DOOM-` empty marker lumps, we'll fix that later).
 
 [![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)  
-[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)
+[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)  
+[![View CREDITS.md](/graphics/Generated/Eevee-DoomTextGen/doom-small-view-creditsmd.png)](/CREDITS.md)
 
 ## Dependencies:
 - IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [`doom2.wad` (**PAID**, PLS_WAIT! Completing Texture Compats!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
