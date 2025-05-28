@@ -130,6 +130,9 @@ For the thing we've yoinked
     - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Make the achievement out of the class of it. The Achievement system will scan everything & list everything that's based on Achievement)!
 - Alando1
     - [ShoopDaWhoop Lazaaaaaaah](https://www.doomworld.com/idgames/combos/alazer). ???.
+    - Tony's Accessibility Mod. ???. PLS YOINK the features!
+- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/).
+    - The Textures, Flats, & stuffs in case of using DOOM IWAD instead of Freedoom I said (via [RAMP 2024](https://ramp2024.doomproject.com/), & rest manually).
 
 ## Dependencies
 
