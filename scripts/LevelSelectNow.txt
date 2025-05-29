@@ -185,6 +185,9 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("T_RSPAWN", StringTable.Localize("$T_RSPAWN")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_CA_OUT", StringTable.Localize("$T_CA_OUT")));
 		hardCodeLevels.push(HardCodeLevelName.Create("T_NJ_BGL", StringTable.Localize("$T_NJ_BGL")));
+		// hardCodeLevels.push(HardCodeLevelName.Create("LOADFOL", StringTable.Localize("$LOADFOL"))); // Sorry, map wads cannot be in a subfolder unlike everyone else.
+		// hardCodeLevels.push(HardCodeLevelName.Create("T_SMMU", StringTable.Localize("$SMMUTEST")));
+		hardCodeLevels.push(HardCodeLevelName.Create("SMMUTEST", StringTable.Localize("$SMMUTEST")));
 		hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
 	}
 	

@@ -84,9 +84,9 @@ Format = `WAD` / `IWAD`, `IPK3`
 - [Delaweare](https://spaceisgreen.nl/delaweare.htm)
     - [Alt Download](https://web.archive.org/web/20250211191240/http://spaceisgreen.nl/delaweare.htm)
     - [BONUS! Space is Green Website & More Stuffs](http://www.spaceisgreen.nl/)
-- [Disdain](https://store.steampowered.com/app/2113270/DISDAIN/). **For GZDoom (Included)**
+- [Disdain](https://store.steampowered.com/app/2113270/DISDAIN/). **For VkDoom (Included)**
 - [Selaco](https://store.steampowered.com/app/1592280/Selaco/), [Website](https://store.steampowered.com/app/1592280/Selaco/). **For GZDoom (Included)**. **Very Featureful!**: Steam Workshop, Mod Scan, Menu Revamp, Level Editor (UDB Modified), Steam Achivements, Steam Trading Cards, Half Life like Open World (Map Partitioned)
-- [Hedon Bloodrite](https://store.steampowered.com/app/1072150/Hedon_Bloodrite/), [Demo](https://www.moddb.com/mods/hedon). **For GZDoom (Included)**
+- [Hedon Bloodrite](https://store.steampowered.com/app/1072150/Hedon_Bloodrite/), [Demo](https://www.moddb.com/mods/hedon). **For GZDoom (Included)**. **Features**: Steam Trading Cards
 - [Mala Petaka](https://store.steampowered.com/app/2104460/Mala_Petaka/). **For GZDoom (Included)**. From Indonesia.
 - For ZDoom, See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
 
@@ -413,6 +413,7 @@ Format = Unity Engine Datas
 - Gun Girls Z (Deprecated)
 - VRChat (Arena DM)
 - ChilloutVR (Arena DM)
+- Escape from Tarkov (Arena DM)
 - etc.
 
 ### Source Ports

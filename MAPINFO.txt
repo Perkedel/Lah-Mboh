@@ -6,6 +6,7 @@ gameinfo
 	addeventhandlers =
 		"JekyllPShootingRangeHandler", //This netevent quite buggy on such as La Tailor Girl it triggers every tick or something
 		"CorpseHandler",
+		"CorpsePlayerHandler",
 		// Mboh Achievements, based on m8f's Stupid Achievements
 		"SrA_eventHandler",
 		"LMBH_achiever",
@@ -80,6 +81,7 @@ gameinfo
 		"$SUPLEMA",
 		"$KARBITAN",
 		"$SLINSALERT",
+		"$CANTUNPOLITIC",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -143,6 +145,9 @@ DoomEdNums
 	/*
 	Reserve 25000s!! or change em a bit.
 	*/
+
+	// FraggleScript Test
+	24590 = SoccerTest
 
 	// Realm667
 	// Crates Rifleman
@@ -1283,6 +1288,34 @@ map mrwdemo lookup "mrwdemo"
 	sky1 = "SKY2"
 	exitPic = "LMBHTIHD"
 	music = "D_READ_M"
+	//cluster = 26555
+	//AllowRespawn
+	//RandomPlayerStarts
+	//RememberState
+}
+
+map LOADFOL lookup "LOADFOL"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY2"
+	exitPic = "LMBHTIHD"
+	music = "D_READ_M"
+	//cluster = 26555
+	//AllowRespawn
+	//RandomPlayerStarts
+	//RememberState
+}
+
+map SMMUTEST lookup "SMMUTEST"
+{
+	author = "fraggle (w/ JOELwindows7 edit)"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	//exitPic = "LMBHTIHD"
+	//music = "D_READ_M"
 	//cluster = 26555
 	//AllowRespawn
 	//RandomPlayerStarts

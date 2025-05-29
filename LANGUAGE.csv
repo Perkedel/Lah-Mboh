@@ -113,6 +113,7 @@ Entered the cave,T_CA_IN,,Masuk ke goa,,,,
 Enjay’s Breakable Glass,T_NJ_BGL,,Kaca Pecah Belah Enjay,,,,
 Weapons Resource WAD,WRWDEMO,,WAD Paket Senjata,,,,
 Monsters Resource WAD,MRWDEMO,,WAD Paket Monster,,,,
+Map in subfolder,LOADFOL,,Map di subfolder,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -127,12 +128,11 @@ Monsters Resource WAD,MRWDEMO,,WAD Paket Monster,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
+SMMU Test map,SMMUTEST,,Map Tes SMMU,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+Generic Test,_GENERIC_TEST,"Map file named `TEST` that’s it. Either it’s Kinsie’s Tester, or somebody.",Tes Generik,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -929,9 +929,13 @@ No wonder there's no EXIT. We gotta take this place back for him & others!",ENTE
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
-,,,,,,,
-,,,,,,,
+"Congratulations! You’ve successfully loaded a Map
+In a subfolder. Go Use (%s) any of the walls to return to Hub.",ENTER_LOADFOL,,"Selamat! Anda telah berhasil memuat Map
+di sebuah subfolder. Silahkan tekan Use (%s) pada salah satu sisi tembok ini utk kembali ke Hub.",,,,
+"Congratulations! You’ve successfully loaded a Map
+In a subfolder. Go Use (",ENTER_LOADFOL_1,,"Selamat! Anda telah berhasil memuat Map
+di sebuah subfolder. Silahkan tekan Use (",,,,
+) any of the walls to return to Hub.,ENTER_LOADFOL_2,,) pada salah satu sisi tembok ini utk kembali ke Hub.,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -1569,3 +1573,8 @@ Rasainlah gimana para sesepuh memulai!",,,,
 But is the lore also good tho?",SLINSALERT,You may find self insert stories,"PERINGATAN SELF INSERT!
 
 Tapi apakah ceritanya bagus juga?",,,,
+"Don’t delete politics no more.
+If you keep doing that, it’ll stick more closer tomorrow.
+It goes like that everytime.",CANTUNPOLITIC,Teaser for our controversial move-out DLC,"Jangan pernah hapus politik lagi.
+Jika Anda terus melakukannya, mereka akan semakin melekat besok.
+Terus begitu setiap kalinya.",,,,

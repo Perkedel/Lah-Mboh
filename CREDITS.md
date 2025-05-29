@@ -133,6 +133,8 @@ For the thing we've yoinked
     - Tony's Accessibility Mod. ???. PLS YOINK the features!
 - [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/).
     - The Textures, Flats, & stuffs in case of using DOOM IWAD instead of Freedoom I said (via [RAMP 2024](https://ramp2024.doomproject.com/), & rest manually).
+- [SMMU](https://soulsphere.org/projects/smmu/). fraggle. **GNU GPL v2**
+    - Just the test map that's it.
 
 ## Dependencies
 
@@ -201,6 +203,8 @@ For the thing we've yoinked
 	- This looks foundational & inspirational, let's remake it! also by hand yeah! **& even bigger!!!!** so I continue, him.. idk..
 - [Russian Overkill](https://forum.zdoom.org/viewtopic.php?t=29915). PillowBlaster. ???. -. 
 	- VMAbort Handler. Never seen a PWAD ever think to have VMAbort detector. It plays music, and spits the lyric & ASCII image text onto the console everytime the GZDoom soft crashed.
+- [FrameMe](https://github.com/LocalInsomniac/FrameMe). Can't Sleep (Nobody Told Me About id). ???.
+    - inspire the function of how does it catch deaths then TF2 point out who killed them.
 - [Kenney.nl Public Domain Assets](https://www.kenney.nl/). Kenney. **CC0**.
 	- every something such as textures & sprites & models
 - [Nash's ZDoom Project Template](https://forum.zdoom.org/viewtopic.php?f=3&t=25083). Nash. Yes Anything, Recommend Credit. [SOURCE CODE](https://github.com/nashmuhandes/ZDoomProjectTemplate)

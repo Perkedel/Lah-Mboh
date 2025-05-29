@@ -1,0 +1,72 @@
+===========================================================================
+Advanced engine needed  : SMMU
+Primary purpose         : Single play
+===========================================================================
+Title                   : SMMU test level
+Filename                : smmutest.wad
+Release date            : 2012-07-21
+Author                  : Simon Howard (fraggle)
+Email Address           : fraggle@gmail.com
+Other Files By Author   : greenfish.wad
+
+Description             : This is a test level created for SMMU to demo
+                          FraggleScript and several other features. It's
+                          pretty rough around the edges and I really only
+                          used it while I was developing the code to test
+                          things out. The eventual plan was for it to be a
+                          proper demo level in the style of BOOMEDIT.WAD.
+
+                          I distributed this level to some others but I
+                          can't remember if I actually properly released
+                          it at all. At some point most of the level broke
+                          due to changes I made. I've made some minor
+                          tweaks so that it works again.
+
+                          Disclaimer: includes some crude immature humor. I
+                          was 17 when I made it and Ali G was popular at
+                          the time.
+
+Additional Credits to   : James Haley (Quasar) for supplying me with a copy
+                          of the file.
+
+===========================================================================
+* What is included *
+
+New levels              : One level named "SMMUTEST" (itself a demo of
+                          SMMU's ability to have arbitrary-named levels)
+Sounds                  : No
+Music                   : No
+Graphics                : No
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You may do anything you want with this file.
+
+* Where to get the file that this text file describes *
+
+SMMU's graveyard website: http://www.soulsphere.org/projects/smmu/
+

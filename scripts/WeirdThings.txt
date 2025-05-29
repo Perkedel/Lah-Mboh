@@ -716,9 +716,29 @@ class CorpseHandler : EventHandler
 			//CorpseFader.Create(e.thing);
 			handleTheCorpseNow(e, e.thing);
 		}
+		// else if(e.thing && e.thing.bIsPlayer)
+		// {
+
+		// }
+	}
+
+	override void PlayerDied(PlayerEvent e)
+	{
+		super.PlayerDied(e);
+		handleSelfPlayerCorpseNow(e , e.PlayerNumber, players[e.PlayerNumber]);
 	}
 
 	virtual void handleTheCorpseNow(worldEvent e, Actor thingy)
+	{
+
+	}
+
+	virtual void handleThePlayerCorpseNow(worldEvent e, Actor thingy)
+	{
+
+	}
+
+	virtual void handleSelfPlayerCorpseNow(PlayerEvent e, int number, PlayerInfo info)
 	{
 
 	}
@@ -730,6 +750,45 @@ class CorpseVampirismHandler: CorpseHandler
 	override void handleTheCorpseNow(worldEvent e, Actor thingy)
 	{
 		CorpseVampirism.Create(thingy);
+	}
+}
+
+// and player death
+class CorpsePlayerHandler: CorpseHandler
+{
+	override void handleSelfPlayerCorpseNow(PlayerEvent e, int number, PlayerInfo info)
+	{
+		// inspire https://github.com/LocalInsomniac/FrameMe
+		// Can't Sleep Nobody Told me About id
+		let totalKillSay = "";
+		PlayerInfo bully;
+		let bullyName = "";
+		let killSay = "??? ()";
+		let isPlayer = false;
+		let isSuicidal = false;
+		if(info.attacker is "PlayerPawn")
+		{
+			bully = PlayerPawn(info.attacker).player;
+			bullyName = bully.getUserName();
+			killSay = bullyName .. " (" .. info.attacker.getTag() .. ")";
+			isPlayer = true;
+		} else {
+			if(info.attacker)
+				killSay = info.attacker.getTag();
+			else
+				killSay = "some damage environment around";
+		}
+		// https://zdoom.org/wiki/GetTag
+		totalKillSay = "Player \c[green]"..info.GetUserName().."\c- died, killed by \c[brick]"..killSay.."\c-";
+		// check if it's a suicide or not!
+		if(info == bully)
+		{
+			totalKillSay = totalKillSay .. " (\c[red]SUICIDAL\c-)";
+			isSuicidal = true;
+		}
+		
+
+		Console.printf(totalKillsay);
 	}
 }
 
@@ -1007,3 +1066,25 @@ class SoulsphereLater: SurgeryKit
 
 // https://zdoom.org/wiki/Classes:BulletPuff
 // https://zdoom.org/wiki/A_CustomPunch
+// https://zdoom.org/wiki/ZScript_mixins
+// https://zdoom.org/wiki/FraggleScript
+// https://soulsphere.org/projects/smmu/smmu_howto/
+// https://doomwiki.org/wiki/FraggleScript
+// https://doomlegacy.sourceforge.net/docs/fsbasic.html
+// https://doomwiki.org/wiki/FraggleScript_functions
+// https://doomlegacy.sourceforge.net/docs/fsfuncs.html
+
+class SoccerTest: SmallBloodPool
+{
+	Default
+	{
+		//$Title Soccer Ball (FraggleScript Test)
+		//$Category Decoration
+	}
+	States
+	{
+		Spawn:
+			SOB2 A -1;
+			loop;
+	}
+}
