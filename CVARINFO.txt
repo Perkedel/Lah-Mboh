@@ -21,6 +21,26 @@ user int horrorcontent = 0;
 PLS HELP ME HOW TO PERSISTENCE BEYOND SAVE FILE!
 */
 
+// idk, just store the last played level name or something
+/*
+If your save somehow no longer compatible because did not realize you've updated 1 needle of a mod
+in haystacks of your DoomLaunches, welp, you dead.
+
+But at least I tried to save you by just fucking load where last time you had had it.
+but pls try to load just the ID the save stored.
+Then you pistol start it! Plus the upgrades if you are in Selaco.
+*/
+user string LMBH_lastLoadedLevel = "";
+user string LMBH_lastLoadedLevelFIFO0 = "";
+user string LMBH_lastLoadedLevelFIFO1 = "";
+user string LMBH_lastLoadedLevelFIFO2 = "";
+user string LMBH_lastLoadedLevelFIFO3 = "";
+user string LMBH_lastLoadedLevelFIFO4 = "";
+user string LMBH_lastLoadedLevelFIFO5 = "";
+user string LMBH_lastLoadedLevelFIFO6 = "";
+user string LMBH_lastLoadedLevelFIFO7 = "";
+user string LMBH_lastLoadedLevelFIFO8 = "";
+user string LMBH_lastLoadedLevelFIFO9 = "";
 
 // end PERSISTENCE
 
