@@ -238,6 +238,7 @@ For the thing we've yoinked
 > [!TIP]
 > Musics people have contributed, & we have yoinked outta somewhere in the wild.
 
+- Hidup ini Harus Jadi Berkat. *unknown*. **Public Domain** (**Need Verification**). I made cover of it this in my head. It was in style of ZZZ Blazewood song, where melody should be harmonica & rest about stuffs. Basically I kept imagining it this to eventual atleast kludge cover until I have Yamaha Genos to maximize it probably. The song itself is about that as long as you life, you gotta be the blessing to everyone, coz you're not gonna live forever & eventually had to *come back home*. My family is fond of this thing here, so yeah.
 - [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
 	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
 	- `D_E1M2` = `D_UNDERTO`. TheMisterCat - Look At Me I'm Underhalls Too
