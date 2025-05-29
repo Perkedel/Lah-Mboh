@@ -1294,7 +1294,7 @@ map mrwdemo lookup "mrwdemo"
 	//RememberState
 }
 
-map LOADFOL lookup "LOADFOL"
+map "LoadFolder/LOADFOL" lookup "LOADFOL"
 {
 	author = "JOELwindows7"
 	next = "MBOHTEST"
