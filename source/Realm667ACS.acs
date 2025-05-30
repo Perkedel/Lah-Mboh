@@ -188,3 +188,32 @@ script "bootJumpScript" (void)
     //thrust player
     ThrustThingZ (0, 80, 0, 0);
 }
+
+// Damage & Low Health Bloody System Captain Maniac
+// https://www.realm667.com/repository/sfx-shoppe/other#preview-3
+/*
+Submitted:CaptainManiac
+Sprites:BadMojo
+ACS by:CaptainManiac,BadMojo
+Idea by:CaptainManiac
+Special Thanks:Blue Shadow,MaxED,Scifista42,Buuu342
+Ideabase:The Fading and Blood on Screen effect from The Saboteur's regeneration
+system
+
+Name: Damage Hud Effects
+Type: Hud effects (SFX Other)
+ACS: Yes
+Commands: (these are their default values)
+	fd_enable = 1 	toggles screen fade
+	bs_enable = 1	toggles blood splats
+	ds_enable = 1 	toggles death splats
+	bs_devmode = 0 	toggles dev mode
+	ds_amount = 20 	sets the amount of blood splats on death
+	bs_minamount = 2 Minimum amount of blood
+	bs_maxamount = 5 Maximum amount of blood
+	bs_speed = 2 	Blood appearance speed
+	bsfdDefaults = 0 Set to 1 to reset cvars back to default values
+*/
+/*
+script here pls
+*/

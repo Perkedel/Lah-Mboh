@@ -60,6 +60,27 @@ server int sp_SpawnVelocityZ_Min = 28;
 server int sp_SpawnVelocityZ_Max = 32;
 server int sp_SpawnVelocityXY = 5;
 server int sp_ResDelay = 14;
+
+// Damage & Low Health Bloody System Captain Maniac
+/*
+user bool DamLHP_OverallEnable = FALSE; //toggles entire damage low health fx system
+user bool DamLHP_fd_enable = TRUE; //toggles fade
+user bool DamLHP_bs_enable = TRUE;	//toggles blood splats
+user bool DamLHP_ds_enable = TRUE; //toggles death splats (only works with blood splats enabled)
+user bool DamLHP_hb_enable = TRUE; //toggles heart beat
+
+user bool DamLHP_bs_devmode = FALSE; //toggles dev mode
+
+user int DamLHP_hb_starthp = 30; // sets the max amount of health that triggers the heart beat 
+user int DamLHP_hb_delay = 30; // sets the delay between heart beats
+user int DamLHP_ds_amount = 20; // sets the amount of blood splats on death
+user int DamLHP_bs_minamount = 2; //sets the minimum amount of random splats
+user int DamLHP_bs_maxamount = 5; //sets the maximum amount of random splats
+user int DamLHP_bs_speed = 2; //sets the speed of the splats appearing on screen
+user int DamLHP_bs_alpha = 0; // sets the opacity level of splats(0 = Default, 1 = Low)
+
+user bool DamLHP_bsfdDefaults = FALSE; //sets back to default values
+*/
 // End Realm667
 
 // m8f
