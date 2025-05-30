@@ -14,13 +14,20 @@ The following lists various engines, games, and the data for those engines.
 > 
 > Developers may edit the source port for their specific project.  
 > For best result, use the binary provided with from the IWAD if you'd like to play e.g. TCs, or a standalone designed game.
+>
+> Only SFW IWADs & PWADs are shown!  
+> For those *😏😏😏😏😏😏* stuffs, see the list on `Bring-your-own-usb-nsfw` (coming soon)
 
 ## Legends
 
 ### Symbol
 
+- `Official` = Came from the author or the company themselves. Source Ports that are available fresh from the factory oven. Mods, Plugins, Addons, Download / Market place held by the company themselves.
+- `Vanilla` = Original. Game Engine original source code and/or binary. Things that Source Ports derives from the beginning.
 - `Arena DM` = Multiplayer focused, Deathmatch, Social Media Hangout
 - `Deprecated` = Old & discontinued. Maybe replaced with the newer one. If Engine is deprecated, that mean its the recommendation to just that new one instead.
+- `Paid` = Source port or collections of it are paid (as most rest of them do not). Symbol unecessary for IWADs or PWADs / DLC, unless otherwise stated.
+- `Censored` = Contains censorship of certain regular element to cope out regional or mass regulations.
 
 ## idtech0
 
@@ -31,7 +38,7 @@ Format = Wolf Datas
 - [Wolfenstein 3D (with Spear of Destiny??)](https://store.steampowered.com/app/2270/Wolfenstein_3D/), [GOG](https://www.gog.com/en/game/wolfenstein_3d)
     - [BONUS! Wolf Pack](https://store.steampowered.com/sub/770867/)
 - Spear of Destiny, [~~steam~~](https://store.steampowered.com/app/9000/Spear_of_Destiny/) gone, see Wolf3D above??
-- [Super 3-D Noah Ark](https://store.steampowered.com/app/371180/Super_3D_Noahs_Ark/?snr=1_5_1100__1100&utm_source=steamwidget), [itch](https://wisdomtree.itch.io/s3dna)
+- [Super 3-D Noah Ark](https://store.steampowered.com/app/371180/Super_3D_Noahs_Ark/?snr=1_5_1100__1100&utm_source=steamwidget), [itch](https://wisdomtree.itch.io/s3dna). **Buy this to donate to ECWolf (except GOG) directly!**
 - [See more at ECWolf Wiki](https://maniacsvault.net/ecwolf/wiki/Game_data)
 
 ### Source Ports
@@ -88,7 +95,7 @@ Format = `WAD` / `IWAD`, `IPK3`
 - [Selaco](https://store.steampowered.com/app/1592280/Selaco/), [Website](https://store.steampowered.com/app/1592280/Selaco/). **For GZDoom (Included)**. **Very Featureful!**: Steam Workshop, Mod Scan, Menu Revamp, Level Editor (UDB Modified), Steam Achivements, Steam Trading Cards, Half Life like Open World (Map Partitioned)
 - [Hedon Bloodrite](https://store.steampowered.com/app/1072150/Hedon_Bloodrite/), [Demo](https://www.moddb.com/mods/hedon). **For GZDoom (Included)**. **Features**: Steam Trading Cards
 - [Mala Petaka](https://store.steampowered.com/app/2104460/Mala_Petaka/). **For GZDoom (Included)**. From Indonesia.
-- For ZDoom, See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
+- For ZDoom (& derivatives), See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
 
 ### Source Ports
 
@@ -109,12 +116,11 @@ Format = `WAD` / `IWAD`, `IPK3`
     - [ZDoom](https://zdoom.org/downloads) (deprecated, see GZDoom)
     - [GZDoom](https://zdoom.org/downloads) ([Source Code](https://github.com/ZDoom/gzdoom))
         - [VKDoom](https://vkdoom.org/) ([Source Code](https://vkdoom.org/))
-- Unity
+- Unity **Paid** **Censored**
     - see DOOM I + II & downgrade it with Beta!
-- KEX
-    - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/), [GOG](https://www.gog.com/en/game/doom_doom_ii)
-    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/), [GOG](https://www.gog.com/en/game/doom_64)
-- [Selaco](https://steamcommunity.com/app/1592280/workshop/). Steam Workshop for **IWAD Selaco**.
+- KEX **Paid** 
+    - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/), [GOG](https://www.gog.com/en/game/doom_doom_ii) **Censored: Medipack, Level Easter-egg**
+    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/), [GOG](https://www.gog.com/en/game/doom_64) **Censored: ???**
 - Android
     - [DeltaTouch](http://opentouchgaming.com/delta-touch/), **PAID** [Buy on Google Play](https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch). Collection of the following Source Ports:
         - GZDoom
@@ -158,7 +164,7 @@ Format = `WAD` / `IWAD`, `IPK3`
 - [itch.io](https://itch.io):
     - [Mods tagged `Doom`](https://itch.io/game-mods/tag-doom)
 - [Doomer Boards](https://doomer.boards.net/)
-    - [**Doomer Boards Projects**](https://doomer.boards.net/page/dbp). Monthly / Bi-monthly Community Project of Megawads. idgames keywords: `DBP`.
+    - [**Doomer Boards Projects**](https://doomer.boards.net/page/dbp). Monthly / Bi-monthly Community Project of Megawads. idgames keywords: `DBP`, `Doomer Boards`, `Doomer Boards Project`.
     - [Projects](https://doomer.boards.net/board/6/doom-projects). Megawads, Short Maps, Resources, Source Ports, etc.
 - [Doomworld](https://doomworld.com):
     - [idgames interface](https://www.doomworld.com/idgames)
@@ -173,7 +179,16 @@ Format = `WAD` / `IWAD`, `IPK3`
     - [Forum](https://i.iddqd.ru/)
 - [WAD-archive.com](https://archive.org/details/wadarchive). Download all!, [original rehosted site](https://www.wad-archive.com/).
 - [Doomshack.org](https://doomshack.org/)
+- [Selaco](https://steamcommunity.com/app/1592280/workshop/). Steam Workshop for **IWAD Selaco**.
 - DOOM I + II Mods on Bethesda (**can be explored in the game!**). Only covers **Vanilla through MBF21 & id24**
+
+### Tools
+
+- Ultimate Doom Builder
+- SLADE 3
+- General Editors
+    - Text Editor IDE
+    - Image & Vector Manipulations
 
 ## idtech2
 
@@ -267,6 +282,10 @@ DOOM: Eternal
 
 - DOOM: Eternal
 
+### Mods
+
+- DOOM Eternal Mods on Bethesda.net. Can be explored in game.
+
 ## idtech8
 
 DOOM: Dark Ages
@@ -283,9 +302,31 @@ Valve Half Life 1, Portal 1, TF1
 
 ### Source Port
 
+### Mods
+
+- Steam Workshops respectively for IWAD of..
+
 ## Source 1
 
 Half Life 2, TF2, Portal 2,
+
+### IWAD
+
+- Half Life 2
+- Garry's Mod
+
+### Source Ports
+
+- Source 1 SDK?
+
+### Mods
+
+- Steam Workshops respectively for IWAD of..
+
+### Tools
+
+- See Download Official Source Port
+- Source Film Maker (**Need Verification: what Source evolution?**). Build Machinima powered by Source
 
 ## Source 2
 
@@ -293,7 +334,20 @@ Half Life Alyx
 
 ### IWAD
 
+- Half Life: Alyx
+- S&box. Sequel of Gmod
+
 ### Source Ports
+
+- Source 2 SDK (Official)
+
+### Mods
+
+- Steam Workshops respectively for IWAD of..
+
+### Tools
+
+- See Download Official Source Port
 
 ## BUILD Engine
 
@@ -309,9 +363,10 @@ Duke Nukem 3D, Blood, Powerslave, Shadow Warrior, Star Wars
 Format = BUILD datas
 
 - Duke Nukem 3D. Format = `GRP`
-    - [20th Anniversary: World Tour](https://store.steampowered.com/app/434050/Duke_Nukem_3D_20th_Anniversary_World_Tour/)
-    - [20th Anniversary Full Kit With Extras on Zoom Platforms](https://www.zoom-platform.com/product/duke-nukem-3d-atomic-edition)
-- Blood. Format = Blood datas (`BLOOD.INI`, etc.)
+    - [20th Anniversary: World Tour](https://store.steampowered.com/app/434050/Duke_Nukem_3D_20th_Anniversary_World_Tour/) **Censored: Medipack**
+    - [20th Anniversary Full Kit With Extras on Zoom Platforms](https://www.zoom-platform.com/product/duke-nukem-3d-atomic-edition) **Censored: Medipack**
+    - Megaton (Deprecated) **Censored: Medipack**
+- Blood. Format = Blood datas (`BLOOD.INI`, `RFF`, etc.)
     - [Fresh Supply](https://store.steampowered.com/app/1010750/Blood_Fresh_Supply/), [GOG](https://www.gog.com/en/game/blood_fresh_supply)
 - [Powerslave / Exhumed](http://store.steampowered.com/app/1260020/), [GOG](https://www.gog.com/en/game/powerslave)
 - [NAM](https://store.steampowered.com/app/329650/NAM/), [GOG](https://www.gog.com/game/nam). Format = `GRP`
@@ -327,7 +382,10 @@ Format = BUILD datas
 ### Source Ports
 
 - ([*original vanilla source code*](https://github.com/videogamepreservation/dukenukem3d)), preserved by Video Games Preservation.
-- [Raze](https://raze.zdoom.org/downloads), [Source Code](https://github.com/ZDoom/Raze/). GZDoom for BUILD games
+- 20th Anniversary World Tour **PAID**. See IWAD of 20th Anniversary World Tour.
+- Official Blood **PAID**. see the IWAD above
+- Official Powerslave / Exhumed **PAID**. see the IWAD above
+- [Raze](https://raze.zdoom.org/downloads), [Source Code](https://github.com/ZDoom/Raze/). GZDoom for every BUILD games (Duke Nukem 3D, NBlood, Shadow Warrior, with HD Voice supports)
 - [EDuke32](https://www.eduke32.com/) (For Duke Nukem), [Source Code](https://voidpoint.io/terminx/eduke32)
 - NBlood (For Blood), [Source Code](https://github.com/NBlood/NBlood)
 
@@ -389,6 +447,10 @@ Format = `PCK` & Other Datas
 
 - [Official Addons Repository](https://godotengine.org/asset-library/asset)
 
+### Tools
+
+- See Download Official Source Port
+
 ## Unity Engine
 
 > [!CAUTION]
@@ -417,6 +479,9 @@ Format = Unity Engine Datas
 - VRChat (Arena DM)
 - ChilloutVR (Arena DM)
 - Escape from Tarkov (Arena DM)
+- Totally Accurate Battle Simulator
+- Totally Accurate Battleground (Arena DM)
+- Fireworks Mania
 - etc.
 
 ### Source Ports
@@ -426,13 +491,17 @@ Format = Unity Engine Datas
 > the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
 > These compiled results are what's distributed & customer facing.
 
-- [(***Proprietary Vanilla***)](https://unity.com/download)
+- [(***Proprietary Vanilla Official***)](https://unity.com/download) **PAID, with Trial Plan (Free *kinda-Full* version *ish* with permanent `Made with Unity` & revenue caps)**
     - Use the Unity Hub to manage different versions of the Engine. The download link above nowadays serves this Hub.
 
 ### Mods
 
 - [Unity Assets Store (Official)](https://assetstore.unity.com/)
 - [Fab](https://www.fab.com/)
+
+### Tools
+
+- See Download Official Source Port
 
 ## Unreal Engine 1
 
@@ -477,8 +546,9 @@ Format = Unreal Engine Datas
 
 ### IWAD
 
-- Fortnite
+- Fortnite (Arena DM)
 - Wuthering Waves (**Needs Verification: Unreal evolution number?**)
+- Player Unknown's Battleground / PUBG (Arena DM)
 - etc. There are so many!
 
 ### Source Ports
@@ -488,11 +558,15 @@ Format = Unreal Engine Datas
 > the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
 > These compiled results are what's distributed & customer facing.
 
-- ***Proprietary Vanilla***
+- ***Proprietary Vanilla*** **PAID, with Trial Plan (Free Full version with royalty cap)**
 
 ### Mods
 
 - [(NEW) Fab (Official)](https://www.fab.com/)
+
+### Tools
+
+- See Download Official Source Port
 
 ## Unreal Engine 5
 
@@ -505,20 +579,17 @@ Format = Unreal Engine Datas
 > the developers compiles their IWADs & PWADs onto a standalone & Mod assets respectively.  
 > These compiled results are what's distributed & customer facing.
 
-- ***Proprietary Vanilla***
+- ***Proprietary Vanilla*** **PAID, with Trial Plan (Free Full version with royalty cap)**
 
 ### Mods
 
 - [(NEW) Fab (Official)](https://www.fab.com/)
 
-## Extra Articles
+### Tools
 
-- Wikipedia
-    - [Wikipedia: id tech](https://en.wikipedia.org/wiki/Id_Tech)
-    - [Wikipedia: Saber Interactive](https://en.wikipedia.org/wiki/Saber_Interactive)
-    - [Rage 2](https://en.wikipedia.org/wiki/Rage_2). While the Rage 1 is id Tech 5, Rage 2 is Avalance's proprietary in-house Apex Engine (still with id Software tho).
+- See Download Official Source Port
 
-## HaxeFlixel
+## HaxeFlixel & OpenFl
 
 > [!CAUTION]
 > This Game Engine is compiled framework only. Meaning in order to play or test, you must compile your project first, which consumes time.
@@ -526,10 +597,22 @@ Format = Unreal Engine Datas
 ### IWAD
 
 - Friday Night Funkin
+- Papers Please
 
 ### Source Ports
 
 ### Mods
 
 > [!CAUTION]
-> Beware! Some games when modded means to compile a whole new fork, hence another full binary.
+> Beware! Some old games when modded means to compile a whole new fork, hence another full binary.
+
+- Friday Night Funkin Mods
+    - GameBanana `FNF`
+    - Gamejolt `FNF`
+
+## Extra Articles
+
+- Wikipedia
+    - [Wikipedia: id tech](https://en.wikipedia.org/wiki/Id_Tech)
+    - [Wikipedia: Saber Interactive](https://en.wikipedia.org/wiki/Saber_Interactive)
+    - [Rage 2](https://en.wikipedia.org/wiki/Rage_2). While the Rage 1 is id Tech 5, Rage 2 is Avalance's proprietary in-house Apex Engine (still with id Software tho).
