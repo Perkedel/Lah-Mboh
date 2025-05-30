@@ -157,6 +157,9 @@ Format = `WAD` / `IWAD`, `IPK3`
     - [Forum: Projects](https://forum.zdoom.org/viewforum.php?f=41&sid=676010c5a544e52c9534d236bcc18ff4)
 - [itch.io](https://itch.io):
     - [Mods tagged `Doom`](https://itch.io/game-mods/tag-doom)
+- [Doomer Boards](https://doomer.boards.net/)
+    - [**Doomer Boards Projects**](https://doomer.boards.net/page/dbp). Monthly / Bi-monthly Community Project of Megawads. idgames keywords: `DBP`.
+    - [Projects](https://doomer.boards.net/board/6/doom-projects). Megawads, Short Maps, Resources, Source Ports, etc.
 - [Doomworld](https://doomworld.com):
     - [idgames interface](https://www.doomworld.com/idgames)
     - [Forum](https://www.doomworld.com/forum/)
