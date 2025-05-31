@@ -13,7 +13,7 @@ types of known bullet, weapons would emit such as
     - Shotgun
     - Super Shotgun
     - Bites (such as from Pinkies)
-- Projectile ([`A_FireMissile`](https://zdoom.org/wiki/A_FireMissile), [`A_SpawnProjectile`](https://zdoom.org/wiki/A_SpawnProjectile), [~~`A_CustomMissile`~~ (Deprecated)](https://zdoom.org/wiki/A_CustomMissile)) a.k.a. `Missile`. The bullet projectile **literally spawns onto the scene, then fly towards where you shoot it at or whatever**. The bullet projectiles on these are typically very slow compared to hitscan. If a pistol has this type (in which the projectile runs super fast to fill in the effect), it feels very realistic & kind-of dodgeable at some point if you know what you're doing.
+- Projectile ([`A_FireMissile`](https://zdoom.org/wiki/A_FireMissile), Monster [`A_SpawnProjectile`](https://zdoom.org/wiki/A_SpawnProjectile), Monster [~~`A_CustomMissile`~~ (Deprecated)](https://zdoom.org/wiki/A_CustomMissile)) a.k.a. `Missile`. The bullet projectile **literally spawns onto the scene, then fly towards where you shoot it at or whatever**. The bullet projectiles on these are typically very slow compared to hitscan. If a pistol has this type (in which the projectile runs super fast to fill in the effect), it feels very realistic & kind-of dodgeable at some point if you know what you're doing.
     - Plasma Riffle
     - Rocket Launcher
     - BFG 9000
@@ -62,8 +62,20 @@ class anSpecialGuy : DoomPlayer
     ...
 }
 
+// Or an alergic?
+class anAlergicGuy : DoomPlayer
+{
+    ...
+    Default
+    {
+        DamageFactor "SpecificBarrel" 999999999999999999; // will fatally alergic to `aSpecificBarrel`'s explosion
+        PainChance "SpecificBarrel" 100; // for good measure.
+    }
+    ...
+}
+
 // from ZDoom Wiki (https://zdoom.org/wiki/Custom_damage_types_(ZScript)),
-// a flamable Zombie?, with special reaction to flames
+// a flamable Zombie?, with special reaction to flames which are `On Fire` & burned to death.
 class MyZombie : ZombieMan
 {
     Default
