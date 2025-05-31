@@ -12,8 +12,8 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
     - Main
     - Sides
     - Drinks. Such as waters, sometimes also a flavour powder
-    - Snacks
-    - Chewing gum. Usually contains xylitol usually on toothpastes
+    - Snacks & Confections (Candies & Gums)
+    - Special Chewing gum. Usually contains xylitol found on toothpastes
 - Lighting & Flames & heat
     - Flint & Steel
     - Fuel cells
