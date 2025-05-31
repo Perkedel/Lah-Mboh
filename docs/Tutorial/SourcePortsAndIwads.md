@@ -184,7 +184,8 @@ Format = `WAD` / `IWAD`, `IPK3`
 
 ### Tools
 
-- Ultimate Doom Builder
+- [Ultimate Doom Builder](https://ultimatedoombuilder.github.io/), [Source Code](https://github.com/UltimateDoomBuilder/UltimateDoomBuilder)
+    - For Selaco (Available in Selaco launch mode `Level Editor`), [Source Code](https://github.com/fhomolka/UltimateSelacoBuilder)
 - SLADE 3
 - General Editors
     - Text Editor IDE

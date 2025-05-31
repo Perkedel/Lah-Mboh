@@ -25,7 +25,7 @@ So no, Disable it all, even on above casual settings.
 
 ## Also best of the best keyboard.
 
-Which switches that has short enough travel, short in-response time & range. Typically this is a Cherry-MX Red & similar. It's a linear clickless switch with relatively short travel time.
+Which switches that has short enough travel, short in-response time & range. Typically this is a Cherry-MX Red & similar. It's a lightweight linear clickless switch with relatively short travel time.
 
 Also, ask for pre-lubrication if available.
 
