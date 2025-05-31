@@ -140,9 +140,9 @@ Format = `WAD` / `IWAD`, `IPK3`
     - NSFL (Derogatory. The Fictional Guro should already been SFW since that's what DOOM is)
 - [idgames](https://www.gamers.org/ftp/archives.html)
     - Folowing available master archives are:
-        - [idgames1](ftp://archives.gamers.org/pub/idgames/) (**MOST ACTIVE: Vanilla, MBF, Boom**)
-        - [idgames2](ftp://archives.gamers.org/pub/idgames2/)
-        - [unreal](ftp://archives.gamers.org/pub/unreal/).
+        - [idgames1](ftp://archives.gamers.org/pub/idgames/). idtech1: DOOM I, II, Heretic, Hexen, Strife stuffs (**MOST ACTIVE: Vanilla, MBF, Boom**)
+        - [idgames2](ftp://archives.gamers.org/pub/idgames2/). idtech2: Quake stuffs (**Inactive**)
+        - [unreal](ftp://archives.gamers.org/pub/unreal/). UE1: Unreal Engine 1 stuffs (**Inactive**) (**Need Verification: What Unreal Engine evolution it covers up to?**)
     - Use an FTP explorer to explore 
     - The master is at [ftp://archives.gamers.org/](ftp://archives.gamers.org/)
     - primary download server is [ftp://ftp.fu-berlin.de/](ftp://ftp.fu-berlin.de/). **Pls use this to explore & download**
