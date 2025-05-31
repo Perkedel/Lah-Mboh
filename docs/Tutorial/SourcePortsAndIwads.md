@@ -25,6 +25,7 @@ The following lists various engines, games, and the data for those engines.
 - `Official` = Came from the author or the company themselves. Source Ports that are available fresh from the factory oven. Mods, Plugins, Addons, Download / Market place held by the company themselves.
 - `Vanilla` = Original. Game Engine original source code and/or binary. Things that Source Ports derives from the beginning.
 - `Arena DM` = Multiplayer focused, Deathmatch, Social Media Hangout
+- `Achievement Enabled` = Achievement enabled even on modded situations. Typically, some or all Achievements are not available using mods and/or playing custom maps. This mark will be here for Source Port and/or IWAD that do still keep Achievements despite.
 - `Deprecated` = Old & discontinued. Maybe replaced with the newer one. If Engine is deprecated, that mean its the recommendation to just that new one instead.
 - `Paid` = Source port or collections of it are paid (as most rest of them do not). Symbol unecessary for IWADs or PWADs / DLC, unless otherwise stated.
 - `Censored` = Contains censorship of certain regular element to cope out regional or mass regulations.
@@ -395,7 +396,7 @@ Format = BUILD datas
 - [Dukeworld](https://www.dukeworld.com/)
     - [2001 - current](https://www.dukeworld.com/2001-current/)
     - [classic dukeworld](https://www.dukeworld.com/classic%20dukeworld/)
-- [20th Anniversary: World Tour Steam Workshop](https://steamcommunity.com/app/434050/workshop/)
+- [20th Anniversary: World Tour Steam Workshop](https://steamcommunity.com/app/434050/workshop/). (**Achievement Enabled**)
 
 ## Cube 1 (Deprecated, see Cube 2)
 
