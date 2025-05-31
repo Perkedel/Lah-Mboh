@@ -1,8 +1,8 @@
 # Survival Kit / MRE
 
-Survival Kit / Meal Ready to Eat is a special kit that will be used when needed. Typically these kind of things are useful in a Survival Camping, down to apocalypse situation.
+Survival Kit / Meal Ready to Eat is a special kit that will be used when needed. Typically these kind of things are useful in a Survival Camping, down to apocalyptic situations.
 
-A Survival Kit are designed to be stored on an emergency intended warehouse for very long time, and only be opened once the situation calls for it. Foods may exceed past their expiry dates, but in a moments like this, it's the only way.
+A Survival Kit are designed to be stored on an emergency intended warehouse / storages for very long time, and only be opened once the situation calls for it. Foods may exceed past their expiry dates, but in a moments like this, it's the only way.
 
 ## Content
 
@@ -11,7 +11,7 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
 - Foods & Beverages
     - Main
     - Sides
-    - Drinks. Such as waters, sometimes also a flavour powder
+    - Drinks. Such as waters, sometimes also include a flavour powder or pre-ground coffee powder
     - Snacks & Confections (Candies & Gums)
     - Special Chewing gum. Usually contains xylitol found on toothpastes
 - Lighting & Flames & heat
@@ -60,8 +60,8 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
     - Painkiller & Anesthetics
 - Weapons. Note, these type of things were never found besides video games
     - Ammos & guns for it
-    - Flare kit. Flare gun & shots for it for calling your survivors or attention diversion.
-    - Melee. Knifes / Bayonette, garotte
+    - Flare kit (actually this one exists in packs found IRL). Flare gun & shots for it for calling your survivors or attention diversion.
+    - Melee. Knifes / Bayonette, garotte. Actually, *non-weaponized* knives are legal for IRL distribution.
 
 ## Sauces
 
