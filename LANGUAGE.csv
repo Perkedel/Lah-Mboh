@@ -114,7 +114,12 @@ Enjay’s Breakable Glass,T_NJ_BGL,,Kaca Pecah Belah Enjay,,,,
 Weapons Resource WAD,WRWDEMO,,WAD Paket Senjata,,,,
 Monsters Resource WAD,MRWDEMO,,WAD Paket Monster,,,,
 Map in subfolder,LOADFOL,,Map di subfolder,,,,
-,,,,,,,
+Predictors Sorting Center,ORAKEL,"Secret level for Mboh Adventure.
+Test enemy Ambush flag. Mazes of package crates to be sent out somewhere
+Either in time of future, or other universes.
+
+Activate by finding the detour data somewhere in a map. Once found,
+The GPS destination will be changed to this location.",Pusat Penyortiran Para Peramal,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
