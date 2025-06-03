@@ -1074,6 +1074,22 @@ class SoulsphereLater: SurgeryKit
 // https://doomwiki.org/wiki/FraggleScript_functions
 // https://doomlegacy.sourceforge.net/docs/fsfuncs.html
 
+// FraggleScript Test
+// https://soulsphere.org/projects/smmu/ forgor where sauce
+/*
+i forgor really, moar sauces
+
+// https://zdoom.org/wiki/Classes:BulletPuff
+// https://zdoom.org/wiki/A_CustomPunch
+// https://zdoom.org/wiki/ZScript_mixins
+// https://zdoom.org/wiki/FraggleScript
+// https://soulsphere.org/projects/smmu/smmu_howto/
+// https://doomwiki.org/wiki/FraggleScript
+// https://doomlegacy.sourceforge.net/docs/fsbasic.html
+// https://doomwiki.org/wiki/FraggleScript_functions
+// https://doomlegacy.sourceforge.net/docs/fsfuncs.html
+
+*/
 class SoccerTest: SmallBloodPool
 {
 	Default
@@ -1088,3 +1104,5 @@ class SoccerTest: SmallBloodPool
 			loop;
 	}
 }
+
+// https://zdoom.org/wiki/REVERBS
