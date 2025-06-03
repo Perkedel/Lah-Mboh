@@ -73,6 +73,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Floor Delta Floor Ceiling. use math floor & math ceiling. show graph of floor, raw, and ceil at the same time in LED strip bar
 - Oracle's logistic sortment center. a bunch of packages destined to Ms. Dawn Collins. First large label from oracle uses her Indonesian name: Nona Fajar. Smaller paper stuck to it to be read by logistic robot like those Amazon or Tokopedia delivery something.
 - The sortment center had to rebrand to Predictor due to trademark concern against ORACLE irl.
+- Mboh UX. Selaco-fy your DOOM experience but Gratis, Open Source, & FULL VERSION. another Mod PK3 that replaces the whole UX to become like Selaco's & KEX at the same time. Probably at this point you might just wanna hack the GZDoom (fork & edit) itself?
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
