@@ -1550,7 +1550,7 @@ ACTOR Bolt2Trail
 //Uses ThingID 1999 and SpawnID 201
 
 // was 1999, 25018
-ACTOR D2C_Pipebomb : Weapon 25019
+ACTOR D2C_Pipebomb : Weapon 25219
 {
    Weapon.SlotNumber 0
    Weapon.SelectionOrder 25018
