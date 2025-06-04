@@ -1141,6 +1141,110 @@ object BlackSkull
 {
     frame BKSK { light BLACKKEY }
 }
+
+// Duke Nukem Pipe Bomb Xim
+PointLight NAPALMEX_1
+{
+	Color 0.8 0.5 0.1
+	Size 56
+	Offset 0 12 0
+}
+PointLight NAPALMEX_2
+{
+	Color 0.9 0.7 0.2
+	Size 64
+	Offset 0 28 0
+}
+PointLight NAPALMEX_3
+{
+	Color 0.9 0.8 0.3
+	Size 72
+	Offset 0 34 0
+}
+PointLight NAPALMEX_4
+{
+	Color 0.9 0.7 0.2
+	Size 74
+	Offset 0 36 0
+}
+PointLight NAPALMEX_5
+{
+	Color 0.8 0.6 0.2
+	Size 72
+	Offset 0 40 0
+}
+PointLight NAPALMEX_6
+{
+	Color 0.8 0.6 0.2
+	Size 70
+	Offset 0 46 0
+}
+PointLight NAPALMEX_7
+{
+	Color 0.8 0.5 0.1
+	Size 68
+	Offset 0 50 0
+}
+PointLight NAPALMEX_8
+{
+	Color 0.7 0.5 0.1
+	Size 68
+	Offset 0 54 0
+}
+PointLight NAPALMEX_9
+{
+	Color 0.7 0.4 0.1
+	Size 66
+	Offset 0 58 0
+}
+PointLight NAPALMEX_10
+{
+	Color 0.7 0.4 0.1
+	Size 64
+	Offset 0 62 0
+}
+PointLight NAPALMEX_11
+{
+	Color 0.6 0.4 0.0
+	Size 62
+	Offset 0 66 0
+}
+PointLight NAPALMEX_12
+{
+	Color 0.4 0.3 0.0
+	Size 60
+	Offset 0 74 0
+}
+PointLight NAPALMEX_13
+{
+	Color 0.3 0.2 0.0
+	Size 54
+	Offset 0 78 0
+}
+Object Xim_Pipebomb
+{
+	Frame EXP2A { Light NAPALMEX_1 }
+	Frame EXP2B { Light NAPALMEX_2 }
+	Frame EXP2C { Light NAPALMEX_3 }
+	Frame EXP2D { Light NAPALMEX_4 }
+	Frame EXP2E { Light NAPALMEX_4 }
+	Frame EXP2F { Light NAPALMEX_5 }
+	Frame EXP2G { Light NAPALMEX_6 }
+	Frame EXP2H { Light NAPALMEX_7 }
+	Frame EXP2I { Light NAPALMEX_8 }
+	Frame EXP2J { Light NAPALMEX_8 }
+	Frame EXP2K { Light NAPALMEX_9 }
+	Frame EXP2L { Light NAPALMEX_9 }
+	Frame EXP2M { Light NAPALMEX_10 }
+	Frame EXP2N { Light NAPALMEX_10 }
+	Frame EXP2O { Light NAPALMEX_11 }
+	Frame EXP2P { Light NAPALMEX_11 }
+	Frame EXP2Q { Light NAPALMEX_12 }
+	Frame EXP2R { Light NAPALMEX_12 }
+	Frame EXP2S { Light NAPALMEX_13 }
+	Frame EXP2T { Light NAPALMEX_13 }
+	Frame EXP2U { Light NAPALMEX_13 }
+}
 // End Realm667
 
 // Alando1

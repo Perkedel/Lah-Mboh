@@ -134,6 +134,16 @@ BushDamaged3 bushdmg3
 
 // Damage & Low Health Bloody System Captain Maniac
 player/hbeat HBEAT
+
+// Duke Nukem Pipe Bomb Xim
+weapons/pbbounce dspipbnc
+weapons/pbthrow dspipthr
+weapons/pbarm dspiparm
+$random weapons/pipe/explode  { pipe/explode1 pipe/explode2 pipe/explode3 pipe/explode4 }
+pipe/explode1 dspipex1
+pipe/explode2 dspipex2
+pipe/explode3 dspipex3
+pipe/explode4 dspipex4
 // End Realm667
 
 // Enjay
@@ -185,9 +195,9 @@ weapons/trailatt                dsplazma
 weapons/trailpls                dssmack
 weapons/trailbfg                dssplz
 
-weapons/pbbounce		dspipbnc
-weapons/pbthrow		        dspipthr
-weapons/pbarm		        dspiparm
+//weapons/pbbounce		dspipbnc
+//weapons/pbthrow		        dspipthr
+//weapons/pbarm		        dspiparm
 weapons/explode1	        dspipex1
 weapons/explode2	        dspipex2
 weapons/explode3	        dspipex3

@@ -1,0 +1,61 @@
+Sprite "PIPPB0", 14, 39
+{
+	XScale 2.000
+	YScale 2.000
+	Offset 7, 39
+	Patch "PIPPA0", 0, 0
+}
+
+Sprite "REDBA0", 8, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBB0", 16, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBC0", 24, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBD0", 32, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBE0", 40, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBF0", 48, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBG0", 56, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBH0", 64, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
+
+Sprite "REDBI0", 72, 4
+{
+	Offset -120, -156
+	Patch "REDBZ0", 0, 0
+}
