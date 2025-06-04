@@ -1,6 +1,198 @@
 // Realm667's Decorate Submissions
 // Amalgamated by JOELwindows7
 
+// SPAS-12 LossForWords
+// https://www.realm667.com/repository#preview-2
+/*
+info:
+Name: Franchi SPAS-12
+Class: 3
+Type: Hitscan
+Palette: Doom
+Summon: SPAS12
+Ammo Type: Shells
+Altfire: Pump/Semi switch.
+Powered Mode: No
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+credits:
+Submitted: LossForWords
+Code: LossForWords
+Sounds: Monolith
+Sprites: LossForWords, Joblez, Valve, iD Software.
+
+Chances are, you've seen this one before.
+Be it with a double-barrel mode or a picatinny rail, you could recognize that heatshield anywhere.
+While it's size and that tiny latch button make it a bit of a pain to handle, it's got 8 shots in the tube, good accuracy and good damage.
+Altfire chooses between pump or semi.
+Semi fires faster, at the cost of accuracy, while pump's slower, but it's spread is a lot tighter.
+Reloading on an empty mag requires you to rack that first shot in, so stay topped off if you wanna avoid that.
+*/
+
+// was no Doomednum
+Actor SPAS12 : Weapon 28421
+{
+	//$Category Weapons
+    //$Title Franchi SPAS-12
++FLOORCLIP
++AMMO_CHECKBOTH
++NoAlert
++NOAUTOFIRE
+Weapon.SlotNumber 3
+Weapon.AmmoType1 "SPASLoaded"
+Weapon.AmmoType2 "Shell"
+Weapon.AmmoGive2 5
+Weapon.AmmoUse1 1
+Weapon.AmmoUse2 1
+Weapon.KickBack 400
+Inventory.PickupSound "Misc/w_pkup" 
+Inventory.PickupMessage "Picked up a SPAS-12."
+Tag "Franchi SPAS-12"
+States
+	{
+	Ready:
+		SPA2 A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+		Loop
+	Deselect: 
+		SPA2 A 1 A_Lower
+        TNT1 A 0 A_Lower
+		Loop
+	Select:
+		SPA2 A 1 A_Raise
+        TNT1 A 0 A_Raise
+		Loop
+	Fire:
+	    TNT1 A 0 A_JumpIf(CountInv("SPASLoaded") == 0,"Reload")
+        TNT1 B 0 A_PlayWeaponSound("SPASFIR")
+		TNT1 B 0 A_AlertMonsters
+		TNT1 E 0 A_JumpIfInventory("SPASToggleFire",1,"SemiShot")
+	PumpShot:
+		FSPA A 1 BRIGHT A_FireBullets (2.3, 2.3, 7, 6, "SPASPuff")
+	    //TNT1 A 0 A_ZoomFactor(0.975)
+        TNT1 A 0 A_SetPitch(Pitch -1.8)
+	    //TNT1 A 0 A_Quake(8, 6, 0, 48576, "None")
+		Goto FireFinish
+	SemiShot:
+		FSPA A 1 BRIGHT A_FireBullets (5.6, 5.6, 7, 6, "SPASPuff")
+	    //TNT1 A 0 A_ZoomFactor(0.975)
+        TNT1 A 0 A_SetPitch(Pitch -1.8)
+	    //TNT1 A 0 A_Quake(8, 6, 0, 48576, "None")
+		Goto FireFinish
+	FireFinish:
+		FSPA B 1 BRIGHT
+		FSPA C 3
+		FSPA D 2
+		//TNT1 A 0 A_ZoomFactor(1.000)
+		FSPA E 2
+		TNT1 A 0 A_JumpIf(CountInv("SPASLoaded") == 0,"EmptyOut")
+		MP5A E 0 A_JumpIfInventory("SPASToggleFire",1,"Ready")
+		SPA2 A 2
+		Goto Pump
+		EmptyOut:
+		SPA2 A 2 A_GiveInventory("SPASEmptyChamber",1)
+		Goto Reload
+   Pump:
+		SPA2 A 1
+		SPA2 B 3
+		SPA2 CD 2 
+		SPA2 A 0 A_PlaySound("SPASCOC")
+		SPA2 EF 1
+		SPA2 H 4
+		SPA2 G 3
+		SPA2 FEDC 2
+		SPA2 B 2
+		SPA2 A 3 A_ReFire
+		Goto Ready 
+	AltFire:
+	    SPA2 A 1
+		SPA2 A 0 A_JumpIfInventory("SPASToggleFire",1,"PumpToggle")
+	SemiToggle:
+	 	TNT1 A 0 A_PlaySoundEX("SPASCLC",CHAN_7)
+		TNT1 G 0 A_Print("Semi-Auto Mode",3)
+		SPA2 I 1
+	    SPA2 J 2
+		SPA2 J 0 A_GiveInventory("SPASToggleFire",1)
+	    SPA2 I 2
+        SPA2 A 1
+		Goto Ready
+	PumpToggle:
+	 	TNT1 A 0 A_PlaySoundEX("SPASCLC",CHAN_7)
+		TNT1 G 0 A_Print("Pump Mode",3)
+		SPA2 K 1
+	    SPA2 L 2
+		SPA2 J 0 A_TakeInventory("SPASToggleFire",99)
+	    SPA2 K 2
+        SPA2 A 1
+		Goto Ready
+	Reload:
+        TNT1 A 0 A_JumpIfInventory("SPASLoaded", 8, 2)
+        TNT1 A 0 A_JumpIfInventory("Shell", 1, "ReloadWork")
+        SPA2 A 1 A_WeaponReady
+        Goto Ready
+	ReloadWork:
+        SPAR ABCD 2
+		SPAR E 2
+		SPAR F 1
+		SPAR G 2
+  ReloadLoop:
+ 		TNT1 A 0 A_PlaySoundEX("SPASLOA",CHAN_7)
+		SPAR HIJK 2
+        TNT1 A 0 A_TakeInventory("Shell", 1)
+        TNT1 A 0 A_GiveInventory("SPASLoaded", 1)
+        TNT1 A 0 A_JumpIfInventory("SPASEmptyChamber", 1, "DryPump")
+        SPAR G 3 A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "ReloadFinish2")
+        TNT1 A 0 A_JumpIfInventory("SPASLoaded", 8, "ReloadFinish")
+        TNT1 A 0 A_JumpIfInventory("Shell", 1, "ReloadLoop")
+        Goto ReloadFinish
+  ReloadFinish:
+        SPAR G 2
+		SPAR F 1
+        SPAR EDCBA 2
+        Goto Ready
+  ReloadFinish2:
+        SPAR GE 1
+        SPAR DCBA 1
+        Goto Ready
+  DryPump:
+        SPAR GF 1
+        SPAR EDCBA 1
+		SPA2 A 1
+		SPA2 B 3
+		SPA2 CD 2 
+		SPA2 A 0 A_PlaySound("SPASCOC")
+		SPA2 EF 1 A_TakeInventory("SPASEmptyChamber",99)
+		SPA2 H 4
+		SPA2 G 3
+		SPA2 FEDC 2
+		SPA2 B 2
+		SPA2 A 1
+		Goto Reload
+	Spawn:
+		SPAT A -1
+		Stop
+	}
+}
+
+ACTOR SPASLoaded : Ammo
+{
+   +IGNORESKILL
+   Inventory.Amount 0
+   Inventory.MaxAmount 8
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 8
+}
+
+// pls do not generic name the programming items! added `SPAS` prefix
+ACTOR SPASToggleFire : Inventory { Inventory.MaxAmount 1 }
+ACTOR SPASEmptyChamber : Inventory { Inventory.MaxAmount 1 }
+
+ACTOR SPASPuff : BulletPuff
+{ 
+	DamageType "Shotgun" 
+}
+
 // Haste Sphere. Scalliano, originally from id Software's Quake 3
 // https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27
 /*

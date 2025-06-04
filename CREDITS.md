@@ -115,6 +115,7 @@ For the thing we've yoinked
 	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
 	- [Damage & Low Health System](https://www.realm667.com/repository/sfx-shoppe/other#preview-3). Captain Maniac et al. **Yoink?? idk, not now? Oh wait, I got an idea! We're cardiophile! break it down!**
 	- [Duke Nukem Pipe Bomb](https://www.realm667.com/repository/armory/doom-style?start=60#preview-51). Xim et all. This gotta be the better one I suppose..
+	- [SPAS-12 Half Life](https://www.realm667.com/repository#preview-2). LossForWords
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
 - [Breakable Glass](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641). Enjay & zzrion. ???.
     - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)

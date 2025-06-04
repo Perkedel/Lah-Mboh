@@ -144,6 +144,12 @@ pipe/explode1 dspipex1
 pipe/explode2 dspipex2
 pipe/explode3 dspipex3
 pipe/explode4 dspipex4
+
+// SPAS-12 LossForWords
+SPASCOC		SPASCOC2
+SPASFIR		SPASFIRE
+SPASLOA		SPASLOAD
+SPASCLC     SPASCLIC   
 // End Realm667
 
 // Enjay
