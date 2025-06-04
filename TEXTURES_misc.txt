@@ -1,0 +1,25 @@
+Texture "OHSHITFU", 64, 128
+{
+	Patch "OUCHSAYS", 0, 64
+	Patch "STFOUCH0", 20, 1
+	Patch "STFOUCH0", 40, 32
+	Patch "STFOUCH0", 20, 63
+	Patch "STFOUCH0", 0, 32
+}
+
+WallTexture "DAWAS", 64, 64
+{
+	Patch "DAWAS", 0, 0
+}
+
+Sprite "DWASA0", 64, 64
+{
+	Offset 32, 64
+	Patch "DAWAS", 0, 0
+}
+
+WallTexture "S3DUMMY", 128, 128
+{
+	NullTexture
+	Patch "S3DUMMY", 0, 0
+}
