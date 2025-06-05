@@ -208,6 +208,13 @@ DoomEdNums
 	// Duke Nukem Hologram DeVloek
 	22273 = HoloDoomguy
 	22274 = HoloStrifeguy
+	// Portable Teleporter Device DeVloek
+	22270 = PTDevice
+	22271 = PTBeacon
+	22272 = PETDevice
+	// BONUS Kan3 Ignitable Cauldron based on Captain Toenail
+	//28924 = IgniteCauldron // was 15924
+	//28925 = UnlitCauldron // was 15925
 
 	// Monster Resource WAD / Realm667 Bestiary
 	// Monsters. was 31XX, conflict with Obsidian Plague Decorate ID24

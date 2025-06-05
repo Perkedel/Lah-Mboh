@@ -1720,6 +1720,152 @@ object HoloStrifeguyDecoy
 	frame PLAY { light HoloStrifeguyDecoyLight }
 }
 
+// Portable Teleportation Device DeVloek
+//===================== Portable Teleport Device =====================
+pointlight PTDeviceLight
+{
+    color 0.0 0.5 0.0
+    size 48
+	attenuate 1
+    offset 0 13 0
+}
+object PTDevice
+{
+    frame VPTD { light PTDeviceLight }
+}
+
+pointlight PTBeaconLight
+{
+    color 0.0 0.6 0.0
+    size 32
+    offset 0 5 0
+}
+object PTBeacon
+{
+    frame VPTBA { light PTBeaconLight }
+	frame VPTBB { light PTBeaconLight }
+	frame VPTBC { light PTBeaconLight }
+	frame VPTBD { light PTBeaconLight }
+}
+
+pointlight PTSpotLight
+{
+    color 0.0 0.0 0.6
+    size 32
+	attenuate 1
+    offset 0 15 0
+}
+object PTSpot
+{
+	frame TNT1 { light PTSpotLight }
+}
+
+Brightmap Sprite VPTDA0 { Map BMVPTD }
+Brightmap Sprite VPTDB0 { Map BMVPTD }
+Brightmap Sprite VPTDC0 { Map BMVPTD }
+Brightmap Sprite VPTDD0 { Map BMVPTD }
+Brightmap Sprite VPTBA0 { Map BMVPTB }
+Brightmap Sprite VPTBB0 { Map BMVPTB }
+Brightmap Sprite VPTBC0 { Map BMVPTB }
+Brightmap Sprite VPTBD0 { Map BMVPTB }
+
+//===================== Portable Emergency Teleport Device =====================
+pointlight PETDeviceLight
+{
+    color 0.5 0.0 0.0
+    size 48
+	attenuate 1
+    offset 0 13 0
+}
+object PETDevice
+{
+    frame VPTE { light PETDeviceLight }
+}
+
+Brightmap Sprite VPTEA0 { Map BMVPTD }
+Brightmap Sprite VPTEB0 { Map BMVPTD }
+Brightmap Sprite VPTEC0 { Map BMVPTD }
+Brightmap Sprite VPTED0 { Map BMVPTD }
+
+// Fire Cauldron Captain Toenail
+// Lava Bowl
+flickerlight2 BOWL
+{
+    color 1.0 0.5 0.0
+    size 68
+    secondarySize 76
+    interval 0.1
+    offset 0 40 0
+}
+
+object FireCauldron
+{
+    frame LAVC { light BOWL }
+}
+
+object FireCauldronGreen
+{
+    frame LAVC { light BOWL }
+}
+
+object FireCauldronOrange
+{
+    frame LAVC { light BOWL }
+}
+
+// Bowl fireball - copy of small volcano fireball
+flickerlight BOWLBALL
+{
+    color 1.0 0.5 0.0
+    size 60
+    secondarySize 72
+    chance 0.5
+	//attenuate 1
+}
+
+object BowlBall
+{
+    frame VTFB { light BOWLBALL }
+}
+
+// BONUS Kan3 Ignitable Cauldron
+FlickerLight2 FCauldronX1
+{
+    color 1.0 0.5 0.0
+    size 104
+	secondarySize 128
+	interval 0.1
+	offset 0 40 0
+	attenuate 1
+}
+FlickerLight2 FCauldronX2
+{
+    color 1.0 0.25 0.0
+    size 56
+	secondarySize 64
+	interval 0.1
+	offset 0 28 0
+	attenuate 1
+}
+/* object IgniteCauldron
+{
+	frame LAVCG { light FCauldronX1 }
+	frame LAVCH { light FCauldronX1 }
+	frame LAVCI { light FCauldronX1 }
+	frame LAVCD { light FCauldronX2 }
+	frame LAVCE { light FCauldronX2 }
+	frame LAVCF { light FCauldronX2 }
+} */
+/* object UnlitCauldron
+{
+	frame LAVCG { light FCauldronX1 }
+	frame LAVCH { light FCauldronX1 }
+	frame LAVCI { light FCauldronX1 }
+	frame LAVCD { light FCauldronX2 }
+	frame LAVCE { light FCauldronX2 }
+	frame LAVCF { light FCauldronX2 }
+} */
+
 // End Realm667
 
 // Alando1

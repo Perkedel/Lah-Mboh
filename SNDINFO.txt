@@ -177,6 +177,7 @@ ZTank/pain DSZTANKP
 ZTank/death DSZTANKD
 ZTank/Run DSZTANK2
 ZTank/explode DSZTANKX
+// Okay Tank done
 
 // Duke Nukem Hologram DeVloek
 // Holodoomguy
@@ -196,7 +197,37 @@ $attenuation holodg/oneliner 0.5
 holosg/on VHSGON
 holosg/off VHSGOFF
 
-// Okay Tank done
+// Portable Teleporter Device DeVloek
+ptdevice/activate VPTACTIV
+ptdevice/fail VPTFAIL
+
+$volume ptdevice/activate 0.5
+$volume ptdevice/fail 0.8
+
+// Fire Cauldron CaptainToenail
+FireCauldron/Loop		FIREPLAC
+$attenuation FireCauldron/Loop 2
+$limit FireCauldron/Loop 0
+
+FireCauldron/Fireball	BSTATK
+$volume FireCauldron/Fireball 0.5
+$limit FireCauldron/Fireball 0
+$attenuation FireCauldron/Fireball 3
+
+// BONUS Kan3 Ignitable Cauldron
+fire/cauldron				DSCHAFIR
+ember/cauldron				FIREPLAC
+ex/cauldron					FIREEX
+$limit		ember/cauldron		3
+$pitchset	fire/cauldron		0.75
+$limit		fire/cauldron		3
+
+ex/cauldron					ASHFALL
+$limit		ex/cauldron			3
+
+fire/start						FIREIGN
+$pitchset		fire/start		0.75
+$limit			fire/start		2
 
 // End Realm667
 
