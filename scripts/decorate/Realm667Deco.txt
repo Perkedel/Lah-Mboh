@@ -3217,3 +3217,108 @@ States
 		Stop
 	}
 }
+
+// A.D. COP Textures PGE
+// https://www.realm667.com/repository#preview
+/*
+Conversion: PGE
+Author: Electronic Music and Animated Graphics CO., LTD.
+Submitted: PGE
+
+Source: A.D Cop, A.D Cop: Oveseas Missions
+Count: 814 (251 Flats, 563 Walls)
+Palette: Custom (Doom/Dark Forces derivative)
+Format: Textures and Flats folder
+Anims/Switches: Yes, ZDoom Compatible
+Description: Textures from EMAG Co., Ltd.'s 1996 rail shooter "A.D Cop", and its
+sequel/expansion "A.D Cop: Overseas Mission".
+*/
+// There's only ANIMDEF in this pack, no Thing. Just Textures
+
+// Duke Nukem Zombie Tanks Xim, Enjay, Devloek
+// https://www.realm667.com/repository#preview-7
+/*
+Name: Zombie Tank Pack
+Difficulty: Medium
+Connection: Zombieman, Shotgunguy, Chaingunguy
+Summon: ZombieTank, ZombieMissileTank, ZombiePlasmaTank
+Melee: No
+Distance: Hitscan, Projectile
+Type: Human, Undead, Mechanic
+Brightmaps: Yes (regular and missile tanks)
+Added States: none
+ACS: none
+
+Submitted: Xim, Enjay, Devloek (compilation)
+Code: Xim, Enjay
+GLDEFs: Dreadopp, Xim, Ghastly Dragon, Sandypaper
+Sounds: id Software, 3D Realms, Valve
+Sprites: id Software, 3D Realms, David G
+Sprite Edit: Xim, Enjay
+Idea Base: Pig Tank from Duke Nukem 3D
+
+Check inside the credits+info directory for more specific credits.
+
+============
+Missile Tank
+============
+Name: Zombie Missile Tank
+Difficulty: Medium
+Connection: ZombieTank
+Summon: ZombieMissileTank
+Melee: No
+Distance: Projectile
+Type: Human, Undead, Mechanic
+Brightmaps: Yes
+Added States: none
+ACS: none
+
+Decorate: Xim
+GLDEFs: Dreadopp, Ghastly Dragon, Xim (Brightmaps)
+Sounds: Id Software, 3DRealms
+Sprites: Id Software, 3DRealms, David G
+Sprite Edit: Xim
+Idea Base: Pig Tank from Duke Nukem 3D
+
+===========
+Plasma Tank
+===========
+Name: Zombie Plasma Tank
+Difficulty: Medium
+Connection: None
+Summon: ZombiePlasmaTank
+Melee: No
+Distance: Projectile
+Type: Human, Undead, Mechanic
+
+Submitted: Xim
+Decorate: Xim, Enjay
+GLDEFs: Dreadopp, Xim
+Sounds: Id Software, 3DRealms, Valve
+Sprites: Id Software, 3DRealms
+Sprite Edit: Xim, Enjay
+Idea Base: Pig Tank from Duke Nukem 3D
+
+==========
+Usual Tank
+==========
+Name: Zombie Tank
+Difficulty: Medium
+Connection: none
+Summon: ZombieTank
+Melee: No
+Distance: Hitscan
+Type: Human, Undead, Mechanic
+Brightmaps: Yes
+
+Decorate: Enjay
+GLDEFs: Dreadopp, Sandypaper (Brightmaps)
+Sounds: Id Software, 3DRealms
+Sprites: Id Software, 3DRealms
+Sprite Edit: Enjay
+Idea Base: Pig Tank from Duke Nukem 3D
+*/
+
+#include "scripts/decorate/Realm667DecoMoar/DECORATE.tank"
+#include "scripts/decorate/Realm667DecoMoar/DECORATE.missiletank"
+#include "scripts/decorate/Realm667DecoMoar/DECORATE.plasmatank"

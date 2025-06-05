@@ -399,6 +399,530 @@ Class Crate32Cross : Cube32
 	}
 }
 
+// Duke Nukem Hologram Doomguy DeVloek
+// https://www.realm667.com/repository#preview-16
+/*
+Name: HoloDoomguy
+Type: Decoy
+Palette: Doom
+Summon: HoloDoomguy
+Use type: Inventory
+Duration: Toggle / 60 seconds
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Description:
+A portable gadget that deploys a hologram of Doomguy when used.
+- All nearby monsters forget their current target and attack the hologram instead
+- Hologram cannot be destroyed, all attacks go right through it
+- Can be turned on and off anytime, turning it off stops the timer
+- Monsters may still switch targets if they are attacked (allows infighting and retaliation against the player)
+- Can perform rude one-liners and obscene hand gestures to provoke monsters repeatedly
+- See holodoomguy.txt to configure range, duration and provoking intervals
+
+Code: DeVloek, Gothic, Player701
+GLDefs: DeVloek
+Sounds: 3D Realms, ZeroXDiamond
+Sprites: id Software, 3D Realms, Mark Quinn, Kinsie
+Sprite Edit: DeVloek
+Idea base: HoloDuke
+*/
+Class HoloDoomguy : Inventory
+{
+	Override Void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+// =========================== Config ===========================
+		prange = 1200;	// Radius in which monster are provoked
+		pinterval = 8;	// prokoving interval in seconds (0 disables repeated provoking)
+		pvox = true;	// Toggle one-liner playback
+	}
+	Default
+	{
+		Inventory.Amount 60;			//
+		Inventory.MaxAmount 60;			// Duration in seconds
+		Inventory.InterHubAmount 60;	//
+// ========================= Config End =========================
+		//$Category "Gadgets"
+		//$Title "HoloDoomguy"
+		//$Color 17
+		//$Sprite VHDGICO1
+		Inventory.Icon "VHDGICO5"; 		// replace with "VHDGICO1" for a high res icon
+		Inventory.PickupMessage "Picked up a HoloDoomguy.";
+		+COUNTITEM;
+		+INVENTORY.INVBAR;
+		scale 0.667;
+	}
+	actor hologram;
+	actor hologramfuzz;
+	actor phg;
+	actor phgfuzz;
+	array<actor> distracted;
+	double osc;
+	int prange;
+	int pinterval;
+	bool pvox;
+	States
+	{
+	Spawn:
+		VHDG AAAABBBBCCCCDDDD 1
+		{
+			if (!phg)
+			{
+				phg = spawn("HoloDoomguyPHG",pos+(0,0,8));
+				phgfuzz = spawn("HoloDoomguyPHGfuzz",pos+(0,0,8));
+			}
+			if (phg)
+			{
+				phg.Setorigin(pos+(0,0,8),false);
+				if (phg.alpha >= 0.8) osc = -0.05;
+				if (phg.alpha <= 0.4) osc = 0.05;
+				phg.alpha += osc;
+				phg.angle += 2;
+				if (phgfuzz)
+				{
+					phgfuzz.angle = phg.angle;
+					phgfuzz.Setorigin(phg.pos,false);
+				}
+			}
+			A_SpawnParticle("30FF30",SPF_FULLBRIGHT,lifetime:12,size:2,xoff:random(-3,3),yoff:random(-3,3),zoff:11,velz:1);
+		}
+		Loop;
+	}
+	
+	override bool TryPickup(in out Actor toucher) //Thanks to Player701 for this check
+	{
+		bool result = Super.TryPickup(toucher);
+        if (result)
+        {
+            if (phg) phg.destroy();
+			if (phgfuzz) phgfuzz.destroy();
+        }
+        return result;
+	}
+	
+	override bool Use(bool pickup)
+	{
+
+		if (owner && owner.player)
+		{
+			if (!hologram)
+			{
+				bool bl;
+				[bl,hologram] = owner.A_SpawnItemEx("HoloDoomguyDecoy",40,0,2);
+				if (hologram)
+				{
+					hologram.A_Startsound("holodg/on",22273);
+					[bl,hologramfuzz] = hologram.A_SpawnItemEx("HoloDoomguyDecoyFuzz");
+					AggroMonsters();
+				}
+			}
+			else
+			{
+				distracted.clear();
+				hologram.A_Startsound("holodg/off",22273);
+				hologram.destroy();
+				if (hologramfuzz) hologramfuzz.destroy();
+			}
+		}
+		return false;
+	}
+	
+	override void DoEffect()
+	{
+		super.DoEffect();
+		if (owner && owner.player && hologram)
+		{
+			if (hologramfuzz)
+			{
+				hologramfuzz.angle = hologram.angle;
+				hologramfuzz.sprite = hologram.sprite;
+				hologramfuzz.frame = hologram.frame;
+			}
+			int prvk = pinterval*35;
+			if (pinterval > 0 && GetAge() % prvk == 0)
+			{
+				AggroMonsters();
+				if (pvox) hologram.A_Startsound("holodg/oneliner",22273,CHANF_NOSTOP);
+				hologram.SetStateLabel("Provoke");
+			}
+			if (GetAge() % 35 == 0)	owner.TakeInventory("HoloDoomguy",1);
+		}
+	}
+	
+	override void DepleteOrDestroy() //Thanks to Gothic for this method
+	{
+		super.DepleteOrDestroy();
+		if (!hologram) return;
+		distracted.clear();
+		hologram.A_Startsound("holodg/off",22273);
+		hologram.destroy();
+		if (hologramfuzz) hologramfuzz.destroy();
+	}
+	
+	void AggroMonsters()
+	{
+		distracted.clear();
+		BlockThingsIterator it = BlockThingsIterator.Create(hologram,prange);
+		while (it.Next())
+		{
+			let obj = it.thing;
+			if (obj.bISMONSTER && obj.health > 0 && !obj.bNOTARGETSWITCH && obj.Distance3D(hologram) <= prange && obj.Checksight(hologram))
+			{
+				distracted.push(obj);
+				obj.target = hologram;
+			}
+		}
+		if (distracted.size() > 0)
+		{
+			actor selected = distracted[random(1,distracted.size())-1];
+			hologram.angle = hologram.AngleTo(selected);
+			selected.target = hologram;
+		}
+	}
+}
+// ===================== Pickup Hologram =====================
+Class HoloDoomguyPHG : Actor
+{
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+	//	+WALLSPRITE; //uncomment for a spinning pickup hologram
+		Renderstyle "translucent";
+		scale 0.5;
+		alpha 0.8;
+	}
+	States
+	{
+	Spawn:
+		VHDG E 1 bright;
+		Loop;
+	}
+}
+
+Class HoloDoomguyPHGfuzz : HoloDoomguyPHG
+{
+	Default
+	{
+		RenderStyle "fuzzy";
+	}
+}
+
+// ===================== Decoy Hologram =====================
+Class HoloDoomguyDecoy : Actor
+{
+	double osc;
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+		+NOTELEPORT;
+		+NODAMAGE;
+		+NOBLOOD;
+		+MOVEWITHSECTOR;
+		+DONTTHRUST;
+		+SHOOTABLE;
+		+BRIGHT;
+		Renderstyle "translucent";
+		alpha 1.0;
+		height 72;
+	}
+	States
+	{
+	Spawn:
+		VHDG H 1 Oscillate();
+		Loop;
+	Provoke:
+		VHDG GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF 1 Oscillate();
+		Goto Spawn;
+	}
+	void Oscillate()
+	{
+		if (alpha >= 1.0) osc = -0.1;
+		if (alpha <= 0.7) osc = 0.1;
+		alpha += osc;
+	}
+}
+
+Class HoloDoomguyDecoyFuzz : Actor
+{
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+		+NOTELEPORT;
+		+MOVEWITHSECTOR;
+		Renderstyle "fuzzy";
+	}
+}
+
+// Duke Nukem Hologram Strifeguy DeVloek
+// https://www.realm667.com/repository#preview-16
+/*
+Name: HoloStrifeguy
+Type: Decoy
+Palette: Strife
+Summon: HoloStrifeguy
+Use type: Inventory
+Duration: Toggle / 60 seconds
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Description:
+A portable gadget that deploys a hologram of Strifeguy when used.
+- All nearby enemies forget their current target and attack the hologram instead
+- Hologram cannot be destroyed, all attacks go right through it
+- Can be turned on and off anytime, turning it off stops the timer
+- Enemies may still switch targets if they are attacked (allows infighting and retaliation against the player)
+- Can perform rude one-liners and obscene hand gestures to provoke enemies repeatedly
+- See holodoomguy.txt to configure range, duration and provoking intervals
+
+Code: DeVloek, Gothic, Player701
+GLDefs: DeVloek
+Sounds: 3D Realms
+Sprites: Rogue Entertainment, 3D Realms
+Sprite Edit: DeVloek
+Idea base: HoloDuke
+*/
+Class HoloStrifeguy : Inventory
+{
+	Override Void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+// =========================== Config ===========================
+		prange = 1200;	// Radius in which monster are provoked
+		pinterval = 8;	// prokoving interval in seconds (0 disables repeated provoking)
+	}
+	Default
+	{
+		Inventory.Amount 60;			//
+		Inventory.MaxAmount 60;			// Duration in seconds
+		Inventory.InterHubAmount 60;	//
+// ========================= Config End =========================
+		//$Category "Gadgets"
+		//$Title "HoloStrifeguy"
+		//$Color 17
+		//$Sprite VHSGICON
+		Inventory.Icon "VHSGICO1";
+		Inventory.PickupMessage "Picked up a HoloStrifeguy.";
+		+COUNTITEM;
+		+INVENTORY.INVBAR;
+		scale 0.667;
+	}
+	actor hologram;
+	actor hologramfuzz;
+	actor phg;
+	actor phgfuzz;
+	array<actor> distracted;
+	double osc;
+	int prange;
+	int pinterval;
+	bool pvox;
+	States
+	{
+	Spawn:
+		VHSG AAAABBBBCCCCDDDD 1
+		{
+			if (!phg)
+			{
+				phg = spawn("HoloStrifeguyPHG",pos+(0,0,6));
+				phgfuzz = spawn("HoloStrifeguyPHGfuzz",pos+(0,0,6));
+			}
+			if (phg)
+			{
+				phg.Setorigin(pos+(0,0,6),false);
+				if (phg.alpha >= 0.8) osc = -0.05;
+				if (phg.alpha <= 0.4) osc = 0.05;
+				phg.alpha += osc;
+				phg.angle += 2;
+				if (phgfuzz)
+				{
+					phgfuzz.angle = phg.angle;
+					phgfuzz.Setorigin(phg.pos,false);
+				}
+			}
+			A_SpawnParticle("7BB3C3",SPF_FULLBRIGHT,lifetime:12,size:2,xoff:random(-3,3),yoff:random(-3,3),zoff:11,velz:1);
+		}
+		Loop;
+	}
+	
+	override bool TryPickup(in out Actor toucher) //Thanks to Player701 for this check
+	{
+		bool result = Super.TryPickup(toucher);
+        if (result)
+        {
+            if (phg) phg.destroy();
+			if (phgfuzz) phgfuzz.destroy();
+        }
+        return result;
+	}
+	
+	override bool Use(bool pickup)
+	{
+
+		if (owner && owner.player)
+		{
+			if (!hologram)
+			{
+				bool bl;
+				[bl,hologram] = owner.A_SpawnItemEx("HoloStrifeguyDecoy",40,0,4);
+				if (hologram)
+				{
+					hologram.A_Startsound("holosg/on",22273);
+					[bl,hologramfuzz] = hologram.A_SpawnItemEx("HoloStrifeguyDecoyFuzz");
+					AggroMonsters();
+				}
+			}
+			else
+			{
+				distracted.clear();
+				hologram.A_Startsound("holosg/off",22273);
+				hologram.destroy();
+				if (hologramfuzz) hologramfuzz.destroy();
+			}
+		}
+		return false;
+	}
+	
+	override void DoEffect()
+	{
+		super.DoEffect();
+		if (owner && owner.player && hologram)
+		{
+			if (hologramfuzz)
+			{
+				hologramfuzz.angle = hologram.angle;
+				hologramfuzz.sprite = hologram.sprite;
+				hologramfuzz.frame = hologram.frame;
+			}
+			int prvk = pinterval*35;
+			if (pinterval > 0 && GetAge() % prvk == 0)
+			{
+				AggroMonsters();
+				hologram.SetStateLabel("Provoke");
+			}
+			if (GetAge() % 35 == 0)	owner.TakeInventory("HoloStrifeguy",1);
+		}
+	}
+	
+	override void DepleteOrDestroy() //Thanks to Gothic for this method
+	{
+		super.DepleteOrDestroy();
+		if (!hologram) return;
+		distracted.clear();
+		hologram.A_Startsound("holosg/off",22273);
+		hologram.destroy();
+		if (hologramfuzz) hologramfuzz.destroy();
+	}
+	
+	void AggroMonsters()
+	{
+		distracted.clear();
+		BlockThingsIterator it = BlockThingsIterator.Create(hologram,prange);
+		while (it.Next())
+		{
+			let obj = it.thing;
+			if (obj.bISMONSTER && obj.health > 0 && !obj.bNOTARGETSWITCH && obj.Distance3D(hologram) <= prange && obj.Checksight(hologram))
+			{
+				distracted.push(obj);
+				obj.target = hologram;
+			}
+		}
+		if (distracted.size() > 0)
+		{
+			actor selected = distracted[random(1,distracted.size())-1];
+			hologram.angle = hologram.AngleTo(selected);
+			selected.target = hologram;
+		}
+	}
+}
+// ===================== Pickup Hologram =====================
+Class HoloStrifeguyPHG : Actor
+{
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+	//	+WALLSPRITE; //uncomment for a spinning pickup hologram
+		Renderstyle "translucent";
+		scale 0.5;
+		alpha 0.8;
+	}
+	States
+	{
+	Spawn:
+		VHSG E 1 bright;
+		Loop;
+	}
+}
+
+Class HoloStrifeguyPHGfuzz : HoloStrifeguyPHG
+{
+	Default
+	{
+		RenderStyle "fuzzy";
+	}
+}
+
+// ===================== Decoy Hologram =====================
+Class HoloStrifeguyDecoy : Actor
+{
+	double osc;
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+		+NOTELEPORT;
+		+NODAMAGE;
+		+NOBLOOD;
+		+MOVEWITHSECTOR;
+		+DONTTHRUST;
+		+SHOOTABLE;
+		+BRIGHT;
+		Renderstyle "translucent";
+		alpha 1.0;
+		height 72;
+	}
+	States
+	{
+	Spawn:
+		PLAY E 1 Oscillate();
+		Loop;
+	Provoke:
+		TNT1 A 0 A_Startsound("weapons/assaultgun");
+		PLAY FFFFFF 1 bright Oscillate();
+		PLAY FEEEEEEEEEEEEEE 1 Oscillate();
+		TNT1 A 0 A_Startsound("weapons/assaultgun");
+		PLAY FFFFFF 1 bright Oscillate();
+		PLAY FEEEEEEEEEEEEEE 1 Oscillate();
+		TNT1 A 0 A_Startsound("weapons/assaultgun");
+		PLAY FFFFFF 1 bright Oscillate();
+		PLAY FEEEEEEEEEEEEEE 1 Oscillate();
+		Goto Spawn;
+	}
+	void Oscillate()
+	{
+		if (alpha >= 1.0) osc = -0.1;
+		if (alpha <= 0.7) osc = 0.1;
+		alpha += osc;
+	}
+}
+
+Class HoloStrifeguyDecoyFuzz : Actor
+{
+	Default
+	{
+		+NOINTERACTION;
+		+NOBLOCKMAP;
+		+NOTELEPORT;
+		+MOVEWITHSECTOR;
+		Renderstyle "fuzzy";
+	}
+}
+
 // It's time for:
 /*
 *************************************************

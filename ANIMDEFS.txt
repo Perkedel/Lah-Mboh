@@ -215,3 +215,32 @@ Texture	Optional	COMPSDE1	Range	COMPSDE4	Tics 4
 */
 // No wait, maybe later..
 // END MSM Tex
+
+// Realm667
+// AD COP Textures PGE
+flat CWATER1 range CWATER5 Tics 4 oscillate
+
+// Duke Nukem Hologram DeVloek
+// Holodoomguy
+// Statusbar icon
+texture optional VHDGICO1
+pic VHDGICO1 tics 4
+pic VHDGICO2 tics 4
+pic VHDGICO3 tics 4
+pic VHDGICO4 tics 4
+// Statusbar low-res icon
+texture optional VHDGICO5
+pic VHDGICO5 tics 4
+pic VHDGICO6 tics 4
+pic VHDGICO7 tics 4
+pic VHDGICO8 tics 4
+
+// Holostrifeguy
+// Statusbar icon
+texture optional VHSGICO1
+pic VHSGICO1 tics 4
+pic VHSGICO2 tics 4
+pic VHSGICO3 tics 4
+pic VHSGICO4 tics 4
+
+// end Realm667

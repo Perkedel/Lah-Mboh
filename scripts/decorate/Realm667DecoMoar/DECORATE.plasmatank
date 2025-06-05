@@ -1,0 +1,109 @@
+//Zombie Plasma Tank
+/*
+Name: Zombie Plasma Tank
+Difficulty: Medium
+Connection: None
+Summon: ZombiePlasmaTank
+Melee: No
+Distance: Projectile
+Type: Human, Undead, Mechanic
+
+Submitted: Xim
+Decorate: Xim, Enjay
+GLDEFs: Dreadopp, Xim
+Sounds: Id Software, 3DRealms, Valve
+Sprites: Id Software, 3DRealms
+Sprite Edit: Xim, Enjay
+Idea Base: Pig Tank from Duke Nukem 3D
+*/
+
+// was 21013
+ACTOR ZombiePlasmaTank 		21713
+{
+	//$Category Monsters
+	Health 450
+	Radius 27
+	Height 72
+	Mass 1000
+	PainChance 50
+	Speed 6	
+	SeeSound "ZPTank/see"
+	AttackSound "ZPTank/attack"
+	PainSound "ZPTank/pain"
+	DeathSound "ZPTank/death"
+	Obituary "%o was melted by a zombie in a plasma tank."
+	Tag "Zombie Plasma Tank"
+	MONSTER 
+	+FLOORCLIP
+	+NOBLOOD
+	+NORADIUSDMG
+	States
+	{
+		// TODO: Implement Press the butt to explode like original Duke Nukem 3D
+	Spawn:
+		ZPTK A 8 A_Look
+		Loop
+	See:
+		TNT1 A 0 A_PlaySound ("ZPTank/Run")
+		ZPTK AABBCC 1 A_Chase
+		Loop
+	Missile:
+		ZPTK A 1 A_FaceTarget
+		ZPTK D 3 BRIGHT A_CustomMissile("PlasmaBall",65,32,359,0)
+		TNT1 A 0 BRIGHT A_CustomMissile("PlasmaBall",55,32,359,0)
+		ZPTK A 1 A_FaceTarget
+		ZPTK E 3 BRIGHT A_CustomMissile("PlasmaBall",65,-29,359,0)
+		TNT1 A 0 BRIGHT A_CustomMissile("PlasmaBall",55,-29,359,0)
+		TNT1 A 0 A_Jump(128,1) 
+		Goto See 
+		TNT1 A 0 A_CPosRefire
+		Goto Missile 
+	Pain:
+		ZPTK F 4 A_Pain
+		ZPTK F 4
+		Goto See
+	Death:
+		ZPTK G 4
+		ZPTK G 4 A_Scream
+		ZPTK H 8 A_SpawnItemEx("ZombiePlasmaTankGun", -40, 0, 30, 12, 0, 0, 64, 128)
+		ZPTK I 8 A_SpawnItemEx("ZombiePlasmaTankGun", 40, 0, 30, 12, 0, 0, 192, 128)
+		ZPTK J 8 A_CustomMissile ("ZombieTankExplosion", 48, 0, 0)
+		TNT1 A 0 A_SpawnItemEx("ChaingunGuy",0,0,20,0,0,3,0,SXF_TRANSFERPOINTERS)
+		ZPTK K 8 A_Fall
+		ZPTK L 8
+		ZPTK M 8 A_SpawnItemEx("ZTankSmoke", 0, 0, 48, 0, 0, 0, 0, 128)
+		ZPTK N 8
+		ZPTK O -1
+		Stop
+	}
+}
+
+ACTOR ZombiePlasmaTankGun
+{
+	Radius 4
+	Height 4
+	Mass 5
+	Speed 12
+	+NOBLOCKMAP
+	+DROPOFF
+	+MISSILE
+	+NOTELEPORT
+	+DOOMBOUNCE
+	+NoTarget
+	States
+	{
+	Spawn:
+		ZPTG A 3
+		ZPTG B 3
+		ZPTG C 3
+		ZPTG D 3
+		ZPTG E 3
+		ZPTG F 3
+		ZPTG G 3
+		Loop
+	Death:
+		ZPTG G 1
+		ZPTG G -1
+		Stop
+	}
+}

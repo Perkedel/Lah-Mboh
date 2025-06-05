@@ -1245,6 +1245,481 @@ Object Xim_Pipebomb
 	Frame EXP2T { Light NAPALMEX_13 }
 	Frame EXP2U { Light NAPALMEX_13 }
 }
+
+// Duke Nukem Tanks!!! Xim, Enjay, Devloek
+// Missile tank
+FlickerLight2 ZombieMissileTankAttack
+{
+Color 1.0 0.8 0.2
+Size 48
+SecondarySize 56
+Interval 1
+Offset 0 40 0
+}
+
+Object ZombieMissileTank
+{
+Frame ZMTKD { Light ZombieMissileTankAttack }
+Frame ZMTKE { Light ZombieMissileTankAttack }
+}
+
+BrightMap Sprite ZMTKD1
+{
+Map BMZMTKD1
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD2
+{
+Map BMZMTKD2
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD3
+{
+Map BMZMTKD3
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD4
+{
+Map BMZMTKD4
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD5
+{
+Map BMZMTKD5
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD6
+{
+Map BMZMTKD6
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD7
+{
+Map BMZMTKD7
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKD8
+{
+Map BMZMTKD8
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE1
+{
+Map BMZMTKE1
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE2
+{
+Map BMZMTKE2
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE3
+{
+Map BMZMTKE3
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE4
+{
+Map BMZMTKE4
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE5
+{
+Map BMZMTKE5
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE6
+{
+Map BMZMTKE6
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE7
+{
+Map BMZMTKE7
+DisableFullBright
+}
+
+BrightMap Sprite ZMTKE8
+{
+Map BMZMTKE8
+DisableFullBright
+}
+
+Pointlight ZombieTankMissile1
+{
+Color 1.0 0.7 0.0
+Size 56
+}
+
+Flickerlight ZombieTankMissile2
+{
+Color 1.0 0.7 0.0
+Size 64
+SecondarySize 72
+Chance 0.3
+}
+
+Flickerlight ZombieTankMissile3
+{
+Color 0.5 0.1 0.0
+Size 80
+SecondarySize 88
+Chance 0.3
+}
+
+Flickerlight ZombieTankMissile4
+{
+Color 0.3 0.0 0.0
+Size 96
+SecondarySize 104
+Chance 0.3
+}
+
+Object ZombieTankMissile
+{
+Frame ZMISA { Light ZombieTankMissile1 }
+Frame ZMISB { Light ZombieTankMissile2 }
+Frame ZMISC { Light ZombieTankMissile3 }
+Frame ZMISD { Light ZombieTankMissile4 }
+}
+
+// Plasma tank
+FlickerLight2 ZombiePlasmaTankAttack
+{
+	Color 0.2 0.8 1.0
+	Size 48
+	SecondarySize 56
+	Interval 1
+	Offset 0 40 0
+}
+Object ZombiePlasmaTank
+{
+	Frame ZPTKD { Light ZombiePlasmaTankAttack }
+	Frame ZPTKE { Light ZombiePlasmaTankAttack }
+}
+
+// Usual Tank
+FlickerLight2 ZombieTankAttack
+{
+	Color 1.0 0.8 0.2
+	Size 48
+	SecondarySize 56
+	Interval 1
+	Offset 0 40 0
+}
+
+Object ZombieTank
+{
+	Frame ZTNKD { Light ZombieTankAttack }
+	Frame ZTNKE { Light ZombieTankAttack }
+}
+
+Pointlight ZombieTankExplosion1
+{
+	Color 1.0 0.8 0.2
+	Size 50
+}
+
+Pointlight ZombieTankExplosion2
+{
+	Color 1.0 0.8 0.2
+	Size 58
+}
+
+Pointlight ZombieTankExplosion3
+{
+	Color 1.0 0.8 0.2
+	Size 62
+}
+
+Pointlight ZombieTankExplosion4
+{
+	Color 1.0 0.8 0.2
+	Size 58
+}
+
+Pointlight ZombieTankExplosion5
+{
+	Color 1.0 0.8 0.2
+	Size 54
+}
+
+Pointlight ZombieTankExplosion6
+{
+	Color 1.0 0.8 0.2
+	Size 50
+}
+
+Pointlight ZombieTankExplosion7
+{
+	Color 1.0 0.8 0.2
+	Size 44
+}
+
+Pointlight ZombieTankExplosion8
+{
+	Color 0.9 0.7 0.1
+	Size 40
+}
+
+Pointlight ZombieTankExplosion9
+{
+	Color 0.9 0.7 0.1
+	Size 36
+}
+
+Pointlight ZombieTankExplosion10
+{
+	Color 0.9 0.7 0.1
+	Size 32
+}
+
+Pointlight ZombieTankExplosion11
+{
+	Color 0.8 0.6 0.0
+	Size 28
+}
+
+Pointlight ZombieTankExplosion12
+{
+	Color 0.8 0.6 0.0
+	Size 26
+}
+
+Pointlight ZombieTankExplosion13
+{
+	Color 0.8 0.6 0.0
+	Size 24
+}
+
+Pointlight ZombieTankExplosion14
+{
+	Color 0.6 0.4 0.0
+	Size 22
+}
+
+Pointlight ZombieTankExplosion15
+{
+	Color 0.6 0.4 0.0
+	Size 20
+}
+
+Pointlight ZombieTankExplosion16
+{
+	Color 0.6 0.4 0.0
+	Size 18
+}
+
+Pointlight ZombieTankExplosion17
+{
+	Color 0.4 0.2 0.0
+	Size 16
+}
+
+Pointlight ZombieTankExplosion18
+{
+	Color 0.4 0.2 0.0
+	Size 14
+}
+
+Pointlight ZombieTankExplosion19
+{
+	Color 0.2 0.0 0.0
+	Size 12
+}
+
+Pointlight ZombieTankExplosion20
+{
+	Color 0.2 0.0 0.0
+	Size 10
+}
+
+Object ZombieTankExplosion
+{
+	Frame ZTXPA { Light ZombieTankExplosion1 }
+	Frame ZTXPB { Light ZombieTankExplosion2 }
+	Frame ZTXPC { Light ZombieTankExplosion3 }
+	Frame ZTXPD { Light ZombieTankExplosion4 }
+	Frame ZTXPE { Light ZombieTankExplosion5 }
+	Frame ZTXPF { Light ZombieTankExplosion6 }
+	Frame ZTXPG { Light ZombieTankExplosion7 }
+	Frame ZTXPH { Light ZombieTankExplosion8 }
+	Frame ZTXPI { Light ZombieTankExplosion9 }
+	Frame ZTXPJ { Light ZombieTankExplosion10 }
+	Frame ZTXPK { Light ZombieTankExplosion11 }
+	Frame ZTXPL { Light ZombieTankExplosion12 }
+	Frame ZTXPM { Light ZombieTankExplosion13 }
+	Frame ZTXPN { Light ZombieTankExplosion14 }
+	Frame ZTXPO { Light ZombieTankExplosion15 }
+	Frame ZTXPP { Light ZombieTankExplosion16 }
+	Frame ZTXPQ { Light ZombieTankExplosion17 }
+	Frame ZTXPR { Light ZombieTankExplosion18 }
+	Frame ZTXPS { Light ZombieTankExplosion19 }
+	Frame ZTXPT { Light ZombieTankExplosion20 }
+}
+
+BrightMap Sprite ZTNKD1
+{
+Map BMZTNKD1
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD2
+{
+Map BMZTNKD2
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD3
+{
+Map BMZTNKD3
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD4
+{
+Map BMZTNKD4
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD5
+{
+Map BMZTNKD5
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD6
+{
+Map BMZTNKD6
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD7
+{
+Map BMZTNKD7
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKD8
+{
+Map BMZTNKD8
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE1
+{
+Map BMZTNKE1
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE2
+{
+Map BMZTNKE2
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE3
+{
+Map BMZTNKE3
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE4
+{
+Map BMZTNKE4
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE5
+{
+Map BMZTNKE5
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE6
+{
+Map BMZTNKE6
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE7
+{
+Map BMZTNKE7
+DisableFullBright
+}
+
+BrightMap Sprite ZTNKE8
+{
+Map BMZTNKE8
+DisableFullBright
+}
+// Okay tank done
+
+// Duke Nukem Hologram DeVloek
+// Holodoomguy
+pointlight HoloDoomguyLight
+{
+	color 0.25 0.5 0.25
+	size 48
+	attenuate 1
+	offset 0 24 0
+}
+object HoloDoomguy
+{
+	frame VHDG { light HoloDoomguyLight }
+}
+
+pointlight HoloDoomguyDecoyLight
+{
+	color 0.5 0.75 0.5
+	size 96
+	attenuate 1
+	offset 0 28 0
+}
+object HoloDoomguyDecoy
+{
+	frame VHDG { light HoloDoomguyDecoyLight }
+}
+
+// Holostrifeguy
+pointlight HoloStrifeguyLight
+{
+	color 0.25 0.25 0.5
+	size 48
+	attenuate 1
+	offset 0 24 0
+}
+object HoloStrifeguy
+{
+	frame VHSG { light HoloStrifeguyLight }
+}
+
+pointlight HoloStrifeguyDecoyLight
+{
+	color 0.5 0.5 0.75
+	size 96
+	attenuate 1
+	offset 0 28 0
+}
+object HoloStrifeguyDecoy
+{
+	frame PLAY { light HoloStrifeguyDecoyLight }
+}
+
 // End Realm667
 
 // Alando1

@@ -59,3 +59,34 @@ Sprite "REDBI0", 72, 4
 	Offset -120, -156
 	Patch "REDBZ0", 0, 0
 }
+
+// Hologram DeVloek
+// Statusbar icon
+Graphic "VHDGICO1", 41, 68
+{
+	XScale 2.5
+	YScale 2.5
+	Patch "VHDGICO1", 0, 2
+}
+
+Graphic "VHDGICO2", 41, 68
+{
+	XScale 2.5
+	YScale 2.5
+	Patch "VHDGICO2", 0, 2
+}
+
+Graphic "VHDGICO3", 41, 68
+{
+	XScale 2.5
+	YScale 2.5
+	Patch "VHDGICO3", 0, 2
+}
+
+Graphic "VHDGICO4", 41, 68
+{
+	XScale 2.5
+	YScale 2.5
+	Patch "VHDGICO4", 0, 2
+}
+

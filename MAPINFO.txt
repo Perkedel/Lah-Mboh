@@ -204,6 +204,9 @@ DoomEdNums
 	30894 = ShootBush5
 	30895 = ShootBush6
 	30896 = ShootBush7
+	// Duke Nukem Hologram DeVloek
+	22273 = HoloDoomguy
+	22274 = HoloStrifeguy
 
 	// Monster Resource WAD / Realm667 Bestiary
 	// Monsters. was 31XX, conflict with Obsidian Plague Decorate ID24

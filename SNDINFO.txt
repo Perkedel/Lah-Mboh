@@ -151,6 +151,53 @@ SPASCOC		SPASCOC2
 SPASFIR		SPASFIRE
 SPASLOA		SPASLOAD
 SPASCLC     SPASCLIC   
+
+// Duke Nukem Tanks!!! Xim, Enjay, Devloek
+// Missile tank
+ZMTank/see		DSZTANK1
+ZMTank/missile	DSZTMISL
+ZMTank/missileX	DSZTEXPL
+ZMTank/pain		DSZTANKP
+ZMTank/death	DSZTANKD
+ZMTank/Run		DSZTANK2
+ZMTank/explode	DSZTANKX
+
+// Plasma Tank
+ZPTank/see 			DSZTANK1
+ZPTank/attack 		DSZTPLAZ
+ZPTank/pain 		DSZTANKP
+ZPTank/death 		DSZTANKD
+ZPTank/Run 			DSZTANK2
+ZPTank/explode 		DSZTANKX
+
+// Usual Tank
+ZTank/see DSZTANK1
+ZTank/attack DSZTGUN
+ZTank/pain DSZTANKP
+ZTank/death DSZTANKD
+ZTank/Run DSZTANK2
+ZTank/explode DSZTANKX
+
+// Duke Nukem Hologram DeVloek
+// Holodoomguy
+holodg/on VHDGON
+holodg/off VHDGOFF
+$random holodg/oneliner { holodg/vox1 holodg/vox2 holodg/vox3 holodg/vox4 holodg/vox5 holodg/vox6 holodg/vox7}
+holodg/vox1 VHDGVOX1
+holodg/vox2 VHDGVOX2
+holodg/vox3 VHDGVOX3
+holodg/vox4 VHDGVOX4
+holodg/vox5 VHDGVOX5
+holodg/vox6 VHDGVOX6
+holodg/vox7 VHDGVOX7
+$attenuation holodg/oneliner 0.5
+
+// Holostrifeguy
+holosg/on VHSGON
+holosg/off VHSGOFF
+
+// Okay Tank done
+
 // End Realm667
 
 // Enjay
