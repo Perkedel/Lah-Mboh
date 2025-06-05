@@ -61,16 +61,25 @@ class LMBH_IwadDetect : StaticEventHandler
 
         https://zdoom.org/wiki/Structs:Wads
         https://zdoom.org/wiki/Events_and_handlers
+        https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5
 
         not Wads.CheckNumForFullName("FREEDOOM") > -1
         */
         if(Wads.FindLump("FREEDOOM") > -1)
         {
             Console.printf(StringTable.Localize("$IWDT_FD"));
+            Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("FREEDOOM"))));
+            //Console.printf("MD5 ".. Wads.GetLumpFullName(Wads.CheckNumForFullName("freedoom2.wad")) .." = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.CheckNumForFullName("freedoom2.wad"))));
+            // Should be F075BFB458BDCAB7327806FBCEF2DCAF for v0.13.0 Stable
+            // wait, why is it 1be355f49ebe57da2f324d9cc6fd9f5f in 3saster?
+            // Oh shit, that's not the file! we're looking at the FREEDOOM marker lump! not the iwad file itself!
+            // huh? I looked the iwad with 3saster and it's d41d8cd98f00b204e9800998ecf8427e
+            // that's invalid file.
         }
         else if(Wads.FindLump("BLASPHEM") > -1) 
         {
             Console.printf(StringTable.Localize("$IWDT_BL"));
+            Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("BLASPHEM"))));
         }
         else
         {
@@ -86,10 +95,41 @@ class LMBH_IwadDetect : StaticEventHandler
         I gotta place it right next to this Mod PK3??????
         https://zdoom.org/wiki/Structs:Wads Article about it does not exist! pls document!
         */
-        if(Wads.CheckNumForFullName("ID24RES.WAD") != -1)
+        if(Wads.CheckNumForFullName("id24res.wad") > -1)
         {
             Console.printf(StringTable.Localize("$IWDT_ID24RES"));
+            Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.CheckNumForFullName("id24res.wad"))));
         }
+        else
+        {
+            //Console.printf("MD5 ID24RES.WAD = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.CheckNumForFullName("id24res.wad"))));
+        }
+
+        // Total Checklumps
+        /*
+        https://zdoom.org/wiki/GetLumpFullName
+        */
+        let totalLumps = Wads.GetNumLumps();
+        // for(int i = 0; i < totalLumps; i++)
+        // {
+        //     Console.Printf("Lump %d name: %s | full name: %s", i, Wads.GetLumpName(i), Wads.GetLumpFullName(i));
+        // }
+        // too noisy!
+
+        // whynt workkadsafalsdj
+
+        // This another example is not an IWAD detect, but detect if your loaded mod PWAD contains certain lump that signifies that you're using a TC or whatever
+        /*
+        e.g., Korp's Furdoom. https://korp-kat.itch.io/furdoom
+        */
+        // if(Wads.FindLump("FURTITL") > -1 && Wads.FindLump("FURDM01") > -1)
+        if(Wads.FindLump("FURTITL",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("FURDM01", 0, Wads.AnyNameSpace) > -1)
+        {
+            Console.printf("FURDOOM DETECTED YEY\n\c[orange]ADVISE\c-: Always excercise cautions when going to broadcast this Mod PK3.");
+        }
+        /*
+        This then can be used to check certain mods we gotta warn everyone for.
+        */
     }
 }
 /*

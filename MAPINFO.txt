@@ -12,6 +12,7 @@ gameinfo
 		"LMBH_achiever",
 		"LMBH_ExistenceHandler",
 		"LMBH_IwadDetect",
+		"LMBH_SafeDetect",
 		"LMBH_Persistencer",
 		"DNB_werrorHandler"
 	

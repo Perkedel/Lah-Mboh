@@ -46,6 +46,8 @@ For the thing we've yoinked
 > These are preincluded PWADs for your convenience
 
 - [Shooting Range Dummy](https://forum.zdoom.org/viewtopic.php?t=77948). Jekyll Grim Payne. **MIT License**. [SOURCE CODE](https://github.com/jekyllgrim/GZDoom-Target-Dummy)
+- [3Saster's GZDoom Utilities](https://github.com/3saster/GZDoom_Utilities). 3saster. MIT???. [SOURCE CODE](https://github.com/3saster/GZDoom_Utilities), MD5 Checksum, Dehacked detector, Ghost Monster Handler, Animated Handler! added `LMBH_` namespace in case other mods uses those too.
+    - used on [Fullscreen HUD](https://github.com/3saster/fullscrn_huds) ([dssfsefwefsfwe](https://forum.zdoom.org/viewtopic.php?t=63863))
 - [SpaceTrash Dev Textures](https://www.doomworld.com/forum/topic/118767-devtex-v001-texture-pack-release-thread/). SpaceTrash. Yes Edit, Yes Yoink, Yes Whatever, Must Credit.
 - [Gutawer-phantombeta ZForms](https://forum.zdoom.org/viewtopic.php?t=70527). Gutawer & phantombeta. **MIT License**. [SOURCE CODE](https://gitlab.com/Gutawer/gzdoom-zforms)
 - [Doom2fan ZForm Examples](https://github.com/Doom2fan/ZFormsExamples). Doom2fan (phantombeta). **CC0**. [SOURCE CODE](https://github.com/Doom2fan/ZFormsExamples). Example for above Gutawer-phantombeta Zforms library

@@ -9,6 +9,7 @@ version "4.11.3" // Because Project Brutality, but we also want latest features 
 #include "scripts/Realm667Zs.txt"
 #include "scripts/ExistenceVerifier/ExistenceVerifier.zs"
 #include "scripts/IWAD_Detect/IwadDetect.zs"
+#include "scripts/IWAD_Detect/SafeDetect.zs"
 #include "scripts/Persistencer/Persistencer.zs"
 
 // crashes
@@ -24,3 +25,6 @@ version "4.11.3" // Because Project Brutality, but we also want latest features 
 // Stupid Achievements (via Mboh amalgamates)
 #include "scripts/Achievements/MbohAchievements.zs"
 // end m8f
+
+// 3saster
+#include "scripts/3saster/3saster.zs" // GZDoom Utilities
