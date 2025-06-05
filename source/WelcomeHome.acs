@@ -351,6 +351,19 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"Darya")) {label_player = "Darya";extra_talk="";} // Twilight Maiden
 
+	// Cardboard Marty of Blue Vertigo, et all.
+	/*
+	https://bluevertigo.itch.io/the-space-pirate/ The Space Pirate
+	https://www.bluevertigo.org/thespacepirate
+	https://www.bluevertigo.org/
+	https://bluevertigo.itch.io/
+	https://bluevertigo.itch.io/
+	https://bluevertigo.itch.io/monster-sounds-ex Monster Sounds EX
+	https://www.moddb.com/mods/monster-sounds-ex
+	https://www.doomworld.com/forum/topic/148113-zdoommbf21-monster-sounds-ex-21-new-psxn64-sound-modes/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"TSP_MelPlayer")) {label_player = "Melody";extra_talk="How's your hunt doing? Did you collected your treasures well?";} // The Space Pirate. Melody Crosswell
+
 	// Altered Orbit Studios
 	/*
 	Selaco https://store.steampowered.com/app/1592280/Selaco/

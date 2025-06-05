@@ -189,6 +189,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("LoadFolder/LOADFOL", StringTable.Localize("$LOADFOL"))); // Unless we explicitly say the folder too?
 		// hardCodeLevels.push(HardCodeLevelName.Create("T_SMMU", StringTable.Localize("$SMMUTEST")));
 		hardCodeLevels.push(HardCodeLevelName.Create("SMMUTEST", StringTable.Localize("$SMMUTEST")));
+		hardCodeLevels.push(HardCodeLevelName.Create("Chubzdoomer/CHBZSD", StringTable.Localize("$CHBZSD")));
 		hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
 	}
 	

@@ -82,6 +82,7 @@ gameinfo
 		"$KARBITAN",
 		"$SLINSALERT",
 		"$CANTUNPOLITIC",
+		"$YESCARBITE",
 		"$WHERDGOING"
 	
 	addcreditpage = 
@@ -140,6 +141,9 @@ DoomEdNums
 	22711 = MedikitLater
 	22712 = StimpackLater
 	22713 = SoulsphereLater
+
+	// Chubzdoomer
+	16940 = ChubzCoin // was 16000
 
 	// Weapons Resource WAD
 	/*
@@ -1306,6 +1310,22 @@ map "LoadFolder/LOADFOL" lookup "LOADFOL"
 	//AllowRespawn
 	//RandomPlayerStarts
 	//RememberState
+}
+
+map "Chubzdoomer/CHBZSD" lookup "CHBZSD"
+{
+	author = "Chubzdoomer (edited by JOELwindows7)"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	//exitPic = "LMBHTIHD"
+	music = "$MUSIC_DOOM"
+	//cluster = 26555
+	//AllowRespawn
+	//RandomPlayerStarts
+	//RememberState
+	ResetHealth
+	ResetInventory
 }
 
 map SMMUTEST lookup "SMMUTEST"

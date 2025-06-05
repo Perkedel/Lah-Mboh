@@ -1106,3 +1106,31 @@ class SoccerTest: SmallBloodPool
 }
 
 // https://zdoom.org/wiki/REVERBS
+
+// Chubzdoomer Coin for dialogs
+// https://www.youtube.com/watch?v=MFgGaZPZ5m4
+class ChubzCoin : Coin
+{
+	Default
+	{
+		//$Category Powerups
+		//$Title Chubz Coin
+		Inventory.PickupMessage "$TXT_COIN";
+		//Inventory.PickupSound "COIN";
+		Inventory.PickupSound "items/ChubzCoin";
+		Scale 0.2;
+	}
+	States
+	{
+	Spawn:
+		CBZC A 2 BRIGHT;
+		CBZC B 2 BRIGHT;
+		CBZC C 2 BRIGHT;
+		CBZC D 2 BRIGHT;
+		CBZC E 2 BRIGHT;
+		CBZC F 2 BRIGHT;
+		CBZC G 2 BRIGHT;
+		CBZC H 2 BRIGHT;
+		Loop;
+	}
+}

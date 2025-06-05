@@ -1268,3 +1268,25 @@ object LazerSpray
     frame LAZ2 {light BFGBALL_X3}
 }
 // end Alando1
+
+// Chubzdoomer
+// Coin Strife Dialog
+pointlight COINLIGHT
+{
+    color 0.83 0.69 0.22
+    size 8
+	dontlightself 1
+}
+
+object ChubzCoin
+{
+    frame CBZCA { light COINLIGHT }
+    frame CBZCB { light COINLIGHT }
+    frame CBZCC { light COINLIGHT }
+    frame CBZCD { light COINLIGHT }
+    frame CBZCE { light COINLIGHT }
+	frame CBZCF { light COINLIGHT }
+	frame CBZCG { light COINLIGHT }
+	frame CBZCH { light COINLIGHT }
+}
+// end Chubzdoomer

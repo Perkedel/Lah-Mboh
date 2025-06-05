@@ -58,7 +58,7 @@ For the thing we've yoinked
 - [BIGDOOR Textures](https://www.doomworld.com/forum/topic/143829-the-texture-pack-for-bigdoor-lovers-bigdoors-in-bigger-and-smaller-sizes/). Meerschweinmann. ???. Texture pack for BIGDOOR Lover. We use the Hi-color version, & then Optimize PNG using PNG Optimize Tri-fecta
 - [Chubzdoomer Tutorials](https://www.youtube.com/@Chubzdoomer). Chubzdoomer. ???. Tutorials & Random stuffs I applied here!:
 	- [Jump pad](https://www.youtube.com/watch?v=kOtEg917eHM)
-	- [Strife Dialog](https://www.youtube.com/watch?v=MFgGaZPZ5m4). YOU FORGOR TO YOINK THE MAP EPISODE!!!
+	- [Strife Dialog](https://www.youtube.com/watch?v=MFgGaZPZ5m4). ~~YOU FORGOR TO YOINK THE MAP EPISODE!!!~~ Done!
 - [Tyler-J's Weapons Template](https://www.doomworld.com/forum/topic/129542-modern-shootist-weapon-template/). Tyler-J & URROVA. ???. Template weapons ft. URROVA's fix. **The projectile template is gone, pls remake!**
 - [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
 - [ZDoom Tutorials](https://zdoom.org/wiki/). Various. Various, Tutorial.
