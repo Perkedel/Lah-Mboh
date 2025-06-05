@@ -343,6 +343,19 @@ function void scan_character (void)
 	Jackbomb
 	*/
 	else if(CheckActorClass(PlayerNumber(),"IchorTestPlayer")) {label_player = "Ichor Jackbomber";extra_talk="";}
+
+	// Zdexium
+	/*
+	https://zdexium.itch.io/
+	https://zdexium.itch.io/twilightmaiden Twilight Maiden. 😏😏😏😏😏😏😏😏😏😏😏😏
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Darya")) {label_player = "Darya";extra_talk="";} // Twilight Maiden
+
+	// Altered Orbit Studios
+	/*
+	Selaco https://store.steampowered.com/app/1592280/Selaco/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Dawn")) {label_player = "Dawn";extra_talk="Hey, welcome to Blender Surreal Meme! This is what it looks like.\nAlso, you, gamer, somehow loaded either an original GZDoom stuffs in it, yanked it out of Selaco, or put this Mod PK3 on the Selaco, How, interesting.. this mod's designed for original DOOM 2. Thanks for trying this experiment tho!";set_second = 12.0;}
 	
 	// Alt name & misc too generic names
 	else if(CheckActorClass(PlayerNumber(),"Doomguy")) {label_player = "Doomguy";extra_talk="";}
@@ -367,7 +380,7 @@ script "WelcomeHome" (void)
 	// Now, Scan the character
 	scan_character();
 	
-	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", s:GetActorProperty(PlayerNumber(),APROP_NameTag);HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
+	HudMessage(s:"Welcome home, ", s:label_player,s:"!\n",s:extra_talk, s:"\n\nClass name = ", l:GetActorProperty(PlayerNumber(),APROP_NameTag), s:" (", s:GetActorProperty(PlayerNumber(),APROP_NameTag), s: ")";HUDMSG_PLAIN | HUDMSG_LOG,188,CR_BRICK,0.5,0.25,set_second);
 }
 
 script "ProgressivelyWorseWeirdEntered" (void)

@@ -28,7 +28,7 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 > 
 > - swearings
 > - insults
-> - Germany chancelor & symbols
+> - Germany chancelor & symbols, to be against for
 > - Number of beast
 > - goriest of gores guro
 > - concealed & semi concealed jiggling elements (see gacha games likes from Hoyoverse, especially Zenless Zone Zero)
