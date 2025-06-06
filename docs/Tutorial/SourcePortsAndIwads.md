@@ -92,13 +92,19 @@ Format = `WAD` / `IWAD`, `IPK3`
 - [Delaweare](https://spaceisgreen.nl/delaweare.htm)
     - [Alt Download](https://web.archive.org/web/20250211191240/http://spaceisgreen.nl/delaweare.htm)
     - [BONUS! Space is Green Website & More Stuffs](http://www.spaceisgreen.nl/)
-- [Disdain](https://store.steampowered.com/app/2113270/DISDAIN/). **For VkDoom (Included)**
+- [Disdain](https://store.steampowered.com/app/2113270/DISDAIN/). **For VkDoom (Included)**. Nash's Quake-like idtech1 FPS, designed for VKDoom (a GZDoom fork that built graphics with Vulkan from ground up).
 - [Selaco](https://store.steampowered.com/app/1592280/Selaco/), [Website](https://store.steampowered.com/app/1592280/Selaco/). **For GZDoom (Included)**. **Very Featureful!**: Steam Workshop, Mod Scan, Menu Revamp, Level Editor (UDB Modified), Steam Achivements, Steam Trading Cards, Half Life like Open World (Map Partitioned)
 - [Hedon Bloodrite](https://store.steampowered.com/app/1072150/Hedon_Bloodrite/), [Demo](https://www.moddb.com/mods/hedon). **For GZDoom (Included)**. **Features**: Steam Trading Cards
 - [Mala Petaka](https://store.steampowered.com/app/2104460/Mala_Petaka/). **For GZDoom (Included)**. From Indonesia.
+- [Enigmatic Worlds](https://store.steampowered.com/app/2558730/Enigmatic_Worlds/). **For GZDoom (Included)**. Darsycho's Surreal FPS. [DW Thread](https://www.doomworld.com/forum/topic/135182-enigmatic-worlds-commercial-demo-on-itchio-and-steam/), [Itch](https://darsycho.itch.io/enigmatic-worlds).
 - For ZDoom (& derivatives), See [list of supported games on ZDoom Wiki](https://zdoom.org/wiki/IWAD)
 
 ### Source Ports
+
+> [!NOTE]
+> For Mega-IWADs (Main WAD / IPK3) that's legally has been considered ***its own indie game***, it is highly advised to use their included Source Port out of the box (usually provided) 
+> to ensure guaranteed to work experience.  
+> And to mod (PWAD), it is also highly advised to use the mod designed & optimized for said IWAD / IPK3. Best if it's from the provided repository such as Steam Workshop of IWAD IPK3.
 
 - (vanilla) ([Source Code](https://github.com/id-Software/DOOM))
 - [Chocolate](https://www.chocolate-doom.org/wiki/index.php/Chocolate_Doom). Replicate Vanilla for Modern
@@ -119,9 +125,9 @@ Format = `WAD` / `IWAD`, `IPK3`
         - [VKDoom](https://vkdoom.org/) ([Source Code](https://vkdoom.org/))
 - Unity **Paid** **Censored**
     - see DOOM I + II & downgrade it with Beta!
-- KEX **Paid** 
+- KEX **Paid** **Censored**
     - [DOOM I + II](https://store.steampowered.com/app/2280/DOOM__DOOM_II/), [GOG](https://www.gog.com/en/game/doom_doom_ii) **Censored: Medipack, Level Easter-egg**
-    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/), [GOG](https://www.gog.com/en/game/doom_64) **Censored: ???**
+    - [DOOM 64](https://store.steampowered.com/app/1148590/DOOM_64/), [GOG](https://www.gog.com/en/game/doom_64) **Censored: ???**. This was the enthusiast of Kaiser!!
 - Android
     - [DeltaTouch](http://opentouchgaming.com/delta-touch/), **PAID** [Buy on Google Play](https://play.google.com/store/apps/details?id=com.opentouchgaming.deltatouch). Collection of the following Source Ports:
         - GZDoom
