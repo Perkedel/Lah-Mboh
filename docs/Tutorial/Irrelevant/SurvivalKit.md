@@ -24,6 +24,7 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
     - Batteries. To power up electronic stuffs. Can be in wrapped form called Power Banks.
     - Solar Panel. to be connected to such power banks & charges it.
     - Genset. to charge the batteries and/or power up electronic stuffs.
+    - Crank. Crank to charge or lite-up power generator. Also shake-to-charge type as well (Flashlight only)
     - Fuel. Gasoline, Diesel, Kerosene, Napthalene, etc.
 - Tools
     - Utensils. Spork, Spoon, Forks, Cookwares
@@ -47,7 +48,7 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
     - Lotion
     - Wound healer ointments
     - Betadine or anything Iodine
-- Medical & Surgical
+- Medical & Surgical (ala Strife, Far Cry?, etc.)
     - Gauss & Casts
     - Wound Tapes
     - Cotton
@@ -58,10 +59,10 @@ Typically, a Survival Kit would have at least, some more, to all of the followin
     - [Isopropyl Alcohol](https://en.wikipedia.org/wiki/Isopropyl_alcohol) to sterilize stuffs
     - Betadine or anything Iodine
     - Painkiller & Anesthetics
-- Weapons. Note, these type of things were never found besides video games
+- Weapons. **Note**, these type of things were never found besides video games & few military agencies
     - Ammos & guns for it
-    - Flare kit (actually this one exists in packs found IRL). Flare gun & shots for it for calling your survivors or attention diversion.
-    - Melee. Knifes / Bayonette, garotte. Actually, *non-weaponized* knives are legal for IRL distribution.
+    - Flare kit (**actually this one mostly could exists in packs found on civillian packs too**). Flare gun & shots for it for calling your survivors or attention diversion.
+    - Melee. Knifes / Bayonette, garotte. Actually, *non-weaponized* knives are legal for IRL distribution, so **such knives maybe found in civillian packs**.
 
 ## Sauces
 
