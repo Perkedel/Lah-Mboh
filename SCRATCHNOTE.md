@@ -75,7 +75,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - The sortment center had to rebrand to Predictor due to trademark concern against ORACLE irl.
 - Mboh UX. Selaco-fy your DOOM experience but Gratis, Open Source, & FULL VERSION. another Mod PK3 that replaces the whole UX to become like Selaco's & KEX at the same time. Probably at this point you might just wanna hack the GZDoom (fork & edit) itself?
 - Gegap Gempita
-- 
+- Aku Bahagia / Yesus Angkat Dosaku dan buang ke laut byur. The melody uses that Rhodes from Blue Archive, but GM seems doesn't have it, so we stuck with Clavi that's close. maybe add square wave Dual? The Drum is Brush like from a pub in 60s. inspire [Kevin & Karyn's cover](https://youtu.be/QQJOF5VdaPU)
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
