@@ -618,6 +618,35 @@ Format = Unreal Engine Datas
     - GameBanana `FNF`
     - Gamejolt `FNF`
 
+## MIDI
+
+This is not actually a game that comes from a company. It's a collective standards, founded by Roland, joined by peers to become MIDI association.  
+Here, is a MIDI file you load onto a player.
+
+### IWADs
+
+#### Source of MIDI
+
+- [Freemidi.org](https://freemidi.org)
+- Yamaha Musicsoft. Buy cool XG MIDI for your high end Yamaha keyboard arrangers as of Genos.
+
+#### Soundfont & VSTi
+
+- [General User S. Christian Collins](https://schristiancollins.com/generaluser.php). [GitHub](https://github.com/mrbumpy409/GeneralUser-GS)
+
+### Source Ports
+
+MIDI Players
+
+- [Falcosoft's Soundfont MIDI Player](https://falcosoft.hu/softwares.html#midiplayer)
+
+### Mods
+
+MIDI Editors
+
+- [Sekaiju](https://openmidiproject.opal.ne.jp/Sekaiju_en.html)
+- [PSR UTI Heikoplate](https://www.heikoplate.de/psruti.html). **WATERMARK**
+
 ## Extra Articles
 
 - Wikipedia

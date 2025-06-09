@@ -76,6 +76,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Mboh UX. Selaco-fy your DOOM experience but Gratis, Open Source, & FULL VERSION. another Mod PK3 that replaces the whole UX to become like Selaco's & KEX at the same time. Probably at this point you might just wanna hack the GZDoom (fork & edit) itself?
 - Gegap Gempita
 - Aku Bahagia / Yesus Angkat Dosaku dan buang ke laut byur. The melody uses that Rhodes from Blue Archive, but GM seems doesn't have it, so we stuck with Clavi that's close. maybe add square wave Dual? The Drum is Brush like from a pub in 60s. inspire [Kevin & Karyn's cover](https://youtu.be/QQJOF5VdaPU)
+- You impose patent so nobody *steals* it even if your way of this work is garbage & kills people. I impose patent so you don't steal & ruin it. We're not the same. Actually I don't patent. Everyone must makes this seatbelt mandatory, punishable by law if no safe.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
