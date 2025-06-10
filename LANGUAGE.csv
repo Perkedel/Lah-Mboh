@@ -138,7 +138,7 @@ Strife Dialog Tutorial,CHBZSD,,Tutorial Dialog Strife,,,,
 ,,,,,,,
 ,,,,,,,
 Generic Test,_GENERIC_TEST,"Map file named `TEST` that’s it. Either it’s Kinsie’s Tester, or somebody.",Tes Generik,,,,
-,,,,,,,
+Placeholder,NOYET,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
@@ -1051,7 +1051,11 @@ run Funny Cast,ENTER_CFCAST,,menjalankan Cast Lucu.,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
-,,,,,,,
+"Level not yet exist!
+Help us by contributing yours!
+https://github.com/Perkedel/Lah-Mboh",ENTER_NOYET,,"Level belum ada!
+Silahkan bantu kami dengan kontribusi level Anda!
+https://github.com/Perkedel/Lah-Mboh",,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

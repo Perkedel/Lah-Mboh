@@ -526,6 +526,21 @@ Map MBOHTEST lookup "MBOHTEST"
 	music = "D_BERKAT" // Test map should not have music! use manual switch to turn it on instead!
 }
 
+Map NOYET lookup "NOYET"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	sky1 = "SKY1"
+	//music = "D_STANKY"
+	//par = 30
+	sucktime = 0
+	exitPic = "LMBHTIHD"
+	//InterMusic = "D_ULIVE"
+	//enterPic = "LMBHPENT"
+	//ResetHealth
+	//ResetInventory
+}
+
 // Megawad
 
 Map MBH01 lookup "MBH01"
@@ -535,7 +550,7 @@ Map MBH01 lookup "MBH01"
 	//next = "MBOHTEST" // Temp! comment when level done!
 	sky1 = "SKY1"
 	music = "D_STANKY"
-	par = 30
+	par = 60
 	sucktime = 0
 	exitPic = "LMBHTIHD"
 	InterMusic = "D_ULIVE"

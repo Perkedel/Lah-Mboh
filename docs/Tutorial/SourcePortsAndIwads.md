@@ -625,6 +625,45 @@ Here, is a MIDI file you load onto a player.
 
 ### IWADs
 
+#### MIDI Standards
+
+> [!NOTE]
+> Not to be confused with `MIDI 2.0`. That's the protocol.  
+> Below, we are talking about MIDI Resets.
+
+According to Mr. ltgcgo of [Octavia](https://gh.ltgc.cc/octavia/test/) ([source code](https://github.com/ltgcgo/octavia/)), Here are various vendor of MIDI standards based on which General MIDI standards it derives from:
+
+- Pre-GM. Before General MIDI was established, manufacturers had to design their own bank & program placement. As the result, no MIDI file would be compatible across different company.
+    - Roland MT-32 (Deprecated, use GS!)
+    - Yamaha DOC (Document Orchestra)
+    - Yamaha QY100 (Deprecated, use XG)
+    - Yamaha QY20 (Deprecated, use XG)
+- General MIDI Level 1 (GM1). MIDI Association. The General MIDI was established to bring standards for all manufacturers how should MIDI be built. This convention ensures that all MIDI file & events work well across different companies.
+    - (*vanilla*)
+    - **Roland GS**
+    - Roland SC (Deprecated, use GS!)
+    - **Yamaha XG**
+    - Korg NS5R
+    - Korg 05R/W
+    - Korg X5D
+    - Kawai GMega
+    - Akai SG
+    - Yamaha CS1x (Niche, use XG to reach more)
+    - Yamaha S90 ES (Niche, use XG to reach more)
+    - Yamaha Motif ES (Niche, use XG to reach more)
+    - Korg Trinity
+    - Perkedel Leekspinner Compat (LS1) (Not Exist Yet) (Deprecated, use LS2 when rendering!) (Mod for XG)
+    - Creative Soundfont (SF2). This is not a reset, but a mark as for a limitation in Soundfont system, where only MSB (called Bank Select) & Program Change available. **LSB is unsupported**.
+- General MIDI Level 2 (GM2). MIDI Association
+    - (*vanilla*)
+    - Roland SD
+    - Korg PA
+    - Korg KROSS 2
+    - Perkedel Leekspinner (LS2) (Not Exist Yet) (Pls select mod target: SD or PA? Suggested SD)
+    - *Where's Yamaha btw? I wish there is XG2..*
+
+Usually, to choose above reset in your MIDI file, you would turn on whichever GM level you desire, followed by the sub-reset.
+
 #### Source of MIDI
 
 - [Freemidi.org](https://freemidi.org)
