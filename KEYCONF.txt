@@ -7,11 +7,11 @@ Alias spawnTestDummy "netevent spawnJekyllDummy"
 // end Jekyll Grim
 
 // Tyler-J player config
-addplayerclass TylerConfigPlayer
+//addplayerclass TylerConfigPlayer
 
 // Realm667
 // Jackbomb Ichor
-addplayerclass IchorTestPlayer
+//addplayerclass IchorTestPlayer
 // end Realm 667
 
 //Weapon Resource Wad

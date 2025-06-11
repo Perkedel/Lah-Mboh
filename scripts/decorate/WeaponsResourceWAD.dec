@@ -1374,7 +1374,7 @@ ACTOR TrailGun : Weapon 25016
 {  
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25016
-   SpawnID 31
+   //SpawnID 31
    Inventory.PickupMessage "You got the Trail Gun!"
    Weapon.AmmoGive 75
    Weapon.AmmoUse 25
@@ -1667,7 +1667,7 @@ ACTOR D2C_StrayPipebomb : Rocket
 ACTOR D2C_StrayPipebombExplosion 
 {
     SeeSound "weapons/explode"
-    SpawnID 201
+    //SpawnID 201
     Radius 8
     Height 56
     Speed 0

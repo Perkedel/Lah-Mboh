@@ -93,7 +93,7 @@ Format = `WAD` / `IWAD`, `IPK3`
     - [Alt Download](https://web.archive.org/web/20250211191240/http://spaceisgreen.nl/delaweare.htm)
     - [BONUS! Space is Green Website & More Stuffs](http://www.spaceisgreen.nl/)
 - [Disdain](https://store.steampowered.com/app/2113270/DISDAIN/). **For VkDoom (Included)**. Nash's Quake-like idtech1 FPS, designed for VKDoom (a GZDoom fork that built graphics with Vulkan from ground up).
-- [Selaco](https://store.steampowered.com/app/1592280/Selaco/), [Website](https://store.steampowered.com/app/1592280/Selaco/). **For GZDoom (Included)**. **Very Featureful!**: Steam Workshop, Mod Scan, Menu Revamp, Level Editor (UDB Modified), Steam Achivements, Steam Trading Cards, Half Life like Open World (Map Partitioned)
+- [Selaco](https://store.steampowered.com/app/1592280/Selaco/), [Website](https://store.steampowered.com/app/1592280/Selaco/), [Source Code (Without Level)](https://codeberg.org/sag/pancake-engine). **For GZDoom (Included)**. **Very Featureful!**: Steam Workshop, Mod Scan, Menu Revamp, Level Editor (UDB Modified), Steam Achivements, Steam Trading Cards, Half Life like Open World (Map Partitioned)
 - [Hedon Bloodrite](https://store.steampowered.com/app/1072150/Hedon_Bloodrite/), [Demo](https://www.moddb.com/mods/hedon). **For GZDoom (Included)**. **Features**: Steam Trading Cards
 - [Mala Petaka](https://store.steampowered.com/app/2104460/Mala_Petaka/). **For GZDoom (Included)**. From Indonesia.
 - [Enigmatic Worlds](https://store.steampowered.com/app/2558730/Enigmatic_Worlds/). **For GZDoom (Included)**. Darsycho's Surreal FPS. [DW Thread](https://www.doomworld.com/forum/topic/135182-enigmatic-worlds-commercial-demo-on-itchio-and-steam/), [Itch](https://darsycho.itch.io/enigmatic-worlds).

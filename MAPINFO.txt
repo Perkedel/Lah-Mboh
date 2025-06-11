@@ -105,6 +105,10 @@ gameinfo
 		"LMBHCARR",
 		"LMBHCRED"
 	
+	addPlayerClasses =
+		"TylerConfigPlayer",
+		"IchorTestPlayer"
+	
 	// Test only! do not uncomment in production!
 	//TitlePage = "LMBHRES1"
 		
