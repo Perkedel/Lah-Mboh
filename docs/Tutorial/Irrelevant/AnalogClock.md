@@ -48,7 +48,7 @@ Also note, Military format is always 24 Hour format. So if they say `05:00`, it 
 
 - 12:00 = 1200 Twelve Hundred
 - :00 = Hundred, replacing `O' Clock`.
-- 06:00 = 0600 O' Six hundred. Although, the `O'` is not entirely removed, it just got new role.
+- 06:00 = 0600 Zero Six hundred. Although, ~~the `O'` is not entirely removed, it just got new role~~ No, that gone too.
 - 11:30 = 1130 Eleven Hundred Thirty (less `Half Twelve Hundred`)
 - 22:45 = 2245 Twenty Two Four Five. Sometimes, you gotta be faster & shorter than ever before.
 
