@@ -77,6 +77,7 @@ Cool ideas that scope is way too huge for me to realize now, but maybe you will?
 - Gegap Gempita
 - Aku Bahagia / Yesus Angkat Dosaku dan buang ke laut byur. The melody uses that Rhodes from Blue Archive, but GM seems doesn't have it, so we stuck with Clavi that's close. maybe add square wave Dual? The Drum is Brush like from a pub in 60s. inspire [Kevin & Karyn's cover](https://youtu.be/QQJOF5VdaPU)
 - You impose patent so nobody *steals* it even if your way of this work is garbage & kills people. I impose patent so you don't steal & ruin it. We're not the same. Actually I don't patent. Everyone must makes this seatbelt mandatory, punishable by law if no safe.
+- A CEO died single even after 320 girlfriend rejects. The company in shock. What to do? He was the one motivating us to have spouse! We are not hypocrite! Sell the church organization to a mega church. mega church more successful and more rich, eventually consume whole company to the mega church, blind siding them from truth forever. Because they thought God is unfair and makes the motivator himself died single when he wants coupling. The CEO was nice, no toxic, no what. Just humble. Then die old without the wife he deserved. Died a celibacy he doesn't want.
 
 ## sdjfjkhadjikfghkjlaerhjklfhaljkeshfjklaes
 
