@@ -14,7 +14,7 @@ class LevelSelectNow
 	}
 }
 
-class HardCodeLevelName
+class HardCodeLevelName //: Actor
 {
 	string level;
 	string label;
@@ -31,6 +31,28 @@ class HardCodeLevelName
 		}
 		return h;
 	}
+}
+
+class LMBH_ScannableLevelName : Actor Abstract
+{
+	// use m8f's ways of StupidAchievement. Extract the parameter into HardCodeLevelName!
+	string level;
+	string label;
+
+	property level: level;
+	property label: label;
+
+	Default
+	{
+		LMBH_ScannableLevelName.level "TEST";
+		LMBH_ScannableLevelName.label "";
+	}
+}
+
+class LMBH_ScannableLevelHandler: StaticEventHandler
+{
+	// same goes with the handler.
+
 }
 
 class LevelSelectNowHandler : LMBH_ZF_Handler
@@ -191,6 +213,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.push(HardCodeLevelName.Create("SMMUTEST", StringTable.Localize("$SMMUTEST")));
 		hardCodeLevels.push(HardCodeLevelName.Create("Chubzdoomer/CHBZSD", StringTable.Localize("$CHBZSD")));
 		hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
+
+		// Then scan the level. Whoever Mod PK3 that has class of this HardCodeLevelName with property parameters on it.
 	}
 	
 	override void init (Menu parent)

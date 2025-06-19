@@ -14,6 +14,7 @@ gameinfo
 		"LMBH_IwadDetect",
 		"LMBH_SafeDetect",
 		"LMBH_Persistencer",
+		"LMBH_ScannableLevelHandler",
 		"DNB_werrorHandler"
 	
 	addquitmessages =

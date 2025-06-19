@@ -94,6 +94,40 @@ class LMBH_ExistenceHandler: StaticEventHandler
             }
         }
     }
+
+	// TODO: Scan all DLCs
+	//override void OnRegister()
+	override void OnEngineInitialize()
+	{
+		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+		Console.printf(StringTable.Localize("$EXISTENCE_TITLENAME"));
+		Console.printf(StringTable.Localize("$EXISTENCE_TITLELIST"));
+		// just like m8f's, ..
+		uint nClasses = AllActorClasses.size(); // get all Actors onboard!
+		let counter = 0;
+		for (uint i = 0; i < nClasses; ++i)
+		{
+			// Let's itterate!
+			let c = AllActorClasses[i];
+			if (c is "LMBH_ExistenceVerifier")
+			{
+				// I expect all these existence verifiers!
+				String name = c.getClassName(); // what's your name?
+				if (name == "LMBH_ExistenceVerifier" || name == "LMBH_ExampleDLCTest" || name == "LMBH_Existence")
+				{
+					continue; // wait no! not yourself, not the test! Descendants!!!, yes!..
+				}
+				counter++;
+				Console.printf("\c[gray]- \c[green]%s",name);
+			}
+		}
+		if(counter <= 0)
+		{
+			Console.printf(StringTable.Localize("$EXISTENCE_EMPTY"));
+		}
+		Console.printf(StringTable.Localize("$EXISTENCE_FINALCOUNT"),counter);
+		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+	}
 }
 
 // We might wanna extend them now, I guess? No? Just be it one piece?

@@ -39,6 +39,8 @@ class LMBH_SafeDetect : StaticEventHandler
         but what if irresponsible forker destroyed our table? yeah idk, it's complicated.
         so yeah, get it here
         */
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        Console.printf(StringTable.Localize("$SFDT_TITLENAME"));
 
         // initialize
         Cvar.GetCvar('isNSFWrn').SetInt(0);
@@ -88,10 +90,11 @@ class LMBH_SafeDetect : StaticEventHandler
         // Verdicts!
         if(isNSFWrn > 0)
         {
-            Console.printf("\c[orange]WARNING\c-: \c[pink]NSFW\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW!!!\c-\nList of detected \c[pink]NSFW\c- stuffs:");
+            //Console.printf("\c[orange]WARNING\c-: \c[pink]NSFW\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW!!!\c-\nList of detected \c[pink]NSFW\c- stuffs:");
+            Console.printf(StringTable.Localize("$SFDT_NSFWFOUND"));
             for(int i = 0; i < nsfwKeywords.size(); i++)
             {
-                Console.printf("\c[gold]"..nsfwKeywords[i]);
+                Console.printf("\c[gray]- \c[gold]"..nsfwKeywords[i]);
             }
             Console.printf("");
         }
@@ -99,13 +102,20 @@ class LMBH_SafeDetect : StaticEventHandler
         if(isNSFLrn > 0)
         {
             // Lah-piye & other controversial mods
-            Console.printf("\c[red]CRITICAL\c-: \c[red]NSFL\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW & PURGE THE REPLAY OFF THOSE UNWORTHY PLATFORMS IMMEDIATELY!!!\c-\nList of detected \c[red]NSFL\c- stuffs:");
+            //Console.printf("\c[red]CRITICAL\c-: \c[red]NSFL\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW & PURGE THE REPLAY OFF THOSE UNWORTHY PLATFORMS IMMEDIATELY!!!\c-\nList of detected \c[red]NSFL\c- stuffs:");
+            Console.printf(StringTable.Localize("$SFDT_NSFLFOUND"));
             for(int i = 0; i < nsflKeywords.size(); i++)
             {
-                Console.printf("\c[orange]"..nsflKeywords[i]);
+                Console.printf("\c[gray]- \c[orange]"..nsflKeywords[i]);
             }
             Console.printf("");
         }
+
+        if(isNSFWrn <= 0 && isNSFLrn <= 0)
+        {
+            Console.printf(StringTable.Localize("$SFDT_GOODTOGO"));
+        }
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
     }
 }
 /*

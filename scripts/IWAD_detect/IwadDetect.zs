@@ -65,6 +65,8 @@ class LMBH_IwadDetect : StaticEventHandler
 
         not Wads.CheckNumForFullName("FREEDOOM") > -1
         */
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        Console.printf(StringTable.Localize("$IWDT_TITLENAME"));
         if(Wads.FindLump("FREEDOOM") > -1)
         {
             Console.printf(StringTable.Localize("$IWDT_FD"));
@@ -130,6 +132,7 @@ class LMBH_IwadDetect : StaticEventHandler
         /*
         This then can be used to check certain mods we gotta warn everyone for.
         */
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
     }
 }
 /*
