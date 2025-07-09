@@ -232,3 +232,42 @@ Actor AvoidDeath : CustomInventory
 
 // https://zdoom.org/wiki/Making_Weapon_Pieces
 // https://zdoom.org/wiki/Custom_CVARs_with_ZScript
+
+// https://zdoom.org/wiki/A_JumpIfCloser
+
+ACTOR AngryImp : DoomImp //replaces DoomImp
+{
+	//$Title Transforming Imp
+	//$Category Monsters
+  States
+  {
+  See:
+    TROO A 0 A_JumpIfCloser(196, "Transform")
+    TROO AABBCCDD 3 A_Chase
+    Loop
+  Transform:
+    TROO A 0 A_SpawnItemEx("Archvile", 0, 0, 0, 0, 0, 0, angle)
+    Stop
+  }
+}
+
+ACTOR SmartBarrel : ExplosiveBarrel //replaces ExplosiveBarrel
+{
+	//$Title Proximity Barrel
+	//$Category Obstacles
+  +LOOKALLAROUND
+  +AMBUSH
+  +QUICKTORETALIATE
+  States
+  {
+  Spawn:
+    TNT1 A 0
+    BAR1 AB 6 A_LookEx(LOF_NOSOUNDCHECK)
+  See:
+    BAR1 AB 6 A_JumpIfCloser(127, "Death")
+    Goto Spawn
+  }
+}
+
+// https://zdoom.org/wiki/A_LookEx
+

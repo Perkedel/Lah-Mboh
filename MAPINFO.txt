@@ -127,6 +127,7 @@ DoomEdNums
 	16131 = DNBGoldBar
 	16132 = DNBGoldCat
 	24120 = ExtraTallExplosiveBarrel
+	24121 = SmartBarrel
 	19560 = BlenderDefaultCube
 	28335 = SwitchableLamp
 	28336 = OddBarrel
@@ -135,10 +136,13 @@ DoomEdNums
 	27555 = BigZombieman
 	27556 = PlasmaZombie
 	27557 = RocketZombieMan
+	27558 = ImpairedZombie
 	27822 = FateImp
 	27823 = MatryoskaDoomImp
+	27824 = AngryImp
 	27564 = RapidShotgunGuy // inkoalawetrust & JOELwindows7
 	27565 = HomingLostSoul 
+	27566 = SecuritySoul 
 	27921 = ParticlePlasmaFire
 	26521 = HealingBackpack
 	26522 = HealthPack

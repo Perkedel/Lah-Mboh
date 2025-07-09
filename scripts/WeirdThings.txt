@@ -1134,3 +1134,39 @@ class ChubzCoin : Coin
 		Loop;
 	}
 }
+
+// https://zdoom.org/wiki/A_LookEx
+
+class ImpairedZombie : ZombieMan
+{
+	Default
+	{
+		//$Title Former Human (Deaf)
+		//$Category Monsters
+	}
+  States
+  {
+  Spawn:
+    POSS A 1 A_LookEx(LOF_NOSOUNDCHECK, maxseedist: 256, label: "WakeUp");
+    loop;
+  WakeUp:
+    POSS A 1 A_AlertMonsters;
+    goto See;
+  }
+}
+
+class SecuritySoul : LostSoul
+{
+  Default
+  {
+	//$Title Lost Soul (Security)
+	//$Category Monsters
+    SeeSound "misc/alarm";
+  }
+  States
+  {
+  Spawn:
+    SKUL A 1 A_LookEx(LOF_NOSOUNDCHECK|LOF_FULLVOLSEESOUND, radius + 32, fov: 30, label: "See"); // waw you made a mistake!!!!!!!!!!!! foegor the `;` hahahahah adeahdjshfjkahf
+    loop;
+  }
+}
