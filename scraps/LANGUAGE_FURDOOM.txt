@@ -1,0 +1,82 @@
+[id]
+
+/* TAG_CYBERGOAT = "Cyber Goat";
+TAG_SPIDERMOMMA = "Spider-Fennec";
+TAG_BARONOFHELL = "Bruiser Goat";
+TAG_KITTY =			"Kitty";
+TAG_HYPNOFOX =		"Hypno. Fox";
+TAG_HYPNODOG =		"Hypno. Dog";
+TAG_KOBOLD =		"Kobold";
+TAG_KOBOLDPHANTOM = "Phantom Kobold";
+TAG_FLAMESQUIRREL = "Flame Squirrel";
+TAG_CACOAVIAN =		"CacoAvian"; */
+
+
+OBITUARY_CYBERGOAT = "%o telah diduarkan oleh seorang Cyber Goat.";
+OBITUARY_SPIDERMOMMA = "%o telah digosok gosong oleh seorang Spider-Fennec.";
+
+OBITUARY_BARONOFHELL = "%o was bruised by a Bruiser Goat.";
+	OBITUARY_HIT_BARONOFHELL = "%o got her bum smacked by a Bruiser Goat.";
+
+OBITUARY_KITTY =		"%o was scorched by a kitty.";
+	OBTUARY_HIT_KITTY = "%o politely asked a kitty to scratch her behinds.";
+
+OBITUARY_HYPNOFOX =		"%o was shot by a Hypnotized Fox.";
+OBITUARY_HYPNODOG =		"%o was shot by a Hypnotized Dog.";
+OBITUARY_KOBOLD =		"%o got her butt eaten by a kobold";
+OBITUARY_KOBOLDPHANTOM = "%o got her butt silently eaten by a phantom";
+OBITUARY_FLAMESQUIRREL = "%o got head by a Flame Squirrel.";
+OBITUARY_CACOAVIAN = "%o got her nuts zapped by a Cacoavian.";
+
+
+S_BABY = "Mungkin Ciuman Sekali Aja";
+S_EASY = "Pelukan nggak cukup";
+S_NORMAL = "Lagi mood nih";
+S_HARD = "Musim Kawin";
+S_VERYHARD = "Ultra-Violence+";
+S_NIGHTMARE = "Hamili Aku!";
+S_NIGHTMARE_WARNING = "ntar lu crot loh wkwkwk!";
+
+
+OPTMNU_CONTROLS = "Customize Controls";
+OPTMNU_MOUSE = "Mouse Options";
+OPTMNU_JOYSTICK = "Controller Options";
+
+OPT_NORELOAD = "No Reload";
+OPT_FORCERELOAD = "Force Reload";
+
+OPT_HEALTHBARICON = "Health Bar Icon";
+OPT_HEALTHBARSHOW = "Health Bar Show";
+	OPT_HEALTHBARSHOW_OFF = "Off";
+	OPT_HEALTHBARSHOW_BOSS = "Boss only";
+	OPT_HEALTHBARSHOW_EVERY = "All Enemies/Players";
+
+OPT_SAFEZONEX = "Horizontal HUD Safezone (GZ)";
+OPT_SAFEZONEY = "Vertical HUD Safezone (GZ)";
+
+OPTMNU_FORCEENGINE = "Trick Engine";
+OPTMNU_PICKUPANIM = "Pickup Animations";
+
+
+FMNU_CHOOSESKILL = "Choose your mood";
+FMNU_NEWGAME = "-= NEW GAME =-";
+MNU_FUROPTIONS = "FurDOOM Options";
+
+
+TAG_BONKERBAT = "Bonker Bat";
+TAG_PISTOL = "Pistol";
+TAG_SHOTGUN = "Shotgun";
+TAG_SUPERSHOTTY = "Super Shotty";
+TAG_MINIGUN = "Minigun";
+TAG_GOOLAUNCHER = "Goo Launcher";
+TAG_STEAMSPITTER = "Steam Spitter";
+TAG_BUTTGUN = "Butt Gun";
+
+PICKUP_BONKERBAT = "Got Bonker Bat";
+PICKUP_PISTOL = "Got Pistol";
+PICKUP_SHOTGUN = "Got Shotgun";
+PICKUP_SUPERSHOTTY = "Got Super Shotty";
+PICKUP_MINIGUN = "Got Minigun";
+PICKUP_GOOLAUNCHER = "Got Goo Launcher";
+PICKUP_STEAMSPITTER = "Got Steam Spitter";
+PICKUP_BUTTGUN = "Got Butt Gun";

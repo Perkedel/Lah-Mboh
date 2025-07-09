@@ -120,15 +120,6 @@ class LMBH_IwadDetect : StaticEventHandler
 
         // whynt workkadsafalsdj
 
-        // This another example is not an IWAD detect, but detect if your loaded mod PWAD contains certain lump that signifies that you're using a TC or whatever
-        /*
-        e.g., Korp's Furdoom. https://korp-kat.itch.io/furdoom
-        */
-        // if(Wads.FindLump("FURTITL") > -1 && Wads.FindLump("FURDM01") > -1)
-        if(Wads.FindLump("FURTITL",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("FURDM01", 0, Wads.AnyNameSpace) > -1)
-        {
-            Console.printf("FURDOOM DETECTED YEY\n\c[orange]ADVISE\c-: Always excercise cautions when going to broadcast this Mod PK3.");
-        }
         /*
         This then can be used to check certain mods we gotta warn everyone for.
         */

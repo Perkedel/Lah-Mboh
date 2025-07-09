@@ -46,6 +46,8 @@ class LMBH_SafeDetect : StaticEventHandler
         Cvar.GetCvar('isNSFWrn').SetInt(0);
         Cvar.GetCvar('isNSFLrn').SetInt(0);
 
+        
+
         // H
         if(Wads.FindLump("HDMFN033",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("DICKA0",0,Wads.AnyNameSpace) > -1)
         {
@@ -60,6 +62,17 @@ class LMBH_SafeDetect : StaticEventHandler
             //isNSFWrn = 1;
             Cvar.GetCvar('isNSFWrn').SetInt(1);
             nsfwKeywords.push("Ngocrot");
+        }
+
+        // This another example is not an IWAD detect nor Safe detect, but a special if your loaded mod PWAD contains certain lump that signifies that you're using a TC or whatever
+        // Furdoom
+        /*
+        e.g., Korp's Furdoom. https://korp-kat.itch.io/furdoom
+        */
+        // if(Wads.FindLump("FURTITL") > -1 && Wads.FindLump("FURDM01") > -1)
+        if(Wads.FindLump("FURTITL",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("FURDM01", 0, Wads.AnyNameSpace) > -1)
+        {
+            Console.printf("FURDOOM DETECTED YEY\n\c[orange]ADVISE\c-: Always excercise cautions when going to broadcast this Mod PK3.");
         }
 
         // NSFL now..
