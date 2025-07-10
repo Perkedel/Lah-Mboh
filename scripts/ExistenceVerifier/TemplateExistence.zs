@@ -45,5 +45,6 @@ class LMBH_Existence : LMBH_ExistenceVerifier
 		LMBH_ExistenceVerifier.title "Template DLC"; // free text humane readable title
 		LMBH_ExistenceVerifier.description "Lorem Ipsum"; // description of the DLC
 		LMBH_ExistenceVerifier.nsfw false; // if the DLC is Not Suitable for Work. Our scanner will warn Doomers if they load that.
+		LMBH_ExistenceVerifier.nsfl false; // if the DLC is Not Suitable for Life. Our scanner will warn Doomers if they load that. This is for if the mod you're making is derogatory of some sort.
 	}
 }

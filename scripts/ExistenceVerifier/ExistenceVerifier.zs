@@ -41,6 +41,7 @@ class LMBH_ExistenceVerifier: Actor abstract
 		LMBH_ExistenceVerifier.title "anDLC";
 		LMBH_ExistenceVerifier.description "DESC";
 		LMBH_ExistenceVerifier.nsfw false;
+		LMBH_ExistenceVerifier.nsfl false;
 	}
 
 	static bool isExist(Class<LMBH_ExistenceVerifier> theClass)
@@ -112,13 +113,28 @@ class LMBH_ExistenceHandler: StaticEventHandler
 			if (c is "LMBH_ExistenceVerifier")
 			{
 				// I expect all these existence verifiers!
+				let existence = LMBH_ExistenceVerifier(getDefaultByType(c));
+				//let item = 
 				String name = c.getClassName(); // what's your name?
+				String title = existence.title;
+				String sayNSFW = "";
+				String sayNSFL = "";
+				bool isNSFW = existence.nsfw;
+				bool isNSFL = existence.nsfl;
 				if (name == "LMBH_ExistenceVerifier" || name == "LMBH_ExampleDLCTest" || name == "LMBH_Existence")
 				{
 					continue; // wait no! not yourself, not the test! Descendants!!!, yes!..
 				}
+				if (isNSFW)
+				{
+					sayNSFW = "\c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c-";
+				}
+				if (isNSFW)
+				{
+					sayNSFL = "\c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c-";
+				}
 				counter++;
-				Console.printf("\c[gray]- \c[green]%s",name);
+				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s %s %s",name, title, sayNSFW, sayNSFL);
 			}
 		}
 		if(counter <= 0)
@@ -138,12 +154,14 @@ extend class LMBH_ExistenceVerifier
 	String title;
 	String description;
 	bool nsfw;
+	bool nsfl;
 
 	// prop
 	property name: name;
 	property title: title;
 	property description: description;
 	property nsfw: nsfw;
+	property nsfl: nsfl;
 }
 
 // Example of DLC. You, inherit above class on your own PWAD
@@ -155,6 +173,7 @@ class LMBH_ExampleDLCTest : LMBH_ExistenceVerifier
 		LMBH_ExistenceVerifier.title "Example";
 		LMBH_ExistenceVerifier.description "Lorem Ipsum";
 		LMBH_ExistenceVerifier.nsfw false;
+		LMBH_ExistenceVerifier.nsfl false;
 	}
 }
 
