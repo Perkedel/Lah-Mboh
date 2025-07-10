@@ -97,7 +97,7 @@ gameinfo
 		//"LMBHCARR",
 		"LMBHCRED"
 	
-	drawReadThis = true
+	//drawReadThis = true
 	addinfopage = 
 		//"LMBHRES1",
 		"LMBHPROV",

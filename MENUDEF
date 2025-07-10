@@ -31,10 +31,11 @@ AddListmenu "MainMenu" before "QuitMenu" {
 	// Thancc AFADoomer. That's what I'm looking for!
 	// https://www.afadoomer.com/wolf3d/downloads.html
 	// https://github.com/AFADoomer/Wolf3D/
-	IfGame (Doom, Strife, Chex) {
+	/* IfGame (Doom, Strife, Chex) {
 		PatchItem "M_ENDGAM", "e", "EndGameMenu" // always add it this!
 		//TextItem "$MNU_ENDGAME", "e", "EndGameMenu" // always add it this!
-	}
+	} */
+	// MOVED TO BRING YOUR OWN USB LOL!
 	/*
 	I know, it's useless. If you'd like to quit, then just QuitGameMenu
 	and to New Game, then just NewGameMenu.
