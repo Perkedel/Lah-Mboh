@@ -1170,3 +1170,34 @@ class SecuritySoul : LostSoul
     loop;
   }
 }
+
+// Randomly Gun
+
+class RapidFirePistol : Pistol
+{
+	// https://zdoom.org/wiki/A_SetTics
+	// https://zdoom.org/wiki/Classes:Pistol
+	// https://zdoom.org/wiki/Actor_states
+	Default
+	{
+		//$Title Pistol (Rapid Fire)
+		//$Category Weapons
+		Weapon.SlotNumber 2;
+		Weapon.SelectionOrder 1901;
+		Weapon.AmmoGive 2000;
+	}
+	States
+	{
+		Fire:
+			PISG A 1;
+			PISG B 1 
+			{
+				// https://zdoom.org/wiki/A_SetTics
+				//A_SetTics(2);
+				A_FirePistol();
+			}
+			PISG C 1;
+			PISG B 1 A_ReFire;
+			Goto Ready;
+	}
+}
