@@ -19,8 +19,8 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    # runs-on: blacksmith-4vcpu-ubuntu-2404
-    runs-on: blacksmith-4vcpu-ubuntu-2404-arm
+    runs-on: blacksmith-4vcpu-ubuntu-2404
+    # runs-on: blacksmith-4vcpu-ubuntu-2404-arm
     # maybe ARM is bad idea because the binaries are all x86.. but we're just packing stuffs!
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -180,15 +180,15 @@ jobs:
       
       # checksum moaoar
       # https://github.com/marketplace/actions/generate-checksum
-      # - name: Checksums Moaoaore
-      #   uses: jmgilman/actions-generate-checksum@v1.0.1
-      #   with:
-      #     patterns: |
-      #       Lah-Mboh.pk3
-      #       Lah-Mboh.pk7
-      #       Lah-Mboh.zip
-      #       Lah-Mboh.tar.xz
-      #       Lah-Mboh.7z
+      - name: Checksums Moaoaore
+        uses: jmgilman/actions-generate-checksum@v1.0.1
+        with:
+          patterns: |
+            Lah-Mboh.pk3
+            Lah-Mboh.pk7
+            Lah-Mboh.zip
+            Lah-Mboh.tar.xz
+            Lah-Mboh.7z
       
       # idk anymore, there's alot
       # https://github.com/marketplace/actions/checksums-action
@@ -204,6 +204,21 @@ jobs:
       #       *.zip
       #   env:
       #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # https://pytooling.github.io/Actions/Action/Releaser.html#action-releaser
+      # https://github.com/pyTooling/Actions/tree/dev/releaser
+      # https://github.com/dpjudas/VkDoom/blob/master/.github/workflows/continuous_integration.yml
+      - name: Try manipulate that release like dpjudas Vkdoom!
+        uses: pyTooling/Actions/releaser@r0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          rm: true
+          snapshots: true
+          files: |
+            checksum.txt
+            Lah-Mboh.zip
+            Lah-Mboh.7z
+            Lah-Mboh.tar.xz
       
       # Well, It had to be everywhere right?
       # https://github.com/marketplace/actions/butler-to-itch
@@ -219,19 +234,4 @@ jobs:
             seven-zee Lah-Mboh.7z
             tar-exczee  Lah-Mboh.tar.xz
             pk-three  Lah-Mboh.zip
-      
-      # https://pytooling.github.io/Actions/Action/Releaser.html#action-releaser
-      # https://github.com/pyTooling/Actions/tree/dev/releaser
-      # https://github.com/dpjudas/VkDoom/blob/master/.github/workflows/continuous_integration.yml
-      - name: Try manipulate that release like dpjudas Vkdoom!
-        uses: pyTooling/Actions/releaser@r0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          rm: true
-          snapshots: true
-          files: |
-            checksum.txt
-            Lah-Mboh.zip
-            Lah-Mboh.7z
-            Lah-Mboh.tar.xz
         
