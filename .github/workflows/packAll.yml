@@ -180,15 +180,15 @@ jobs:
       
       # checksum moaoar
       # https://github.com/marketplace/actions/generate-checksum
-      - name: Checksums Moaoaore
-        uses: jmgilman/actions-generate-checksum@v1.0.1
-        with:
-          patterns: |
-            Lah-Mboh.pk3
-            Lah-Mboh.pk7
-            Lah-Mboh.zip
-            Lah-Mboh.tar.xz
-            Lah-Mboh.7z
+      # - name: Checksums Moaoaore
+      #   uses: jmgilman/actions-generate-checksum@v1.0.1
+      #   with:
+      #     patterns: |
+      #       Lah-Mboh.pk3
+      #       Lah-Mboh.pk7
+      #       Lah-Mboh.zip
+      #       Lah-Mboh.tar.xz
+      #       Lah-Mboh.7z
       
       # idk anymore, there's alot
       # https://github.com/marketplace/actions/checksums-action
