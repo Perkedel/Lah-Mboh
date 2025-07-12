@@ -1,6 +1,8 @@
 // Whatever lock definition
 // (JOELwindows7)
 
+// LOCK 7 T/O 24 ARE Realm667!!!
+
 // Realm667
 // Disguise Extra keys
 // Locks that require a specific-colored keycard
