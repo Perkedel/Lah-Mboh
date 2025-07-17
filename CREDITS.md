@@ -151,7 +151,8 @@ For the thing we've yoinked
 ## Dependencies
 
 > [!NOTE]
-> These are PWADs you must download yourselves manually, which we can't easily include due to size constrain, Updateness, & other reasons.
+> These are PWADs you must download yourselves manually, which we can't easily include due to size constrain, Updateness, & other reasons.  
+> These dependencies are **not critical** & won't crash if you did not load any of these. Let us know if they do.
 
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. **[Available Unconflict Pre-edit](/yoinks/vvpck1.0-mapUnconflict.pk3), Please load this instead! We have edited its testmap namespace so it no longer replaces IWAD's MAP01!**
 - [GZDoom Big City](https://www.doomworld.com/forum/topic/126802-gz_bigcity-a-gzdoom-city-sandbox-map-update-115-released-1952022/). inkoalawetrust. ???.
