@@ -244,7 +244,7 @@ For the thing we've yoinked
 
 - [Freesound](https://Freesound.org)
     - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
-    - [See more Freesounds I ever downloaded](https://freesound.org/people/JOELwindows7/?downloaded_sounds=javascript%3Avoid%280%29%3B).
+- [See more Freesounds I ever downloaded](https://freesound.org/people/JOELwindows7/?downloaded_sounds=javascript%3Avoid%280%29%3B).
 - Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
 	- Revenant Problem. Extractions into filenames as follows
 		- `DSERGB.opus` (was `DSFLAMST`). Burp after beer

@@ -39,3 +39,6 @@ Your habit in your SOUL selects each of these aspects below:
 | Insist self opinion / idea | Accept other opinion / idea | even tho they're wrong |
 
 Remember. Laws only thinks the wrong & the right you have in your SOUL. But your friend will say you HERO for the specific habit you have. Just get your habit correctly, and you're good, idk.
+
+> [!WARN]
+> Disclaimer: This table is just for fun.
