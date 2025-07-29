@@ -1136,7 +1136,7 @@ You need a black key to activate this object,VDK_PD_BLACKO,,,,,,
 ,,Existence Verifier,,,,,
 \c[green]FOUND,EXISTENCE_FOUND,,\c[green]DITEMUKAN,,,,
 \c[red]NOT FOUND,EXISTENCE_NOTFOUND,,\c[red]TIDAK DITEMUKAN,,,,
-DLC Class %s is %s,EXISTENCE_SCAN,,Kelas DLC %s %s,,,,
+DLC Class \c[sapphire]%s\c- is %s,EXISTENCE_SCAN,,Kelas DLC \c[sapphire]%s\c- %s,,,,
 "Usage:
 \c[sapphire]netevent \c[fire]LMBH\c-:\c[green]isDLCExist\c-:\c[cyan]<Your_DLC_Existence_Class>",EXISTENCE_USAGE,,"Cara penggunaan:
 \c[blue]netevent \c[fire]LMBH\c-:\c[green]isDLCExist\c-:\c[cyan]<Kelas_DLC_Existence_Anda>",,,,

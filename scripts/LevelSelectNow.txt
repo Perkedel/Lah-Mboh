@@ -1,6 +1,9 @@
 // Oke here we go
 // (JOELwindows7)
 
+//#include "scripts/ScannableLevel/ScannableLevel.zs"
+// #include "scripts/ScannableLevel/ContainsTheseLevel.zs"
+
 class LevelSelectNow
 {
 	static void doLevelSelectNow(){
@@ -33,27 +36,6 @@ class HardCodeLevelName //: Actor
 	}
 }
 
-class LMBH_ScannableLevelName : Actor Abstract
-{
-	// use m8f's ways of StupidAchievement. Extract the parameter into HardCodeLevelName!
-	string level;
-	string label;
-
-	property level: level;
-	property label: label;
-
-	Default
-	{
-		LMBH_ScannableLevelName.level "TEST";
-		LMBH_ScannableLevelName.label "";
-	}
-}
-
-class LMBH_ScannableLevelHandler: StaticEventHandler
-{
-	// same goes with the handler.
-
-}
 
 class LevelSelectNowHandler : LMBH_ZF_Handler
 {
@@ -184,6 +166,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		hardCodeLevels.clear();
 
 		// Now add here!
+		/*
 		hardCodeLevels.push(HardCodeLevelName.Create("MBH01", String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV"))));
 		hardCodeLevels.push(HardCodeLevelName.Create("JUSTFITE", StringTable.Localize("$JUSTFITE")));
 		hardCodeLevels.push(HardCodeLevelName.Create("RIGHTFRN", StringTable.Localize("$RIGHTFRN")));
@@ -210,11 +193,48 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		// hardCodeLevels.push(HardCodeLevelName.Create("LOADFOL", StringTable.Localize("$LOADFOL"))); // Sorry, map wads cannot be in a subfolder unlike everyone else.
 		hardCodeLevels.push(HardCodeLevelName.Create("LoadFolder/LOADFOL", StringTable.Localize("$LOADFOL"))); // Unless we explicitly say the folder too?
 		// hardCodeLevels.push(HardCodeLevelName.Create("T_SMMU", StringTable.Localize("$SMMUTEST")));
-		hardCodeLevels.push(HardCodeLevelName.Create("SMMUTEST", StringTable.Localize("$SMMUTEST")));
+		//hardCodeLevels.push(HardCodeLevelName.Create("SMMUTEST", StringTable.Localize("$SMMUTEST")));
 		hardCodeLevels.push(HardCodeLevelName.Create("Chubzdoomer/CHBZSD", StringTable.Localize("$CHBZSD")));
-		hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
+		//hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
+		*/
 
 		// Then scan the level. Whoever Mod PK3 that has class of this HardCodeLevelName with property parameters on it.
+		// use m8f's technique in Stupid Achievement!
+		uint nClasses = AllActorClasses.size(); // get all Actors onboard!
+		let counter = 0;
+		for (uint i = 0; i < nClasses; ++i)
+		{
+			let c = AllActorClasses[i];
+			if (c is "LMBH_ScannableLevelName")
+			{
+				let scannableLevelName = LMBH_ScannableLevelName(GetDefaultByType(c));
+				String name = c.getClassName(); // what's your name?
+				string label = "";
+				string prefix = ""; // to be (PREFIX) if any
+				if (name == "LMBH_ScannableLevelName")
+				{
+					continue; // wait no! not yourself, not the test! Descendants!!!, yes!..
+				}
+				if (scannableLevelName.label.length() <= 0)
+				{
+					label = scannableLevelName.level;
+				} else 
+				{
+					label = scannableLevelName.label;
+				}
+				if (scannableLevelName.prefixLabel.length() > 0)
+				{
+					prefix = String.Format("(%s) ", scannableLevelName.prefixLabel); // scannableLevelName.prefixLabel;
+				}
+				counter++;
+				// hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
+				hardCodeLevels.push(HardCodeLevelName.Create(scannableLevelName.level, String.Format("%s%s", StringTable.Localize(prefix),StringTable.Localize(label)) ));
+			}
+		}
+		if (counter <= 0)
+		{
+			//Console.printf(StringTable.Localize("$EXISTENCE_EMPTY"));
+		}
 	}
 	
 	override void init (Menu parent)

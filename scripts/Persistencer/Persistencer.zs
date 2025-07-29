@@ -27,25 +27,30 @@ class LMBH_Persistencer : StaticEventHandler
         /*
         For like Undo something. If a save becomes incompatible, try load that level last time we had.
         Note, this won't save your Complex Tracking Mod PK3 map packs from said ACS module changes.
+
+        Oh btw, also make sure only update when the last level is different from where we are.
         */
         // https://zdoom.org/wiki/Structs:WorldEvent
         // https://zdoom.org/wiki/SetCVarString
         //https://zdoom.org/wiki/Structs:CVar
-        //SetCVARString("LMBH_lastLoadedLevel", level.mapName);
-        // & then the FIFO queques! 0 is IN, 1 2 3 up, last is OUT.
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO9").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO8").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO8").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO7").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO7").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO6").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO6").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO5").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO5").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO4").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO4").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO3").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO3").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO2").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO2").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO1").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO1").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO0").GetString());
-        Cvar.FindCvar("LMBH_lastLoadedLevelFIFO0").SetString(Cvar.FindCvar("LMBH_lastLoadedLevel").GetString());
+        if(Cvar.FindCvar("LMBH_lastLoadedLevel").GetString() != level.mapName){
+            //SetCVARString("LMBH_lastLoadedLevel", level.mapName);
+            // & then the FIFO queques! 0 is IN, 1 2 3 up, last is OUT.
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO9").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO8").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO8").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO7").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO7").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO6").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO6").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO5").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO5").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO4").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO4").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO3").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO3").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO2").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO2").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO1").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO1").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO0").GetString());
+            Cvar.FindCvar("LMBH_lastLoadedLevelFIFO0").SetString(Cvar.FindCvar("LMBH_lastLoadedLevel").GetString());
 
-        // real value
-        Cvar.FindCvar("LMBH_lastLoadedLevel").SetString(level.mapName);
+            // real value
+            Cvar.FindCvar("LMBH_lastLoadedLevel").SetString(level.mapName);
+        }
+        
 
         /*
         https://zdoom.org/wiki/Savegame

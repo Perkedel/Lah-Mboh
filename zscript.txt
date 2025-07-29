@@ -3,6 +3,8 @@
 version "4.11.3" // Because Project Brutality, but we also want latest features too! bruh, dilemma!
 
 // stuffs
+#include "scripts/ScannableLevel/ScannableLevel.zs"
+#include "scripts/ScannableLevel/ContainsTheseLevel.zs"
 #include "scripts/Gifter.txt"
 #include "scripts/MbohCoins.txt"
 #include "scripts/WeirdThings.txt"

@@ -66,6 +66,8 @@ class LMBH_ExistenceHandler: StaticEventHandler
 {
     //let expectedCommand = 'isDLCExist';
     // use Jekyll Dummy! the netevent
+	// https://zdoom.org/wiki/NetworkProcess
+	// https://zdoom.org/wiki/Events_and_handlers#Networking
     override void NetworkProcess(consoleEvent e)
     {
         let expectedCommand = 'LMBH:isDLCExist'; // e.g. `LMBH:isDLCExist:MyDLC`
@@ -75,18 +77,47 @@ class LMBH_ExistenceHandler: StaticEventHandler
             let pmo = players[e.player].mo;
 			// if (!pmo)
 			// 	return;
-            array<string> splitren;
+			// arg version
+			array<string> splitren;
             e.name.split(splitren,":");
+			// if(e.Args[0] > 0 && splitren.size() < 3)
+			// {
+			// 	let sayIt = StringTable.Localize("$EXISTENCE_NOTFOUND");
+			// 	if(LMBH_ExistenceVerifier.isExist(e.Args[0])) sayIt = StringTable.Localize("$EXISTENCE_FOUND");
+			// 	Console.printf(StringTable.Localize("$EXISTENCE_SCAN"),e.Args[0],sayIt);
+			// 	if(e.Args[0] ~== "LMBH_ExampleDLCTest")
+			// 	{
+			// 		Console.printf(StringTable.Localize("$EXISTENCE_TEMPLATEO"),e.Args[0]);
+			// 		Console.printf(StringTable.Localize("$EXISTENCE_USAGE"));
+			// 		Console.printf("\n");
+			// 		Console.printf(StringTable.Localize("$EXISTENCE_DOWNLOAD"));
+			// 	}
+			// 	return;
+			// }
+			// WHAT?! Arguments are int only?!?!?!??! disappointing!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			// EventHandler.SendNetworkEvent("myevent", 666, 23, -1);
+
+			// old
+            
             if(splitren.size() < 3)
             {
+				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
                 Console.printf(StringTable.Localize("$EXISTENCE_USAGE"));
+				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+				Console.printf(StringTable.Localize("$EXISTENCE_TITLENAME"));
+				Console.printf(StringTable.Localize("$EXISTENCE_TITLELIST"));
+				scanDLCs();
+				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
                 return;
-            }
+            } else 
+			{
+
+			}
             let sayIt = StringTable.Localize("$EXISTENCE_NOTFOUND");
             if(LMBH_ExistenceVerifier.isExist(splitren[2])) sayIt = StringTable.Localize("$EXISTENCE_FOUND");
             // Console.printf("DLC Class "..splitren[2].." is ".. sayIt);
             Console.printf(StringTable.Localize("$EXISTENCE_SCAN"),splitren[2],sayIt);
-            if(splitren[2] == "LMBH_ExampleDLCTest")
+            if(splitren[2] ~== "LMBH_ExampleDLCTest")
             {
                 Console.printf(StringTable.Localize("$EXISTENCE_TEMPLATEO"),splitren[2]);
                 Console.printf(StringTable.Localize("$EXISTENCE_USAGE"));
@@ -96,13 +127,10 @@ class LMBH_ExistenceHandler: StaticEventHandler
         }
     }
 
-	// TODO: Scan all DLCs
-	//override void OnRegister()
-	override void OnEngineInitialize()
+	// DONE: Scan all DLCs
+
+	void scanDLCs()
 	{
-		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
-		Console.printf(StringTable.Localize("$EXISTENCE_TITLENAME"));
-		Console.printf(StringTable.Localize("$EXISTENCE_TITLELIST"));
 		// just like m8f's, ..
 		uint nClasses = AllActorClasses.size(); // get all Actors onboard!
 		let counter = 0;
@@ -142,6 +170,15 @@ class LMBH_ExistenceHandler: StaticEventHandler
 			Console.printf(StringTable.Localize("$EXISTENCE_EMPTY"));
 		}
 		Console.printf(StringTable.Localize("$EXISTENCE_FINALCOUNT"),counter);
+	}
+
+	//override void OnRegister()
+	override void OnEngineInitialize()
+	{
+		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+		Console.printf(StringTable.Localize("$EXISTENCE_TITLENAME"));
+		Console.printf(StringTable.Localize("$EXISTENCE_TITLELIST"));
+		scanDLCs();
 		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
 	}
 }
