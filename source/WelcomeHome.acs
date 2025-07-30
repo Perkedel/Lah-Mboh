@@ -370,6 +370,27 @@ function void scan_character (void)
 	*/
 	else if(CheckActorClass(PlayerNumber(),"Dawn")) {label_player = "Dawn";extra_talk="Hey, welcome to Blender Surreal Meme! This is what it looks like.\nAlso, you, gamer, somehow loaded either an original GZDoom stuffs in it, yanked it out of Selaco, or put this Mod PK3 on the Selaco, How, interesting.. this mod's designed for original DOOM 2. Thanks for trying this experiment tho!";set_second = 12.0;}
 	
+	// JumbleMaster
+	/*
+	https://jumblemaster.itch.io/
+	https://jumblemaster.itch.io/doom-enawad-refreshed ENA.wad refreshed
+	*/
+	else if(CheckActorClass(PlayerNumber(),"ENAPlayer")) {label_player = "ENA";extra_talk="Welcome to Blender Surreal Meme.";} // You forgor to derive class bruh!
+
+	// Lava Wave
+	/*
+	https://lavawave.itch.io/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"Fontaine")) {label_player = "Fontaine";extra_talk="";}
+
+	// Triangle Box Studio & Tofu Sheets Visual
+	/*
+	https://triangle-box-studio.itch.io/
+	https://tofu-sheets-visual.itch.io/
+	*/
+	else if(CheckActorClass(PlayerNumber(),"MayuPlayer")) {label_player = "Mayu";extra_talk="";} // Mayu Scary Adventure. You forgor to derive class too!!!
+
+
 	// Alt name & misc too generic names
 	else if(CheckActorClass(PlayerNumber(),"Doomguy")) {label_player = "Doomguy";extra_talk="";}
 	else if(CheckActorClass(PlayerNumber(),"DoomguyAncestor")) {label_player = "Dadguy";extra_talk="";}
