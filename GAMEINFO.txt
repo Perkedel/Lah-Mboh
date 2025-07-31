@@ -3,4 +3,6 @@
 // (JOELwindows7)
 
 //IWAD = "freedoom2.wad"
-LOAD = "Lah-Piye.pk7"
+LOAD = 
+    "Lah-Piye.pk7",
+    "ZD-BringYourOwnUSB-SFW.pk7"

@@ -7,7 +7,7 @@
     "title": "Lah-Mboh",
     "author": "JOELwindows7",
     "description": "Test & Megawad",
-    "version": "2025.06",
+    "version": "2025.07",
     "iwad": "doom2.wad",
     "pwads": ["id1-res.wad","id1-weap.wad"],
     "executable": "id24",
