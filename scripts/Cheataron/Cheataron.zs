@@ -43,7 +43,7 @@ class LMBH_Cheataron : EventHandler
                 {
                     continue; // wait no! not yourself, not the test! Descendants!!!, yes!..
                 }
-                Console.printf("\c[gray]- \c[white](\c[yellow]%s\c[white]) \c[gold]%s. \c-%s",name, title, description);
+                Console.printf("\c[gray]- \c[white](\c[yellow]%s\c[white]) \c[gold]%s\c-. \c-%s",name, title, description);
                 counter++;
             }
         }

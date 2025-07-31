@@ -61,7 +61,7 @@ class LMBH_SafeDetect : StaticEventHandler
         {
             //isNSFWrn = 1;
             Cvar.GetCvar('isNSFWrn').SetInt(1);
-            nsfwKeywords.push("Ngocrot");
+            nsfwKeywords.push("Lah-WesKowe");
         }
 
         // This another example is not an IWAD detect nor Safe detect, but a special if your loaded mod PWAD contains certain lump that signifies that you're using a TC or whatever

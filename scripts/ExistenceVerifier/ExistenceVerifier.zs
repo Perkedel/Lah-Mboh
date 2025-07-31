@@ -168,14 +168,14 @@ class LMBH_ExistenceHandler: StaticEventHandler
 				}
 				if (isNSFW)
 				{
-					sayNSFW = " \c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c-";
+					sayNSFW = " \c[gray]{\c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c[gray]}\c-";
 				}
 				if (isNSFW)
 				{
-					sayNSFL = " \c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c-";
+					sayNSFL = " \c[gray]{\c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c[gray]}\c-";
 				}
 				counter++;
-				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s%s%s. \c-%s",name, title, sayNSFW, sayNSFL, description);
+				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s%s%s\c-. \c-%s",name, title, sayNSFW, sayNSFL, description);
 			}
 		}
 		if(counter <= 0)
