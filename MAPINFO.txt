@@ -9,12 +9,14 @@ gameinfo
 		"CorpsePlayerHandler",
 		// Mboh Achievements, based on m8f's Stupid Achievements
 		"SrA_eventHandler",
+		"LMBH_MbohAchievementHandler",
 		"LMBH_achiever",
 		"LMBH_ExistenceHandler",
 		"LMBH_IwadDetect",
 		"LMBH_SafeDetect",
 		"LMBH_Persistencer",
 		"LMBH_ScannableLevelHandler",
+		"LMBH_Cheataron",
 		"DNB_werrorHandler"
 	
 	addquitmessages =

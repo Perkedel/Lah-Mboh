@@ -39,3 +39,7 @@ Alias LMBH_testAchieve "netevent LMBH:testAchieve"
 // Existence verifier
 Alias LMBH_checkDLC "netevent LMBH:isDLCExist"
 Alias LMBH_testDLC "netevent LMBH:isDLCExist:LMBH_ExampleDLCTest"
+
+// Cheataron
+Alias LMBH_cheat "netevent LMBH:cheat"
+Alias LMBH_OutOfResource "netevent LMBH:cheat:LMBH_OutOfResourceCheatKit"

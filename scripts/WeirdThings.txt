@@ -1201,3 +1201,104 @@ class RapidFirePistol : Pistol
 			Goto Ready;
 	}
 }
+
+// CVAR Tutorial
+// https://zdoom.org/wiki/Custom_CVARs_with_ZScript
+/*
+class ZombiemanBoom : Zombieman //replaces Zombieman
+{
+    States
+    {
+    See:
+        TNT1 A 0 A_JumpIf(zd_explodey_zombies == true, "Explode");
+        goto Super::See;
+    Pain:
+        TNT1 A 0 A_JumpIf(zd_explodey_zombies == true, "Explode");
+        goto Super::Pain;
+    Death:
+        TNT1 A 0 A_JumpIf(zd_explodey_zombies == true, "Super::Explode");
+        goto Super::Death;
+    Explode:
+        TNT1 A 0 
+        {
+            A_Die;
+            A_Explode;
+        }
+        MISL BCD 5 bright; // Uses the Rocket sprites
+        stop;
+    }
+}
+*/
+
+// was MyWeapon
+/*
+class RestyledWeapon : Weapon
+{
+	action void A_SetWeaponStyle()
+	{
+		// Get a pointer to the desired CVar:
+		CVar c = CVar.FindCVar('zd_weaponstyle');
+		// If for some reason we couldn't get the pointer,
+		// do nothing else:
+		if (!c)
+		{
+			return;
+		}
+		// Get a pointer to the sprite layer where
+		// this function was called:
+		PSprite psp = player.FindPSprite(OverlayID());
+		// Null-check it for safety (although it should
+		// never be null in this case):
+		if (!psp)
+		{
+			return;
+		}
+		// Modify the sprite of the calling sprite
+		// layer based on the value of the CVar.
+		// Notice that we're not modifying the frame
+		// letter, only the sprite name:
+		switch (c.GetInt())
+		{
+		default:
+			psp.sprite = 'WEA1';
+			break;
+		case 1:
+			psp.sprite = 'WEA2';
+			break;
+		case 2:
+			psp.sprite = 'WEA3';
+			break;
+		}
+	}
+
+    States
+    {
+	Deselect:
+		TNT1 A 0 A_SetWeaponStyle(); // set the sprite
+		wait;
+    Select:
+        WEA1 A 0 A_SetWeaponStyle(); // set the sprite
+        #### A 1 A_Raise; // use #### for all subsequent sprites so we don't override it
+        wait; // use wait so we don't 
+    Ready:
+        WEA1 A 0 A_SetWeaponStyle(); // set the sprite
+        #### A 1 A_WeaponReady; // use #### for all subsequent sprites so we don't override it
+        wait;
+    Fire:
+        WEA1 A 0 A_SetWeaponStyle(); // set the sprite
+        #### B 5
+        {
+            A_FireBullets(5, 3.5, 1, 5);
+            A_GunFlash();
+            A_StartSound("mygun/fire", CHAN_WEAPON);
+        }
+        #### CDE 4;
+        #### F 5 A_ReFire;
+        goto Ready;
+
+        //... // The rest of the code omitted to keep this example short
+    }
+}
+*/
+
+// https://zdoom.org/wiki/GetObituary

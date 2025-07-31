@@ -183,3 +183,38 @@ OptionValue LMBH_AnimationValues
   3, "$LMBH_Achieve_DISABLED"
 }
 // end m8f
+
+// ZDoom Tutorials
+// This creates a new custom options menu:
+OptionMenu "ZDoomWeirdOptions"
+{
+  // Add an option for the explodey_zombies CVar:
+  Option "Exploding Zombiemen", "zd_explodey_zombies", "OnOff" //OnOff is an existing optionvalue, you don't need to define it
+  // Add n option for the weaponstyle CVar:
+  Option "Weapon style", "zd_weaponstyle", "WeaponStyleOptions" //WeaponStyleOptions will be a custom option value
+}
+
+// A custom option value that attaches unique names
+// to the possible CVar values:
+OptionValue "WeaponStyleOptions"
+{
+  0, "Classic"
+  1, "Enhanced"
+  2, "Special"
+}
+
+// This will make your menu appear in the default
+// GZDoom options menu, right before the CustomizeControls
+// section:
+AddOptionMenu "OptionsMenu" before "CustomizeControls"
+{
+  Submenu "ZDoom Weird options", "ZDoomWeirdOptions"
+}
+
+// This does the same but also will make it visible
+// if the player has Simple Options Menu enabled:
+AddOptionMenu "OptionsMenuSimple" before "CustomizeControls"
+{
+  Submenu "ZDoom Weird options", "ZDoomWeirdOptions"
+}
+// end ZDoom

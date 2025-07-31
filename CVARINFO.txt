@@ -96,3 +96,8 @@ user bool LMBH_achieveNotification_enabled = true;
 
 nosave string LMBH_achievements = "";
 // end m8f
+
+// ZDoom CVAR Tutorial
+server bool zd_explodey_zombies = true;
+nosave int zd_weaponstyle = 0;
+// end ZDoom

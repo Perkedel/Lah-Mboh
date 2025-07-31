@@ -72,7 +72,7 @@ class LMBH_ExistenceHandler: StaticEventHandler
     {
         let expectedCommand = 'LMBH:isDLCExist'; // e.g. `LMBH:isDLCExist:MyDLC`
         name eventname = e.name;
-        if(e.name.indexOf(expectedCommand) > -1)
+        if(e.name.indexOf(expectedCommand) > -1 )
         {
             let pmo = players[e.player].mo;
 			// if (!pmo)
@@ -114,7 +114,19 @@ class LMBH_ExistenceHandler: StaticEventHandler
 
 			}
             let sayIt = StringTable.Localize("$EXISTENCE_NOTFOUND");
-            if(LMBH_ExistenceVerifier.isExist(splitren[2])) sayIt = StringTable.Localize("$EXISTENCE_FOUND");
+            if(LMBH_ExistenceVerifier.isExist(splitren[2]))
+			{
+				sayIt = StringTable.Localize("$EXISTENCE_FOUND");
+				Class<LMBH_ExistenceVerifier> theClass = splitren[2];
+				let dlc = LMBH_ExistenceVerifier(GetDefaultByType(theClass));
+				// print the title & desc
+				String name = theClass.getClassName();
+				String title = StringTable.Localize(dlc.title);
+				String description = StringTable.Localize(dlc.description);
+				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+				Console.printf(StringTable.Localize("$EXISTENCE_EXECUTE"),title,name,description);
+				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+			}
             // Console.printf("DLC Class "..splitren[2].." is ".. sayIt);
             Console.printf(StringTable.Localize("$EXISTENCE_SCAN"),splitren[2],sayIt);
             if(splitren[2] ~== "LMBH_ExampleDLCTest")
@@ -144,25 +156,26 @@ class LMBH_ExistenceHandler: StaticEventHandler
 				let existence = LMBH_ExistenceVerifier(getDefaultByType(c));
 				//let item = 
 				String name = c.getClassName(); // what's your name?
-				String title = existence.title;
+				String title = StringTable.Localize(existence.title);
+				String description = StringTable.Localize(existence.description);
 				String sayNSFW = "";
 				String sayNSFL = "";
 				bool isNSFW = existence.nsfw;
 				bool isNSFL = existence.nsfl;
-				if (name == "LMBH_ExistenceVerifier" || name == "LMBH_ExampleDLCTest" || name == "LMBH_Existence")
+				if (name ~== "LMBH_ExistenceVerifier" || name ~== "LMBH_ExampleDLCTest" || name ~== "LMBH_Existence")
 				{
 					continue; // wait no! not yourself, not the test! Descendants!!!, yes!..
 				}
 				if (isNSFW)
 				{
-					sayNSFW = "\c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c-";
+					sayNSFW = " \c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c-";
 				}
 				if (isNSFW)
 				{
-					sayNSFL = "\c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c-";
+					sayNSFL = " \c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c-";
 				}
 				counter++;
-				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s %s %s",name, title, sayNSFW, sayNSFL);
+				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s%s%s. \c-%s",name, title, sayNSFW, sayNSFL, description);
 			}
 		}
 		if(counter <= 0)

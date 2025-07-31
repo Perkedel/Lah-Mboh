@@ -1148,11 +1148,75 @@ DLC Class \c[sapphire]%s\c- is %s,EXISTENCE_SCAN,,Kelas DLC \c[sapphire]%s\c- %s
 \c[sapphire]Total = \c[gold]%d\c[sapphire] DLCs,EXISTENCE_FINALCOUNT,,\c[sapphire]Total = \c[gold]%d\c[sapphire] DLC,,,,
 "\c[dark gray]Hmm, Empty? You did not have any, bruh!",EXISTENCE_EMPTY,,"\c[dark gray]Hmm, Kosong? Anda tidak punya sama sekali, yaelah!",,,,
 \c[gold](((((\c[sapphire]EXISTENCE VERIFIER\c[gold]))))),EXISTENCE_TITLENAME,,,,,,
+"DLC \c[sapphire]%s
+\c[gray]{{\c[blue]%s\c[gray]}}
+\c-+-+-+-+-+-+-+-+-+-+-+
+%s
+\c-+-+-+-+-+-+-+-+-+-+-+",EXISTENCE_EXECUTE,,"DLC \c[sapphire]%s
+\c[gray]{{\c[blue]%s\c[gray]}}
+\c-+-+-+-+-+-+-+-+-+-+-+
+%s
+\c-+-+-+-+-+-+-+-+-+-+-+",,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,Cheataron,,,,,
+\c[green]FOUND,CHEATARON_FOUND,,\c[green]DITEMUKAN,,,,
+\c[red]NOT FOUND,CHEATARON_NOTFOUND,,\c[red]TIDAK DITEMUKAN,,,,
+Cheataron Class \c[sapphire]%s\c- is %s,CHEATARON_SCAN,,Kelas Cheataron \c[sapphire]%s\c- %s,,,,
+"Usage:
+\c[sapphire]netevent \c[fire]LMBH\c-:\c[green]cheat\c-:\c[cyan]<Your_Cheataron_Class>",CHEATARON_USAGE,,"Cara penggunaan:
+\c[blue]netevent \c[fire]LMBH\c-:\c[green]cheat\c-:\c[cyan]<Kelas_Cheataron_Anda>",,,,
+\c[blue]TIP\c-: Replace the \c[orange]%s \c-with your Cheataron Class!,CHEATARON_TEMPLATEO,,\c[blue]TIP\c-: Ubah \c[orange]%s \c-dengan Kelas Cheataron Anda!,,,,
+"Feel free to implement this to your own mod!
+\c[green]https://github.com/Perkedel/Lah-Mboh/blob/main/scripts/Cheataron/Cheataron.zs",CHEATARON_DOWNLOAD,,"Silahkan diimplement ke mod Anda sendiri!  
+\c[green]https://github.com/Perkedel/Lah-Mboh/blob/main/scripts/Cheataron/Cheataron.zs",,,,
+\c[cyan]You have the following Cheats available:,CHEATARON_TITLELIST,,\c[cyan]Anda memiliki Cheat tersedia sebagai berikut:,,,,
+\c[cyan]Total = \c[gold]%d\c[green] Cheat,CHEATARON_FINALCOUNT,,\c[cyan]Total = \c[gold]%d\c[green] Cheat,,,,
+"\c[dark gray]Hmm, Empty? You did not have any, bruh!",CHEATARON_EMPTY,,"\c[dark gray]Hmm, Kosong? Anda tidak punya sama sekali, yaelah!",,,,
+\c[green](((((\c[cyan]CHEATARON\c[green]))))),CHEATARON_TITLENAME,,,,,,
+"Lorem Ipsum dolor sit amet, you have been cheating what?!",CHEATARON_EXAMPLE,,"Lorem ipsum dolor sit amet, Anda telah melakukan kecurangan apa?!",,,,
+"Executing Cheataron \c[cyan]%s
+\c[gray]{{\c[blue]%s\c[gray]}}
+\c-+-+-+-+-+-+-+-+-+-+-+
+%s
+\c-+-+-+-+-+-+-+-+-+-+-+",CHEATARON_EXECUTE,,"Menjalankan Cheataron \c[cyan]%s
+\c[gray]{{\c[blue]%s\c[gray]}}
+\c-+-+-+-+-+-+-+-+-+-+-+
+%s
+\c-+-+-+-+-+-+-+-+-+-+-+",,,,
+,,,,,,,
+,,,,,,,
+,,Cheataron Cheats Now,,,,,
+Out of Resource Kit,CHEATARON_OUTRESOURCE_TITLE,,Paket Kehabisan Sumber Daya,,,,
+"Out of Resource! Give me all the stuffs!
+The level did not gave us resources well enough!",CHEATARON_OUTRESOURCE_DESC,,"Sumber Daya habis! Berikan saya semuanya!
+Levelnya tidak menyediakan sumber daya dengan becus!",,,,
+\c[red]WERROR\c-: Player %d not in game!,CHEATARON_OUTRESOURCE_ERR_NOPLAYER,,\c[red]WERROR\c-: Pemain %d tidak didalam game!,,,,
+\c[red]WERROR\c-: Player %d does not have a valid PlayerPawn!,CHEATARON_OUTRESOURCE_ERR_NOPAWN,,\c[red]WERROR\c-: Pemain %d tidak memiliki PlayerPawn yg valid!,,,,
+\c[cyan]You Cheated!,CHEATARON_COIN,,\c[cyan]Anda Curang!,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ---------------------------------------------------------------------,INTERNAL_BARRIER_MINUS,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+UAC,MEGACORP,The mega corporation should be refered as,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,m8f’s Stupid Achievemt stuffs,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 ,,,,,,,
 ,,Menu Strings,,,,,
@@ -1211,6 +1275,16 @@ Unlocked,LMBH_Achieve_UNLOCKED,,Tercapai,,,,
 Locked Achievements,LMBH_Achieve_LOCKED_TITLE,,Prestasi Blm Tercapai,,,,
 Unlocked Achievements,LMBH_Achieve_UNLOCKED_TITLE,,Prestasi Tercapai,,,,
 ,,,,,,,
+,LMBH_Achieve_Y,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 End Game,MNU_ENDGAME,Only Raze had it,Akhiri Permainan,,,,
 ,,,,,,,
@@ -1249,8 +1323,8 @@ End Game,MNU_ENDGAME,Only Raze had it,Akhiri Permainan,,,,
 ,,m8f’s Stupid Achievemt now add,,,,,
 Initiate,Achieve_imp_initiate,,Pemula,,,,
 Kill one imp,Achieve_imp_initiate_desc,,Bunuh satu imp,,,,
-,,,,,,,
-,,,,,,,
+You Cheated,Achieve_YouCheated,,Anda Curang,,,,
+Some ranking features maybe disabled permanently in this save,Achieve_YouCheated_desc,,Beberapa fitur ranking mungkin telah dinonaktifkan permanen di save ini,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

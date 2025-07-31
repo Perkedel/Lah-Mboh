@@ -4,3 +4,4 @@
 // Just add whatever countable item class name here, each line.
 // (JOELwindows7)
 Coin
+LMBH_CheatCoin
