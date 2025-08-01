@@ -2390,12 +2390,20 @@ Sprite "JDUMA0", 1024, 1024
 	Patch "DUMMYPLA", 0, 0
 }
 
-Sprite "CHOA0", 512, 512
+Sprite "CHCOA0", 512, 512
 {
 	XScale 20.000
 	YScale 20.000
 	Offset 256, 512
 	Patch "CHCOA0", 0, 0
+}
+
+Sprite "CHCOB0", 512, 512
+{
+	XScale 20.000
+	YScale 20.000
+	Offset 256, 512
+	Patch "CHCOB0", 0, 0
 }
 
 Sprite "DCOIA0", 512, 512

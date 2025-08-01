@@ -46,6 +46,9 @@ user string LMBH_lastLoadedLevelFIFO9 = "";
 
 // end PERSISTENCE
 
+// Achievement Stuffs
+user bool LMBH_wereDied = false; // You died.
+
 // TDRR's CVARs
 //server bool ctfannouncer = true;
 //server int ctflimit = 0;
