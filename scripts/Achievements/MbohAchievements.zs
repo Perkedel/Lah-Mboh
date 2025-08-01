@@ -235,9 +235,7 @@ class LMBH_Achievement_SolidFurry : LMBH_Achievement
     {
         // "I'm not furry!", while you secretly like Protogen
         /*
-        Don't worry, Joel is too. We got to shed this multiple time
-        both because there are groups of troubling furries, and worse therians,
-        and as well as... outright haters. Like Lex hating Superman.
+        Don't worry, Joel is too. 
         */
         LMBH_Achievement.name "$Achieve_SolidSolidSolid";
         LMBH_Achievement.description "$Achieve_SolidSolidSolid_desc";
