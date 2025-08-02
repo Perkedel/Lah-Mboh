@@ -789,6 +789,10 @@ class CorpsePlayerHandler: CorpseHandler
 		
 
 		Console.printf(totalKillsay);
+		Console.printf("Deaths this map = %d", Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).GetInt());
+
+		// The AJynks' file did similar, although did not consider about multiplayer (the `players[e.playerNumber]`).
+		// https://www.doomworld.com/forum/topic/147840-ajynksed-level-info-a-small-hud-tweak-mod-my-1st-ever-mod-zscript-updated-110325/
 	}
 }
 

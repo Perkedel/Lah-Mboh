@@ -54,9 +54,6 @@ class LMBH_OutOfResourceCheatKit : LMBH_CheataronCheat
         ppawn.A_GiveInventory("RocketAmmo",9999);
         ppawn.A_GiveInventory("Shell",9999);
         ppawn.A_GiveInventory("ShellBox",9999);
-        // https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/zscript/actors/doom/id24/id24ammo.zs
-        ppawn.A_GiveInventory("ID24Fuel",9999);
-        ppawn.A_GiveInventory("ID24FuelTank",9999);
         ppawn.A_GiveInventory("BFG9000");
         ppawn.A_GiveInventory("Chainsaw");
         ppawn.A_GiveInventory("Chaingun");
@@ -65,7 +62,11 @@ class LMBH_OutOfResourceCheatKit : LMBH_CheataronCheat
         ppawn.A_GiveInventory("PlasmaRifle");
         ppawn.A_GiveInventory("RocketLauncher");
         // https://github.com/ZDoom/gzdoom/tree/master/wadsrc/static/zscript/actors/doom/id24
-        ppawn.A_GiveInventory("ID24CalamityBlade");
-        ppawn.A_GiveInventory("ID24Incinerator");
+        // https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/zscript/actors/doom/id24/id24ammo.zs
+        string idName = "ID24Fuel";Class<Inventory> idThingy = idName;
+        if(idThingy) ppawn.A_GiveInventory(idThingy,9999);
+        idName = "ID24FuelTank"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy,9999);
+        idName = "ID24CalamityBlade"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy);
+        idName = "ID24Incinerator"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy);
     }
 }

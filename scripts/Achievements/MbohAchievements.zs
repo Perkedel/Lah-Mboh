@@ -104,58 +104,40 @@ class LMBH_MbohAchievementHandler : EventHandler
         // if (cls) return mo is classname;
         // return mo is classname;
         // if(cls) {}
-        string containes = "";
-        if(classname.length() > 0) containes = classname;
+        // string containes = "";
+        // if(classname.length() > 0) containes = classname;
         name moName = mo.getClassName();
         name namedClass = classname;
         string stringName = moName;
         
         // return moName == classname;
         // Console.printf("%s %s %d",moName,classname, moName.indexOf(containes));
-        Console.printf("%s %s %d",moName,classname, stringName.indexOf(classname));
+        // Console.printf("%s %s %d",moName,classname, stringName.indexOf(classname));
         // return (stringName.indexOf(classname) > -1) == true;
-        // return (stringName.indexOf(classname) == 0);
-        return (stringName.indexOf(containes) == 0);
+        return (stringName.indexOf(classname) == 0);
+        // return (stringName.indexOf(containes) == 0);
         // return false;
         // return stringName == classname;
         // return moName == namedClass;
+        // mistype achievement class lmao aldsfhakjsh
+        // return stringName ~== classname;
     }
 
     // int kludgeWait = 1;
     void threadAchieveByClass(PlayerPawn pmo)
     {
-        // if(!LMBH_AchievementNotReadyBug)
-        // {
-        //     Cvar.GetCvar("LMBH_AchievementNotReadyBug").SetBool(true);
-        //     return; // try again after level complete and then enter the new level.
-        // }
-        // int wait = 10;
-        // if(kludgeWait > 0)
-        // {
-        //     kludgeWait--;
-        //     threadAchieveByClass(pmo);
-        //     return;
-        // } else 
-        // {
-        //     kludgeWait = 1;
-        // }
-        // shit! No switch case in string?! I am not Dev!!!
-        // Class<LMBH_Achiever> ach = "LMBH_Achiever";
-        // if(ach){
-            if(!evalPlayerClass(pmo,"DoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
-            if(evalPlayerClass(pmo,"FurDaisy")) LMBH_Achiever.achieve("LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
-            else if(evalPlayerClass(pmo,"DukeNukem")) LMBH_Achiever.achieve("LMBH_Achievement_PieceOfCake"); // Duke Nukem.
-            else if(evalPlayerClass(pmo,"HDoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_EichPlayer"); // yes.
-            else if(evalPlayerClass(pmo,"HDoomPlayer")) Console.printf("alsdhfaiuwgerhffiuageriuyheriguhergiuhstriguheirtughiuthg"); // yes.
-            // if(!evalPlayerClass(pmo,"DoomPlayer")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
-            // if(evalPlayerClass(pmo,"FurDaisy")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
-            // else if(evalPlayerClass(pmo,"DukeNukem")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_PieceOfCake"); // Duke Nukem.
-            // else if(evalPlayerClass(pmo,"HDoomPlayer")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_EichPlayer"); // yes.
-            else {}
-        // }
         
-        // if(pmo.getClassName() == "FurDaisy") LMBH_Achiever.achieve("LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
-        // else if(pmo.getClassName() == "HDoomPlayer") LMBH_Achiever.achieve("LMBH_Achievement_EichPlayer"); // yes.
+        if(!evalPlayerClass(pmo,"DoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
+        if(evalPlayerClass(pmo,"DoomPlayer")) {} // You are already DoomPlayer bruh!
+        else if(evalPlayerClass(pmo,"FURDaisy")) LMBH_Achiever.achieve("LMBH_Achievement_SolidFurry"); // korp kat Furdoom Hexabun
+        else if(evalPlayerClass(pmo,"DukeNukem")) LMBH_Achiever.achieve("LMBH_Achievement_PieceOfCake"); // Duke Nukem.
+        else if(evalPlayerClass(pmo,"HDoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_EichPlayer"); // yes.
+        else if(evalPlayerClass(pmo,"Yuri")) LMBH_Achiever.achieve("LMBH_Achievement_ForMotherlandUra"); // PillowBlaster Russian Overkill
+        else if(evalPlayerClass(pmo,"Alosha")) LMBH_Achiever.achieve("LMBH_Achievement_ForMotherlandUra"); // PillowBlaster Russian Overkill
+        else if(evalPlayerClass(pmo,"Marty")) LMBH_Achiever.achieve("LMBH_Achievement_ForMotherlandUra"); // PillowBlaster Russian Overkill
+        else if(evalPlayerClass(pmo,"PB_PlayerPawn")) LMBH_Achiever.achieve("LMBH_Achievement_ProjectBrutality"); // p4ink1ller Project Brutality
+        else if(evalPlayerClass(pmo,"BDoomer")) LMBH_Achiever.achieve("LMBH_Achievement_SergeantBrutal"); // Sergeant Mark IV Brutal DOOM
+        else {}
         // bro wtf why error
         /*
         adress zeor.
@@ -179,11 +161,18 @@ class LMBH_MbohAchievementHandler : EventHandler
             pmo.A_GiveInventory("LMBH_Flag_YouDied", 1);
             Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(true);
             //Console.printf("kgldsjgsiodh");
+            Cvar.GetCvar("LMBH_wereMap", players[e.playerNumber]).SetString(Level.info.MapName);
+            Cvar.GetCvar("LMBH_everDied", players[e.playerNumber]).SetBool(true);
 
             // first time died. Haylo!
             LMBH_Achiever.achieve("LMBH_Achievement_YouDied");
 
-            
+            // died 10 times same map
+            if(Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).GetInt() >= 10)
+            {
+                Console.printf(StringTable.localize("$Achieve_SoHard"));
+                LMBH_Achiever.achieve("LMBH_Achievement_SoHard");
+            }
         }
     }
 
@@ -204,7 +193,7 @@ class LMBH_MbohAchievementHandler : EventHandler
         {
             // if if they spawned with that inventory, if had, achieve. but otherwise, remove.
             // https://zdoom.org/wiki/A_TakeInventory
-            Console.printf("Player has %d died", pmo.CountInv("LMBH_Flag_YouDied"));
+            // Console.printf("Player has %d died", pmo.CountInv("LMBH_Flag_YouDied"));
             if(pmo.CountInv("LMBH_Flag_YouDied") > 0 || Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).GetBool())
             {
                 Console.printf(StringTable.Localize("$Achieve_ImDieThankYouForever"));
@@ -214,6 +203,18 @@ class LMBH_MbohAchievementHandler : EventHandler
 
             // Specific Classname
             threadAchieveByClass(pmo);
+
+            // death same map
+            if(Level.info.MapName != Cvar.GetCvar("LMBH_wereMap", players[e.playerNumber]).GetString()) Cvar.GetCvar("LMBH_everDied", players[e.playerNumber]).SetBool(false); // remove ever died if changed map
+
+            if(Cvar.GetCvar("LMBH_everDied", players[e.playerNumber]).GetBool())
+            {
+                Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).SetInt(Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).GetInt() + 1);
+            } else 
+            {
+                Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).SetInt(0);
+            }
+            // bruh, windsurf wtf if wrong with your attention?! need Fidget spinner?!??!?
         }
         Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(false);
     }
@@ -250,6 +251,9 @@ class LMBH_MbohAchievementHandler : EventHandler
         //     // }
         //     //Cvar.GetCvar("LMBH_wereDied").SetBool(false);
         // }
+
+        // reset some counters
+        // Cvar.GetCvar("LMBH_deathCount_sameMap").SetInt(0);
     }
 
     override void NetworkProcess(consoleEvent e) {
@@ -396,6 +400,83 @@ class LMBH_Achievement_NotDoomGuy : LMBH_Achievement
         LMBH_Achievement.description "$Achieve_NotDoomGuy_desc";
         LMBH_Achievement.borderColor 0xBB0000;
         LMBH_Achievement.boxColor    0xBBBBBB;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_ForMotherlandUra : LMBH_Achievement
+{
+    Default
+    {
+        // FOR MOTHER RUSSIA!
+        /*
+        URA!!!
+
+        Russian Overkill
+        */
+        LMBH_Achievement.name "$Achieve_ForMotherlandUra";
+        LMBH_Achievement.description "$Achieve_ForMotherlandUra_desc";
+        LMBH_Achievement.borderColor 0xBB0000;
+        LMBH_Achievement.boxColor    0xBB0000;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_ProjectBrutality : LMBH_Achievement
+{
+    Default
+    {
+        // Haha!! Chainsaw, the weapon of communication!
+        /*
+
+        Project Brutality
+        */
+        LMBH_Achievement.name "$Achieve_ProjectBrutality";
+        LMBH_Achievement.description "$Achieve_ProjectBrutality_desc";
+        LMBH_Achievement.borderColor 0x00FFFF;
+        LMBH_Achievement.boxColor    0x000000;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_SergeantBrutal : LMBH_Achievement
+{
+    Default
+    {
+        // Don't forget Brutal Doom Sergeant Mark IV
+        /*
+
+        another Brutal we first know from.
+        */
+        LMBH_Achievement.name "$Achieve_SergeantBrutal";
+        LMBH_Achievement.description "$Achieve_SergeantBrutal_desc";
+        LMBH_Achievement.borderColor 0xFF1111;
+        LMBH_Achievement.boxColor    0x000000;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_SoHard : LMBH_Achievement
+{
+    Default
+    {
+        // Don't forget Brutal Doom Sergeant Mark IV
+        /*
+
+        another Brutal we first know from.
+        */
+        LMBH_Achievement.name "$Achieve_SoHard";
+        LMBH_Achievement.description "$Achieve_SoHard_desc";
+        LMBH_Achievement.borderColor 0xFF0090;
+        LMBH_Achievement.boxColor    0x100000;
         LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.isHidden true;

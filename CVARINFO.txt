@@ -48,6 +48,10 @@ user string LMBH_lastLoadedLevelFIFO9 = "";
 
 // Achievement Stuffs
 user bool LMBH_wereDied = false; // You died.
+user string LMBH_wereMap = ""; // You died map name.
+user bool LMBH_everDied = false; // You died this map. to start counter of same map death count
+user int LMBH_deathCount_sameMap = 0; // You died tracking number same map.
+nosave int LMBH_deathCount_sameMap_noSave = 0; // You died tracking number same map.
 nosave bool LMBH_AchievementNotReadyBug = false; // calling achieve in new game errors address zero
 
 // TDRR's CVARs

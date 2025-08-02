@@ -60,7 +60,7 @@ function void scan_character (void)
 	else if(CheckActorClass(PlayerNumber(),"BStrifer")) {label_player = "Strifeguy";extra_talk="You can relax now, buddy. There's no need aggression now in this house.\nUnless of course you wanna train for the next Sigil Hunt? Iyeah!";set_second = 8.0;}
 	else if(CheckActorClass(PlayerNumber(),"BChexer")) {label_player = "Chex Hero";extra_talk="You can relax now, buddy. There's no need pouring energy drink into your breakfast now in this house.\nUnless of course you wanna train for the next Rescue Mission? Iyeah!";set_second = 8.0;}
 	else if(CheckActorClass(PlayerNumber(),"BHDoomer")) {label_player = "Doomguy";extra_talk="You can relax now, buddy. There's no need.... Huh. That you again? Idk, just.. keep this place clean. Or else it'd smells pungent. Iyeah!\nEven tho we Vacuum Clean Mop!\nPls no I beg you. It's hard to clean.. yeah.";set_second = 10.0;}
-	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label_player = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;}
+	else if(CheckActorClass(PlayerNumber(),"BLuka")) {label_player = "Luka";extra_talk="... Just.. don't go overboard, pls, they have lives, even.. yea you know, okey?. Iyeah!";set_second = 8.0;} // H but other game.
 	/*
 	Pls verify!
 	https://forum.zdoom.org/viewtopic.php?t=35071 Brutal Strife
@@ -279,10 +279,11 @@ function void scan_character (void)
 	
 	// Adventure of Square http://adventuresofsquare.com/
 	/*
+	Jimmy squared
 	https://bigbrikgames.itch.io/square
 	https://bigbrikgames.itch.io/nullvoid
 	*/
-	else if(CheckActorClass(PlayerNumber(),"SquarePlayer")) {label_player = "Squareguy";extra_talk="";set_second = 2.0;} // Jackrabbit
+	else if(CheckActorClass(PlayerNumber(),"SquarePlayer")) {label_player = "Squareguy";extra_talk="";set_second = 2.0;} // Squareguy
 	
 	// PX8916
 	/*
