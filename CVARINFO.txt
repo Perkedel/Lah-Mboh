@@ -48,6 +48,7 @@ user string LMBH_lastLoadedLevelFIFO9 = "";
 
 // Achievement Stuffs
 user bool LMBH_wereDied = false; // You died.
+nosave bool LMBH_AchievementNotReadyBug = false; // calling achieve in new game errors address zero
 
 // TDRR's CVARs
 //server bool ctfannouncer = true;

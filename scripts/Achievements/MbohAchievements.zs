@@ -8,7 +8,7 @@
 // put rest of the achievement includes here!
 // Once done, load this one up to main ZScript loads
 
-class LMBH_MbohAchievementHandler : StaticEventHandler
+class LMBH_MbohAchievementHandler : EventHandler
 {
     
     //bool playerSelfDied = false;
@@ -65,6 +65,106 @@ class LMBH_MbohAchievementHandler : StaticEventHandler
         }
     }
 
+    void networkAchieve(consoleEvent e)
+    {
+        let expectedCommand = 'LMBH:achieve'; // e.g. `LMBH:achieve:LMBH_Achievment_MyAchieve`
+        name eventname = e.name;
+        let pmo = players[e.player].mo;
+        array<string> splitren;
+        e.name.split(splitren,":");
+        if(!e.isManual)
+        {
+            if(e.name.indexOf(expectedCommand) > -1 )
+            {
+                if(splitren.size() < 3)
+                {
+                    // not enough arguments
+                    return;
+                }
+                if(splitren[2].length() == 0)
+                {
+                    // empty achieve
+                    return;
+                }
+                LMBH_Achiever.achieve(splitren[2]);
+            }
+        }
+    }
+
+    static bool IsVoodooDoll(PlayerPawn mo) 
+    {
+        // https://zdoom.org/wiki/Classes:PlayerPawn
+        return !mo.player || !mo.player.mo || mo.player.mo != mo;
+    }
+
+    bool evalPlayerClass(PlayerPawn mo, string classname) {
+        // https://zdoom.org/wiki/ZScript_classes
+        // this errors
+        // class<PlayerPawn> cls = classname;
+        // if (cls) return mo is classname;
+        // return mo is classname;
+        // if(cls) {}
+        string containes = "";
+        if(classname.length() > 0) containes = classname;
+        name moName = mo.getClassName();
+        name namedClass = classname;
+        string stringName = moName;
+        
+        // return moName == classname;
+        // Console.printf("%s %s %d",moName,classname, moName.indexOf(containes));
+        Console.printf("%s %s %d",moName,classname, stringName.indexOf(classname));
+        // return (stringName.indexOf(classname) > -1) == true;
+        // return (stringName.indexOf(classname) == 0);
+        return (stringName.indexOf(containes) == 0);
+        // return false;
+        // return stringName == classname;
+        // return moName == namedClass;
+    }
+
+    // int kludgeWait = 1;
+    void threadAchieveByClass(PlayerPawn pmo)
+    {
+        // if(!LMBH_AchievementNotReadyBug)
+        // {
+        //     Cvar.GetCvar("LMBH_AchievementNotReadyBug").SetBool(true);
+        //     return; // try again after level complete and then enter the new level.
+        // }
+        // int wait = 10;
+        // if(kludgeWait > 0)
+        // {
+        //     kludgeWait--;
+        //     threadAchieveByClass(pmo);
+        //     return;
+        // } else 
+        // {
+        //     kludgeWait = 1;
+        // }
+        // shit! No switch case in string?! I am not Dev!!!
+        // Class<LMBH_Achiever> ach = "LMBH_Achiever";
+        // if(ach){
+            if(!evalPlayerClass(pmo,"DoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
+            if(evalPlayerClass(pmo,"FurDaisy")) LMBH_Achiever.achieve("LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
+            else if(evalPlayerClass(pmo,"DukeNukem")) LMBH_Achiever.achieve("LMBH_Achievement_PieceOfCake"); // Duke Nukem.
+            else if(evalPlayerClass(pmo,"HDoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_EichPlayer"); // yes.
+            else if(evalPlayerClass(pmo,"HDoomPlayer")) Console.printf("alsdhfaiuwgerhffiuageriuyheriguhergiuhstriguheirtughiuthg"); // yes.
+            // if(!evalPlayerClass(pmo,"DoomPlayer")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
+            // if(evalPlayerClass(pmo,"FurDaisy")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
+            // else if(evalPlayerClass(pmo,"DukeNukem")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_PieceOfCake"); // Duke Nukem.
+            // else if(evalPlayerClass(pmo,"HDoomPlayer")) EventHandler.SendNetworkEvent("LMBH:achieve:LMBH_Achievement_EichPlayer"); // yes.
+            else {}
+        // }
+        
+        // if(pmo.getClassName() == "FurDaisy") LMBH_Achiever.achieve("LMBH_Achievement_SolidSolidSolid"); // korp kat Furdoom Hexabun
+        // else if(pmo.getClassName() == "HDoomPlayer") LMBH_Achiever.achieve("LMBH_Achievement_EichPlayer"); // yes.
+        // bro wtf why error
+        /*
+        adress zeor.
+        the achiever is not ready yet
+
+        whole this time we mistyped the achievement class name & just vm aborts address zero! it should've been 404 not found!
+        */
+    }
+
     override void PlayerDied(PlayerEvent e) {
         // a player is dedd
 
@@ -72,18 +172,24 @@ class LMBH_MbohAchievementHandler : StaticEventHandler
         // track level they died on. if the respawn again on different level, achieve I'm died thank you forever.
         // get player pawn
         let pmo = players[e.playerNumber].mo;
-        if(PlayerInGame[e.playerNumber] && pmo)
+        let pinfo = players[e.playerNumber];
+        if(PlayerInGame[e.playerNumber] && pmo && !IsVoodooDoll(pmo) && !(Level.info.MapName ~== "TITLEMAP"))
         {
             // if that's you, track.
             pmo.A_GiveInventory("LMBH_Flag_YouDied", 1);
             Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(true);
             //Console.printf("kgldsjgsiodh");
+
+            // first time died. Haylo!
+            LMBH_Achiever.achieve("LMBH_Achievement_YouDied");
+
+            
         }
     }
 
     override void PlayerRespawned(PlayerEvent e) {
         let pmo = players[e.playerNumber].mo;
-        if(PlayerInGame[e.playerNumber] && pmo)
+        if(PlayerInGame[e.playerNumber] && pmo && !IsVoodooDoll(pmo) && !(Level.info.MapName ~== "TITLEMAP"))
         {
             // remove you died flag inventory
             pmo.A_TakeInventory("LMBH_Flag_YouDied");
@@ -94,7 +200,7 @@ class LMBH_MbohAchievementHandler : StaticEventHandler
 
     override void PlayerSpawned(PlayerEvent e) {
         let pmo = players[e.playerNumber].mo;
-        if(PlayerInGame[e.playerNumber] && pmo)
+        if(PlayerInGame[e.playerNumber] && pmo && !IsVoodooDoll(pmo) && !(Level.info.MapName ~== "TITLEMAP"))
         {
             // if if they spawned with that inventory, if had, achieve. but otherwise, remove.
             // https://zdoom.org/wiki/A_TakeInventory
@@ -105,45 +211,60 @@ class LMBH_MbohAchievementHandler : StaticEventHandler
                 LMBH_Achiever.achieve("LMBH_Achievement_ImDieThankYouForever");
             }
             pmo.A_TakeInventory("LMBH_Flag_YouDied", 1);
+
+            // Specific Classname
+            threadAchieveByClass(pmo);
         }
         Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(false);
     }
 
     override void WorldLoaded(WorldEvent e) 
     {
-        if(e.IsSavegame)
-        {
-            // let pmo = players[e.player].mo;
-            // if(PlayerInGame[e.player] && pmo)
-            // {
-            //     pmo.A_TakeInventory("LMBH_Flag_YouDied");
-            //     Cvar.GetCvar("LMBH_wereDied", players[e.player]).SetBool(false);
-            // }
-            //Cvar.GetCvar("LMBH_wereDied").SetBool(false);
-        }
+        // let pmo = players[e.player].mo;
+        // if(PlayerInGame[e.player] && pmo && !IsVoodooDoll(pmo) && !(Level.info.MapName ~== "TITLEMAP"))
+        // {
+        //     // Specific Classname
+        //     threadAchieveByClass(pmo);
+        // }
+        // if(e.IsSavegame)
+        // {
+        //     // let pmo = players[e.player].mo;
+        //     // if(PlayerInGame[e.player] && pmo)
+        //     // {
+        //     //     pmo.A_TakeInventory("LMBH_Flag_YouDied");
+        //     //     Cvar.GetCvar("LMBH_wereDied", players[e.player]).SetBool(false);
+        //     // }
+        //     //Cvar.GetCvar("LMBH_wereDied").SetBool(false);
+        // }
     }
 
     override void WorldUnloaded(WorldEvent e)
     {
-        if(!e.IsSavegame)
-        {
-            // let pmo = players[e.player].mo;
-            // if(PlayerInGame[e.player] && pmo)
-            // {
-            //     pmo.A_TakeInventory("LMBH_Flag_YouDied");
-            //     Cvar.GetCvar("LMBH_wereDied", players[e.player]).SetBool(false);
-            // }
-            //Cvar.GetCvar("LMBH_wereDied").SetBool(false);
-        }
+        // if(!e.IsSavegame)
+        // {
+        //     // let pmo = players[e.player].mo;
+        //     // if(PlayerInGame[e.player] && pmo)
+        //     // {
+        //     //     pmo.A_TakeInventory("LMBH_Flag_YouDied");
+        //     //     Cvar.GetCvar("LMBH_wereDied", players[e.player]).SetBool(false);
+        //     // }
+        //     //Cvar.GetCvar("LMBH_wereDied").SetBool(false);
+        // }
     }
 
     override void NetworkProcess(consoleEvent e) {
         // check you cheated with `netevent LMBH:cheat:MyCheat`
         checkCheat(e);
+        networkAchieve(e);
     }
 
     // IDEA: hasMethod isDLC(). this is for existence verifier to check this way other than with inherited existence class.
     // the verifier scans all Handler and check if there is this method & execute with returning info data.
+
+    override void WorldTick()
+    {
+
+    }
 }
 
 class LMBH_Achievement_YouCheated : LMBH_Achievement
@@ -196,6 +317,20 @@ class LMBH_Achievement_ImDieThankYouForever : LMBH_Achievement
     }
 }
 
+class LMBH_Achievement_YouDied : LMBH_Achievement
+{
+    Default
+    {
+        // First time died
+        LMBH_Achievement.name "$Achieve_YouDied";
+        LMBH_Achievement.description "$Achieve_YouDied_desc";
+        LMBH_Achievement.borderColor 0xffff00;
+        LMBH_Achievement.boxColor    0x0099ff;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+    }
+}
+
 class LMBH_Flag_YouDied : Inventory
 {
     Default
@@ -214,7 +349,9 @@ class LMBH_Flag_YouDied : Inventory
     }
 }
 
-class LMBH_Achievement_EichPlay : LMBH_Achievement
+// SPECIFIC PLAYERCLASS NAMES
+
+class LMBH_Achievement_EichPlayer : LMBH_Achievement
 {
     Default
     {
@@ -246,3 +383,23 @@ class LMBH_Achievement_SolidFurry : LMBH_Achievement
         LMBH_Achievement.isHidden true;
     }
 }
+
+class LMBH_Achievement_NotDoomGuy : LMBH_Achievement
+{
+    Default
+    {
+        // You're not.. DoomPlayer. Who are you?
+        /*
+        Where's Doomguy?
+        */
+        LMBH_Achievement.name "$Achieve_NotDoomGuy";
+        LMBH_Achievement.description "$Achieve_NotDoomGuy_desc";
+        LMBH_Achievement.borderColor 0xBB0000;
+        LMBH_Achievement.boxColor    0xBBBBBB;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+// END SPECIFIC PLAYERCLASS NAMES

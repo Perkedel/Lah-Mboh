@@ -55,6 +55,12 @@ class LMBH_Achiever : EventHandler
   static
   void achieve(String achievementClass)
   {
+    Class<LMBH_Achievement> checkFirst = achievementClass;
+    if(!checkFirst)
+    {
+      Console.printf(StringTable.Localize("$LMBH_Achieve_NOTFOUND"),achievementClass);
+      return;
+    }
     achievePrivate(achievementClass);
   }
 
@@ -146,6 +152,10 @@ extend class LMBH_Achiever
   private static
   void achievePrivate(Class<LMBH_Achievement> achievementClass)
   {
+    // if(!achievementClass)
+    // {
+    //   Console.printf(StringTable.Localize("$LMBH_Achieve_NOTFOUND"),achievementClass);
+    // }
     let achievement = getDefaultByType(achievementClass);
     int count, state;
     [count, state] = updateAchievementState(achievement);
