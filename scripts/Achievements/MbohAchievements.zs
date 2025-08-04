@@ -170,9 +170,12 @@ class LMBH_MbohAchievementHandler : EventHandler
             // died 10 times same map
             if(Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).GetInt() >= 10)
             {
-                Console.printf(StringTable.localize("$Achieve_SoHard"));
+                Console.printf("\c[magenta]%s", StringTable.localize("$Achieve_SoHard"));
                 LMBH_Achiever.achieve("LMBH_Achievement_SoHard");
             }
+
+            // died 100 times in this GZDoom
+            LMBH_Achiever.achieve("LMBH_Achievement_ServerHundredDeaths");
         }
     }
 
@@ -468,15 +471,34 @@ class LMBH_Achievement_SoHard : LMBH_Achievement
 {
     Default
     {
-        // Don't forget Brutal Doom Sergeant Mark IV
+        // Died 10 times.
         /*
-
-        another Brutal we first know from.
+        Parkour is hard, so does combat. Note this is not yet slaughterion
         */
         LMBH_Achievement.name "$Achieve_SoHard";
         LMBH_Achievement.description "$Achieve_SoHard_desc";
         LMBH_Achievement.borderColor 0xFF0090;
         LMBH_Achievement.boxColor    0x100000;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_ServerHundredDeaths : LMBH_Achievement
+{
+    Default
+    {
+        // Died 100 times total in this GZDoom you're at.
+        /*
+        Simple unspecific death tracker
+        */
+        LMBH_Achievement.name "$Achieve_ServerHundredDeaths";
+        LMBH_Achievement.description "$Achieve_ServerHundredDeaths_desc";
+        LMBH_Achievement.borderColor 0xAA0030;
+        LMBH_Achievement.boxColor    0x050000;
+        LMBH_Achievement.limit 100;
+        LMBH_Achievement.isProgressVisible false;
         LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.isHidden true;
