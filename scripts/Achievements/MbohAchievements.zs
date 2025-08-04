@@ -466,6 +466,7 @@ class LMBH_Achievement_SergeantBrutal : LMBH_Achievement
         LMBH_Achievement.isHidden true;
     }
 }
+// END SPECIFIC PLAYERCLASS NAMES
 
 class LMBH_Achievement_SoHard : LMBH_Achievement
 {
@@ -505,4 +506,7 @@ class LMBH_Achievement_ServerHundredDeaths : LMBH_Achievement
     }
 }
 
-// END SPECIFIC PLAYERCLASS NAMES
+// TODO: Toasty. MK Toasty & Stepmania toasty.
+/*
+Since world start, no damage, 250 kills.
+*/

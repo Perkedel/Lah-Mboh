@@ -64,6 +64,9 @@ class LMBH_ExistenceVerifier: Actor abstract
 
 class LMBH_ExistenceHandler: StaticEventHandler
 {
+	// https://zdoom.org/wiki/Dynamic_arrays
+	array<string> existedDLCs;
+
     //let expectedCommand = 'isDLCExist';
     // use Jekyll Dummy! the netevent
 	// https://zdoom.org/wiki/NetworkProcess
@@ -146,6 +149,7 @@ class LMBH_ExistenceHandler: StaticEventHandler
 		// just like m8f's, ..
 		uint nClasses = AllActorClasses.size(); // get all Actors onboard!
 		let counter = 0;
+		existedDLCs.clear();
 		for (uint i = 0; i < nClasses; ++i)
 		{
 			// Let's itterate!
@@ -170,11 +174,12 @@ class LMBH_ExistenceHandler: StaticEventHandler
 				{
 					sayNSFW = " \c[gray]{\c[yellow]/!\\ \c[red][\c[yellow]NSFW\c[red]] \c[yellow]/!\\\c[gray]}\c-";
 				}
-				if (isNSFW)
+				if (isNSFL)
 				{
 					sayNSFL = " \c[gray]{\c[red](X) \c[darkred][\c[red]NSFL\c[darkred]] \c[red](X)\c[gray]}\c-";
 				}
 				counter++;
+				existedDLCs.push(name);
 				Console.printf("\c[gray]- \c[white](\c[darkgreen]%s\c[white]) \c[green]%s%s%s\c-. \c-%s",name, title, sayNSFW, sayNSFL, description);
 			}
 		}
