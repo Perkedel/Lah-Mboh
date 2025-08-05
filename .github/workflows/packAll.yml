@@ -40,6 +40,11 @@ jobs:
           ref: main
           sparse-checkout: |
             Mods/GZDoom/
+      
+      # From now on, you must move to respective repository folder
+      # cd Lah-Mboh
+      # pwd
+      # ls
 
 
       # Freedoom fetches all the history? okeh..
@@ -56,6 +61,10 @@ jobs:
           pwd
           echo "which contains.."
           ls
+          echo "We must firstly move to the main repo everytime now on"
+          cd Lah-Mboh
+          pwd
+          ls
       
       # - name: First, take off the yoink files off the source code. We can't let duplicate it this big
       #   run: |
@@ -64,12 +73,18 @@ jobs:
       
       - name: First, compile the ACSes!
         run: |
+          cd Lah-Mboh
+          pwd
+          ls
           echo "Let's compile!"
           chmod +x ./src/batchScripts/compileLahMbohACS.sh
           ./src/batchScripts/compileLahMbohACS.sh
 
       - name: Copy the yoinked files readme to txt version because that's the most compatible, ironically
         run: |
+          cd Lah-Mboh
+          pwd
+          ls
           echo "We must firstly copy the yoink folder readme to txt version so you can just 2x click it."
           cp yoinks/README.md yoinks/README.txt
           cp README.md README.txt
@@ -84,6 +99,9 @@ jobs:
       
       - name: cleanseing
         run: |
+          cd Lah-Mboh
+          pwd
+          ls
           echo "Clean unecessary files not needed in the distributed archive!"
           rm -rf maps/*.dbs
           rm -rf maps/*.backup1
@@ -95,6 +113,7 @@ jobs:
         
       - name: Zip it
         run: |
+          cd Lah-Mboh
           ls
           pwd
           echo "Zip now"
@@ -112,6 +131,7 @@ jobs:
       # https://github.com/TheKins/FauxDM/blob/master/_zip.bat
       - name: 7z it
         run: |
+          cd Lah-Mboh
           ls
           pwd
           echo "7z now"
@@ -144,6 +164,7 @@ jobs:
       # Well speaking of, care to ask Graf Zahl or add your own? Mod source code itself tho!
       - name: Since we tired of this calamity, why not just repack it in the same step as the artifact?
         run: |
+          cd Lah-Mboh
           ls
           pwd
           echo "Shut zip"
@@ -170,9 +191,23 @@ jobs:
           ls
           pwd
       
+      - name: Bring all of the file outside!
+        run: |
+          cd Lah-Mboh
+          ls
+          pwd
+          mv Lah-Mboh.zip ..
+          mv Lah-Mboh.7z ..
+          mv Lah-Mboh.tar.xz ..
+          ls
+          pwd
+      
       - name: Check first
         run: |
           echo "AAAA"
+          ls
+          pwd
+          cd Lah-Mboh
           ls
           pwd
       
