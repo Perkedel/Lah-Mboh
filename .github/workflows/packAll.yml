@@ -52,7 +52,7 @@ jobs:
           cd BringYourOwnUSB-SFW
           pwd
           ls
-          if [ -e ./Compile/packForUSB.sh ]; then
+          if [ ! -f ./Compile/packForUSB.sh ]; then
             chmod +x ./Compile/packForUSB.sh
             ./Compile/packForUSB.sh
             echo "Bring the USB out!"
