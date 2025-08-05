@@ -26,7 +26,19 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - name: Checkout Lah-Mboh
+        uses: actions/checkout@v4
+        with:
+          path: Lah-Mboh
+      
+      - name: Checkout also Bring Your Own USB
+        uses: actions/checkout@v4
+        with:
+          repository: joelwindows7/Bring-Your-Own-USB
+          path: BringYourOwnUSB-SFW
+          sparse-checkout: |
+            Mods/GZDoom/
+
 
       # Freedoom fetches all the history? okeh..
       # wai wai wai, you fetch depth 0, and then suddenly re-add the remote of yours there
@@ -36,6 +48,13 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       
+      - name: Uuuh, where were we again?
+        run: |
+          echo "We are at..."
+          pwd
+          echo "which contains.."
+          ls
+      
       # - name: First, take off the yoink files off the source code. We can't let duplicate it this big
       #   run: |
       #     echo "Shall we?"
@@ -44,6 +63,7 @@ jobs:
       - name: First, compile the ACSes!
         run: |
           echo "Let's compile!"
+          chmod +x ./src/batchScripts/compileLahMbohACS.sh
           ./src/batchScripts/compileLahMbohACS.sh
 
       - name: Copy the yoinked files readme to txt version because that's the most compatible, ironically
