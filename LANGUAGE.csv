@@ -1194,6 +1194,7 @@ The level did not gave us resources well enough!",CHEATARON_OUTRESOURCE_DESC,,"S
 Levelnya tidak menyediakan sumber daya dengan becus!",,,,
 \c[red]WERROR\c-: Player %d not in game!,CHEATARON_OUTRESOURCE_ERR_NOPLAYER,,\c[red]WERROR\c-: Pemain %d tidak didalam game!,,,,
 \c[red]WERROR\c-: Player %d does not have a valid PlayerPawn!,CHEATARON_OUTRESOURCE_ERR_NOPAWN,,\c[red]WERROR\c-: Pemain %d tidak memiliki PlayerPawn yg valid!,,,,
+\c[red]WERROR\c-: Triggering this cheat manually from console is \c[red]FORBIDDEN\c-!,CHEATARON_OUTRESOURCE_ERR_NOCONSOLE,,\c[red]WERROR\c-: Meluncurkan cheat secara manual dari konsole \c[red]TIDAK DIPERBOLEHKAN\c-!,,,,
 \c[cyan]You Cheated!,CHEATARON_COIN,,\c[cyan]Anda Curang!,,,,
 ,,,,,,,
 ,,,,,,,

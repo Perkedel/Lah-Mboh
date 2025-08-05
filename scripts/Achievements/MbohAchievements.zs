@@ -20,48 +20,53 @@ class LMBH_MbohAchievementHandler : EventHandler
         let pmo = players[e.player].mo;
         array<string> splitren;
         e.name.split(splitren,":");
-        if(e.isManual)
+        
+        if(e.name.indexOf(expectedCommand) > -1 )
         {
-            if(e.name.indexOf(expectedCommand) > -1 )
+            
+            if(splitren.size() < 3)
             {
-                
-                if(splitren.size() < 3)
-                {
-                    // not yet cheating
-                    return;
-                }
-                //Console.printf("asl;kdjfaowiehfoawerhfoahkj");
-                if(splitren[2] ~== "LMBH_ExampleCheatTest")
-                {
-                    // not cheat either yet
-                    return;
-                }
-                
-                if(splitren[2].length() == 0)
-                {
-                    // empty type
-                    return;
-                }
-                
+                // not yet cheating
+                return;
+            }
+            //Console.printf("asl;kdjfaowiehfoawerhfoahkj");
+            if(splitren[2] ~== "LMBH_ExampleCheatTest")
+            {
+                // not cheat either yet
+                return;
+            }
+            
+            if(splitren[2].length() == 0)
+            {
+                // empty type
+                return;
+            }
+            
+            // Make sure this player is valid
+            // and has a PlayerPawn:
+            if (!PlayerInGame[e.Player])
+            {
+                Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOPLAYER"),e.Player);
+                return;
+            }
+            let ppawn = players[e.Player].mo;
+            if (!ppawn)
+            {
+                Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOPAWN"),e.Player);
+                return;
+            }
 
+            Class<LMBH_CheataronCheat> theClass = splitren[2];
+            let cheat = LMBH_CheataronCheat(GetDefaultByType(theClass));
+
+            if(e.isManual || splitren[2] ~== "LMBH_OutOfResourceCheatKit" || cheat.literallyCheat)
+            {
+                ppawn.A_GiveInventory("LMBH_CheatCoin",1);
                 // ultimately cheating, achieve now!
                 LMBH_Achiever.achieve("LMBH_Achievement_YouCheated");
                 // & tell everyone about it
-                // Make sure this player is valid
-                // and has a PlayerPawn:
-                if (!PlayerInGame[e.Player])
-                {
-                    Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOPLAYER"),e.Player);
-                    return;
-                }
-                let ppawn = players[e.Player].mo;
-                if (!ppawn)
-                {
-                    Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOPAWN"),e.Player);
-                    return;
-                }
-                ppawn.A_GiveInventory("LMBH_CheatCoin",1);
             }
+            
         }
     }
 
@@ -145,6 +150,12 @@ class LMBH_MbohAchievementHandler : EventHandler
 
         whole this time we mistyped the achievement class name & just vm aborts address zero! it should've been 404 not found!
         */
+    }
+
+    static void testSay()
+    {
+        Console.printf("testSay AAAAAAAAAAAAAAAAAAAAAAAA");
+        // TODO: Call from ACS!
     }
 
     override void PlayerDied(PlayerEvent e) {

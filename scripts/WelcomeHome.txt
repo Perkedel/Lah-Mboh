@@ -1,7 +1,0 @@
-// Let's just use ZScript?
-// JOELwindows7
-
-class WelcomeHome
-{
-	// https://zdoom.org/wiki/ScriptCall
-}

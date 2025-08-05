@@ -16,6 +16,7 @@ version "4.11.3" // Because Project Brutality, but we also want latest features 
 #include "scripts/Persistencer/Persistencer.zs"
 #include "scripts/Cheataron/Cheataron.zs"
 #include "scripts/QuestCoin/QuestCoin.zs"
+#include "scripts/Greetings/WelcomeHome.zs"
 
 // crashes
 #include "scripts/uncaught_werror.txt"

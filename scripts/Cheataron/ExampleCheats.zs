@@ -26,6 +26,7 @@ class LMBH_OutOfResourceCheatKit : LMBH_CheataronCheat
         LMBH_CheataronCheat.name "LMBH_OutOfResourceCheatKit"; // Cheat ID
         LMBH_CheataronCheat.title "$CHEATARON_OUTRESOURCE_TITLE"; // Title
         LMBH_CheataronCheat.description "$CHEATARON_OUTRESOURCE_DESC"; // The description of it, 
+        LMBH_CheataronCheat.literallyCheat true;
         //You can also select string from LANGUAGE with $ prefix!.
     }
 
@@ -68,5 +69,18 @@ class LMBH_OutOfResourceCheatKit : LMBH_CheataronCheat
         idName = "ID24FuelTank"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy,9999);
         idName = "ID24CalamityBlade"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy);
         idName = "ID24Incinerator"; idThingy = idName; if(idThingy) ppawn.A_GiveInventory(idThingy);
+    }
+}
+
+class LMBH_OutOfResourceCheatKitCanon : LMBH_OutOfResourceCheatKit
+{
+    // Canon event variant that does not trigger save cheat marking
+    
+    Default
+    {
+        LMBH_CheataronCheat.name "LMBH_OutOfResourceCheatKitCanon";
+        LMBH_CheataronCheat.literallyCheat false;
+        LMBH_CheataronCheat.noConsole true;
+        // wow Windsurf, you figured it out! And I am cringe (for letting AI suggest it out).
     }
 }

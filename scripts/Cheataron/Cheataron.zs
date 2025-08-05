@@ -86,12 +86,17 @@ class LMBH_Cheataron : EventHandler
                 String name = theClass.getClassName();
                 String title = StringTable.Localize(cheat.title);
                 String description = StringTable.Localize(cheat.description);
+                bool noConsole = cheat.noConsole;
                 Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
                 Console.printf(StringTable.Localize("$CHEATARON_EXECUTE"),title,name,description);
                 Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
                 if(cheat.skipPlayerCheck)
                 {
-                    cheat.callCheat(e);
+                    if(noConsole)
+                    {
+                        Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOCONSOLE"));
+                    } else
+                        cheat.callCheat(e);
                 } else 
                 {
                     // Make sure this player is valid
@@ -109,7 +114,11 @@ class LMBH_Cheataron : EventHandler
                             //return;
                         } else
                         {
-                            cheat.callCheat(e);
+                            if(noConsole)
+                                {
+                                    Console.printf(StringTable.Localize("$CHEATARON_OUTRESOURCE_ERR_NOCONSOLE"));
+                                } else
+                                    cheat.callCheat(e);
                         }
                     }
                 }
@@ -135,16 +144,26 @@ class LMBH_CheataronCheat : Actor
 	String title;
 	String description;
     bool skipPlayerCheck; // skip player pawn check
+    bool literallyCheat; // even not manually from console, always mark this save as cheated
+    bool noConsole; // prevent execution from console, e.isManual
 
     // prop
     property name: name;
 	property title: title;
 	property description: description;
     property skipPlayerCheck: skipPlayerCheck;
+    property literallyCheat: literallyCheat;
+    property noConsole: noConsole;
 
     Default
     {
-
+        LMBH_CheataronCheat.name "LMBH_CheataronCheat"; // Cheat ID
+        LMBH_CheataronCheat.title "Cheat"; // Title
+        LMBH_CheataronCheat.description "Lorem Ipsum"; // The description of it, 
+        //You can also select string from LANGUAGE with $ prefix!.
+        LMBH_CheataronCheat.skipPlayerCheck false; // skip player pawn check
+        LMBH_CheataronCheat.literallyCheat false; // even not manually from console, always mark this save as cheated
+        LMBH_CheataronCheat.noConsole false; // prevent execution from console, e.isManual
     }
 
     static bool isExist(Class<LMBH_CheataronCheat> theClass)

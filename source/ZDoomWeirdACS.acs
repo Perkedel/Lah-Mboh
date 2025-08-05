@@ -18,3 +18,9 @@ script "AvoidDeathScript" (void)
     delay(1);
   }
 }
+
+script "CheataronOutOfResource" (void)
+{
+  print(s:"Out of resource cheat");
+  ScriptCall("EventHandler", "SendNetworkEvent", "LMBH:cheat:LMBH_OutOfResourceCheatKit");
+}

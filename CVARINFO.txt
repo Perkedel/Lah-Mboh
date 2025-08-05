@@ -54,6 +54,10 @@ user int LMBH_deathCount_sameMap = 0; // You died tracking number same map.
 nosave int LMBH_deathCount_sameMap_noSave = 0; // You died tracking number same map.
 nosave bool LMBH_AchievementNotReadyBug = false; // calling achieve in new game errors address zero
 
+// Welcome Home Stuffs
+nosave string LMBH_WelcomeHome_currentClass = "";
+nosave float LMBH_WelcomeHome_GreetTimer = 0;
+
 // TDRR's CVARs
 //server bool ctfannouncer = true;
 //server int ctflimit = 0;
