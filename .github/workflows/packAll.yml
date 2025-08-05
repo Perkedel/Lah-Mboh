@@ -36,6 +36,7 @@ jobs:
         with:
           repository: Perkedel/Bring-Your-Own-USB
           path: BringYourOwnUSB-SFW
+          ref: main
           sparse-checkout: |
             Mods/GZDoom/
 
