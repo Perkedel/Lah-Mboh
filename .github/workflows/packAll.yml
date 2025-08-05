@@ -31,10 +31,11 @@ jobs:
         with:
           path: Lah-Mboh
       
+      # and these..
       - name: Checkout also Bring Your Own USB
         uses: actions/checkout@v4
         with:
-          repository: Perkedel/Bring-Your-Own-USB
+          repository: Perkedel/BringYourOwnUSB-SFW
           path: BringYourOwnUSB-SFW
           ref: main
           sparse-checkout: |
