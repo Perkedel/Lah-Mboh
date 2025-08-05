@@ -76,6 +76,7 @@ jobs:
             mv outCompile.7z BringYourOwnUSB.7z
           else
             echo "WERROR 404 BringYourOwnUSB Compiler NOT FOUND"
+            echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           fi
 
 
