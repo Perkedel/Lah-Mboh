@@ -60,8 +60,14 @@ jobs:
             cd outCompile
             7z a -t7z -mx9 -m0=lzma2 -- outCompile.7z *
             cd ..
+            pwd
+            ls
             mv ./outCompile/outCompile.7z ..
+            pwd
+            ls
             cd ..
+            pwd
+            ls
             mv outCompile.7z BringYourOwnUSB.7z
           else
             echo "WERROR 404 BringYourOwnUSB Compiler NOT FOUND"
