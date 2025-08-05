@@ -45,6 +45,21 @@ jobs:
       # cd Lah-Mboh
       # pwd
       # ls
+      
+      # handle the USB!
+      - name: Handle USB
+        run: |
+          cd BringYourOwnUSB-SFW
+          pwd
+          ls
+          chmod +x ./Compile/packForUSB.sh
+          ./Compile/packForUSB.sh
+          echo "Bring the USB out!"
+          cp README.md ./outCompile
+          cd outCompile
+          7z a -t7z -mx9 -m0=lzma2 -- outCompile.7z *
+          cd ..
+          mv ./outCompile/outCompile.7z ../BringYourOwnUSB-SFW.7z
 
 
       # Freedoom fetches all the history? okeh..
@@ -191,7 +206,7 @@ jobs:
           ls
           pwd
       
-      - name: Bring all of the file outside!
+      - name: Bring all of the files outside!
         run: |
           cd Lah-Mboh
           ls
@@ -251,6 +266,7 @@ jobs:
             Lah-Mboh.zip
             Lah-Mboh.tar.xz
             Lah-Mboh.7z
+            BringYourOwnUSB-SFW.7z
       
       # idk anymore, there's alot
       # https://github.com/marketplace/actions/checksums-action
@@ -281,6 +297,7 @@ jobs:
             Lah-Mboh.zip
             Lah-Mboh.7z
             Lah-Mboh.tar.xz
+            BringYourOwnUSB-SFW.7z
       
       # Well, It had to be everywhere right?
       # https://github.com/marketplace/actions/butler-to-itch
