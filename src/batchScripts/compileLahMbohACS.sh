@@ -28,6 +28,9 @@ elif  [[ $arch == arm* ]]; then
 elif  [[ $arch == riscv ]]; then
     echo "RISC-V Architecture"
     compiler="./yoinks/ZDoom/acs/acc-riscv64" # oh shit! We don't have RISC-V version!!!!!!!!
+else
+    echo "Unknown Architecture"
+    #exit
 fi
 
 echo "Add Executable Permission onto the compiler we\'re gonna use"
