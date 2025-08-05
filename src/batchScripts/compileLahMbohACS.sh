@@ -30,6 +30,10 @@ elif  [[ $arch == riscv ]]; then
     compiler="./yoinks/ZDoom/acs/acc-riscv64" # oh shit! We don't have RISC-V version!!!!!!!!
 fi
 
+echo "Add Executable Permission onto the compiler we\'re gonna use"
+
+chmod +x $compiler
+
 echo "Time to Compile with $compiler"
 
 for anFile in ./source/*.acs; do
