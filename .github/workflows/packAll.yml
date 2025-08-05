@@ -34,7 +34,7 @@ jobs:
       - name: Checkout also Bring Your Own USB
         uses: actions/checkout@v4
         with:
-          repository: joelwindows7/Bring-Your-Own-USB
+          repository: Perkedel/Bring-Your-Own-USB
           path: BringYourOwnUSB-SFW
           sparse-checkout: |
             Mods/GZDoom/
