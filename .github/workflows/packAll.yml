@@ -73,11 +73,13 @@ jobs:
             cd ..
             pwd
             ls
-            mv outCompile.7z BringYourOwnUSB.7z
+            mv outCompile.7z BringYourOwnUSB-SFW.7z
           else
             echo "WERROR 404 BringYourOwnUSB Compiler NOT FOUND"
             echo "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
           fi
+          pwd
+          ls
 
 
       # Freedoom fetches all the history? okeh..
@@ -252,6 +254,7 @@ jobs:
             Lah-Mboh.zip
             Lah-Mboh.tar.xz
             Lah-Mboh.7z
+            BringYourOwnUSB-SFW.7z
           if-no-files-found: error
       
       # Now, checksums!
