@@ -52,14 +52,18 @@ jobs:
           cd BringYourOwnUSB-SFW
           pwd
           ls
-          chmod +x ./Compile/packForUSB.sh
-          ./Compile/packForUSB.sh
-          echo "Bring the USB out!"
-          cp README.md ./outCompile
-          cd outCompile
-          7z a -t7z -mx9 -m0=lzma2 -- outCompile.7z *
-          cd ..
-          mv ./outCompile/outCompile.7z ../BringYourOwnUSB-SFW.7z
+          if [ -e ./Compile/packForUSB.sh]; then
+            chmod +x ./Compile/packForUSB.sh
+            ./Compile/packForUSB.sh
+            echo "Bring the USB out!"
+            cp README.md ./outCompile
+            cd outCompile
+            7z a -t7z -mx9 -m0=lzma2 -- outCompile.7z *
+            cd ..
+            mv ./outCompile/outCompile.7z ../BringYourOwnUSB-SFW.7z
+          else
+            echo "WERROR 404 BringYourOwnUSB Compiler NOT FOUND"
+          fi
 
 
       # Freedoom fetches all the history? okeh..
