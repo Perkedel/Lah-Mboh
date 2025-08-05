@@ -16,5 +16,7 @@
 			"path": "C:/Serve/copyparty"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"powershell.cwd": "Lah-Mboh"
+	}
 }

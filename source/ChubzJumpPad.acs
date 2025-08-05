@@ -7,12 +7,21 @@
 
 script "JumpPadNow" (int horizontalAngle, int horizontalForce, int verticalForce)
 {
-	bool flash = true;
+	JumpPadder(horizontalAngle,horizontalForce,verticalForce,true,true);
+}
+
+script "JumpPadNowNoFlash" (int horizontalAngle, int horizontalForce, int verticalForce)
+{
+	JumpPadder(horizontalAngle,horizontalForce,verticalForce,false,false);
+}
+
+function void JumpPadder(int horizontalAngle, int horizontalForce, int verticalForce, bool flash, bool shake)
+{
 	ThrustThing(horizontalAngle, horizontalForce, 0, 0);
 	ThrustThingZ(0, verticalForce, 0, 0);
 	PlaySound(0, "JUMPPAD", CHAN_AUTO, 0.5, FALSE, ATTN_NORM);
 	if(flash) ACS_NamedExecute("JumpPadFlash",0,0,0,125);
-	Radius_Quake(7, 8, 0, 50, 0);
+	if(shake) Radius_Quake(7, 8, 0, 50, 0);
 }
 
 script "JumpPadFlash" (int r, int g, int b)

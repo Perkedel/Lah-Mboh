@@ -41,6 +41,11 @@ jobs:
       #     echo "Shall we?"
       #     echo "no nvm"
       
+      - name: First, compile the ACSes!
+        run: |
+          echo "Let's compile!"
+          ./src/batchScripts/compileLahMbohACS.sh
+
       - name: Copy the yoinked files readme to txt version because that's the most compatible, ironically
         run: |
           echo "We must firstly copy the yoink folder readme to txt version so you can just 2x click it."
