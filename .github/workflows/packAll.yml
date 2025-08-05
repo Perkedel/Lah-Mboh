@@ -40,6 +40,7 @@ jobs:
           ref: main
           sparse-checkout: |
             Mods/GZDoom/
+            Compile
       
       # From now on, you must move to respective repository folder
       # cd Lah-Mboh
