@@ -58,7 +58,11 @@ jobs:
             ./Compile/packForUSB.sh
             echo "Bring the USB out!"
             cp README.md ./outCompile
+            pwd
+            ls
             cd outCompile
+            pwd
+            ls
             7z a -t7z -mx9 -m0=lzma2 -- outCompile.7z *
             cd ..
             pwd
