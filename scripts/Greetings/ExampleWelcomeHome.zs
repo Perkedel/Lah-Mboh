@@ -37,6 +37,6 @@ class LMBH_GreetableCharacter_DoomPlayer : LMBH_GreetableCharacter
 
 // SOMEBODY DARE TO INCREASE COSTCO HOTDOG PRICE! Prepare for World War 5!
 
-class LMBH_GreetableCharacter_FURPlayer : LMBH_GreetableCharacter {Default{LMBH_GreetableCharacter.name "$GREETABLE_FURDAISY_NAME";LMBH_GreetableCharacter.friendlyName "$GREETABLE_FURDAISY_FRIENDLY";LMBH_GreetableCharacter.reactionary "$GREETABLE_FURDAISY_REACTIONARY";}}
-
 // turn Aura to Anti Aura, time to prompt?
+
+class LMBH_GreetableCharacter_FURDaisy : LMBH_GreetableCharacter {Default{LMBH_GreetableCharacter.name "$GREETABLE_FURDAISY_NAME";LMBH_GreetableCharacter.friendlyName "$GREETABLE_FURDAISY_FRIENDLY";LMBH_GreetableCharacter.reactionary "$GREETABLE_FURDAISY_REACTIONARY";}}
