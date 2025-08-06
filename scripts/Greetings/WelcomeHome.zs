@@ -88,20 +88,20 @@ class LMBH_WelcomeHome : EventHandler
 		Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(0.0);
 	}
 
-	static void MatchClass(string playerClass)
+	static void MatchClass(string playerClass, int playerNumber)
 	{
 		Cvar.FindCvar("LMBH_WelcomeHome_currentClass").SetString(playerClass);
 	}
 
-	static void scanCharacter(string playerClass)
+	static void scanCharacter(string playerClass, int playerNumber)
 	{
-		MatchClass(playerClass);
+		MatchClass(playerClass, playerNumber);
 	}
 
 	// https://zdoom.org/wiki/ScriptCall
-	static void GreetPackage(string playerClass)
+	static void GreetPackage(string playerClass, int playerNumber)
 	{
-		MatchClass(playerClass);
+		MatchClass(playerClass, playerNumber);
 
 		string currentClass = playerClass;
 		string friendlyName = "Gamer";
