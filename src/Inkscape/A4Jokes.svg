@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="A4Jokes.svg"
-   inkscape:export-filename="..\..\graphics\EmploymentFormMemeA4Filled.png"
+   inkscape:export-filename="..\..\graphics\EmploymentFormMemeA4FilledJaneDoe.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,8 +30,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.0823864"
-     inkscape:cx="310.4252"
-     inkscape:cy="697.99475"
+     inkscape:cx="309.96324"
+     inkscape:cy="550.17321"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
@@ -109,7 +109,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="EmployementForm"
-     style="display:inline">
+     style="display:none">
     <g
        inkscape:groupmode="layer"
        id="layer7"
@@ -717,23 +717,23 @@
          transform="scale(0.26458333)"><tspan
            x="270"
            y="1011.8432"
-           id="tspan1">Dengan mengisi formulir ini, saya setuju bahwa:
+           id="tspan29">Dengan mengisi formulir ini, saya setuju bahwa:
 </tspan><tspan
            x="270"
            y="1026.5099"
-           id="tspan9">- Data yang diisi berhak diproses oleh DNB
+           id="tspan46">- Data yang diisi berhak diproses oleh DNB
 </tspan><tspan
            x="270"
            y="1041.1766"
-           id="tspan28">- Tunduk terhadap ketetapan DNB
+           id="tspan48">- Tunduk terhadap ketetapan DNB
 </tspan><tspan
            x="270"
            y="1055.8434"
-           id="tspan41">- Data yang diisi benar &amp; jujur
+           id="tspan49">- Data yang diisi benar &amp; jujur
 </tspan><tspan
            x="270"
            y="1070.5101"
-           id="tspan42">- Telah mengisi dengan kesadaran penuh</tspan></text>
+           id="tspan50">- Telah mengisi dengan kesadaran penuh</tspan></text>
       <rect
          style="display:inline;fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
          id="rect30"
