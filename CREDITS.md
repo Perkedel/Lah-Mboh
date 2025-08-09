@@ -248,6 +248,7 @@ For the thing we've yoinked
     - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
     - [Short Fart](https://freesound.org/s/241000/). DSSI Studios. **CC0**
     - [Sad Trombone](https://freesound.org/people/Benboncan/sounds/73581/). Benboncan. **CC4.0-BY**. muoh muoh muoh muowowowo
+    - [Bad Explosion](https://freesound.org/s/47252/). nthompson. **GONE**. Bad Explosion duar
 - [See more Freesounds I ever downloaded](https://freesound.org/people/JOELwindows7/?downloaded_sounds=javascript%3Avoid%280%29%3B).
 - Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
 	- Revenant Problem. Extractions into filenames as follows
@@ -261,7 +262,7 @@ For the thing we've yoinked
 > [!TIP]
 > Musics people have contributed, & we have yoinked outta somewhere in the wild.
 
-- Hidup ini Harus Jadi Berkat (`D_BERKAT.mid`). *unknown*. **Public Domain** (**Need Verification**). I made cover of it this of what's in my head. It was in style of ZZZ Blazewood song or whatever western desert, where melody should be harmonica & rest about stuffs. Basically I kept imagining it this to eventual atleast kludge cover until I have Yamaha Genos to maximize it probably. The song itself is about that as long as you life, you gotta be the blessing to everyone, coz you're not gonna live forever & eventually had to *come back home*. My family is fond of this thing here, so yeah.
+- Hidup ini Harus Jadi Berkat (`D_BERKAT.mid`). *unknown*. **Public Domain** (**Need Verification**) (The original), **CC4.0-BY-SA** (This cover). I made cover of it this of what's in my head. It was in style of ZZZ Blazewood song or whatever western desert, where melody should be harmonica & rest about stuffs. Basically I kept imagining it this to eventual atleast kludge cover until I have Yamaha Genos to maximize it probably. The song itself is about that as long as you life, you gotta be the blessing to everyone, coz you're not gonna live forever & eventually had to *come back home*. My family is fond of this thing here, so yeah.
 - [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
 	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
 	- `D_E1M2` = `D_UNDERTO`. TheMisterCat - Look At Me I'm Underhalls Too
@@ -322,6 +323,11 @@ For the thing we've yoinked
 - [Voxel Vehicles Pack](https://www.doomworld.com/idgames/prefabs/vvpck1_0). NerdKoopa. Yes Edit Yes Reuse Yes Reupload. [**DOWNLOAD**](/yoinks/vvpck1.0-mapUnconflict.pk3); Unconflicted demo map `MAP01` into `VVPCKTEST` or I forgor what name; [WADINFO](/yoinks/vvpck1.0.txt)
 - [Damnums](https://github.com/XaserAcheron/damnums). Xaser. **MIT License**. [SOURCE CODE](https://github.com/XaserAcheron/damnums); [BRO FORGOR TO COMPILE LATEST VERSION LMAO, **DOWNLOAD 1.0.2**](/yoinks/damnums.pk3) (I have to `python ./build.py` myself lol! thankfully it's easy haha!); [WADINFO](/yoinks/damnums.txt)
 - [Freedoom FD24 Resources](https://github.com/freedoom/freedoom/tree/fd24?tab=readme-ov-file). fraggle et al. **BSD License Clause-3**. I have to [compile myself last as of today FD24 branch of Freedoom](https://github.com/JOELwindows7/freedoom/actions/workflows/make.yml) just to taste the gist of it. [Here file DOWNLOAD as of now](https://github.com/Perkedel/Lah-Mboh/blob/main/yoinks/tempAdd/FD24). Mind you, this is temporary as there is a whole lots of lacks atm. Until it's all finished & merged back to the main, this is what we have now. **You must load the paid `id24res.wad`, then this `fd24.wad` to make alpha experience at least somewhat functional**. Without its asset available in this `fd24.wad`, you'll have several malfuntion so that's why.
+- ZDoom ACS Compiler. **???**. Use this to compile the ACS, with CI!
+- PNG Optimization Tools Trifecta: [Tutorial & Pre-packages from Combinebobnt Zandronum](https://zandronum.com/forum/viewtopic.php?t=7659). Use for CI Compiler!
+	- [PNGOut](https://github.com/imagemin/pngout-bin). imagemin. **MIT License**. [SOURCE CODE](https://github.com/imagemin/pngout-bin); Lossless PNG Optimizations.
+	- [PNGCrush](https://pmt.sourceforge.io/pngcrush/). pmt. [???](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/LICENSE). [SOURCE CODE](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/)
+	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`](https://community.chocolatey.org/packages/DeflOpt)~~). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
 
 ## Random
 
