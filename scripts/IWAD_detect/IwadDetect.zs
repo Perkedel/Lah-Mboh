@@ -87,6 +87,13 @@ class LMBH_IwadDetect : StaticEventHandler
         {
             Console.printf(StringTable.Localize("$IWDT_UNKNOWN"));
         }
+        if(Wads.FindLump("HDLTLUMP") > -1)
+        {
+            // acccording to since https://codeberg.org/mc776/LotansTomb/commit/0c4dfc6de674fffa243f8c7d5f11fca9a45c2cd0
+            // and https://codeberg.org/mc776/HideousDestructor/commit/c118f07dbf348b4d23fa8779578ef56c058654b9
+            Console.printf(StringTable.Localize("$IWDT_LT"));
+            Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("HDLTLUMP"))));
+        }
 
         // Now here's the CheckNumForFullname one.
         /*

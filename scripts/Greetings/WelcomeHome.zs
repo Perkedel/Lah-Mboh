@@ -17,6 +17,7 @@
 */
 
 // Special Greet welcome. Let's just use ZScript?
+// Oh also m8f's technique yess.
 // (JOELwindows7)
 
 class LMBH_GreetableCharacter : Actor
@@ -109,11 +110,21 @@ class LMBH_WelcomeHome : EventHandler
 		// string totalSay = String.Format("Welcome Home, %s (%s)\n\n%s\n\n", greetableCharacter.friendlyName, playerClass, greetableCharacter.reactionary);
 		string totalSay = "";
 
+		// Inevitable hardcode patches
+		if(playerClass.indexOf("HDP_L") > -1)
+		{
+			// Hideous Destructor https://codeberg.org/mc776/HideousDestructor
+			// https://codeberg.org/mc776/HideousDestructor/src/branch/main/mapinfo.txt
+			currentClass = "HDPlayerPawn";
+		} else {
+			currentClass = playerClass;
+		}
+
 		// print out selected class. use HUDMessage!
 		// LMBH_GreetableCharacter_YOURCLASSHERE
 		// string toFetch = "LMBH_GreetableCharacter_" + playerClass; // likely not work, let's just stick to string.format
 		// https://zdoom.org/wiki/ZScript_global_variables
-		string toFetch = String.Format("LMBH_GreetableCharacter_%s", playerClass);
+		string toFetch = String.Format("LMBH_GreetableCharacter_%s", currentClass);
 		Console.debugPrintf(DMSG_SPAMMY, "Greet %s", toFetch);
 		Class<LMBH_GreetableCharacter> whatFetch = toFetch;
 		if(whatFetch)

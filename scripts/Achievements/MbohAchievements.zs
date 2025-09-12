@@ -102,7 +102,7 @@ class LMBH_MbohAchievementHandler : EventHandler
         return !mo.player || !mo.player.mo || mo.player.mo != mo;
     }
 
-    bool evalPlayerClass(PlayerPawn mo, string classname) {
+    bool evalPlayerClass(PlayerPawn mo, string classname, bool contains = false) {
         // https://zdoom.org/wiki/ZScript_classes
         // this errors
         // class<PlayerPawn> cls = classname;
@@ -119,6 +119,10 @@ class LMBH_MbohAchievementHandler : EventHandler
         // Console.printf("%s %s %d",moName,classname, moName.indexOf(containes));
         // Console.printf("%s %s %d",moName,classname, stringName.indexOf(classname));
         // return (stringName.indexOf(classname) > -1) == true;
+        if(contains)
+        {
+            return (stringName.indexOf(classname) > -1);
+        }
         return (stringName.indexOf(classname) == 0);
         // return (stringName.indexOf(containes) == 0);
         // return false;
@@ -131,7 +135,7 @@ class LMBH_MbohAchievementHandler : EventHandler
     // int kludgeWait = 1;
     void threadAchieveByClass(PlayerPawn pmo)
     {
-        
+        string patches = "";
         if(!evalPlayerClass(pmo,"DoomPlayer")) LMBH_Achiever.achieve("LMBH_Achievement_NotDoomGuy"); // not DoomPlayer
         if(evalPlayerClass(pmo,"DoomPlayer")) {} // You are already DoomPlayer bruh!
         else if(evalPlayerClass(pmo,"FURDaisy")) LMBH_Achiever.achieve("LMBH_Achievement_SolidFurry"); // korp kat Furdoom Hexabun
@@ -142,6 +146,8 @@ class LMBH_MbohAchievementHandler : EventHandler
         else if(evalPlayerClass(pmo,"Marty")) LMBH_Achiever.achieve("LMBH_Achievement_ForMotherlandUra"); // PillowBlaster Russian Overkill
         else if(evalPlayerClass(pmo,"PB_PlayerPawn")) LMBH_Achiever.achieve("LMBH_Achievement_ProjectBrutality"); // p4ink1ller Project Brutality
         else if(evalPlayerClass(pmo,"BDoomer")) LMBH_Achiever.achieve("LMBH_Achievement_SergeantBrutal"); // Sergeant Mark IV Brutal DOOM
+        else if(evalPlayerClass(pmo,"HDPlayerPawn")) LMBH_Achiever.achieve("LMBH_Achievement_HideousDestructor"); // mc776 Hideous Destructor
+        else if(evalPlayerClass(pmo,"HDP_L",true)) LMBH_Achiever.achieve("LMBH_Achievement_HideousDestructor"); // mc776 Hideous Destructor
         else {}
         // bro wtf why error
         /*
@@ -472,6 +478,25 @@ class LMBH_Achievement_SergeantBrutal : LMBH_Achievement
         LMBH_Achievement.description "$Achieve_SergeantBrutal_desc";
         LMBH_Achievement.borderColor 0xFF1111;
         LMBH_Achievement.boxColor    0x000000;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}
+
+class LMBH_Achievement_HDPlayerPawn : LMBH_Achievement
+{
+    Default
+    {
+        // mc776's Hideous Destructor
+        /*
+        https://codeberg.org/mc776/HideousDestructor/src/branch/main/actors/dcplayer.txt
+        https://codeberg.org/mc776/HideousDestructor/src/branch/main/zscript/player.zs
+        */
+        LMBH_Achievement.name "$Achieve_HideousDestructor";
+        LMBH_Achievement.description "$Achieve_HideousDestructor_desc";
+        LMBH_Achievement.borderColor 0x002255;
+        LMBH_Achievement.boxColor    0x000022;
         LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
         LMBH_Achievement.isHidden true;
