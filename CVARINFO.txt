@@ -110,6 +110,6 @@ nosave string LMBH_achievements = "";
 // end m8f
 
 // ZDoom CVAR Tutorial
-server bool zd_explodey_zombies = true;
+server bool zd_explodey_zombies = false;
 nosave int zd_weaponstyle = 0;
 // end ZDoom
