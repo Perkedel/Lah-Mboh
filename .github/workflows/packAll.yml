@@ -81,7 +81,13 @@ jobs:
           fi
           pwd
           ls
-
+      
+      # temp patches if you need it
+      # - name: Bonus Patches
+      #   run: |
+      #     cd BringYourOwnUSB-SFW
+      #     pwd
+      #     ls
 
       # Freedoom fetches all the history? okeh..
       # wai wai wai, you fetch depth 0, and then suddenly re-add the remote of yours there
