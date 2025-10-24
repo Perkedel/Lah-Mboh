@@ -89,6 +89,16 @@ class LMBH_WelcomeHome : EventHandler
 		Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(0.0);
 	}
 
+	string buildTheSay(string friendlyName, string playerClass, string reactionary)
+	{
+		string relocalize_friendlyName = StringTable.localize(friendlyName);
+		string relocalize_playerClass = StringTable.localize(playerClass);
+		string relocalize_reactionary = StringTable.localize(reactionary);
+		string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
+		string totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
+		return totalSay;
+	}
+
 	static void MatchClass(string playerClass, int playerNumber)
 	{
 		Cvar.FindCvar("LMBH_WelcomeHome_currentClass").SetString(playerClass);
@@ -148,7 +158,12 @@ class LMBH_WelcomeHome : EventHandler
 		{
 			Console.debugPrintf(DMSG_SPAMMY, "no no NO no no no no");
 		}
-		totalSay = String.Format(StringTable.localize("Welcome Home, %s (%s)\n\n%s\n\n"), friendlyName, playerClass, reactionary);
+		// totalSay = String.Format(StringTable.localize("Welcome Home, %s (%s)\n\n%s\n\n"), friendlyName, playerClass, reactionary);
+		string relocalize_friendlyName = StringTable.localize(friendlyName);
+		string relocalize_playerClass = StringTable.localize(playerClass);
+		string relocalize_reactionary = StringTable.localize(reactionary);
+		string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
+		totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
 		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
 		Console.Printf(String.Format("%s",totalSay));
 		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
@@ -182,8 +197,9 @@ class LMBH_WelcomeHome : EventHandler
 					reactionary = greetableCharacter.reactionary;
 				}
 			}
-			string totalSay = String.Format("Welcome Home, %s \nClass = %s\n\n%s\n\n", friendlyName, currentClass, reactionary);
+			// string totalSay = String.Format("Welcome Home, %s \nClass = %s\n\n%s\n\n", friendlyName, currentClass, reactionary);
 			//Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, 0.5, 0.25, String.Format("Welcome Home, %s", friendlyName));
+			string totalSay = buildTheSay(friendlyName, currentClass, reactionary);
 			Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, totalSay, DTA_Clean, true);
 
 			// each tick is 35. what to do?!

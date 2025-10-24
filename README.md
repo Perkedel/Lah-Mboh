@@ -122,7 +122,7 @@ see [`CONTRIBUTING.md `](/CONTRIBUTING.md) for more informations.
 ```
 Name: Lah-Mboh?
 Map Format: UDMF
-Ports Tested: GZDoom since v4.11, VKDoom as of since February 2025
+Ports Tested: GZDoom since v4.11, VKDoom as of since February 2025, UZDoom since October 2025
 IWAD: Freedoom Phase 2 (Doom 2 nor TNT nor Plutonia does not fully cover all textures as Freedoom does)
 Map(s): MBOHTEST, MBH01-31, etc. experimentals
 Music: See CREDITS.md

@@ -1,7 +1,7 @@
 ===========================================================================
 Archive Maintainer      : Rolling Release! May create release occassionally called Snapshot Release
 Update to               : Lah-Mboh.pk3
-Advanced engine needed  : GZDoom since v4.14.0, targeting whatever the latest
+Advanced engine needed  : GZDoom since v4.14.0, UZDoom since October 2025, targeting whatever the latest
 Primary purpose         : Single or Coop play, Deathmatch, Test & Random Episodes idk.
 ===========================================================================
 Title                   : Lah Mboh?

@@ -23,9 +23,9 @@ class LMBH_GreetableCharacter_DoomPlayer : LMBH_GreetableCharacter
 {
     Default
     {
-        LMBH_GreetableCharacter.name "DoomPlayer";
-        LMBH_GreetableCharacter.friendlyName "Doomguy";
-        LMBH_GreetableCharacter.reactionary "Hey welcome back!";
+        LMBH_GreetableCharacter.name "$GREETABLE_DOOMPLAYER_NAME";
+        LMBH_GreetableCharacter.friendlyName "$GREETABLE_DOOMPLAYER_FRIENDLY";
+        LMBH_GreetableCharacter.reactionary "$GREETABLE_DOOMPLAYER_REACTIONARY";
     }
 }
 
@@ -40,3 +40,7 @@ class LMBH_GreetableCharacter_DoomPlayer : LMBH_GreetableCharacter
 // turn Aura to Anti Aura, time to prompt?
 
 class LMBH_GreetableCharacter_FURDaisy : LMBH_GreetableCharacter {Default{LMBH_GreetableCharacter.name "$GREETABLE_FURDAISY_NAME";LMBH_GreetableCharacter.friendlyName "$GREETABLE_FURDAISY_FRIENDLY";LMBH_GreetableCharacter.reactionary "$GREETABLE_FURDAISY_REACTIONARY";}}
+
+
+// Finally, the too generic names
+class LMBH_GreetableCharacter_GenericDoomguy : LMBH_GreetableCharacter {Default{LMBH_GreetableCharacter.name "$GREETABLE_GENERICDOOMGUY_NAME";LMBH_GreetableCharacter.friendlyName "$GREETABLE_GENERICDOOMGUY_FRIENDLY";LMBH_GreetableCharacter.reactionary "$GREETABLE_GENERICDOOMGUY_REACTIONARY";}}
