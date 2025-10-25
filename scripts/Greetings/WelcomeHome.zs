@@ -153,11 +153,15 @@ class LMBH_WelcomeHome : EventHandler
 
 			} else {
 				Console.debugPrintf(DMSG_SPAMMY, "no no");
+				Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(5 * 35);
 			}
+			// Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
 		} else
 		{
 			Console.debugPrintf(DMSG_SPAMMY, "no no NO no no no no");
+			Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(5 * 35);
 		}
+		// Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
 		// totalSay = String.Format(StringTable.localize("Welcome Home, %s (%s)\n\n%s\n\n"), friendlyName, playerClass, reactionary);
 		string relocalize_friendlyName = StringTable.localize(friendlyName);
 		string relocalize_playerClass = StringTable.localize(playerClass);
@@ -210,7 +214,15 @@ class LMBH_WelcomeHome : EventHandler
 			// each tick is 35. what to do?!
 			// https://zdoom.org/wiki/Definitions#Units_of_time
 			//Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").GetFloat() - (1/35));
+		} else {
+
 		}
+		// string relocalize_friendlyName = StringTable.localize(friendlyName);
+	 //    string relocalize_playerClass = StringTable.localize(currentClass);
+	 //    string relocalize_reactionary = StringTable.localize(reactionary);
+	 //    string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
+	 //    string totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
+		// Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, totalSay, DTA_Clean, true);
 	}
 
 	override void WorldTick()
