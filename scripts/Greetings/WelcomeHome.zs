@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -147,10 +147,10 @@ class LMBH_WelcomeHome : EventHandler
 				greetableCharacter._greetNow();
 				Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
 				//greetTimer = greetableCharacter.greetTime;
-				
+
 				friendlyName = StringTable.localize(greetableCharacter.friendlyName);
 				reactionary = StringTable.localize(greetableCharacter.reactionary);
-				
+
 			} else {
 				Console.debugPrintf(DMSG_SPAMMY, "no no");
 			}
@@ -172,7 +172,7 @@ class LMBH_WelcomeHome : EventHandler
 	override void RenderOverlay(RenderEvent e)
 	{
 		// https://zdoom.org/wiki/Renderstyle waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat
-		
+
 		// obtain class now
 		string toFetch = String.Format("LMBH_GreetableCharacter_%s", Cvar.FindCvar("LMBH_WelcomeHome_currentClass").GetString());
 		Class<LMBH_GreetableCharacter> whatFetch = toFetch;
@@ -199,7 +199,12 @@ class LMBH_WelcomeHome : EventHandler
 			}
 			// string totalSay = String.Format("Welcome Home, %s \nClass = %s\n\n%s\n\n", friendlyName, currentClass, reactionary);
 			//Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, 0.5, 0.25, String.Format("Welcome Home, %s", friendlyName));
-			string totalSay = buildTheSay(friendlyName, currentClass, reactionary);
+			//string totalSay = buildTheSay(friendlyName, currentClass, reactionary);
+			string relocalize_friendlyName = StringTable.localize(friendlyName);
+		    string relocalize_playerClass = StringTable.localize(currentClass);
+		    string relocalize_reactionary = StringTable.localize(reactionary);
+		    string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
+		    string totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
 			Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, totalSay, DTA_Clean, true);
 
 			// each tick is 35. what to do?!
@@ -216,7 +221,7 @@ class LMBH_WelcomeHome : EventHandler
 			greeting = true;
 			// greetTimer = greetTimer - (1/35);
 			Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").GetFloat() - (1));
-		} else 
+		} else
 		{
 			greeting = false;
 		}
@@ -224,4 +229,3 @@ class LMBH_WelcomeHome : EventHandler
 }
 
 #include "scripts/Greetings/ExampleWelcomeHome.zs"
-
