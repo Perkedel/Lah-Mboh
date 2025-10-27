@@ -19,7 +19,7 @@ gameinfo
 		"LMBH_Cheataron",
 		"LMBH_WelcomeHome",
 		"DNB_werrorHandler"
-	
+
 	addquitmessages =
 		"$PLSBACKACC",
 		"$HEADSUPTOXICITY",
@@ -90,8 +90,8 @@ gameinfo
 		"$YESCARBITE",
 		"$DILEMMAVOICE",
 		"$WHERDGOING"
-	
-	addcreditpage = 
+
+	addcreditpage =
 		"LMBHCRE1",
 		"LMBHCRE2",
 		"LMBHCRE3",
@@ -100,23 +100,23 @@ gameinfo
 		//"LMBHCTEX",
 		//"LMBHCARR",
 		"LMBHCRED"
-	
+
 	//drawReadThis = true
-	addinfopage = 
+	addinfopage =
 		//"LMBHRES1",
 		"LMBHPROV",
 		"LMBHCRHD",
 		"LMBHCTEX",
 		"LMBHCARR",
 		"LMBHCRED"
-	
+
 	addPlayerClasses =
 		"TylerConfigPlayer",
 		"IchorTestPlayer"
-	
+
 	// Test only! do not uncomment in production!
 	//TitlePage = "LMBHRES1"
-		
+
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 }
 
@@ -145,8 +145,8 @@ DoomEdNums
 	27823 = MatryoskaDoomImp
 	27824 = AngryImp
 	27564 = RapidShotgunGuy // inkoalawetrust & JOELwindows7
-	27565 = HomingLostSoul 
-	27566 = SecuritySoul 
+	27565 = HomingLostSoul
+	27566 = SecuritySoul
 	27921 = ParticlePlasmaFire
 	26521 = HealingBackpack
 	26522 = HealthPack
@@ -155,6 +155,7 @@ DoomEdNums
 	22711 = MedikitLater
 	22712 = StimpackLater
 	22713 = SoulsphereLater
+	24240 = UltraWeirdSuperShotgun
 
 	// Chubzdoomer
 	16940 = ChubzCoin // was 16000
@@ -324,7 +325,7 @@ SpawnNums
 
 cluster 100
 {
-	hub	
+	hub
 }
 
 cluster 200
@@ -335,7 +336,7 @@ cluster 200
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
-	music = "TheFatRat - Untitled Classical" // TheFatRat's untitled piano classic 
+	music = "TheFatRat - Untitled Classical" // TheFatRat's untitled piano classic
 	// https://soundcloud.com/thefatrat/21-05-15a?si=92733b9c047944868feabe968e0b7f04&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
 }
 
@@ -343,7 +344,7 @@ cluster 300
 {
 	// Painful facts defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
-	ExitText = lookup, "EXITMBHE1"	
+	ExitText = lookup, "EXITMBHE1"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
@@ -353,7 +354,7 @@ cluster 301
 {
 	// Heartbreaking Incidents (Giant Assault guy) defeated
 	//EnterText= lookup, "ENTERMBHBOSS"
-	ExitText = lookup, "EXITMBHE2"	
+	ExitText = lookup, "EXITMBHE2"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
@@ -363,7 +364,7 @@ cluster 330
 {
 	// Final Boss Valley of Despair
 	//EnterText= lookup, "ENTERMBHBOSS"
-	ExitText = lookup, "EXITMBHBOSS"	
+	ExitText = lookup, "EXITMBHBOSS"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
@@ -373,7 +374,7 @@ cluster 510
 {
 	// Random Short Level Freeloader
 	EnterText= lookup, "ENTERFREELD"
-	ExitText = lookup, "EXITFREELD"	
+	ExitText = lookup, "EXITFREELD"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
 }
@@ -382,11 +383,11 @@ cluster 25200
 {
 	// Choral Bae test
 	EnterText= lookup, "ENTERCHOR"
-	ExitText = lookup, "EXITCHOR"	
+	ExitText = lookup, "EXITCHOR"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
-	music = "D_OXIDNE" // 
+	music = "D_OXIDNE" //
 }
 
 cluster 26211
@@ -394,11 +395,11 @@ cluster 26211
 	// Dodgy Teleporter Test
 	hub
 	//EnterText= lookup, "ENTERCHOR"
-	//ExitText = lookup, "EXITCHOR"	
+	//ExitText = lookup, "EXITCHOR"
 	//pic = "COMPBLU"
 	pic = "LMBHEMPT"
 	//flat = "FLAT5_4"
-	//music = "D_OXIDNE" // 
+	//music = "D_OXIDNE" //
 }
 
 cluster 26555
@@ -414,7 +415,7 @@ cluster 26555
 
 */
 
-Episode MBOHTEST 
+Episode MBOHTEST
 {
 	//name = "Lah Mboh?"
 	//lookup = "MBOHEP"
@@ -1063,7 +1064,7 @@ map PLMSKY1 lookup "PLMSKY1"
 {
 	author = "plums & JOELwindows7"
 	next = "MBOHTEST"
-	sky1 = "SKY1"	
+	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
 	music = "D_READ_M"
 }
@@ -1072,7 +1073,7 @@ map MECHSKY1 lookup "MECHSKY1"
 {
 	author = "Mechadon & JOELwindows7"
 	next = "MBOHTEST"
-	sky1 = "SKY1"	
+	sky1 = "SKY1"
 	exitPic = "LMBHTIHD"
 	music = "D_READ_M"
 }
@@ -1080,21 +1081,21 @@ map MECHSKY1 lookup "MECHSKY1"
 map CURAG "Curag"
 {
 	author = "JOELwindows7"
-	next = "MBOHTEST"	
+	next = "MBOHTEST"
 	exitPic = "LMBHTIHD"
 }
 
 map GARUG2 "Garug 2"
 {
 	author = "JOELwindows7"
-	next = "MBOHTEST"	
+	next = "MBOHTEST"
 	exitPic = "LMBHTIHD"
 }
 
 map MBHTMPL lookup "MBHTMPL"
 {
 	author = "JOELwindows7"
-	next = "MBOHTEST"	
+	next = "MBOHTEST"
 	exitPic = "LMBHTIHD"
 }
 
