@@ -239,7 +239,7 @@ Class Cube128 : Cube64
 {
 	Default
 	{
-	
+
 	Health 1;
 	Radius 76;
 	Height 128;
@@ -490,7 +490,7 @@ Class HoloDoomguy : Inventory
 		}
 		Loop;
 	}
-	
+
 	override bool TryPickup(in out Actor toucher) //Thanks to Player701 for this check
 	{
 		bool result = Super.TryPickup(toucher);
@@ -501,7 +501,7 @@ Class HoloDoomguy : Inventory
         }
         return result;
 	}
-	
+
 	override bool Use(bool pickup)
 	{
 
@@ -528,7 +528,7 @@ Class HoloDoomguy : Inventory
 		}
 		return false;
 	}
-	
+
 	override void DoEffect()
 	{
 		super.DoEffect();
@@ -550,7 +550,7 @@ Class HoloDoomguy : Inventory
 			if (GetAge() % 35 == 0)	owner.TakeInventory("HoloDoomguy",1);
 		}
 	}
-	
+
 	override void DepleteOrDestroy() //Thanks to Gothic for this method
 	{
 		super.DepleteOrDestroy();
@@ -560,7 +560,7 @@ Class HoloDoomguy : Inventory
 		hologram.destroy();
 		if (hologramfuzz) hologramfuzz.destroy();
 	}
-	
+
 	void AggroMonsters()
 	{
 		distracted.clear();
@@ -748,7 +748,7 @@ Class HoloStrifeguy : Inventory
 		}
 		Loop;
 	}
-	
+
 	override bool TryPickup(in out Actor toucher) //Thanks to Player701 for this check
 	{
 		bool result = Super.TryPickup(toucher);
@@ -759,7 +759,7 @@ Class HoloStrifeguy : Inventory
         }
         return result;
 	}
-	
+
 	override bool Use(bool pickup)
 	{
 
@@ -786,7 +786,7 @@ Class HoloStrifeguy : Inventory
 		}
 		return false;
 	}
-	
+
 	override void DoEffect()
 	{
 		super.DoEffect();
@@ -807,7 +807,7 @@ Class HoloStrifeguy : Inventory
 			if (GetAge() % 35 == 0)	owner.TakeInventory("HoloStrifeguy",1);
 		}
 	}
-	
+
 	override void DepleteOrDestroy() //Thanks to Gothic for this method
 	{
 		super.DepleteOrDestroy();
@@ -817,7 +817,7 @@ Class HoloStrifeguy : Inventory
 		hologram.destroy();
 		if (hologramfuzz) hologramfuzz.destroy();
 	}
-	
+
 	void AggroMonsters()
 	{
 		distracted.clear();
@@ -962,6 +962,7 @@ Sprites: Sonik.O.Fan, Inti Creates
 Sprite Edit: DeVloek
 Idea base: Captain Toenail's Sigil Scroll
 */
+
 //===================== Portable Teleport Device =====================
 class PTDevice : Inventory
 {
@@ -1058,7 +1059,7 @@ class PTBeacon : Inventory
 		}
 		Loop;
 	Death:
-		MISL B 4 Bright 
+		MISL B 4 Bright
 		{
 			if (bdummy)	bdummy.destroy();
 			if (bspot) bspot.destroy();
@@ -1118,6 +1119,10 @@ Class PTFog : TeleportFog
 	}
 }
 
+/*
+Portable emergency teleport device teleports you back to spawn when HP drops to 10 less.
+
+*/
 //===================== Portable Emergency Teleport Device =====================
 class PETDevice : Inventory
 {
@@ -1148,6 +1153,8 @@ class PETDevice : Inventory
 			owner.bBUDDHA = true;
 			if (owner.health < 10)
 			{
+			    // JOELwindows7: pls notify how did you teleported back to start
+			    Console.printf(StringTable.localize("$PET_EMERGENCYTELEPORT"));
 				spawn("PTEmergency",owner.pos);
 				destroy();
 			}
@@ -1195,7 +1202,7 @@ Class PTEmergency : TelOtherFX1
 *
 *************************************************
 */
-// Dark Imp Pack here 
+// Dark Imp Pack here
 // https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6
 // Dark Imp Nanami
 /*
@@ -1628,7 +1635,7 @@ Class IgniteCauldron : Actor
 	bool setFire; //Check if there's should be flames
 	bool embers; //Check if it should just have embers
 	int timer; //Cooldown
-	
+
 	private int WSFlags;
 	flagdef Flammable: WSFlags, 0; //Custom flag to make the unlit cauldron ignitable
 	Default
@@ -1662,7 +1669,7 @@ Class IgniteCauldron : Actor
 		LAVC C -1;
 		Stop;
 	}
-	
+
 	action void A_UpwardDamage(double hrange, int dmgrate, int dmg, name dmgtype) { //Custom function to damage whoever is on top of the actor
 		BlockThingsIterator area = BlockThingsIterator.Create(self, Radius*Scale.x);
 		while(area.Next()) {
@@ -1674,19 +1681,19 @@ Class IgniteCauldron : Actor
 			}
 		}
 	}
-	
+
 	override void PostBeginPlay() {
 		incendiary.Clear(); //Clear the array first
 		incendiary.Push("FireBow"); //Add the weapons needed
 		incendiary.Push("Chainsaw"); //it can be ANY weapon
 		//incendiary.Push("your weapon class here");
-		
+
 		if(!bFLAMMABLE) { //If the custom flag is not set
 			setFire = true; //set the cauldron on fire
 			burning = true;
 			A_StartSound("fire/cauldron", 6, CHANF_LOOP, 1.0, 2.0);
 		}
-		
+
 		if(Args[0] < 0) //If the timer is set to a negative number
 			Args[0] = 4; //Set it to deafault
 		else if(Args[0] == 0) //If it is 0
@@ -1698,7 +1705,7 @@ Class IgniteCauldron : Actor
 		}
 		Super.PostBeginPlay();
 	}
-	
+
 	override int TakeSpecialDamage(Actor inflictor, Actor source, int damage, Name damagetype) {
 		if(bFLAMMABLE) { //If the actor can be set on fire
 			if(inflictor) { //if the actor directly dealing the damage exists
@@ -1733,12 +1740,12 @@ Class IgniteCauldron : Actor
 		}
 		return super.TakeSpecialDamage(inflictor, source, damage, damagetype);
 	}
-	
+
 	override void Tick() {
 		Super.Tick();
 		if(waterlevel > 1 && burning) //If underwater
 			burning  = false; //unlit
-		
+
 		if(setFire) { //if on fire
 			if(GetAge() % 35 == 0) { //Check every second
 				if(timer <= 0 || !burning) { //if the timer has reached 0 or it should burn off
@@ -1758,7 +1765,7 @@ Class IgniteCauldron : Actor
 			}
 			A_UpwardDamage(32, 21, random(1,5), "Fire"); //deal damage to whoever is on top
 		}
-		
+
 		else if(embers) {
 			if(GetAge() % 35 == 0) { //Check every second
 				if(timer <= 0 || !burning) {
@@ -1866,7 +1873,7 @@ Class ExpireSmokeSpawner : Actor //Smoke spawner
 		TNT1 A 1;
 		Stop;
 	}
-	
+
 	Override void PostBeginPlay() {
 		if(target) {
 			double frad = frandom(-target.Radius,target.Radius); //Get a random vertical spawn position for the smoke based on the cauldron height

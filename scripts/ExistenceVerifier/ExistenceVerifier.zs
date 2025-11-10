@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -35,6 +35,7 @@ Alas, to have a `Default` property initializer, it's on `Actor` only. `Thinker` 
 */
 class LMBH_ExistenceVerifier: Actor abstract
 {
+    // TODO: investigate Corruption Card & how to use Lumps based instead
 	Default
 	{
 		LMBH_ExistenceVerifier.name "DLC_NAME";
@@ -101,7 +102,7 @@ class LMBH_ExistenceHandler: StaticEventHandler
 			// EventHandler.SendNetworkEvent("myevent", 666, 23, -1);
 
 			// old
-            
+
             if(splitren.size() < 3)
             {
 				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
@@ -112,7 +113,7 @@ class LMBH_ExistenceHandler: StaticEventHandler
 				scanDLCs();
 				Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
                 return;
-            } else 
+            } else
 			{
 
 			}
@@ -158,7 +159,7 @@ class LMBH_ExistenceHandler: StaticEventHandler
 			{
 				// I expect all these existence verifiers!
 				let existence = LMBH_ExistenceVerifier(getDefaultByType(c));
-				//let item = 
+				//let item =
 				String name = c.getClassName(); // what's your name?
 				String title = StringTable.Localize(existence.title);
 				String description = StringTable.Localize(existence.description);

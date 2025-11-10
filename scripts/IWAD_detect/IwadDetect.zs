@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -21,7 +21,7 @@
 /*
 Do something to detect what IWAD you've just loaded here.
 
-This can also be abused so you gotta hear me out 
+This can also be abused so you gotta hear me out
 how you supposed to avoid it, in a nutshell tho.
 
 Let's say, you want to play a DOOM mod. Of course, being the mod,
@@ -45,7 +45,7 @@ their main mod handlers & more. All at the same time:
 Handlers, Actors, etc etc., with hidden unecessary function just to loathe
 whatever IWAD replacement you used, and expect that you have legit DOOM.
 
-I don't care if I can do it this 🏴‍☠️🏴‍☠️🏴‍☠️🏴‍☠️🏴‍☠️ Yaaaaaaaar, 
+I don't care if I can do it this 🏴‍☠️🏴‍☠️🏴‍☠️🏴‍☠️🏴‍☠️ Yaaaaaaaar,
 or even did paid Bethesda & friends for their rotten horses with my own money
 regardless if it's basically parents' revenues or my own eventually.
 It's just freaking nasty.
@@ -53,6 +53,9 @@ It's just freaking nasty.
 
 class LMBH_IwadDetect : StaticEventHandler
 {
+    //string RawIWAD = ""; // Fully recognizable IWAD name. e.g., Freedoom should returns `FREEDOOM1` for phase 1, & `FREEDOOM2` for phase 2
+    //string compatIWAD = ""; // Compatibility name it should be recognized as. Any freedoom & other similar will be considered `DOOM`. Strife `STRIFE`, Heretic `HERETIC`, Hexen `HEXEN`, Chex `Chex`, etc etc.
+
     override void OnEngineInitialize()
     {
         // Freedoom has a special lump in its IWAD called `FREEDOOM`.
@@ -64,6 +67,16 @@ class LMBH_IwadDetect : StaticEventHandler
         https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5
 
         not Wads.CheckNumForFullName("FREEDOOM") > -1
+
+        We discovered hard-to-algorithm-terrible-seo documented way!
+        in struct `gameInfo`, there is `gameType`. thancc, LocalInsomniac
+        https://github.com/LocalInsomniac/FrameMe
+
+        Basically, use `gameInfo.GameType` enum. here we have:
+        - GAME_DOOM
+        - GAME_HEXEN
+        - GAME_HERETIC
+        - GAME_STRIFE
         */
         Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
         Console.printf(StringTable.Localize("$IWDT_TITLENAME"));
@@ -77,16 +90,75 @@ class LMBH_IwadDetect : StaticEventHandler
             // Oh shit, that's not the file! we're looking at the FREEDOOM marker lump! not the iwad file itself!
             // huh? I looked the iwad with 3saster and it's d41d8cd98f00b204e9800998ecf8427e
             // that's invalid file.
+
+            // now write them up! go for each of them below!
+            Cvar.GetCvar("Raw_IWAD").SetString("FREEDOOM");
+            Cvar.GetCvar("Compat_IWAD").SetString("DOOM");
         }
-        else if(Wads.FindLump("BLASPHEM") > -1) 
+        else if(Wads.FindLump("BLASPHEM") > -1)
         {
             Console.printf(StringTable.Localize("$IWDT_BL"));
             Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("BLASPHEM"))));
+            Cvar.GetCvar("Raw_IWAD").SetString("BLASPHEM");
+            Cvar.GetCvar("Compat_IWAD").SetString("HERETIC");
         }
+        else if((Wads.FindLump("WADFUSED") > -1) || (Wads.FindLump("WADFUSED.TXT") > -1))
+        {
+            // You are using WAD Fusion
+            // https://github.com/Owlet7/wadfusion
+            Console.printf(StringTable.Localize("$IWDT_FUSION"));
+            Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("WADFUSED"))));
+            Cvar.GetCvar("Raw_IWAD").SetString("WADFUSION");
+            Cvar.GetCvar("Compat_IWAD").SetString("DOOM");
+        }
+        /*
+        else if((Wads.FindLump("ENDSTRF") > -1) && (Wads.FindLump("DSMEATHT") > -1) && (Wads.FindLump("RGELOGO") > -1) && (Wads.FindLump("VELLOGO") > -1))
+        {
+            // Looks like you are playing a Strife IWAD
+            Console.printf(StringTable.Localize("$IWDT_STRIFE"));
+            //Console.printf("MD5 = " .. LMBH_MD5.Hash(Wads.ReadLump(Wads.FindLump("STRIFE1"))));
+            Cvar.GetCvar("Raw_IWAD").SetString("STRIFE");
+            Cvar.GetCvar("Compat_IWAD").SetString("STRIFE");
+        }
+        */
         else
         {
-            Console.printf(StringTable.Localize("$IWDT_UNKNOWN"));
+            switch(gameInfo.GameType)
+            {
+                case GAME_DOOM:
+                    Console.printf(StringTable.Localize("$IWDT_DOOM"));
+                    Cvar.GetCvar("Raw_IWAD").SetString("DOOM");
+                    Cvar.GetCvar("Compat_IWAD").SetString("DOOM");
+                    break;
+                case GAME_HEXEN:
+                    Console.printf(StringTable.Localize("$IWDT_HEXEN"));
+                    Cvar.GetCvar("Raw_IWAD").SetString("HEXEN");
+                    Cvar.GetCvar("Compat_IWAD").SetString("HEXEN");
+                    break;
+                case GAME_HERETIC:
+                    Console.printf(StringTable.Localize("$IWDT_HERETIC"));
+                    Cvar.GetCvar("Raw_IWAD").SetString("HERETIC");
+                    Cvar.GetCvar("Compat_IWAD").SetString("HERETIC");
+                    break;
+                case GAME_STRIFE:
+                    Console.printf(StringTable.Localize("$IWDT_STRIFE"));
+                    Cvar.GetCvar("Raw_IWAD").SetString("STRIFE");
+                    Cvar.GetCvar("Compat_IWAD").SetString("STRIFE");
+                    break;
+                case GAME_CHEX:
+                    Console.printf(StringTable.Localize("$IWDT_CHEX"));
+                    Cvar.GetCvar("Raw_IWAD").SetString("CHEX");
+                    Cvar.GetCvar("Compat_IWAD").SetString("CHEX");
+                    break;
+                default:
+                    Console.printf(StringTable.Localize("$IWDT_UNKNOWN"));
+
+                    Cvar.GetCvar("Compat_IWAD").SetString("DOOM");
+                    break;
+            }
+
         }
+
         if(Wads.FindLump("HDLTLUMP") > -1)
         {
             // acccording to since https://codeberg.org/mc776/LotansTomb/commit/0c4dfc6de674fffa243f8c7d5f11fca9a45c2cd0
