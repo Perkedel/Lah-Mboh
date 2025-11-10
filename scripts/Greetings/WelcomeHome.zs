@@ -20,6 +20,8 @@
 // Oh also m8f's technique yess.
 // (JOELwindows7)
 
+#include "scripts/Greetings/ExampleWelcomeHome.zs"
+
 class LMBH_GreetableCharacter : Actor
 {
 	// use m8f achievement tricks!!!!!!!
@@ -135,7 +137,7 @@ class LMBH_WelcomeHome : EventHandler
 		// string toFetch = "LMBH_GreetableCharacter_" + playerClass; // likely not work, let's just stick to string.format
 		// https://zdoom.org/wiki/ZScript_global_variables
 		string toFetch = String.Format("LMBH_GreetableCharacter_%s", currentClass);
-		Console.debugPrintf(DMSG_SPAMMY, "Greet %s", toFetch);
+		// Console.debugPrintf(DMSG_SPAMMY, "Greet %s", toFetch); // does not exist in v4.11 lalallallal
 		Class<LMBH_GreetableCharacter> whatFetch = toFetch;
 		if(whatFetch)
 		{
@@ -143,7 +145,7 @@ class LMBH_WelcomeHome : EventHandler
 			if(greetableCharacter is "LMBH_GreetableCharacter")
 			{
 				// call the class function
-				Console.debugPrintf(DMSG_SPAMMY, "yes yes");
+				//Console.debugPrintf(DMSG_SPAMMY, "yes yes");
 				greetableCharacter._greetNow();
 				Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
 				//greetTimer = greetableCharacter.greetTime;
@@ -152,13 +154,13 @@ class LMBH_WelcomeHome : EventHandler
 				reactionary = StringTable.localize(greetableCharacter.reactionary);
 
 			} else {
-				Console.debugPrintf(DMSG_SPAMMY, "no no");
+				//Console.debugPrintf(DMSG_SPAMMY, "no no");
 				Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(5 * 35);
 			}
 			// Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
 		} else
 		{
-			Console.debugPrintf(DMSG_SPAMMY, "no no NO no no no no");
+			//Console.debugPrintf(DMSG_SPAMMY, "no no NO no no no no");
 			Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(5 * 35);
 		}
 		// Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
@@ -239,5 +241,3 @@ class LMBH_WelcomeHome : EventHandler
 		}
 	}
 }
-
-#include "scripts/Greetings/ExampleWelcomeHome.zs"
