@@ -21,6 +21,12 @@ AddOptionMenu "GameplayOptions"
 	Submenu "$NSFWOptionSay", "NSFWContentOptions"
 	Submenu "$SeizureSafetyTitle", "SeizureSafetyOptions"
 }
+
+AddOptionMenu "MessageOptions"
+{
+    StaticText ""
+    Submenu "$SubtitlerOptionSay", "SubtitlerOptions"
+}
 // end Add Now!
 
 // Extras for Main Menu
@@ -46,7 +52,7 @@ AddListmenu "MainMenu" before "QuitMenu" {
 	just to make TVLeanback Game selector menu, like KEX with KEX HTML Game selector menu
 	Very inellegant! 1 Engine, covers all. HAhaa, ikr, impossible.
 	btw, if you want to Wolfenstein, then just ECWolf already.
-	I sensed shenanigans around here 
+	I sensed shenanigans around here
 	but I am not allowed to tell in this Source Code Repository.
 	Still, remember to officially buy the games on Steam, to blend in.
 	*/
@@ -64,20 +70,20 @@ OptionMenu "NSFWContentOptions"
 {
 	Title "$NSFWContentTitle"
 	Caption "$NSFWContentTitle"
-	
+
 	StaticText "$NSFWWarn", "Orange"
 	StaticText ""
-	
+
 	Option "NSFW", "nsfwcontent", "NSFWContentValues"
 	//StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
-	
+
 	// other variables modders can use for safety of the YouTubers & Twitch streamers
 	//Option "$NSFLEnableSay", "nsflMaster", "nsflMasterValues" // Master options for such community guideline violations below
 	//Option "Guro", "gurocontent", "guroContentValues" // Gore bloods pretty much
 	//Option "Nazi", "derogatorynazi", "derogatoryNaziValues" // turn off to Wolfenstein EU distribution dot one
 	//Option "Neo-gender against", "derogatorylgbt", "derogatoryLgbtValues" // threat to scronch is forbidden. catch & repurify!
 	//Option "N-words", "derogatorycolor", "derogatoryColorValues" // Perkedel & affiliates forbid toner derogatory!
-	
+
 	StaticText ""
 	StaticText "$NSFWRequire"
 	StaticText ""
@@ -100,13 +106,39 @@ OptionValue "SeizureHeartValues"
 OptionMenu "SeizureSafetyOptions" {
 	Title "$SeizureSafetyTitle"
 	Caption "$SeizureSafetyTitle"
-	
+
 	StaticText "$SeizureWarn", "Orange"
 	StaticText "$SeizureWarn2", "Orange"
 	StaticText ""
 
 	Option "$SeizureFlashTitle", "flashinglight", "SeizureFlashingValues"
 	Option "$SeizureHeartTitle", "horrorcontent", "SeizureHeartValues"
+}
+
+// Subtitler
+// TODO: build menu for subtitle
+// TODO: add offset?? scaling
+OptionValue "SubtitleAlignValues"
+{
+    0, "$SUBTITLER_ALIGN_BOTTOM_CENTER"
+    1, "$SUBTITLER_ALIGN_BOTTOM_LEFT"
+    2, "$SUBTITLER_ALIGN_BOTTOM_RIGHT"
+    3, "$SUBTITLER_ALIGN_TOP_CENTER"
+    4, "$SUBTITLER_ALIGN_TOP_LEFT"
+    5, "$SUBTITLER_ALIGN_TOP_RIGHT"
+}
+
+OptionMenu "SubtitlerOptions" {
+    Title "$SubtitlerTitle"
+    Caption "$SubtitlerTitle"
+
+    Option "$MSGMNU_SUBTITLES", "inter_subtitles", "OnOff"
+    Option "$SubtitlerAlignTitle", "LMBH_Subtitler_AlignFrom", "SubtitleAlignValues"
+    ScaleSlider "$SubtitlerScaleTitle", "LMBH_Subtitler_Scale", 0, 10, 0.1, "$OPTVAL_SMART"
+}
+AddOptionMenu OptionsMenu
+{
+    Submenu "$SubtitlerOptionSay", "SubtitlerOptions"
 }
 
 // m8f
@@ -120,7 +152,7 @@ AddOptionMenu OptionsMenu
   	Submenu "$LMBH_Achieve_MENU_TITLE", LMBH_Achieve_Options
 }
 
-AddOptionMenu OptionsMenuSimple 
+AddOptionMenu OptionsMenuSimple
 {
 	Submenu "$LMBH_Achieve_MENU_TITLE", LMBH_Achieve_Options
 }
@@ -188,6 +220,9 @@ OptionValue LMBH_AnimationValues
 // This creates a new custom options menu:
 OptionMenu "ZDoomWeirdOptions"
 {
+    Title "ZDoom Weird"
+    Caption "ZDoom Weird"
+
   // Add an option for the explodey_zombies CVar:
   Option "Exploding Zombiemen", "zd_explodey_zombies", "OnOff" //OnOff is an existing optionvalue, you don't need to define it
   // Add n option for the weaponstyle CVar:

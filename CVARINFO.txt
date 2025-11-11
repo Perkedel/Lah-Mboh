@@ -59,6 +59,8 @@ nosave noarchive string LMBH_WelcomeHome_currentClass = "";
 nosave noarchive float LMBH_WelcomeHome_GreetTimer = 0;
 
 // Subtitle Complexicated
+nosave float LMBH_Subtitler_Scale = 0; // scale setting
+nosave int LMBH_Subtitler_AlignFrom = 0; // default is "Bottom Center"
 nosave noarchive string LMBH_Subtitler_Say = "";
 nosave noarchive float LMBH_Subtitler_Timer = 0;
 

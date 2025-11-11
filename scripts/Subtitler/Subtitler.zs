@@ -21,6 +21,10 @@
 Idk how to subtitle like did with Strife. This is way too complicated already! Very unintuitive to trigger even, I failed miserably.
 */
 
+//#ifndef SUBTITLER
+//#define SUBTITLER
+//#endif
+
 class LMBH_Subtitler : StaticEventHandler
 {
     float subtitleTime;
@@ -42,14 +46,32 @@ class LMBH_Subtitler : StaticEventHandler
 
     override void RenderOverlay(RenderEvent e)
     {
-        double posX = 0 * 320;
-   	    double posY = 0.75 * 200;
+        // https://github.com/mmaulwurff/target-spy/blob/94c7ab63dcb34d117b6c0b773259ffa69fd0f4cb/zscript/ts_event_handler.zs#L799
+        int winX, winY, winWidth, winHeight;
+        [winX, winY, winWidth, winHeight] = Screen.GetViewWindow();
+        double posX = 0.25 * winWidth; //320
+        //double posX = 0 * 320; //320
+   	    double posY = 0.75 * winHeight; //200
+   	    //double posY = 0.75 * 200; //200
+        double toScaleBy = Cvar.GetCvar("LMBH_Subtitler_Scale").getFloat();
+        double scaleBecomes = 2;
+        if (toScaleBy > 0)
+            scaleBecomes = toScaleBy;
+        else
+            scaleBecomes = 2;
         // https://zdoom.org/wiki/Renderstyle waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat
         if(Cvar.GetCvar("LMBH_Subtitler_Timer").getFloat() > 0)
         {
             // show here now
             string localized = StringTable.localize(Cvar.GetCvar("LMBH_Subtitler_Say").getString());
-            Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, localized, DTA_Clean, true);
+            string saying = Cvar.GetCvar("LMBH_Subtitler_Say").getString();
+            HUDFont anFont = HUDFont.create(Font.GetFont("UbuntuS"));
+            ////Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, localized, DTA_Clean, true);
+            ////Screen.DrawText(Font.GetFont("UbuntuS"), Font.CR_UNTRANSLATED, posX, posY, localized, DTA_Clean, true);
+            ////Screen.DrawText(Font.GetFont("UbuntuS"), Font.CR_UNTRANSLATED, posX, posY, saying, DTA_Clean, false, DTA_Localize, true, DTA_VirtualWidth, winWidth, DTA_VirtualHeight, winHeight);
+            //BaseStatusBar.DrawString(anFont, Vector2(0,0.75), DI_SCREEN_CENTER_BOTTOM|DI_TEXT_ALIGN_CENTER);
+            //Screen.DrawText(Font.GetFont("UbuntuS"), Font.CR_UNTRANSLATED, posX, posY, saying, DTA_Clean, true, DTA_Localize, true);
+            Screen.DrawText(Font.GetFont("UbuntuS"), Font.CR_UNTRANSLATED, posX, posY, saying, DTA_Clean, false, DTA_Localize, true,DTA_ScaleX, scaleBecomes, DTA_ScaleY, scaleBecomes);
         }
     }
 
