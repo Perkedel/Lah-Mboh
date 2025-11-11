@@ -55,8 +55,12 @@ nosave int LMBH_deathCount_sameMap_noSave = 0; // You died tracking number same 
 nosave bool LMBH_AchievementNotReadyBug = false; // calling achieve in new game errors address zero
 
 // Welcome Home Stuffs
-nosave string LMBH_WelcomeHome_currentClass = "";
-nosave float LMBH_WelcomeHome_GreetTimer = 0;
+nosave noarchive string LMBH_WelcomeHome_currentClass = "";
+nosave noarchive float LMBH_WelcomeHome_GreetTimer = 0;
+
+// Subtitle Complexicated
+nosave noarchive string LMBH_Subtitler_Say = "";
+nosave noarchive float LMBH_Subtitler_Timer = 0;
 
 // TDRR's CVARs
 //server bool ctfannouncer = true;

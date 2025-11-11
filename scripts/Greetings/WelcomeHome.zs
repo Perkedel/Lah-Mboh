@@ -139,6 +139,7 @@ class LMBH_WelcomeHome : EventHandler
 		string toFetch = String.Format("LMBH_GreetableCharacter_%s", currentClass);
 		// Console.debugPrintf(DMSG_SPAMMY, "Greet %s", toFetch); // does not exist in v4.11 lalallallal
 		Class<LMBH_GreetableCharacter> whatFetch = toFetch;
+		float timeShouldBe = 0.0;
 		if(whatFetch)
 		{
 			let greetableCharacter = LMBH_GreetableCharacter(GetDefaultByType(whatFetch));
@@ -147,7 +148,9 @@ class LMBH_WelcomeHome : EventHandler
 				// call the class function
 				//Console.debugPrintf(DMSG_SPAMMY, "yes yes");
 				greetableCharacter._greetNow();
-				Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
+				//Cvar.FindCvar("LMBH_WelcomeHome_GreetTimer").SetFloat(greetableCharacter.greetTime * 35);
+				//Cvar.FindCvar("LMBH_Subtitler_Timer").SetFloat(greetableCharacter.greetTime * 35);
+				timeShouldBe = greetableCharacter.greetTime;
 				//greetTimer = greetableCharacter.greetTime;
 
 				friendlyName = StringTable.localize(greetableCharacter.friendlyName);
@@ -173,6 +176,10 @@ class LMBH_WelcomeHome : EventHandler
 		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
 		Console.Printf(String.Format("%s",totalSay));
 		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+		//players[playerNumber].SetLogText(totalSay);
+		players[playerNumber].SetSubtitleNumber(124001);
+
+		LMBH_Subtitler.playSubtitle(totalSay,timeShouldBe);
 	}
 
 	override void RenderOverlay(RenderEvent e)

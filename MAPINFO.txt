@@ -18,6 +18,7 @@ gameinfo
 		"LMBH_ScannableLevelHandler",
 		"LMBH_Cheataron",
 		"LMBH_WelcomeHome",
+		"LMBH_Subtitler",
 		"DNB_werrorHandler"
 
 	addquitmessages =
@@ -491,6 +492,7 @@ Intermission Inter_FunnyCastTest
 		Background = "LMBHTIHD"
 		Time = -1
 		Music = "$MUSIC_EVIL"
+		Subtitle = "$FUNNYCAST_FAMILIARMUSIC"
 	}
 	link = FunnyCastTest
 }

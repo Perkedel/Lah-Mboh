@@ -170,11 +170,34 @@ class JustOddBarrel : ExplosiveBarrel
     {
         if (user && user.player)
         {
+
             A_Die();
             return true;
         }
 
         return false;
+    }
+    override void Die (Actor source, Actor inflictor, int dmgflags, Name MeansOfDeath)
+    {
+        Super.Die (source, inflictor, dmgflags, MeansOfDeath);
+
+        // https://github.com/UZDoom/UZDoom/blob/f4074930b26e9d399459d0eadc401fdfaca0d2d5/wadsrc/static/zscript/actors/strife/strifestuff.zs#L1869
+        int i;
+
+		for (i = 0; i < MAXPLAYERS; ++i)
+			if (playeringame[i] && players[i].health > 0)
+				break;
+
+		if (i == MAXPLAYERS)
+			return;
+		Console.printf("duar!");
+		//S_StartSound("funny/fartReverb",CHAN_BODY);
+		S_StartSound("funny/fartReverb",CHAN_VOICE);
+		//players[i].SetLogNumber(123001);
+        players[i].SetSubtitleNumber(123001, "funny/fartReverb");
+        //p-layers[i].SetSubtitleNumber(123001);
+        //players[i].SetLogText("Duar sdkljfasdjfa");
+        LMBH_Subtitler.playSubtitle("Duar hahahahahaha", 5, "Odd Barrel");
     }
 }
 
