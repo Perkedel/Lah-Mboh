@@ -16,16 +16,16 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-// Subtitler
+// Subtitling
 /*
 Idk how to subtitle like did with Strife. This is way too complicated already! Very unintuitive to trigger even, I failed miserably.
 */
 
-//#ifndef SUBTITLER
-//#define SUBTITLER
+//#ifndef SUBTITLING
+//#define SUBTITLING
 //#endif
 
-class LMBH_Subtitler : StaticEventHandler
+class LMBH_Subtitling : StaticEventHandler
 {
     float subtitleTime;
     //const defaultSubtitleTime = 5.0;
@@ -34,14 +34,14 @@ class LMBH_Subtitler : StaticEventHandler
     static void playSubtitle(string text, float forHowLong, string prefixName="")
     {
         if(forHowLong)
-            Cvar.GetCvar("LMBH_Subtitler_Timer").setFloat(forHowLong * 35);
+            Cvar.GetCvar("LMBH_Subtitling_Timer").setFloat(forHowLong * 35);
         else
-            Cvar.GetCvar("LMBH_Subtitler_Timer").setFloat(5.0 * 35);
+            Cvar.GetCvar("LMBH_Subtitling_Timer").setFloat(5.0 * 35);
 
         if(prefixName)
-            Cvar.GetCvar("LMBH_Subtitler_Say").setString(String.format("%s:\n%s",StringTable.localize(prefixName),StringTable.localize(text)));
+            Cvar.GetCvar("LMBH_Subtitling_Say").setString(String.format("%s:\n%s",StringTable.localize(prefixName),StringTable.localize(text)));
         else
-            Cvar.GetCvar("LMBH_Subtitler_Say").setString(text);
+            Cvar.GetCvar("LMBH_Subtitling_Say").setString(text);
     }
 
     override void RenderOverlay(RenderEvent e)
@@ -53,18 +53,18 @@ class LMBH_Subtitler : StaticEventHandler
         //double posX = 0 * 320; //320
    	    double posY = 0.75 * winHeight; //200
    	    //double posY = 0.75 * 200; //200
-        double toScaleBy = Cvar.GetCvar("LMBH_Subtitler_Scale").getFloat();
+        double toScaleBy = Cvar.GetCvar("LMBH_Subtitling_Scale").getFloat();
         double scaleBecomes = 2;
         if (toScaleBy > 0)
             scaleBecomes = toScaleBy;
         else
             scaleBecomes = 2;
         // https://zdoom.org/wiki/Renderstyle waaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaat
-        if(Cvar.GetCvar("LMBH_Subtitler_Timer").getFloat() > 0)
+        if(Cvar.GetCvar("LMBH_Subtitling_Timer").getFloat() > 0)
         {
             // show here now
-            string localized = StringTable.localize(Cvar.GetCvar("LMBH_Subtitler_Say").getString());
-            string saying = Cvar.GetCvar("LMBH_Subtitler_Say").getString();
+            string localized = StringTable.localize(Cvar.GetCvar("LMBH_Subtitling_Say").getString());
+            string saying = Cvar.GetCvar("LMBH_Subtitling_Say").getString();
             HUDFont anFont = HUDFont.create(Font.GetFont("UbuntuS"));
             ////Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, localized, DTA_Clean, true);
             ////Screen.DrawText(Font.GetFont("UbuntuS"), Font.CR_UNTRANSLATED, posX, posY, localized, DTA_Clean, true);
@@ -78,10 +78,10 @@ class LMBH_Subtitler : StaticEventHandler
     override void WorldTick()
     {
         //if(subtitleTime > 0)
-        if(Cvar.GetCvar("LMBH_Subtitler_Timer").getFloat() > 0)
+        if(Cvar.GetCvar("LMBH_Subtitling_Timer").getFloat() > 0)
         {
-            float holdIn = Cvar.GetCvar("LMBH_Subtitler_Timer").getFloat();
-            Cvar.GetCvar("LMBH_Subtitler_Timer").SetFloat(holdIn - 1);
+            float holdIn = Cvar.GetCvar("LMBH_Subtitling_Timer").getFloat();
+            Cvar.GetCvar("LMBH_Subtitling_Timer").SetFloat(holdIn - 1);
         }
     }
 }

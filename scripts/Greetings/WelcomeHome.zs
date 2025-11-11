@@ -179,7 +179,7 @@ class LMBH_WelcomeHome : EventHandler
 		//players[playerNumber].SetLogText(totalSay);
 		players[playerNumber].SetSubtitleNumber(124001);
 
-		LMBH_Subtitler.playSubtitle(totalSay,timeShouldBe);
+		LMBH_Subtitling.playSubtitle(totalSay,timeShouldBe);
 	}
 
 	override void RenderOverlay(RenderEvent e)

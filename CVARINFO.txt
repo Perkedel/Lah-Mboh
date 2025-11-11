@@ -59,10 +59,10 @@ nosave noarchive string LMBH_WelcomeHome_currentClass = "";
 nosave noarchive float LMBH_WelcomeHome_GreetTimer = 0;
 
 // Subtitle Complexicated
-nosave float LMBH_Subtitler_Scale = 0; // scale setting
-nosave int LMBH_Subtitler_AlignFrom = 0; // default is "Bottom Center"
-nosave noarchive string LMBH_Subtitler_Say = "";
-nosave noarchive float LMBH_Subtitler_Timer = 0;
+nosave float LMBH_Subtitling_Scale = 0; // scale setting
+nosave int LMBH_Subtitling_AlignFrom = 0; // default is "Bottom Center"
+nosave noarchive string LMBH_Subtitling_Say = "";
+nosave noarchive float LMBH_Subtitling_Timer = 0;
 
 // TDRR's CVARs
 //server bool ctfannouncer = true;

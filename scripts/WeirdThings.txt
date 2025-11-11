@@ -192,12 +192,12 @@ class JustOddBarrel : ExplosiveBarrel
 			return;
 		Console.printf("duar!");
 		//S_StartSound("funny/fartReverb",CHAN_BODY);
-		S_StartSound("funny/fartReverb",CHAN_VOICE);
+		//S_StartSound("funny/fartReverb",CHAN_VOICE);
 		//players[i].SetLogNumber(123001);
-        players[i].SetSubtitleNumber(123001, "funny/fartReverb");
+        //players[i].SetSubtitleNumber(123001, "funny/fartReverb");
         //p-layers[i].SetSubtitleNumber(123001);
         //players[i].SetLogText("Duar sdkljfasdjfa");
-        LMBH_Subtitler.playSubtitle("Duar hahahahahaha", 5, "Odd Barrel");
+        LMBH_Subtitling.playSubtitle("Duar hahahahahaha", 5, "Odd Barrel");
     }
 }
 

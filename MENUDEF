@@ -25,7 +25,7 @@ AddOptionMenu "GameplayOptions"
 AddOptionMenu "MessageOptions"
 {
     StaticText ""
-    Submenu "$SubtitlerOptionSay", "SubtitlerOptions"
+    Submenu "$SubtitlingOptionSay", "SubtitlingOptions"
 }
 // end Add Now!
 
@@ -79,10 +79,10 @@ OptionMenu "NSFWContentOptions"
 
 	// other variables modders can use for safety of the YouTubers & Twitch streamers
 	//Option "$NSFLEnableSay", "nsflMaster", "nsflMasterValues" // Master options for such community guideline violations below
-	//Option "Guro", "gurocontent", "guroContentValues" // Gore bloods pretty much
-	//Option "Nazi", "derogatorynazi", "derogatoryNaziValues" // turn off to Wolfenstein EU distribution dot one
-	//Option "Neo-gender against", "derogatorylgbt", "derogatoryLgbtValues" // threat to scronch is forbidden. catch & repurify!
-	//Option "N-words", "derogatorycolor", "derogatoryColorValues" // Perkedel & affiliates forbid toner derogatory!
+	//Option "Guro", "gurocontent", "guroContentValues", "nsflMaster" // Gore bloods pretty much
+	//Option "Nazi", "derogatorynazi", "derogatoryNaziValues", "nsflMaster" // turn off to Wolfenstein EU version. "What else do you remember?"
+	//Option "Neo-gender against", "derogatorylgbt", "derogatoryLgbtValues", "nsflMaster" // threat to scronch is forbidden. catch & repurify!
+	//Option "N-words", "derogatorycolor", "derogatoryColorValues", "nsflMaster" // Perkedel & affiliates forbid toner derogatory!
 
 	StaticText ""
 	StaticText "$NSFWRequire"
@@ -115,30 +115,30 @@ OptionMenu "SeizureSafetyOptions" {
 	Option "$SeizureHeartTitle", "horrorcontent", "SeizureHeartValues"
 }
 
-// Subtitler
+// Subtitling
 // TODO: build menu for subtitle
 // TODO: add offset?? scaling
 OptionValue "SubtitleAlignValues"
 {
-    0, "$SUBTITLER_ALIGN_BOTTOM_CENTER"
-    1, "$SUBTITLER_ALIGN_BOTTOM_LEFT"
-    2, "$SUBTITLER_ALIGN_BOTTOM_RIGHT"
-    3, "$SUBTITLER_ALIGN_TOP_CENTER"
-    4, "$SUBTITLER_ALIGN_TOP_LEFT"
-    5, "$SUBTITLER_ALIGN_TOP_RIGHT"
+    0, "$SUBTITLING_ALIGN_BOTTOM_CENTER"
+    1, "$SUBTITLING_ALIGN_BOTTOM_LEFT"
+    2, "$SUBTITLING_ALIGN_BOTTOM_RIGHT"
+    3, "$SUBTITLING_ALIGN_TOP_CENTER"
+    4, "$SUBTITLING_ALIGN_TOP_LEFT"
+    5, "$SUBTITLING_ALIGN_TOP_RIGHT"
 }
 
-OptionMenu "SubtitlerOptions" {
-    Title "$SubtitlerTitle"
-    Caption "$SubtitlerTitle"
+OptionMenu "SubtitlingOptions" {
+    Title "$SubtitlingTitle"
+    Caption "$SubtitlingTitle"
 
     Option "$MSGMNU_SUBTITLES", "inter_subtitles", "OnOff"
-    Option "$SubtitlerAlignTitle", "LMBH_Subtitler_AlignFrom", "SubtitleAlignValues"
-    ScaleSlider "$SubtitlerScaleTitle", "LMBH_Subtitler_Scale", 0, 10, 0.1, "$OPTVAL_SMART"
+    Option "$SubtitlingAlignTitle", "LMBH_Subtitling_AlignFrom", "SubtitleAlignValues"
+    ScaleSlider "$SubtitlingScaleTitle", "LMBH_Subtitling_Scale", 0, 10, 0.1, "$OPTVAL_SMART"
 }
 AddOptionMenu OptionsMenu
 {
-    Submenu "$SubtitlerOptionSay", "SubtitlerOptions"
+    Submenu "$SubtitlingOptionSay", "SubtitlingOptions"
 }
 
 // m8f
