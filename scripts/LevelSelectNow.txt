@@ -4,6 +4,8 @@
 //#include "scripts/ScannableLevel/ScannableLevel.zs"
 // #include "scripts/ScannableLevel/ContainsTheseLevel.zs"
 
+// TODO: Replace with CorruptionCards Lump based system!
+
 class LevelSelectNow
 {
 	static void doLevelSelectNow(){
@@ -12,7 +14,7 @@ class LevelSelectNow
 		//let levelMenu = new("LevelSelectNowMenu");
 		//levelMenu.init(Menu.currentMenu());
 		//levelMenu.activateMenu();
-		
+
 		Menu.setMenu("LevelSelectNowMenu");
 	}
 }
@@ -41,13 +43,13 @@ class LevelSelectNowHandler : LMBH_ZF_Handler
 {
 	LevelSelectNowMenu link;
 
-	override void elementHoverChanged(LMBH_ZF_Element caller, Name command, bool unhovered) 
+	override void elementHoverChanged(LMBH_ZF_Element caller, Name command, bool unhovered)
 	{
 		// I gotta Jmod again!
 		If(unhovered||!(caller is "LMBH_ZF_Button")){Return;}
 		link.SetFocus(caller,LMBH_ZF_NavEventType_Tab);
 	}
-	
+
 	override void buttonClickCommand(LMBH_ZF_Button caller, Name command)
 	{
 		// pls why switch case only numbers not string?! Don't make me look like that guy.
@@ -77,7 +79,7 @@ class LMHB_ZF_BaseGenericMenu : LMBH_ZF_GenericMenu
 
 }
 
-class LevelSelectNowMenu : LMBH_ZF_GenericMenu 
+class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 {
 	LMBH_ZF_ListFrame liste;
 	LMBH_ZF_Image background;
@@ -86,7 +88,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 	Array<LMBH_ZF_Element> levelButtons;
 	LMBH_ZF_Label sayLabel, levelTitleSay, levelInfoBox;
 	LMBH_ZF_Image levelScreenshot;
-	// static const HardCodeLevelName hardCodeLevels[] = 
+	// static const HardCodeLevelName hardCodeLevels[] =
 	// {
 	// 	HardCodeLevelName.Create("MBOHADV")
 	// };
@@ -119,21 +121,21 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		for(int i = 0; i < levelButtons.size(); i++)
 		{
 			// Go up. If element is not first, there's previous, otherwise go to last
-			if(i > 0) 
+			if(i > 0)
 			{
 				levelButtons[i].setFocusNeighbor(LMBH_ZF_NavEventType_Up,levelButtons[i-1]);
 			}
-			else 
+			else
 			{
 				levelButtons[i].setFocusNeighbor(LMBH_ZF_NavEventType_Up,levelButtons[levelButtons.size()-1]);
 			}
 
 			// Go down. If element is not last, there's next, otherwise go to first
-			if(i < levelButtons.size()-1) 
+			if(i < levelButtons.size()-1)
 			{
 				levelButtons[i].setFocusNeighbor(LMBH_ZF_NavEventType_Down,levelButtons[i+1]);
 			}
-			else 
+			else
 			{
 				levelButtons[i].setFocusNeighbor(LMBH_ZF_NavEventType_Down,levelButtons[0]);
 			}
@@ -150,7 +152,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		// This is jank hack! idk how to specialize level selection list
 		/*
 		But we should've rely just on the Episode menu, no?
-		Yeah, we'll have alot, just like those Upstarts. That's why e.g. 
+		Yeah, we'll have alot, just like those Upstarts. That's why e.g.
 		RAMP has hundreds of shrines, each represents a level to go to.
 
 		hey, atleast we can add more data within later, all just within the text file.
@@ -218,7 +220,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 				if (scannableLevelName.label.length() <= 0)
 				{
 					label = scannableLevelName.level;
-				} else 
+				} else
 				{
 					label = scannableLevelName.label;
 				}
@@ -236,7 +238,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 			//Console.printf(StringTable.Localize("$EXISTENCE_EMPTY"));
 		}
 	}
-	
+
 	override void init (Menu parent)
 	{
 		LevelSelectNowHandler handler;
@@ -245,20 +247,20 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 		// hardCodeLevels = {
 		// 	HardCodeLevelName("MBOHADV"),
 		// };
-		
+
 		Vector2 baseRes = (640, 400);
 		Super.init(parent);
 		SetBaseResolution (baseRes);
-		
+
 		 // Get GZDoom's new options menu smallfont.
         smallFont = OptionFont ();
 		conFont = Font.GetFont("UbuntuC");
-		
+
 		handler = new ('LevelSelectNowHandler');
 		handler.link = self;
-		
+
 		LMBH_ZF_Element elem;
-		
+
 		// double daHeight = 256+128+128+128;
 		double daHeight = (hardCodeLevels.size() * 16) + 128;
 		// Create the box image's textures.
@@ -308,8 +310,8 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         );
         // Add the image element into the main frame.
         background.Pack (mainFrame);
-        
-         
+
+
 
 		let focusBox = LMBH_ZF_BoxTextures.CreateTexturePixels (
 			//"Graphics/FocusIndicator.png",
@@ -320,20 +322,20 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 			false
 		);
 
-        
+
         //Scrollact Jmodded
         let scrollactContainer = LMBH_ZF_ScrollContainer.Create(
         	(240,32),
         	(640-240,380-24),
-        	8,	
+        	8,
         	daHeight,
         	32,
         	boxTexture
         );
         scrollactContainer.Pack(mainFrame);
         let scrollactFrame = LMBH_ZF_Frame(scrollactContainer.GetScrollArea());
-        
-        
+
+
         // Textoid
         elem = LMBH_ZF_Label.create(
         	(8,16),
@@ -342,7 +344,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         	smallFont
         );
         elem.Pack(mainFrame);
-		
+
         // Test Textoid
 		/*
 		sayLabel = LMBH_ZF_Label.create(
@@ -381,14 +383,14 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
         );
 		levelInfoBox.pack(mainFrame);
         // list
-		
+
         liste = LMBH_ZF_ListFrame.create(
         	(0,0),
         	(640-16-240,daHeight+16), // 320, daHeight
-        	4	
+        	4
         );
         liste.Pack(scrollactFrame);
-        
+
 
         //Level now
 		for(int i = 0; i < hardCodeLevels.size(); i++)
@@ -408,7 +410,7 @@ class LevelSelectNowMenu : LMBH_ZF_GenericMenu
 			elem.Pack(liste);
 			levelButtons.push(elem);
 		}
-		
+
 		bringFocuses();
 
 		// PAIN IS TEMPORARY, GLORY IS FOREVER

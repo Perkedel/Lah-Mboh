@@ -3,31 +3,32 @@
 This Doom mod is a patch WAD PK3, meaning you are still required to own a copy of the IWAD.
 
 > [!NOTE]
-> Oops, we accidentally make the whole mapping endeavor designed exclusively 
-> for Freedoom lmao lololololollololo!!!!111one*oenoneoelvelntwelvefklasdj* 
-> Apparently, we used textures that turns out may or may not, are full exclusive to FreeDoom, where 
+> Oops, we accidentally make the whole mapping endeavor designed exclusively
+> for Freedoom lmao lololololollololo!!!!111one*oenoneoelvelntwelvefklasdj*
+> Apparently, we used textures that turns out may or may not, are full exclusive to FreeDoom, where
 > neither Doom 1 nor so on fullfills those to be parity with FreeDoom anymore haha! (hence you had to get completer PWADs to fill those gaps)
-> Congratulations, fraggle, & friends. You've successfully **OutPizza'd the Hut down into Ristorante!**  
+> Congratulations, fraggle, & friends. You've successfully **OutPizza'd the Hut down into Ristorante!**
 > **Incredible!! What an achievement!** This is not sarcasm btw. It's pure from me iyeay!
 > And eh, we are targeting FreeDoom Phase 2 anyways.
-> Don't believe us? Try it. `doom2.wad` or whatever id IWAD it, & compare.  
+> Don't believe us? Try it. `doom2.wad` or whatever id IWAD it, & compare.
 > Only the [Kinsie-test](https://forum.zdoom.org/viewtopic.php?f=42&t=57221) inspired room on the right tunnel were supposed to have blue checkerboards (GZDoom `-NOFLAT-`). Nowhere else.
 > The console should not spit Texture Missing errors at all (Beside the ObAddon Texture 2 & 3 about `-GOTH-` & `-DOOM-` empty marker lumps, we'll fix that later).
 >
-> EDIT 2025-05-08: We're making patch that activates if you use DOOM OG IWADs. Who knows sometimes using Freedoom destroys dignity, which is a full blown hoax!  
-> No shame for unable to buy DOOM legit. Heck, even I had bought DOOM I + II with my Steam account, still use Freedoom. Because it had more stuffs than DOOM & Final DOOM combined. (minus the alignments of course)  
-> Beside, Bethesda had never wanted to `trigger` Red Cross international ever again, or any German stuffs of that matter even tho there's still Wolfenstein stuffs going on to this day (about 2015s tho). So they ommited it this in Medipacks, and that in the MAP31 & MAP32.  
-> How do I know? Find it on the place where everyone preserves old stuffs, you should already know what it is. The KEX are not the same file we know of, trust me!  
-> Just how do you find the copy of original DOOM if you know, it's a gory game? beside wests of course, No game store in your area interested, It's just outright gone into obscurity.  
+> EDIT 2025-05-08: We're making patch that activates if you use DOOM OG IWADs. Who knows sometimes using Freedoom destroys dignity, which is a full blown hoax!
+> No shame for unable to buy DOOM legit. Heck, even I had bought DOOM I + II with my Steam account, still use Freedoom. Because it had more stuffs than DOOM & Final DOOM combined. (minus the alignments of course)
+> Beside, Bethesda had never wanted to `trigger` Red Cross international ever again, or any German stuffs of that matter even tho there's still Wolfenstein stuffs going on to this day (about 2015s tho). So they ommited it this in Medipacks, and that in the MAP31 & MAP32.
+> How do I know? Find it on the place where everyone preserves old stuffs, you should already know what it is. The KEX are not the same file we know of, trust me!
+> Just how do you find the copy of original DOOM if you know, it's a gory game? beside wests of course, No game store in your area interested, It's just outright gone into obscurity.
 > Beware! Shenanigans still at large!
 
-[![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)  
-[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)  
+[![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)
+[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)
 [![View CREDITS.md](/graphics/Generated/Eevee-DoomTextGen/doom-small-view-creditsmd.png)](/CREDITS.md)
 
 ## Dependencies:
 - IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [`doom2.wad` (**PAID**, PLS_WAIT! Completing Texture Compats!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
-- Source Port: [GZDoom latest](https://zdoom.org/downloads).
+- Source Port: [UZDoom latest](https://zdoom.org/downloads).
+    - UZDoom Development [Try Now **RECOMMENDED**](https://github.com/UZDoom/UZDoom/releases/latest).
     - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.11.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.13.
     - Otherwise you must **use the latest version**!
 - Mod PWADs:
@@ -41,11 +42,11 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 
 > [!NOTE]
 > An OG DOOM Compatibility patch is being made, WIP
-> 
-> We basically yoinked Freedoom's stuffs into this here. Whatever that's missing in DOOM II (Typical IWAD for most Mods), Indeed Freedoom exclusives, & across others (such as Evilution, Plutonia, DOOM I, etc.).  
-> Please let us know what is missing, misaligned, etc., so we can complete this compatibility.  
+>
+> We basically yoinked Freedoom's stuffs into this here. Whatever that's missing in DOOM II (Typical IWAD for most Mods), Indeed Freedoom exclusives, & across others (such as Evilution, Plutonia, DOOM I, etc.).
+> Please let us know what is missing, misaligned, etc., so we can complete this compatibility.
 > Thancc, [DavidXNewton for the inspiration](https://ramp2024.doomproject.com/) (`freedoom` set of `flat`s were found in this GigaWAD to cover levels that uses those Freedoom stuffs. You know, communities submit levels whatever they are.). Cool and good.
-> 
+>
 > Please beware, that we cannot easily fix compatibility between Evilution & Plutonia sets, especially their alignments.
 
 ## Steps
@@ -61,8 +62,8 @@ Showing the easy & quick ways
 7. Select the same IWAD then launch.
 
 > [!TIP]
-> It is highly recommended to use Doom launchers of your favourite to make mod selections easy.  
-> Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.  
+> It is highly recommended to use Doom launchers of your favourite to make mod selections easy.
+> Due to high numbers of various mods, which each has different asset replacements & even experiences, it is always the best to organize the launch arguments.
 > Therefore, please use the launcher you desire to make your Dooming life a pleasure. iyeay!
 
 ## Editing Setups
@@ -78,7 +79,7 @@ Showing the easy & quick ways
 ## Compatibility
 
 ### Mboh Adventure & Mboh Test
-- Level Format = UDMF.  
+- Level Format = UDMF.
 - Complevel = 0 (Any Default). Levels while benefits various GZDoom technologies, are still designed with vanilla strict limitation (No Jump No Freelook accessiblity) imposed due to early age of FPS back then before its maturity of the whole FPS genre we have here today. e.g., you should be able to test Mod PK3 TC Gameplay that imposes such limited challenges.
 
 
