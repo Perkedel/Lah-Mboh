@@ -31,11 +31,13 @@ Until this all done, **ID24 will not appear in Mboh Adventure Megawad**.
 
 ## Why exclusively designed for Freedoom?
 
-We accidentally chose textures that turns out Freedom exclusive. Since there are alot of the linedefs & sectors with those texture, we are unable to turn back anymore. 
+We accidentally chose textures that turns out Freedom exclusive. Since there are alot of the linedefs & sectors with those texture, we are unable to turn back anymore.
 And also the incentive considering the available numbers of texture Freedom provides that combines replacement from Doom to Final Doom together, locks the deal.
 
-So, Congratulations to fraggle et all. You've OutPizza'd the Hut every Classic Doom IWADs combined down to the last before Legacy of Rust. 
+So, Congratulations to fraggle et all. You've OutPizza'd the Hut every Classic Doom IWADs combined down to the last before Legacy of Rust.
 This is not sarcastic appreciation. We are indeed looking for ways if Doom should've been available to everyone no matter how personal or financingly people conditions are, when id did Source Code the game itself but the IWAD.
+
+However, as of today, we are currently working on the compatibility. Thanks to Newton who led RABBIT series, we are able to yoink serveral confirmed Freedoom exclusive textures. Admit it, it is not the best and isn't all-in-one due to the differences especially with Plutonia & TNT, but it's now there. Let us know if we missed something.
 
 ## Is this work on DeltaTouch?
 
@@ -44,8 +46,8 @@ Yes. Choose the latest GZDoom version on the left cogwheel by the GZDoom selecti
 [Select GZDoom option](/src/screenshot/delta-touch-how1.png)
 [choose latest](/src/screenshot/delta-touch-how2.png)
 
-Unfortunately, if your sparsdated DeltaTouch does not have `v4.14`, then you must beg & pre-gift your parents so they insert credit card online (risk stolen by Google) to download Delta Touch again, legit.  
-Also, it is highly likely that ask for voucher no longer works since people have been abusing it. 
+Unfortunately, if your sparsdated DeltaTouch does not have `v4.14`, then you must beg & pre-gift your parents so they insert credit card online (risk stolen by Google) to download Delta Touch again, legit.
+Also, it is highly likely that ask for voucher no longer works since people have been abusing it.
 
 Note, that since certain version DeltaTouch has DRM. You must first connect to internet one last time to download license from the Google Play you bought this from.
 
@@ -59,13 +61,13 @@ Sorry, it only works on GZDoom since v4.14.0 (& derivatives based on this) onwar
 
 ## Why target GZDoom when since there is no POC License that forbids this poopflame, they're all toxic?
 
-If in some personal reason you had beef with anybody involved within ZDoom as a whole, feel free to make yourself source port that's as awesome as (or better than) GZDoom.  
+If in some personal reason you had beef with anybody involved within ZDoom as a whole, feel free to make yourself source port that's as awesome as (or better than) GZDoom / UZDoom.
 While unfortunately we cannot cease the target due to already done just to get there, we may still consider so by the next endeavour.
 
 > [!NOTE]
 > Joel also has auto-beef of this all since scratch as he found deeper. For clarification, he already has suffered over 75 mental corruptions after being betrayed by his former friends. By this point, people who just had 10 had turned into *Ethereal* in ZZZ a.k.a. *Former Human* in Doom a.k.a. *Zombies* in Freedoom.
 
-Unfortunately, it happened that for Modded Doom sub rabbit hole, the Source Port designed for it was GZDoom & derivatives. Perkedel, DNB, & affiliates were left with no choice but start anyway just to get Joel's personal mission done until he can move on to the next endeavour leave this just another hell behind, 
+Unfortunately, it happened that for Modded Doom sub rabbit hole, the popular Source Port designed for it was GZDoom & derivatives. Perkedel, DNB, & affiliates were left with no choice but start anyway just to get Joel's personal mission done until he can move on to the next endeavour leave this just another hell behind,
 who know is one of his next dream.
 
 Funny story also, Godot went... yeah. Other ways though, nothing the same, but still hell.
@@ -82,6 +84,8 @@ Yes. DNB was only given contract of this endeavour for short time. After Joel ha
 
 We have yet tested this, but in theory, it should work, albeit depending on your phone, performance varies to the left. Chance of this causing Matot / Brick should also be slimmer since this is farcry from Crysis.
 Hey, you also have the ability to Slade & Ultimate Doombuilder there as well, All in one Android yey!
+
+We did tested it now, it crashed. & we forgor to record lmao
 
 ## Is this work on OS ABCDEFG?
 
@@ -114,16 +118,16 @@ If you'd like to hear High Quality sound, there are serveral Asset Replacement m
 
 ## It's lagging!
 
-GZDoom while provides the most flexibility, unfortunately suffers from performance issues way less present on other Vanilla targeted source ports. This is unfortunately not something we can resolve.  
+GZDoom / UZDoom while provides the most flexibility, unfortunately suffers from performance issues way less present on other Vanilla targeted source ports. This is unfortunately not something we can resolve.
 We also tried our best to avoid building heavy slaughterion on any of our megawads here, and only do so at a much smaller amount, if we had to, as few as cases as possible.
 
 Workaround is, to not load too many Mods, & reduce your graphic settings down to the bare minimum enough to aleviate lags.
 
-Also, it is best to bank up your money as enough as possible to replace your Android phone with Build your own PC.
+Also, it is best to bank up your money as enough as possible to replace your Android phone with Build your own PC. Mobile phones & Laptops tend to be all-soldered, immodular! (Even Framework & Fairphone still have limitations despite their best efforts) That's why recommend Build Your Own PC instead.
 
 ## No Demo?
 
-Due to the coding structure since ZDoom where this has been now with GZDoom today, at this point it's no longer the same vanilla used to be. As the result, demo will always desync if attempted to be played, and when every new version of GZDoom somewhere.
+Due to the coding structure since ZDoom where this has been now with GZDoom today, at this point it's no longer the same vanilla used to be. As the result, demo will always desync if attempted to be played, and when every new version of GZDoom & then UZDoom somewhere.
 
 This is because on how Demo Format is with Doom. It only records input.
 
@@ -133,10 +137,10 @@ Vanilla unmodified source ports that does not heavily modify physics will have D
 
 [Further Reading](https://www.doomworld.com/forum/topic/128236-why-cant-we-get-doom-demos-on-gzdoom/). Started by Zilch on Doomworld
 
-
+Dayum, I wish demos recorded as full *MMD Motion*-like animation. Oh well, then how do we figure out cheating on some contest tho? Record both! Don't delete former format! Amirite??
 
 ## Guoh
 
-by JOELwindows7  
-Perkedel Technologies  
+by JOELwindows7
+Perkedel Technologies
 CC4.0-BY-SA

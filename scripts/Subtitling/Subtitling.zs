@@ -33,6 +33,9 @@ class LMBH_Subtitling : StaticEventHandler
 
     static void playSubtitle(string text, float forHowLong, string prefixName="")
     {
+        if(!Cvar.GetCvar("inter_subtitles").getBool())
+            return;
+
         if(forHowLong)
             Cvar.GetCvar("LMBH_Subtitling_Timer").setFloat(forHowLong * 35);
         else
