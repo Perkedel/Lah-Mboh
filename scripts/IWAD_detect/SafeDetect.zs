@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -46,7 +46,7 @@ class LMBH_SafeDetect : StaticEventHandler
         Cvar.GetCvar('isNSFWrn').SetInt(0);
         Cvar.GetCvar('isNSFLrn').SetInt(0);
 
-        
+
 
         // H
         if(Wads.FindLump("HDMFN033",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("DICKA0",0,Wads.AnyNameSpace) > -1)
@@ -92,7 +92,7 @@ class LMBH_SafeDetect : StaticEventHandler
             nsflKeywords.push("Moonman");
         }
 
-        //KF
+        // KF
         if(Wads.FindLump("HRTLABS",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("YWNB",0,Wads.AnyNameSpace) > -1)
         {
             //isNSFWrn = 1;
