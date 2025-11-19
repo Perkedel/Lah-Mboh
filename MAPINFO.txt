@@ -1216,6 +1216,20 @@ map SELDUAR lookup "SELDUAR"
 	//RandomPlayerStarts
 }
 
+map MEDITATE lookup "MEDITATE"
+{
+    // BRPD Nuts.wad but open source
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+	//music = "HEROD"
+	//InterMusic = "REVPINT"
+	AllowRespawn
+	//RandomPlayerStarts
+}
+
 map DODTEL lookup "DODTEL"
 {
 	author = "JOELwindows7"

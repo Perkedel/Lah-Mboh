@@ -61,7 +61,8 @@ jobs:
           echo "sha       : ${{ steps.ghd.outputs.sha }}"
           echo "short-sha : ${{ steps.ghd.outputs.short-sha }}"
           #echo "And so, I'll write this to file here. who knows useful."
-
+          # and write?
+          echo "${{ steps.ghd.outputs.tag }}-${{ steps.ghd.outputs.sha }}" > version.txt
       # From now on, you must move to respective repository folder
       # cd Lah-Mboh
       # pwd

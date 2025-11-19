@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -27,7 +27,7 @@ class LMBH_Level_MyLevelName: LMBH_ScannableLevelName
 	Default
 	{
 		LMBH_ScannableLevelName.level "MYLEVEL"; // Doom Level WAD filename.
-		LMBH_ScannableLevelName.label "$MYLEVEL"; // What to label this level as. You can use $ prefix to select string from LANGUAGE lump. 
+		LMBH_ScannableLevelName.label "$MYLEVEL"; // What to label this level as. You can use $ prefix to select string from LANGUAGE lump.
         // You can also leave label blank to make the label the file name (`level` var) which also choose the string in LANGUAGE if available.
 		LMBH_ScannableLevelName.prefixLabel ""; // Important tags or whatever before inside parenthesis
 	}
@@ -72,6 +72,7 @@ class LMBH_Level_MyLevelName: LMBH_ScannableLevelName
 //class LMBH_Level_MbohAdventure: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MBH01"; LMBH_ScannableLevelName.label String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV")); } }
 class LMBH_Level_MbohAdventure: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MBH01"; LMBH_ScannableLevelName.label "$MBOHADV"; LMBH_ScannableLevelName.prefixLabel "MEGAWAD";} } // what a hassle! string property must be constant parameter
 class LMBH_Level_JustFite: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "JUSTFITE"; LMBH_ScannableLevelName.label "$JUSTFITE"; } }
+class LMBH_Level_Meditate: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MEDITATE"; LMBH_ScannableLevelName.label "$MEDITATE"; } }
 //continue convert above!! Codeium, take over! copy above to below, put them like this inline.
 class LMBH_Level_RightFrn: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "RIGHTFRN"; LMBH_ScannableLevelName.label "$RIGHTFRN"; } }
 class LMBH_Level_Plmsky1: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "PLMSKY1"; LMBH_ScannableLevelName.label "$PLMSKY1"; } }
