@@ -25,7 +25,7 @@ Idk how to subtitle like did with Strife. This is way too complicated already! V
 //#define SUBTITLING
 //#endif
 
-class LMBH_Subtitling : StaticEventHandler
+class LMBH_Subtitling : StaticEventHandler //ui
 {
     float subtitleTime;
     //const defaultSubtitleTime = 5.0;

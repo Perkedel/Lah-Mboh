@@ -829,7 +829,7 @@ class LMBH_Cvar
 
 } // class tt_Cvar
 
-class LMBH_AchievementList : OptionMenu
+class LMBH_AchievementList : OptionMenu // LMBH_TF_TooltipOptionMenu
 {
 
   protected

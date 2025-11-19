@@ -68,6 +68,8 @@ OptionValue "NSFWContentValues"
 
 OptionMenu "NSFWContentOptions"
 {
+    class "LMBH_TF_TooltipOptionMenu"
+    LMBH_TooltipGeometry 0.5, 1.0
 	Title "$NSFWContentTitle"
 	Caption "$NSFWContentTitle"
 
@@ -75,6 +77,7 @@ OptionMenu "NSFWContentOptions"
 	StaticText ""
 
 	Option "NSFW", "nsfwcontent", "NSFWContentValues"
+    LMBH_Tooltip "$NSFWTooltip"
 	//StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
 
 	// other variables modders can use for safety of the YouTubers & Twitch streamers
@@ -104,6 +107,8 @@ OptionValue "SeizureHeartValues"
 }
 
 OptionMenu "SeizureSafetyOptions" {
+    Class "LMBH_TF_TooltipOptionMenu"
+    LMBH_TooltipGeometry 0.5, 1.0
 	Title "$SeizureSafetyTitle"
 	Caption "$SeizureSafetyTitle"
 
@@ -129,11 +134,15 @@ OptionValue "SubtitleAlignValues"
 }
 
 OptionMenu "SubtitlingOptions" {
+    Class "LMBH_TF_TooltipOptionMenu"
+    LMBH_TooltipGeometry 0.5, 1.0
     Title "$SubtitlingTitle"
     Caption "$SubtitlingTitle"
 
     Option "$MSGMNU_SUBTITLES", "inter_subtitles", "OnOff"
+    //LMBH_Tooltip "$MSGMNU_SUBTITLES_TOOLTIP"
     Option "$SubtitlingAlignTitle", "LMBH_Subtitling_AlignFrom", "SubtitleAlignValues"
+    //LMBH_Tooltip "$SubtitlingAlignTitle_TOOLTIP"
     ScaleSlider "$SubtitlingScaleTitle", "LMBH_Subtitling_Scale", 0, 10, 0.1, "$OPTVAL_SMART"
 }
 AddOptionMenu OptionsMenu
@@ -166,35 +175,37 @@ AddOptionMenu OptionsMenuSimple
 
 OptionMenu LMBH_Achieve_Options
 {
-  Title "$LMBH_Achieve_MENU_TITLE"
+    class "LMBH_TF_TooltipOptionMenu"
+    LMBH_TooltipGeometry 0.5, 1.0
+    Title "$LMBH_Achieve_MENU_TITLE"
 
-  StaticText "$LMBH_Achieve_ACHIEVEMENTS", 1
-  Submenu "$LMBH_Achieve_UNLOCKED", LMBH_UnlockedAchievements
-  Submenu "$LMBH_Achieve_LOCKED"  , LMBH_LockedAchievements
+    StaticText "$LMBH_Achieve_ACHIEVEMENTS", 1
+    Submenu "$LMBH_Achieve_UNLOCKED", LMBH_UnlockedAchievements
+    Submenu "$LMBH_Achieve_LOCKED"  , LMBH_LockedAchievements
 
-  StaticText ""
-  Option "$LMBH_Achieve_NOTIFY"    , LMBH_achieveNotification_enabled, OnOff
-  Option "$LMBH_Achieve_HORIZONTAL", LMBH_horizontal_position, LMBH_HorizontalPositionValues
-  Option "$LMBH_Achieve_VERTICAL"  , LMBH_vertical_position,   LMBH_VerticalPositionValues
-  Option "$LMBH_Achieve_ANIMATION" , LMBH_animation_type,      LMBH_AnimationValues
+    StaticText ""
+    Option "$LMBH_Achieve_NOTIFY"    , LMBH_achieveNotification_enabled, OnOff
+    Option "$LMBH_Achieve_HORIZONTAL", LMBH_horizontal_position, LMBH_HorizontalPositionValues
+    Option "$LMBH_Achieve_VERTICAL"  , LMBH_vertical_position,   LMBH_VerticalPositionValues
+    Option "$LMBH_Achieve_ANIMATION" , LMBH_animation_type,      LMBH_AnimationValues
 
-  StaticText ""
-  Command "$LMBH_Achieve_TEST", LMBH_testAchieve
+    StaticText ""
+    Command "$LMBH_Achieve_TEST", LMBH_testAchieve
 
-  StaticText ""
-  SafeCommand "$LMBH_Achieve_CLEAR", LMBH_clear_achievements
+    StaticText ""
+    SafeCommand "$LMBH_Achieve_CLEAR", LMBH_clear_achievements
 }
 
 OptionMenu LMBH_LockedAchievements
 {
-  Class "LMBH_LockedAchievements"
-  Title "$LMBH_Achieve_LOCKED_TITLE"
+    Class "LMBH_LockedAchievements"
+    Title "$LMBH_Achieve_LOCKED_TITLE"
 }
 
 OptionMenu LMBH_UnlockedAchievements
 {
-  Class "LMBH_UnlockedAchievements"
-  Title "$LMBH_Achieve_UNLOCKED_TITLE"
+    Class "LMBH_UnlockedAchievements"
+    Title "$LMBH_Achieve_UNLOCKED_TITLE"
 }
 
 // Option values ///////////////////////////////////////////////////////////////
@@ -224,13 +235,15 @@ OptionValue LMBH_AnimationValues
 // This creates a new custom options menu:
 OptionMenu "ZDoomWeirdOptions"
 {
+    class "LMBH_TF_TooltipOptionMenu"
+    LMBH_TooltipGeometry 0.5, 1.0
     Title "ZDoom Weird"
     Caption "ZDoom Weird"
 
-  // Add an option for the explodey_zombies CVar:
-  Option "Exploding Zombiemen", "zd_explodey_zombies", "OnOff" //OnOff is an existing optionvalue, you don't need to define it
-  // Add n option for the weaponstyle CVar:
-  Option "Weapon style", "zd_weaponstyle", "WeaponStyleOptions" //WeaponStyleOptions will be a custom option value
+    // Add an option for the explodey_zombies CVar:
+    Option "Exploding Zombiemen", "zd_explodey_zombies", "OnOff" //OnOff is an existing optionvalue, you don't need to define it
+    // Add n option for the weaponstyle CVar:
+    Option "Weapon style", "zd_weaponstyle", "WeaponStyleOptions" //WeaponStyleOptions will be a custom option value
 }
 
 // A custom option value that attaches unique names

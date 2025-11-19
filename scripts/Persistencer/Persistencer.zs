@@ -11,7 +11,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -33,7 +33,7 @@ class LMBH_Persistencer : StaticEventHandler
         // https://zdoom.org/wiki/Structs:WorldEvent
         // https://zdoom.org/wiki/SetCVarString
         //https://zdoom.org/wiki/Structs:CVar
-        if(Cvar.FindCvar("LMBH_lastLoadedLevel").GetString() != level.mapName){
+        if((Cvar.FindCvar("LMBH_lastLoadedLevel").GetString() != level.mapName) && (level.mapName != "TITLEMAP")){
             //SetCVARString("LMBH_lastLoadedLevel", level.mapName);
             // & then the FIFO queques! 0 is IN, 1 2 3 up, last is OUT.
             Cvar.FindCvar("LMBH_lastLoadedLevelFIFO9").SetString(Cvar.FindCvar("LMBH_lastLoadedLevelFIFO8").GetString());
@@ -50,7 +50,7 @@ class LMBH_Persistencer : StaticEventHandler
             // real value
             Cvar.FindCvar("LMBH_lastLoadedLevel").SetString(level.mapName);
         }
-        
+
 
         /*
         https://zdoom.org/wiki/Savegame

@@ -119,7 +119,17 @@ gameinfo
 	//TitlePage = "LMBHRES1"
 
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
+
+	// Try Custom Data
+	isNSFW = false
 }
+
+// This will crash because unsupported
+// IndividualInfo
+// {
+//     ModId = "LMBH"
+//     ModName = "Lah Mboh"
+// }
 
 // NOT COMPATIBLE WITH ZANDRONUM HAHAHAHAHAHAhahaaaa, fug.
 // https://www.doomworld.com/forum/topic/123676-custom-monster-in-mapinfo-for-zandronum-fails-with-doomednums-unknown-top-level-keyword/

@@ -149,6 +149,11 @@ For the thing we've yoinked
     - The Textures, Flats, & stuffs in case of using DOOM IWAD instead of Freedoom I said (via [RAMP 2024](https://ramp2024.doomproject.com/), & rest manually).
 - [SMMU](https://soulsphere.org/projects/smmu/). fraggle. **GNU GPL v2**
     - Just the test map that's it.
+- [ToxicFrog's Mods](https://github.com/ToxicFrog/doom-mods). ToxicFrog. **MIT**. Collections of ToxicFrog mods:
+  - [Gun Bonsai](https://forum.zdoom.org/viewtopic.php?t=76080)
+  - Libtooltipmenu. Add tooltip on menu focus
+  - Indestructible
+  - GZ Archipelago
 
 ## Dependencies
 
@@ -241,6 +246,7 @@ For the thing we've yoinked
 - [Pixelify Sans](https://fonts.google.com/specimen/Pixelify+Sans). eifetx. **OFL-1.1**. [SOURCE CODE](https://github.com/eifetx/pixelify-sans); Pixel font sans! Should be perfect for subtitles & many text for Pixelorama
 - [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
 - Bad Explosion. nthompson. ???. The Freesound file is gone! I still have one.
+- [Corruption Cards](https://forum.zdoom.org/viewtopic.php?t=67939) ([ModDB](https://www.moddb.com/mods/corruption-cards)). CutmanMike. ???. Inspire only!, Corruption Cards allows you to add more cards. It seems tho, if you add your own `Card` inheritance on your Zscript stuffs, it makes that mod depend on the Corruption Cards permanently, until you commented those out back. If you still have `Card` inherited cards without the Corruption Cards mod loaded, it'll crash. Just the `CCARDS.txt` lump won't be enough. Eh, thancc for the inspiration anyway. I was wanted to reflow Car Level list on here. Maybe I should learn how to read `MAPINFO` myself?
 
 ## Sounds
 

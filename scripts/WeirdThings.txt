@@ -1491,3 +1491,15 @@ class UltraWeirdSuperShotgun: SuperShotgun
 		Goto Ready;
 	}
 }
+
+// https://zdoom.org/wiki/Thrust
+/*
+Windows Clipboard broke again!
+
+https://zdoom.org/wiki/Thrust
+https://zdoom.org/wiki/Thrust
+*/
+
+// ToxicFrog stuffs!!!!
+// https://github.com/ToxicFrog/doom-mods
+//#include "scripts/ToxicFrog/libtooltipmenu/libtooltipmenu.zsc"

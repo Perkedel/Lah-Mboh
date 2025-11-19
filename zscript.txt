@@ -35,3 +35,6 @@ version "4.11.3" // Because Project Brutality, but we also want latest features 
 
 // 3saster
 #include "scripts/3saster/3saster.zs" // GZDoom Utilities
+
+// ToxicFrog
+#include "scripts/ToxicFrog/libtooltipmenu/libtooltipmenu.zsc"

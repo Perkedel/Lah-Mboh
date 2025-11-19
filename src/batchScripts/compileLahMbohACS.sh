@@ -17,10 +17,10 @@ echo "Firstly, check the CPU Architecture!:"
 # direct yoink, edit now! Change app based on this!
 arch=$(uname -i)
 if [[ $arch == x86_64* ]]; then
-    echo "X64 Architecture"
+    echo "x64 Architecture"
     compiler="./yoinks/ZDoom/acs/acc-amd64"
 elif [[ $arch == i*86 ]]; then
-    echo "X32 Architecture"
+    echo "x86 Architecture"
     compiler="./yoinks/ZDoom/acs/acc-i386"
 elif  [[ $arch == arm* ]]; then
     echo "ARM Architecture"
@@ -34,17 +34,21 @@ else
 fi
 
 echo "Add Executable Permission onto the compiler we\'re gonna use"
-
 chmod +x $compiler
 
 echo "Time to Compile with $compiler"
-
 for anFile in ./source/*.acs; do
-    baseFilename=$(basename -- "$anFile")
-    extensionFile="${baseFilename##*.}"
-    justFilename=${baseFilename%.*}
+    # Let's begin. For each, you do
+    # Obtain the names
+    baseFilename=$(basename -- "$anFile") # Full filename
+    extensionFile="${baseFilename##*.}" # Just extension
+    justFilename=${baseFilename%.*} # Just filename
+
+    # Source & the target
     obtainedSource="$anFile"
     obtainedTarget="$folderCompile/$justFilename.o"
+
+    # let's go!
     echo "Compile $obtainedSource to $obtainedTarget"
     $compiler "$obtainedSource" "$obtainedTarget"
 done
