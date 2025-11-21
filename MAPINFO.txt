@@ -547,6 +547,7 @@ Map MBOHTEST lookup "MBOHTEST"
 	secretnext = "KRFHIDE"
 	sky1 = "SKY1"
 	//cluster = 100
+	AllowRespawn
 	exitPic = "LMBHTIHD"
 	enterPic = "LMBHTENT"
 	music = "D_BERKAT" // Test map should not have music! use manual switch to turn it on instead!
@@ -1364,6 +1365,15 @@ map mrwdemo lookup "mrwdemo"
 	//RememberState
 }
 
+map "TOFOLDER" lookup "TOFOLDER"
+{
+	author = "JOELwindows7"
+	next = "LoadFolder/LOADFOL"
+	secretnext = "LoadFolder/LOADFOL"
+	sky1 = "SKY2"
+	exitPic = "LMBHTIHD"
+}
+
 map "LoadFolder/LOADFOL" lookup "LOADFOL"
 {
 	author = "JOELwindows7"
@@ -1376,6 +1386,16 @@ map "LoadFolder/LOADFOL" lookup "LOADFOL"
 	//AllowRespawn
 	//RandomPlayerStarts
 	//RememberState
+	Intro
+	{
+	    Video = "graphics/videos/succ-reverberations-remake.ivf"
+		// Sound should assume
+
+	}
+	Outro
+	{
+		Video = "graphics/videos/OldMacDonald-Had-a-bin-cannon.ivf"
+	}
 }
 
 map "Chubzdoomer/CHBZSD" lookup "CHBZSD"

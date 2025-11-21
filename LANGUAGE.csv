@@ -114,6 +114,7 @@ Enjay’s Breakable Glass,T_NJ_BGL,,Kaca Pecah Belah Enjay,,,,
 Weapons Resource WAD,WRWDEMO,,WAD Paket Senjata,,,,
 Monsters Resource WAD,MRWDEMO,,WAD Paket Monster,,,,
 Map in subfolder,LOADFOL,,Map di subfolder,,,,
+Before Map in subfolder,TOFOLDER,,Sebelum Map di subfolder,,,,
 Predictors Sorting Center,ORAKEL,"Secret level for Mboh Adventure.
 Test enemy Ambush flag. Mazes of package crates to be sent out somewhere
 Either in time of future, or other universes.
@@ -1060,7 +1061,7 @@ di sebuah subfolder. Silahkan tekan Use (%s) pada salah satu sisi tembok ini utk
 In a subfolder. Go Use (",ENTER_LOADFOL_1,,"Selamat! Anda telah berhasil memuat Map
 di sebuah subfolder. Silahkan tekan Use (",,,,
 ) any of the walls to return to Hub.,ENTER_LOADFOL_2,,) pada salah satu sisi tembok ini utk kembali ke Hub.,,,,
-,,,,,,,
+Press Any surface of these walls to begin Map in subfolder.,ENTER_TOFOLDER,,Tekan permukaan tembok apapun untuk memulai Map di subfolder.,,,,
 ,,,,,,,
 ,,,,,,,
 ,,,,,,,

@@ -69,35 +69,46 @@ class LMBH_Level_MyLevelName: LMBH_ScannableLevelName
 		//hardCodeLevels.push(HardCodeLevelName.Create("TEST", StringTable.Localize("$_GENERIC_TEST")));
 */
 
+// MEGAWAD
 //class LMBH_Level_MbohAdventure: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MBH01"; LMBH_ScannableLevelName.label String.Format("(MEGAWAD) %s", StringTable.Localize("$MBOHADV")); } }
 class LMBH_Level_MbohAdventure: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MBH01"; LMBH_ScannableLevelName.label "$MBOHADV"; LMBH_ScannableLevelName.prefixLabel "MEGAWAD";} } // what a hassle! string property must be constant parameter
-class LMBH_Level_JustFite: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "JUSTFITE"; LMBH_ScannableLevelName.label "$JUSTFITE"; } }
-class LMBH_Level_Meditate: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MEDITATE"; LMBH_ScannableLevelName.label "$MEDITATE"; } }
-//continue convert above!! Codeium, take over! copy above to below, put them like this inline.
-class LMBH_Level_RightFrn: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "RIGHTFRN"; LMBH_ScannableLevelName.label "$RIGHTFRN"; } }
-class LMBH_Level_Plmsky1: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "PLMSKY1"; LMBH_ScannableLevelName.label "$PLMSKY1"; } }
-class LMBH_Level_Mechsky1: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MECHSKY1"; LMBH_ScannableLevelName.label "$MECHSKY1"; } }
-class LMBH_Level_Choralbe: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "CHORALBE"; LMBH_ScannableLevelName.label "$CHORALBE"; } }
-class LMBH_Level_Freeld: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "FREELD"; LMBH_ScannableLevelName.label "$FREELD"; } }
-class LMBH_Level_Telefast: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TELEFAST"; LMBH_ScannableLevelName.label "$TELEFAST"; } }
-class LMBH_Level_Donuter: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "DONUTER"; LMBH_ScannableLevelName.label "$DONUTER"; } }
-class LMBH_Level_Portala: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "PORTALA"; LMBH_ScannableLevelName.label "$PORTALA"; } }
-class LMBH_Level_Totitle: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE"; LMBH_ScannableLevelName.label "$TOTITLE"; } }
-class LMBH_Level_Totitle2: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE2"; LMBH_ScannableLevelName.label "$TOTITLE2"; } }
-class LMBH_Level_Totitle3: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE3"; LMBH_ScannableLevelName.label "$TOTITLE3"; } }
+
+// DONE: continue convert above!! Codeium, take over! copy above to below, put them like this inline.
+
+// Morale Revenants
 class LMBH_Level_Morate: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MORATE"; LMBH_ScannableLevelName.label "$MORATE"; } }
 //class LMBH_Level_Selduar: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "SELDUAR"; LMBH_ScannableLevelName.label String.Format("(DM) %s", StringTable.Localize("$SELDUAR")); } }
 class LMBH_Level_Selduar: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "SELDUAR"; LMBH_ScannableLevelName.label "$SELDUAR"; LMBH_ScannableLevelName.prefixLabel "DM";} }
+
+// Random JOELwindows7
+class LMBH_Level_Freeld: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "FREELD"; LMBH_ScannableLevelName.label "$FREELD"; } }
+class LMBH_Level_JustFite: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "JUSTFITE"; LMBH_ScannableLevelName.label "$JUSTFITE"; } }
+class LMBH_Level_RightFrn: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "RIGHTFRN"; LMBH_ScannableLevelName.label "$RIGHTFRN"; } }
+class LMBH_Level_Telefast: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TELEFAST"; LMBH_ScannableLevelName.label "$TELEFAST"; } }
+class LMBH_Level_Meditate: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MEDITATE"; LMBH_ScannableLevelName.label "$MEDITATE"; } }
+class LMBH_Level_Portala: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "PORTALA"; LMBH_ScannableLevelName.label "$PORTALA"; } }
 class LMBH_Level_Dodtel: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "DODTEL"; LMBH_ScannableLevelName.label "$DODTEL"; } }
-class LMBH_Level_WrwDemo: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "WRWDEMO"; LMBH_ScannableLevelName.label "$WRWDEMO"; } }
-class LMBH_Level_MrwDemo: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MRWDEMO"; LMBH_ScannableLevelName.label "$MRWDEMO"; } }
-class LMBH_Level_T_Scttg: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_SCTTG"; LMBH_ScannableLevelName.label "$T_SCTTG"; } }
 class LMBH_Level_T_Cuzom: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_CUZOM"; LMBH_ScannableLevelName.label "$T_CUZOM"; } }
 class LMBH_Level_T_Rspawn: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_RSPAWN"; LMBH_ScannableLevelName.label "$T_RSPAWN"; } }
-class LMBH_Level_T_Ca_Out: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_CA_OUT"; LMBH_ScannableLevelName.label "$T_CA_OUT"; } }
-class LMBH_Level_T_Nj_Bgl: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_NJ_BGL"; LMBH_ScannableLevelName.label "$T_NJ_BGL"; } }
-class LMBH_Level_Loadfol: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "LoadFolder/LOADFOL"; LMBH_ScannableLevelName.label "$LOADFOL"; } }
+
+// Yoinke
 class LMBH_Level_Chbzsd: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "Chubzdoomer/CHBZSD"; LMBH_ScannableLevelName.label "$CHBZSD"; } }
+class LMBH_Level_Plmsky1: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "PLMSKY1"; LMBH_ScannableLevelName.label "$PLMSKY1"; } }
+class LMBH_Level_Mechsky1: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MECHSKY1"; LMBH_ScannableLevelName.label "$MECHSKY1"; } }
+class LMBH_Level_WrwDemo: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "WRWDEMO"; LMBH_ScannableLevelName.label "$WRWDEMO"; } }
+class LMBH_Level_MrwDemo: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "MRWDEMO"; LMBH_ScannableLevelName.label "$MRWDEMO"; } }
+class LMBH_Level_T_Nj_Bgl: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_NJ_BGL"; LMBH_ScannableLevelName.label "$T_NJ_BGL"; } }
+
+// TESTS
+class LMBH_Level_Choralbe: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "CHORALBE"; LMBH_ScannableLevelName.label "$CHORALBE"; } }
+class LMBH_Level_T_Scttg: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_SCTTG"; LMBH_ScannableLevelName.label "$T_SCTTG"; } }
+class LMBH_Level_ToFolder: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOFOLDER"; LMBH_ScannableLevelName.label "$TOFOLDER"; } }
+class LMBH_Level_Loadfol: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "LoadFolder/LOADFOL"; LMBH_ScannableLevelName.label "$LOADFOL"; } }
+class LMBH_Level_Totitle: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE"; LMBH_ScannableLevelName.label "$TOTITLE"; } }
+class LMBH_Level_Totitle2: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE2"; LMBH_ScannableLevelName.label "$TOTITLE2"; } }
+class LMBH_Level_Totitle3: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TOTITLE3"; LMBH_ScannableLevelName.label "$TOTITLE3"; } }
+class LMBH_Level_T_Ca_Out: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_CA_OUT"; LMBH_ScannableLevelName.label "$T_CA_OUT"; } }
+class LMBH_Level_Donuter: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "DONUTER"; LMBH_ScannableLevelName.label "$DONUTER"; } }
 // okeh thancc
 
 // Break it down!
