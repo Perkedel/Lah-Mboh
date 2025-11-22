@@ -178,7 +178,7 @@ jobs:
           rm -rf maps/*.autosave2
           rm -rf maps/*.autosave3
 
-      - name: Zip it
+      - name: Zip it PK3
         run: |
           cd Lah-Mboh
           ls
@@ -196,7 +196,7 @@ jobs:
 
       # Do it like kyli873 in this Kinsie's FauxDM
       # https://github.com/TheKins/FauxDM/blob/master/_zip.bat
-      - name: 7z it
+      - name: 7z it PK7
         run: |
           cd Lah-Mboh
           ls
@@ -237,11 +237,13 @@ jobs:
           echo "Shut zip"
           zip -9 Lah-Mboh.zip Lah-Mboh.pk3
           zip -u Lah-Mboh.zip Lah-Mboh.txt
+          zip -u Lah-Mboh.zip version.txt
           zip -u Lah-Mboh.zip yoinks
           zip -u Lah-Mboh.zip bonus
           echo "Scroll Thru 7zeas"
           7z a -t7z -mx9 -m0=lzma2 -- Lah-Mboh.7z Lah-Mboh.pk7
           7z u Lah-Mboh.7z Lah-Mboh.txt
+          7z u Lah-Mboh.7z version.txt
           7z u Lah-Mboh.7z yoinks
           7z u Lah-Mboh.7z bonus
           echo "Here total content of this 7z"
@@ -249,6 +251,7 @@ jobs:
           echo "also tar.xz"
           tar -cvf Lah-Mboh.tar Lah-Mboh.pk7
           tar -uvf Lah-Mboh.tar Lah-Mboh.txt
+          tar -uvf Lah-Mboh.tar version.txt
           tar -uvf Lah-Mboh.tar yoinks
           tar -uvf Lah-Mboh.tar bonus
           xz -v9e Lah-Mboh.tar
@@ -366,3 +369,4 @@ jobs:
             seven-zee Lah-Mboh.7z
             tar-exczee  Lah-Mboh.tar.xz
             pk-three  Lah-Mboh.zip
+            extras-sfw BringYourOwnUSB-SFW.7z
