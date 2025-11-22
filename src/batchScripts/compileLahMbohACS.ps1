@@ -1,3 +1,4 @@
+#!/bin/pwsh
 # https://stackoverflow.com/a/18848848/9079640
 # https://stackoverflow.com/a/2591782/9079640
 # https://www.atera.com/blog/how-to-run-exe-files-in-powershell/

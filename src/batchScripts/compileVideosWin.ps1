@@ -1,3 +1,4 @@
+#!/bin/pwsh
 # Convert videos with FFMPEG into ivf & extract audio to separate file because UZDoom currently is afraid
 # to implement anything with mp4 due to still stigmatizings despite its patent expiry just been months by.
 # (JOELwindows7)

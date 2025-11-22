@@ -1,3 +1,4 @@
+#!/bin/pwsh
 # idk how how how how how to compress PNG
 # What the fuck are the arguments did slade used?!
 
