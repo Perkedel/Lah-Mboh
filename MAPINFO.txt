@@ -493,6 +493,8 @@ Intermission Inter_BrainiacBye
 		TextColor = "LightBlue"
 	}
 	link = Inter_Titlescreen
+	// Unfortunately, no way to switch to level
+	// that instead, you wrap your map in a cluster with the story text.
 }
 
 Intermission Inter_FunnyCastTest
