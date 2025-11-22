@@ -14,7 +14,7 @@ For the thing we've yoinked
 > [!NOTE]
 > Tools used during the development
 
-- [Slade 3](https://slade.mancubus.net/). sirjuddington. **GNU GPL v2**. [SOURCE CODE](https://slade.mancubus.net/). Edit WADs: Maps & various Lumps
+- [Slade 3](https://slade.mancubus.net/). sirjuddington. **GNU GPL v2**. [SOURCE CODE](https://github.com/sirjuddington/SLADE). Edit WADs: Maps & various Lumps
 - [Ultimate Doom Builder](https://ultimatedoombuilder.github.io/). various. **GNU GPL v3**. [SOURCE CODE](https://github.com/UltimateDoomBuilder/UltimateDoomBuilder). Edit Maps with ultimate features, based on GZDoom Builder which is based on [Doom Builder](http://doombuilder.com/) whatever.
 - [Blender](https://blender.org). Blender Foundation. **GNU GPL v3**. [SOURCE CODE](https://projects.blender.org/blender/blender). Build 3D Models even H, or in this case: Texture Photo Capture, that also supports **H**.
 - [Inkscape](https://inkscape.org/). Inkscape. **GNU GPL v2**. [SOURCE CODE](https://gitlab.com/inkscape/inkscape). Draw vector graphic that scales in any resolution.
@@ -30,6 +30,7 @@ For the thing we've yoinked
 	- [PNGOut](https://github.com/imagemin/pngout-bin). imagemin. **MIT License**. [SOURCE CODE](https://github.com/imagemin/pngout-bin); Lossless PNG Optimizations.
 	- [PNGCrush](https://pmt.sourceforge.io/pngcrush/). pmt. [???](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/LICENSE). [SOURCE CODE](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/)
 	- [DeflOpt](https://encode.su/threads/3257-Deflopt) (~~[Chocolatey: `choco install deflopt`](https://community.chocolatey.org/packages/DeflOpt)~~). Ben Jos Walbeehm. ???. **NO SOURCE CODE**
+	- You can also get these above from [Slade](https://slade.mancubus.net/index.php?page=downloads) download btw. It's in [**Extras files `Bundled Tools (7z)`**](https://slade.mancubus.net/files/slade_bundled_tools.7z).
 - [Doom WAD Descriptive Parameters](https://www.doomworld.com/forum/post/1782450). Jimmy Squared. ???. Template of Parameter to be placed in your forum page about your mods.
 - [Chiptone SFX Generator](https://sfbgames.itch.io/chiptone). SFB Games. **No Source Code**. Generate Chiptune SFX, the spiritual successor to sfxr.
 - [Unicode Doom font Generator](https://forum.zdoom.org/viewtopic.php?t=65818). ErmacMKIII. **GNU GPL v3**. [Source Code](https://github.com/ErmacMKIII/UnicodeDoomFontCreator), Generate Unicode fonts out of fonts installed on your system!
@@ -41,6 +42,7 @@ For the thing we've yoinked
     - [Checksum Action](https://github.com/marketplace/actions/checksum-action). Solratic. **MIT License**. [Source Code](https://github.com/Solratic/checksum-action)
     - [Another Checksum](https://github.com/marketplace/actions/checksums-action). thewh1teagle. ???. [Source Code](https://github.com/thewh1teagle/checksum)
     - [Moaoaoorooe checksum](https://github.com/marketplace/actions/generate-checksum). jmgilman. **MIT License**. [Source Code](https://github.com/jmgilman/actions-generate-checksum)
+- [Git Describe](https://github.com/marketplace/actions/gh-describe). proudust. **MIT License**. [Source Code](https://github.com/proudust/gh-describe), Grab Git tags & versioning status right now over GitHub API & let you insert it to your version file however you'd like. This is a GitHub Action module yea.
 
 ## Addons
 
@@ -149,7 +151,7 @@ For the thing we've yoinked
     - The Textures, Flats, & stuffs in case of using DOOM IWAD instead of Freedoom I said (via [RAMP 2024](https://ramp2024.doomproject.com/), & rest manually).
 - [SMMU](https://soulsphere.org/projects/smmu/). fraggle. **GNU GPL v2**
     - Just the test map that's it.
-- [ToxicFrog's Mods](https://github.com/ToxicFrog/doom-mods). ToxicFrog. **MIT**. Collections of ToxicFrog mods:
+- [ToxicFrog's Mods](https://github.com/ToxicFrog/doom-mods). ToxicFrog. **MIT License**. Collections of ToxicFrog mods:
   - [Gun Bonsai](https://forum.zdoom.org/viewtopic.php?t=76080)
   - Libtooltipmenu. Add tooltip on menu focus
   - Indestructible
