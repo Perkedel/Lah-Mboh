@@ -370,6 +370,6 @@ jobs:
           auto_channel: false
           files: |
             seven-zee Lah-Mboh.7z
-            tar-exczee  Lah-Mboh.tar.xz
-            pk-three  Lah-Mboh.zip
+            tar-exczee Lah-Mboh.tar.xz
+            pk-three Lah-Mboh.zip
             extras-sfw BringYourOwnUSB-SFW.7z
