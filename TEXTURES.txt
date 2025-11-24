@@ -32,29 +32,7 @@ WallTexture "BIGDSTF", 128, 128
 	Patch "STFONL1", 32, 24
 }
 
-WallTexture "SWMEGFD0", 64, 128
-{
-	Patch "WALL00_1", 0, 0
-	Patch "SW1S0", 0, 0
-	Patch "SW2S0", 32, 0
-	Patch "SW3S0", 0, 32
-	Patch "SW4S0", 36, 36
-	Patch "WARNB0", 9, 70
-	Patch "SW2_1", 7, 98
-	Patch "BSKUA0", 42, 103
-}
 
-WallTexture "SWMEGFD1", 64, 128
-{
-	Patch "WALL00_1", 0, 0
-	Patch "SW1S1", 0, 0
-	Patch "SW2S1", 32, 0
-	Patch "SW3S1", 0, 32
-	Patch "SW4S1", 36, 36
-	Patch "WARNA0", 9, 70
-	Patch "SW2_2", 7, 98
-	Patch "RSKUA0", 42, 103
-}
 
 Texture "SCRATCHP", 256, 256
 {

@@ -119,6 +119,10 @@ gameinfo
 	// Test only! do not uncomment in production!
 	//TitlePage = "LMBHRES1"
 
+	// dude wtf how to work on this?!
+	addDialogues =
+	    "DIALOGUE.txt"
+
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 
 	// Try Custom Data

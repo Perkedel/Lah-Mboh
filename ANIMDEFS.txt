@@ -7,6 +7,10 @@ Switch	Doom 3		DEVMGFD1	On Pic	DEVMGFD2	Tics 0
 // Combined actual Megaswitch from above and between dev
 Switch	Doom 3		SWMEGFD0	On Pic	SWMEGFD1	Tics 0
 
+// and more
+Switch	Doom 3		SMBHA0	On Pic	SMBHA1	Tics 0
+Switch	Doom 3		SMBHB0	On Pic	SMBHB1	Tics 0
+
 // Jekyll Grim Payne stuffs
 CanvasTexture TargetDummyDamage 192 32
 

@@ -1,0 +1,51 @@
+// Dialogue a global
+// JOELwindows7
+namespace = "GZDoom";
+
+// help
+/*
+https://www.doomworld.com/forum/topic/150763-i-need-some-help-on-the-dialogue-code/
+https://zdoom.org/wiki/ZDoom_Strife_Dialog_Format
+https://zdoom.org/wiki/Universal_Strife_Dialog_Format
+*/
+
+Conversation
+{
+	ID = 3263;
+	Page{
+		Name = "$NAME_DUMMYCONCIERGE";
+		Dialog = "$WHATCANIDO";
+		Goodbye = "$CHOICE_NVM";
+		Choice{
+			Text = "$CHOICE_NEEDHEAL";
+			YesMessage = "$RESPONSE_NEEDHEAL";
+			GiveItem = "Megasphere";
+		}
+		Choice{
+			Text = "$CHOICE_NEEDALL";
+			YesMessage = "$RESPONSE_NEEDALL";
+			Special = 80;
+			Arg0 = 8085;
+		}
+		Choice{
+			Text = "$CHOICE_NEEDBERSERK";
+			YesMessage = "$RESPONSE_NEEDBERSERK";
+			GiveItem = "Berserk";
+		}
+		Choice{
+			Text = "$CHOICE_NEEDPOWERUP";
+			YesMessage = "$RESPONSE_NEEDPOWERUP";
+			Special = 80;
+			Arg0 = 8086;
+		}
+	}
+}
+
+Conversation
+{
+    actor = "JekyllPShootingRangeDummy";
+    Page{
+        Name = "$NAME_DUMMYGENERIC";
+        Dialog = "$DIALOGUE_DUMMYHURT";
+    }
+}
