@@ -10,6 +10,24 @@ Switch	Doom 3		SWMEGFD0	On Pic	SWMEGFD1	Tics 0
 // and more
 Switch	Doom 3		SMBHA0	On Pic	SMBHA1	Tics 0
 Switch	Doom 3		SMBHB0	On Pic	SMBHB1	Tics 0
+Switch	Doom 3		SMBHC0	On Pic	SMBHC1	Tics 0
+Switch	Doom 3		SMBHD0	On Pic	SMBHD1	Tics 0
+Switch	Doom 3		SMBHE0	On Pic	SMBHE1	Tics 0
+Switch	Doom 3		SMBHF0	On Pic	SMBHF1	Tics 0
+Switch	Doom 3		SMBHG0	On Pic	SMBHG1	Tics 0
+Switch	Doom 3		SMBHH0	On Pic	SMBHH1	Tics 0
+Switch	Doom 3		SMBHI0	On Pic	SMBHI1	Tics 0
+Switch	Doom 3		SMBHJ0	On Pic	SMBHJ1	Tics 0
+Switch	Doom 3		SMBHK0	On Pic	SMBHK1	Tics 0
+Switch	Doom 3		SMBHL0	On Pic	SMBHL1	Tics 0
+Switch	Doom 3		SMBHM0	On Pic	SMBHM1	Tics 0
+Switch	Doom 3		SMBHN0	On Pic	SMBHN1	Tics 0
+Switch	Doom 3		SMBHO0	On Pic	SMBHO1	Tics 0
+Switch	Doom 3		SMBHP0	On Pic	SMBHP1	Tics 0
+Switch	Doom 3		SMBHQ0	On Pic	SMBHQ1	Tics 0
+Switch	Doom 3		SMBHR0	On Pic	SMBHR1	Tics 0
+Switch	Doom 3		SMBHS0	On Pic	SMBHS1	Tics 0
+
 
 // Jekyll Grim Payne stuffs
 CanvasTexture TargetDummyDamage 192 32
@@ -80,29 +98,29 @@ texture DESKC
     pic DESKC04 tics 4
     pic DESKC05 tics 4
     pic DESKC06 tics 4
-    pic DESKC07 tics 4 
-	
+    pic DESKC07 tics 4
+
 texture ARCDD
     pic ARCDD00 tics 10
 	pic ARCDD01 tics 10
 	pic ARCDD02 tics 10
 	pic ARCDD03 tics 10
-	
+
 texture TVA
     pic TVA00 tics 60
 	pic TVA01 tics 60
 	pic TVA02 tics 60
-	
+
 texture LASA
     pic LASA00 tics 3
 	pic LASA01 tics 3
 	pic LASA02 tics 3
 	pic LASA03 tics 3
-	
+
 texture CEILC
     pic CEILC tics 3
 	pic CEILC01 tics 3
-	
+
 texture SRVRA00
     pic SRVRA00 tics 6
 	pic SRVRA01 tics 6
@@ -110,7 +128,7 @@ texture SRVRA00
 	pic SRVRA03 tics 6
 	pic SRVRA04 tics 6
 	pic SRVRA05 tics 6
-	
+
 texture HOLOB
     pic HOLOB00 tics 3
 	pic HOLOB01 tics 3
@@ -123,7 +141,7 @@ texture HOLOB
 	pic HOLOB08 tics 3
 	pic HOLOB09 tics 3
 	pic HOLOB10 tics 3
-	
+
 texture HOLOH
     pic HOLOH00 tics 3
 	pic HOLOH01 tics 3
@@ -143,8 +161,8 @@ texture HOLOH
 	pic HOLOH15 tics 3
 	pic HOLOH16 tics 3
 	pic HOLOH17 tics 3
-	
-	
+
+
 texture BILLB
     pic BILLB00 tics 7
 	pic BILLB01 tics 4
@@ -159,19 +177,19 @@ texture BILLB
 	pic BILLB10 tics 4
 	pic BILLB11 tics 4
 	pic BILLB12 tics 4
-	
+
 texture VENDNA
     pic VENDNA00 tics 6
 	pic VENDNA01 tics 6
 	pic VENDNA02 tics 6
 	pic VENDNA03 tics 6
-	
+
 texture LIGHTF00
     pic LIGHTF00 tics 6
 	pic LIGHTF01 tics 6
 	pic LIGHTF02 tics 6
 	pic LIGHTF03 tics 6
-	
+
 texture CYBF00
     pic CYBF00 tics 3
 	pic CYBF01 tics 3
@@ -181,7 +199,7 @@ texture CYBF00
 	pic CYBF05 tics 3
 	pic CYBF06 tics 3
 	pic CYBF07 tics 3
-	
+
 
 // END DIABOLUS EX ARVELL
 

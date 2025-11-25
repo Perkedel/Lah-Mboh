@@ -53,6 +53,244 @@ WallTexture "SMBHB1", 1024, 1024
 	Patch "SMBHB1", 0, 0
 }
 
+WallTexture "SMBHC0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHC0", 0, 0
+}
+
+WallTexture "SMBHC1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHC1", 0, 0
+}
+
+WallTexture "SMBHD0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHD0", 0, 0
+}
+
+WallTexture "SMBHD1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHD1", 0, 0
+}
+
+WallTexture "SMBHE0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHE0", 0, 0
+}
+
+WallTexture "SMBHE1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHE1", 0, 0
+}
+
+WallTexture "SMBHF0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHF0", 0, 0
+}
+
+WallTexture "SMBHF1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHF1", 0, 0
+}
+
+WallTexture "SMBHG0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHG0", 0, 0
+}
+
+WallTexture "SMBHG1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHG1", 0, 0
+}
+
+WallTexture "SMBHH0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHH0", 0, 0
+}
+
+WallTexture "SMBHH1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHH1", 0, 0
+}
+
+WallTexture "SMBHI0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHI0", 0, 0
+}
+
+WallTexture "SMBHI1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHI1", 0, 0
+}
+
+WallTexture "SMBHJ0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHJ0", 0, 0
+}
+
+WallTexture "SMBHJ1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHJ1", 0, 0
+}
+
+WallTexture "SMBHK0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHK0", 0, 0
+}
+
+WallTexture "SMBHK1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHK1", 0, 0
+}
+
+WallTexture "SMBHL0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHL0", 0, 0
+}
+
+WallTexture "SMBHL1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHL1", 0, 0
+}
+
+WallTexture "SMBHM0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHM0", 0, 0
+}
+
+WallTexture "SMBHM1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHM1", 0, 0
+}
+
+WallTexture "SMBHN0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHN0", 0, 0
+}
+
+WallTexture "SMBHN1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHN1", 0, 0
+}
+
+WallTexture "SMBHO0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHO0", 0, 0
+}
+
+WallTexture "SMBHO1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHO1", 0, 0
+}
+
+WallTexture "SMBHP0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHP0", 0, 0
+}
+
+WallTexture "SMBHP1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHP1", 0, 0
+}
+
+WallTexture "SMBHQ0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHQ0", 0, 0
+}
+
+WallTexture "SMBHQ1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHQ1", 0, 0
+}
+
+WallTexture "SMBHR0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHR0", 0, 0
+}
+
+WallTexture "SMBHR1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHR1", 0, 0
+}
+
+WallTexture "SMBHS0", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHS0", 0, 0
+}
+
+WallTexture "SMBHS1", 1024, 1024
+{
+	XScale 32.000
+	YScale 32.000
+	Patch "SMBHS1", 0, 0
+}
+
 WallTexture "SWDA0", 32, 32
 {
 	Patch "SW2S0", 0, 0
