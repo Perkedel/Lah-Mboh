@@ -63,4 +63,19 @@ class LMBH_Persistencer : StaticEventHandler
         */
 
     }
+
+    override void WorldTick()
+    {
+        super.WorldTick();
+        // Save last position
+        // https://zdoom.org/wiki/Structs:PlayerInfo
+        // https://zdoom.org/wiki/Classes:PlayerPawn
+        if(Players[consolePlayer].mo != NULL)
+        {
+            Cvar.FindCvar("LMBH_lastLoadedPositionX").SetFloat(Players[consolePlayer].mo.pos.x);
+            Cvar.FindCvar("LMBH_lastLoadedPositionY").SetFloat(Players[consolePlayer].mo.pos.y);
+            Cvar.FindCvar("LMBH_lastLoadedPositionZ").SetFloat(Players[consolePlayer].mo.pos.z);
+        }
+
+    }
 }
