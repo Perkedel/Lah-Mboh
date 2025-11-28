@@ -10,7 +10,7 @@
 
 class LMBH_MbohAchievementHandler : EventHandler
 {
-    
+
     //bool playerSelfDied = false;
     //string diedAtlevel = "";
 
@@ -20,10 +20,10 @@ class LMBH_MbohAchievementHandler : EventHandler
         let pmo = players[e.player].mo;
         array<string> splitren;
         e.name.split(splitren,":");
-        
+
         if(e.name.indexOf(expectedCommand) > -1 )
         {
-            
+
             if(splitren.size() < 3)
             {
                 // not yet cheating
@@ -35,13 +35,13 @@ class LMBH_MbohAchievementHandler : EventHandler
                 // not cheat either yet
                 return;
             }
-            
+
             if(splitren[2].length() == 0)
             {
                 // empty type
                 return;
             }
-            
+
             // Make sure this player is valid
             // and has a PlayerPawn:
             if (!PlayerInGame[e.Player])
@@ -66,7 +66,7 @@ class LMBH_MbohAchievementHandler : EventHandler
                 LMBH_Achiever.achieve("LMBH_Achievement_YouCheated");
                 // & tell everyone about it
             }
-            
+
         }
     }
 
@@ -96,7 +96,7 @@ class LMBH_MbohAchievementHandler : EventHandler
         }
     }
 
-    static bool IsVoodooDoll(PlayerPawn mo) 
+    static bool IsVoodooDoll(PlayerPawn mo)
     {
         // https://zdoom.org/wiki/Classes:PlayerPawn
         return !mo.player || !mo.player.mo || mo.player.mo != mo;
@@ -114,7 +114,7 @@ class LMBH_MbohAchievementHandler : EventHandler
         name moName = mo.getClassName();
         name namedClass = classname;
         string stringName = moName;
-        
+
         // return moName == classname;
         // Console.printf("%s %s %d",moName,classname, moName.indexOf(containes));
         // Console.printf("%s %s %d",moName,classname, stringName.indexOf(classname));
@@ -155,6 +155,16 @@ class LMBH_MbohAchievementHandler : EventHandler
         the achiever is not ready yet
 
         whole this time we mistyped the achievement class name & just vm aborts address zero! it should've been 404 not found!
+        */
+
+        // And also Player Skin Check
+        // https://zdoom.org/wiki/PlayerSkinCheck
+        /*
+        if (PlayerSkinCheck() )
+        {
+            // "how did you get here?!"
+            LMBH_Achiever.achieve("LMBH_Achievement_HowDidYouGotHere");
+        }
         */
     }
 
@@ -202,7 +212,7 @@ class LMBH_MbohAchievementHandler : EventHandler
         {
             // remove you died flag inventory
             pmo.A_TakeInventory("LMBH_Flag_YouDied");
-            
+
         }
         Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(false);
     }
@@ -230,16 +240,18 @@ class LMBH_MbohAchievementHandler : EventHandler
             if(Cvar.GetCvar("LMBH_everDied", players[e.playerNumber]).GetBool())
             {
                 Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).SetInt(Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).GetInt() + 1);
-            } else 
+            } else
             {
                 Cvar.GetCvar("LMBH_deathCount_sameMap", players[e.playerNumber]).SetInt(0);
             }
             // bruh, windsurf wtf if wrong with your attention?! need Fidget spinner?!??!?
+
+
         }
         Cvar.GetCvar("LMBH_wereDied", players[e.playerNumber]).SetBool(false);
     }
 
-    override void WorldLoaded(WorldEvent e) 
+    override void WorldLoaded(WorldEvent e)
     {
         // let pmo = players[e.player].mo;
         // if(PlayerInGame[e.player] && pmo && !IsVoodooDoll(pmo) && !(Level.info.MapName ~== "TITLEMAP"))
@@ -396,7 +408,7 @@ class LMBH_Achievement_SolidFurry : LMBH_Achievement
     {
         // "I'm not furry!", while you secretly like Protogen
         /*
-        Don't worry, Joel is too. 
+        Don't worry, Joel is too.
         */
         LMBH_Achievement.name "$Achieve_SolidSolidSolid";
         LMBH_Achievement.description "$Achieve_SolidSolidSolid_desc";
@@ -546,3 +558,23 @@ class LMBH_Achievement_ServerHundredDeaths : LMBH_Achievement
 /*
 Since world start, no damage, 250 kills.
 */
+
+class LMBH_Achievement_HowDidYouGotHere : LMBH_Achievement
+{
+    Default
+    {
+        // Wear skin in this IWAD but from another IWAD.
+        /*
+        Simple unspecific death tracker
+        */
+        LMBH_Achievement.name "$Achieve_HowDidYouGotHere";
+        LMBH_Achievement.description "$Achieve_HowDidYouGotHere_desc";
+        LMBH_Achievement.borderColor 0x00AA30;
+        LMBH_Achievement.boxColor    0x000500;
+        LMBH_Achievement.limit 100;
+        LMBH_Achievement.isProgressVisible false;
+        LMBH_Achievement.lockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.unlockedIcon "graphics/m8f/LMBH_imp_icon.png";
+        LMBH_Achievement.isHidden true;
+    }
+}

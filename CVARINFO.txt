@@ -129,3 +129,8 @@ nosave int zd_weaponstyle = 0;
 // IWAD Detect
 nosave noarchive string Raw_IWAD = ""; // IWAD file you loaded
 nosave noarchive string Compat_IWAD = ""; // Compatibility standard this IWAD recognizable as..
+
+// Extra Level Info of idk
+nosave noarchive string Level_Checksum = ""; // Level checksum
+nosave noarchive string Level_Name = ""; // Level name
+nosave noarchive string Level_Author = ""; // Level author

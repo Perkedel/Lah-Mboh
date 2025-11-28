@@ -19,6 +19,8 @@ gameinfo
 		"LMBH_Cheataron",
 		"LMBH_WelcomeHome",
 		"LMBH_Subtitling",
+		"LMBH_Subtitling",
+		"LMBH_LevelMap",
 		"DNB_werrorHandler"
 
 	addquitmessages =

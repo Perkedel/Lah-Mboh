@@ -1503,3 +1503,23 @@ https://zdoom.org/wiki/Thrust
 // ToxicFrog stuffs!!!!
 // https://github.com/ToxicFrog/doom-mods
 //#include "scripts/ToxicFrog/libtooltipmenu/libtooltipmenu.zsc"
+
+// https://zdoom.org/wiki/PlayerSkinCheck
+// https://zdoom.org/wiki/CopyFriendliness
+
+class WeirdLevelPostProcessor: LevelPostProcessor
+{
+    // all LevelPostProcessor are always loaded. Scoured and run each `Apply` function.
+    // https://zdoom.org/wiki/LevelPostProcessor
+    protected void Apply(Name checksum, String mapname)
+    {
+        //Cvar.GetCvar("Level_Name").SetString(mapname);
+        //Cvar.GetCvar("Level_Checksum").SetString(checksum);
+        //Console.printf("\c[cyan]MAP is \c[blue]%s\c- (\c[orange]%s)\n", mapname, checksum);
+        //Console.printf("\c[cyan]Num of all skills = \c[green]%d\n\c[cyan]Modes = \c[green]%d\c-\n", SKILLS_ALL, MODES_ALL);
+    }
+
+    // ZDoom itself already has its own LevelPostProcessor to fix issues
+    // https://github.com/ZDoom/gzdoom/blob/e27cbe5bd938093eed11ddd345fc1425a41f7477/wadsrc/static/zscript/level_compatibility.zs
+    // https://github.com/UZDoom/UZDoom/blob/trunk/wadsrc/static/zscript/level_compatibility.zs
+}
