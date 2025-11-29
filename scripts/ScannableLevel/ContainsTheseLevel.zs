@@ -122,6 +122,16 @@ class LMBH_Level_KinsieTestLevelName: LMBH_ScannableLevelName
 	}
 }
 
+// Example Level Name 2
+class LMBH_Level_FurdoomTestLevelName: LMBH_ScannableLevelName
+{
+	Default
+	{
+		LMBH_ScannableLevelName.level "TESTMAP";
+		LMBH_ScannableLevelName.label "$_GENERIC_TEST_2";
+	}
+}
+
 // And..
 class LMBH_Level_SMMUTestLevelName: LMBH_ScannableLevelName
 {

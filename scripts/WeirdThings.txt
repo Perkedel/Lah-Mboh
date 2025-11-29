@@ -1551,3 +1551,5 @@ class WeirdLevelPostProcessor: LevelPostProcessor
 
 // https://zdoom.org/wiki/Startup_lumps
 // https://doomwiki.org/wiki/AASTINKY
+// https://zdoom.org/wiki/Classes:RandomSpawner
+// https://zdoom.org/wiki/CCMDs
