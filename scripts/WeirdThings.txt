@@ -1523,3 +1523,31 @@ class WeirdLevelPostProcessor: LevelPostProcessor
     // https://github.com/ZDoom/gzdoom/blob/e27cbe5bd938093eed11ddd345fc1425a41f7477/wadsrc/static/zscript/level_compatibility.zs
     // https://github.com/UZDoom/UZDoom/blob/trunk/wadsrc/static/zscript/level_compatibility.zs
 }
+
+// https://zdoom.org/wiki/CONBACK
+// https://zdoom.org/wiki/TexMan
+// is_valid
+// https://zdoom.org/wiki/Structs:TextureID
+// https://archive.org/details/abort_m Titlemap billboard
+// on the WorldLoaded function at its handler `GibeAbort:EventHandler` at `h_handler.zsc`
+/*
+// titlepic on titlemap
+		if ( level.mapname != "TITLEMAP" ) return;
+		int l = LineIdIterator.Create(1).Next();
+		if ( l == -1 ) return;
+		TextureID tpic = TexMan.CheckForTexture("CONBACK",TexMan.Type_Any);
+		if ( !tpic.IsValid() ) tpic = TexMan.CheckForTexture("TITLEPIC",TexMan.Type_Any);
+		if ( !tpic.IsValid() ) return;
+		level.Lines[l].sidedef[0].SetTexture(2,tpic);
+		Vector2 s = TexMan.GetScaledSize(tpic);
+		s.x = 320./s.x;
+		s.y = 200./s.y;
+		level.Lines[l].sidedef[0].SetTextureXScale(2,2./s.x);
+		level.Lines[l].sidedef[0].SetTextureYScale(2,2./s.y);
+*/
+// The billboard set texture to CONBACK (Console bg), otherwise TITLEPIC (Title screen) as usual.
+// what is this? a stray `.` at the end? is this cast to float like Unity C#'s `f`?,
+// `2.` = `2.0` = `2f`???
+
+// https://zdoom.org/wiki/Startup_lumps
+// https://doomwiki.org/wiki/AASTINKY

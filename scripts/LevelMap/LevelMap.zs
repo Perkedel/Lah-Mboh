@@ -16,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-// Level Map thingy
+// Level Map Post Processor thingy
 
 class LMBH_LevelMap:StaticEventHandler
 {
@@ -30,6 +30,26 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
 {
     // https://zdoom.org/wiki/Structs:LevelLocals
     // https://zdoom.org/wiki/LevelPostProcessor
+    // https://zdoom.org/wiki/Structs:LevelInfo
+
+    static void Utter()
+    {
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        //Console.printf("\c[gold]%s\c-\n", levelInfo.levelName);
+        //Console.printf("\c[gold]%s\c-\n", levelInfo.mapName);
+        //Console.printf("|\c[gold]%s\c-|\n", level.levelName);
+        Console.printf("|\c[gold]%s\c-|\n", Cvar.GetCvar("Level_NiceName").GetString());
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        //Console.printf("|\c[cyan]\[\c[blue]%s\c- (\c[orange]%s\c-)\c[cyan]\]\c-|\n", mapname, Cvar.GetCvar("Level_Checksum").GetString());
+        Console.printf("|\c[cyan]\[\c[blue]%s\c- (\c[orange]%s\c-)\c[cyan]\]\c-|\n", Cvar.GetCvar("Level_Name").GetString(), Cvar.GetCvar("Level_Checksum").GetString());
+        Console.printf("|\c[cyan]by \c[sapphire]%s\c-|\n", Cvar.GetCvar("Level_Author").GetString());
+
+        Console.printf("|\c[red]\[\c[fire]%s\c[red]\]\c-|\n", Cvar.GetCvar("Level_Prohibition").GetString());
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        Console.printf("%s\n", StringTable.Localize("$LEVELMAP_TITLE"));
+        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+    }
+
     protected void Apply(Name checksum, String mapname)
     {
         LevelInfo levelInfo = LevelInfo.FindLevelInfo(mapname);
@@ -37,15 +57,16 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
         //Cvar.GetCvar("Level_Checksum").SetString(checksum);
         Cvar.GetCvar("Level_Checksum").SetString(LevelInfo.MapChecksum(mapname));
         Cvar.GetCvar("Level_Author").SetString(levelInfo.AuthorName);
+        Cvar.GetCvar("Level_NiceName").SetString(levelInfo.levelName);
+        //string _prohibit = "AllowAll";
+        string _prohibit = "";
+        if (!level.IsJumpingAllowed()) _prohibit = _prohibit .. "NoJumping";
+        //if (!level.IsJumpingAllowed()) _prohibit = "NoJumping";
+        if (!level.IsCrouchingAllowed()) _prohibit = _prohibit .. "NoCrouching";
+        if (!level.IsFreelookAllowed()) _prohibit = _prohibit .. "NoFreelook";
+        Cvar.GetCvar("Level_Prohibition").SetString(_prohibit);
 
-        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
-        //Console.printf("\c[gold]%s\c-\n", levelInfo.levelName);
-        //Console.printf("\c[gold]%s\c-\n", levelInfo.mapName);
-        Console.printf("|\c[gold]%s\c-|\n", level.levelName);
-        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
-        Console.printf("|\c[cyan]\[\c[blue]%s\c- (\c[orange]%s\c-)\c[cyan]\]\c-|\n", mapname, Cvar.GetCvar("Level_Checksum").GetString());
-        Console.printf("|\c[cyan]by \c[sapphire]%s\c-|\n", Cvar.GetCvar("Level_Author").GetString());
-        Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+        Utter();
     }
 
     // ZDoom itself already has its own LevelPostProcessor to fix issues

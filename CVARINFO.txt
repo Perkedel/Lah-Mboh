@@ -133,4 +133,6 @@ nosave noarchive string Compat_IWAD = ""; // Compatibility standard this IWAD re
 // Extra Level Info of idk
 nosave noarchive string Level_Checksum = ""; // Level checksum
 nosave noarchive string Level_Name = ""; // Level name
+nosave noarchive string Level_NiceName = ""; // Level nice name
 nosave noarchive string Level_Author = ""; // Level author
+nosave noarchive string Level_Prohibition = ""; // Level prohibition e.g. `NoFreelook NoJumping` etc.
