@@ -46,7 +46,7 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 > no, I can't tell you to watch Cocomelon, ew!! ... crap! idk what's there anymore, coz I'm no longer in that section.
 > .  
 > Also no. Not even derogatory N-words will be found in our NSFW extension PWADs. Very obvious reasons. 
-> That'll be once another one, unsauced but same Gitlab idk. (read small note in [`CONTRIBUTING.md`](CONTRIBUTING.md))
+> That'll be once another one, unsauced but a Git somewhere idk. (read small note in [`CONTRIBUTING.md`](CONTRIBUTING.md))
 > </details>
 
 ## A Random Doom Stuffs
