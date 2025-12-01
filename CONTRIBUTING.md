@@ -34,21 +34,22 @@ we have stood the rule that ensure that the base right here is free from far fet
 
 ### But you are not allowed to submit into this PK3:
 
-- Actual Fictional Pornography. Please use & submit to our NSFW extension PWAD PK3 instead `ngocrot-deh` `LINK_HERE`. Example:
+- Actual Fictional Pornography. Please use & submit to our NSFW extension PWAD PK3 instead `Lah-WesKowe` `LINK_HERE`. Example:
 	- H
 	- Encounter
-- IRL Pornography. No extension PWAD indefinitely. not to be confused for `ngocrot-deh`.
-- Derogatory N-words. This neither covered even in NSFW extension. use our Derogatory extension PWAD `wok-wak-wek-wok` (pls link) (small note: no color derogatory allowed at all there even! only G-word I think!)
+- IRL Pornography. No extension PWAD indefinitely. not to be confused for `Lah-WesKowe`.
+  - IRL Porn is only available for Archival (existing PWADs) atm., No interest of IRL Porn.
+- Derogatory N-words. This neither covered even in NSFW extension. use our Derogatory extension PWAD `Lah-Piye` (pls link) (small note: no color derogatory allowed at all there even! only G-word I think!)
 - Death Threats. No Extension PWAD.
 - Suicide Encouragement. Zero tolerance, no PWAD.
 - Doxxing. No Extension PWAD. Even to public companies (with known HQ locations & contacts) where context & intent is to cause raid & also compromise anyone safety whose completely nothing to do with the drama incident, in-all eitherways.
-- Non Free-Culture stipulated files. Those file violate our distribution goal (that includes but not limited to such as Arcade machines, Embedded Device Toy, Linux Distros). use our NoCommercialable extension PWAD `Bring-Your-Own-USB-SFW` pls link.
+- Non Free-Culture stipulated files. Those file violate our distribution goal (that includes but not limited to such as Arcade machines, Embedded Device Toy, Linux Distros). use our NoCommercialable extension PWAD [`BringYourOwnUSB-SFW`](https://github.com/Perkedel/BringYourOwnUSB-SFW).
 
 ### (CLA) Contribution Results
 
 Once your submission have been accepted, your contributions must be licensed as follows:
 
-> Assets: CC4.0-BY-SA
+> Assets: CC4.0-BY-SA  
 > Codes: GNU GPL v3
 
 License that comes from yoinks will remain unchanged
@@ -72,8 +73,8 @@ Simply Clone this entire source code, then load this entire project folder as yo
 ## Get Started
 
 - Prepare your environment!
-	- Make empty folder dedicated for your contribution
-	- `cd ~/DoomProjectFolder` there
+	- Make empty folder dedicated for your contribution, e.g. `mkdir ~/DoomProjectFolder`
+	- `cd ~/DoomProjectFolder` (go into that folder) there
 	- `git clone https://github.com/Perkedel/Lah-Mboh`, and you shall see a new folder of this source code
 	- `cd Lah-Mboh`
 - Setup your Doom! Read [`INSTALL.md`](/INSTALL.md) file
@@ -84,6 +85,9 @@ Simply Clone this entire source code, then load this entire project folder as yo
 	- [SLADE](https://slade.mancubus.net/) for lump edits such as compiling ACS, Aligning & Adding Textures, compressing PNG, etc.
 	- [Sekaiju](https://openmidiproject.opal.ne.jp/) for MIDI
 	- Audacity for recording, audio edit, & coversion
+	- Pixelorama for Pixel art
+	- Krita or GIMP if you want more advanced raster art.
+	- Inkscape if you want vector art, but unfortunately, it does not render Pixel Perfect because rudimentary vector to raster conversion we all only know of!
 
 ## Submitting Levels
 
@@ -110,4 +114,7 @@ Use Pull Request! (**TODO: TUTORIAL PLS!**)
     - even if you provide equal or more arsenals.
 - Ensure all resource available to the brim, especially Health & Weapons! Repeated & consistent resource depletion in every New Game causes players to cheat!
 
-## Iyeah
+## Iyeah  
+
+
+

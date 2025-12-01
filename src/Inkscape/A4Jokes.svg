@@ -9,7 +9,7 @@
    id="svg1"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
    sodipodi:docname="A4Jokes.svg"
-   inkscape:export-filename="..\..\graphics\EmploymentFormMemeA4FilledJaneDoe.png"
+   inkscape:export-filename="..\..\graphics\EmploymentFormMemeA4JobVoiceActor.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -37,7 +37,7 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer7">
+     inkscape:current-layer="layer9">
     <inkscape:grid
        id="grid1"
        units="mm"
@@ -70,11 +70,35 @@
   <defs
      id="defs1">
     <rect
+       x="59.999998"
+       y="540.00002"
+       width="659.99998"
+       height="50.000002"
+       id="rect82" />
+    <rect
+       x="59.999998"
+       y="650.00002"
+       width="669.99998"
+       height="230.00001"
+       id="rect81" />
+    <rect
+       x="69.999998"
+       y="200.00001"
+       width="659.99998"
+       height="280.00001"
+       id="rect80" />
+    <rect
        x="269.99999"
        y="1000"
        width="360"
        height="100.00005"
        id="rect29" />
+    <rect
+       x="269.99999"
+       y="1000"
+       width="360"
+       height="100.00005"
+       id="rect77" />
   </defs>
   <g
      inkscape:label="DNBAssets"
@@ -109,7 +133,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="EmployementForm"
-     style="display:none">
+     style="display:inline">
     <g
        inkscape:groupmode="layer"
        id="layer7"
@@ -129,7 +153,7 @@
        inkscape:groupmode="layer"
        id="layer3"
        inkscape:label="Template1"
-       style="display:inline"
+       style="display:none"
        sodipodi:insensitive="true">
       <text
          xml:space="preserve"
@@ -203,31 +227,6 @@
            style="font-size:6.35px;fill:#ffffff;stroke-width:0.529167"
            x="103.1875"
            y="194.38622">Pendidikan</tspan></text>
-      <g
-         id="g99-4"
-         transform="matrix(0.07867754,0,0,0.07867754,10.711485,297.95396)"
-         style="display:inline;fill:#000000">
-        <path
-           id="path95-5"
-           style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-           d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
-        <g
-           id="g98-5"
-           style="fill:#000000">
-          <path
-             id="path96-1"
-             style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-             d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
-          <path
-             id="path97-7"
-             style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-             d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
-          <path
-             id="path98-1"
-             style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
-             d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
-        </g>
-      </g>
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
@@ -703,55 +702,83 @@
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Italic';text-align:start;text-anchor:start;fill:#1a1a1a;stroke-width:0.529167"
            x="115.09375"
            y="169.33334">(Jelaskan)</tspan></text>
-      <rect
-         style="display:inline;fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
-         id="rect28"
-         width="2.6458333"
-         height="26.458332"
-         x="66.145836"
-         y="264.58337" />
-      <text
-         xml:space="preserve"
-         id="text28"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect29);display:inline;fill:#000000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
-         transform="scale(0.26458333)"><tspan
-           x="270"
-           y="1011.8432"
-           id="tspan29">Dengan mengisi formulir ini, saya setuju bahwa:
+      <g
+         id="g42">
+        <g
+           id="g99-4"
+           transform="matrix(0.07867754,0,0,0.07867754,10.711485,297.95396)"
+           style="display:inline;fill:#000000">
+          <path
+             id="path95-5"
+             style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
+          <g
+             id="g98-5"
+             style="fill:#000000">
+            <path
+               id="path96-1"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
+            <path
+               id="path97-7"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
+            <path
+               id="path98-1"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
+          </g>
+        </g>
+        <rect
+           style="display:inline;fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+           id="rect28"
+           width="2.6458333"
+           height="26.458332"
+           x="66.145836"
+           y="264.58337" />
+        <text
+           xml:space="preserve"
+           id="text28"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect29);display:inline;fill:#000000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+           transform="scale(0.26458333)"><tspan
+             x="270"
+             y="1011.8432"
+             id="tspan51">Dengan mengisi formulir ini, saya setuju bahwa:
 </tspan><tspan
-           x="270"
-           y="1026.5099"
-           id="tspan46">- Data yang diisi berhak diproses oleh DNB
+             x="270"
+             y="1026.5099"
+             id="tspan52">- Data yang diisi berhak diproses oleh DNB
 </tspan><tspan
-           x="270"
-           y="1041.1766"
-           id="tspan48">- Tunduk terhadap ketetapan DNB
+             x="270"
+             y="1041.1766"
+             id="tspan53">- Tunduk terhadap ketetapan DNB
 </tspan><tspan
-           x="270"
-           y="1055.8434"
-           id="tspan49">- Data yang diisi benar &amp; jujur
+             x="270"
+             y="1055.8434"
+             id="tspan54">- Data yang diisi benar &amp; jujur
 </tspan><tspan
-           x="270"
-           y="1070.5101"
-           id="tspan50">- Telah mengisi dengan kesadaran penuh</tspan></text>
-      <rect
-         style="display:inline;fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
-         id="rect30"
-         width="31.750006"
-         height="26.458376"
-         x="166.6875"
-         y="264.58334" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43615px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.286346;stroke-linecap:round;stroke-linejoin:round"
-         x="182.4783"
-         y="263.12985"
-         id="text26-7"><tspan
-           sodipodi:role="line"
-           id="tspan26-6"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.286346"
+             x="270"
+             y="1070.5101"
+             id="tspan55">- Telah mengisi dengan kesadaran penuh</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+           id="rect30"
+           width="31.750006"
+           height="26.458376"
+           x="166.6875"
+           y="264.58334" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43615px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.286346;stroke-linecap:round;stroke-linejoin:round"
            x="182.4783"
-           y="263.12985">Setuju / Agree (TTD)</tspan></text>
+           y="263.12985"
+           id="text26-7"><tspan
+             sodipodi:role="line"
+             id="tspan26-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.286346"
+             x="182.4783"
+             y="263.12985">Setuju / Agree (TTD)</tspan></text>
+      </g>
       <text
          xml:space="preserve"
          style="font-weight:bold;font-size:4.23333px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
@@ -850,6 +877,192 @@
            style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Italic';text-align:start;text-anchor:start;fill:#1a1a1a;stroke-width:0.529167"
            x="74.872849"
            y="239.39078">(Diisi oleh penyelenggara)</tspan></text>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="Template2"
+       style="display:inline"
+       sodipodi:insensitive="true">
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:11.2889px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+         x="102.79239"
+         y="25.08956"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="fill:#000000;stroke-width:0.529167"
+           x="102.79239"
+           y="25.08956">FORMULIR LAMARAN KERJA</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1"
+         width="182.5625"
+         height="13.229169"
+         x="13.229166"
+         y="26.458332" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round"
+         x="15.874999"
+         y="37.041668"
+         id="text9"><tspan
+           sodipodi:role="line"
+           id="tspan9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.132292"
+           x="15.874999"
+           y="37.041668">Peran:</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect9"
+         width="182.5625"
+         height="87.312508"
+         x="13.229166"
+         y="42.333332" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="15.367"
+         y="49.460152"
+         id="text29"><tspan
+           sodipodi:role="line"
+           id="tspan28"
+           style="font-size:6.35px;fill:#000000;stroke:none;stroke-width:0.264583"
+           x="15.367"
+           y="49.460152">Kegiatan Kerja:</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect33"
+         width="182.5625"
+         height="74.083344"
+         x="13.229166"
+         y="161.39583" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="15.367"
+         y="168.52266"
+         id="text41"><tspan
+           sodipodi:role="line"
+           id="tspan41"
+           style="font-size:6.35px;fill:#000000;stroke:none;stroke-width:0.264583"
+           x="15.367"
+           y="168.52266">Kualifikasi Kerja:</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect41"
+         width="182.5625"
+         height="26.458332"
+         x="13.229166"
+         y="132.29167" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="15.367"
+         y="139.03537"
+         id="text42"><tspan
+           sodipodi:role="line"
+           id="tspan42"
+           style="font-size:6.35px;fill:#000000;stroke:none;stroke-width:0.264583"
+           x="15.367"
+           y="139.03537">Upah Minimum:</tspan></text>
+      <g
+         id="g77"
+         style="display:inline">
+        <g
+           id="g72"
+           transform="matrix(0.07867754,0,0,0.07867754,10.711485,297.95396)"
+           style="display:inline;fill:#000000">
+          <path
+             id="path42"
+             style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+             d="m 64,-320 c 0,0 -32,0 -32,32 v 64 c 0,0 0,32 32,32 l 96,-128 z m 128,0 -96,128 h 96 c 0,0 32,0 32,-32 v -64 c 0,0 0,-32 -32,-32 z" />
+          <g
+             id="g71"
+             style="fill:#000000">
+            <path
+               id="path43"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 272,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 32 c 0,0 64,0 64,-64 0,-64 -64,-64 -64,-64 h -32 z m 40,24 h 8 c 0,0 40,0 40,40 0,40 -40,40 -40,40 h -8 z" />
+            <path
+               id="path44"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 400,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 24 v -96 l 72,96 h 24 16 v -16 c -16,0 -16,-16 -16,-16 v -64 c 0,-16 16,-16 16,-16 v -16 h -16 -24 v 96 l -72,-96 h -24 z" />
+            <path
+               id="path71"
+               style="opacity:0.998844;fill:#000000;stroke:none;stroke-width:20;stroke-linecap:round;stroke-linejoin:round"
+               d="m 568,-320 v 16 c 0,0 16,0 16,16 v 64 c 0,0 0,16 -16,16 v 16 h 16 16 32 c 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 0,0 32,0 32,-32 0,-32 -32,-32 -32,-32 h -32 -16 z m 32,16 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z m 0,64 h 32 c 0,0 16,0 16,16 0,16 -16,16 -16,16 h -24 -8 z" />
+          </g>
+        </g>
+        <rect
+           style="display:inline;fill:#000000;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+           id="rect72"
+           width="2.6458333"
+           height="26.458332"
+           x="66.145836"
+           y="264.58337" />
+        <text
+           xml:space="preserve"
+           id="text76"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect77);display:inline;fill:#000000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+           transform="scale(0.26458333)"><tspan
+             x="270"
+             y="1011.8432"
+             id="tspan56">Dengan mengisi formulir ini, saya setuju bahwa:
+</tspan><tspan
+             x="270"
+             y="1026.5099"
+             id="tspan57">- Data yang diisi berhak diproses oleh DNB
+</tspan><tspan
+             x="270"
+             y="1041.1766"
+             id="tspan58">- Tunduk terhadap ketetapan DNB
+</tspan><tspan
+             x="270"
+             y="1055.8434"
+             id="tspan59">- Data yang diisi benar &amp; jujur
+</tspan><tspan
+             x="270"
+             y="1070.5101"
+             id="tspan60">- Telah mengisi dengan kesadaran penuh</tspan></text>
+        <rect
+           style="display:inline;fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round"
+           id="rect76"
+           width="31.750006"
+           height="26.458376"
+           x="166.6875"
+           y="264.58334" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.43615px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;stroke:none;stroke-width:0.286346;stroke-linecap:round;stroke-linejoin:round"
+           x="182.4783"
+           y="263.12985"
+           id="text77"><tspan
+             sodipodi:role="line"
+             id="tspan77"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.286346"
+             x="182.4783"
+             y="263.12985">Setuju / Agree (TTD)</tspan></text>
+      </g>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect78"
+         width="182.5625"
+         height="21.166666"
+         x="13.229166"
+         y="238.125" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         x="15.367"
+         y="245.29311"
+         id="text78"><tspan
+           sodipodi:role="line"
+           id="tspan78"
+           style="font-size:6.35px;fill:#000000;stroke:none;stroke-width:0.264583"
+           x="15.367"
+           y="245.29311">Nama &amp; ID KTP:</tspan></text>
     </g>
     <g
        inkscape:groupmode="layer"
@@ -1088,6 +1301,77 @@
              style="fill:#ff0000;stroke:none;stroke-width:0.529167"
              x="82.020836"
              y="240.77083">Overseer: Divisi pemalas</tspan></text>
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer9"
+         inkscape:label="ExampleJob1"
+         sodipodi:insensitive="true">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;display:inline;fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           x="52.91666"
+           y="37.041668"
+           id="text79"><tspan
+             sodipodi:role="line"
+             id="tspan79"
+             style="font-size:11.2889px;fill:#0000ff;stroke:none;stroke-width:0.264583"
+             x="52.91666"
+             y="37.041668">VA untuk ABCDXYZ</tspan></text>
+        <text
+           xml:space="preserve"
+           id="text80"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect80);display:inline;fill:#0000ff;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           transform="scale(0.26458333)"><tspan
+             x="70"
+             y="219.37981"
+             id="tspan61">- Mengisi suara untuk karakter disebutkan peran diatas
+</tspan><tspan
+             x="70"
+             y="243.37981"
+             id="tspan62">- Bermain peran untuk karakter disebutkan peran diatas
+</tspan><tspan
+             x="70"
+             y="267.37981"
+             id="tspan63">- Kegiatan terkait lainnya</tspan></text>
+        <text
+           xml:space="preserve"
+           id="text81"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect81);display:inline;fill:#0000ff;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           transform="scale(0.26458333)"><tspan
+             x="60"
+             y="669.37981"
+             id="tspan65">- Terima pekerjaan thdp karakter lainnya
+</tspan><tspan
+             x="60"
+             y="693.37981"
+             id="tspan66">- Berani untuk bekerja hingga Tier MAX (NSFW)
+</tspan><tspan
+             x="60"
+             y="717.37981"
+             id="tspan67">- Terima Program Preservasi Pita Suara / Voice </tspan><tspan
+             x="60"
+             y="741.37981"
+             id="tspan68">Preservation Program (mirip sampling utk. VOCALOID)
+</tspan><tspan
+             x="60"
+             y="765.37981"
+             id="tspan69">- Terima penggunaan oleh semua kalangan gamers hingga </tspan><tspan
+             x="60"
+             y="789.37981"
+             id="tspan70">Tier MAX (NSFW). Jika termasuk NSFL dapat bonus
+</tspan><tspan
+             x="60"
+             y="813.37981"
+             id="tspan71">- Menaati ketentuan dasar DNB</tspan></text>
+        <text
+           xml:space="preserve"
+           id="text82"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect82);display:inline;fill:#0000ff;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           transform="scale(0.26458333)"><tspan
+             x="60"
+             y="559.37981"
+             id="tspan72">~ 250 Pts. per jam; jika &lt;1 j, 2 pts. per kalimat</tspan></text>
       </g>
     </g>
   </g>
