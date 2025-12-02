@@ -70,7 +70,7 @@ but eh.. both disadvantages & advantages on each own idk.
 
 </details>
 
-## ~~Second~~ ~~Third~~ ~~4th~~ ~~3472983749th~~ Whateverth Ever Patch WAD designed exclusively for FreeDoom
+## ~~Second~~ ~~Third~~ ~~4th~~ ~~3472983749th~~ Whateverth Ever Patch WAD designed exclusively for ~~FreeDoom~~ Just any `DOOM` compatible IWADs
 
 *hmm, mega? will it be?*
 
@@ -85,6 +85,8 @@ No, it's [this](https://www.moddb.com/addons/freedoom-phase-2-freedom-on-earth1)
 Wait. I swear to God, I was initially intended this whole endeavour to **softly designed** for FreeDoom (which means you can use just `doom2.wad` if you prefer). 
 but I accidentally made it **exclusively designed** for FreeDoom instead (which means no more `doom2.wad` compatibility).  
 Blimey lmao, I used textures that turns out it's FreeDoom own thing haha! Too lazy to change back, too cool to avoid, such as tempered glass (`GLASS` textures).
+
+EDIT: I have added Compatibility for `doom2.wad`. Thancc [Newton from RAMP](https://ramp2024.doomproject.com/). All I have to do **is to add those Freedoom stuffs into regular original [Registered DOOM asset filter](filter/doom.id)**, yey!!!
 
 Uh.. I hope you okay with this right? At least FreeDoom is Gratis, Open Source (BSD Licensed), & Full Version..  
 And you just saw, it OutDoomed the Hell into Fraggelicious (**OutPizza'd the Hut into Ristorante**), surprisingly hehe.
