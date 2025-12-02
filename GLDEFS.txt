@@ -1067,7 +1067,7 @@ object OrangeSkull
 //SILVER KEYS
 pulselight SILVERKEY
 {
-    color 1.0 1.0 1.0 
+    color 1.0 1.0 1.0
     size 16
     secondarySize 18
     interval 2.0
