@@ -12,6 +12,7 @@ user int gurocontent = 0; // Gore
 user int derogatorycolor = 0; // n word moonman
 user int derogatorylgbt = 0; // neo gender phobia south park? family guy?
 user int derogatorynazi = 0; // anti-semitism wolfenstein
+user int piyePSA = 0; // Censorship Warning PSA. Enable to warn gamers in console & notification. Disable on screenshot & streaming!
 nosave int isNSFLrn = 0;
 
 // Flashing light safety
