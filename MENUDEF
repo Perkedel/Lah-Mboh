@@ -7,12 +7,14 @@ AddOptionMenu "OptionsMenu"
 {
 	Submenu "$NSFWOptionSay", "NSFWContentOptions"
 	Submenu "$SeizureSafetyTitle", "SeizureSafetyOptions"
+	Submenu "$NSFLOptionSay", "NSFLContentOptions"
 }
 
 AddOptionMenu "OptionsMenuSimple"
 {
 	Submenu "$NSFWOptionSay", "NSFWContentOptions"
 	Submenu "$SeizureSafetyTitle", "SeizureSafetyOptions"
+	//Submenu "$NSFLOptionSay", "NSFLContentOptions"
 }
 
 AddOptionMenu "GameplayOptions"
@@ -20,6 +22,7 @@ AddOptionMenu "GameplayOptions"
 	StaticText ""
 	Submenu "$NSFWOptionSay", "NSFWContentOptions"
 	Submenu "$SeizureSafetyTitle", "SeizureSafetyOptions"
+	Submenu "$NSFLOptionSay", "NSFLContentOptions"
 }
 
 AddOptionMenu "MessageOptions"
@@ -79,7 +82,7 @@ OptionMenu "NSFWContentOptions"
 	Option "NSFW", "nsfwcontent", "NSFWContentValues"
     LMBH_Tooltip "$NSFWTooltip"
 	//StaticTextSwitchable "$NSFWDescOff", "$NSFWDescOn", "nsfwcontent", "White"
-	
+
 	StaticText ""
 	StaticText "$NSFWRequire"
 	StaticText ""
@@ -93,6 +96,30 @@ OptionValue "NSFLContentValues"
 	0, "$NSFLOff"
 }
 
+OptionValue "guroContentValues"
+{
+    1, "$NSFLGuroOn"
+    0, "$NSFLGuroOff"
+}
+
+OptionValue "derogatoryNaziValues"
+{
+    1, "$NSFLNaziOn"
+    0, "$NSFLNaziOff"
+}
+
+OptionValue "derogatoryLgbtValues"
+{
+    1, "$NSFLLGBTOn"
+    0, "$NSFLLGBTOff"
+}
+
+OptionValue "derogatoryColorValues"
+{
+    1, "$NSFLNWordOn"
+    0, "$NSFLNWordOff"
+}
+
 OptionMenu "NSFLContentOptions"
 {
     class "LMBH_TF_TooltipOptionMenu"
@@ -100,12 +127,24 @@ OptionMenu "NSFLContentOptions"
 	Title "$NSFLContentTitle"
 	Caption "$NSFLContentTitle"
 
+	StaticText "$NSFLWarn", "Cyan"
+	StaticText ""
+
     // other variables modders can use for safety of the YouTubers & Twitch streamers
 	Option "$NSFLEnableSay", "nsflMaster", "nsflContentValues" // Master options for such community guideline violations below
-	Option "Guro", "gurocontent", "guroContentValues", "nsflMaster" // Gore bloods pretty much
-	Option "Nazi", "derogatorynazi", "derogatoryNaziValues", "nsflMaster" // turn off to Wolfenstein EU version. "What else do you remember?"
-	Option "Neo-gender against", "derogatorylgbt", "derogatoryLgbtValues", "nsflMaster" // threat to scronch is forbidden. catch & repurify!
-	Option "N-words", "derogatorycolor", "derogatoryColorValues", "nsflMaster" // Perkedel & affiliates forbid toner derogatory!
+	LMBH_Tooltip "$NSFLTooltip"
+	Option "$NSFLGuro", "gurocontent", "guroContentValues", "nsflMaster" // Gore bloods pretty much
+	LMBH_Tooltip ""
+	Option "$NSFLNazi", "derogatorynazi", "derogatoryNaziValues", "nsflMaster" // turn off to Wolfenstein EU version. "What else do you remember?"
+	LMBH_Tooltip ""
+	Option "$NSFLLGBT", "derogatorylgbt", "derogatoryLgbtValues", "nsflMaster" // threat to scronch is forbidden. catch & repurify!
+	LMBH_Tooltip ""
+	Option "$NSFLNWord", "derogatorycolor", "derogatoryColorValues", "nsflMaster" // Perkedel & affiliates forbid toner derogatory!
+	LMBH_Tooltip ""
+
+	StaticText ""
+	StaticText "$NSFLRequire"
+	StaticText ""
 }
 // end NSFL
 
