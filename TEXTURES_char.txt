@@ -1,4 +1,4 @@
-Texture "TDDMG", 192, 32
+Sprite "TDDMG", 192, 32
 {
 }
 
