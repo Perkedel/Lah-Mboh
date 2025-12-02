@@ -202,6 +202,24 @@ class LMBH_IwadDetect : StaticEventHandler
         /*
         This then can be used to check certain mods we gotta warn everyone for.
         */
+
+        // How about engine?
+        /*
+        Project Brutality VM Aborts if the GZDoom is above v4.11.3. How it knows is that it scan if option language string of MBF21 Strict is filled.
+        https://github.com/pa1nki113r/Project_Brutality/blob/fbd5534abf7cd19e8899205dd4923c0242bdead7/zscript/PBHandler.zc#L109
+        That's how when you see it's above v4.11.3.
+
+        https://github.com/ZDoom/gzdoom/issues/2759 btw
+
+        Now, how do I know the DOOM engine here?
+        So I can make counter & perhaps host the countered version..
+        */
+        if(StringTable.Localize("$OPTVAL_MBF21STRICT") == "OPTVAL_MBF21STRICT")
+        {
+            // Now tell you are using outdated GZDoom. From now on, this considered LOCKed version becomes the sole reason to run Project Brutality.
+            Console.printf(StringTable.Localize("$IWDT_LEGACY_PB"));
+            // Like it did with PB originally, but opposite, if this language string is missing until over v4.11.3
+        }
         Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
     }
 }
