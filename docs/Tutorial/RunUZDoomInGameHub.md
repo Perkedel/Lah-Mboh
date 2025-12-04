@@ -44,7 +44,7 @@ Enjoy!
 > [!WARN]
 > Always secure your Steam Account with its 2FA, **Steam Guard**!
 
-![Selaco Steam running successfully in GameHub playing 110m Run test Workshop mod](/src/screenshot/selaco-gamehub.jpg)
+![Selaco Steam running successfully in GameHub playing 110m Run test Workshop mod](/src/screenshot/Selaco-gamehub.jpg)
 
 You can also login the built-in Steam client feature with your Steam account. It'll fetch all your games you have license for in your Library.  
 With this, you can play various Windows games that works with Proton Wine, including Selaco, **complete with Workshop support**, yay!!!  
