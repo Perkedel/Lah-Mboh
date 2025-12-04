@@ -60,7 +60,7 @@ Always remember to use above latest version components said.
 | Your email address, because requires account **just to work** | Cost | 3 Pts. (US$ 2.99) & your Gmail account you bought it with (required for Google Play DRM for the first time), bla bla bla **just to work** |
 | Most High end devices, because you are emulating x86_64 on ARM | Compatible for | Is your phone manufacturer eligible to Google Play Service? We haven't tested it for MicroG rn tho. |
 | Setup the files manually, arguments, & update all who-knows depending components | Complexity | ... |
-| Samsung Galaxy S25+ (Same device) | Device | Samsung Galaxy S25+ (Same device) |
+| Samsung Galaxy S25+ (Same device) (SM-S936B) | Device | Samsung Galaxy S25+ (Same device) (SM-S936B) |
 | Qualcomm Snapdragon 8 Elite | SoC | Qualcomm Snapdragon 8 Elite |
 
 Sorry, [GameNative](https://github.com/utkarshdalal/GameNative) is only a Steam Winlator Android, cannot External EXE right now.  
