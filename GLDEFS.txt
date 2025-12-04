@@ -1911,3 +1911,85 @@ object ChubzCoin
 	frame CBZCH { light COINLIGHT }
 }
 // end Chubzdoomer
+
+Brightmap flat LMBHNEO1
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO2
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO3
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO4
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO5
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO6
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+/*
+Brightmap flat LMBHNEO7
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO8
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+
+Brightmap flat LMBHNEO9
+{
+    map "brightmaps/LMBHNEBM.png"
+}
+*/
+
+Brightmap flat LMBHNEO10
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO11
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO12
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO13
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO14
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO15
+{
+    map "brightmaps/LMBHNEBK.png"
+}
+
+Brightmap flat LMBHNEO16
+{
+    map "brightmaps/LMBHNEBK.png"
+}
