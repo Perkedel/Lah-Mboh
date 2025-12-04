@@ -47,7 +47,7 @@ Enjoy!
 ![Selaco Steam running successfully in GameHub playing 110m Run test Workshop mod](/src/screenshot/Selaco-gamehub.jpg)
 
 You can also login the built-in Steam client feature with your Steam account. It'll fetch all your games you have license for in your Library.  
-With this, you can play various Windows games that works with Proton Wine, including Selaco, **complete with Workshop support**, yay!!!  
+With this, you can play various Windows games that works with Proton Wine, including [Selaco](https://store.steampowered.com/app/1592280/Selaco/), **complete with Workshop support**, [yay](https://steamcommunity.com/sharedfiles/filedetails/?id=3261884421&searchtext=110)!!!  
 Always remember to use above latest version components said.
 
 ## Compare GameHubing vs. Delta Touch
