@@ -54,7 +54,7 @@ Always remember to use above latest version components said.
 
 | GameHub | Spec | Delta Touch |
 |---------|------|-------------|
-| ![Freedoom Phase 2 MAP01 on UZDoom v4.14.3 on GameHub](/src/screenshot/uzdoom-gamehub.png) | Screenshot | ![Freedoom Phase 2 MAP01 on GZDoom v4.14.2 on Delta Touch](/src/screenshot/freedom-delta.png) |
+| ![Freedoom Phase 2 MAP01 on UZDoom v4.14.3 on GameHub](/src/screenshot/uzdoom-gamehub-yay.png) | Screenshot | ![Freedoom Phase 2 MAP01 on GZDoom v4.14.2 on Delta Touch](/src/screenshot/freedom-delta.jpg) |
 | UZDoom v4.14.3 | Engine | GZDoom v4.14.2 |
 | GameHub v5.3.5 APK Directly | System | DeltaTouch v6.3 |
 | Your email address, because requires account **just to work** | Cost | 3 Pts. (US$ 2.99) & your Gmail account you bought it with (required for Google Play DRM for the first time), bla bla bla **just to work** |
