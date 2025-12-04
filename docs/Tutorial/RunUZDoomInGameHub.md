@@ -4,7 +4,7 @@ You can attempt running Windows version of your favourite Doom sourceports on An
 
 ![UZDoom on Android with GameHub running Freedoom Phase 1 MAP01](/src/screenshot/UZDoom-gamehub-yay.png)
 
-> [!CRITICAL]
+> [!CAUTION]
 > Requires login. For best security, use your public enterprise email address you have if you are the CEO of the enterprise, or use any sacrificial email.  
 > You can also use your Gmail (Sign in with Google).
 
@@ -41,7 +41,7 @@ Enjoy!
 
 ## Bonus
 
-> [!WARN]
+> [!WARNING]
 > Always secure your Steam Account with its 2FA, **Steam Guard**!
 
 ![Selaco Steam running successfully in GameHub playing 110m Run test Workshop mod](/src/screenshot/Selaco-gamehub.jpg)
