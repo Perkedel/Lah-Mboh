@@ -1464,6 +1464,18 @@ End Game,MNU_ENDGAME,Only Raze had it,Akhiri Permainan,,,,
 \c[green]You have Mala Petaka! Ayy yoo!,IWDT_MALAPETAKA,,\c[green]Anda memiliki Mala Petaka! Widih coy!,,,,
 \c[orange]ID24 Resources Detected!,IWDT_ID24RES,,\c[orange]ID24 Resources Terdeteksi!,,,,
 \c[green](((((\c[orange]IWAD DETECT\c[green]))))),IWDT_TITLENAME,,,,,,
+You are using outdated GZDoom <= v4.11.3. You should use v4.11.3 only for Project Brutality!,IWDT_LEGACY_PB,,Anda menggunakan GZDoom jadul \c[cyan]<= v4.11.3\c-. Sebaiknya gunakan v4.11.3 hanya utk Project Brutality!,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
 ,,,,,,,
 \c[orange]WARNING\c-: \c[yellow]NSFW\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW!!!\c-\nList of detected \c[yellow]NSFW\c- stuffs:,SFDT_NSFWFOUND,,\c[orange]PERINGATAN\c-: \c[yellow]NSFW\c- Mod PWAD PK3 terdeteksi! \c[red]SEGERA MATIKAN STREAMING!!!\c-\nDaftar barang \c[yellow]NSFW\c- terdeteksi:,,,,
 \c[red]CRITICAL\c-: \c[red]NSFL\c- Mod PWAD PK3 are being loaded! \c[red]TURN OFF STREAMING NOW & PURGE THE REPLAY OFF THOSE UNWORTHY PLATFORMS IMMEDIATELY!!!\c-\nList of detected \c[red]NSFL\c- stuffs:,SFDT_NSFLFOUND,,\c[red]BAHAYA\c-: \c[red]NSFL\c- Mod PWAD PK3 terdeteksi! \c[red]MATIKAN STREAMING & SEGERA HAPUS REPLAY DARI PLATFORM TIDAK PANTAS!!!\c-\nDaftar barang \c[red]NSFL\c- terdeteksi:,,,,
@@ -1946,11 +1958,3 @@ Use me? Terms & Conditions apply",DILEMMAVOICE,Just use text already bruh,"Bro /
 pake voice mu cuman gara2 “privacy”
 tapi juga benci AI? Mau lu apa sih?
 Pake gw? Syarat & Ketentuan berlaku",,,,
-"UZDoom is abbr of Ultimate Zdoom.
-However since you suggested,
-What Physical Exercise you’d wish
-to relate some elements to?",PE_DOOMER,joe_ilya & others somewhere boards,"UZDoom singkatan Ultimate Zdoom.
-Namun karena anda menyarankan,
-Physical Excercise apa yg Anda
-ingin kaitkan dengan
-beberapa unsur?",,,,

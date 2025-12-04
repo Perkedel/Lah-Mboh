@@ -65,3 +65,5 @@ Always remember to use above latest version components said.
 
 Sorry, [GameNative](https://github.com/utkarshdalal/GameNative) is only a Steam Winlator Android, cannot External EXE right now.  
 Sorry, [Freedoom for Android](https://github.com/emileb/Freedoom-for-android) is outdated. use Delta Touch instead.
+
+TODO: pls add UZDoom when DeltaTouch implemented it!

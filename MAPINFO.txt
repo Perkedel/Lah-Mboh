@@ -92,7 +92,6 @@ gameinfo
 		"$CANTUNPOLITIC",
 		"$YESCARBITE",
 		"$DILEMMAVOICE",
-		"$PE_DOOMER",
 		"$WHERDGOING"
 
 	addcreditpage =
