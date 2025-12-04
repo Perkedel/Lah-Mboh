@@ -9,3 +9,11 @@ This definition uses humanely recognizable syntax like many other plain text bas
 ## Conversion
 
 In SLADE, you can convert your old TEXTUREx lumps into new TEXTURES.txt plain text definitions. It's in the right click menu.
+
+## Multiple `TEXTURES` files
+
+You can have multiple TEXTURES tables. as long as the text file starts with `TEXTURES`, you can make as many as table file you want, e.g. to sort it like:
+- `TEXTURES-door.txt`
+- `TEXTURES-floor.txt`
+- `TEXTURES-sprites.txt`
+- etc. etc.

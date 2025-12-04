@@ -101,6 +101,7 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
 
 ## Extras
 
+- [Latest Doom Items DoomEdNums of UZDoom Source Code](https://github.com/UZDoom/UZDoom/blob/trunk/wadsrc/static/mapinfo/doomitems.txt).
 - [Latest Doom Items DoomEdNums of GZDoom Source Code](https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/doomitems.txt).
 - [Obsidian Plauge's ID24 Decorate](https://www.doomworld.com/forum/topic/147764-actors-id24-to-gzdoom-port/). Mapper's resource PWAD & Gameplay PWAD to add ID24 monster. Just load the id24res.wad alongside it.
 - [Rum & Raisin Doom boomtest.wad](https://github.com/GooberMan/rum-and-raisin-doom/blob/master/wads/boomtest.wad). Test MBF21! You can load this wad locally with DOOM I + II.
@@ -112,6 +113,7 @@ The followings are DoomEdNums for ID24 if you'd like to add ID24 experience with
     - https://www.doomworld.com/forum/topic/146943-id24-a-new-feature-set-standard/
     - https://drive.google.com/drive/folders/1Vw5fpmR0bVfFeHZ_xamVvn584xXtXp6M?usp=sharing Spec
     - https://youtu.be/TCCFdOl_CP0 Demo
+- [UZDoom Doom Items MAPINFO part](https://github.com/UZDoom/UZDoom/blob/trunk/wadsrc/static/mapinfo/doomitems.txt). Parts pertaining item Things in DOOM, **including ID24 stuffs**
 - [GZDoom Doom Items MAPINFO part](https://github.com/ZDoom/gzdoom/blob/master/wadsrc/static/mapinfo/doomitems.txt). Parts pertaining item Things in DOOM, **including ID24 stuffs**
 - [Freedoom FD24 commits so far](https://github.com/freedoom/freedoom/commits/fd24/). Commits of Freedoom's ID24 coverage called FD24 so far.
 
