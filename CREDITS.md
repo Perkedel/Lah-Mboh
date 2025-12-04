@@ -43,6 +43,7 @@ For the thing we've yoinked
     - [Another Checksum](https://github.com/marketplace/actions/checksums-action). thewh1teagle. ???. [Source Code](https://github.com/thewh1teagle/checksum)
     - [Moaoaoorooe checksum](https://github.com/marketplace/actions/generate-checksum). jmgilman. **MIT License**. [Source Code](https://github.com/jmgilman/actions-generate-checksum)
 - [Git Describe](https://github.com/marketplace/actions/gh-describe). proudust. **MIT License**. [Source Code](https://github.com/proudust/gh-describe), Grab Git tags & versioning status right now over GitHub API & let you insert it to your version file however you'd like. This is a GitHub Action module yea.
+- [Cameraman](https://forum.zdoom.org/viewtopic.php?t=73478). borogk. **MIT License**. [Source Code](https://github.com/borogk/cameraman), Create camera cutscene motionings for map B-roll footage video. It's a Mod PK3!
 
 ## Addons
 
