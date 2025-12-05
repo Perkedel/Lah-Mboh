@@ -67,6 +67,25 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
         Cvar.GetCvar("Level_Prohibition").SetString(_prohibit);
 
         Utter();
+
+        // Post Process Examples
+        // by map name
+        /*
+        switch(mapname)
+        {
+            case "MBOHTEST":
+                break;
+            default:
+                break;
+        }
+        */ // string does not work, only Name does, just see Zdoom's below!
+        if (mapname == "MBOHTEST")
+        {
+            // e.g., sticker change!
+            // SetThingArgument(111,a,b);
+            SetThingArgument(4223,0,4017); // set this sticker to use Mavrickle we got on decaldef!
+        }
+        // It it recommended to detect based on checksum, assuming the map won't change
     }
 
     // ZDoom itself already has its own LevelPostProcessor to fix issues
