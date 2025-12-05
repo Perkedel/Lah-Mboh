@@ -296,6 +296,15 @@ decal MVRKL 4017
 	Y-Scale 0.1
 }
 
+decal TDUAR 4018
+{
+    // Boom title card parody
+    pic "graphics/TeamDNBDuarBoomParody.png"
+    // pic in 320 x 200
+    X-Scale 0.5
+	Y-Scale 0.5
+}
+
 // Weapon Resource Wad
 
 Generator FireShot	                DoomImpScorch

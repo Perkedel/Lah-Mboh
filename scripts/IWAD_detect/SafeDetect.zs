@@ -30,6 +30,12 @@ class LMBH_SafeDetect : StaticEventHandler
 {
     Array<string> nsfwKeywords;
     Array<string> nsflKeywords;
+    Array<string> miscKeywords;
+
+    void add_nsfw(string that_is)
+    {
+
+    }
 
     override void OnEngineInitialize()
     {
@@ -45,7 +51,9 @@ class LMBH_SafeDetect : StaticEventHandler
         // initialize
         Cvar.GetCvar('isNSFWrn').SetInt(0);
         Cvar.GetCvar('isNSFLrn').SetInt(0);
-
+        Cvar.GetCvar('Safe_Detect_NSFW').SetString("");
+        Cvar.GetCvar('Safe_Detect_NSFL').SetString("");
+        Cvar.GetCvar('Safe_Detect_Total').SetString("");
 
 
         // H
@@ -73,6 +81,7 @@ class LMBH_SafeDetect : StaticEventHandler
         if(Wads.FindLump("FURTITL",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("FURDM01", 0, Wads.AnyNameSpace) > -1)
         {
             Console.printf("FURDOOM DETECTED YEY\n\c[orange]ADVISE\c-: Always excercise cautions when going to broadcast this Mod PK3.");
+            miscKeywords.push("Furdoom");
         }
 
         // NSFL now..
@@ -99,6 +108,59 @@ class LMBH_SafeDetect : StaticEventHandler
             Cvar.GetCvar('isNSFLrn').SetInt(1);
             nsflKeywords.push("KFDoom");
         }
+
+        // Compile to Cvar
+        //Cvar.GetCvar('Safe_Detect_NSFW').SetString(nsfwKeywords.join(" "));
+        //Cvar.GetCvar('Safe_Detect_NSFL').SetString(nsflKeywords.join(" "));
+        // https://zdoom.org/wiki/Dynamic_arrays
+        string _buildNSFW = "";
+        string _buildNSFL = "";
+        string _buildTotal = "";
+        if(miscKeywords.size() > 0)
+        {
+            _buildTotal = miscKeywords[0];
+            if(miscKeywords.size() > 1)
+                for(int i = 1; i < miscKeywords.size(); i++)
+                {
+                    //_buildNSFL += nsflKeywords[i] + " ";
+                    _buildTotal = _buildTotal .. " " .. miscKeywords[i];
+                }
+        }
+        if(nsfwKeywords.size() > 0)
+        {
+            _buildNSFW = nsfwKeywords[0];
+            if(nsfwKeywords.size() > 1)
+                for(int i = 1; i < nsfwKeywords.size(); i++)
+                {
+                    //_buildNSFW += nsfwKeywords[i] + " ";
+                    _buildNSFW = _buildNSFW .. " " .. nsfwKeywords[i];
+                    //_buildTotal = _buildTotal .. " " .. nsfwKeywords[i];
+                }
+            if(_buildTotal == "")
+                _buildTotal = _buildNSFW;
+            else
+                _buildTotal = _buildTotal .. " " .. _buildNSFW;
+        }
+        if(nsflKeywords.size() > 0)
+        {
+            _buildNSFL = nsflKeywords[0];
+            if(nsflKeywords.size() > 1)
+                for(int i = 1; i < nsflKeywords.size(); i++)
+                {
+                    //_buildNSFL += nsflKeywords[i] + " ";
+                    _buildNSFL = _buildNSFL .. " " .. nsflKeywords[i];
+                    //_buildTotal = _buildTotal .. " " .. nsflKeywords[i];
+                }
+            if(_buildTotal == "")
+                _buildTotal = _buildNSFL;
+            else
+                _buildTotal = _buildTotal .. " " .. _buildNSFL;
+        }
+        //_buildTotal = _buildTotal .. " " .. _buildNSFW .. " " .. _buildNSFL;
+
+        Cvar.GetCvar('Safe_Detect_NSFW').SetString(_buildNSFW);
+        Cvar.GetCvar('Safe_Detect_NSFL').SetString(_buildNSFL);
+        Cvar.GetCvar('Safe_Detect_Total').SetString(_buildTotal);
 
         // Verdicts!
         if(isNSFWrn > 0)
