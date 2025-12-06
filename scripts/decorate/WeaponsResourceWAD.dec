@@ -2120,12 +2120,12 @@ ACTOR FlakCannon : Weapon 25023
       Loop
    Fire:
       FLAK D 0 A_PlayWeaponSound("weapons/flaks")
-      FLAK B 0 A_FireCustomMissile(Chunk1,0,1,15,-18)
-      FLAK B 0 A_FireCustomMissile(Chunk2,0,1,18,13)
-      FLAK B 0 A_FireCustomMissile(Chunk3,0,1,13,5)
-      FLAK B 0 A_FireCustomMissile(Chunk4,0,1,0,-15)
-      FLAK B 0 A_FireCustomMissile(Chunk2,0,1,-18,12)
-      FLAK B 0 A_FireCustomMissile(Chunk1,0,0,-13,8)
+      FLAK B 0 A_FireCustomMissile(FlakChunk1,0,1,15,-18)
+      FLAK B 0 A_FireCustomMissile(FlakChunk2,0,1,18,13)
+      FLAK B 0 A_FireCustomMissile(FlakChunk3,0,1,13,5)
+      FLAK B 0 A_FireCustomMissile(FlakChunk4,0,1,0,-15)
+      FLAK B 0 A_FireCustomMissile(FlakChunk2,0,1,-18,12)
+      FLAK B 0 A_FireCustomMissile(FlakChunk1,0,0,-13,8)
       FLAK D 7 Bright
       FLAK E 7 Bright
       FLAK A 7
@@ -2137,7 +2137,8 @@ ACTOR FlakCannon : Weapon 25023
    }
 }
 
-ACTOR Chunk1
+// pls Flak first!!!!!!!!!!!!!!!!!!!!!!
+ACTOR FlakChunk1
 {
    Radius 3
    Height 4
@@ -2160,7 +2161,7 @@ ACTOR Chunk1
    }
 }
 
-ACTOR Chunk2 : Chunk1
+ACTOR FlakChunk2 : FlakChunk1
 {
    States
    {
@@ -2170,7 +2171,7 @@ ACTOR Chunk2 : Chunk1
    }
 }
 
-ACTOR Chunk3 : Chunk1
+ACTOR FlakChunk3 : FlakChunk1
 {
     States
     {
@@ -2180,7 +2181,7 @@ ACTOR Chunk3 : Chunk1
     }
 }
 
-ACTOR Chunk4 : Chunk1
+ACTOR FlakChunk4 : FlakChunk1
 {
     States
     {
@@ -3254,7 +3255,7 @@ ACTOR CrystalGun : Weapon 25036
    Weapon.SelectionOrder 25036
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Crystal Gun!"
-   Weapon.AmmoType "Crystal"
+   Weapon.AmmoType "CrystalAmmo"
    Weapon.AmmoGive 6
    Weapon.AmmoUse 1
    States
@@ -3336,7 +3337,8 @@ ACTOR CrystalShotTrail
    }
 }
 
-ACTOR Crystal : Ammo 25037
+// do not just `Crystal`!!! add ammo!!!
+ACTOR CrystalAmmo : Ammo 25037
 {
    RENDERSTYLE ADD
    ALPHA 1.0
@@ -3354,7 +3356,7 @@ ACTOR Crystal : Ammo 25037
    }
 }
 
-ACTOR CrystalAmount : Crystal 25038
+ACTOR CrystalAmount : CrystalAmmo 25038
 {
    Inventory.Amount 15
    Inventory.PickupMessage "Picked up an amount of ice crystals."
