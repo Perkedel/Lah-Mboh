@@ -63,13 +63,13 @@ RktzRld   RktzRld
 
          // Shell Sounds //
 
-$random SHLCLT  { SHLCLT1 SHLCLT2 SHLCLT3 } 
+$random SHLCLT  { SHLCLT1 SHLCLT2 SHLCLT3 }
 $limit  SHLCLT  5
 SHLCLT1	SHLCLT1
 SHLCLT2	SHLCLT2
 SHLCLT3	SHLCLT3
 
-$random weapons/akcasing  { weapons/akcasing1 weapons/akcasing2 weapons/akcasing3 } 
+$random weapons/akcasing  { weapons/akcasing1 weapons/akcasing2 weapons/akcasing3 }
 $limit weapons/akcasing  5
 weapons/akcasing1	akcasin1
 weapons/akcasing2	akcasin2
@@ -115,6 +115,18 @@ jackbomb/throw		JBOMBFIR
 jackbomb/explode	JBOMBEXP
 jackbomb/music		JBOMBMUS
 
+// Let's add the sound for Jackbomb guy?
+// https://zdoom.org/wiki/Player_sounds
+$playeralias IchorTestPlayer male *usefail funny/fartBret
+$playeralias IchorTestPlayer female *usefail funny/fartBret
+$playeralias IchorTestPlayer other *usefail funny/fartBret
+$playeralias IchorTestPlayer male *death funny/fartReverb
+$playeralias IchorTestPlayer female *death funny/fartReverb
+$playeralias IchorTestPlayer other *death funny/fartReverb
+$playeralias IchorTestPlayer male *jump jackbomb/throw
+$playeralias IchorTestPlayer female *jump jackbomb/throw
+$playeralias IchorTestPlayer other *jump jackbomb/throw
+
 // Flare Touch Scalliano
 Flare/Light	FLARLITE
 Flare/Loop	FLARLOOP
@@ -150,7 +162,7 @@ pipe/explode4 dspipex4
 SPASCOC		SPASCOC2
 SPASFIR		SPASFIRE
 SPASLOA		SPASLOAD
-SPASCLC     SPASCLIC   
+SPASCLC     SPASCLIC
 
 // Duke Nukem Tanks!!! Xim, Enjay, Devloek
 // Missile tank

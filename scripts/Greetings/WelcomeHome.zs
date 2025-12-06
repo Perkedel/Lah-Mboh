@@ -173,9 +173,9 @@ class LMBH_WelcomeHome : EventHandler
 		string relocalize_reactionary = StringTable.localize(reactionary);
 		string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
 		totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
-		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
-		Console.Printf(String.Format("%s",totalSay));
-		Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+		//Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
+		//Console.Printf(String.Format("%s",totalSay));
+		//Console.printf(StringTable.Localize("$INTERNAL_BARRIER_MINUS"));
 		//players[playerNumber].SetLogText(totalSay);
 		players[playerNumber].SetSubtitleNumber(124001);
 
@@ -218,7 +218,7 @@ class LMBH_WelcomeHome : EventHandler
 		    string relocalize_reactionary = StringTable.localize(reactionary);
 		    string base_welcome = StringTable.localize("$GREETABLE_BASE_WELCOME");
 		    string totalSay = String.Format(base_welcome, relocalize_friendlyName, relocalize_playerClass, relocalize_reactionary);
-			Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, totalSay, DTA_Clean, true);
+			//Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, posX, posY, totalSay, DTA_Clean, true);
 
 			// each tick is 35. what to do?!
 			// https://zdoom.org/wiki/Definitions#Units_of_time

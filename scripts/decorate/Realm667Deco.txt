@@ -47,7 +47,7 @@ Weapon.AmmoGive2 5
 Weapon.AmmoUse1 1
 Weapon.AmmoUse2 1
 Weapon.KickBack 400
-Inventory.PickupSound "Misc/w_pkup" 
+Inventory.PickupSound "Misc/w_pkup"
 Inventory.PickupMessage "Picked up a SPAS-12."
 Tag "Franchi SPAS-12"
 States
@@ -55,7 +55,7 @@ States
 	Ready:
 		SPA2 A 1 A_WeaponReady(WRF_ALLOWRELOAD)
 		Loop
-	Deselect: 
+	Deselect:
 		SPA2 A 1 A_Lower
         TNT1 A 0 A_Lower
 		Loop
@@ -102,7 +102,7 @@ States
    	Pump:
 		SPA2 A 1
 		SPA2 B 3
-		SPA2 CD 2 
+		SPA2 CD 2
 		SPA2 A 0 A_PlaySound("SPASCOC")
 		SPA2 EF 1
 		SPA2 H 4
@@ -110,7 +110,7 @@ States
 		SPA2 FEDC 2
 		SPA2 B 2
 		SPA2 A 3 A_ReFire
-		Goto Ready 
+		Goto Ready
 	AltFire:
 	    SPA2 A 1
 		SPA2 A 0 A_JumpIfInventory("SPASToggleFire",1,"PumpToggle")
@@ -166,7 +166,7 @@ States
         SPAR EDCBA 1
 		SPA2 A 1
 		SPA2 B 3
-		SPA2 CD 2 
+		SPA2 CD 2
 		SPA2 A 0 A_PlaySound("SPASCOC")
 		SPA2 EF 1 A_TakeInventory("SPASEmptyChamber",99)
 		SPA2 H 4
@@ -195,8 +195,8 @@ ACTOR SPASToggleFire : Inventory { Inventory.MaxAmount 1 }
 ACTOR SPASEmptyChamber : Inventory { Inventory.MaxAmount 1 }
 
 ACTOR SPASPuff : BulletPuff
-{ 
-	DamageType "Shotgun" 
+{
+	DamageType "Shotgun"
 }
 
 // Haste Sphere. Scalliano, originally from id Software's Quake 3
@@ -671,10 +671,10 @@ ACTOR RageSphere : PowerupGiver 32703
 	RenderStyle Translucent
 	Alpha 0.8
 	//FloatBobStrength 0.1
-	
+
 		States
 		{
-			Spawn:	
+			Spawn:
 				RAGS ABCDCB 5 Bright
 				Loop
 		}
@@ -994,7 +994,7 @@ Actor ATKSyringe
 	{
 	Spawn:
 		TNT1 A 0 Nodelay A_SetUserVar("user_theta",0)
-		NEDL ABCD 3 
+		NEDL ABCD 3
 		goto Spawn+1
 	Xdeath:
 		TNT1 A 0 A_Explode (2,8,XF_NOSPLASH)
@@ -1080,7 +1080,7 @@ Actor SmallMineral : EclipseMineralBase 31441
 	//$Category Powerups
 	//$Sprite TSBLA0
 	Inventory.PickupMessage "You got a Small Mineral!"
-	
+
 	States
 	{
 	Spawn:
@@ -1135,7 +1135,7 @@ Actor BigMineral : EclipseMineralBase 31442
 	//$Category Powerups
 	//$Sprite TBBLA0
 	Inventory.PickupMessage "You got a Big Mineral!"
-	
+
 	States
 	{
     Spawn:
@@ -1293,7 +1293,7 @@ Summon: JackBomb
 Ammo: JackBombAmmo (ammo comes from the weapon pickups much like Hexen's flechette)
 Alt-Fire: Yes (drops jackbomb instead of throws it)
 Powered Mode: No
-Added States: Yes for monsters. Also, custom damage factors for the player (to make him immune to the minor damage caused by 
+Added States: Yes for monsters. Also, custom damage factors for the player (to make him immune to the minor damage caused by
 the luring effect)
 
 --- Credits ---
@@ -1305,9 +1305,9 @@ Sprites: American McGee's Alice
 Idea Base: World's Most Interesting Bomb
 
 --- Description ---
-This is the jackbomb from American McGee's Alice. However, the behavior is quite different. Instead of just a bomb that goes 
-off after a delay, it acts like a lure to draw any nearby enemies towards it in a vain attempt to attack it. After the lovely 
-song ends and the jack pops up, it explodes. The range and damage is devastating, so it would be most wise to watch the fun 
+This is the jackbomb from American McGee's Alice. However, the behavior is quite different. Instead of just a bomb that goes
+off after a delay, it acts like a lure to draw any nearby enemies towards it in a vain attempt to attack it. After the lovely
+song ends and the jack pops up, it explodes. The range and damage is devastating, so it would be most wise to watch the fun
 from a distance. Use around large crowds for maximum effect and laughs.
 */
 // was no DoomEdNum
@@ -1696,9 +1696,9 @@ ACTOR JackBomb1
     States
     {
     Spawn:
-	TNT1 A 0 
+	TNT1 A 0
 	TNT1 A 0 ThrustThingZ(0,random(10,15),0,1)
-        JBTH A 1 Bright 
+        JBTH A 1 Bright
         Goto Spawn+2
     Death:
 	TNT1 A 0 A_SpawnItemEx("JackBombProj",0,0,0,0,0,0,0,32,0)
@@ -1722,9 +1722,9 @@ ACTOR JackBomb4 : JackBomb1
     States
     {
     Spawn:
-	TNT1 A 0 
+	TNT1 A 0
 	TNT1 A 0 ThrustThingZ(0,random(12,14),0,1)
-        JBTH A 1 Bright 
+        JBTH A 1 Bright
         Goto Spawn+2
     }
 }
@@ -1745,9 +1745,9 @@ ACTOR JackBomb7 : JackBomb1
     States
     {
     Spawn:
-	TNT1 A 0 
+	TNT1 A 0
 	TNT1 A 0 ThrustThingZ(0,random(14,16),0,1)
-        JBTH A 1 Bright 
+        JBTH A 1 Bright
         Goto Spawn+2
     }
 }
@@ -1768,9 +1768,9 @@ ACTOR JackBombA : JackBomb1
     States
     {
     Spawn:
-	TNT1 A 0 
+	TNT1 A 0
 	TNT1 A 0 ThrustThingZ(0,random(16,18),0,1)
-        JBTH A 1 Bright 
+        JBTH A 1 Bright
         Goto Spawn+2
     }
 }
@@ -1791,9 +1791,9 @@ ACTOR JackBombD : JackBomb1
     States
     {
     Spawn:
-	TNT1 A 0 
+	TNT1 A 0
 	TNT1 A 0 ThrustThingZ(0,random(18,20),0,1)
-        JBTH A 1 Bright 
+        JBTH A 1 Bright
         Goto Spawn+2
     }
 }
@@ -1833,7 +1833,7 @@ ACTOR JackBombChaos1
     +FORCERADIUSDMG
     +NODAMAGETHRUST
     PROJECTILE
-    DamageType ChaosExpl1
+    DamageType "ChaosExpl1"
     States
     {
     Spawn:
@@ -1850,7 +1850,7 @@ ACTOR JackBombChaos2
     +FORCERADIUSDMG
     +NODAMAGETHRUST
     PROJECTILE
-    DamageType ChaosExpl2
+    DamageType "ChaosExpl2"
     States
     {
     Spawn:
@@ -1906,7 +1906,7 @@ ACTOR ExplosionBit
     +RIPPER
     +DONTSPLASH
     +BLOODLESSIMPACT
-    BounceType "Doom" 
+    BounceType "Doom"
     Mass 1
     Radius 8
     Height 6
@@ -1918,7 +1918,7 @@ ACTOR ExplosionBit
 	WRBL P 1 Bright A_Gravity
 	Loop
     Death:
-	WRBL P 40 Bright 
+	WRBL P 40 Bright
 	Stop
     }
 }
@@ -1930,10 +1930,12 @@ ACTOR IchorTestPlayer : DoomPlayer //replaces DoomPlayer
 	Player.startitem "JackBomb"
 	Player.startitem "JackBombAmmo" 10
 	Player.StartItem "Fist"
+	Player.SoundClass "IchorTestPlayer"
     DamageFactor "ChaosExpl1", 0
     DamageFactor "ChaosExpl2", 0
     PainChance "ChaosExpl1", 0
     PainChance "ChaosExpl2", 0
+    SelfDamageFactor 0
 }
 // Jesus Christ! TestLevel!! And even they lost the source code itself so no more rebaking!
 
@@ -2174,7 +2176,7 @@ ACTOR TrafficCone 26220
 	+NOBLOOD
 	+DONTGIB
 	+NOTAUTOAIMED
-	//+BUDDHA // Not supported by Zandronum 
+	//+BUDDHA // Not supported by Zandronum
 
 	// extra from crates
 	+NOICEDEATH
@@ -2324,7 +2326,7 @@ Sprite Edit: Captain Toenail
 Idea Base: Exploding fire extinguishers in Duke Nukem 3D
 
 Description:
-	A fire extinguisher. Explodes when shot. Blue cryo extinguishers freeze 
+	A fire extinguisher. Explodes when shot. Blue cryo extinguishers freeze
 	targets. Place wall extinguishers directly on linedef with zheight. Floor
 	extinguishers are placed as regular props. Can be toggled to be pushable.
 */
@@ -2339,7 +2341,7 @@ ACTOR FireExtinguisher 28410
 	Height 28
 	Scale 0.6
 	Mass 0x7FFFFFFF
-	
+
 	+SHOOTABLE
 	+NOBLOOD
 	+DONTGIB
@@ -2348,14 +2350,14 @@ ACTOR FireExtinguisher 28410
 	+FIXMAPTHINGPOS
 	+DONTFALL
 	//+DONTTHRUST // Zandronum does not support this flag. Using Mass 0x7FFFFFFF instead.
-  
+
 	DeathSound "world/barrelx"
 	Obituary "%o was extinguished."
 
 		States
 		{
 			Spawn:
-				FEXT A -1 
+				FEXT A -1
 				Stop
 			Death:
 				FEXT B 4
@@ -2377,7 +2379,7 @@ ACTOR CryoExtinguisher : FireExtinguisher 28411
 		States
 		{
 			Spawn:
-				CEXT A -1 
+				CEXT A -1
 				Stop
 			Death:
 				CEXT B 4
@@ -2401,7 +2403,7 @@ ACTOR FireExtinguisherFloor : FireExtinguisher 28413
 	//$Arg0Enum falsetrue
 
 	Mass 500
-	
+
 	+SOLID
 	-NOGRAVITY
 	-FIXMAPTHINGPOS
@@ -2439,7 +2441,7 @@ ACTOR CryoExtinguisherFloor : CryoExtinguisher 28414
 	//$Arg0Enum falsetrue
 
 	Mass 500
-	
+
 	+SOLID
 	-NOGRAVITY
 	-FIXMAPTHINGPOS
@@ -2697,7 +2699,7 @@ actor GreenCard : DoomKey
 {
 	//$Category Keys
 	//$Title Green Keycard
-	Inventory.PickupMessage "$VDK_GOTGREENCARD" 
+	Inventory.PickupMessage "$VDK_GOTGREENCARD"
 	Inventory.Icon "I_GRNCRD"
 	States
 	{
@@ -2939,7 +2941,7 @@ States
 		A_WeaponReady(WRF_NOSECONDARY);
 		if(CountInv("Xim_PipebombAmmo")==0)
 			{ return state("ReadyNoAmmo"); }
-		return state(""); 
+		return state("");
 		}
 		Loop
 	ReadyNoAmmo:
@@ -2948,7 +2950,7 @@ States
 		A_WeaponReady(WRF_NOPRIMARY|WRF_NOSECONDARY);
 		if(CountInv("Xim_PipebombAmmo")>0)
 			{ return state("Ready"); }
-		return state(""); 
+		return state("");
 		}
 		Loop
 	ReadyDetonator:
@@ -3103,7 +3105,7 @@ States
 			{ return state("StopRolling"); }
 		else if(CountInv("Xim_DetonateSignal",AAPTR_TARGET))
 			{ return state("Detonate"); }
-		return state(""); 
+		return state("");
 		}
 		goto Spawn+1
 	Death:
@@ -3115,7 +3117,7 @@ States
 		A_SetGravity(1.0);
 		if(CountInv("Xim_DetonateSignal",AAPTR_TARGET)||z>=ceilingz)
 			{ return state("Detonate"); }
-		return state(""); 
+		return state("");
 		}
 		Loop
 	Pain:
@@ -3365,7 +3367,7 @@ ACTOR FireCauldron 27420
 	Radius 28
 	Height 28
 	+SOLID
-  
+
 		States
 		{
 			Spawn:
@@ -3387,7 +3389,7 @@ ACTOR FireCauldronGreen : FireCauldron 27421
 {
 	//$Title Fire Cauldron Green
 	//$Sprite LAVCD0
-	
+
 		States
 		{
 			Spawn:
@@ -3409,7 +3411,7 @@ ACTOR FireCauldronOrange : FireCauldron 27422
 {
 	//$Title Fire Cauldron Orange
 	//$Sprite LAVCG0
-	
+
 		States
 		{
 			Spawn:
@@ -3429,7 +3431,7 @@ ACTOR FireCauldronOrange : FireCauldron 27422
 ACTOR CoalSparkSpawner
 {
 	+NOINTERACTION
-	
+
 		States
 		{
 		Spawn:
@@ -3451,7 +3453,7 @@ ACTOR CoalSpark
 		States
 		{
 		Spawn:
-			PUF2 D 2 A_SetAngle (random (0, 360)) 
+			PUF2 D 2 A_SetAngle (random (0, 360))
 			PUF2 E 2 A_Recoil (0.3)
 			FX10 B 0 A_FadeOut (0.1)
 			Loop
