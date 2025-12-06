@@ -305,6 +305,24 @@ decal TDUAR 4018
 	Y-Scale 0.5
 }
 
+decal DMLMBH 4019
+{
+    // DOOM logo attempt
+    pic "graphics/Attempt_Doom_logo.png"
+    // pic in 1024 x 1024
+    X-Scale 0.1
+	Y-Scale 0.1
+}
+
+decal WDFSNBL 4020
+{
+    // Wadfusion be like
+    pic "graphics/WADFUSION_be-like.png"
+    // pic in 1024 x 1024
+    X-Scale 0.1
+	Y-Scale 0.1
+}
+
 // Weapon Resource Wad
 
 Generator FireShot	                DoomImpScorch

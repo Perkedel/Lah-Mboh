@@ -85,10 +85,39 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
             // SetThingArgument(111,a,b);
             SetThingArgument(4223,0,4017); // set this sticker to use Mavrickle we got on decaldef!
 
-            // If you load freedoom, add `SOLID SOLID SOLID` sticker right in the waiting room also!
+            // TC Detections!!!!
+
             if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("Furdoom") > -1)
             {
+                // If you load freedoom, add `SOLID SOLID SOLID` sticker right in the waiting room also!
                 SetThingArgument(4225,0,42001); // set this sticker to SOLID SOLID SOLID!
+            } else {
+                // No TC found! Usual DOOM / Freedoom it is.
+                if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") > -1 && Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") <= 0)
+                {
+                    SetThingArgument(4225,0,4016); // You are playing Freedoom. Who wants to have a FREEDOOM (freedom, free from invasion)?
+                }
+                else if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("WADFUSION") > -1)
+                {
+                    SetThingArgument(4225,0,4020); // You are playing Wadfusion. Wadfusion be like..
+                }
+                else if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("DOOM") > -1)
+                {
+                    SetThingArgument(4225,0,4019); // You are playing usual DOOM. Here's DOOM logo attemption
+                }
+                else if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("HERETIC") > -1)
+                {
+                    SetThingArgument(4225,0,4017); // You are playing Heretic.
+                }
+                else if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("HEXEN") > -1)
+                {
+                    SetThingArgument(4225,0,4017); // You are playing Hexen.
+                }
+                else
+                {
+                    // Unknown IWAD!!!
+                    SetThingArgument(4225,0,4017); // set this sticker to SOLID SOLID SOLID!
+                }
             }
         }
         // It it recommended to detect based on checksum, assuming the map won't change

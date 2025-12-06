@@ -250,6 +250,7 @@ For the thing we've yoinked
 - [JimmyFontPack](https://forum.zdoom.org/viewtopic.php?t=33409). Jimmy Squared. ???. **PLS YOINK SOON!!!** Collection of Fonts for your varied experience of DOOM Text, from the creator of [Adventure of Square](http://adventuresofsquare.com/) ([right?](https://bigbrikgames.itch.io/square)).
 - Bad Explosion. nthompson. ???. The Freesound file is gone! I still have one.
 - [Corruption Cards](https://forum.zdoom.org/viewtopic.php?t=67939) ([ModDB](https://www.moddb.com/mods/corruption-cards)). CutmanMike. ???. Inspire only!, Corruption Cards allows you to add more cards. It seems tho, if you add your own `Card` inheritance on your Zscript stuffs, it makes that mod depend on the Corruption Cards permanently, until you commented those out back. If you still have `Card` inherited cards without the Corruption Cards mod loaded, it'll crash. Just the `CCARDS.txt` lump won't be enough. Eh, thancc for the inspiration anyway. I was wanted to reflow Car Level list on here. Maybe I should learn how to read `MAPINFO` myself?
+- [Sword United Meme](https://imgflip.com/memegenerator/156913933/Swords-united). imgflip. ???. that sword meet on table agreement meme.
 
 ## Sounds
 
