@@ -323,6 +323,15 @@ decal WDFSNBL 4020
 	Y-Scale 0.1
 }
 
+decal DeepRBHGoes 4021
+{
+    // Wadfusion be like
+    pic "graphics/DeepRabbitHoleGoes.png"
+    // pic in 1024 x 1024
+    X-Scale 0.1
+	Y-Scale 0.1
+}
+
 // Weapon Resource Wad
 
 Generator FireShot	                DoomImpScorch
