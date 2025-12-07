@@ -1553,3 +1553,7 @@ class WeirdLevelPostProcessor: LevelPostProcessor
 // https://doomwiki.org/wiki/AASTINKY
 // https://zdoom.org/wiki/Classes:RandomSpawner
 // https://zdoom.org/wiki/CCMDs
+// https://eternity.youfailit.net/wiki/Linked_portal#Setting_up_wall_portals
+// https://zdoom.org/wiki/Line_SetPortal
+// https://zdoom.org/wiki/Structs:LinePortal
+// https://zdoom.org/wiki/Structs:SectorPortal
