@@ -32,9 +32,23 @@ class LMBH_SafeDetect : StaticEventHandler
     Array<string> nsflKeywords;
     Array<string> miscKeywords;
 
-    void add_nsfw(string that_is)
+    static void add_keywords(string that_is, int intoThe)
     {
+        switch(intoThe)
+        {
+            case 0:
+                //nsfwKeywords.push(that_is);
+                break;
+            case 1:
+                //nsflKeywords.push(that_is);
+                break;
+            case 2:
+                //miscKeywords.push(that_is);
+                break;
+        }
+        // Zed. embarrassing simple scrutinizable, Jesus Christ! I need lawyers!
 
+        // TODO: network processable?
     }
 
     override void OnEngineInitialize()
