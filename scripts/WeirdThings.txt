@@ -1557,3 +1557,4 @@ class WeirdLevelPostProcessor: LevelPostProcessor
 // https://zdoom.org/wiki/Line_SetPortal
 // https://zdoom.org/wiki/Structs:LinePortal
 // https://zdoom.org/wiki/Structs:SectorPortal
+// 
