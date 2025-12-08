@@ -84,6 +84,29 @@ class LMBH_SafeDetect : StaticEventHandler
             miscKeywords.push("Furdoom");
         }
 
+        // Brutal Doom
+        if(Wads.FindLump("BDHEL06",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("BDEFFEN1", 0, Wads.AnyNameSpace) > -1)
+        {
+            miscKeywords.push("BrutalDoom");
+        }
+
+        // Project Brutality
+        if(Wads.FindLump("PBHANDLER",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("PBTEST", 0, Wads.AnyNameSpace) > -1)
+        {
+            miscKeywords.push("ProjectBrutality");
+        }
+
+        // Doomer Boards Project
+        if(
+            // detection can be most complicated since nobody uses explicit lump to say the name. But there is signature on the lumps provided during making.
+            (Wads.FindLump("DBP_LOGO",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("DB0_0001", 0, Wads.AnyNameSpace) > -1) ||
+            (Wads.FindLump("DB03_001",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("DB03_046", 0, Wads.AnyNameSpace) > -1) ||
+            (Wads.FindLump("DBP_T000",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("DBP_TY1", 0, Wads.AnyNameSpace) > -1)
+        )
+        {
+            miscKeywords.push("DoomerBoardsProject");
+        }
+
         // NSFL now..
         // Lah-piye
         if(Wads.FindLump("PiyeToh",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("PiyeIki",0,Wads.AnyNameSpace) > -1)
@@ -107,6 +130,14 @@ class LMBH_SafeDetect : StaticEventHandler
             //isNSFWrn = 1;
             Cvar.GetCvar('isNSFLrn').SetInt(1);
             nsflKeywords.push("KFDoom");
+        }
+
+        // Grezzo 2 & Grezzo due 2
+        if(Wads.FindLump("GREZZO",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("GREZZO",0,Wads.AnyNameSpace) > -1)
+        {
+            // TODO: find signature lump for grezzo series!
+            Cvar.GetCvar('isNSFLrn').SetInt(1);
+            nsflKeywords.push("Grezzo2");
         }
 
         // Compile to Cvar

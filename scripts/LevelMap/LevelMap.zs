@@ -89,10 +89,61 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
 
             if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("Furdoom") > -1)
             {
-                // If you load freedoom, add `SOLID SOLID SOLID` sticker right in the waiting room also!
+                // If you load furdoom, add `SOLID SOLID SOLID` sticker right in the waiting room also!
                 SetThingArgument(4225,0,42001); // set this sticker to SOLID SOLID SOLID!
+                /*
+                Furry Indonesia? SOLID SOLID SOLID!!
+                */
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("HDoom") > -1)
+            {
+                /*
+                Shake it baby!
+                */
+                SetThingArgument(4225,0,4022);
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("ProjectBrutality") > -1)
+            {
+                // Project Brutality yey!
+                SetThingArgument(4225,0,4025);
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("BrutalDoom") > -1)
+            {
+                // Brutal doom yey!
+                SetThingArgument(4225,0,4025);
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("DoomerBoardsProject") > -1)
+            {
+                // DBP map packs
+                SetThingArgument(4223,0,4017);
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("KFDoom") > -1)
+            {
+                /*
+                Don't you dare say I never saw you. Let's make this fair and square between us and you guys.
+                I have certain likes, that obviously you'd be against presumably. That also does not mean some other too, no.
+                I also have loathes of certain things, you'd have the same thought as I am. Though of course, I would play it nice than
+                harshly. They're living beings also, what if they're not what we think they are?
+                */
+                SetThingArgument(4225,0,4023);
+                /*
+                And I can't lie, despite your offensive behaviours, your truths are way too much to deny.
+                And that's how deep hole the rabbit hole goes.
+                Though, due to the nature, no family of mine or I shall join your efforts. But surprise nothing
+                when my employee would have been one of yours, coz I got no restrictions for this type tho.
+                I only expect they behave before my rules when they're doing my house, that's it.
+                */
+            }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("Moonman") > -1)
+            {
+                /*
+                This too. I tried it too.
+                */
+                SetThingArgument(4225,0,4024);
+                // ngl, those kinds of file always be subject of loss. You know that, loss is loss, and loss is.. you guessed it, gone.
+            }
             } else {
-                // No TC found! Usual DOOM / Freedoom it is.
+                // No TC found! Usual DOOM / Freedoom it is. or not..?
                 if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") > -1 && Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") <= 0)
                 {
                     SetThingArgument(4225,0,4016); // You are playing Freedoom. Who wants to have a FREEDOOM (freedom, free from invasion)?
@@ -113,10 +164,14 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
                 {
                     SetThingArgument(4225,0,4017); // You are playing Hexen.
                 }
+                else if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("STRIFE") > -1)
+                {
+                    SetThingArgument(4225,0,4017); // You are playing Strife.
+                }
                 else
                 {
                     // Unknown IWAD!!!
-                    SetThingArgument(4225,0,4017); // set this sticker to SOLID SOLID SOLID!
+                    SetThingArgument(4225,0,4017); // set this sticker mavrickle then.
                 }
             }
         }
