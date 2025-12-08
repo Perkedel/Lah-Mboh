@@ -336,7 +336,7 @@ FlickerLight FLARE
     offset 0 16 0
 }
 
-object ActiveFlare
+object ScallianoActiveFlare
 {
     frame FLAR { light FLARE }
 }

@@ -43,6 +43,16 @@ Conversation
 
 Conversation
 {
+    ID = 3270;
+    Page{
+        Name = "$NAME_DUMMYOUCHIE";
+        Dialog = "$DIALOGUE_DUMMYOUCHIE_0";
+
+    }
+}
+
+Conversation
+{
     actor = "JekyllPShootingRangeDummy";
     Page{
         Name = "$NAME_DUMMYGENERIC";
