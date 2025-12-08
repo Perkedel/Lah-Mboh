@@ -2762,14 +2762,14 @@ ACTOR IncendDropFireSpread : IncendNearFire
 //Weapon: Magnum
 //By: Bashe
 
-ACTOR Magnum : Weapon 25030
+ACTOR GunMagnum : Weapon 25030
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25030
    Weapon.SelectionOrder 304
    Inventory.PickupSound "misc/W_pkup"
    Inventory.PickUpMessage "You got the Magnum!"
-   Weapon.AmmoType "MagnumBullets"
+   Weapon.AmmoType "GunMagnumBullets"
    Weapon.AmmoGive 4
    Weapon.AmmoUse 1
    AttackSound "weapons/magnum"
@@ -2803,7 +2803,7 @@ ACTOR Magnum : Weapon 25030
    }
 }
 
-ACTOR MagnumBullets : Ammo 25031
+ACTOR GunMagnumBullets : Ammo 25031
 {
    Inventory.Amount 6
    Inventory.MaxAmount 50
@@ -4439,7 +4439,7 @@ ACTOR OrbAmmo : Orbs 25058
 //By: Inuyasha_989
 
 // was no DoomEdNum
-ACTOR LandMineLayer : Weapon 26003
+ACTOR InuyashaLandMineLayer : Weapon 26003
 {
    Weapon.SlotNumber 0
    Weapon.SelectionOrder 26003
@@ -4465,12 +4465,12 @@ ACTOR LandMineLayer : Weapon 26003
    Fire:
       LAYR B 3
       LAYR CDEFG 3
-      LAYR H 5 A_FireCustomMissile("Landmine2",0,1,0,0)
+      LAYR H 5 A_FireCustomMissile("InuyashaLandmine2",0,1,0,0)
       Goto Ready
    }
 }
 
-ACTOR Landmine
+ACTOR InuyashaLandmine
 {
    Radius 5
    Height 5
@@ -4501,7 +4501,7 @@ ACTOR Landmine
 }
 
 
-ACTOR Landmine2
+ACTOR InuyashaLandmine2
 {
    Radius 5
    Height 5
@@ -4522,7 +4522,7 @@ ACTOR Landmine2
       MINE AB 5
       Loop
    Death:
-      MINE A 0 A_SpawnItem("Landmine")
+      MINE A 0 A_SpawnItem("InuyashaLandmine")
       Stop
    }
 }
@@ -4547,7 +4547,7 @@ ACTOR Mines : Ammo
 //By: Inuyasha_989
 
 // was no DoomEdNum
-ACTOR BlasterPistol : Weapon 26004
+ACTOR InuyashaBlasterPistol : Weapon 26004
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 26004
@@ -4576,7 +4576,7 @@ ACTOR BlasterPistol : Weapon 26004
       BLPS A 2
       BLPS B 2
       BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
-      BLPS C 2 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS C 2 A_FireCustomMissile("InuyashaPistolBlast",0,1,9,3)
       BLPS D 2
       BLPS C 3
       BLPS B 2
@@ -4585,7 +4585,7 @@ ACTOR BlasterPistol : Weapon 26004
       BLPS A 2
       BLPS B 2
       BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
-      BLPS C 2 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS C 2 A_FireCustomMissile("InuyashaPistolBlast",0,1,9,3)
       BLPS D 2
       BLPS C 3
       BLPS B 2
@@ -4594,7 +4594,7 @@ ACTOR BlasterPistol : Weapon 26004
       BLPS A 1
       BLPS B 1
       BLPS C 0 A_PlayWeaponSound("weapons/pstblast")
-      BLPS C 1 A_FireCustomMissile("PistolBlast",0,1,9,3)
+      BLPS C 1 A_FireCustomMissile("InuyashaPistolBlast",0,1,9,3)
       BLPS D 1
       BLPS C 2
       BLPS B 1
@@ -4602,7 +4602,7 @@ ACTOR BlasterPistol : Weapon 26004
    }
 }
 
-ACTOR PistolBlast
+ACTOR InuyashaPistolBlast
 {
    Radius 3
    Height 3
@@ -4615,10 +4615,10 @@ ACTOR PistolBlast
    {
    Spawn:
       IPLS A 0 BRIGHT
-      IPLS A 2 A_CustomMissile("Blasttrail",0,0,0,0)
-      IPLS B 2 A_CustomMissile("Blasttrail",0,0,0,0)
-      IPLS A 2 A_CustomMissile("Blasttrail",0,0,0,0)
-      IPLS B 2 A_CustomMissile("Blasttrail",0,0,0,0)
+      IPLS A 2 A_CustomMissile("InuyashaBlasttrail",0,0,0,0)
+      IPLS B 2 A_CustomMissile("InuyashaBlasttrail",0,0,0,0)
+      IPLS A 2 A_CustomMissile("InuyashaBlasttrail",0,0,0,0)
+      IPLS B 2 A_CustomMissile("InuyashaBlasttrail",0,0,0,0)
       Loop
    Death:
       IPLE ABCDE 4
@@ -4626,7 +4626,7 @@ ACTOR PistolBlast
    }
 }
 
-ACTOR Blasttrail
+ACTOR InuyashaBlasttrail
 {
    +NOCLIP
    +NOGRAVITY

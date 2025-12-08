@@ -391,7 +391,7 @@ Sounds: Raven Software
 Idea Base: Tomb Raider, Quake 4
 */
 // was no DoomEdNum
-Actor Flare : CustomInventory 32581
+Actor ScallianoFlare : CustomInventory 32581
 {
 	//$Category Weapons
     //$Title Flare
@@ -407,13 +407,13 @@ Actor Flare : CustomInventory 32581
     FLAR D -1
     Stop
   Use:
-    TNT1 A 1 A_SpawnItemEx ("ActiveFlare", 56, 0, 28, 0, 0, 0, 0, 1)
+    TNT1 A 1 A_SpawnItemEx ("ScallianoActiveFlare", 56, 0, 28, 0, 0, 0, 0, 1)
     Stop
   }
 }
 
 // was no DoomEdNum
-Actor ActiveFlare 32582//You can give this a DoomEdNum, to place it in a map editor
+Actor ScallianoActiveFlare 32582//You can give this a DoomEdNum, to place it in a map editor
 {
 	//$Category Decoration
     //$Title Flare (Active)
@@ -431,7 +431,7 @@ Actor ActiveFlare 32582//You can give this a DoomEdNum, to place it in a map edi
 }
 
 // was no DoomEdNum
-Actor FlareBox : CustomInventory 32583
+Actor ScallianoFlareBox : CustomInventory 32583
 {
 	//$Category Ammunition
     //$Title Box of Flares
@@ -444,7 +444,7 @@ Actor FlareBox : CustomInventory 32583
     FLAR C -1
     Stop
   Pickup:
-    TNT1 A 1 A_GiveInventory ("Flare", 5)
+    TNT1 A 1 A_GiveInventory ("ScallianoFlare", 5)
     Stop
   }
 }

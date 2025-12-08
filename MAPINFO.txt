@@ -122,7 +122,7 @@ gameinfo
 
 	// dude wtf how to work on this?!
 	addDialogues =
-	    "DIALOGUE.txt"
+	    "DIALOGUE"
 
 	// Pls do not replace anything. Let the IWADs & other Asset Replacement PWADs responsible for those instead.
 

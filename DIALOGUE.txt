@@ -1,6 +1,6 @@
+namespace = "GZDoom";
 // Dialogue a global
 // JOELwindows7
-namespace = "GZDoom";
 
 // help
 /*
