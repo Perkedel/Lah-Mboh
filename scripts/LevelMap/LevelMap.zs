@@ -142,6 +142,11 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
                 SetThingArgument(4225,0,4024);
                 // ngl, those kinds of file always be subject of loss. You know that, loss is loss, and loss is.. you guessed it, gone.
             }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("Grezzo2") > -1)
+            {
+                // Grezzo craziness
+                SetThingArgument(4223,0,4017);
+            }
             } else {
                 // No TC found! Usual DOOM / Freedoom it is. or not..?
                 if(Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") > -1 && Cvar.getCvar("Raw_IWAD").GetString().IndexOf("FREEDOOM") <= 0)
