@@ -11,12 +11,14 @@ Joel is trying, just for fun. Which turns out he could use this to write his per
 Yes. Infact, this Mod PK3 is designed to test those TCs you are about to try. To name a few:
 
 - Brutal Doom
-- ~~Project Brutality~~ (reduce your GZDoom version first!) (oh no! the DoomEdNum MAPINFO, ZScript Actor, etc. are only on the latest?!)
+- ~~Project Brutality~~ (reduce your GZDoom version first to v4.11.3!) (oh no! the DoomEdNum MAPINFO, ZScript Actor, etc. are only on the latest?!)
 - Furdoom
 - H
 - etc. TC
 
 If your mod crashes the game, check if you loaded other mods correctly. Try loading just the target mod & this mod PK3. carefully watch the logs. If all fails, feel free to create issue complete with detailed reproduction steps.
+
+If you receive conflict error, also let us know, create Issue complete with detailed reproduction steps & what mod is it.
 
 ## Is this compatible with ID24?
 
