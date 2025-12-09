@@ -1406,6 +1406,15 @@ map "LoadFolder/LOADFOL" lookup "LOADFOL"
 	}
 }
 
+map "DIAAA" lookup "DIAAA"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY2"
+	exitPic = "LMBHTIHD"
+}
+
 map "Chubzdoomer/CHBZSD" lookup "CHBZSD"
 {
 	author = "Chubzdoomer (edited by JOELwindows7)"

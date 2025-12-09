@@ -36,7 +36,7 @@ ACTOR ACHU1 19521
     Stop
   }
 }
-// End DoomTree	
+// End DoomTree
 
 // Default Cube
 /*
@@ -92,80 +92,378 @@ Actor HTC2SectorLightControllerSlow
 {
  	var int user_size;
 	var int user_max;
-	var int user_sectors[3];
+	//var int user_sectors[4]; // LZDoom VMAbort out of bound!
+	var int user_sectors_lz0; // LZDoom workaround. user_sector size was 3!
+	var int user_sectors_lz1; // LZDoom workaround. user_sector size was 3!
+	var int user_sectors_lz2; // LZDoom workaround. user_sector size was 3!
 	var int user_colorprog;
 	+NOINTERACTION
 	RenderStyle None
 	States
 	{
 	Spawn:
-		TNT1 A 0
+		//TNT1 A 0 A_SetUserVar("user_size",0) // maybe?
+		/*
 		TNT1 A 0 A_SetUserArray("user_sectors",0,1311)
 		TNT1 A 0 A_SetUserArray("user_sectors",1,1312)
 		TNT1 A 0 A_SetUserArray("user_sectors",2,1313)
+		*/
+		// LZDoom workaround
+		TNT1 A 0 A_SetUserVar("user_sectors_lz0",1311)
+		TNT1 A 0 A_SetUserVar("user_sectors_lz1",1312)
+		TNT1 A 0 A_SetUserVar("user_sectors_lz2",1313)
+		// Maybe I should tell Issue!
 		TNT1 A 0 A_SetUserVar("user_max",3)
 		TNT1 A 0 A_SetUserVar("user_size",0)
 		TNT1 A 0 A_SetUserVar("user_colorprog",1)
 	Lighting1:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],255,0,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],255,0,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,255,0,0) // LZDoom array workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,255,0,0) // LZDoom array workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,255,0,0) // LZDoom array workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,255,0,0);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,255,0,0);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,255,0,0);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting2:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,64,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,64,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,192,64,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,192,64,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,192,64,0) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,192,64,0);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,192,64,0);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,192,64,0);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting3:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,128,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,128,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,128,128,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,128,128,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,128,128,0) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,128,128,0);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,128,128,0);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,128,128,0);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting4:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,192,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,192,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,64,192,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,64,192,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,64,192,0) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,64,192,0);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,64,192,0);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,64,192,0);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting5:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,255,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,255,0)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,0,255,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,0,255,0) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,0,255,0) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,0,255,0);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,0,255,0);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,0,255,0);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting6:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,192,64)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,192,64)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,0,192,64) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,0,192,64) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,0,192,64) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,0,192,64);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,0,192,64);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,0,192,64);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting7:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,128,128)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,128,128)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,0,128,128) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,0,128,128) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,0,128,128) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,0,128,128);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,0,128,128);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,0,128,128);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting8:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,64,192)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,64,192)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,0,64,192) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,0,64,192) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,0,64,192) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,0,64,192);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,0,64,192);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,0,64,192);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting9:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,0,255)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,0,255)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,0,0,255) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,0,0,255) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,0,0,255) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,0,0,255);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,0,0,255);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,0,0,255);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting10:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,0,192)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,0,192)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,64,0,192) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,64,0,192) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,64,0,192) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,64,0,192);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,64,0,192);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,64,0,192);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting11:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,0,128)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,0,128)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,128,0,128) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,128,0,128) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,128,0,128) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,128,0,128);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,128,0,128);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,128,0,128);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	Lighting12:
-		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,0,64)
+		//TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,0,64)
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz0,192,0,64) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz1,192,0,64) // LZDoom array bug workaround
+		//TNT1 A 0 Sector_SetColor(user_sectors_lz2,192,0,64) // LZDoom array bug workaround
+		TNT1 A 0
+		{
+		    //LZDoom workaround bug array
+			/*
+		    switch(user_size)
+			{
+			    case 0:
+					Sector_SetColor(user_sectors_lz0,192,0,64);
+					break;
+			    case 1:
+					Sector_SetColor(user_sectors_lz1,192,0,64);
+					break;
+			    case 2:
+					Sector_SetColor(user_sectors_lz2,192,0,64);
+					break;
+			    default:
+					break;
+			}
+			*/
+		}
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		Loop
+		//Loop
+		Stop // LZDoom Array workaround
 	NextCycle:
 		TNT1 A 5 A_SetUserVar("user_size",0)
 		TNT1 A 0 A_SetUserVar("user_colorprog",user_colorprog+1)
@@ -187,6 +485,12 @@ Actor HTC2SectorLightControllerSlow
 		TNT1 A 0 A_SetUserVar("user_colorprog",1)
 		Goto NextCycleCont
 	}
+	// Oh God, so tiring, my fingers crumbled to pieces!.
+	// at least zed went dozy rn to copy paste me those. Zed is so stingy btw, it wants more money lmao
+	// how do I set up my own Zed anyway?
+	// What? I hate repetitive jobs, usual creative writing still my brain!
+	// those guys only get tasked to copy paste for those who can't simply be algorithmized! somehow.
+	// ay it work again. bruh, whatever.
 }
 // End ZDoom Random Stuffs
 
@@ -216,7 +520,7 @@ ACTOR STZD_ImmaBot : Inventory {Inventory.MaxAmount 1 +UNDROPPABLE}
 ACTOR CTF_PlayerStart : TeleportDest 9132
 {
 //$Category ZCTF Stuff
-//$Title CTF Player Start (Deaf start for blue) 
+//$Title CTF Player Start (Deaf start for blue)
 //$Angled
 //$Sprite PLAYA1
 states
@@ -236,8 +540,8 @@ Stop
 }
 
 //No one will reach the score limit unless that person is REALLY REALLY bored
-ACTOR RedScore : Inventory {Inventory.MaxAmount 32767} 
-ACTOR BlueScore : Inventory {Inventory.MaxAmount 32767} 
+ACTOR RedScore : Inventory {Inventory.MaxAmount 32767}
+ACTOR BlueScore : Inventory {Inventory.MaxAmount 32767}
 ACTOR IsPlayingCTF : Inventory {Inventory.MaxAmount 1}
 
 ACTOR CTFRFlagIcon
@@ -321,7 +625,7 @@ ACTOR CTFBlueFlagIconSpawner : CustomInventory
 //This actor is a container for CTF score items, when you score 1 point
 //either RedScore or BlueScore is given depending on your team, and
 //is recieved by this actor, then to know how much score there is
-//an ACS script checks every 4 tics how much of each actor is in this 
+//an ACS script checks every 4 tics how much of each actor is in this
 //actor's inventory and updates the score on screen depending on the amount
 ACTOR CTFScoreSystem
 {

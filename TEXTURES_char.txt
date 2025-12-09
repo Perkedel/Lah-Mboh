@@ -1,4 +1,4 @@
-Sprite "TDDMG", 192, 32
+Sprite "TDDMG0", 192, 32
 {
 }
 

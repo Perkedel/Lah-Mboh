@@ -7,8 +7,29 @@ namespace = "GZDoom";
 https://www.doomworld.com/forum/topic/150763-i-need-some-help-on-the-dialogue-code/
 https://zdoom.org/wiki/ZDoom_Strife_Dialog_Format
 https://zdoom.org/wiki/Universal_Strife_Dialog_Format
+
+To make this global dialoguing works, you must cut all maps dialogue files & paste all of them here.
+Make sure to delete maps' local file of it. Just empty the Script Dialogue Tab box on your UDB map edit, it'll automatically delete when empty.
+idk. this seems unfortunately weird.
+
+// yEa
+Conversation
+{
+    ID = 3271;
+    Page{
+        Name = "$NAME_DUMMYOUCHIE";
+        Dialog = "asdfasfsdfafasfasdfasdf";
+
+    }
+}
+
+// help
+https://www.doomworld.com/forum/topic/150763-i-need-some-help-on-the-dialogue-code/
+https://zdoom.org/wiki/ZDoom_Strife_Dialog_Format
+https://zdoom.org/wiki/Universal_Strife_Dialog_Format
 */
 
+// MBOHTEST
 Conversation
 {
 	ID = 3263;
@@ -41,6 +62,313 @@ Conversation
 	}
 }
 
+/*
+Conversation
+{
+	ID = 263;
+	Page{
+		Name = "$NAME_DUMMYCONCIERGE";
+		Dialog = "$WHATCANIDO";
+		Goodbye = "$CHOICE_NVM";
+		Choice{
+			Text = "$CHOICE_NEEDHEAL";
+			YesMessage = "$RESPONSE_NEEDHEAL";
+			GiveItem = "Megasphere";
+		}
+		Choice{
+			Text = "$CHOICE_NEEDALL";
+			YesMessage = "$RESPONSE_NEEDALL";
+			Special = 80;
+			Arg0 = 8085;
+		}
+		Choice{
+			Text = "$CHOICE_NEEDBERSERK";
+			YesMessage = "$RESPONSE_NEEDBERSERK";
+			GiveItem = "Berserk";
+		}
+		Choice{
+			Text = "$CHOICE_NEEDPOWERUP";
+			YesMessage = "$RESPONSE_NEEDPOWERUP";
+			Special = 80;
+			Arg0 = 8086;
+		}
+	}
+}
+*/
+
+Conversation
+{
+	ID = 3262;
+	Page
+	{
+		Name = "Key Duplicator";
+		Dialog = "Psst, hey! I got keys I can duplicate. For few coins!";
+		Goodbye = "Okay, done!";
+
+		// Card
+
+		Choice{
+			Text = "Red Keycard";
+			Exclude
+			{
+				Item = "RedCard";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 10;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Red Keycard!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "RedCard";
+		}
+
+		Choice{
+			Text = "Blue Keycard";
+			Exclude
+			{
+				Item = "BlueCard";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 10;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Blue Keycard!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "BlueCard";
+		}
+
+		Choice{
+			Text = "Yellow Keycard";
+			Exclude
+			{
+				Item = "YellowCard";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 10;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Yellow Keycard!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "YellowCard";
+		}
+
+		// Skull
+
+		Choice{
+			Text = "Red Keyskull";
+			Exclude
+			{
+				Item = "RedSkull";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 20;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Red Keyskull!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "RedSkull";
+		}
+
+		Choice{
+			Text = "Blue Keyskull";
+			Exclude
+			{
+				Item = "BlueSkull";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 20;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Blue Keyskull!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "BlueSkull";
+		}
+
+		Choice{
+			Text = "Yellow Keyskull";
+			Exclude
+			{
+				Item = "YellowSkull";
+			}
+			Cost
+			{
+				Item = "Coin";
+				Amount = 20;
+			}
+			NextPage = 1;
+			DisplayCost = true;
+			YesMessage = "Alright, Here the Yellow Keyskull!";
+			NoMessage = "Sorry, that's not enough coin. Come farm some!";
+			GiveItem = "YellowSkull";
+		}
+
+
+		// Other
+		Choice{
+			Text = "Sell these keys";
+			NextPage = 2;
+		}
+
+
+	}
+
+
+	Page
+	{
+		// Refund. give item seems only can be amount 1
+		Name = "Key Duplicator";
+		Dialog = "Refund? I can address that too!";
+		Goodbye = "Okay, done!";
+
+		// Sell Card
+
+		Choice{
+			Text = "Sell Red Keycard";
+			Require
+			{
+				Item = "RedCard";
+			}
+			Cost
+			{
+				Item = "RedCard";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Coin";
+		}
+
+		Choice{
+			Text = "Sell Blue Keycard";
+			Require
+			{
+				Item = "BlueCard";
+			}
+			Cost
+			{
+				Item = "BlueCard";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Coin";
+		}
+
+		Choice{
+			Text = "Sell Yellow Keycard";
+			Require
+			{
+				Item = "YellowCard";
+			}
+			Cost
+			{
+				Item = "YellowCard";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Coin";
+		}
+
+		// Sell Skull
+
+		Choice{
+			Text = "Sell Red Keyskull";
+			Require
+			{
+				Item = "RedSkull";
+			}
+			Cost
+			{
+				Item = "RedSkull";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Gold10";
+		}
+
+		Choice{
+			Text = "Sell Blue Keyskull";
+			Require
+			{
+				Item = "BlueSkull";
+			}
+			Cost
+			{
+				Item = "BlueSkull";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Gold10";
+		}
+
+		Choice{
+			Text = "Sell Yellow Keyskull";
+			Require
+			{
+				Item = "YellowSkull";
+			}
+			Cost
+			{
+				Item = "YellowSkull";
+				Amount = 1;
+			}
+			NextPage = 2;
+			DisplayCost = true;
+			YesMessage = "Alright, here's your refund!";
+			NoMessage = "Umm, you don't have that key yet! Come find one somewhere.";
+			GiveItem = "Gold10";
+		}
+
+
+		// Other
+		Choice{
+			Text = "Buy duplicate keys";
+			NextPage = 1;
+		}
+
+	}
+
+}
+
+Conversation
+{
+	ID = 3992;
+	Page
+	{
+		Name = "$NAME_DUMMYRECEPTIONIST";
+		Dialog = "$WELCOMETODNBTALENT";
+		Goodbye = "$CHOICE_OKAY";
+	}
+}
+
 Conversation
 {
     ID = 3270;
@@ -51,6 +379,9 @@ Conversation
     }
 }
 
+// END MBOHTEST
+
+/*
 Conversation
 {
     actor = "JekyllPShootingRangeDummy";
@@ -59,3 +390,151 @@ Conversation
         Dialog = "$DIALOGUE_DUMMYHURT";
     }
 }
+*/
+
+// FREELD
+
+Conversation
+{
+	ID = 4978;
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_HOWDIDHELL";
+		Choice
+		{
+			Text = "$CHOICE_EXPLAIN";
+			NextPage = 2;
+		}
+	}
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_RECEIVEDSITUATIONs";
+		Choice
+		{
+			Text = "$CHOICE_YUP";
+			NextPage = 3;
+		}
+	}
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_EXPLAINSELF";
+		Choice
+		{
+			Text = "$CHOICE_WAITWHAT";
+			NextPage = 4;
+		}
+	}
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_EXPLAINCONTINUE";
+		Choice
+		{
+			Text = "$CHOICE_UHM";
+			NextPage = 5;
+		}
+	}
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_READMIND";
+		Choice
+		{
+			Text = "$CHOICE_DOTS";
+
+			Special = 80;
+			Arg0 = 2212;
+			Arg1 = 0;
+			Arg2 = 0;
+			Arg3 = 0;
+			Arg4 = 0;
+
+			/*
+			Special = 11;
+			Arg0 = 3;
+			Arg1 = 16;
+			*/
+
+			//NextPage = 6;
+			CloseDialog = true;
+			YesMessage = "$FLD_ANYWAYS";
+		}
+	}
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_ANYWAYS";
+		Goodbye = "$CHOICE_OKAY";
+		/*
+		Choice
+		{
+			Text = "$CHOICE_DOTS";
+			NextPage = 8;
+		}
+		*/
+	}
+}
+
+Conversation
+{
+	ID = 4979;
+	Page
+	{
+		Name = "$NAME_FLD";
+		Dialog = "$FLD_ARRIVETELE";
+	}
+}
+
+// END FREELD
+
+// TELEFAST
+
+Conversation
+{
+	ID = 5972;
+	Page
+	{
+		Name = "$NAME_TELEGUY";
+		Dialog = "$TL_WELCOME";
+		Choice
+		{
+			Text = "$CHOICE_OKAYCOOL";
+
+			Special = 80;
+			Arg0 = 9291;
+			Arg1 = 0;
+			Arg2 = 0;
+			Arg3 = 0;
+
+			CloseDialog = true;
+		}
+	}
+}
+
+Conversation
+{
+	ID = 5973;
+	Page
+	{
+		Name = "$NAME_TELEGUY";
+		Dialog = "$TL_FINISHED";
+		Choice
+		{
+			Text = "$CHOICE_IMPRESSIVE";
+
+			Special = 80;
+			Arg0 = 9292;
+			Arg1 = 0;
+			Arg2 = 0;
+			Arg3 = 0;
+
+			YesMessage = "$TL_RESPONSEGOOD";
+			CloseDialog = true;
+		}
+	}
+}
+
+// END TELEFAST

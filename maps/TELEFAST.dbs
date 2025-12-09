@@ -23,9 +23,9 @@ maps
 		}
 		defaultfloortexture = "AQF067";
 		defaultceiltexture = "F_SKY1";
-		defaulttoptexture = "AQCONC01";
-		defaultwalltexture = "AQCONC01";
-		defaultbottomtexture = "AQCONC01";
+		defaulttoptexture = "STARTAN1";
+		defaultwalltexture = "STARTAN1";
+		defaultbottomtexture = "STARTAN1";
 		custombrightness = 196;
 		customfloorheight = 0;
 		customceilheight = 128;
@@ -38,9 +38,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -54.1774f;
-		viewpositiony = -531.2828f;
-		viewscale = 0.6499999f;
+		viewpositionx = 46.68674f;
+		viewpositiony = -179.6642f;
+		viewscale = 1.856464f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -51,7 +51,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 64;
+			gridsize = 32;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
