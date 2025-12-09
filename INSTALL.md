@@ -29,6 +29,7 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 - IWAD: [**`freedoom2.wad`**](https://freedoom.github.io/) (BEST IWAD). or [`doom2.wad` (**PAID**, PLS_WAIT! Completing Texture Compats!)](https://store.steampowered.com/app/2280/DOOM__DOOM_II/)
 - Source Port: [UZDoom latest](https://zdoom.org/downloads).
     - UZDoom Development [Try Now **RECOMMENDED**](https://github.com/UZDoom/UZDoom/releases/latest).
+    - LZDoom (for lowspec devices) [Try Now (**v4.14.3 available**)](https://zdoom.org/downloads). **Avoid using Softpoly (software renderer)**, because more things (especially with 3D Models such as Jekyll's Dummies) will lag!, **use OpenGL ES, OpenGL, or Vulkan instead!**
     - If you have [Project Brutality](https://github.com/pa1nki113r/Project_Brutality) that requires ROLLSPRITE precision: [**GZDoom v4.11.3**](https://zdoom.org/files/gzdoom/bin/), however **you'll lose ID24** that only comes since that v4.13.
     - Otherwise you must **use the latest version**!
 - Mod PWADs:
@@ -53,12 +54,12 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 
 Showing the easy & quick ways
 
-1. Download GZDoom & Extract
+1. Download UZDoom / GZDoom & Extract
 2. Download FreeDoom ~~or purchase Doom WADs on Steam or GOG~~, & extract / locate the IWAD.
-3. GZDoom should automatically find your commercial Doom WADs installed when you launch. But for others, you can simply place the desired IWAD inside the GZDoom executable folder (put the IWAD next to `GZDoom.exe` / `.bin`).
+3. UZDoom should automatically find your commercial Doom WADs installed when you launch. But for others, you can simply place the desired IWAD inside the UZDoom / GZDoom executable folder (put the IWAD next to `UZDoom.exe` / `GZDoom.exe` / `??ZDoom.bin`).
 4. Launch GZDoom
 5. Test everything correctly.
-6. Once done, close GZDoom again, then drag this project folder / pk3 / pk7 onto the GZDoom.exe. It will launch with the PWAD PK3 in hand.
+6. Once done, close UZDoom / GZDoom again, then drag this project folder / pk3 / pk7 onto the UZDoom.exe / GZDoom.exe. It will launch with the PWAD PK3 in hand.
 7. Select the same IWAD then launch.
 
 > [!TIP]
@@ -73,7 +74,7 @@ Showing the easy & quick ways
     - SLADE 3. for Lump edits such as Textures, ACS, etc.
     - Sekaiju. for MIDI
     - Audacity. for Audio such as recording, edit, & conversions
-    - Laplace or VSCode. for Text IDE project
+    - Zed. for Text IDE project
 2. Start Editing
 
 ## Compatibility
@@ -81,7 +82,6 @@ Showing the easy & quick ways
 ### Mboh Adventure & Mboh Test
 - Level Format = UDMF.
 - Complevel = 0 (Any Default). Levels while benefits various GZDoom technologies, are still designed with vanilla strict limitation (No Jump No Freelook accessiblity) imposed due to early age of FPS back then before its maturity of the whole FPS genre we have here today. e.g., you should be able to test Mod PK3 TC Gameplay that imposes such limited challenges.
-
 
 ### Others
 

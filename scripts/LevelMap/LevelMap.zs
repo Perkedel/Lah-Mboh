@@ -127,7 +127,7 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
                 */
                 SetThingArgument(4225,0,4023);
                 /*
-                And I can't lie, despite your offensive behaviours, your truths are way too much to deny.
+                And I can't lie, despite your offensive behaviours, your truths are way too valuable to deny.
                 And that's how deep hole the rabbit hole goes.
                 Though, due to the nature, no family of mine or I shall join your efforts. But surprise nothing
                 when my employee would have been one of yours, coz I got no restrictions for this type tho.

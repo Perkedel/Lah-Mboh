@@ -15,9 +15,9 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 > [!WARNING]
 > <details>
 > <summary><b>Save Compatibility</b></summary>  
-> Due to the way DOOM engine was designed, even with GZDoom and & derivatives, <b>it is no longer recommended to load & forget this Mod PK7, if you are playing a Gigawad (Giant Megawad) that tracks your level completition.</b>  
+> Due to the way DOOM engine was designed, even with GZDoom and & derivatives, <b>it is no longer recommended to load & forget this Mod PK7, if you are playing a Gigawad (Giant Megawad) that tracks your level completition, by Save file way.</b>  
 > 
-> This is because we may add or collapse the amount of ACS loaded, and difference in these numbers will affect the compatibility.
+> This is because we may add or collapse the amount of ACS loaded, and difference in these numbers will affect the save compatibility.
 >
 > Yeah, as always, backup your precious saves!! Copy paste those saves multiple times, so you can disect another copy to make it compatible again.
 > </details> 
