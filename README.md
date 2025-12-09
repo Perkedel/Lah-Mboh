@@ -53,7 +53,7 @@ Forum Thread: [Bombardio Crocodillo](https://doomer.boards.net/thread/3940/lah-m
 
 I tried Doom mapping. So this is how it feels to BSP? That's way too different for that time they used to map Doom. Okeh, lemme go on with those challenges.
 
-You know, I.. used to design levels WYSIWYG. 
+You know, I.. am used to design levels WYSIWYG. 
 Put objects there, arrange there. And that includes walls, floors, & 
 ceiling (yea I know that's inefficient unlike yours with BSP). Come from root that's youngest, such as Unity, Godot, etc.
 
