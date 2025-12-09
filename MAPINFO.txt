@@ -141,6 +141,9 @@ gameinfo
 // https://www.doomworld.com/forum/topic/123676-custom-monster-in-mapinfo-for-zandronum-fails-with-doomednums-unknown-top-level-keyword/
 DoomEdNums
 {
+    // Reference here so you don't override!
+    // https://zdoom.org/wiki/Standard_editor_numbers
+    // docs/Tutorial/ID24_DoomEdNums.md
 	15209 = JekyllPShootingRangeDummy
 	16128 = DNBCoin
 	16129 = DNBQuarter
@@ -312,6 +315,11 @@ DoomEdNums
 	26701 = OrangeCard
 	26702 = SilverCard
 	// End Realm667
+
+	// Standard
+	/*
+	2016 to 2017, Evil Sceptre & Unholy Bible from DOOM Beta prototype
+	*/
 }
 // I'm tired of this bullshit. Just lemme build level already!
 
