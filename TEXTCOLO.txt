@@ -1,0 +1,29 @@
+// Text Color
+// https://zdoom.org/wiki/Text_colors
+// https://zdoom.org/wiki/TEXTCOLO
+
+// Realm667
+// Checkpoint Disk Matacrat
+sp_Chlorine
+{
+	#0E281E #1A7F58 0 100
+	#198973 #16D3AD 101 180
+	#16D3BF #00FFFF 181 256
+Console:
+	#0E281E #1A7F58 0 100
+	#198973 #16D3AD 101 180
+	#16D3BF #00FFFF 181 256
+Flat:
+	#16D3AD
+}
+// end Realm667
+
+// ZDoom TEXTCOLO
+ZenGreen
+{
+	#004400  #00FF00
+Console:
+	#000000  #007F00    0 127
+	#00FF00  #FEFFFE  128 256
+}
+// end ZDoom
