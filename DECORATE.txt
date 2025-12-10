@@ -113,74 +113,74 @@ Actor HTC2SectorLightControllerSlow
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],255,0,0)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting2:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,64,0)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting3:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,128,0)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting4:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,192,0)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting5:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,255,0)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting6:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,192,64)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting7:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,128,128)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting8:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,64,192)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting9:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],0,0,255)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting10:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],64,0,192)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting11:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],128,0,128)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 	Lighting12:
 		TNT1 A 0 Sector_SetColor(user_sectors[user_size],192,0,64)
 		TNT1 A 0 A_SetUserVar("user_size",user_size+1)
 		TNT1 A 0 A_JumpIf(user_size>=user_max,"NextCycle")
-		//Loop
-		Stop
+		Loop
+		//Stop
 NextCycle:
 		TNT1 A 5 A_SetUserVar("user_size",0)
 		TNT1 A 0 A_SetUserVar("user_colorprog",user_colorprog+1)
