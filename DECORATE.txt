@@ -205,6 +205,11 @@ NextCycle:
 }
 // End ZDoom Random Stuffs
 
+/*
+https://github.com/drfrag666/lzdoom/issues/50
+
+Graf! look at you, you... you know, and start screwing up some codes in the way! idk man..
+*/
 
 // TDRR's STUFFS!
 //==============================================================================
