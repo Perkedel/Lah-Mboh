@@ -47,6 +47,13 @@ class LMBH_Subtitling : StaticEventHandler //ui
             Cvar.GetCvar("LMBH_Subtitling_Say").setString(text);
     }
 
+    static void playIntermission(string whichIs)
+    {
+        // https://zdoom.org/wiki/Cutscene copy paste!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // https://zdoom.org/wiki/Structs:LevelLocals
+        level.StartIntermission (whichIs,FSTATE_INLEVEL);
+    }
+
     override void RenderOverlay(RenderEvent e)
     {
         // https://github.com/mmaulwurff/target-spy/blob/94c7ab63dcb34d117b6c0b773259ffa69fd0f4cb/zscript/ts_event_handler.zs#L799

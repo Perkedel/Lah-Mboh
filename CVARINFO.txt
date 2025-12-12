@@ -67,6 +67,8 @@ nosave noarchive float LMBH_WelcomeHome_GreetTimer = 0;
 // Subtitle Complexicated
 nosave float LMBH_Subtitling_Scale = 0; // scale setting
 nosave int LMBH_Subtitling_AlignFrom = 0; // default is "Bottom Center"
+nosave int LMBH_Prefered_Voice_Language = 0; // default is their native languages. e.g. DNB's Indonesian
+nosave int LMBH_Fallback_Voice_Language = 0; // if voice file missing, use this as fallback. default is native.
 nosave noarchive string LMBH_Subtitling_Say = "";
 nosave noarchive float LMBH_Subtitling_Timer = 0;
 

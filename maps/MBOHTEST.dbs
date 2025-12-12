@@ -1,5 +1,5 @@
 type = "Doom Builder Map Settings Configuration";
-gameconfig = "GZDoom_DoomUDMF.cfg";
+gameconfig = "UZDoom_DoomUDMF.cfg";
 strictpatches = 0;
 
 maps
@@ -18,7 +18,6 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
-				requiredarchives = "";
 			}
 			
 			resource1
@@ -188,9 +187,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = -20502.4f;
-		viewpositiony = 27025.46f;
-		viewscale = 2.971497f;
+		viewpositionx = -4168.354f;
+		viewpositiony = 640.7195f;
+		viewscale = 2.971484f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid

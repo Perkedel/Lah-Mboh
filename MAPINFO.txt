@@ -168,6 +168,7 @@ DoomEdNums
 	27565 = HomingLostSoul
 	27566 = SecuritySoul
 	27921 = ParticlePlasmaFire
+	27922 = CustomizableParticleFire
 	26521 = HealingBackpack
 	26522 = HealthPack
 	26621 = VitalityBonus

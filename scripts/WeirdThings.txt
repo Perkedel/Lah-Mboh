@@ -383,6 +383,7 @@ class BigZombieman : CustomizableZombieman
 }
 
 // Particle Plasma Fireball
+// https://zdoom.org/wiki/SpawnParticle_(ZScript)
 class ParticlePlasmaFire : Actor
 {
 	int freqPerTic;
@@ -442,7 +443,164 @@ class ParticlePlasmaFire : Actor
 	}
 }
 
+// And Customizable particle
+// https://zdoom.org/wiki/SpawnParticle_(ZScript)
+class CustomizableParticleFire : Actor
+{
+	String user_partTexName;
+	TextureID partTexCached;
+	Color partColor;
+
+	Default
+	{
+		// $Title "Customizable Particle Fire"
+		// $Category "Decoration"
+		// $Arg0 "Particle size"
+		// $Arg0Tooltip "Size in map units. 0 makes it equal to the texture's size (if provided)."
+		// $Arg1 "Random offset range"
+		// $Arg1Tooltip "Range of the horizontal spawn offset from the spawner's center"
+		// $Arg2 "Horizontal speed"
+		// $Arg2Tooltip "This will be multiplied by 0.5-1.0"
+		// $Arg3 "Vertical speed"
+		// $Arg3Tooltip "This will be multiplied by 0.75-1.0"
+		// $Arg4 "Color"
+		// $Arg4Type 11
+		// $Arg4Enum { 1 = "None"; 2 = "Red"; 3 = "Orange"; 4 = "Yellow"; 5 = "Green"; 6 = "Dark green"; 7 = "Blue"; 8 = "Dark blue"; 9 = "Cyan"; 10 = "White"; 11 = "Black"; 12 = "Gray"; 13 = "Dark gray"; }
+		// $Arg4Tooltip "Color of the particles. When using textured particles, select None to use textures as-is."
+		+NOINTERACTION
+		+NOGRAVITY
+		Radius 16;
+		Height 16;
+	}
+
+	override void PostBeginPlay()
+	{
+		Super.PostBeginPlay();
+		// Cache the texture provided with the user variable (if any):
+		if (user_partTexName)
+		{
+			partTexCached = TexMan.CheckForTexture(user_partTexName);
+		}
+		// Convert the color in argument 4 to a valid color value:
+		switch (args[4])
+		{
+		default:
+			partColor = "";
+			break;
+		case 2:
+			partColor = color(255, 0, 0);
+			break;
+		case 3:
+			partColor = color(255, 128, 0);
+			break;
+		case 4:
+			partColor = color(255, 255, 0);
+			break;
+		case 5:
+			partColor = color(0, 255, 0);
+			break;
+		case 6:
+			partColor = color(0, 128, 0);
+			break;
+		case 7:
+			partColor = color(0, 0, 255);
+			break;
+		case 8:
+			partColor = color(0, 0, 128);
+			break;
+		case 9:
+			partColor = color(0, 255, 255);
+			break;
+		case 10:
+			partColor = color(255, 255, 255);
+			break;
+		case 11:
+			partColor = color(0, 0, 0);
+			break;
+		case 12:
+			partColor = color(128, 128, 128);
+			break;
+		case 13:
+			partColor = color(64, 64, 64);
+			break;
+		}
+	}
+
+	override void Tick()
+	{
+		Super.Tick();
+
+		// Do nothing if frozen:
+		if (isFrozen())
+		{
+			return;
+		}
+
+		FSpawnParticleParams p;
+		// We'll spawn 3 particles at once, but some values
+		// will be the same for all of them, so start with
+		// those values:
+		p.lifetime = TICRATE; //each particle will last for 1 second
+		p.startalpha = 1.0;
+		p.fadestep = -1;
+		p.color1 = partColor;
+		if (partTexCached.IsValid())
+		{
+			p.texture = partTexCached;
+		}
+		// If argument 0 is 0, try setting the particle's size to
+		// the size of the texture, if a valid one was found:
+		if (args[0] <= 0)
+		{
+			if (p.texture.isValid())
+			{
+				Vector2 size = TexMan.GetScaledSize(p.texture);
+				p.size = max(size.x, size.y);
+			}
+			else
+			{
+				p.size = 1;
+			}
+		}
+		else
+		{
+			p.size = args[0];
+		}
+
+		// Further values should be randomized for each particle,
+		// so the rest are wrapped in a FOR loop:
+		for (int i = 3; i > 0; i--)
+		{
+			// Randomize horizontal position. We want to randomize it
+			// in a round shape rather than a square one, so we'll take
+			// a vector where X is args[1] multiplied by 0.5-1.0 and Y is 0,
+			// and rotate it by 0-360 degrees. Then we'll  by taking a
+			// vector equal to 0.5-1.0 of the value of argument 1, and
+			// rotating it randomly by 0-360 degrees. Then we'll append
+			// that vector to the spawner's position:
+			Vector3 partOfs;
+			partOfs.xy = Actor.RotateVector((args[1] * frandom[pfire](0.5, 1.0), 0), frandom[pfire](0, 360));
+			p.pos = level.Vec3Offset(self.pos, partOfs);
+
+			// Do the same with horizontal velocity:
+			p.vel.xy = Actor.RotateVector((args[2] * frandom[pfire](0.5, 1.0), 0), frandom[pfire](0, 360));
+			// And randomized provided vertical velocity:
+			p.vel.z = args[3] * frandom[pfire](0.75, 1.0);
+
+			// Lose a little of the vertical velocity over its lifetime:
+			p.accel.z = p.vel.z / (p.lifetime * -1.2);
+			// Change its horizontal direction over its lifetime
+			// to create a vertical sine wave:
+			p.accel.xy = p.vel.xy / (p.lifetime * -0.5);
+			level.SpawnParticle(p);
+		}
+	}
+}
+
 // end Editor Keys
+
+
+
 
 // Configurable Decorate
 // https://zdoom.org/wiki/Making_configurable_actors_in_DECORATE
@@ -1557,4 +1715,19 @@ class WeirdLevelPostProcessor: LevelPostProcessor
 // https://zdoom.org/wiki/Line_SetPortal
 // https://zdoom.org/wiki/Structs:LinePortal
 // https://zdoom.org/wiki/Structs:SectorPortal
-// 
+// https://zdoom.org/wiki/SEGS
+// https://zdoom.org/wiki/SpawnParticle_(ZScript)
+
+class LMBH_ClayPigeon : Actor
+{
+    // Low gravity Thing that can be thrown.
+    Default
+    {
+
+    }
+
+    States
+    {
+
+    }
+}

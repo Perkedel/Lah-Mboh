@@ -8,9 +8,9 @@ Linux Hang? Did something idiot? Pause your panik.
 - Hold `Alt` + `PrintScreen / SysRq`
 - While holding those, Press these in order (assuming `QWERTY`): `R`, `E`, `I`, `S`, `U`, `B`.
     - `R` Switch your keyboard to Raw mode.
-    - `E` `SIGTERM` (Signal Terminate) every single tasks except the init (PID 1).
-    - `I` (Ayy) `SIGKILL` (Signal Kill) every single tasks except the init (PID 1).
-    - `S` Sync all mounted filesystem. Tell all drives to flush it all out, & finish their cache & DRAM managements.
+    - `E` `SIGTERM` (Signal Terminate) every single tasks except the init (PID 1). Tells all said process to terminate peacefully.
+    - `I` (Aayy / Eye 👁️) `SIGKILL` (Signal Kill) every single tasks except the init (PID 1). Destroy all said process mercilessly, in case those hang too.
+    - `S` Sync all mounted filesystem. Tell all drives to flush it all out (finish the save to disk completely), & finish their cache & DRAM managements.
     - `U` Remount every single drives as read-only. So all writing activities stopped entirely.
     - `B` Reboot immediately no question asked. Even without safely removing drives, but since they're now read only, everything should be safe & won't corrupt anything.
 - Do this quickly because some Distro quickly disengages and attempt to *unstun* itself if you're late with the sequence, But you already know this session has been screwed & it's Former Human now, why did it awake?.

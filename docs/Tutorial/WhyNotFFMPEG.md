@@ -6,3 +6,9 @@ GitHub Issues on UZDoom all shot down sauce.
 ## IVF
 
 TODO. IVF + Opus
+
+## sauce
+
+- https://wiki.multimedia.cx/index.php/Duck_IVF
+- https://zdoom.org/wiki/Video_format
+- https://zdoom.org/wiki/Cutscene
