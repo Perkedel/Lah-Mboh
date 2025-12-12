@@ -491,7 +491,7 @@ Generator Tazer                         BulletChip
 
 Generator WalterPPK                     BulletChip
 
-Generator AutomaticShotgun              BulletChip
+Generator DArchonAutomaticShotgun              BulletChip
 
 Decal HeavyScorchLower1
 {
