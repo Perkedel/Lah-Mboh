@@ -1723,11 +1723,12 @@ class LMBH_ClayPigeon : Actor
     // Low gravity Thing that can be thrown.
     Default
     {
-
+        Gravity .5;
     }
 
     States
     {
-
+        Spawn:
+            Stop;
     }
 }

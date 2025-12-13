@@ -493,7 +493,7 @@ Generator WalterPPK                     BulletChip
 
 Generator DArchonAutomaticShotgun              BulletChip
 
-Decal HeavyScorchLower1
+Decal ZChronosHeavyScorchLower1
 {
 	pic CBALSCR1
 	shade "00 00 00"
@@ -503,7 +503,7 @@ Decal HeavyScorchLower1
 	randomflipy
 }
 
-Decal HeavyScorchLower2
+Decal ZChronosHeavyScorchLower2
 {
 	pic CBALSCR2
 	shade "00 00 00"
@@ -513,15 +513,15 @@ Decal HeavyScorchLower2
 	randomflipy
 }
 
-DecalGroup HeavyScorchLower
+DecalGroup ZChronosHeavyScorchLower
 {
-	HeavyScorchLower1 1
-	HeavyScorchLower2 1
+	ZChronosHeavyScorchLower1 1
+	ZChronosHeavyScorchLower2 1
 }
 
 
 
-Decal HeavyScorch1
+Decal ZChronosHeavyScorch1
 {
 	pic CBALSCR1
 	shade "30 30 30"
@@ -529,10 +529,10 @@ Decal HeavyScorch1
 	x-scale 0.4
 	y-scale 0.4
 	animator GoAway
-	lowerdecal HeavyScorchLower
+	lowerdecal ZChronosHeavyScorchLower
 }
 
-Decal HeavyScorch2
+Decal ZChronosHeavyScorch2
 {
 	pic CBALSCR2
 	shade "30 30 30"
@@ -540,15 +540,15 @@ Decal HeavyScorch2
 	x-scale 0.4
 	y-scale 0.4
 	animator GoAway
-	lowerdecal HeavyScorchLower
+	lowerdecal ZChronosHeavyScorchLower
 }
 
-DecalGroup HeavyScorch
+DecalGroup ZChronosHeavyScorch
 {
-	HeavyScorch1 1
-	HeavyScorch2 1
+	ZChronosHeavyScorch1 1
+	ZChronosHeavyScorch2 1
 }
 
-Generator HeavyBullet                   HeavyScorch
+Generator ZChronosHeavyBullet                   ZChronosHeavyScorch
 
 // end WRW

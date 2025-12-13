@@ -39,6 +39,9 @@ Switch	Doom 3		DEVMEGA1	On Pic	DEVMEGA2	Tics 0
 /* Switch Doom 3	SMGLASS1 On sound world/njGlass Pic GLBROK Tics 0 */
 Switch Doom 3	ZRIONGLS On sound world/njGlass Pic GLBROK Tics 0
 
+// and now mine
+Switch Doom 3	SOMAGLA0 On sound world/njGlass Pic SOMABRA0 Tics 0
+
 //Texture Warps
 
 //Water
