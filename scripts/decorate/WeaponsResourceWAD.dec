@@ -14,14 +14,14 @@ Yoinked by JOELwindows7 as is, with few edits for Lah-Mboh
 //By: HobbsTiger1
 
 // was 25000
-ACTOR FireWand : Weapon 25000
+ACTOR HobbsTigerFireWand : Weapon 25000
 {
    Weapon.SlotNumber 4
    Weapon.SelectionOrder 25000
    //Weapon.SelectionOrder 9800
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Fire Wand!"
-   Weapon.AmmoType "Ember"
+   Weapon.AmmoType "HobbsTigerEmber"
    Weapon.AmmoGive 20
    Weapon.AmmoUse 1
    Scale 0.5
@@ -43,18 +43,18 @@ ACTOR FireWand : Weapon 25000
       FWND A 3
       FWND B 0 A_GunFlash
       FWND B 0 A_PlayWeaponSound("weapons/firewand")
-      FWND C 4 A_FireCustomMissile("FireShot",0,1,0,0)
+      FWND C 4 A_FireCustomMissile("HobbsTigerFireShot",0,1,0,0)
       FWND C 5
       FWND A 3 A_ReFire
       Goto Ready
    Hold:
       FWND C 0 A_PlayWeaponSound("weapons/firewand")
-      FWND C 4 A_FireCustomMissile("FireShot",0,1,0,0)
+      FWND C 4 A_FireCustomMissile("HobbsTigerFireShot",0,1,0,0)
       Goto Ready
    }
 }
 
-ACTOR FireShot
+ACTOR HobbsTigerFireShot
 {
    Radius 3
    Height 3
@@ -86,7 +86,7 @@ ACTOR FireShot
    }
 }
 
-ACTOR Ember : Ammo 25001
+ACTOR HobbsTigerEmber : Ammo 25001
 {
    Inventory.Amount 5
    Inventory.MaxAmount 200
@@ -102,7 +102,7 @@ ACTOR Ember : Ammo 25001
    }
 }
 
-ACTOR BigEmber : Ember 25002
+ACTOR HobbsTigerBigEmber : HobbsTigerEmber 25002
 {
    Inventory.Amount 20
    Inventory.PickupMessage "Picked up lots of Embers."
@@ -118,7 +118,7 @@ ACTOR BigEmber : Ember 25002
 //By: Bouncy
 
 // was 25003
-ACTOR ImpClaw : Weapon 25003
+ACTOR BouncyImpClaw : Weapon 25003
 {
    Weapon.SlotNumber 4
    Weapon.SelectionOrder 9801
@@ -150,7 +150,7 @@ ACTOR ImpClaw : Weapon 25003
 }
 
 // was 25004
-ACTOR SuperImpClaw : Weapon 25004
+ACTOR BouncySuperImpClaw : Weapon 25004
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 9802
@@ -183,7 +183,7 @@ ACTOR SuperImpClaw : Weapon 25004
 //Weapon: Insanity Plasma Rifle
 //By: Kirby
 
-ACTOR InsanityRifle : Weapon 25005
+ACTOR KirbyInsanityRifle : Weapon 25005
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 9803
@@ -214,17 +214,17 @@ ACTOR InsanityRifle : Weapon 25005
    Flash:
       IPLF A 2
       IPLF B 2
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,-10)
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,10)
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,5,0)
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,-10)
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,10)
-      IPLF B 0 A_FireCustomMissile(InsPlasma,0,1,-5,0)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,5,-10)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,5,10)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,5,0)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,-5,-10)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,-5,10)
+      IPLF B 0 A_FireCustomMissile(KirbyInsPlasma,0,1,-5,0)
       Stop
    }
 }
 
-ACTOR InsPlasma
+ACTOR KirbyInsPlasma
 {
    Radius 3
    Height 4
@@ -248,7 +248,7 @@ ACTOR InsPlasma
 //Weapon: Multi-Projectile Weapon.
 //By: TheDarkArchon
 
-ACTOR MultiProjectileWeapon : Weapon 25006
+ACTOR DarkArchonMultiProjectileWeapon : Weapon 25006
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 9804
@@ -273,32 +273,32 @@ ACTOR MultiProjectileWeapon : Weapon 25006
       MPWG A 1 A_Raise
       Loop
    Fire:
-      MPWG A 0 A_JumpIfInventory("ProjectileWeaponCharge",2,21)
-      MPWG A 0 A_JumpIfInventory("ProjectileWeaponCharge",1,9)
+      MPWG A 0 A_JumpIfInventory("DarkArchonProjectileWeaponCharge",2,21)
+      MPWG A 0 A_JumpIfInventory("DarkArchonProjectileWeaponCharge",1,9)
       MPWG C 0 A_PlaySound("weapons/charge1")
-      MPWG C 10 A_GiveInventory("ProjectileWeaponCharge",1)
+      MPWG C 10 A_GiveInventory("DarkArchonProjectileWeaponCharge",1)
       MPWG C 0 A_Refire
-      MPWF A 0 Bright A_FireCustomMissile("MultiProjectile1",0,1,0,0)
+      MPWF A 0 Bright A_FireCustomMissile("DarkArchonMultiProjectile1",0,1,0,0)
       MPWF A 5 Bright A_Light1
       MPWF B 5 Bright A_Light2
-      MPWG B 0 A_TakeInventory("ProjectileWeaponCharge",999)
+      MPWG B 0 A_TakeInventory("DarkArchonProjectileWeaponCharge",999)
       MPWG B 5 A_Light0
       Goto Ready
       MPWG D 0 A_PlaySound("weapons/charge2")
-      MPWG D 10 A_GiveInventory("ProjectileWeaponCharge",1)
+      MPWG D 10 A_GiveInventory("DarkArchonProjectileWeaponCharge",1)
       MPWG D 0 A_Refire
-      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",-25,1,0,0)
-      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",0,1,0,0)
-      MPWF E 0 Bright A_FireCustomMissile("MultiProjectile2",25,1,0,0)
+      MPWF E 0 Bright A_FireCustomMissile("DarkArchonMultiProjectile2",-25,1,0,0)
+      MPWF E 0 Bright A_FireCustomMissile("DarkArchonMultiProjectile2",0,1,0,0)
+      MPWF E 0 Bright A_FireCustomMissile("DarkArchonMultiProjectile2",25,1,0,0)
       MPWF E 4 Bright A_Light2
       MPWF D 4 Bright A_Light2
       MPWF C 8 Bright A_Light1
-      MPWG B 0 A_TakeInventory("ProjectileWeaponCharge",999)
+      MPWG B 0 A_TakeInventory("DarkArchonProjectileWeaponCharge",999)
       MPWG B 6 A_Light0
       Goto Ready
       MPWG F 0 A_PlaySound("weapons/charge3")
       MPWG E 15
-      MPWG E 0 Bright A_FireCustomMissile("MultiProjectile3",0,1,0,0)
+      MPWG E 0 Bright A_FireCustomMissile("DarkArchonMultiProjectile3",0,1,0,0)
       MPWF HHHH 0 BRIGHT A_FireBullets(4,4,2,15,"MultiPuff",1)
       MPWF H 8 Bright A_Light2
       MPWF G 8 Bright
@@ -310,7 +310,7 @@ ACTOR MultiProjectileWeapon : Weapon 25006
    }
 }
 
-ACTOR MultiProjectile1 : PlasmaBall
+ACTOR DarkArchonMultiProjectile1 : PlasmaBall
 {
    Damage 15
    Scale 2.0
@@ -329,7 +329,7 @@ ACTOR MultiProjectile1 : PlasmaBall
    }
 }
 
-ACTOR MultiProjectile2 : MultiProjectile1
+ACTOR DarkArchonMultiProjectile2 : DarkArchonMultiProjectile1
 {
    Damage 18
    ExplosionDamage 64
@@ -348,7 +348,7 @@ ACTOR MultiProjectile2 : MultiProjectile1
    }
 }
 
-ACTOR MultiProjectile3 : BFGBall
+ACTOR DarkArchonMultiProjectile3 : BFGBall
 {
    Translation 2
    ExplosionDamage 330
@@ -370,14 +370,14 @@ ACTOR MultiProjectile3 : BFGBall
    }
 }
 
-ACTOR ProjectileWeaponCharge : Ammo
+ACTOR DarkArchonProjectileWeaponCharge : Ammo
 {
    Inventory.MaxAmount 3
    Ammo.BackpackAmount 0
    Ammo.BackpackMaxAmount 3
 }
 
-ACTOR MultiPuff : BulletPuff
+ACTOR DarkArchonMultiPuff : BulletPuff
 {
    Translation 2
    States
@@ -392,7 +392,7 @@ ACTOR MultiPuff : BulletPuff
 //Weapon: Charged Plasma Bolter
 //By: wildweasel
 
-ACTOR PlasmaBolter : Weapon 25007
+ACTOR wildweaselPlasmaBolter : Weapon 25007
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 25007
@@ -416,20 +416,20 @@ ACTOR PlasmaBolter : Weapon 25007
       PCNG A 1 A_Raise
       Loop
    Fire:
-      PCNF B 2 Bright A_FireCustomMissile("SuperPlasmaBall",1,1,8,0)
+      PCNF B 2 Bright A_FireCustomMissile("wildweaselSuperPlasmaBall",1,1,8,0)
       PCNF A 2 Bright
       PCNG BA 3
       PCNG A 1 A_ReFire
       Goto Ready
    Hold:
-      PCNF A 2 BRIGHT A_FireCustomMissile("SmallPlasmaBall",1,1,8,0)
+      PCNF A 2 BRIGHT A_FireCustomMissile("wildweaselSmallPlasmaBall",1,1,8,0)
       PCNG BA 2
       PCNG A 1 A_ReFire
       Goto Ready
    }
 }
 
-ACTOR BigPlasmaTrail
+ACTOR wildweaselBigPlasmaTrail
 {
    Radius 4
    Height 3
@@ -446,7 +446,7 @@ ACTOR BigPlasmaTrail
    }
 }
 
-ACTOR SmallPlasmaTrail
+ACTOR wildweaselSmallPlasmaTrail
 {
    Radius 4
    Height 3
@@ -463,7 +463,7 @@ ACTOR SmallPlasmaTrail
    }
 }
 
-ACTOR SuperPlasmaBall
+ACTOR wildweaselSuperPlasmaBall
 {
    Damage 15
    Alpha 0.90
@@ -477,10 +477,10 @@ ACTOR SuperPlasmaBall
    {
    Spawn:
       PLSS A 0 Bright
-      PLSS A 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
-      PLSS B 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
-      PLSS A 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
-      PLSS B 2 Bright A_CustomMissile("BigPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("wildweaselBigPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("wildweaselBigPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("wildweaselBigPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("wildweaselBigPlasmaTrail",0,0,0)
       Loop
    Death:
       PLSE A 3 Bright A_Explode
@@ -493,7 +493,7 @@ ACTOR SuperPlasmaBall
    }
 }
 
-ACTOR SmallPlasmaBall
+ACTOR wildweaselSmallPlasmaBall
 {
    Damage 5
    Alpha 0.90
@@ -505,10 +505,10 @@ ACTOR SmallPlasmaBall
    {
    Spawn:
       PLSS A 0 Bright
-      PLSS A 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
-      PLSS B 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
-      PLSS A 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
-      PLSS B 2 Bright A_CustomMissile("SmallPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("wildweaselSmallPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("wildweaselSmallPlasmaTrail",0,0,0)
+      PLSS A 2 Bright A_CustomMissile("wildweaselSmallPlasmaTrail",0,0,0)
+      PLSS B 2 Bright A_CustomMissile("wildweaselSmallPlasmaTrail",0,0,0)
       Loop
    Death:
       PLSE A 3 Bright
@@ -524,7 +524,7 @@ ACTOR SmallPlasmaBall
 //Weapon XB-4 Sniper Rifle
 //By: killingblair
 
-ACTOR XBSniper : Weapon 25008
+ACTOR killingblairXBSniper : Weapon 25008
 {
    Weapon.SlotNumber 3
    Weapon.SelectionOrder 25008
@@ -567,7 +567,7 @@ ACTOR XBSniper : Weapon 25008
 //Weapon: Serious Bomb
 //By: Cutmanmike
 
-ACTOR SeriousBomb : Weapon 25009
+ACTOR CutmanmikeSeriousBomb : Weapon 25009
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25009
@@ -600,13 +600,13 @@ ACTOR SeriousBomb : Weapon 25009
       BOMB C 160
       Goto Ready
    Flash:
-      BOMB P 0 A_FireCustomMissile("BombRadius", 0, 0, 0, 0)
+      BOMB P 0 A_FireCustomMissile("CutmanmikeBombRadius", 0, 0, 0, 0)
       BOMB P 100
       Stop
    }
 }
 
-ACTOR BombRadius
+ACTOR CutmanmikeBombRadius
 {
    Radius 1
    Height 1
@@ -630,7 +630,7 @@ ACTOR BombRadius
 //Weapon: Gauntlets
 //By: HobbsTiger1
 
-ACTOR Gauntlet : Weapon 25010
+ACTOR HobbsTiger1Gauntlet : Weapon 25010
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25010
@@ -668,7 +668,7 @@ ACTOR Gauntlet : Weapon 25010
 //Weapon: Lighsaber
 //By: Cutmanmike
 
-ACTOR Lightsaber : Weapon 25011
+ACTOR CutmanmikeLightsaber : Weapon 25011
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25011
@@ -705,8 +705,8 @@ ACTOR Lightsaber : Weapon 25011
       Goto Ready
    AltFire:
       SABR H 0  A_Playsound("weapons/sidle")
-      SABR HHHH 1  A_FireCustomMissile("Fakedeflect", 0, 0, 0, 0)
-      SABR IIII 1  A_FireCustomMissile("Fakedeflect", 0, 0, 0, 0)
+      SABR HHHH 1  A_FireCustomMissile("CutmanmikeFakedeflect", 0, 0, 0, 0)
+      SABR IIII 1  A_FireCustomMissile("CutmanmikeFakedeflect", 0, 0, 0, 0)
       Goto Ready
    Flash:
       SAWG A 0
@@ -714,7 +714,7 @@ ACTOR Lightsaber : Weapon 25011
    }
 }
 
-ACTOR Fakedeflect
+ACTOR CutmanmikeFakedeflect
 {
    Health 5
    Height 35
@@ -740,7 +740,7 @@ ACTOR Fakedeflect
 //Weapon: Demon Hand
 //By: wario
 
-ACTOR DemonHand : Weapon 25012
+ACTOR warioDemonHand : Weapon 25012
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 25012
@@ -765,17 +765,17 @@ ACTOR DemonHand : Weapon 25012
    Fire:
       REDH BCD 8
       REDH E 8 A_GunFlash
-      REDH E 0 A_FireCustomMissile("Handshot",-15,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",15,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",-25,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",25,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",-5,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",5,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",-10,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",10,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",-20,0,0,0)
-      REDH E 0 A_FireCustomMissile("Handshot",20,1,0,0)
-      REDH E 6 A_FireCustomMissile("Handshot2",0,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",-15,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",15,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",-25,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",25,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",-5,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",5,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",-10,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",10,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",-20,0,0,0)
+      REDH E 0 A_FireCustomMissile("warioHandshot",20,1,0,0)
+      REDH E 6 A_FireCustomMissile("warioHandshot2",0,0,0,0)
       REDH E 5 A_ReFire
       Goto Ready
    Flash:
@@ -784,7 +784,7 @@ ACTOR DemonHand : Weapon 25012
    }
 }
 
-ACTOR Handshot
+ACTOR warioHandshot
 {
    Radius 12
    Height 20
@@ -805,7 +805,7 @@ ACTOR Handshot
    }
 }
 
-ACTOR Handshot2
+ACTOR warioHandshot2
 {
    Radius 12
    Height 20
@@ -829,7 +829,7 @@ ACTOR Handshot2
 //Weapon: Molotov Cocktail
 //By: Scientist
 
-ACTOR Molotovx : Weapon 25013
+ACTOR ScientistMolotovx : Weapon 25013
 {
    Weapon.SlotNumber 0
    Weapon.SelectionOrder 25013
@@ -867,7 +867,7 @@ ACTOR Molotovx : Weapon 25013
    Fire:
       MOGG B 10
       MOGF A 2 A_GunFlash
-      MOGF B 10 A_FireCustomMissile("Bottlex", 0, 1, 0, 5)
+      MOGF B 10 A_FireCustomMissile("ScientistBottlex", 0, 1, 0, 5)
       MOGF B 8 A_ReFire
       Goto Ready
    Flash:
@@ -877,7 +877,7 @@ ACTOR Molotovx : Weapon 25013
    }
 }
 
-ACTOR Bottlex
+ACTOR ScientistBottlex
 {
    DeathSound "weapons/bottle"
    Scale 0.4
@@ -907,9 +907,9 @@ ACTOR Bottlex
    Death:
       FRTF G 1
       FRTF H 1 A_Explode
-      FRTF I 0 A_CustomMissile("HFirex", 24, 24, 0)
-      FRTF H 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF I 0 A_CustomMissile("HFirex", 24, -24, 0)
+      FRTF I 0 A_CustomMissile("ScientistHFirex", 24, 24, 0)
+      FRTF H 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF I 0 A_CustomMissile("ScientistHFirex", 24, -24, 0)
       FRTF ABC 3
       FRTF C 0 A_Jump(191,4)
       FRTF C 0 A_Explode
@@ -919,7 +919,7 @@ ACTOR Bottlex
    }
 }
 
-ACTOR HFirex
+ACTOR ScientistHFirex
 {
    +NOCLIP
    +MISSILE
@@ -941,32 +941,32 @@ ACTOR HFirex
       FRTF ABC 3
       FRTF C 0 A_Explode
       FRTF C 0 A_Jump(191,4)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, -24, 0)
       FRTF ABC 3
       FRTF C 0 A_Explode
       FRTF ABC 3
-      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, -24, 0)
       FRTF ABC 3
       FRTF C 0 A_Explode
-      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, -24, 0)
       FRTF DEFGHIJ 3
       FRTF ABC 3
       FRTF C 0 A_Explode
       FRTF DEFGHIJ 3
       FRTF ABC 3
       FRTF C 0 A_Explode
-      FRTF C 0 A_CustomMissile("HFirex", 0, 24, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, 0, 0)
-      FRTF C 0 A_CustomMissile("HFirex", 0, -24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 24, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, 0, 0)
+      FRTF C 0 A_CustomMissile("ScientistHFirex", 0, -24, 0)
       FRTF C 0 A_Explode
       FRTF DEFGHIJ 3
       FRTF ABC 3
@@ -980,7 +980,7 @@ ACTOR HFirex
 //Weapon: Gyro Plasma Burster
 //By: TheDarkArchon
 
-ACTOR GyroBurster : Weapon 25014
+ACTOR DarkArchonGyroBurster : Weapon 25014
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25014
@@ -1010,7 +1010,7 @@ ACTOR GyroBurster : Weapon 25014
       GBSG BCDEF 17
       GBSF A 0 Bright A_GunFlash
       GBSF A 0 Bright A_PlayWeaponSound("weapons/gyrofire")
-      GBSF A 6 Bright A_FireCustomMissile("GyroBurst", 0, 1, 6, 0)
+      GBSF A 6 Bright A_FireCustomMissile("DarkArchonGyroBurst", 0, 1, 6, 0)
       GBSF B 6 Bright
       GBSG A 12
       Goto Ready
@@ -1023,7 +1023,7 @@ ACTOR GyroBurster : Weapon 25014
 }
 
 
-ACTOR GyroBurst
+ACTOR DarkArchonGyroBurst
 {
    Height 1
    Radius 1
@@ -1038,192 +1038,192 @@ ACTOR GyroBurst
       BFS1 AB 4 Bright
       BFS1 AB 2 Bright
       BFS1 ABABABABABABABABABABABABABABAB 1 Bright
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 0)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 10)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 20)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 30)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 40)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 50)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 60)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 70)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 80)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 90)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 100)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 110)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 120)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 130)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 140)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 150)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 160)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 170)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 180)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 190)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 200)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 210)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 220)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 230)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 240)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 250)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 260)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 270)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 280)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 290)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 300)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 310)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 320)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 330)
-      BFS1 A 1 Bright A_CustomMissile("GyroBall", 10, 0, 340)
-      BFS1 B 1 Bright A_CustomMissile("GyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 70)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 150)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 230)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 70)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 150)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 230)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 70)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 150)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 230)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 70)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 150)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 230)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 350)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 0)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 10)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 20)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 30)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 40)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 50)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 60)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 70)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 80)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 90)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 100)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 110)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 120)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 130)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 140)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 150)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 160)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 170)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 180)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 190)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 200)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 210)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 220)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 230)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 240)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 250)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 260)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 270)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 280)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 290)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 300)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 310)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 320)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 330)
+      BFS1 A 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 340)
+      BFS1 B 1 Bright A_CustomMissile("DarkArchonGyroBall", 10, 0, 350)
       BFE1 ABCDEF 4
       Stop
       }
 }
 
-ACTOR GyroBall
+ACTOR DarkArchonGyroBall
 {
    Scale 0.75
    Speed 35
@@ -1247,7 +1247,7 @@ ACTOR GyroBall
 //Weapon: Freeze Thrower
 //By: Cutmanmike
 
-ACTOR FreezeThrower : Weapon 25015
+ACTOR CutmanmikeFreezeThrower : Weapon 25015
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 25015
@@ -1278,7 +1278,7 @@ ACTOR FreezeThrower : Weapon 25015
       Loop
    Fire:
       FREZ A 0 A_JumpIfNoAmmo(1)
-      FREZ C 0 A_FireCustomMissile("FreezeBall", 0, 1, 6, 0)
+      FREZ C 0 A_FireCustomMissile("CutmanmikeFreezeBall", 0, 1, 6, 0)
       FREZ C 2 A_GunFlash
       FREZ D 2
       FREZ E 2
@@ -1290,7 +1290,7 @@ ACTOR FreezeThrower : Weapon 25015
    AltFire:
       FREZ A 0 A_JumpIfNoAmmo(1)
       FREZ C 0 A_Playsound("weapons/frzball")
-      FREZ CCCCC 2 A_FireCustomMissile("FreezeVapor", 0, 1, 6, 0)
+      FREZ CCCCC 2 A_FireCustomMissile("CutmanmikeFreezeVapor", 0, 1, 6, 0)
       FREZ A 0 A_ReFire
       Goto Ready
    Flash:
@@ -1299,7 +1299,7 @@ ACTOR FreezeThrower : Weapon 25015
    }
 }
 
-ACTOR FreezeBall
+ACTOR CutmanmikeFreezeBall
 {
    Speed 30
    Damage 10
@@ -1342,7 +1342,7 @@ ACTOR FreezeBall
    }
 }
 
-ACTOR FreezeVapor
+ACTOR CutmanmikeFreezeVapor
 {
    Speed 9
    Damage 1
@@ -1370,7 +1370,7 @@ ACTOR FreezeVapor
 //By: Post
 //Uses SpawnID 31
 
-ACTOR TrailGun : Weapon 25016
+ACTOR PostTrailGun : Weapon 25016
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25016
@@ -1402,7 +1402,7 @@ ACTOR TrailGun : Weapon 25016
       PLZM A 2
       PLZF A 3 Bright
       PLZF B 0 A_PlaySound("weapons/trailatt")
-      PLZF B 0 A_FireCustomMissile("Bolt1",0,1,0,0)
+      PLZF B 0 A_FireCustomMissile("PostBolt1",0,1,0,0)
       PLZF B 4 Bright
       PLZF A 3 A_Refire
       PLZM B 4 Bright
@@ -1412,7 +1412,7 @@ ACTOR TrailGun : Weapon 25016
    AltFire:
       PLZF A 2 Bright
       PLZF B 0 A_PlaySound("weapons/trailpls")
-      PLZF B 0 A_FireCustomMissile("Bolt2",0,1,0,0)
+      PLZF B 0 A_FireCustomMissile("PostBolt2",0,1,0,0)
       PLZF B 4 Bright
       PLZM B 4 Bright
       PLZM C 12 Bright
@@ -1421,7 +1421,7 @@ ACTOR TrailGun : Weapon 25016
    Hold:
       PLZF A 3 Bright
       PLZF B 0 A_PlaySound("weapons/trailbfg")
-      PLZF B 0 A_FireCustomMissile("Bolt1",0,1,0,0)
+      PLZF B 0 A_FireCustomMissile("PostBolt1",0,1,0,0)
       PLZF B 4 Bright
       PLZF A 3 A_Refire
       Goto Fire+5
@@ -1431,7 +1431,7 @@ ACTOR TrailGun : Weapon 25016
    }
 }
 
-ACTOR Bolt1
+ACTOR PostBolt1
 {
    Speed 65
    Height 2
@@ -1449,12 +1449,12 @@ ACTOR Bolt1
    States
    {
    Spawn:
-      APLS A 1 A_CustomMissile("Bolt1Trail",0,0,0)
-      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
-      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
-      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
-      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
-      APLS B 1 A_CustomMissile("Bolt1Trail",0,0,0)
+      APLS A 1 A_CustomMissile("PostBolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("PostBolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("PostBolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("PostBolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("PostBolt1Trail",0,0,0)
+      APLS B 1 A_CustomMissile("PostBolt1Trail",0,0,0)
       Loop
    Death:
       APBX A 4 A_Explode
@@ -1463,7 +1463,7 @@ ACTOR Bolt1
    }
 }
 
-ACTOR Bolt1Trail
+ACTOR PostBolt1Trail
 {
    Speed 1
    Height 2
@@ -1486,7 +1486,7 @@ ACTOR Bolt1Trail
    }
 }
 
-ACTOR Bolt2
+ACTOR PostBolt2
 {
 
    Speed 45
@@ -1507,13 +1507,13 @@ ACTOR Bolt2
    {
    Spawn:
       BFS1 A 2 Bright
-      BFS1 A 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 A 0 A_CustomMissile("PostBolt2Trail",0,0,0)
       BFS1 B 2 Bright
-      BFS1 B 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 B 0 A_CustomMissile("PostBolt2Trail",0,0,0)
       BFS1 A 2 Bright
-      BFS1 A 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 A 0 A_CustomMissile("PostBolt2Trail",0,0,0)
       BFS1 B 2 Bright
-      BFS1 B 0 A_CustomMissile("Bolt2Trail",0,0,0)
+      BFS1 B 0 A_CustomMissile("PostBolt2Trail",0,0,0)
       Goto Death
    Death:
       BFE1 A 4 A_Explode
@@ -1522,7 +1522,7 @@ ACTOR Bolt2
    }
 }
 
-ACTOR Bolt2Trail
+ACTOR PostBolt2Trail
 {
    Speed 1
    Height 2
@@ -1702,7 +1702,7 @@ ACTOR D2C_PipebombAmmo : Ammo
 //Weapon: COP Derringer
 //By: Xaser
 
-ACTOR COPGun : Weapon 25019
+ACTOR XaserCOPGun : Weapon 25019
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25019
@@ -1731,12 +1731,12 @@ ACTOR COPGun : Weapon 25019
       COPG A 1 A_Raise
       Loop
    Fire:
-      COPG A 0 A_JumpIfInventory("COPgunInClip", 1, 2)
+      COPG A 0 A_JumpIfInventory("XaserCOPgunInClip", 1, 2)
       COPG A 1
       Goto Ready
       COPG A 0 A_GunFlash
-      COPG A 0 A_FireCustomMissile("CheapAlert",0,0,0,0)
-      COPG A 0 A_TakeInventory("COPgunInClip",1)
+      COPG A 0 A_FireCustomMissile("XaserCheapAlert",0,0,0,0)
+      COPG A 0 A_TakeInventory("XaserCOPgunInClip",1)
       COPG B 1 Bright A_FireBullets(2,2,1,35,"BulletPuff",0) // `0` errors
       COPG CD 1 Bright
       COPG A 1 A_ReFire
@@ -1746,7 +1746,7 @@ ACTOR COPGun : Weapon 25019
       COPG A 1 A_ReFire
       Goto Ready
    AltFire:
-      COPG A 0 A_JumpIfInventory("COPgunInClip", 4, 2)
+      COPG A 0 A_JumpIfInventory("XaserCOPgunInClip", 4, 2)
       COPG A 0 A_JumpIfInventory("Shell", 1, 2)
       COPG A 0
       Goto Ready
@@ -1756,8 +1756,8 @@ ACTOR COPGun : Weapon 25019
       COPR E 1
       COPR FGHIJKLM 2
       COPR N 0 A_TakeInventory("Shell",1)
-      COPR N 0 A_GiveInventory("COPgunInClip",1)
-      COPR N 0 A_JumpIfInventory("COPgunInClip",4,2)
+      COPR N 0 A_GiveInventory("XaserCOPgunInClip",1)
+      COPR N 0 A_JumpIfInventory("XaserCOPgunInClip",4,2)
       COPR N 0 A_JumpIfInventory("Shell",1,2)
       COPR N 0
       Goto AltFire+22
@@ -1778,7 +1778,7 @@ ACTOR COPGun : Weapon 25019
    }
 }
 
-ACTOR COPgunInClip : PuzzleItem
+ACTOR XaserCOPgunInClip : PuzzleItem
 {
    - INVBAR
    Inventory.MaxAmount 4
@@ -1791,7 +1791,7 @@ ACTOR COPgunInClip : PuzzleItem
    }
 }
 
-ACTOR CheapAlert
+ACTOR XaserCheapAlert
 {
    Health 1000
    Radius 1
@@ -1813,7 +1813,7 @@ ACTOR CheapAlert
 //Weapon: Flame Thrower
 //By: Bouncy
 
-ACTOR TheFlameThrower : Weapon 20020
+ACTOR BouncyTheFlameThrower : Weapon 20020
 {
    Weapon.SlotNumber 4
    Weapon.SelectionOrder 25020
@@ -1843,16 +1843,16 @@ ACTOR TheFlameThrower : Weapon 20020
       Goto Ready
    Flash:
       FLTW B 0 A_Playsound ("weapons/flamesht")
-      FLTW B 1 A_FireCustomMissile("Flame",0,1,0,0)
+      FLTW B 1 A_FireCustomMissile("BouncyFlame",0,1,0,0)
       FLTW B 0
-      FLTW B 0 A_FireCustomMissile("FlameNoDamage",0,1,0,0)
+      FLTW B 0 A_FireCustomMissile("BouncyFlameNoDamage",0,1,0,0)
       FLTW C 1
       Stop
    }
 }
 
 
-ACTOR Flame
+ACTOR BouncyFlame
 {
    Radius 12
    Height 30
@@ -1872,7 +1872,7 @@ ACTOR Flame
    }
 }
 
-ACTOR FlameNoDamage : Flame
+ACTOR BouncyFlameNoDamage : BouncyFlame
 {
    Damage 0
 }
@@ -1880,7 +1880,7 @@ ACTOR FlameNoDamage : Flame
 //Weapon: Reincarnator
 //By: Cutmanmike
 
-ACTOR Vilestaff : Weapon 25021
+ACTOR CutmanmikeVilestaff : Weapon 25021
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25021
@@ -1888,8 +1888,8 @@ ACTOR Vilestaff : Weapon 25021
    Weapon.AmmoGive 10
    Weapon.AmmoUse 1
    Weapon.AmmoUse2 50
-   Weapon.AmmoType "Darkmana"
-   Weapon.AmmoType2 "Darkmana"
+   Weapon.AmmoType "CutmanmikeDarkmana"
+   Weapon.AmmoType2 "CutmanmikeDarkmana"
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the staff of the vile!"
    States
@@ -1921,79 +1921,79 @@ ACTOR Vilestaff : Weapon 25021
    AltFire:
       REVI E 0 A_JumpIfNoAmmo(1)
       REVI E 0 A_Playsound("weapons/vilesht1")
-      REVI E 0 A_FireCustomMissile("Vilefake", 0, 1, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 5, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 10, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 15, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 20, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 25, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 30, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 35, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 40, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 45, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 50, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 55, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 60, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 65, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 70, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 75, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 80, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 85, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 90, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 95, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 100, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 105, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 110, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 115, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 120, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 125, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 130, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 135, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 140, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 145, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 150, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 155, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 160, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 165, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 170, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 175, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 180, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 185, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 190, 0, 0, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 195, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 200, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 205, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 210, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 215, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 220, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 225, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 230, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 235, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 240, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 245, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 250, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 255, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 260, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 265, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 270, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 275, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 280, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 285, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 290, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 295, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 300, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 305, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 310, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 315, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 320, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 325, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 330, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 335, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 340, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 345, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 350, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 355, 0, 1, 0)
-      REVI E 0 A_FireCustomMissile("Vilefake", 360, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 0, 1, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 5, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 10, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 15, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 20, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 25, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 30, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 35, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 40, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 45, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 50, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 55, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 60, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 65, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 70, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 75, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 80, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 85, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 90, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 95, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 100, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 105, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 110, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 115, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 120, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 125, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 130, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 135, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 140, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 145, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 150, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 155, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 160, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 165, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 170, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 175, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 180, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 185, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 190, 0, 0, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 195, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 200, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 205, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 210, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 215, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 220, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 225, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 230, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 235, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 240, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 245, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 250, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 255, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 260, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 265, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 270, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 275, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 280, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 285, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 290, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 295, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 300, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 305, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 310, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 315, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 320, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 325, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 330, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 335, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 340, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 345, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 350, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 355, 0, 1, 0)
+      REVI E 0 A_FireCustomMissile("CutmanmikeVilefake", 360, 0, 1, 0)
       REVI F 2
       REVI G 2
       REVI F 2
@@ -2025,7 +2025,7 @@ ACTOR Vilestaff : Weapon 25021
    }
 }
 
-ACTOR Vilefake2
+ACTOR CutmanmikeVilefake2
 {
    +FRIENDLY
    +NOCLIP
@@ -2049,7 +2049,7 @@ ACTOR Vilefake2
 }
 
 
-ACTOR Vilefake
+ACTOR CutmanmikeVilefake
 {
    Speed 20
    +FRIENDLY
@@ -2072,7 +2072,7 @@ ACTOR Vilefake
    }
 }
 
-ACTOR Darkmana : Ammo 25022
+ACTOR CutmanmikeDarkmana : Ammo 25022
 {
    +FLOATBOB
    Inventory.Amount 5
@@ -2210,7 +2210,7 @@ ACTOR FlakBlood
 //Weapon: Seeker Missile Launcher
 //By: NecroMage
 
-ACTOR SeekerMissileLauncher : Weapon 25024
+ACTOR NecroMageSeekerMissileLauncher : Weapon 25024
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 25024
@@ -2242,12 +2242,12 @@ ACTOR SeekerMissileLauncher : Weapon 25024
       SEML C 6
       SEML D 6
       SEML E 6
-      SEML F 6 A_FireCustomMissile("SeekerMissile",0,1,0,0)
+      SEML F 6 A_FireCustomMissile("NecroMageSeekerMissile",0,1,0,0)
       Stop
    }
 }
 
-ACTOR SeekerMissile : Rocket
+ACTOR NecroMageSeekerMissile : Rocket
 {
    Damage 80
    ExplosionDamage 64
@@ -2265,7 +2265,7 @@ ACTOR SeekerMissile : Rocket
 //Weapon: Tazer
 //By: HellsBane
 
-ACTOR Tazer : Weapon 25025
+ACTOR HellsBaneTazer : Weapon 25025
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25025
@@ -2305,7 +2305,7 @@ ACTOR Tazer : Weapon 25025
 //Weapon: Walter PPK
 //By: NecroMage
 
-ACTOR WalterPPK : Weapon 25026
+ACTOR NecroMageWalterPPK : Weapon 25026
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25026
@@ -2346,7 +2346,7 @@ ACTOR WalterPPK : Weapon 25026
 //Weapon: BFG2704
 //By: Inuyasha_989
 
-ACTOR BFG2704 : BFG9000 25027
+ACTOR InuyashaBFG2704 : BFG9000 25027
 {
    Inventory.PickupMessage "You got the legendary BFG 2704!"
    Weapon.Ammogive 60
@@ -2371,66 +2371,66 @@ ACTOR BFG2704 : BFG9000 25027
       BFJI ABCDEFGHI 8
       BFJG B 10 A_GunFlash
       BFJG B 0 A_PlaySound ("weapons/bfgshot1")
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",0,1,5,13)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",0,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",3,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",9,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",9,1,1,-13)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-6,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGMini",-12,1,3,0)
-      BFJG B 1 A_FireCustomMissile("BFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",0,1,5,13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",0,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",3,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",9,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",9,1,1,-13)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-6,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGMini",-12,1,3,0)
+      BFJG B 1 A_FireCustomMissile("InuyashaBFGPlasma",-9,1,3,0)
       Goto Ready
     Flash:
       BFJF A 5
@@ -2440,7 +2440,7 @@ ACTOR BFG2704 : BFG9000 25027
    }
 }
 
-ACTOR BFGMini
+ACTOR InuyashaBFGMini
 {
    Radius 12
    Height 20
@@ -2460,7 +2460,7 @@ ACTOR BFGMini
    }
 }
 
-ACTOR BFGPlasma
+ACTOR InuyashaBFGPlasma
 {
    Radius 3
    Height 4
@@ -2483,14 +2483,14 @@ ACTOR BFGPlasma
 //Weapon: Incendinary Shell Launcher
 //By: TheDarkArchon
 
-ACTOR IncendinaryShellLauncher : Weapon 25028
+ACTOR DarkArchonIncendinaryShellLauncher : Weapon 25028
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25028
    Inventory.PickupMessage "You got the Incendinary Shell Launcher!"
    Inventory.PickupSound "misc/w_pkup"
    Weapon.Kickback 150
-   Weapon.AmmoType "IncendShells"
+   Weapon.AmmoType "DarkArchonIncendShells"
    Weapon.AmmoGive 2
    Weapon.AmmoUse 1
    Obituary "%o was immolated by %k's Incendinary Shell Launcher"
@@ -2510,7 +2510,7 @@ ACTOR IncendinaryShellLauncher : Weapon 25028
       Loop
    Fire:
       ISLF A 0 BRIGHT A_GunFlash
-      ISLF A 3 BRIGHT A_FireCustomMissile("IncendinaryShell",0,1,0,0)
+      ISLF A 3 BRIGHT A_FireCustomMissile("DarkArchonIncendinaryShell",0,1,0,0)
       ISLF BC 3 BRIGHT
       ISLG DCB 3
       ISLG A 20
@@ -2524,7 +2524,7 @@ ACTOR IncendinaryShellLauncher : Weapon 25028
    }
 }
 
-ACTOR IncendShells : Ammo 25029
+ACTOR DarkArchonIncendShells : Ammo 25029
 {
    Radius 20
    Height 16
@@ -2544,7 +2544,7 @@ ACTOR IncendShells : Ammo 25029
    }
 }
 
-ACTOR IncendinaryShell
+ACTOR DarkArchonIncendinaryShell
 {
    Radius 20
    Height 16
@@ -2562,28 +2562,28 @@ ACTOR IncendinaryShell
       ISHL A 1
       Loop
    Death:
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,45)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,90)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,135)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,180)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,225)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,270)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,315)
-      FIRE A 0 Bright A_CustomMissile("IncendNearFire",0,0,0)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,45)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,90)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,135)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,180)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,225)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,270)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,315)
-      FIRE A 0 Bright A_CustomMissile("IncendFarFire",0,0,0)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,0)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,60)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,120)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,180)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,240)
-      FIRE A 0 Bright A_CustomMissile("IncendDrop",0,0,300)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,45)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,90)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,135)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,225)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,270)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,315)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendNearFire",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,45)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,90)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,135)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,225)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,270)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,315)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendFarFire",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,60)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,120)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,180)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,240)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDrop",0,0,300)
       FIRE A 2 Bright A_Explode
       FIRE B 2 Bright
       FIRE A 2 Bright A_Explode
@@ -2608,7 +2608,7 @@ ACTOR IncendinaryShell
    }
 }
 
-ACTOR IncendNearFire
+ACTOR DarkArchonIncendNearFire
 {
    Speed 36
    Height 1
@@ -2625,12 +2625,12 @@ ACTOR IncendNearFire
       TNT1 A 0 A_Die
       Goto Death
    Death:
-      TNT1 A 1 A_CustomMissile("IncendFire",0,0,0)
+      TNT1 A 1 A_CustomMissile("DarkArchonIncendFire",0,0,0)
       Stop
    }
 }
 
-ACTOR IncendFarFire : IncendNearFire
+ACTOR DarkArchonIncendFarFire : DarkArchonIncendNearFire
 {
    States
    {
@@ -2639,12 +2639,12 @@ ACTOR IncendFarFire : IncendNearFire
       TNT1 A 0 A_Die
       Goto Death
    Death:
-      TNT1 A 1 A_CustomMissile("IncendDelayFire",0,0,0)
+      TNT1 A 1 A_CustomMissile("DarkArchonIncendDelayFire",0,0,0)
       Stop
    }
 }
 
-ACTOR IncendFire
+ACTOR DarkArchonIncendFire
 {
    Speed 0
    Height 1
@@ -2672,7 +2672,7 @@ ACTOR IncendFire
     }
 }
 
-ACTOR IncendDelayFire : IncendFire
+ACTOR DarkArchonIncendDelayFire : DarkArchonIncendFire
 {
    SeeSound ""
    ExplosionDamage 40
@@ -2694,7 +2694,7 @@ ACTOR IncendDelayFire : IncendFire
     }
 }
 
-ACTOR IncendDrop : IncendNearFire
+ACTOR DarkArchonIncendDrop : DarkArchonIncendNearFire
 {
    Speed 18
    - NOGRAVITY
@@ -2707,11 +2707,11 @@ ACTOR IncendDrop : IncendNearFire
       FIRE CD 4 Bright
       Loop
    Death:
-      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,0)
-      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,72)
-      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,144)
-      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,216)
-      FIRE A 0 Bright A_CustomMissile("IncendDropFireSpread",0,0,288)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDropFireSpread",0,0,0)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDropFireSpread",0,0,72)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDropFireSpread",0,0,144)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDropFireSpread",0,0,216)
+      FIRE A 0 Bright A_CustomMissile("DarkArchonIncendDropFireSpread",0,0,288)
       FIRE ABAB 2 Bright A_Explode
       FIRE C 0 Bright A_Explode
       FIRE C 2 Bright A_PlaySound("vile/firecrkl")
@@ -2724,7 +2724,7 @@ ACTOR IncendDrop : IncendNearFire
    }
 }
 
-ACTOR IncendDropFire : IncendFire
+ACTOR DarkArchonIncendDropFire : DarkArchonIncendFire
 {
    ExplosionDamage 32
    ExplosionRadius 48
@@ -2745,7 +2745,7 @@ ACTOR IncendDropFire : IncendFire
    }
 }
 
-ACTOR IncendDropFireSpread : IncendNearFire
+ACTOR DarkArchonIncendDropFireSpread : DarkArchonIncendNearFire
 {
    States
    {
@@ -2754,7 +2754,7 @@ ACTOR IncendDropFireSpread : IncendNearFire
       TNT1 A 0 A_Die
       Goto Death
    Death:
-      TNT1 A 1 A_CustomMissile("IncendDropFire",0,0,0)
+      TNT1 A 1 A_CustomMissile("DarkArchonIncendDropFire",0,0,0)
       Stop
    }
 }
@@ -2762,14 +2762,14 @@ ACTOR IncendDropFireSpread : IncendNearFire
 //Weapon: Magnum
 //By: Bashe
 
-ACTOR GunMagnum : Weapon 25030
+ACTOR BasheGunMagnum : Weapon 25030
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25030
    Weapon.SelectionOrder 304
    Inventory.PickupSound "misc/W_pkup"
    Inventory.PickUpMessage "You got the Magnum!"
-   Weapon.AmmoType "GunMagnumBullets"
+   Weapon.AmmoType "BasheGunMagnumBullets"
    Weapon.AmmoGive 4
    Weapon.AmmoUse 1
    AttackSound "weapons/magnum"
@@ -2803,7 +2803,7 @@ ACTOR GunMagnum : Weapon 25030
    }
 }
 
-ACTOR GunMagnumBullets : Ammo 25031
+ACTOR BasheGunMagnumBullets : Ammo 25031
 {
    Inventory.Amount 6
    Inventory.MaxAmount 50
@@ -2822,7 +2822,7 @@ ACTOR GunMagnumBullets : Ammo 25031
 //Weapon: Quake Axe
 //By: Wills
 
-ACTOR QuakeAxe : Weapon 25032 // was `Axe`, too unspecific, caused conflict with Twilight Maiden
+ACTOR WillsQuakeAxe : Weapon 25032 // was `Axe`, too unspecific, caused conflict with Twilight Maiden
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25032
@@ -2858,7 +2858,7 @@ ACTOR QuakeAxe : Weapon 25032 // was `Axe`, too unspecific, caused conflict with
 //Weapon: BFG 11K
 //By: wario
 
-ACTOR BFG11k : Weapon 25033
+ACTOR warioBFG11k : Weapon 25033
 {
    Weapon.SlotNumber 7
    Weapon.SelectionOrder 25033
@@ -2887,11 +2887,11 @@ ACTOR BFG11k : Weapon 25033
       BFGT E 8 A_Playsound ("weapons/bfgboom")
       BFGT F 8
       BFGT G 8
-      BFGT H 0 A_FireCustomMissile("bfgshot2",0,1,0,0)
-      BFGT H 0 A_FireCustomMissile("Redprojectile",-11,0,0,0)
-      BFGT H 0 A_FireCustomMissile("Redprojectile",8,0,0,0)
-      BFGT H 0 A_FireCustomMissile("Redprojectile",11,0,0,0)
-      BFGT H 8 A_FireCustomMissile("Redprojectile",-8,0,0,0)
+      BFGT H 0 A_FireCustomMissile("wariobfgshot2",0,1,0,0)
+      BFGT H 0 A_FireCustomMissile("warioRedprojectile",-11,0,0,0)
+      BFGT H 0 A_FireCustomMissile("warioRedprojectile",8,0,0,0)
+      BFGT H 0 A_FireCustomMissile("warioRedprojectile",11,0,0,0)
+      BFGT H 8 A_FireCustomMissile("warioRedprojectile",-8,0,0,0)
       BFGT I 5
       BFGT J 5
       BFGT K 5
@@ -2900,7 +2900,7 @@ ACTOR BFG11k : Weapon 25033
    }
 }
 
-ACTOR bfgshot2 : BFGBall
+ACTOR wariobfgshot2 : BFGBall
 {
    Speed 20
    Scale 1.5
@@ -2908,42 +2908,42 @@ ACTOR bfgshot2 : BFGBall
    {
    Death:
       BFE1 A 2
-      BFE1 A 0 A_CustomMissile("bfgspark", 0, 0, 180)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 170)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 160)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 150)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 140)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 130)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 120)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 110)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 100)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 90)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 80)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 70)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 60)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 50)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 40)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 30)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 20)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 10)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 190)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 200)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 210)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 220)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 230)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 240)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 250)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 260)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 270)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 280)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 290)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 300)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 310)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 320)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 330)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 340)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 350)
-      BFS1 A 0 A_CustomMissile("bfgspark", 0, 0, 360)
+      BFE1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 180)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 170)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 160)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 150)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 140)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 130)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 120)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 110)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 100)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 90)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 80)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 70)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 60)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 50)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 40)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 30)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 20)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 10)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 190)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 200)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 210)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 220)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 230)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 240)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 250)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 260)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 270)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 280)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 290)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 300)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 310)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 320)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 330)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 340)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 350)
+      BFS1 A 0 A_CustomMissile("wariobfgspark", 0, 0, 360)
       BFE1 B 2
       BFE1 C 2
       BFE1 D 2
@@ -2972,7 +2972,7 @@ ACTOR Redprojectile
 }
 
 
-ACTOR bfgspark
+ACTOR wariobfgspark
 {
    Radius 12
    Height 20
@@ -2986,42 +2986,42 @@ ACTOR bfgspark
       Loop
    Death:
       RDHP CD 0 A_Playsound ("weapons/redhit")
-      BFE1 A 0 A_CustomMissile("Redprojectile", 0, 0, 180)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 170)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 160)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 150)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 140)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 130)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 120)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 110)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 100)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 90)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 80)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 70)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 60)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 50)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 40)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 30)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 20)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 10)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 190)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 200)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 210)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 220)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 230)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 240)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 250)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 260)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 270)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 280)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 290)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 300)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 310)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 320)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 330)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 340)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 350)
-      BFS1 A 0 A_CustomMissile("Redprojectile", 0, 0, 360)
+      BFE1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 180)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 170)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 160)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 150)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 140)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 130)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 120)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 110)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 100)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 90)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 80)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 70)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 60)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 50)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 40)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 30)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 20)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 10)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 190)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 200)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 210)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 220)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 230)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 240)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 250)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 260)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 270)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 280)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 290)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 300)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 310)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 320)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 330)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 340)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 350)
+      BFS1 A 0 A_CustomMissile("warioRedprojectile", 0, 0, 360)
       RDHP CD 6 Bright
       Stop
    }
@@ -3030,7 +3030,7 @@ ACTOR bfgspark
 //Weapon: Automatic Shotgun
 //By: TheDarkArchon
 
-ACTOR DArchonAutomaticShotgun : Weapon 25034
+ACTOR DarkArchonAutomaticShotgun : Weapon 25034
 {
    Weapon.SlotNumber 3
    Weapon.SelectionOrder 25034
@@ -3038,7 +3038,7 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
    Inventory.PickupSound "misc/w_pkup"
    Weapon.SelectionOrder 375
    Weapon.Kickback 175
-   Weapon.AmmoType1 "DArchonAutoShotgunClip"
+   Weapon.AmmoType1 "DarkArchonAutoShotgunClip"
    Weapon.AmmoType2 "Shell"
    Weapon.AmmoGive2 8
    Weapon.AmmoUse 1
@@ -3051,7 +3051,7 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
       ASGN A -1
       Loop
    Ready:
-      ASGG A 0 A_JumpIfInventory("DArchonAutoShotgunClip",1,2)
+      ASGG A 0 A_JumpIfInventory("DarkArchonAutoShotgunClip",1,2)
       ASGG A 0 A_GiveInventory("BoltCheck",1)
       ASGG A 1 A_WeaponReady
       Loop
@@ -3064,15 +3064,15 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
    Fire:
       ASGG A 0 A_JumpIfNoAmmo(11)
       ASGF A 0 BRIGHT A_GunFlash
-      ASGF A 0 BRIGHT A_FireCustomMissile("DArchonShotgunSmoke",0,0,8,3)
-      ASGF A 0 BRIGHT A_FireCustomMissile("DArchonShotgunCasing",45+random(-8,8),0,2,3)
+      ASGF A 0 BRIGHT A_FireCustomMissile("DarkArchonShotgunSmoke",0,0,8,3)
+      ASGF A 0 BRIGHT A_FireCustomMissile("DarkArchonShotgunCasing",45+random(-8,8),0,2,3)
       ASGF A 2 BRIGHT A_FireBullets(5,5,10,4,"BulletPuff",1)
       ASGF B 2 BRIGHT
       ASGG BCDEF 2
       Goto Ready
     Reload:
     AltFire:
-      ASGG A 0 A_JumpIfInventory("DArchonAutoShotgunClip",5,25)
+      ASGG A 0 A_JumpIfInventory("DarkArchonAutoShotgunClip",5,25)
       ASGG A 0 A_JumpIfInventory("Shell",1,1)
       Goto Ready
       ASGR ABCD 2
@@ -3081,15 +3081,15 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
       ASGR HI 2
       ASGR J 3 A_PlayWeaponSound("weapons/gunin")
       ASGR J 0 A_TakeInventory("Shell",1)
-      ASGR J 0 A_GiveInventory("DArchonAutoShotgunClip",1)
+      ASGR J 0 A_GiveInventory("DarkArchonAutoShotgunClip",1)
       ASGR K 3
       ASGR L 3
       ASGR MN 2
       ASGR E 6
-      ASGR E 0 A_JumpIfInventory("AutoShotgunClip",5,2)
+      ASGR E 0 A_JumpIfInventory("DarkArchonAutoShotgunClip",5,2)
       ASGR E 0 A_JumpIfInventory("Shell",1,6)
       ASGR DCBA 2
-      ASGG A 4 A_JumpIfInventory("BoltCheck",1,2)
+      ASGG A 4 A_JumpIfInventory("DarkArchonBoltCheck",1,2)
       Goto Ready
       ASGR F 0
       Goto AltFire+7
@@ -3098,7 +3098,7 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
       ASGR V 4
       ASGR WXYZ 2
       ASG2 A 1
-      ASGG A 4 A_TakeInventory("BoltCheck",999)
+      ASGG A 4 A_TakeInventory("DarkArchonBoltCheck",999)
       Goto Ready
    Flash:
       TNT1 A 2 BRIGHT A_Light1
@@ -3108,7 +3108,7 @@ ACTOR DArchonAutomaticShotgun : Weapon 25034
    }
 }
 
-ACTOR DArchonAutoShotgunClip : Ammo
+ACTOR DarkArchonAutoShotgunClip : Ammo
 {
     // ammo inside the chamber.
     // ammo for the tube is still `Shell` itself.
@@ -3118,7 +3118,7 @@ ACTOR DArchonAutoShotgunClip : Ammo
    Inventory.Icon ASGNA0
 }
 
-ACTOR ShotgunCasing
+ACTOR DarkArchonShotgunCasing
 {
    Height 12
    Radius 9
@@ -3161,7 +3161,7 @@ ACTOR ShotgunCasing
    }
 }
 
-ACTOR DArchonShotgunSmoke
+ACTOR DarkArchonShotgunSmoke
 {
    Radius 1
    Height 1
@@ -3182,7 +3182,7 @@ ACTOR DArchonShotgunSmoke
    }
 }
 
-ACTOR BoltCheck : Ammo
+ACTOR DarkArchonBoltCheck : Ammo
 {
    Inventory.MaxAmount 1
    Ammo.BackpackAmount 0
@@ -3571,13 +3571,13 @@ ACTOR PowerMissileBox : PowerMissile 25041
 //Weapon: Poison Gun
 //By: Daniel
 
-ACTOR PoisonGun : Weapon 25042
+ACTOR DanielPoisonGun : Weapon 25042
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 25042
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Poison Launcher!"
-   Weapon.AmmoType "PoisonRecipient"
+   Weapon.AmmoType "DanielPoisonRecipient"
    Weapon.AmmoGive 4
    Weapon.AmmoUse 1
    States
@@ -3597,14 +3597,14 @@ ACTOR PoisonGun : Weapon 25042
    Fire:
       POIG A 3
       POIG B 0 A_PlayWeaponSound("weapons/psnlaunch")
-      POIG B 6 A_FireCustomMissile("PoisonShot",0,1,4,5)
+      POIG B 6 A_FireCustomMissile("DanielPoisonShot",0,1,4,5)
       POIG A 12
       POIG A 0 A_ReFire
       Goto Ready
    }
 }
 
-ACTOR PoisonShot
+ACTOR DanielPoisonShot
 {
    Radius 10
    Height 8
@@ -3627,16 +3627,16 @@ ACTOR PoisonShot
       PSNE A 3 Bright
       PSNE B 4 Bright
       PSNE C 1 Bright A_Explode
-      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,0)
-      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,90)
-      PSNE C 1 A_CustomMissile("PoisonShotCloud1",5,0,180)
-      PSNE C 3 A_CustomMissile("PoisonShotCloud1",5,0,270)
+      PSNE C 1 A_CustomMissile("DanielPoisonShotCloud1",5,0,0)
+      PSNE C 1 A_CustomMissile("DanielPoisonShotCloud1",5,0,90)
+      PSNE C 1 A_CustomMissile("DanielPoisonShotCloud1",5,0,180)
+      PSNE C 3 A_CustomMissile("DanielPoisonShotCloud1",5,0,270)
       PSNE DEFGCBA 6 Bright
       Stop
    }
 }
 
-ACTOR PoisonShotCloud1
+ACTOR DanielPoisonShotCloud1
 {
    Radius 10
    Height 8
@@ -3663,19 +3663,19 @@ ACTOR PoisonShotCloud1
       PSNE B 4 Bright
       PSNE C 1 Bright A_Explode
       PSNE C 0 A_Jump(16,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,0)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud2",5,0,0)
       PSNE C 0 A_Jump(16,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,90)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud2",5,0,90)
       PSNE C 0 A_Jump(16,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,180)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud2",5,0,180)
       PSNE C 0 A_Jump(16,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud2",5,0,270)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud2",5,0,270)
       PSNE DEFGCBA 6 Bright
       Stop
    }
 }
 
-ACTOR PoisonShotCloud2
+ACTOR DanielPoisonShotCloud2
 {
    Radius 10
    Height 8
@@ -3702,19 +3702,19 @@ ACTOR PoisonShotCloud2
       PSNE B 4 Bright
       PSNE C 1 Bright A_Explode
       PSNE C 0 A_Jump(32,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,0)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud3",5,0,0)
       PSNE C 0 A_Jump(32,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,90)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud3",5,0,90)
       PSNE C 0 A_Jump(32,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,180)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud3",5,0,180)
       PSNE C 0 A_Jump(32,2)
-      PSNE C 1 Bright A_CustomMissile("PoisonShotCloud3",5,0,270)
+      PSNE C 1 Bright A_CustomMissile("DanielPoisonShotCloud3",5,0,270)
       PSNE DEFGCBA 6 Bright
       Stop
    }
 }
 
-ACTOR PoisonShotCloud3
+ACTOR DanielPoisonShotCloud3
 {
    Radius 10
    Height 8
@@ -3745,7 +3745,7 @@ ACTOR PoisonShotCloud3
    }
 }
 
-ACTOR PoisonRecipient : Ammo 25043
+ACTOR DanielPoisonRecipient : Ammo 25043
 {
    Inventory.Amount 2
    Inventory.MaxAmount 50
@@ -3761,7 +3761,7 @@ ACTOR PoisonRecipient : Ammo 25043
    }
 }
 
-ACTOR PoisonRecipientPile : PoisonRecipient 25044
+ACTOR DanielPoisonRecipientPile : DanielPoisonRecipient 25044
 {
    Inventory.Amount 10
    Inventory.PickupMessage "Picked up a pile of poison recipients."
@@ -3776,7 +3776,7 @@ ACTOR PoisonRecipientPile : PoisonRecipient 25044
 //Weapon: Railgun
 //By: Daniel
 
-ACTOR RailGun : Weapon 25045
+ACTOR DanielRailGun : Weapon 25045
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 25045
@@ -3823,7 +3823,7 @@ ACTOR RailGun : Weapon 25045
 //Weapon: SMG
 //BY: Daniel
 
-ACTOR SubMachineGun : Weapon 25046
+ACTOR DanielSubMachineGun : Weapon 25046
 {
    Weapon.SlotNumber 3
    Weapon.SelectionOrder 25046
@@ -3866,13 +3866,13 @@ ACTOR SubMachineGun : Weapon 25046
 //Weapon: Devastator
 //By Daniel
 
-ACTOR Devastator : Weapon 25047
+ACTOR DanielDevastator : Weapon 25047
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 25047
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Devastator Weapon!"
-   Weapon.AmmoType "MiniRockets"
+   Weapon.AmmoType "DanielMiniRockets"
    Weapon.AmmoGive 12
    Weapon.AmmoUse 1
    States
@@ -3892,18 +3892,18 @@ ACTOR Devastator : Weapon 25047
    Fire:
       DEVG B 0 A_Light2
       DEVG B 0 A_PlayWeaponSound("weapons/devshot")
-      DEVG B 3 A_FireCustomMissile("DevastatorShot",0,1,-3,6)
+      DEVG B 3 A_FireCustomMissile("DanielDevastatorShot",0,1,-3,6)
       DEVG A 3 A_Light1
       DEVG C 0 A_Light2
       DEVG C 0 A_PlayWeaponSound("weapons/devshot")
-      DEVG C 3 A_FireCustomMissile("DevastatorShot",0,1,3,6)
+      DEVG C 3 A_FireCustomMissile("DanielDevastatorShot",0,1,3,6)
       DEVG A 3 A_Light0
       DEVG A 4 A_ReFire
       Goto Ready
    }
 }
 
-ACTOR DevastatorShot
+ACTOR DanielDevastatorShot
 {
    Radius 4
    Height 4
@@ -3927,7 +3927,7 @@ ACTOR DevastatorShot
    }
 }
 
-ACTOR MiniRockets : Ammo 25048
+ACTOR DanielMiniRockets : Ammo 25048
 {
    Inventory.Amount 6
    Inventory.MaxAmount 100
@@ -3943,7 +3943,7 @@ ACTOR MiniRockets : Ammo 25048
    }
 }
 
-ACTOR MiniRocketBox : MiniRockets 25049
+ACTOR DanielMiniRocketBox : DanielMiniRockets 25049
 {
    +ALWAYSPICKUP
    Inventory.Amount 30
@@ -3959,13 +3959,13 @@ ACTOR MiniRocketBox : MiniRockets 25049
 //Weapon: Grenade Launcher
 //By: Daniel
 
-ACTOR GrenadeLauncher : Weapon 25050
+ACTOR DanielGrenadeLauncher : Weapon 25050
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 25050
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Grenade Launcher!"
-   Weapon.AmmoType "Grenades"
+   Weapon.AmmoType "DanielGrenades"
    Weapon.AmmoGive 6
    Weapon.AmmoUse 1
    States
@@ -3986,7 +3986,7 @@ ACTOR GrenadeLauncher : Weapon 25050
       GRNG A 2
       GRNG B 0 A_GunFlash
       GRNG B 0 A_PlayWeaponSound("weapons/grenlau")
-      GRNG B 5 A_ThrowGrenade("GrenadeShot",-4,13,9,0)
+      GRNG B 5 A_ThrowGrenade("DanielGrenadeShot",-4,13,9,0)
       GRNG C 5
       GRNG D 5
       GRNG A 4
@@ -4000,7 +4000,7 @@ ACTOR GrenadeLauncher : Weapon 25050
    }
 }
 
-ACTOR GrenadeShot
+ACTOR DanielGrenadeShot
 {
    Radius 4
    Height 3
@@ -4027,7 +4027,7 @@ ACTOR GrenadeShot
    }
 }
 
-ACTOR Grenades : Ammo 25051
+ACTOR DanielGrenades : Ammo 25051
 {
    Inventory.Amount 3
    Inventory.MaxAmount 50
@@ -4043,7 +4043,7 @@ ACTOR Grenades : Ammo 25051
    }
 }
 
-ACTOR GrenadeBox : Grenades 25052
+ACTOR DanielGrenadeBox : DanielGrenades 25052
 {
    Inventory.Amount 15
    Inventory.PickupMessage "Picked up a box of grenades."
@@ -4058,7 +4058,7 @@ ACTOR GrenadeBox : Grenades 25052
 //Weapon: .20 Pistol
 //By: Daniel
 
-ACTOR Pistol3 : Weapon 25053
+ACTOR DanielPistol3 : Weapon 25053
 {
    Weapon.SlotNumber 2
    Weapon.SelectionOrder 25053
@@ -4096,7 +4096,7 @@ ACTOR Pistol3 : Weapon 25053
 //Weapon: Duke3D Shotgun
 //By: Daniel
 
-ACTOR Shotgun2 : Weapon 25054
+ACTOR DanielShotgun2 : Weapon 25054
 {
    Weapon.SlotNumber 3
    Weapon.SelectionOrder 25054
@@ -4139,7 +4139,7 @@ ACTOR Shotgun2 : Weapon 25054
 //Weapon: Quad Shotgun
 //By: Daniel
 
-ACTOR HiPrecisionGun : Weapon 25055
+ACTOR DanielHiPrecisionGun : Weapon 25055
 {
    Weapon.SlotNumber 3
    Weapon.SelectionOrder 25055
@@ -4245,16 +4245,16 @@ ACTOR PhobosAir
 //Weapon: Demon Spawner
 //By: chaoscentral
 
-ACTOR MonsterSpawner : Weapon 25057
+ACTOR ChaosMonsterSpawner : Weapon 25057
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25057
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Demon Spawner!"
-   Weapon.AmmoType1 "Orbs"
+   Weapon.AmmoType1 "ChaosOrbs"
    Weapon.AmmoGive1 5
    Weapon.AmmoUse1 1
-   Weapon.AmmoType2 "Orbs"
+   Weapon.AmmoType2 "ChaosOrbs"
    Weapon.AmmoGive2 0
    Weapon.AmmoUse2 10
    States
@@ -4275,20 +4275,20 @@ ACTOR MonsterSpawner : Weapon 25057
       PSNG A 4
       PSNG B 6
       TNT1 A 0 A_PlaySound("weapons/monspwnf")
-      PSNG C 6 A_FireCustomMissile("MonsterDropper",0,1,0,0)
+      PSNG C 6 A_FireCustomMissile("ChaosMonsterDropper",0,1,0,0)
       PSNG A 4
       Goto Ready
    AltFire:
       PSNG A 4
       PSNG B 6
       TNT1 A 0 A_PlaySound("weapons/monspwnf")
-      PSNG C 6 A_FireCustomMissile("MonsterDropper2",0,1,0,0)
+      PSNG C 6 A_FireCustomMissile("ChaosMonsterDropper2",0,1,0,0)
       PSNG A 4
       Goto Ready
    }
 }
 
-ACTOR MonsterDropper
+ACTOR ChaosMonsterDropper
 {
    Radius 4
    Height 8
@@ -4314,24 +4314,24 @@ ACTOR MonsterDropper
       TNT1 A 0 A_Jump(43, 11)
       TNT1 A 0 A_Jump(43, 12)
       TNT1 A 0 A_Jump(255, 5)
-      GRNE L 0 A_SpawnItem("ZombieGuy2",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosZombieGuy2",1,0,0)
       TNT1 A 0 A_Jump(255, 10)
-      GRNE L 0 A_SpawnItem("ShotgunGuy2",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosShotgunGuy2",1,0,0)
       TNT1 A 0 A_Jump(255, 8)
-      GRNE L 0 A_SpawnItem("DoomImp2",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosDoomImp2",1,0,0)
       TNT1 A 0 A_Jump(255, 6)
-      GRNE L 0 A_SpawnItem("ChainGuy2",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosChainGuy2",1,0,0)
       TNT1 A 0 A_Jump(255, 4)
-      GRNE L 0 A_SpawnItem("Demon666",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosDemon666",1,0,0)
       TNT1 A 0 A_Jump(255, 2)
-      GRNE L 0 A_SpawnItem("Spectre2",1,0,0)
+      GRNE L 0 A_SpawnItem("ChaosSpectre2",1,0,0)
       FIRE DEFGH 2
       TNT1 A -1
       Stop
    }
 }
 
-ACTOR MonsterDropper2
+ACTOR ChaosMonsterDropper2
 {
    Radius 8
    Height 16
@@ -4368,57 +4368,57 @@ ACTOR MonsterDropper2
    }
 }
 
-ACTOR ZombieGuy2 : ZombieMan
+ACTOR ChaosZombieGuy2 : ZombieMan
 {
    +FRIENDLY
 }
 
-ACTOR ShotgunGuy2 : ShotgunGuy
+ACTOR ChaosShotgunGuy2 : ShotgunGuy
 {
    +FRIENDLY
 }
 
-ACTOR DoomImp2 : DoomImp
+ACTOR ChaosDoomImp2 : DoomImp
 {
    +FRIENDLY
 }
 
-ACTOR ChainGuy2 : ChaingunGuy
+ACTOR ChaosChainGuy2 : ChaingunGuy
 {
    +FRIENDLY
 }
 
-ACTOR Demon666 : Demon
+ACTOR ChaosDemon666 : Demon
 {
    +FRIENDLY
 }
 
-ACTOR Spectre2 : Spectre
+ACTOR ChaosSpectre2 : Spectre
 {
    +FRIENDLY
 }
 
-ACTOR HellKnight2 : HellKnight
+ACTOR ChaosHellKnight2 : HellKnight
 {
    +FRIENDLY
 }
 
-ACTOR Cacodemon2 : Cacodemon
+ACTOR ChaosCacodemon2 : Cacodemon
 {
    +FRIENDLY
 }
 
-ACTOR BaronOfHell2 : BaronOfHell
+ACTOR ChaosBaronOfHell2 : BaronOfHell
 {
    +FRIENDLY
 }
 
-ACTOR Archvile2 : Archvile
+ACTOR ChaosArchvile2 : Archvile
 {
    +FRIENDLY
 }
 
-ACTOR Orbs : Ammo
+ACTOR ChaosOrbs : Ammo
 {
    Inventory.Amount 5
    Inventory.MaxAmount 50
@@ -4427,7 +4427,7 @@ ACTOR Orbs : Ammo
    Inventory.Icon GRNBA0
 }
 
-ACTOR OrbAmmo : Orbs 25058
+ACTOR ChaosOrbAmmo : ChaosOrbs 25058
 {
    Inventory.Amount 5
    States
@@ -4648,14 +4648,14 @@ ACTOR InuyashaBlasttrail
 //Weapon: Burst Shotgun
 //By: Inuyasha_989
 
-ACTOR Burstshotgun : Weapon 26005
+ACTOR InuyashaBurstshotgun : Weapon 26005
 {
    Weapon.SlotNumber 4
    Weapon.SelectionOrder 26005
    Inventory.PickupSound "misc/w_pkup"
    Inventory.PickupMessage "You got the Burst Shotgun!"
    Weapon.AmmoType2 "Shell"
-   Weapon.AmmoType1 "BSGShell"
+   Weapon.AmmoType1 "InuyashaBSGShell"
    Weapon.AmmoGive2 15
    Weapon.AmmoUse 1
    +AMMO_OPTIONAL
@@ -4678,7 +4678,7 @@ ACTOR Burstshotgun : Weapon 26005
    Fire:
       SHT5 A 0 A_JumpIfNoAmmo(13)
       SHT5 A 0 A_JumpIfInventory("BSGShell",5,1)
-      SHT5 A 0 A_FireCustomMissile("CheapAlert")
+      SHT5 A 0 A_FireCustomMissile("XaserCheapAlert")
       SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
       SHT5 A 2
       SHT5 B 4 Bright A_FireBullets(5,2,10,5,"BulletPuff",1)
@@ -4707,7 +4707,7 @@ ACTOR Burstshotgun : Weapon 26005
    }
 }
 
-ACTOR BSGShell : Ammo 26035
+ACTOR InuyashaBSGShell : Ammo 26035
 {
    Inventory.Amount 1
    Inventory.MaxAmount 5
@@ -4720,13 +4720,13 @@ ACTOR BSGShell : Ammo 26035
 //By: Inuyasha_989
 
 // was no doomednum
-ACTOR RandProjLauncher : Weapon 26006
+ACTOR InuyashaRandProjLauncher : Weapon 26006
 {
    Weapon.SlotNumber 6
    Weapon.SelectionOrder 26006
    Inventory.PickupMessage "You got the Random Projectile Launcher! Wonder what it does?"
    Inventory.PickupSound "misc/w_pkup"
-   Weapon.AmmoType "UACProtoEn"
+   Weapon.AmmoType "InuyashaUACProtoEn"
    Weapon.AmmoGive 100
    Weapon.AmmoUse 10
    States
@@ -4813,72 +4813,72 @@ ACTOR RandProjLauncher : Weapon 26006
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("CometR", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CometR", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CometR", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CometR", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("CometR", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCometR", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCometR", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCometR", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCometR", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaCometR", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
       RPRL A 0
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("SoulHarvesterBall", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("SoulHarvesterBall", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaSoulHarvesterBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaSoulHarvesterBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaSoulHarvesterBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaSoulHarvesterBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaSoulHarvesterBall", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
       RPRL A 0
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("RedSkullBall", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("RedSkullBall", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("RedSkullBall", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("RedSkullBall", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("RedSkullBall", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaRedSkullBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaRedSkullBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaRedSkullBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaRedSkullBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaRedSkullBall", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
       RPRL A 0
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("FastImpBall", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("FastImpBall", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("FastImpBall", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("FastImpBall", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("FastImpBall", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaFastImpBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaFastImpBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaFastImpBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaFastImpBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaFastImpBall", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
       RPRL A 0
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("CacoLichBall", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CacoLichBall", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CacoLichBall", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("CacoLichBall", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("CacoLichBall", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCacoLichBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCacoLichBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCacoLichBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaCacoLichBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaCacoLichBall", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
       RPRL A 0
       RPRL A 8 A_PlayWeaponSound("weapons/rndlaun")
       RPRL BC 8
       RPRL D 0
-      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", 10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", -10, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", 20, 0, 0, 0)
-      RPRL D 0 A_FireCustomMissile("TorturedSoulBall", -20, 0, 0, 0)
-      RPRL D 6 A_FireCustomMissile("TorturedSoulBall", 0, 1, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaTorturedSoulBall", 10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaTorturedSoulBall", -10, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaTorturedSoulBall", 20, 0, 0, 0)
+      RPRL D 0 A_FireCustomMissile("InuyashaTorturedSoulBall", -20, 0, 0, 0)
+      RPRL D 6 A_FireCustomMissile("InuyashaTorturedSoulBall", 0, 1, 0, 0)
       RPRL EF 8
       Goto Ready
    }
 }
 
-ACTOR UACProtoEn : Ammo 25017
+ACTOR InuyashaUACProtoEn : Ammo 25017
 {
    Inventory.Amount 20
    Inventory.MaxAmount 250
@@ -4894,7 +4894,7 @@ ACTOR UACProtoEn : Ammo 25017
    }
 }
 
-actor CometR
+actor InuyashaCometR
 {
     Radius 6
     Height 8
@@ -4906,7 +4906,7 @@ actor CometR
     PROJECTILE
     SeeSound "weapons/launch"
     DeathSound "weapons/explosion"
-    MissileType CometTailR
+    MissileType InuyashaCometTailR
     MissileHeight 0
     States
     {
@@ -4916,12 +4916,12 @@ actor CometR
     Death:
        COMT D 3 Bright
        COMT E 3 Bright
-       COMT E 0 A_CustomMissile("CometDeathR", 0, 0, 0)
+       COMT E 0 A_CustomMissile("InuyashaCometDeathR", 0, 0, 0)
        Stop
     }
 }
 
-Actor CometTailR
+Actor InuyashaCometTailR
 {
     PROJECTILE
     RENDERSTYLE ADD
@@ -4935,7 +4935,7 @@ Actor CometTailR
     }
 }
 
-Actor CometDeathR
+Actor InuyashaCometDeathR
 {
     PROJECTILE
     RENDERSTYLE ADD
@@ -4949,7 +4949,7 @@ Actor CometDeathR
     }
 }
 
-actor SoulHarvesterBall
+actor InuyashaSoulHarvesterBall
 {
     Radius 8
     Height 6
@@ -4973,7 +4973,7 @@ actor SoulHarvesterBall
     }
 }
 
-actor RedSkullBall
+actor InuyashaRedSkullBall
 {
     Radius 8
     Height 6
@@ -4995,7 +4995,7 @@ actor RedSkullBall
     }
 }
 
-ACTOR FastImpBall
+ACTOR InuyashaFastImpBall
 {
     Radius 6
     Height 8
@@ -5018,7 +5018,7 @@ ACTOR FastImpBall
 	}
 }
 
-ACTOR CacoLichBall
+ACTOR InuyashaCacoLichBall
 {
     Radius 8
     Height 6
@@ -5041,7 +5041,7 @@ ACTOR CacoLichBall
 	}
 }
 
-actor TorturedSoulBall
+actor InuyashaTorturedSoulBall
 {
     Radius 8
     Height 6
@@ -5066,14 +5066,14 @@ actor TorturedSoulBall
 //By: Chronoteeth and TheDarkArchon
 
 // was 21000
-ACTOR Barnicle : Weapon 21330
+ACTOR ChronoteethBarnicle : Weapon 21330
 {
    Weapon.SlotNumber 5
    Weapon.SelectionOrder 21330
     Weapon.SelectionOrder 350
     Inventory.PickupSound "misc/w_pkup"
     Inventory.PickupMessage "You got the Barnicle Plasma Twine!"
-    Weapon.AmmoType1 "BarnicleAmmo"
+    Weapon.AmmoType1 "ChronoteethBarnicleAmmo"
     Weapon.AmmoGive1 100
     Weapon.AmmoUse1 1
     States
@@ -5105,27 +5105,27 @@ ACTOR Barnicle : Weapon 21330
        TNT1 A 1 A_Raise
        Goto Select+1
     Fire:
-       BARF A 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
-       BARF B 1 A_FireCustomMissile("Tentacle2",0,0,8,4)
-       BARF C 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
-       BARF B 1 A_FireCustomMissile("Tentacle2",0,0,8,4)
-       BARF A 1 A_FireCustomMissile("Tentacle1",0,1,8,4)
-       BARF D 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
-       BARF E 1 A_FireCustomMissile("Tentacle1",0,0,8,4)
-       BARF F 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
-       BARF E 1 A_FireCustomMissile("Tentacle1",0,0,8,4)
-       BARF D 1 A_FireCustomMissile("Tentacle2",0,1,8,4)
+       BARF A 1 A_FireCustomMissile("ChronoteethTentacle1",0,1,8,4)
+       BARF B 1 A_FireCustomMissile("ChronoteethTentacle2",0,0,8,4)
+       BARF C 1 A_FireCustomMissile("ChronoteethTentacle1",0,1,8,4)
+       BARF B 1 A_FireCustomMissile("ChronoteethTentacle2",0,0,8,4)
+       BARF A 1 A_FireCustomMissile("ChronoteethTentacle1",0,1,8,4)
+       BARF D 1 A_FireCustomMissile("ChronoteethTentacle2",0,1,8,4)
+       BARF E 1 A_FireCustomMissile("ChronoteethTentacle1",0,0,8,4)
+       BARF F 1 A_FireCustomMissile("ChronoteethTentacle2",0,1,8,4)
+       BARF E 1 A_FireCustomMissile("ChronoteethTentacle1",0,0,8,4)
+       BARF D 1 A_FireCustomMissile("ChronoteethTentacle2",0,1,8,4)
        Goto Ready+8
      }
 }
 
-ACTOR Tentacle1
+ACTOR ChronoteethTentacle1
 {
     Scale 0.3
     Radius 13
     Height 8
     Damage 1
-    MissileType TentacleTrail1
+    MissileType ChronoteethTentacleTrail1
     Speed 22
     SeeSound "weapons/barniclefire"
     MissileHeight 0
@@ -5146,7 +5146,7 @@ ACTOR Tentacle1
     }
 }
 
-ACTOR TentacleTrail1
+ACTOR ChronoteethTentacleTrail1
 {
     Scale 0.275
     Radius 1
@@ -5163,7 +5163,7 @@ ACTOR TentacleTrail1
     }
 }
 
-ACTOR Tentacle2
+ACTOR ChronoteethTentacle2
 {
     Scale 0.3
     Radius 13
@@ -5207,7 +5207,7 @@ ACTOR TentacleTrail2
     }
 }
 
-ACTOR BarnicleAmmo : Ammo 20482
+ACTOR ChronoteethBarnicleAmmo : Ammo 20482
 {
     Radius 20
     Height 16
@@ -5229,7 +5229,7 @@ ACTOR BarnicleAmmo : Ammo 20482
 //Weapon: Necronomicon
 //By: Froon
 
-ACTOR Necronomicon : Weapon 25100
+ACTOR FroonNecronomicon : Weapon 25100
 {
    Weapon.SlotNumber 1
    Weapon.SelectionOrder 25100
@@ -5237,8 +5237,8 @@ ACTOR Necronomicon : Weapon 25100
     Weapon.AmmoGive 10
     Weapon.AmmoUse 3
     Weapon.AmmoUse2 10
-    Weapon.AmmoType "Darkmana"
-    Weapon.AmmoType2 "Darkmana"
+    Weapon.AmmoType "CutmanmikeDarkmana"
+    Weapon.AmmoType2 "CutmanmikeDarkmana"
     Inventory.PickupSound "misc/w_pkup"
     Inventory.PickupMessage "You got the Necronomicon!"
     +FLOATBOB
@@ -5262,7 +5262,7 @@ ACTOR Necronomicon : Weapon 25100
        NECR B 10
        NECR C 8
        NECR D 2
-       NECR E 16 A_FireCustomMissile("GhostEgg", 0, 1, 0, 0)
+       NECR E 16 A_FireCustomMissile("FroonGhostEgg", 0, 1, 0, 0)
        NECR D 4
        NECR C 4
        NECR B 4
@@ -5274,7 +5274,7 @@ ACTOR Necronomicon : Weapon 25100
        NECR B 10
        NECR C 8
        NECR D 2
-       NECR E 16 A_FireCustomMissile("GhostEgg2", 0, 1, 0, 0)
+       NECR E 16 A_FireCustomMissile("FroonGhostEgg2", 0, 1, 0, 0)
        NECR D 4
        NECR C 4
        NECR B 4
@@ -5284,7 +5284,7 @@ ACTOR Necronomicon : Weapon 25100
     }
 }
 
-ACTOR GhostEgg : PlasmaBall
+ACTOR FroonGhostEgg : PlasmaBall
 {
     Damage 0
     SeeSound "weapons/spirit1"
@@ -5297,12 +5297,12 @@ ACTOR GhostEgg : PlasmaBall
 
        Goto Death
     Death:
-       PLSS A 1 A_SpawnItem("GhostHatch", 1, 0, 0)
+       PLSS A 1 A_SpawnItem("FroonGhostHatch", 1, 0, 0)
        Stop
     }
 }
 
-ACTOR GhostHatch
+ACTOR FroonGhostHatch
 {
     RENDERSTYLE ADD
     +NOGRAVITY
@@ -5311,12 +5311,12 @@ ACTOR GhostHatch
     {
     Spawn:
        SPI1 JIHGFE 4
-       SPI1 A 4 A_SpawnItem("Ghost", 1, 0, 0)
+       SPI1 A 4 A_SpawnItem("FroonGhost", 1, 0, 0)
        Stop
     }
 }
 
-ACTOR Ghost
+ACTOR FroonGhost
 {
     RENDERSTYLE ADD
     +FRIENDLY
@@ -5339,7 +5339,7 @@ ACTOR Ghost
     }
 }
 
-ACTOR GhostEgg2 : GhostEgg
+ACTOR FroonGhostEgg2 : FroonGhostEgg
 {
     States
     {
@@ -5348,12 +5348,12 @@ ACTOR GhostEgg2 : GhostEgg
        Goto Death
     Death:
        Death:
-       PLSS A 1 A_SpawnItem("GhostHatch2", 1, 0, 0)
+       PLSS A 1 A_SpawnItem("FroonGhostHatch2", 1, 0, 0)
        Stop
     }
 }
 
-ACTOR GhostHatch2
+ACTOR FroonGhostHatch2
 {
     RENDERSTYLE ADD
     +NOGRAVITY
@@ -5362,11 +5362,11 @@ ACTOR GhostHatch2
     {
     Spawn:
        SPI2 JIHGFE 4
-       SPI2 A 4 A_SpawnItem("Ghost2", 1, 0, 0)
+       SPI2 A 4 A_SpawnItem("FroonGhost2", 1, 0, 0)
        Stop
     }
 }
-ACTOR Ghost2
+ACTOR FroonGhost2
 {
     Health 300
     Radius 16
@@ -5401,7 +5401,7 @@ ACTOR Ghost2
        SPI2 EFGHIJ 2
        Stop
     Death:
-       SPI1 J 0 A_SpawnItem("GhostHatch", 1, 0, 0)
+       SPI1 J 0 A_SpawnItem("FroonGhostHatch", 1, 0, 0)
        Stop
     }
 }

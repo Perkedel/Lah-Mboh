@@ -372,61 +372,61 @@ decal BrutalBalloonPop 4025
 
 // Weapon Resource Wad
 
-Generator FireShot	                DoomImpScorch
+Generator HobbsTigerFireShot	                DoomImpScorch
 
-Decal MultiBall1Scorch1
+Decal DarkArchonMultiBall1Scorch1
 {
 	pic APLSA0
 	add 1.0
 	x-scale 2.0
 	y-scale 2.0
 	animator GoAway
-	lowerdecal MultiBallScorchLower1
+	lowerdecal DarkArchonMultiBallScorchLower1
 }
 
-Decal MultiBall1Scorch2
+Decal DarkArchonMultiBall1Scorch2
 {
 	pic APLSB0
 	add 1.0
 	x-scale 2.0
 	y-scale 2.0
 	animator GoAway
-	lowerdecal MultiBallScorchLower2
+	lowerdecal DarkArchonMultiBallScorchLower2
 }
 
-Decalgroup MultiBall1Scorch
+Decalgroup DarkArchonMultiBall1Scorch
 {
-	MultiBall1Scorch1	1
-	MultiBall1Scorch2	1
+	DarkArchonMultiBall1Scorch1	1
+	DarkArchonMultiBall1Scorch2	1
 }
 
-Decal MultiBall2Scorch1
+Decal DarkArchonMultiBall2Scorch1
 {
 	pic YPLSA0
 	add 1.0
 	x-scale 2.0
 	y-scale 2.0
 	animator GoAway
-	lowerdecal MultiBallScorchLower1
+	lowerdecal DarkArchonMultiBallScorchLower1
 }
 
-Decal MultiBall2Scorch2
+Decal DarkArchonMultiBall2Scorch2
 {
 	pic YPLSB0
 	add 1.0
 	x-scale 2.0
 	y-scale 2.0
 	animator GoAway
-	lowerdecal MultiBallScorchLower2
+	lowerdecal DarkArchonMultiBallScorchLower2
 }
 
-DecalGroup MultiBall2Scorch
+DecalGroup DarkArchonMultiBall2Scorch
 {
-	MultiBall2Scorch1	1
-	MultiBall2Scorch2	1
+	DarkArchonMultiBall2Scorch1	1
+	DarkArchonMultiBall2Scorch2	1
 }
 
-Decal MultiScorchScorchLower2
+Decal DarkArchonMultiScorchScorchLower2
 {
 	pic PLASMA2
 	shade "00 00 00"
@@ -436,7 +436,7 @@ Decal MultiScorchScorchLower2
 	randomflipy
 }
 
-Decal MultiScorchScorchLower1
+Decal DarkArchonMultiScorchScorchLower1
 {
 	pic PLASMA1
 	shade "00 00 00"
@@ -446,7 +446,7 @@ Decal MultiScorchScorchLower1
 	randomflipy
 }
 
-Decal MultiBall3Lightning1
+Decal DarkArchonMultiBall3Lightning1
 {
 	pic BFGLITE1
 	shade "FA 00 00"
@@ -457,7 +457,7 @@ Decal MultiBall3Lightning1
 }
 
 
-Decal MultiBall3Lightning2
+Decal DarkArchonMultiBall3Lightning2
 {
 	pic BFGLITE2
 	shade "FA 00 00"
@@ -467,31 +467,31 @@ Decal MultiBall3Lightning2
 	lowerdecal BFGScorch
 }
 
-DecalGroup MultiBall3Lightning
+DecalGroup DarkArchonMultiBall3Lightning
 {
-	MultiBall3Lightning1	1
-	MultiBall3Lightning2	1
+	DarkArchonMultiBall3Lightning1	1
+	DarkArchonMultiBall3Lightning2	1
 }
 
 
-Generator MultiProjectile1		MultiBall1Scorch
-Generator MultiProjectile2		MultiBall2Scorch
-Generator MultiProjectile3		MultiBall3Lightning
+Generator DarkArchonMultiProjectile1		DarkArchonMultiBall1Scorch
+Generator DarkArchonMultiProjectile2		DarkArchonMultiBall2Scorch
+Generator DarkArchonMultiProjectile3		DarkArchonMultiBall3Lightning
 
-Generator Bolt1                         BFGLightning
+Generator PostBolt1                         BFGLightning
 
-Generator COPGun			BulletChip
+Generator XaserCOPGun			BulletChip
 
-Generator Flame	                        DoomImpScorch
-Generator FlameNoDamage	                DoomImpScorch
+Generator BouncyFlame	                        DoomImpScorch
+Generator BouncyFlameNoDamage	                DoomImpScorch
 
-Generator SeekerMissile                 Scorch
+Generator NecroMageSeekerMissile                 Scorch
 
-Generator Tazer                         BulletChip
+Generator HellsBaneTazer                         BulletChip
 
-Generator WalterPPK                     BulletChip
+Generator NecroMageWalterPPK                     BulletChip
 
-Generator DArchonAutomaticShotgun              BulletChip
+Generator DarkArchonAutomaticShotgun              BulletChip
 
 Decal ZChronosHeavyScorchLower1
 {
