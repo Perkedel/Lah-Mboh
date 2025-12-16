@@ -42,6 +42,14 @@ Switch Doom 3	ZRIONGLS On sound world/njGlass Pic GLBROK Tics 0
 // and now mine
 Switch Doom 3	SOMAGLA0 On sound world/njGlass Pic SOMABRA0 Tics 0
 
+// Camera Textures
+// https://zdoom.org/w/index.php?title=SetCameraToTexture
+//CameraTexture CAMPLCA0 1920 1080 //fit 1920 1080
+//CameraTexture CAMPLCA0 1920 1080 fit 224 96
+CameraTexture CAMPLCA0 4096 2160 fit 224 96
+// offset middle texture was 1 1.36
+// 9696
+
 //Texture Warps
 
 //Water

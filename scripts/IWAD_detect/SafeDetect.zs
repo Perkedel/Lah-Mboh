@@ -121,6 +121,12 @@ class LMBH_SafeDetect : StaticEventHandler
             miscKeywords.push("DoomerBoardsProject");
         }
 
+        // Freedoom Bad*ss Edition
+        if(Wads.FindLump("dssraka",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("badass01", 0, Wads.AnyNameSpace) > -1)
+        {
+            miscKeywords.push("FDBA");
+        }
+
         // NSFL now..
         // Lah-piye
         if(Wads.FindLump("PiyeToh",0,Wads.AnyNameSpace) > -1 && Wads.FindLump("PiyeIki",0,Wads.AnyNameSpace) > -1)

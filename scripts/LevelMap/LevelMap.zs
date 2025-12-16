@@ -112,6 +112,11 @@ class LMBH_LevelMapPostProcessor:LevelPostProcessor
                 // Brutal doom yey!
                 SetThingArgument(4225,0,4025);
             }
+            else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("FDBA") > -1)
+            {
+                // Freedoom Bad*ss edition
+                SetThingArgument(4225,0,4027);
+            }
             else if(Cvar.getCvar("Safe_Detect_Total").GetString().IndexOf("DoomerBoardsProject") > -1)
             {
                 // DBP map packs

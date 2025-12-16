@@ -76,7 +76,8 @@ but eh.. both disadvantages & advantages on each own idk.
 
 > The second ever? What was the first?
 
-[**THIS!**](https://www.moddb.com/mods/freedoom-badss-editionmappack) from Backyard Badasses. 
+<!--[**THIS!**](https://www.moddb.com/mods/freedoom-badss-editionmappack) from Backyard Badasses. -->
+[**THIS!**](https://www.moddb.com/mods/freedoom-badass-edition) ([Source Code](https://github.com/freedoom-badass-edition/freedoom-badass-edition)) from Backyard Badasses. 
 Yeah, the Jokewad talking about FreeDoom itself ft. crazy overcharged weapons replacing the main ones. 
 It also has special episodes too as well!
 
