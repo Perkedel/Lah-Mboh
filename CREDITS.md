@@ -252,14 +252,16 @@ For the thing we've yoinked
 - [Corruption Cards](https://forum.zdoom.org/viewtopic.php?t=67939) ([ModDB](https://www.moddb.com/mods/corruption-cards)). CutmanMike. ???. Inspire only!, Corruption Cards allows you to add more cards. It seems tho, if you add your own `Card` inheritance on your Zscript stuffs, it makes that mod depend on the Corruption Cards permanently, until you commented those out back. If you still have `Card` inherited cards without the Corruption Cards mod loaded, it'll crash. Just the `CCARDS.txt` lump won't be enough. Eh, thancc for the inspiration anyway. I was wanted to reflow Car Level list on here. Maybe I should learn how to read `MAPINFO` myself?
 - [Sword United Meme](https://imgflip.com/memegenerator/156913933/Swords-united). imgflip. ???. that sword meet on table agreement meme.
 - [Freedoom Bad\*ss Edition](https://www.moddb.com/mods/freedoom-badass-edition). Backyard Badasses. **MIT License**. [Source Code](https://github.com/freedoom-badass-edition/freedoom-badass-edition), Badass TC for Freedoom with Mappack & jokcxs!
+  - Camera CCTV (map `BADASS18`) inspire
+  - Death Sequence inspire. 
 
 ## Sounds
 
 - [Freesound](https://Freesound.org)
-    - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
-    - [Short Fart](https://freesound.org/s/241000/). DSSI Studios. **CC0**
-    - [Sad Trombone](https://freesound.org/people/Benboncan/sounds/73581/). Benboncan. **CC4.0-BY**. muoh muoh muoh muowowowo
-    - [Bad Explosion](https://freesound.org/s/47252/). nthompson. **GONE**. Bad Explosion duar
+  - [Game Over 8 Bit](https://freesound.org/s/133283/). Leszek Szary. **CC0**
+  - [Short Fart](https://freesound.org/s/241000/). DSSI Studios. **CC0**
+  - [Sad Trombone](https://freesound.org/people/Benboncan/sounds/73581/). Benboncan. **CC4.0-BY**. muoh muoh muoh muowowowo
+  - [Bad Explosion](https://freesound.org/s/47252/). nthompson. **GONE**. Bad Explosion duar
 - [See more Freesounds I ever downloaded](https://freesound.org/people/JOELwindows7/?downloaded_sounds=javascript%3Avoid%280%29%3B).
 - Revenant100's Maps. Revenant100. **CC4.0-BY**. Maps about Revenant: [Revenant Bus](https://www.doomworld.com/forum/topic/102914-revenant-bus-a-doom-2-simulation-map/), [Revenant Problem](https://www.doomworld.com/forum/topic/98433-the-revenant-problem-a-philosophical-doom-2-map/), [100k Revenants](https://www.doomworld.com/forum/topic/87588-100000-revenants-a-doom-2-map/), [Infinite Revenants](https://www.doomworld.com/forum/topic/89060-infinite-revenants-the-sequel-to-100000-revenants-a-doom-2-map/).
 	- Revenant Problem. Extractions into filenames as follows

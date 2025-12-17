@@ -4,7 +4,7 @@ strictpatches = 0;
 
 maps
 {
-	
+
 	MRWDEMO
 	{
 		defaultwalltexture = "BROWN1";
@@ -13,10 +13,10 @@ maps
 		overrideceiltexture = false;
 		custombrightness = 196;
 		scriptcompiler = "zdoom_acs.cfg";
-		
+
 		resources
 		{
-			
+
 			resource0
 			{
 				type = 1;
@@ -29,7 +29,7 @@ maps
 		}
 		viewpositiony = -2638.626f;
 		viewpositionx = 1069.203f;
-		
+
 		testprecommand
 		{
 			autocloseonsuccess = true;
@@ -38,7 +38,7 @@ maps
 		}
 		customceilheight = 128;
 		customfloorheight = 0;
-		
+
 		grid
 		{
 			backoffsetx = 0;
@@ -53,7 +53,7 @@ maps
 			backoffsety = 0;
 		}
 		viewscale = 2.715517f;
-		
+
 		reloadresourceprecommand
 		{
 			autocloseonsuccess = true;
@@ -63,10 +63,10 @@ maps
 		defaulttoptexture = "BROWN1";
 		overridebottomtexture = false;
 		defaultbottomtexture = "BROWN1";
-		
+
 		scriptdocuments
 		{
-			
+
 			document0
 			{
 				filename = "SCRIPTS";
@@ -80,7 +80,7 @@ maps
 		defaultfloortexture = "FLOOR5_2";
 		overrideceilheight = false;
 		overridebrightness = false;
-		
+
 		testpostcommand
 		{
 			autocloseonsuccess = true;
@@ -91,7 +91,7 @@ maps
 		overridetoptexture = false;
 		uselongtexturenames = false;
 		overridefloortexture = false;
-		
+
 		reloadresourcepostcommand
 		{
 			autocloseonsuccess = true;

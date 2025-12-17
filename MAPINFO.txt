@@ -189,133 +189,7 @@ DoomEdNums
 	// FraggleScript Test
 	24590 = SoccerTest
 
-	// Realm667
-	// Crates Rifleman
-	// Was 164XX
-	23700 = Cube32Blue
-	23701 = Cube32Green
-	23702 = Cube32Brown
-	23703 = Cube64Blue
-	23704 = Cube64Green
-	23705 = Cube64Brown
-	23706 = Crate32Clean
-	23707 = Crate32Plank
-	23708 = Crate32Cross
-	23709 = Crate64Clean
-	23710 = Crate64Plank
-	23711 = Crate64Cross
-	23712 = Crate128Clean
-	23713 = Crate128Plank
-	23714 = Crate128Cross
-	// Bushes Gothic
-	// Was no DoomEdNum
-	// Normal Bush
-	30870 = Bush1
-	30871 = Bush2
-	30872 = Bush3
-	30873 = Bush4
-	30874 = Bush5
-	30875 = Bush6
-	30876 = Bush7
-	30877 = BushU
-	30878 = BushA
-	30879 = BushC
-	// Damaged Bush
-	30880 = BushDmg1
-	30881 = BushDmg2
-	30882 = BushDmg3
-	30883 = BushDmg4
-	30884 = BushDmg5
-	30885 = BushDmg6
-	30886 = BushDmg7
-	30887 = BushDmg8
-	30888 = BushDmg9
-	30889 = BushDmg10
-	30869 = BushDmg11
-	// Shotable Bush
-	30890 = ShootBush1
-	30891 = ShootBush2
-	30892 = ShootBush3
-	30893 = ShootBush4
-	30894 = ShootBush5
-	30895 = ShootBush6
-	30896 = ShootBush7
-	// Duke Nukem Hologram DeVloek
-	22273 = HoloDoomguy
-	22274 = HoloStrifeguy
-	// Portable Teleporter Device DeVloek
-	22270 = PTDevice
-	22271 = PTBeacon
-	22272 = PETDevice
-	// BONUS Kan3 Ignitable Cauldron based on Captain Toenail
-	//28924 = IgniteCauldron // was 15924
-	//28925 = UnlitCauldron // was 15925
-
-	// Monster Resource WAD / Realm667 Bestiary
-	// Monsters. was 31XX, conflict with Obsidian Plague Decorate ID24
-	3500 = NamiDarkImp
-	3501 = VoidDarkImp
-	3502 = STDarkImp
-	/*
-	// uncomment when done!
-	// adding DoomEdNum to non-existing class crashes the loading!
-	3503 = StoneImp
-	3504 = Arachnophyte
-	3505 = ImpWarlord
-	3506 = DragonFamiliar
-	3507 = BatFamiliar
-	3508 = SnakeImp
-	3509 = Satyr
-	3510 = BloodDemonClone
-	3511 = CacolanternClone
-	3512 = BelphegorClone
-	3513 = ScorpionMastermind
-	3514 = HellGuard
-	3515 = CyberMastermind
-	3516 = NightmareCacodemon
-	3517 = SoulHarvester
-	3518 = EnhancedCacodemon
-	3519 = HellWarrior
-	3520 = Afrit
-	3521 = LordofHeresy
-	3522 = TorturedSoul
-	3523 = MaulerDemon
-	3524 = Terror
-	3525 = RailArachnotron
-	3526 = FastImp
-	3527 = HellsFury
-	3528 = FireWyvern
-	3529 = PlasmaElemental
-	3530 = Maelstrom
-	3531 = Cacolich1
-	3532 = Cacolich2
-	3533 = SuperImp
-	*/
-	// Humans
-	/*
-	// uncomment when done!
-	3200 = ZombieMarine
-	3201 = RapidFireTrooper
-	3202 = RocketGuy
-	3203 = RocketGuyImmune
-	3204 = ChainsawZombie
-	3205 = PlasmaZombie
-	3206 = ZombieRailgunner
-	3207 = ShotgunSoldier
-	3208 = BFGZombie
-	// 3209 - 3211 skipped
-	3212 = StealthFighter
-	3213 = RifleZombie
-	3214 = SpreadFireZombie
-	*/
-	// end mrw
-
-	// Disguise Extra Keys
-	// Where to put it? 26700s?
-	26700 = GreenCard
-	26701 = OrangeCard
-	26702 = SilverCard
-	// End Realm667
+	// Realm667 moved to bring your own usb
 
 	// Standard
 	/*
@@ -327,25 +201,8 @@ DoomEdNums
 SpawnNums
 {
 
-	// Realm667
-	// Crates Rifleman
-	// Was 164XX
-	23700 = Cube32Blue
-	23701 = Cube32Green
-	23702 = Cube32Brown
-	23703 = Cube64Blue
-	23704 = Cube64Green
-	23705 = Cube64Brown
-	23706 = Crate32Clean
-	23707 = Crate32Plank
-	23708 = Crate32Cross
-	23709 = Crate64Clean
-	23710 = Crate64Plank
-	23711 = Crate64Cross
-	23712 = Crate128Clean
-	23713 = Crate128Plank
-	23714 = Crate128Cross
-	// End Realm667
+	// Realm667 moved to bring your own usb
+
 }
 
 
@@ -1357,20 +1214,6 @@ map T_NJ_BGL lookup "T_NJ_BGL"
 map wrwdemo lookup "wrwdemo"
 {
 	author = "So many people"
-	next = "MBOHTEST"
-	secretnext = "MBOHTEST"
-	sky1 = "SKY2"
-	exitPic = "LMBHTIHD"
-	music = "D_READ_M"
-	//cluster = 26555
-	//AllowRespawn
-	//RandomPlayerStarts
-	//RememberState
-}
-
-map mrwdemo lookup "mrwdemo"
-{
-	author = "Nanami, Realm667, et al"
 	next = "MBOHTEST"
 	secretnext = "MBOHTEST"
 	sky1 = "SKY2"

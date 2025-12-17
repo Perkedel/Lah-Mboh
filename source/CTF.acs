@@ -86,34 +86,34 @@ SetActorState(6131,"PickupGive", 1);
 //match because you need to die for the changes to take effect.
 Script "ST4ZD_CTFLoad1" Enter
 {
-if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
-{
-if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 0)
-{
-GiveInventory("GetRedFlag",1);
-Print(s:"You are on the blue team.");
-Delay(1); //So that the starts have time to set up
-Teleport(123456, 0, 1);
-}
-else
-terminate;
-}
+    if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+    {
+        if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 0)
+        {
+            GiveInventory("GetRedFlag",1);
+            Print(s:"You are on the blue team.");
+            Delay(1); //So that the starts have time to set up
+            Teleport(123456, 0, 1);
+        }
+        else
+            terminate;
+    }
 }
 
 Script "ST4ZD_CTFLoad2" Enter
 {
-if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
-{
-if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 1)
-{
-GiveInventory("GetBlueFlag",1);
-Print(s:"You are on the red team.");
-Delay(1); //So that the starts have time to set up
-Teleport(123457, 0, 1);
-}
-else
-terminate;
-}
+    if (CheckActorInventory(1898668, "IsPlayingCTF") == 1)
+    {
+        if(GetPlayerInfo(PlayerNumber(), PLAYERINFO_TEAM) == 1)
+        {
+            GiveInventory("GetBlueFlag",1);
+            Print(s:"You are on the red team.");
+            Delay(1); //So that the starts have time to set up
+            Teleport(123457, 0, 1);
+        }
+        else
+            terminate;
+    }
 }
 
 //This check is only done once to make sure the player is never considered a bot

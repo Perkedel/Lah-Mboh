@@ -12,11 +12,11 @@ mbohcommon
 ChubzJumpPad
 
 // TDRR
-CTF
+//CTF
 
 // Zdoom tutorial
 ElitCaco //The ACS scripts the Elite Cacodemon uses.
 ZDoomWeirdACS // Dang it! You forgot to just make amalgamate!!!
 
 // Realm667
-Realm667ACS
+//Realm667ACS

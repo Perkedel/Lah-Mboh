@@ -1732,3 +1732,9 @@ class LMBH_ClayPigeon : Actor
             Stop;
     }
 }
+
+class ItemPowerupSpawn: Actor
+{
+    // spawn powerup chosen in the edit. choose the class name.
+    // no more doomednum needed, just this one now.
+}

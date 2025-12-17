@@ -8,9 +8,9 @@
 #include "scripts/decorate/MobaTower.txt"
 #include "scripts/decorate/TrapProjectileLauncher.txt"
 #include "scripts/decorate/ZdoomWeird.txt"
-#include "scripts/decorate/Realm667Deco.txt"
+//#include "scripts/decorate/Realm667Deco.txt"
 #include "scripts/decorate/MoarWeirdDeco.dec"
-#include "scripts/decorate/WeaponsResourceWAD.dec"
+//#include "scripts/decorate/WeaponsResourceWAD.dec"
 #include "scripts/decorate/Alando1/Alando1.dec"
 
 // Doom Tree using Jval's tree Generator
