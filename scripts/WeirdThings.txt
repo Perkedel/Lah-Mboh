@@ -1164,6 +1164,8 @@ class BFG9000Old : BFG9000
 	States
 	{
 		AltFire:
+		    TNT1 A 0 A_TakeInventory("Cell", 1,TIF_NOTAKEINFINITE); //because it won't do so with AltFire, unlike regular replace `Fire`.
+			// thanc LossForWords. Realm667, 44MP Automag
 			Goto OldFire;
 		// Fire:
 		// 	Goto OldFire;
