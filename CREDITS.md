@@ -94,55 +94,11 @@ For the thing we've yoinked
 	- [Explode Missile](https://zdoom.org/wiki/ExplodeMissile). YOINK!
 	- [GRENADE LAUNCHER](https://zdoom.org/wiki/Classes:GrenadeLauncher). do we yoink?
 - [Plerb's 90's CGI Textures](https://www.doomworld.com/forum/topic/151605-plerbtex-v35-90s-cgi-textures-and-more/). Plerb. ???. **PLS YOINK CAREFULLY!, DO NOT REPLACE IWAD'S**, Pack of textures with vibes of 90's CGI.
-- [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???.
-    - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
-    - [Regeneration Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#credits-47). Scalliano (original from id Software & Monolith, Quake3).
-    - [Insanity Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30). DBJ87, That_One_Doom_Mod, & BlueShadow (original from id Software x Midway Doom64).
-    - [Rage Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-44). Captain Toenail.
-    - [Checkpoint Disk](https://www.realm667.com/repository/item-store/others#preview-2). Matacrat (aaaaaa).
-    - [Save PDA](https://www.realm667.com/repository/item-store/others#preview-7). Scalliano.
-    - [Infinite Ammo Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-2). Dreadopp.
-    - [Oxygen Canister](https://www.realm667.com/repository/item-store/others#preview-6). Dusk
-    - [Megamap Tablet](https://www.realm667.com/repository/item-store/others#preview-5). Captain Toenail
-    - [Jump Boots](https://www.realm667.com/repository/item-store/others#preview-4). Captain Toenail
-    - [Bullet Ant Venom](https://www.realm667.com/repository/item-store/others#preview). Quantum_Dranger
-    - [Score Treasury](https://www.realm667.com/repository/item-store/others#preview-8). Cyantusk
-    - [DP-28](https://www.realm667.com/repository/armory/other-sources-styles#preview-6). Br0leg.
-    - [Jackbomb](https://www.realm667.com/repository/armory/other-sources-styles#preview-11). Ichor.
-    - [Flare torch](https://www.realm667.com/repository/item-store/gadgets#preview-7). Scalliano
-    - [Duke Nukem Toilet](https://www.realm667.com/repository/prop-stop/technical#preview-37). FuzzyBlaze. *Aaaah, much better.*
-    - [Duke Nukem Pipes](https://www.realm667.com/repository/prop-stop/technical#preview-25). FuzzyBlaze.
-    - [Duke Nukem Explosive Fire Extinguisher](https://www.realm667.com/repository/prop-stop/technical#preview-14). Captain Toenail
-    - [Crate Models](https://www.realm667.com/repository/prop-stop/technical#preview-8). Riffleman
-    - [Traffic Cones](https://www.realm667.com/repository/prop-stop/technical#preview-38). Captain Toenail
-    - [Bushes](https://www.realm667.com/repository/prop-stop/vegetation#preview). Gothic
-    - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
-    - [Dark Imp Pack](https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6). 
-        - Dark Imp Nami. Nanami, Itsnaturetodie, Ghastly, Itsnaturetodie
-	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
-	- [Damage & Low Health System](https://www.realm667.com/repository/sfx-shoppe/other#preview-3). Captain Maniac et al. **Yoink?? idk, not now? Oh wait, I got an idea! We're cardiophile! break it down!**
-	- [Duke Nukem Pipe Bomb](https://www.realm667.com/repository/armory/doom-style?start=60#preview-51). Xim et all. This gotta be the better one I suppose..
-	- [SPAS-12 Half Life](https://www.realm667.com/repository#preview-2). LossForWords
-	- [A.D. COP Textures](https://www.realm667.com/repository#preview). PGE
-	- [Duke Nukem Zombie Tanks](https://www.realm667.com/repository#preview-7). Xim, Enjay, Devloek (Compilation).
-	- [Duke Nukem Hologram decoy](https://www.realm667.com/repository#preview-16). DeVloek
-	- [Portable Teleporter Device](https://www.realm667.com/repository#preview-18). DeVloek et al.
-	- [Fire Cauldron](https://www.realm667.com/repository/prop-stop/light-sources#preview-13). Captain Toenail.
-	- [Ignitable Cauldron](https://www.doomworld.com/forum/topic/149424-interactive-ignitable-fire-cauldron/) (**NOT REALM667 FILE**, edited Thing!). Kan3. ???. [YOINKED HERETIC FIRE CAULDRON REALM667](https://www.realm667.com/repository/prop-stop/light-sources/1054-fire-cauldron#preview); [Tutorial Explanation](https://youtu.be/luwc4DCNi0A)
-	- etc. pls yoink all eventually, or.. at least Archive file-able.
 - [GitHub Issue Template Collections (Markdown)](https://github.com/stevemao/github-issue-templates). stevemao. **CC0**. yml files to make Issue becomes tidy form with buttons & dedicated textbox instead of full typing filling. [THere's more!!](https://github.com/devspace/awesome-github-templates). [Templated](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser). [YAML](https://learnxinyminutes.com/yaml/)
 - [Breakable Glass](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641). Enjay & zzrion. ???.
     - [Thread Point](https://forum.zdoom.org/viewtopic.php?f=3&t=21885&p=809641#p809641), [DW point](https://www.doomworld.com/forum/topic/73786-how-to-make-breakable-glass-hexen-format-in-doom-builder/)
     - [ZZrion Glass Tex](https://forum.zdoom.org/viewtopic.php?f=37&t=31139&p=809591#p809591)
     - [Lazygamer tutorial](https://www.youtube.com/watch?v=MIEXpOepepE)
-- [Weapon Resource WAD](https://zdoom.org/wiki/Weapons_Resource_WAD). Serveral people!. Yes Yoink, No Confuse trademark. Weapons vaganza
-    - The [latest version is **GONE**](http://files.drdteam.org/index.php/files/get/gOEJPHX4Cy/wrw2-2.zip) because DRDTeam broke the File share! fucking hell! Even nobody Archived the working link sooner! It was on Megaupload (which FBI raided back then due to sparsdating haven issues) (cannot Archive because require captcha), and then moved to DRDTeam, which also broke now, that didn't Archived.
-    - So, the [old version on idgames](https://www.doomworld.com/idgames/combos/wrw) is the only one we could get. If you have the latest version, pls share! I don't care if indeed it's buggy & terrible, I want them!
-    - [Discussion that's left on Realm667](https://www.realm667.com/kunena/the-workshop/1970-weapons-resource-wad?start=50)
-- [Monster Resource WAD](https://www.doomworld.com/idgames/combos/monsters). Lead by Kara Rader (Nanami), with several people submitted. Yes Yoink, No Confuse trademark. Monsters vaganza
-    - [Info on DoomWiki](https://doomwiki.org/wiki/Monster_Resource_WAD)
-    - **Please note!** These are all renewed on [Realm667 Bestiary](https://www.realm667.com/repository/beastiary/doom-style?start=180#credits-60), so we should yoink there instead. But we can just yoink its demo level tho.
-    - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
 - [m8f's DoomToolbox](https://www.doomworld.com/forum/topic/99760-doom-toolbox-updated-nomina-to-v200-beta/). m8f. **GNU GPL v3**. Some mods have not been active recently, so we decided to yoink some of them that do.
     - [Stupid Achievements](https://github.com/mmaulwurff/stupid-achievements). Add Achievement systems. Customizable as well (Make the achievement out of the class of it. The Achievement system will scan everything & list everything that's based on Achievement)!
 - Alando1
@@ -206,6 +162,53 @@ For the thing we've yoinked
 		- [Sound to Screen](https://github.com/mmaulwurff/sound-to-screen). **IMPORTANT for A11Y HEARING** Sound source mini-popup telling where played sound comes from, like Minecraft. With dangerness colors, & options to enable loudness number.
 - [FlexiHUD](https://www.doomworld.com/forum/topic/142937-flexihud-a-highly-flexible-hud-mod-for-gzdoom-411/). Jekyll Grim. ???. **OPTIONAL RECOMMENDED**, [Source Code](https://github.com/jekyllgrim/UniversalFlexibleHUD), Extra HUDs that you can customize crazily, compatible with many IWADs & PWADs out there.
 - [Hopocalypse](https://www.moddb.com/mods/hopocalypse). luvquita. ???. **OPTIONAL RECOMMENDED**, Skins for `DoomPlayer` (consists of: Daisy the bunny thiren & Doomguy bunny ears) & Daisy Bunny Thiren Companion addons.
+- [Realm667's Collections of Assets](https://www.realm667.com/repository/). Realm667 & the communities. ???. **OPTIONAL RECOMMENDED**
+  - **MOVED TO [BringYourOwnUSB](https://github.com/Perkedel/BringYourOwnUSB-SFW) (Included in [Lah-Mboh Releases](https://github.com/Perkedel/Lah-Mboh/releases/latest))**. Unpack the `BringYourOwnUSB-SFW.7z`. The `pk7` you'll load is `ZD-R667Res-Unconflict.pk7`.
+  - [Haste Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-27). Scalliano (original from id Software with Quake3).
+  - [Regeneration Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#credits-47). Scalliano (original from id Software & Monolith, Quake3).
+  - [Insanity Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-30). DBJ87, That_One_Doom_Mod, & BlueShadow (original from id Software x Midway Doom64).
+  - [Rage Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-44). Captain Toenail.
+  - [Checkpoint Disk](https://www.realm667.com/repository/item-store/others#preview-2). Matacrat (aaaaaa).
+  - [Save PDA](https://www.realm667.com/repository/item-store/others#preview-7). Scalliano.
+  - [Infinite Ammo Sphere](https://www.realm667.com/repository/item-store/powerups-artifacts#preview-2). Dreadopp.
+  - [Oxygen Canister](https://www.realm667.com/repository/item-store/others#preview-6). Dusk
+  - [Megamap Tablet](https://www.realm667.com/repository/item-store/others#preview-5). Captain Toenail
+  - [Jump Boots](https://www.realm667.com/repository/item-store/others#preview-4). Captain Toenail
+  - [Bullet Ant Venom](https://www.realm667.com/repository/item-store/others#preview). Quantum_Dranger
+  - [Score Treasury](https://www.realm667.com/repository/item-store/others#preview-8). Cyantusk
+  - [DP-28](https://www.realm667.com/repository/armory/other-sources-styles#preview-6). Br0leg.
+  - [Jackbomb](https://www.realm667.com/repository/armory/other-sources-styles#preview-11). Ichor.
+  - [Flare torch](https://www.realm667.com/repository/item-store/gadgets#preview-7). Scalliano
+  - [Duke Nukem Toilet](https://www.realm667.com/repository/prop-stop/technical#preview-37). FuzzyBlaze. *Aaaah, much better.*
+  - [Duke Nukem Pipes](https://www.realm667.com/repository/prop-stop/technical#preview-25). FuzzyBlaze.
+  - [Duke Nukem Explosive Fire Extinguisher](https://www.realm667.com/repository/prop-stop/technical#preview-14). Captain Toenail
+  - [Crate Models](https://www.realm667.com/repository/prop-stop/technical#preview-8). Riffleman
+  - [Traffic Cones](https://www.realm667.com/repository/prop-stop/technical#preview-38). Captain Toenail
+  - [Bushes](https://www.realm667.com/repository/prop-stop/vegetation#preview). Gothic
+  - [Prototype Nature Props](https://www.realm667.com/repository/prop-stop/vegetation#preview-7). PGE
+  - [Dark Imp Pack](https://www.realm667.com/repository/beastiary/doom-style?start=60#preview-6). 
+      - Dark Imp Nami. Nanami, Itsnaturetodie, Ghastly, Itsnaturetodie
+	- [Extra Keycards & Skull Keys](https://www.realm667.com/repository/item-store/keys-puzzle#preview-8). Disguise, updated further by MagicWazard. Extra keys for even more complex puzzles.
+	- [Damage & Low Health System](https://www.realm667.com/repository/sfx-shoppe/other#preview-3). Captain Maniac et al. **Yoink?? idk, not now? Oh wait, I got an idea! We're cardiophile! break it down!**
+	- [Duke Nukem Pipe Bomb](https://www.realm667.com/repository/armory/doom-style?start=60#preview-51). Xim et all. This gotta be the better one I suppose..
+	- [SPAS-12 Half Life](https://www.realm667.com/repository#preview-2). LossForWords
+	- [A.D. COP Textures](https://www.realm667.com/repository#preview). PGE
+	- [Duke Nukem Zombie Tanks](https://www.realm667.com/repository#preview-7). Xim, Enjay, Devloek (Compilation).
+	- [Duke Nukem Hologram decoy](https://www.realm667.com/repository#preview-16). DeVloek
+	- [Portable Teleporter Device](https://www.realm667.com/repository#preview-18). DeVloek et al.
+	- [Fire Cauldron](https://www.realm667.com/repository/prop-stop/light-sources#preview-13). Captain Toenail.
+	- [Ignitable Cauldron](https://www.doomworld.com/forum/topic/149424-interactive-ignitable-fire-cauldron/) (**NOT REALM667 FILE**, edited Thing!). Kan3. ???. [YOINKED HERETIC FIRE CAULDRON REALM667](https://www.realm667.com/repository/prop-stop/light-sources/1054-fire-cauldron#preview); [Tutorial Explanation](https://youtu.be/luwc4DCNi0A)
+	- etc. pls yoink all eventually, or.. at least Archive file-able.
+- [Weapon Resource WAD](https://zdoom.org/wiki/Weapons_Resource_WAD). Serveral people!. Yes Yoink, No Confuse trademark. Weapons vaganza
+    - **MOVED TO [BringYourOwnUSB](https://github.com/Perkedel/BringYourOwnUSB-SFW) (Included in [Lah-Mboh Releases](https://github.com/Perkedel/Lah-Mboh/releases/latest))**. Unpack the `BringYourOwnUSB-SFW.7z`. The `pk7` you'll load is `ZD-R667Res-Unconflict.pk7`.
+    - The [latest version is **GONE**](http://files.drdteam.org/index.php/files/get/gOEJPHX4Cy/wrw2-2.zip) because DRDTeam broke the File share! fucking hell! Even nobody Archived the working link sooner! It was on Megaupload (which FBI raided back then due to sparsdating haven issues) (cannot Archive because require captcha), and then moved to DRDTeam, which also broke now, that didn't Archived.
+    - So, the [old version on idgames](https://www.doomworld.com/idgames/combos/wrw) is the only one we could get. If you have the latest version, pls share! I don't care if indeed it's buggy & terrible, I want them!
+    - [Discussion that's left on Realm667](https://www.realm667.com/kunena/the-workshop/1970-weapons-resource-wad?start=50)
+- [Monster Resource WAD](https://www.doomworld.com/idgames/combos/monsters). Lead by Kara Rader (Nanami), with several people submitted. Yes Yoink, No Confuse trademark. Monsters vaganza
+    - **MOVED TO [BringYourOwnUSB](https://github.com/Perkedel/BringYourOwnUSB-SFW) (Included in [Lah-Mboh Releases](https://github.com/Perkedel/Lah-Mboh/releases/latest))**. Unpack the `BringYourOwnUSB-SFW.7z`. The `pk7` you'll load is `ZD-R667Res-Unconflict.pk7`.
+    - [Info on DoomWiki](https://doomwiki.org/wiki/Monster_Resource_WAD)
+    - **Please note!** These are all renewed on [Realm667 Bestiary](https://www.realm667.com/repository/beastiary/doom-style?start=180#credits-60), so we should yoink there instead. But we can just yoink its demo level tho.
+    - Argh, Jesus Christ. There's a lot of em. Maybe just headstart it here instead?
 
 ## Reuses
 
@@ -276,19 +279,72 @@ For the thing we've yoinked
 > Musics people have contributed, & we have yoinked outta somewhere in the wild.
 
 - Hidup ini Harus Jadi Berkat (`D_BERKAT.mid`). *unknown*. **Public Domain** (**Need Verification**) (The original), **CC4.0-BY-SA** (This cover). I made cover of it this of what's in my head. It was in style of ZZZ Blazewood song or whatever western desert, where melody should be harmonica & rest about stuffs. Basically I kept imagining it this to eventual atleast kludge cover until I have Yamaha Genos to maximize it probably. The song itself is about that as long as you life, you gotta be the blessing to everyone, coz you're not gonna live forever & eventually had to *come back home*. My family is fond of this thing here, so yeah.
-- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack)
+- [Freedoom](https://freedoom.github.io). fraggle et al. **BSD License Clause-3**. [Source Code](https://github.com/freedoom/freedoom/). [Credit Phase 1](https://doomwiki.org/wiki/Freedoom:_Phase_1_music), [Credit Phase 2](https://doomwiki.org/wiki/Freedoom:_Phase_2_music), [Credit FreeDM](https://doomwiki.org/wiki/FreeDM_music), [Credit Double Impact](https://doomwiki.org/wiki/Double_Impact_MIDI_Pack), [Latest Credit](https://github.com/freedoom/freedoom/blob/master/CREDITS-MUSIC)
+  - Yoinked from v0.13.0 sets!
+	- `D_INTRO` & `D_INTROA` = `D_FFIFDM`. Korp - Fight For Freedom
 	- `D_E1M1` = `D_STANKY`. Lola "BlueWorrior" Harvey - Stanky Leg Specialist
 	- `D_E1M2` = `D_UNDERTO`. TheMisterCat - Look At Me I'm Underhalls Too
-	- `D_E1M6` = `D_OXIDNE`. Korp & jute - Oxidine
+	- `D_E1M3` = `D_ALNCOL`. Kevin Martins (Velvetic) & Jonathan Martins (julnen) - [Alone with Colors](https://isotype.bandcamp.com/track/alone-with-colors-single). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
+	- `D_E1M4` = `D_FLDCIT`. Kevin Martins (Velvetic) & Jonathan Martins (julnen) - [Flood the City](https://isotype.bandcamp.com/track/flood-the-city-single). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
+	- `D_E1M5` = `D_RAGSUN`. Kevin Martins (Velvetic) & Jonathan Martins (julnen) - [The Raging Sun](https://velvetic.bandcamp.com/track/on-the-next-day-2). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
+	- `D_E1M6` = `D_OXIDNE`. Korp & Adam Kalmbach (jute) - Oxidine
+	- `D_E1M7` = `D_TOTSUR`. Josephus Astartes (DH4050) - Totally Surrounded
+	- `D_E1M8` = `D_OTNDAY`. Kevin Martins (Velvetic) - [On the Next Day](https://velvetic.bandcamp.com/track/on-the-next-day-2). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
+	- `D_E1M9` = `D_HBSPAD`. Korp & Adam Kalmbach (jute) - Hidden Between Spades
+	- `D_E2M1` = `D_MOONST`. Korp - Moonstone
+	- `D_E2M2` = `D_VOIDGA`. Korp - Voidgaze
+	- `D_E2M3` = `D_WRKOUT`. Korp - Workout
+	- `D_E2M4` = `D_DIODNE`. Korp - Diodine
+	- `D_E2M5` = `D_REMINC`. Korp - Reminicence
+	- `D_E2M6` = `D_CONTEC`. Korp - Concept of Technology
+	- `D_E2M7` = `D_RIBCAG`. Korp - Ribcage
 	- `D_E2M8` = `D_TREDIS`. Korp - Treble Dissension
+	- `D_E2M9` = `D_NITSTR`. Korp - Nightstorm
+	- `D_E3M1` = `D_INRINF`. Lola "BlueWorrior" Harvey - Intrare in Infernum
+	- `D_E3M2` = `D_TLROAD`. Lola "BlueWorrior" Harvey - The Long Road
+	- `D_E3M3` = `D_WROHAV`. Lola "BlueWorrior" Harvey - Wrought Havoc
+	- `D_E3M4` = `D_CAUPRO`. Lola "BlueWorrior" Harvey - Cautious Progress
+	- `D_E3M5` = `D_SCBFLS`. Lola "BlueWorrior" Harvey - Scorned by Flesh
+	- `D_E3M6` = `D_SBANIS`. Lola "BlueWorrior" Harvey - Soul Banisher
+	- `D_E3M7` = `D_ULTAMA`. Lola "BlueWorrior" Harvey - Ultamatum Infurnus \[sic\]
 	- `D_E3M8` = `D_ZENITH`. Lola "BlueWorrior" Harvey - The Zenith
+	- `D_E3M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
 	- `D_E4M1` = `D_LIBSTAR`. continuum.mid - Liberate the Stars
 	- `D_E4M2` = `D_FITEHRD`. Proxy-MIDI - Fight Harder... To Obtain A Better Victory!
 	- `D_E4M5` = `D_MCODE`. Korp - Main Code
 	- `D_E4M7` = `D_AMBIGU`. Korp - Ambiguity
-	- `D_E4M9` = `D_NOCLIPG`. Lola "BlueWorrior" Harvey - No-Clip to the end
+	- `D_E4M9` = `D_DSECRE`. continuum.mid - The Deepest Secret
 	- `D_BUNNY` = `D_IMPACTE`. Goji - Impactean Welcome Party
+	- `D_VICTOR` = `D_DISTAN`. Korp - Distance
 	- `D_INTER` = `D_ULIVE`. Stratos - YOU LIVE!!!
+	- `D_DM2TTL` = `D_HORCAL`. Korp - Horizon Call. Title Freedoom 2
+	- `D_DM2INT` = `D_FTWOHD`. Lola "BlueWorrior" Harvey - FTW You 100
+	- `D_DOOM` = `D_UNDMTN`. Lola "BlueWorrior" Harvey - Under Maintenance
+	- `D_DDTBLU` = `D_SYNERR`. Lola "BlueWorrior" Harvey - Syntax Error
+	- `D_RUNNIN` = `D_FRODEO`. Lola "BlueWorrior" Harvey - Not My First Rodeo
+	- `D_STALKS` = `D_UNDWLD`. Lola "BlueWorrior" Harvey - Dark Underworld
+	- `D_IN_CIT` = `D_TERSEC`. Lola "BlueWorrior" Harvey - Terrible Secrets
+	- `D_RUNNI2` = `D_BPSHELL`. Lola "BlueWorrior" Harvey - Backpack of Shells. **BADUM TSS Trademark!: Gas Stations (bp & Shell), pls watch for conflicts on other mods!!! Rename on happening!**
+	- `D_EVIL` = `D_MACHIN`. Lola "BlueWorrior" Harvey - The Machine
+	- `D_TENSE` = `D_SKLFOO`. Lola "BlueWorrior" Harvey - Skull Underfoot
+	- `D_SHAWN` = `D_FUNAGM`. continuum.mid - Fun is Infinite at AGM
+	- `D_SHAWN3` = `D_MISTFR`. Tyler P. (Picklehammer) - Mist Over the Fire
+	- `D_THE_DA` = `D_REFRIG`. Korp & Tyler P. (Picklehammer) - Refrigeration
+	- `D_OPENIN` = `D_JDEFET`. Korp & Tyler P. (Picklehammer) - Devoured by the Jaws of Defeat
+	- `D_THEDA3` = `D_SPCDES`. Korp & Andrew Bassett (AndrewB) - Space's Despair
+	- `D_COUNT2` = `D_ROULAN`. Korp & Adam Kalmbach (jute) - Rough Landing
+	- `D_STKLS2` = `D_UGROWT`. Korp & Adam Kalmbach (jute) - Undergrowth
+	- `D_AMPIE` = `D_TRILOD`. Korp & MoonDeLaAxel - Within the Trilo's Den
+	- `D_BETWEE` = `D_INDIGO`. Korp - Indigo. **GENERIC WORD! pls watch for conflicts on other mods!!! Rename on happening!**
+	- `D_COUNTD` = `D_DMNDNC`. Korp - Demon Dance
+	- `D_DDTBL3` = `D_ALIWAL`. Korp - Alien Waltz
+	- `D_READ_M` = `D_READFD`. Adam Kalmbach (jute) - *untitled*. Text screen
+	- `D_THEDA2` = `D_SEWERS`. Discoholic & Blastfrog - Sewers. **GENERIC WORD! pls watch for conflicts on other mods!!! Rename on happening!**
+	- `D_DOOM2` = `D_FEAR_2`. Discoholic - Fear. **GENERIC WORD! pls watch for conflicts on other mods!!! Rename on happening!**
+	- `D_DEAD` = `D_SVTPRN`. Jeremy Emerson (Vandalorian) - [Soviet Porno](https://soundcloud.com/vandalorianirl/soviet-porno). **ON BringYourOwnUSB-SFW instead, Unclear Copyright**
+	- `D_ADRIAN` = `D_WSDCHA`. Jeremy Emerson (Vandalorian) - [I Sought Wisdom in the Chalice But There Was None](https://soundcloud.com/vandalorianirl/i-sought-wisdom-in-the-chalice-but-there-was-none). **ON BringYourOwnUSB-SFW instead, Unclear Copyright**
+	- `D_DDTBL2` = `D_ABTSUM`. Kevin Martins (Velvetic) & Jonathan Martins (julnen) - [About the Summer](https://isotype.bandcamp.com/track/about-the-summer). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
+	- `D_ULTIMA` = `D_BLKMNT`. Kevin Martins (Velvetic) - [Black Mountain](https://isotype.bandcamp.com/track/black-mountain). **ON BringYourOwnUSB-SFW instead, CC4.0-BY-NC-SA**
 	- `D_DM2INT` FreeDM = `D_BURNBO`. Tyler P. (Picklehammer) - Burn the Bodies
 	- `D_DM2TTL` FreeDM = `D_COLLO`. Goji - My Home, The Colosseum
 	- `D_READ_M` FreeDM = `D_VINYL`. MoonDeLaAxel & Joshua Masek (wastedjamacan) - Geoff's Vinyl Collection
@@ -298,9 +354,9 @@ For the thing we've yoinked
 	- `ralphis/d_e1m1.mid` = `dm_ha1`. Ralphis Vickers - Hangar 1
 	- `ralphis/e1m1.mid` = `dm_ha2`. Ralphis Vickers - Hangar 2
 	- `ralphis/d_e1m5.mid` = `ral_e1m5`. Ralphis Vickers - ???
-	- `picklehammer/d_introa.mid` = `pham_tl`. picklehammer - Freedoom 1 old intro
-	- `picklehammer/d_dm2ttl.mid` = `pham_d2tl`. picklehammer - Freedoom 2 old intro
-	- `picklehammer/d_dm2int.mid` = `pham_d2in`. picklehammer - Freedoom old Intermmission
+	- `picklehammer/d_introa.mid` = `pham_tl`. Tyler P. (Picklehammer) - Freedoom 1 old intro
+	- `picklehammer/d_dm2ttl.mid` = `pham_d2tl`. Tyler P. (Picklehammer) - Freedoom 2 old intro
+	- `picklehammer/d_dm2int.mid` = `pham_d2in`. Tyler P. (Picklehammer) - Freedoom old Intermmission
 	- `dbimmidi/INTER - Korp - Resprenselessness.mid` = `D_RESPRE`. Korp - Resprenselessness from Double Impact
 	- `dbimmidi/TITLE - continuum.mid - Triple Impact.mid` = `D_TRIMTL`. Continuum.mid - Triple Impact (Title Screen) from Double Impact
 	- `hyena/d_evil.mid` = `hye_evil`. hyena - Evil Born from Me
@@ -312,7 +368,7 @@ For the thing we've yoinked
 		- `REVPR4.mid`. ???
 		- `CEWTOU.mid`. Cascada - Everytime we touch. ***Cause everytime we touch...***
 		- `FISHPOL.mid`. Lee Jackson - Fish Polka
-		- `VASTITL.mid`. Vasago - ???. Sauce detected: http://www.student.wau.nl/~olivier/midi/ (GONE)
+		- `VASTITL.mid`. Vasago - ???. Sauce detected: `http://www.student.wau.nl/~olivier/midi/` (GONE)
 		- `REVPRRE.mid`. ???
 		- `REVPINT.mid`. Mark Lovegrove - *Revenant Intermission* (?)
 - [plums' Skystravaganza](https://www.doomworld.com/idgames/graphics/plmsky1). plums. Yes Whatever. There is a Demo that's named `MAP01` which conflict with Doom 2, so, we gotta rename & yoink every skies here.
