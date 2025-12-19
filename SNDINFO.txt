@@ -29,6 +29,10 @@ $random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/t
 $random menu/quit2 { vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee }
 */
 
+// S. Christian Collins GeneralUser sf2
+$mididevice "music/mrbumpy409/D_HCOLL.mid" fluidsynth GeneralUser-GS
+$mididevice "music/mrbumpy409/D_SCTTG.mid" fluidsynth GeneralUser-GS
+
 // Chubzdoomer
 JUMPPAD   JUMPPAD
 items/ChubzCoin CHUBZMN

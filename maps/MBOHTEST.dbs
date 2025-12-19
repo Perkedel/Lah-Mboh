@@ -18,7 +18,6 @@ maps
 				option1 = 0;
 				option2 = 0;
 				notfortesting = 0;
-				requiredarchives = "";
 			}
 			
 			resource1
@@ -170,6 +169,16 @@ maps
 				notfortesting = 0;
 				requiredarchives = "";
 			}
+			
+			resource16
+			{
+				type = 1;
+				location = "W:\\starring codes\\Doom Projects\\BringYourOwnUSB-SFW\\Mods\\GZDoom\\ZD-R667Res-Unconflict";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
 		}
 		defaultfloortexture = "FLAT5";
 		defaultceiltexture = "CEIL1_1";
@@ -188,9 +197,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 10133.11f;
-		viewpositiony = 26967.96f;
-		viewscale = 0.4735596f;
+		viewpositionx = 4013.218f;
+		viewpositiony = 2952.318f;
+		viewscale = 0.6156253f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -201,7 +210,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 128;
+			gridsize = 64;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -271,8 +280,6 @@ maps
 				resource;
 				tabtype = 0;
 				scripttype = 18;
-				caretposition = 2938;
-				firstvisibleline = 3;
 			}
 			
 			document1
@@ -283,7 +290,7 @@ maps
 				tabtype = 0;
 				scripttype = 1;
 				caretposition = 2072;
-				firstvisibleline = 72;
+				firstvisibleline = 289;
 				activetab = true;
 			}
 		}
