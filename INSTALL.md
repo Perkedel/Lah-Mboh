@@ -21,8 +21,8 @@ This Doom mod is a patch WAD PK3, meaning you are still required to own a copy o
 > Just how do you find the copy of original DOOM if you know, it's a gory game? beside wests of course, No game store in your area interested, It's just outright gone into obscurity.
 > Beware! Shenanigans still at large!
 
-[![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/download/tip/Lah-Mboh.tar.xz)
-[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/tag/tip)
+[![Download the PK7 in TAR.XZ Now](/graphics/DownloadSignTarXz.png)](https://github.com/Perkedel/Lah-Mboh/releases/latest/download/Lah-Mboh.tar.xz)
+[![Other formats](/graphics/Generated/Eevee-DoomTextGen/doom-small-other-formats.png)](https://github.com/Perkedel/Lah-Mboh/releases/latest)
 [![View CREDITS.md](/graphics/Generated/Eevee-DoomTextGen/doom-small-view-creditsmd.png)](/CREDITS.md)
 
 ## Dependencies:
