@@ -374,8 +374,43 @@ Conversation
     ID = 3270;
     Page{
         Name = "$NAME_DUMMYOUCHIE";
-        Dialog = "$DIALOGUE_DUMMYOUCHIE_0";
-
+        Dialog = "$DIALOGUE_DUMMYHURT_0";
+        Choice{
+			Text = "$CHOICE_NEXT";
+			NextPage = 2;
+		}
+    }
+    Page{
+        Name = "$NAME_DUMMYFLOWIT";
+        Dialog = "$DIALOGUE_DUMMYHURT_1";
+        Choice{
+			Text = "$CHOICE_NEXT";
+			NextPage = 3;
+		}
+    }
+    Page{
+        Name = "$NAME_DUMMYOUCHIE";
+        Dialog = "$DIALOGUE_DUMMYHURT_2";
+        Choice{
+			Text = "$CHOICE_NEXT";
+			NextPage = 4;
+		}
+    }
+    Page{
+        Name = "$NAME_DUMMYFLOWIT";
+        Dialog = "$DIALOGUE_DUMMYHURT_3";
+        Choice{
+			Text = "$CHOICE_NEXT";
+			NextPage = 5;
+		}
+    }
+    Page{
+        Name = "$NAME_DUMMYOUCHIE";
+        Dialog = "$DIALOGUE_DUMMYHURT_4";
+        Choice{
+			Text = "$CHOICE_REPLAY";
+			NextPage = 1;
+		}
     }
 }
 
