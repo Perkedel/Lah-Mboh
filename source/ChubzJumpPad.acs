@@ -19,7 +19,8 @@ function void JumpPadder(int horizontalAngle, int horizontalForce, int verticalF
 {
 	ThrustThing(horizontalAngle, horizontalForce, 0, 0);
 	ThrustThingZ(0, verticalForce, 0, 0);
-	PlaySound(0, "JUMPPAD", CHAN_AUTO, 0.5, FALSE, ATTN_NORM);
+	//PlaySound(0, "JUMPPAD", CHAN_AUTO, 0.5, FALSE, ATTN_NORM);
+	PlaySound(0, "object/jumppad", CHAN_AUTO, 0.5, FALSE, ATTN_NORM);
 	if(flash) ACS_NamedExecute("JumpPadFlash",0,0,0,125);
 	if(shake) Radius_Quake(7, 8, 0, 50, 0);
 }

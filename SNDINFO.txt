@@ -29,13 +29,14 @@ $random menu/quit1 { player/male/death1 demon/pain grunt/pain misc/gibbed misc/t
 $random menu/quit2 { vile/active misc/p_pkup brain/cube misc/gibbed skeleton/swing knight/death baby/active demon/melee }
 */
 
-// S. Christian Collins GeneralUser sf2
-$mididevice "music/mrbumpy409/D_HCOLL.mid" fluidsynth GeneralUser-GS
-$mididevice "music/mrbumpy409/D_SCTTG.mid" fluidsynth GeneralUser-GS
-
 // Chubzdoomer
-JUMPPAD   JUMPPAD
-items/ChubzCoin CHUBZMN
+object/jumppad "sounds/Chubzdoomer/JUMPPAD.opus"
+object/whywhy "sounds/Chubzdoomer/JUMPPAD.opus"
+object/jumpjump "sounds/Chubzdoomer/JUMPPAD.opus"
+JUMPPAD0 "sounds/Chubzdoomer/JUMPPAD.opus"
+JUMPPAD1 JUMPPAD
+JUMPPAD JUMPPAD
+items/ChubzCoin "sounds/Chubzdoomer/CHUBZMN.mp3"
 // End Chubzdoomer
 
 // TDRR
@@ -50,25 +51,25 @@ RedScores redscor
 // End TDRR
 
 // TylerJ
-CLTFIRE    CLTFIRE
-CLTRLOD     CLTRLOD
-CLTMPTY      CLTMPTY
+CLTFIRE CLTFIRE
+CLTRLOD CLTRLOD
+CLTMPTY CLTMPTY
 
-AKfr    Akfr
+AKfr Akfr
 AKRELOAD AKRELOAD
-AKRELOAD2   AKRELOAD2
-AKCLIP  AKCLIP
-AKEmpty   AKEmpty
+AKRELOAD2 AKRELOAD2
+AKCLIP AKCLIP
+AKEmpty AKEmpty
 
-RKTZFIRE  RKTZFIRE
-rktzxpl  rktzxpl
-RktzRld   RktzRld
+RKTZFIRE RKTZFIRE
+rktzxpl rktzxpl
+RktzRld RktzRld
 
 
          // Shell Sounds //
 
 $random SHLCLT  { SHLCLT1 SHLCLT2 SHLCLT3 }
-$limit  SHLCLT  5
+$limit SHLCLT  5
 SHLCLT1	SHLCLT1
 SHLCLT2	SHLCLT2
 SHLCLT3	SHLCLT3
@@ -92,7 +93,7 @@ morale/opposite DSSKSW
 
 // Enjay
 // Breakable Glass
-world/njGlass   NJGLASS     //Glass smashing
+world/njGlass NJGLASS     //Glass smashing
 $limit	world/njGlass		4
 // End Enjay
 
@@ -108,3 +109,12 @@ gun/lazer3                 dslboom3
 // https://github.com/LocalInsomniac/FrameMe
 FrameMe/custom "sounds/leszek_gameover.opus"
 // end Can't Sleep
+
+// S. Christian Collins GeneralUser sf2
+// $mididevice is buggy as heck! work it around!
+/*
+//$mididevice "music/mrbumpy409/D_HCOLL.mid" fluidsynth GeneralUser-GS
+$mididevice D_HCOLL fluidsynth GeneralUser-GS
+//$mididevice "music/mrbumpy409/D_SCTTG.mid" fluidsynth GeneralUser-GS
+$mididevice D_SCTTG fluidsynth GeneralUser-GS
+*/
