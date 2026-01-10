@@ -1135,6 +1135,15 @@ map DODSAR lookup "DODSAR"
 	cluster = 26211
 }
 
+map TTLAKE lookup "TTLAKE"
+{
+	author = "JOELwindows7"
+	next = "MBOHTEST"
+	secretnext = "MBOHTEST"
+	sky1 = "SKY1"
+	exitPic = "LMBHTIHD"
+}
+
 map T_SCTTG lookup "T_SCTTG"
 {
 	author = "JOELwindows7"
