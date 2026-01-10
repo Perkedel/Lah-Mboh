@@ -23,6 +23,16 @@ maps
 			
 			resource1
 			{
+				type = 1;
+				location = "W:\\starring codes\\Doom Projects\\BringYourOwnUSB-SFW\\Mods\\GZDoom\\ZD-BringYourOwnUSB-SFW";
+				option1 = 0;
+				option2 = 0;
+				notfortesting = 0;
+				requiredarchives = "";
+			}
+			
+			resource2
+			{
 				type = 2;
 				location = "W:\\starring codes\\Doom Projects\\Lah-Mboh\\yoinks\\vvpck1.0-mapUnconflict.pk3";
 				option1 = 0;
@@ -48,9 +58,9 @@ maps
 		overrideceilheight = false;
 		overridebrightness = false;
 		uselongtexturenames = false;
-		viewpositionx = 1202.412f;
-		viewpositiony = -14.60633f;
-		viewscale = 1.428047f;
+		viewpositionx = -256.7862f;
+		viewpositiony = -81.52983f;
+		viewscale = 11.64901f;
 		scriptcompiler = "zdoom_acs.cfg";
 		
 		grid
@@ -61,7 +71,7 @@ maps
 			backoffsety = 0;
 			backscalex = 100;
 			backscaley = 100;
-			gridsize = 32;
+			gridsize = 4;
 			gridrotate = 0;
 			gridoriginx = 0;
 			gridoriginy = 0;
@@ -93,6 +103,30 @@ maps
 			autocloseonsuccess = true;
 			exitcodeiserror = true;
 			stderriserror = true;
+		}
+		
+		scriptdocuments
+		{
+			
+			document0
+			{
+				filename = "DIALOGUE";
+				hash = 3588187714;
+				resource;
+				tabtype = 0;
+				scripttype = 18;
+			}
+			
+			document1
+			{
+				filename = "SCRIPTS";
+				hash = 3469170009;
+				resource;
+				tabtype = 0;
+				scripttype = 1;
+				caretposition = 180;
+				activetab = true;
+			}
 		}
 	}
 }
