@@ -90,7 +90,7 @@ class LMBH_Level_Portala: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelN
 class LMBH_Level_Dodtel: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "DODTEL"; LMBH_ScannableLevelName.label "$DODTEL"; } }
 class LMBH_Level_T_Cuzom: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_CUZOM"; LMBH_ScannableLevelName.label "$T_CUZOM"; } }
 class LMBH_Level_T_Rspawn: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "T_RSPAWN"; LMBH_ScannableLevelName.label "$T_RSPAWN"; } }
-class LMBH_Level_TTLake: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TTLake"; LMBH_ScannableLevelName.label "$TTLAKE"; } }
+class LMBH_Level_TTLake: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "TTLAKE"; LMBH_ScannableLevelName.label "$TTLAKE"; } }
 
 // Yoinke
 class LMBH_Level_Chbzsd: LMBH_ScannableLevelName{ Default{ LMBH_ScannableLevelName.level "Chubzdoomer/CHBZSD"; LMBH_ScannableLevelName.label "$CHBZSD"; } }
