@@ -73,7 +73,7 @@ Texture "DECINOA0", 1024, 1024
 {
 	XScale 16.000
 	YScale 16.000
-	Patch "graphics/DecinoYellowJust.png", 0, 0
+	Patch "graphics/DecinoThumbnailJust.png", 0, 0
 }
 
 // End of texture definitions
