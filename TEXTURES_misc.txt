@@ -69,4 +69,11 @@ Texture "DNBWBDA0", 1024, 1024
 	Patch "graphics/DNBLogoStandaloneWhiteBorder.png", 0, 0
 }
 
+Texture "DECINOA0", 1024, 1024
+{
+	XScale 16.000
+	YScale 16.000
+	Patch "graphics/DecinoYellowJust.png", 0, 0
+}
+
 // End of texture definitions
