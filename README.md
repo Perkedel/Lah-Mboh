@@ -169,3 +169,5 @@ Assets (which we drew ourselves): CC4.0-BY-SA
 > DNB, Perkedel Technologies, & affiliates are not affiliated nor endorsed nor sponsored with id Softwares, nor Bethesda, nor Zenimax in anyway.
 
 Website: https://perkedel.netlify.app/doom (Actually, nvm, for now. We're too lazy rn).
+
+aaa
