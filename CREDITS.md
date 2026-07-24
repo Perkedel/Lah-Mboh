@@ -272,6 +272,8 @@ For the thing we've yoinked
 		- `DSSKSW.opus` (was `DSSSDTH`). Revenant now press the switch instead of you.
 		- `DSTTC.opus` (was `DSSPISIT`). Gman says `It's time to choose.`
 		- `OMFACE.opus` (was `DSSSSIT`). `Oooh!, my faace!!..`
+- [DairyOrange Fart Reverb](https://youtu.be/hr7GyFM7pX4). DairyOrange. ???. Fart with extra reverb
+- [Fart original](https://youtu.be/5VM0tQ7GDNc). Unknown, used in kmlkmljkl's hamster meme. ???. Fart without reverb. 
 
 ## Musics
 
@@ -379,8 +381,14 @@ For the thing we've yoinked
 - [GeneralUser Soundfont](https://schristiancollins.com/generaluser.php). S Christian Collins / mrbumpy409. [Yes Commercial Yes Font](https://github.com/mrbumpy409/GeneralUser-GS/blob/main/documentation/LICENSE.txt). [Source Code](https://github.com/mrbumpy409/GeneralUser-GS/), General user soundfont for most GM & GS MIDIs.
 	- `D_HCOLL.mid`. S Christian Collins - The Hybrid Colllage. Onestop of General User, tests the capability of this soundfont
 	- `D_SCTTG.mid`. ??? - Santa Coming to Town.
-- [DairyOrange Fart Reverb](https://youtu.be/hr7GyFM7pX4). DairyOrange. ???. Fart with extra reverb
-- [Fart original](https://youtu.be/5VM0tQ7GDNc). Unknown, used in kmlkmljkl's hamster meme. ???. Fart without reverb. 
+- Geocities Archive on Archive.org
+  - [The Magic of Midis](https://archive.org/details/themagicofmidiv1).
+    - Also, Angel-Neko_X, **pls do not use MP3 render of `frosty-laura.mid` (Frosty The Snowman song) without also including the original MIDI file itself** on [this mod](https://www.moddb.com/mods/angry-anna-xmas-quest-2), that hurts!, fucking lot! Thank you.
+    - [That goes to you too](https://www.youtube.com/watch?v=vgUqEj3iJkc&pp=ygUXZnJvc3R5IHRoZSBzbm93bWFuIG1pZGk%3D), TheMusician. NO!! **DO not omit MIDI download link!!**
+    - There, I had to put it in BringYourOwnUSB, seriously bruh!
+  - [Midi Collection v1.2](https://archive.org/details/TheGeocitiesMidiCollectionVersion1.2)
+  - [Midis Collection](https://archive.org/details/archiveteam-geocities-midi-collection-2009)
+  - [Prism Corp Home](https://archive.org/details/prismcorphomemidis)
 
 ## Reupload
 
