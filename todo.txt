@@ -1,0 +1,1 @@
+- make sky bridge level! This level only has planks, with void pitfall. No handrail to protect you, but you can easily push enemies into down there. When entity touches floor, they die instantly, floor is death action.
