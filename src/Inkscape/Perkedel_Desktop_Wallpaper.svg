@@ -29,15 +29,15 @@
      inkscape:deskcolor="#000000"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="1.3375"
-     inkscape:cx="592.14953"
-     inkscape:cy="682.24299"
+     inkscape:zoom="0.66875"
+     inkscape:cx="548.78505"
+     inkscape:cy="655.70093"
      inkscape:window-width="2560"
      inkscape:window-height="1417"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer23">
+     inkscape:current-layer="layer118">
     <inkscape:grid
        type="xygrid"
        id="grid748"
@@ -254,8 +254,8 @@
        inkscape:groupmode="layer"
        id="layer116"
        inkscape:label="PostMortemBlue"
-       sodipodi:insensitive="true"
-       style="display:none">
+       style="display:none"
+       sodipodi:insensitive="true">
       <g
          id="g533"
          style="display:inline;fill:#000080"
@@ -393,7 +393,7 @@
          id="layer118"
          inkscape:label="AndWaves"
          sodipodi:insensitive="true"
-         style="display:inline">
+         style="display:none">
         <path
            style="fill:#000080;fill-opacity:0.5;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round"
            d="m 360,600 c 0,0 150,0 150,150 0,150 -150,150 -150,150 0,0 -10,0 -10,-10 0,-10 10,-10 10,-10 0,0 130,10 130,-130 0,-140 -130,-130 -130,-130 0,0 -10,0 -10,-10 0,-10 10,-10 10,-10 z"
@@ -424,7 +424,9 @@
     <g
        inkscape:groupmode="layer"
        id="layer22"
-       inkscape:label="PostMortemBlue-Krita_animate_ingredients">
+       inkscape:label="PostMortemBlue-Krita_animate_ingredients"
+       sodipodi:insensitive="true"
+       style="display:none">
       <g
          inkscape:groupmode="layer"
          id="layer23"
